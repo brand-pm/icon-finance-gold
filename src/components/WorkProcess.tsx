@@ -2,10 +2,10 @@ import { Clock } from "lucide-react";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 
 const stages = [
-  { title: "Introduction and analysis", duration: "1–2 weeks", desc: "We study your situation, goals and current asset structure" },
-  { title: "Strategy development and planning", duration: "2–3 weeks", desc: "We develop a bespoke wealth management strategy" },
-  { title: "Implementation of solutions", duration: "4–8 weeks", desc: "We implement the agreed strategy and structure the assets" },
-  { title: "Management and control", duration: "Ongoing", desc: "We provide continuous support and optimization" },
+  { title: "Introduction and\nanalysis", duration: "1–2 weeks", desc: "We study your situation, goals\nand current asset structure" },
+  { title: "Strategy development\nand planning", duration: "2–3 weeks", desc: "We develop a bespoke wealth\nmanagement strategy" },
+  { title: "Implementation\nof solutions", duration: "4–8 weeks", desc: "We implement the agreed strategy\nand structure the assets" },
+  { title: "Management and\ncontrol", duration: "Ongoing", desc: "We provide continuous support\nand optimization" },
 ];
 
 const WorkProcess = () => {
@@ -14,51 +14,73 @@ const WorkProcess = () => {
   return (
     <section className="section-padding" style={{ background: "linear-gradient(180deg, #131A31 0%, #0A0F1E 100%)" }}>
       <div className="container-main" ref={ref}>
-        <div className="grid lg:grid-cols-[40%_60%] gap-16">
-          {/* Left */}
-          <div className="opacity-0 animate-fade-up">
+        <div className="grid lg:grid-cols-[40%_60%] gap-16 items-start">
+          {/* Left — sticky */}
+          <div className="opacity-0 animate-fade-up lg:sticky lg:top-32">
             <p className="eyebrow mb-4">Work Process</p>
             <h2 className="text-white font-light mb-6" style={{ fontSize: "clamp(28px,5vw,42px)" }}>
-              How We Work with Clients
+              How We Work<br />with Clients
             </h2>
             <div className="gold-separator justify-start mb-6">
               <div className="dot" /><div className="dot-lg" /><div className="dot" />
             </div>
-            <p className="text-white/60 text-base mb-10">
+            <p className="text-white/50 text-base mb-10">
               Each stage is adapted to your family, assets and jurisdictions
             </p>
             <a href="#contact" className="btn-gold px-8 py-4 inline-block">Start a dialogue</a>
           </div>
 
-          {/* Right */}
-          <div className="flex flex-col gap-4">
+          {/* Right — stages with connecting dots */}
+          <div className="flex flex-col gap-6 relative">
             {stages.map((stage, i) => (
-              <div
-                key={i}
-                className="opacity-0 animate-slide-in-right p-6 border relative overflow-hidden"
-                style={{
-                  background: "rgba(255,255,255,0.05)",
-                  borderColor: "rgba(255,255,255,0.08)",
-                  animationDelay: `${i * 0.15}s`,
-                }}
-              >
-                <div
-                  className="absolute inset-0 pointer-events-none z-0"
-                  style={{
-                    backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800'%3E%3Cfilter id='m'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.012 0.004' numOctaves='5' seed='2' result='n'/%3E%3CfeColorMatrix type='saturate' values='0' in='n' result='g'/%3E%3CfeComponentTransfer in='g' result='c'%3E%3CfeFuncA type='linear' slope='2' intercept='0'/%3E%3C/feComponentTransfer%3E%3CfeBlend in='SourceGraphic' in2='c' mode='multiply'/%3E%3C/filter%3E%3Crect width='800' height='800' filter='url(%23m)' fill='%23ffffff' opacity='0.08'/%3E%3C/svg%3E")`,
-                    backgroundRepeat: 'repeat',
-                  }}
-                />
-                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 relative z-[1]">
-                  <div>
-                    <p className="eyebrow text-[10px] mb-1">Stage {i + 1}</p>
-                    <h3 className="text-white text-xl font-normal">{stage.title}</h3>
+              <div key={i} className="relative">
+                {/* Connecting dotted line between cards */}
+                {i < stages.length - 1 && (
+                  <div className="absolute left-8 top-full h-6 flex flex-col items-center justify-center z-10">
+                    <div className="w-px h-1.5 bg-gold/40" />
+                    <div className="w-1 h-1 bg-gold/50 rotate-45 my-0.5" />
+                    <div className="w-px h-1.5 bg-gold/40" />
                   </div>
-                  <div className="sm:text-right shrink-0">
-                    <div className="flex items-center gap-1 text-white/50 text-[13px] mb-1">
-                      <Clock size={12} /> Duration: {stage.duration}
+                )}
+
+                {/* Card */}
+                <div
+                  className="opacity-0 animate-fade-up relative overflow-hidden"
+                  style={{
+                    background: "rgba(255,255,255,0.04)",
+                    border: "1px solid rgba(255,255,255,0.07)",
+                    animationDelay: `${i * 0.15}s`,
+                  }}
+                >
+                  <div className="p-7 flex flex-col sm:flex-row gap-6 relative z-[1]">
+                    {/* Left side: stage label + title with vertical dots */}
+                    <div className="flex-1">
+                      <p className="text-gold text-[11px] uppercase tracking-[0.2em] font-medium mb-3">
+                        Stage {i + 1}
+                      </p>
+                      <div className="flex items-start gap-3">
+                        {/* Vertical decorative dots */}
+                        <div className="flex flex-col items-center gap-1.5 pt-1.5 shrink-0">
+                          <div className="w-1 h-1 bg-gold/40 rotate-45" />
+                          <div className="w-1 h-1 bg-gold/40 rotate-45" />
+                          <div className="w-1 h-1 bg-gold/40 rotate-45" />
+                        </div>
+                        <h3 className="text-white text-xl font-normal leading-snug whitespace-pre-line">
+                          {stage.title}
+                        </h3>
+                      </div>
                     </div>
-                    <p className="text-white/60 text-sm">{stage.desc}</p>
+
+                    {/* Right side: duration + description */}
+                    <div className="sm:w-[240px] shrink-0">
+                      <div className="flex items-center gap-1.5 text-white/45 text-[13px] mb-3">
+                        <Clock size={13} strokeWidth={1.5} />
+                        <span>Duration: {stage.duration}</span>
+                      </div>
+                      <p className="text-white/55 text-sm leading-relaxed whitespace-pre-line">
+                        {stage.desc}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
