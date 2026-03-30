@@ -1,4 +1,7 @@
 import { useScrollReveal } from "../hooks/useScrollReveal";
+import insight1 from "../assets/insight-1.jpg";
+import insight2 from "../assets/insight-2.jpg";
+import insight3 from "../assets/insight-3.jpg";
 
 const articles = [
   {
@@ -6,18 +9,21 @@ const articles = [
     title: "Goldman Sachs Family Office Investment Insights report, Adapting to the Terrain",
     date: "Sep 10, 2025",
     read: "3 min read",
+    image: insight1,
   },
   {
     category: "Private Briefings",
     title: "The One Big Beautiful Bill Act has been enacted...",
     date: "Aug 28, 2025",
     read: "5 min read",
+    image: insight2,
   },
   {
     category: "Strategic Insights",
     title: "Quarterly Insights",
     date: "Jul 15, 2025",
     read: "4 min read",
+    image: insight3,
   },
 ];
 
@@ -44,7 +50,16 @@ const Insights = () => {
               className="bg-white opacity-0 animate-fade-up cursor-pointer group"
               style={{ border: "1px solid rgba(0,0,0,0.06)", animationDelay: `${i * 0.1}s` }}
             >
-              <div className="aspect-video bg-[#D4CFC9] grayscale group-hover:grayscale-0 transition-all duration-500" />
+              <div className="aspect-video overflow-hidden">
+                <img
+                  src={a.image}
+                  alt={a.title}
+                  loading="lazy"
+                  width={800}
+                  height={512}
+                  className="w-full h-full object-cover sepia-[.3] group-hover:sepia-0 group-hover:scale-105 transition-all duration-500"
+                />
+              </div>
               <div className="p-6">
                 <p className="text-gold text-[10px] uppercase tracking-[0.12em] font-semibold mb-3">
                   {a.category}
