@@ -79,7 +79,7 @@ const Services = () => {
 
         {/* Main content card */}
         <div
-          className="grid lg:grid-cols-[220px_1fr_300px] gap-0 overflow-hidden"
+          className="grid lg:grid-cols-[200px_1fr_380px] gap-0 overflow-hidden"
           style={{
             background: "linear-gradient(135deg, #FAFAFA 0%, #F0ECE7 50%, #D8D4CE 100%)",
             boxShadow: "0 8px 40px rgba(0,0,0,0.08)",
