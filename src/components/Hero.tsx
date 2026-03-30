@@ -55,7 +55,7 @@ const Hero = () => (
     {/* Background */}
     <div className="absolute inset-0">
       <img src={heroBg} alt="" className="absolute inset-0 w-full h-full object-cover" />
-      <div className="absolute inset-0 bg-navy/40" />
+      <div className="absolute inset-0 bg-navy/20" />
     </div>
 
     <div className="container-main relative z-10 w-full">
