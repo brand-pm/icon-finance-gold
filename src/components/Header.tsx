@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Globe, ChevronDown } from "lucide-react";
+import logo from "../assets/logo.svg";
 
 const navItems = ["Services", "Expertise", "Insights", "About"];
 
@@ -21,12 +22,9 @@ const Header = () => {
     >
       <div className="container-main h-full flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-3">
-          <span className="text-2xl font-bold tracking-wider text-white">ICON</span>
-          <span className="hidden sm:block text-[10px] uppercase tracking-[0.12em] text-slate leading-tight">
-            Finance &<br />Wealth Management
-          </span>
-        </div>
+        <a href="#" className="flex items-center">
+          <img src={logo} alt="Icon Finance & Wealth Management" className="h-10" />
+        </a>
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-8">
