@@ -26,10 +26,7 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
         {/* Brand */}
         <div>
-          <span className="text-2xl font-bold tracking-wider text-white">ICON</span>
-          <p className="text-[10px] uppercase tracking-[0.12em] text-slate mt-1 mb-4">
-            Finance & Wealth Management
-          </p>
+          <img src={logo} alt="Icon Finance & Wealth Management" className="h-10 mb-4" />
           <p className="text-white/50 text-sm leading-relaxed">
             Preserving and growing wealth across generations with integrity and expertise.
           </p>
