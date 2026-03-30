@@ -52,6 +52,14 @@ const WorkProcess = () => {
                     animationDelay: `${i * 0.15}s`,
                   }}
                 >
+                  {/* Marble texture overlay */}
+                  <div
+                    className="absolute inset-0 pointer-events-none z-0"
+                    style={{
+                      backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800'%3E%3Cfilter id='m'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.012 0.004' numOctaves='5' seed='2' result='n'/%3E%3CfeColorMatrix type='saturate' values='0' in='n' result='g'/%3E%3CfeComponentTransfer in='g' result='c'%3E%3CfeFuncA type='linear' slope='2' intercept='0'/%3E%3C/feComponentTransfer%3E%3CfeBlend in='SourceGraphic' in2='c' mode='multiply'/%3E%3C/filter%3E%3Crect width='800' height='800' filter='url(%23m)' fill='%23ffffff' opacity='0.08'/%3E%3C/svg%3E")`,
+                      backgroundRepeat: 'repeat',
+                    }}
+                  />
                   <div className="p-7 flex flex-col sm:flex-row gap-6 relative z-[1]">
                     {/* Left side: stage label + title with vertical dots */}
                     <div className="flex-1">
