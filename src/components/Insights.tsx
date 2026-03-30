@@ -33,7 +33,7 @@ const Insights = () => {
             Insights & News
           </h2>
           <div className="gold-separator">
-            <div className="dot" />
+            <div className="dot" /><div className="dot-lg" /><div className="dot" />
           </div>
         </div>
 

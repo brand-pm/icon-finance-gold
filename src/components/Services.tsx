@@ -54,7 +54,7 @@ const Services = () => {
             Tailored wealth management services designed around your unique goals and circumstances
           </p>
           <div className="gold-separator">
-            <div className="dot" /><div className="dot" /><div className="dot" />
+            <div className="dot" /><div className="dot-lg" /><div className="dot" />
           </div>
         </div>
 
