@@ -139,16 +139,18 @@ const Services = () => {
 
           {/* Image */}
           <div
-            className="flex items-center justify-center p-6"
+            className="flex items-center justify-center overflow-hidden"
             style={{ background: "#D8D4CE" }}
           >
             <img
+              key={active}
               src={tabs[active].image}
               alt={tabs[active].alt}
               loading="lazy"
               width={1024}
               height={1024}
-              className="w-full h-auto object-contain max-h-[360px]"
+              className="w-full h-full object-cover animate-scale-in"
+              style={{ animation: "scale-in 0.5s ease-out forwards" }}
             />
           </div>
         </div>
