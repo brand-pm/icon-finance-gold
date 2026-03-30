@@ -35,13 +35,20 @@ const WorkProcess = () => {
             {stages.map((stage, i) => (
               <div
                 key={i}
-                className="opacity-0 animate-slide-in-right p-6 border"
+                className="opacity-0 animate-slide-in-right p-6 border relative overflow-hidden"
                 style={{
                   background: "rgba(255,255,255,0.05)",
                   borderColor: "rgba(255,255,255,0.08)",
                   animationDelay: `${i * 0.15}s`,
                 }}
               >
+                <div
+                  className="absolute inset-0 pointer-events-none z-0"
+                  style={{
+                    backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800'%3E%3Cfilter id='m'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.012 0.004' numOctaves='5' seed='2' result='n'/%3E%3CfeColorMatrix type='saturate' values='0' in='n' result='g'/%3E%3CfeComponentTransfer in='g' result='c'%3E%3CfeFuncA type='linear' slope='2' intercept='0'/%3E%3C/feComponentTransfer%3E%3CfeBlend in='SourceGraphic' in2='c' mode='multiply'/%3E%3C/filter%3E%3Crect width='800' height='800' filter='url(%23m)' fill='%23ffffff' opacity='0.08'/%3E%3C/svg%3E")`,
+                    backgroundRepeat: 'repeat',
+                  }}
+                />
                 <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
                   <div>
                     <p className="eyebrow text-[10px] mb-1">Stage {i + 1}</p>
