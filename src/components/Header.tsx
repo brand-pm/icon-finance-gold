@@ -42,7 +42,7 @@ const Header = () => {
             <span className="text-[13px]">EN</span>
             <ChevronDown size={12} />
           </div>
-          <a href="#contact" className="btn-gold px-6 py-3 inline-block">
+          <a href="#contact" className="text-[13px] text-gold hover:text-white transition-colors duration-300 uppercase tracking-wider font-medium">
             Start a dialogue →
           </a>
         </nav>
