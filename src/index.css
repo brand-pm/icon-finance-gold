@@ -114,21 +114,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6px;
+    gap: 8px;
   }
   .gold-separator::before,
   .gold-separator::after {
     content: '';
     width: 40px;
-    height: 1px;
+    height: 1.5px;
     background: hsl(var(--gold));
-    opacity: 0.5;
+    opacity: 0.7;
   }
   .gold-separator .dot {
-    width: 5px;
-    height: 5px;
+    width: 8px;
+    height: 8px;
     background: hsl(var(--gold));
-    border-radius: 50% !important;
+    transform: rotate(45deg);
+  }
+  .gold-separator .dot-lg {
+    width: 14px;
+    height: 14px;
+    background: hsl(var(--gold));
+    transform: rotate(45deg);
   }
 
   .btn-gold {
