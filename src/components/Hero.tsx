@@ -50,7 +50,7 @@ const StatCard = ({ stat }: { stat: (typeof stats)[0] }) => {
 };
 
 const Hero = () => (
-  <section className="relative min-h-screen flex items-center bg-navy overflow-hidden pt-20">
+  <section className="relative flex items-center bg-navy overflow-hidden pt-20" style={{ minHeight: '1920px' }}>
     {/* Background pattern */}
     <div className="absolute inset-0">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_50%,rgba(224,167,118,0.06)_0%,transparent_60%)]" />
