@@ -1,4 +1,5 @@
 import logo from "../assets/logo.svg";
+import footerBg from "../assets/footer-bg.svg";
 
 const footerCols = [
   {
@@ -16,11 +17,13 @@ const footerCols = [
 ];
 
 const Footer = () => (
-  <footer className="bg-footer relative overflow-hidden">
-    {/* Watermark */}
-    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 text-[20vw] font-black text-white/[0.03] leading-none select-none pointer-events-none tracking-tighter">
-      ICON
-    </div>
+  <footer className="relative overflow-hidden" style={{ background: "linear-gradient(to left, #0C1120, #0F1528, #12192F)" }}>
+    {/* Background image */}
+    <img
+      src={footerBg}
+      alt=""
+      className="absolute inset-0 w-full h-full object-cover opacity-30 pointer-events-none"
+    />
 
     <div className="container-main relative z-10 pt-16 pb-8">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
