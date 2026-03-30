@@ -50,7 +50,7 @@ const StatCard = ({ stat }: { stat: (typeof stats)[0] }) => {
 };
 
 const Hero = () => (
-  <section className="relative min-h-screen flex items-center bg-navy overflow-hidden">
+  <section className="relative min-h-screen flex items-center bg-navy overflow-hidden pt-20">
     {/* Background pattern */}
     <div className="absolute inset-0">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_50%,rgba(224,167,118,0.06)_0%,transparent_60%)]" />
@@ -63,8 +63,8 @@ const Hero = () => (
       />
     </div>
 
-    <div className="container-main relative z-10 pt-28 pb-16">
-      <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <div className="container-main relative z-10 w-full">
+      <div className="grid lg:grid-cols-2 gap-16 items-center w-full">
         {/* Left */}
         <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
           <p className="eyebrow mb-6">Wealth Management</p>
