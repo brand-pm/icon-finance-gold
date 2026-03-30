@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import heroBg from "../assets/hero-bg.jpg";
+import heroBg from "../assets/hero-bg.png";
 
 const stats = [
   { value: 10, prefix: "$", suffix: "M", label: "under management" },
