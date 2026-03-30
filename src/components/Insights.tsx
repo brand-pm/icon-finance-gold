@@ -50,14 +50,19 @@ const Insights = () => {
               className="bg-white opacity-0 animate-fade-up cursor-pointer group"
               style={{ border: "1px solid rgba(0,0,0,0.06)", animationDelay: `${i * 0.1}s` }}
             >
-              <div className="aspect-video overflow-hidden">
+              <div className="aspect-video overflow-hidden relative">
+                {/* Duotone overlay: navy shadows + gold highlights */}
+                <div
+                  className="absolute inset-0 z-10 mix-blend-color group-hover:opacity-0 transition-opacity duration-500"
+                  style={{ background: "linear-gradient(135deg, #0F162D 0%, #E0A776 100%)" }}
+                />
                 <img
                   src={a.image}
                   alt={a.title}
                   loading="lazy"
                   width={800}
                   height={512}
-                  className="w-full h-full object-cover grayscale brightness-90 contrast-90 group-hover:grayscale-0 group-hover:brightness-100 group-hover:contrast-100 group-hover:scale-105 transition-all duration-500"
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
                 />
               </div>
               <div className="p-6">
