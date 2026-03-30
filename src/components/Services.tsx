@@ -95,26 +95,41 @@ const Services = () => {
 
           {/* Infinity symbol artwork */}
           <div className="aspect-square bg-[#E8E4DE] w-full flex items-center justify-center relative overflow-hidden">
-            {/* Subtle radial glow behind the symbol */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(224,167,118,0.12)_0%,transparent_70%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(224,167,118,0.08)_0%,transparent_70%)]" />
             <svg
-              viewBox="0 0 400 400"
-              className="w-[75%] h-[75%] relative z-10"
+              viewBox="0 0 500 500"
+              className="w-[80%] h-[80%] relative z-10"
               xmlns="http://www.w3.org/2000/svg"
             >
               <defs>
-                <linearGradient id="inf-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#E0A776" />
-                  <stop offset="50%" stopColor="#C88E5E" />
-                  <stop offset="100%" stopColor="#E0A776" />
+                {/* Gold gradient top-lit */}
+                <linearGradient id="inf-top" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stopColor="#E0A776" stopOpacity="0.35" />
+                  <stop offset="100%" stopColor="#C88E5E" stopOpacity="0.08" />
                 </linearGradient>
-                <linearGradient id="inf-grad-light" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stopColor="#E0A776" stopOpacity="0.15" />
-                  <stop offset="50%" stopColor="#E0A776" stopOpacity="0.06" />
-                  <stop offset="100%" stopColor="#E0A776" stopOpacity="0.15" />
+                {/* Gold gradient bottom-lit for 3D feel */}
+                <linearGradient id="inf-bot" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stopColor="#C88E5E" stopOpacity="0.05" />
+                  <stop offset="100%" stopColor="#E0A776" stopOpacity="0.25" />
                 </linearGradient>
-                <filter id="inf-glow">
-                  <feGaussianBlur stdDeviation="6" result="blur" />
+                {/* Edge highlight */}
+                <linearGradient id="inf-edge" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stopColor="#E0A776" stopOpacity="0.9" />
+                  <stop offset="40%" stopColor="#C88E5E" stopOpacity="0.6" />
+                  <stop offset="100%" stopColor="#E0A776" stopOpacity="0.3" />
+                </linearGradient>
+                <linearGradient id="inf-edge2" x1="1" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stopColor="#E0A776" stopOpacity="0.3" />
+                  <stop offset="60%" stopColor="#C88E5E" stopOpacity="0.6" />
+                  <stop offset="100%" stopColor="#E0A776" stopOpacity="0.9" />
+                </linearGradient>
+                {/* Shadow */}
+                <filter id="inf-shadow">
+                  <feDropShadow dx="4" dy="6" stdDeviation="8" floodColor="#33363D" floodOpacity="0.12" />
+                </filter>
+                {/* Soft inner glow */}
+                <filter id="inf-inner-glow">
+                  <feGaussianBlur stdDeviation="3" result="blur" />
                   <feMerge>
                     <feMergeNode in="blur" />
                     <feMergeNode in="SourceGraphic" />
@@ -122,52 +137,79 @@ const Services = () => {
                 </filter>
               </defs>
 
-              {/* Outer decorative ring */}
-              <circle cx="200" cy="200" r="170" fill="none" stroke="#E0A776" strokeWidth="0.5" opacity="0.2" />
-              <circle cx="200" cy="200" r="160" fill="none" stroke="#E0A776" strokeWidth="0.3" opacity="0.1" />
-
-              {/* Corner accents */}
-              {[0, 90, 180, 270].map((angle) => (
-                <line
-                  key={angle}
-                  x1="200"
-                  y1="30"
-                  x2="200"
-                  y2="45"
-                  stroke="#E0A776"
+              <g transform="rotate(-12 250 250)" filter="url(#inf-shadow)">
+                {/* Back ribbon — bottom half of the twist, behind the cross */}
+                <path
+                  d="M250 230
+                     C250 180, 175 140, 130 160
+                     C85 180, 75 230, 100 260
+                     C125 290, 180 280, 210 260
+                     L250 230Z"
+                  fill="url(#inf-bot)"
+                  stroke="url(#inf-edge2)"
                   strokeWidth="1"
-                  opacity="0.3"
-                  transform={`rotate(${angle} 200 200)`}
                 />
-              ))}
+                <path
+                  d="M250 270
+                     C250 320, 325 360, 370 340
+                     C415 320, 425 270, 400 240
+                     C375 210, 320 220, 290 240
+                     L250 270Z"
+                  fill="url(#inf-bot)"
+                  stroke="url(#inf-edge2)"
+                  strokeWidth="1"
+                />
 
-              {/* Main infinity — thick stroke with glow */}
-              <path
-                d="M200 200 C200 155, 260 130, 295 155 C330 180, 330 220, 295 245 C260 270, 200 245, 200 200 C200 155, 140 130, 105 155 C70 180, 70 220, 105 245 C140 270, 200 245, 200 200Z"
-                fill="none"
-                stroke="url(#inf-grad)"
-                strokeWidth="2.5"
-                filter="url(#inf-glow)"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
+                {/* Front ribbon — top half, over the cross */}
+                <path
+                  d="M250 270
+                     C250 320, 175 360, 130 340
+                     C85 320, 75 270, 100 240
+                     C125 210, 180 220, 210 240
+                     L250 270Z"
+                  fill="url(#inf-top)"
+                  stroke="url(#inf-edge)"
+                  strokeWidth="1.2"
+                />
+                <path
+                  d="M250 230
+                     C250 180, 325 140, 370 160
+                     C415 180, 425 230, 400 260
+                     C375 290, 320 280, 290 260
+                     L250 230Z"
+                  fill="url(#inf-top)"
+                  stroke="url(#inf-edge)"
+                  strokeWidth="1.2"
+                />
 
-              {/* Inner thinner infinity for depth */}
-              <path
-                d="M200 200 C200 162, 255 140, 285 160 C315 180, 315 220, 285 240 C255 260, 200 238, 200 200 C200 162, 145 140, 115 160 C85 180, 85 220, 115 240 C145 260, 200 238, 200 200Z"
-                fill="url(#inf-grad-light)"
-                stroke="url(#inf-grad)"
-                strokeWidth="0.5"
-                opacity="0.5"
-              />
+                {/* Center cross highlight */}
+                <ellipse cx="250" cy="250" rx="8" ry="22" fill="#E0A776" opacity="0.08" />
 
-              {/* Center dot */}
-              <circle cx="200" cy="200" r="3" fill="#E0A776" opacity="0.8" />
-              <circle cx="200" cy="200" r="6" fill="none" stroke="#E0A776" strokeWidth="0.5" opacity="0.3" />
+                {/* Specular edge highlights — thin bright lines on top edges */}
+                <path
+                  d="M250 270
+                     C250 320, 175 360, 130 340
+                     C85 320, 75 270, 100 240"
+                  fill="none"
+                  stroke="#E0A776"
+                  strokeWidth="0.5"
+                  opacity="0.5"
+                  filter="url(#inf-inner-glow)"
+                />
+                <path
+                  d="M250 230
+                     C250 180, 325 140, 370 160
+                     C415 180, 425 230, 400 260"
+                  fill="none"
+                  stroke="#E0A776"
+                  strokeWidth="0.5"
+                  opacity="0.5"
+                  filter="url(#inf-inner-glow)"
+                />
+              </g>
 
-              {/* Small decorative diamonds at the widest points */}
-              <rect x="63" y="197" width="6" height="6" transform="rotate(45 66 200)" fill="#E0A776" opacity="0.4" />
-              <rect x="331" y="197" width="6" height="6" transform="rotate(45 334 200)" fill="#E0A776" opacity="0.4" />
+              {/* Subtle decorative elements */}
+              <circle cx="250" cy="250" r="190" fill="none" stroke="#E0A776" strokeWidth="0.3" opacity="0.12" />
             </svg>
           </div>
         </div>
