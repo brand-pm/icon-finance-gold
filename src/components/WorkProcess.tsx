@@ -48,14 +48,14 @@ const WorkProcess = () => {
                 <div
                   className="opacity-0 animate-fade-up relative overflow-hidden"
                   style={{
-                    background: "rgba(255,255,255,0.04)",
-                    border: "1px solid rgba(255,255,255,0.07)",
+                    background: "rgba(255,255,255,0.02)",
+                    border: "1px solid rgba(255,255,255,0.05)",
                     animationDelay: `${i * 0.15}s`,
                   }}
                 >
                   {/* Marble texture overlay */}
                   <div
-                    className="absolute inset-0 pointer-events-none z-0 opacity-20 mix-blend-overlay"
+                    className="absolute inset-0 pointer-events-none z-0 opacity-[0.06]"
                     style={{
                       backgroundImage: `url(${marbleTexture})`,
                       backgroundSize: 'cover',
