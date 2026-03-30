@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Globe, ChevronDown } from "lucide-react";
+import logo from "../assets/logo.svg";
 
 const navItems = ["Services", "Expertise", "Insights", "About"];
 

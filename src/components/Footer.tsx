@@ -1,3 +1,5 @@
+import logo from "../assets/logo.svg";
+
 const footerCols = [
   {
     title: "Services",
