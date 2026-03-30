@@ -50,7 +50,16 @@ const Insights = () => {
               className="bg-white opacity-0 animate-fade-up cursor-pointer group"
               style={{ border: "1px solid rgba(0,0,0,0.06)", animationDelay: `${i * 0.1}s` }}
             >
-              <div className="aspect-video bg-[#D4CFC9] grayscale group-hover:grayscale-0 transition-all duration-500" />
+              <div className="aspect-video overflow-hidden">
+                <img
+                  src={a.image}
+                  alt={a.title}
+                  loading="lazy"
+                  width={800}
+                  height={512}
+                  className="w-full h-full object-cover sepia-[.3] group-hover:sepia-0 group-hover:scale-105 transition-all duration-500"
+                />
+              </div>
               <div className="p-6">
                 <p className="text-gold text-[10px] uppercase tracking-[0.12em] font-semibold mb-3">
                   {a.category}
