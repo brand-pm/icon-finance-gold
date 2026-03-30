@@ -1,4 +1,5 @@
 import { Clock } from "lucide-react";
+import marbleTexture from "../assets/marble-texture.svg";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 
 const stages = [
