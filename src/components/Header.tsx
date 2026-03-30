@@ -23,7 +23,7 @@ const Header = () => {
       <div className="container-main h-full flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center">
-          <img src={logo} alt="Icon Finance & Wealth Management" className="h-10" />
+          <img src={logo} alt="Icon Finance & Wealth Management" className="h-[46px]" />
         </a>
 
         {/* Desktop Nav */}
