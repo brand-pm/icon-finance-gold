@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useScrollReveal } from "../hooks/useScrollReveal";
+import InfinitySymbol from "./InfinitySymbol";
 
 const tabs = [
   {
@@ -93,132 +94,7 @@ const Services = () => {
             <a href="#contact" className="btn-gold px-6 py-3 inline-block text-[12px]">Learn more</a>
           </div>
 
-          {/* Infinity symbol artwork */}
-          <div className="aspect-square bg-[#E8E4DE] w-full flex items-center justify-center relative overflow-hidden">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_45%_48%,rgba(224,167,118,0.15)_0%,transparent_65%)]" />
-            <svg
-              viewBox="0 0 500 500"
-              className="w-[82%] h-[82%] relative z-10"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <defs>
-                {/* Lit face — top surface catching light */}
-                <linearGradient id="inf-face-lit" x1="0" y1="0" x2="0.3" y2="1">
-                  <stop offset="0%" stopColor="#E0A776" stopOpacity="0.7" />
-                  <stop offset="50%" stopColor="#D4975F" stopOpacity="0.45" />
-                  <stop offset="100%" stopColor="#C88E5E" stopOpacity="0.2" />
-                </linearGradient>
-                {/* Shadow face — bottom/back surface */}
-                <linearGradient id="inf-face-dark" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#9A7150" stopOpacity="0.15" />
-                  <stop offset="100%" stopColor="#E0A776" stopOpacity="0.5" />
-                </linearGradient>
-                {/* Bright edge — top highlight stroke */}
-                <linearGradient id="inf-bright" x1="0" y1="0" x2="1" y2="0.5">
-                  <stop offset="0%" stopColor="#F0C9A0" stopOpacity="1" />
-                  <stop offset="50%" stopColor="#E0A776" stopOpacity="0.8" />
-                  <stop offset="100%" stopColor="#C88E5E" stopOpacity="0.4" />
-                </linearGradient>
-                {/* Dim edge — back/shadow stroke */}
-                <linearGradient id="inf-dim" x1="1" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#C88E5E" stopOpacity="0.3" />
-                  <stop offset="100%" stopColor="#E0A776" stopOpacity="0.7" />
-                </linearGradient>
-                {/* Drop shadow */}
-                <filter id="inf-drop">
-                  <feDropShadow dx="6" dy="10" stdDeviation="12" floodColor="#33363D" floodOpacity="0.2" />
-                </filter>
-                {/* Glow for specular highlights */}
-                <filter id="inf-glow2">
-                  <feGaussianBlur stdDeviation="2" result="b" />
-                  <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
-                </filter>
-              </defs>
-
-              <g transform="rotate(-15 250 250)" filter="url(#inf-drop)">
-
-                {/* === BACK RIBBON (behind the cross) === */}
-                {/* Left-back lobe */}
-                <path
-                  d="M250 225
-                     C245 170, 165 125, 115 150
-                     C65 175, 55 235, 90 270
-                     C120 300, 190 285, 220 260
-                     L250 225Z"
-                  fill="url(#inf-face-dark)"
-                  stroke="url(#inf-dim)"
-                  strokeWidth="1.5"
-                />
-                {/* Right-back lobe */}
-                <path
-                  d="M250 275
-                     C255 330, 335 375, 385 350
-                     C435 325, 445 265, 410 230
-                     C380 200, 310 215, 280 240
-                     L250 275Z"
-                  fill="url(#inf-face-dark)"
-                  stroke="url(#inf-dim)"
-                  strokeWidth="1.5"
-                />
-
-                {/* === FRONT RIBBON (over the cross) === */}
-                {/* Left-front lobe */}
-                <path
-                  d="M250 275
-                     C245 330, 165 375, 115 350
-                     C65 325, 55 265, 90 230
-                     C120 200, 190 215, 220 240
-                     L250 275Z"
-                  fill="url(#inf-face-lit)"
-                  stroke="url(#inf-bright)"
-                  strokeWidth="1.8"
-                />
-                {/* Right-front lobe */}
-                <path
-                  d="M250 225
-                     C255 170, 335 125, 385 150
-                     C435 175, 445 235, 410 270
-                     C380 300, 310 285, 280 260
-                     L250 225Z"
-                  fill="url(#inf-face-lit)"
-                  stroke="url(#inf-bright)"
-                  strokeWidth="1.8"
-                />
-
-                {/* === SPECULAR HIGHLIGHTS === */}
-                {/* Top-edge bright line — left front */}
-                <path
-                  d="M250 275
-                     C245 330, 165 375, 115 350
-                     C65 325, 55 265, 90 230"
-                  fill="none"
-                  stroke="#F0C9A0"
-                  strokeWidth="0.8"
-                  opacity="0.7"
-                  filter="url(#inf-glow2)"
-                />
-                {/* Top-edge bright line — right front */}
-                <path
-                  d="M250 225
-                     C255 170, 335 125, 385 150
-                     C435 175, 445 235, 410 270"
-                  fill="none"
-                  stroke="#F0C9A0"
-                  strokeWidth="0.8"
-                  opacity="0.7"
-                  filter="url(#inf-glow2)"
-                />
-
-                {/* Center twist glow */}
-                <ellipse cx="250" cy="250" rx="12" ry="28" fill="#E0A776" opacity="0.12" />
-                <ellipse cx="250" cy="250" rx="4" ry="10" fill="#F0C9A0" opacity="0.2" />
-              </g>
-
-              {/* Decorative outer ring */}
-              <circle cx="250" cy="250" r="210" fill="none" stroke="#E0A776" strokeWidth="0.4" opacity="0.15" />
-              <circle cx="250" cy="250" r="220" fill="none" stroke="#E0A776" strokeWidth="0.2" opacity="0.08" />
-            </svg>
-          </div>
+          <InfinitySymbol />
         </div>
       </div>
     </section>
