@@ -108,7 +108,16 @@ const Services = () => {
             <a href="#contact" className="btn-gold px-6 py-3 inline-block text-[12px]">Learn more</a>
           </div>
 
-          <InfinitySymbol />
+          <div className="aspect-square bg-[#E8E4DE] w-full flex items-center justify-center relative overflow-hidden">
+            <img
+              src={tabs[active].image}
+              alt={tabs[active].alt}
+              loading="lazy"
+              width={1024}
+              height={1024}
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
       </div>
     </section>
