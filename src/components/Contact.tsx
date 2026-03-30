@@ -24,7 +24,7 @@ const Contact = () => {
               Start Managing Your Wealth Today
             </h2>
             <div className="gold-separator mb-6">
-              <div className="dot" /><div className="dot" />
+              <div className="dot" /><div className="dot-lg" /><div className="dot" />
             </div>
             <p className="text-slate text-base max-w-md">
               We respond personally within 24 hours. No call centers, no intermediaries.

@@ -22,7 +22,7 @@ const WorkProcess = () => {
               How We Work with Clients
             </h2>
             <div className="gold-separator justify-start mb-6">
-              <div className="dot" /><div className="dot" />
+              <div className="dot" /><div className="dot-lg" /><div className="dot" />
             </div>
             <p className="text-white/60 text-base mb-10">
               Each stage is adapted to your family, assets and jurisdictions
