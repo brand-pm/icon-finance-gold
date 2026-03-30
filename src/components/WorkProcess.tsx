@@ -55,7 +55,7 @@ const WorkProcess = () => {
                 >
                   {/* Marble texture overlay */}
                   <div
-                    className="absolute inset-0 pointer-events-none z-0 opacity-[0.08]"
+                    className="absolute inset-0 pointer-events-none z-0 opacity-20 mix-blend-overlay"
                     style={{
                       backgroundImage: `url(${marbleTexture})`,
                       backgroundSize: 'cover',
