@@ -19,7 +19,7 @@ const WhyUs = () => {
             Your Trusted Partner in Wealth Management
           </h2>
           <p className="text-slate text-base max-w-[560px] mx-auto">
-            We combine global expertise with personal attention to deliver exceptional wealth management
+            We combine international expertise from leading financial institutions with the personalized approach of a family office. Our team provides end-to-end support at all stages of managing your wealth
           </p>
         </div>
 
