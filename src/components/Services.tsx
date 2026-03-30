@@ -74,48 +74,54 @@ const Services = () => {
         </div>
 
         {/* Content */}
-        <div className="grid lg:grid-cols-[25%_40%_35%] gap-8 relative z-10" style={{ background: 'linear-gradient(to right, #FAFAFA, #D8D4CE)' }}>
-          {/* Tabs */}
-          <div className="flex lg:flex-col gap-2">
+        <div className="grid lg:grid-cols-[240px_1fr_320px] gap-12 relative z-10">
+          {/* Tabs — card style */}
+          <div className="bg-white shadow-md p-2 self-start">
             {tabs.map((tab, i) => (
               <button
                 key={i}
                 onClick={() => setActive(i)}
-                className={`text-left px-4 py-3 text-sm transition-all duration-300 flex items-center justify-between ${
+                className={`w-full text-left px-4 py-4 text-sm transition-all duration-300 flex items-center justify-between ${
                   i === active
-                    ? "border-l-2 border-gold text-charcoal font-semibold bg-white shadow-sm"
+                    ? "text-charcoal font-semibold"
                     : "text-slate hover:text-charcoal"
-                }`}
+                } ${i < tabs.length - 1 ? "border-b border-gray-100" : ""}`}
               >
-                {tab.name}
-                {i === active && <span className="text-gold">›</span>}
+                <span className="flex items-center gap-2">
+                  {i === active && <span className="text-gold text-[8px]">◆</span>}
+                  {tab.name}
+                </span>
+                {i === active && <span className="text-gold text-lg">›</span>}
               </button>
             ))}
           </div>
 
           {/* Content */}
-          <div className="opacity-0 animate-fade-up" key={active} style={{ animationDelay: "0.1s" }}>
-            <h3 className="text-charcoal text-[28px] font-light mb-4">{tabs[active].title}</h3>
-            <p className="text-slate text-base leading-[1.7] mb-8">{tabs[active].desc}</p>
-            <div className="flex gap-6 mb-8">
+          <div className="opacity-0 animate-fade-up flex flex-col justify-center" key={active} style={{ animationDelay: "0.1s" }}>
+            <h3 className="text-charcoal font-light mb-5" style={{ fontSize: "clamp(24px,3.5vw,36px)", lineHeight: 1.2 }}>
+              {tabs[active].title}
+            </h3>
+            <p className="text-slate text-base leading-[1.7] mb-10">{tabs[active].desc}</p>
+            <div className="flex gap-12 mb-10">
               {tabs[active].items.map((item, i) => (
-                <div key={i} className="flex items-start gap-2">
-                  <span className="text-gold font-medium text-sm">0{i + 1}</span>
+                <div key={i} className="flex flex-col gap-1">
+                  <span className="text-gold font-light text-2xl">0{i + 1}</span>
                   <span className="text-charcoal text-sm">{item}</span>
                 </div>
               ))}
             </div>
-            <a href="#contact" className="btn-gold px-6 py-3 inline-block text-[12px]">Learn more</a>
+            <a href="#contact" className="btn-gold px-8 py-3 inline-block text-[12px] self-start">Learn more</a>
           </div>
 
-          <div className="aspect-square w-full flex items-center justify-center relative overflow-hidden">
+          {/* Image */}
+          <div className="flex items-center justify-center">
             <img
               src={tabs[active].image}
               alt={tabs[active].alt}
               loading="lazy"
               width={1024}
               height={1024}
-              className="w-full h-full object-cover"
+              className="w-full h-auto object-cover"
             />
           </div>
         </div>
