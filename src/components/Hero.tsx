@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import heroBg from "../assets/hero-bg.png";
 
 const stats = [
   { value: 10, prefix: "$", suffix: "M", label: "under management" },
@@ -51,16 +52,10 @@ const StatCard = ({ stat }: { stat: (typeof stats)[0] }) => {
 
 const Hero = () => (
   <section className="relative flex items-center bg-navy overflow-hidden pt-20" style={{ minHeight: '75vh' }}>
-    {/* Background pattern */}
+    {/* Background */}
     <div className="absolute inset-0">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_50%,rgba(224,167,118,0.06)_0%,transparent_60%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_80%_20%,rgba(19,26,49,0.8)_0%,transparent_60%)]" />
-      <div
-        className="absolute inset-0 opacity-[0.04]"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h60v60H0z' fill='none'/%3E%3Cpath d='M0 30h60M30 0v60' stroke='%23E0A776' stroke-width='0.5'/%3E%3C/svg%3E")`,
-        }}
-      />
+      <img src={heroBg} alt="" className="absolute inset-0 w-full h-full object-cover" />
+      <div className="absolute inset-0 bg-navy/40" />
     </div>
 
     <div className="container-main relative z-10 w-full">
