@@ -57,7 +57,7 @@ const Insights = () => {
                   loading="lazy"
                   width={800}
                   height={512}
-                  className="w-full h-full object-cover sepia-[.3] group-hover:sepia-0 group-hover:scale-105 transition-all duration-500"
+                  className="w-full h-full object-cover grayscale brightness-90 contrast-90 group-hover:grayscale-0 group-hover:brightness-100 group-hover:contrast-100 group-hover:scale-105 transition-all duration-500"
                 />
               </div>
               <div className="p-6">
