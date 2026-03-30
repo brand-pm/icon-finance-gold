@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useScrollReveal } from "../hooks/useScrollReveal";
+import InfinitySymbol from "./InfinitySymbol";
 
 const tabs = [
   {
