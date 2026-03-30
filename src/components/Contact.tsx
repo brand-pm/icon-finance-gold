@@ -18,7 +18,7 @@ const Contact = () => {
       <div className="container-main">
         <div className="grid lg:grid-cols-2 gap-0">
           {/* Left */}
-          <div className="flex flex-col items-center justify-center p-12 text-center opacity-0 animate-fade-up">
+          <div className="relative marble-texture marble-texture-strong flex flex-col items-center justify-center p-12 text-center opacity-0 animate-fade-up">
             <p className="eyebrow mb-4">Contact Form</p>
             <h2 className="text-charcoal font-light mb-6" style={{ fontSize: "clamp(28px,5vw,42px)" }}>
               Start Managing Your Wealth Today
