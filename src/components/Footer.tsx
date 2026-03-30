@@ -26,7 +26,7 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
         {/* Brand */}
         <div>
-          <img src={logo} alt="Icon Finance & Wealth Management" className="h-10 mb-4" />
+          <img src={logo} alt="Icon Finance & Wealth Management" className="h-[46px] mb-4" />
           <p className="text-white/50 text-sm leading-relaxed">
             Preserving and growing wealth across generations with integrity and expertise.
           </p>
