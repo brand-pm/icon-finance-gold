@@ -59,7 +59,7 @@ const Services = () => {
         </div>
 
         {/* Content */}
-        <div className="grid lg:grid-cols-[25%_40%_35%] gap-8">
+        <div className="grid lg:grid-cols-[25%_40%_35%] gap-8 relative z-10 bg-offwhite">
           {/* Tabs */}
           <div className="flex lg:flex-col gap-2">
             {tabs.map((tab, i) => (
