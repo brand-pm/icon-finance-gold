@@ -54,7 +54,11 @@ const Services = () => {
   const ref = useScrollReveal();
 
   return (
-    <section id="services" className="section-padding bg-offwhite marble-texture relative">
+    <section
+      id="services"
+      className="section-padding relative"
+      style={{ background: "linear-gradient(180deg, #F5F3F0 0%, #EDE9E4 100%)" }}
+    >
       <div className="container-main" ref={ref}>
         {/* Header */}
         <div className="text-center mb-16 opacity-0 animate-fade-up">
@@ -73,55 +77,78 @@ const Services = () => {
           </div>
         </div>
 
-        {/* Content */}
-        <div className="grid lg:grid-cols-[240px_1fr_320px] gap-12 relative z-10">
-          {/* Tabs — card style */}
-          <div className="bg-white shadow-md p-2 self-start">
+        {/* Main content card */}
+        <div
+          className="grid lg:grid-cols-[220px_1fr_300px] gap-0 overflow-hidden"
+          style={{
+            background: "linear-gradient(135deg, #FAFAFA 0%, #F0ECE7 50%, #D8D4CE 100%)",
+            boxShadow: "0 8px 40px rgba(0,0,0,0.08)",
+          }}
+        >
+          {/* Tabs */}
+          <div className="py-6 px-2 border-r border-black/[0.06]">
             {tabs.map((tab, i) => (
               <button
                 key={i}
                 onClick={() => setActive(i)}
-                className={`w-full text-left px-4 py-4 text-sm transition-all duration-300 flex items-center justify-between ${
+                className={`w-full text-left px-5 py-4 text-sm transition-all duration-300 flex items-center justify-between ${
                   i === active
                     ? "text-charcoal font-semibold"
                     : "text-slate hover:text-charcoal"
-                } ${i < tabs.length - 1 ? "border-b border-gray-100" : ""}`}
+                } ${i < tabs.length - 1 ? "border-b border-black/[0.05]" : ""}`}
               >
-                <span className="flex items-center gap-2">
+                <span className="flex items-center gap-2.5">
                   {i === active && <span className="text-gold text-[8px]">◆</span>}
                   {tab.name}
                 </span>
-                {i === active && <span className="text-gold text-lg">›</span>}
+                {i === active && <span className="text-gold text-lg leading-none">›</span>}
               </button>
             ))}
           </div>
 
           {/* Content */}
-          <div className="opacity-0 animate-fade-up flex flex-col justify-center" key={active} style={{ animationDelay: "0.1s" }}>
-            <h3 className="text-charcoal font-light mb-5" style={{ fontSize: "clamp(24px,3.5vw,36px)", lineHeight: 1.2 }}>
+          <div
+            className="opacity-0 animate-fade-up flex flex-col justify-center px-10 py-10"
+            key={active}
+            style={{ animationDelay: "0.1s" }}
+          >
+            <h3
+              className="text-charcoal font-light mb-5"
+              style={{ fontSize: "clamp(24px,3vw,34px)", lineHeight: 1.2 }}
+            >
               {tabs[active].title}
             </h3>
-            <p className="text-slate text-base leading-[1.7] mb-10">{tabs[active].desc}</p>
+            <p className="text-slate text-[15px] leading-[1.75] mb-10">
+              {tabs[active].desc}
+            </p>
             <div className="flex gap-12 mb-10">
               {tabs[active].items.map((item, i) => (
-                <div key={i} className="flex flex-col gap-1">
+                <div key={i} className="flex flex-col gap-1.5">
                   <span className="text-gold font-light text-2xl">0{i + 1}</span>
                   <span className="text-charcoal text-sm">{item}</span>
                 </div>
               ))}
             </div>
-            <a href="#contact" className="btn-gold px-8 py-3 inline-block text-[12px] self-start">Learn more</a>
+            <a
+              href="#contact"
+              className="btn-gold px-8 py-3 inline-block text-[12px] self-start"
+            >
+              Learn more
+            </a>
           </div>
 
           {/* Image */}
-          <div className="flex items-center justify-center">
+          <div
+            className="flex items-center justify-center p-6"
+            style={{ background: "#D8D4CE" }}
+          >
             <img
               src={tabs[active].image}
               alt={tabs[active].alt}
               loading="lazy"
               width={1024}
               height={1024}
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-contain max-h-[360px]"
             />
           </div>
         </div>
