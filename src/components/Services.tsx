@@ -93,8 +93,83 @@ const Services = () => {
             <a href="#contact" className="btn-gold px-6 py-3 inline-block text-[12px]">Learn more</a>
           </div>
 
-          {/* Image placeholder */}
-          <div className="aspect-square bg-[#E8E4DE] w-full" />
+          {/* Infinity symbol artwork */}
+          <div className="aspect-square bg-[#E8E4DE] w-full flex items-center justify-center relative overflow-hidden">
+            {/* Subtle radial glow behind the symbol */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(224,167,118,0.12)_0%,transparent_70%)]" />
+            <svg
+              viewBox="0 0 400 400"
+              className="w-[75%] h-[75%] relative z-10"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <linearGradient id="inf-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#E0A776" />
+                  <stop offset="50%" stopColor="#C88E5E" />
+                  <stop offset="100%" stopColor="#E0A776" />
+                </linearGradient>
+                <linearGradient id="inf-grad-light" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stopColor="#E0A776" stopOpacity="0.15" />
+                  <stop offset="50%" stopColor="#E0A776" stopOpacity="0.06" />
+                  <stop offset="100%" stopColor="#E0A776" stopOpacity="0.15" />
+                </linearGradient>
+                <filter id="inf-glow">
+                  <feGaussianBlur stdDeviation="6" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+
+              {/* Outer decorative ring */}
+              <circle cx="200" cy="200" r="170" fill="none" stroke="#E0A776" strokeWidth="0.5" opacity="0.2" />
+              <circle cx="200" cy="200" r="160" fill="none" stroke="#E0A776" strokeWidth="0.3" opacity="0.1" />
+
+              {/* Corner accents */}
+              {[0, 90, 180, 270].map((angle) => (
+                <line
+                  key={angle}
+                  x1="200"
+                  y1="30"
+                  x2="200"
+                  y2="45"
+                  stroke="#E0A776"
+                  strokeWidth="1"
+                  opacity="0.3"
+                  transform={`rotate(${angle} 200 200)`}
+                />
+              ))}
+
+              {/* Main infinity — thick stroke with glow */}
+              <path
+                d="M200 200 C200 155, 260 130, 295 155 C330 180, 330 220, 295 245 C260 270, 200 245, 200 200 C200 155, 140 130, 105 155 C70 180, 70 220, 105 245 C140 270, 200 245, 200 200Z"
+                fill="none"
+                stroke="url(#inf-grad)"
+                strokeWidth="2.5"
+                filter="url(#inf-glow)"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+
+              {/* Inner thinner infinity for depth */}
+              <path
+                d="M200 200 C200 162, 255 140, 285 160 C315 180, 315 220, 285 240 C255 260, 200 238, 200 200 C200 162, 145 140, 115 160 C85 180, 85 220, 115 240 C145 260, 200 238, 200 200Z"
+                fill="url(#inf-grad-light)"
+                stroke="url(#inf-grad)"
+                strokeWidth="0.5"
+                opacity="0.5"
+              />
+
+              {/* Center dot */}
+              <circle cx="200" cy="200" r="3" fill="#E0A776" opacity="0.8" />
+              <circle cx="200" cy="200" r="6" fill="none" stroke="#E0A776" strokeWidth="0.5" opacity="0.3" />
+
+              {/* Small decorative diamonds at the widest points */}
+              <rect x="63" y="197" width="6" height="6" transform="rotate(45 66 200)" fill="#E0A776" opacity="0.4" />
+              <rect x="331" y="197" width="6" height="6" transform="rotate(45 334 200)" fill="#E0A776" opacity="0.4" />
+            </svg>
+          </div>
         </div>
       </div>
     </section>
