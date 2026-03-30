@@ -95,121 +95,128 @@ const Services = () => {
 
           {/* Infinity symbol artwork */}
           <div className="aspect-square bg-[#E8E4DE] w-full flex items-center justify-center relative overflow-hidden">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(224,167,118,0.08)_0%,transparent_70%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_45%_48%,rgba(224,167,118,0.15)_0%,transparent_65%)]" />
             <svg
               viewBox="0 0 500 500"
-              className="w-[80%] h-[80%] relative z-10"
+              className="w-[82%] h-[82%] relative z-10"
               xmlns="http://www.w3.org/2000/svg"
             >
               <defs>
-                {/* Gold gradient top-lit */}
-                <linearGradient id="inf-top" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#E0A776" stopOpacity="0.35" />
-                  <stop offset="100%" stopColor="#C88E5E" stopOpacity="0.08" />
+                {/* Lit face — top surface catching light */}
+                <linearGradient id="inf-face-lit" x1="0" y1="0" x2="0.3" y2="1">
+                  <stop offset="0%" stopColor="#E0A776" stopOpacity="0.7" />
+                  <stop offset="50%" stopColor="#D4975F" stopOpacity="0.45" />
+                  <stop offset="100%" stopColor="#C88E5E" stopOpacity="0.2" />
                 </linearGradient>
-                {/* Gold gradient bottom-lit for 3D feel */}
-                <linearGradient id="inf-bot" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#C88E5E" stopOpacity="0.05" />
-                  <stop offset="100%" stopColor="#E0A776" stopOpacity="0.25" />
+                {/* Shadow face — bottom/back surface */}
+                <linearGradient id="inf-face-dark" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stopColor="#9A7150" stopOpacity="0.15" />
+                  <stop offset="100%" stopColor="#E0A776" stopOpacity="0.5" />
                 </linearGradient>
-                {/* Edge highlight */}
-                <linearGradient id="inf-edge" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stopColor="#E0A776" stopOpacity="0.9" />
-                  <stop offset="40%" stopColor="#C88E5E" stopOpacity="0.6" />
-                  <stop offset="100%" stopColor="#E0A776" stopOpacity="0.3" />
+                {/* Bright edge — top highlight stroke */}
+                <linearGradient id="inf-bright" x1="0" y1="0" x2="1" y2="0.5">
+                  <stop offset="0%" stopColor="#F0C9A0" stopOpacity="1" />
+                  <stop offset="50%" stopColor="#E0A776" stopOpacity="0.8" />
+                  <stop offset="100%" stopColor="#C88E5E" stopOpacity="0.4" />
                 </linearGradient>
-                <linearGradient id="inf-edge2" x1="1" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#E0A776" stopOpacity="0.3" />
-                  <stop offset="60%" stopColor="#C88E5E" stopOpacity="0.6" />
-                  <stop offset="100%" stopColor="#E0A776" stopOpacity="0.9" />
+                {/* Dim edge — back/shadow stroke */}
+                <linearGradient id="inf-dim" x1="1" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stopColor="#C88E5E" stopOpacity="0.3" />
+                  <stop offset="100%" stopColor="#E0A776" stopOpacity="0.7" />
                 </linearGradient>
-                {/* Shadow */}
-                <filter id="inf-shadow">
-                  <feDropShadow dx="4" dy="6" stdDeviation="8" floodColor="#33363D" floodOpacity="0.12" />
+                {/* Drop shadow */}
+                <filter id="inf-drop">
+                  <feDropShadow dx="6" dy="10" stdDeviation="12" floodColor="#33363D" floodOpacity="0.2" />
                 </filter>
-                {/* Soft inner glow */}
-                <filter id="inf-inner-glow">
-                  <feGaussianBlur stdDeviation="3" result="blur" />
-                  <feMerge>
-                    <feMergeNode in="blur" />
-                    <feMergeNode in="SourceGraphic" />
-                  </feMerge>
+                {/* Glow for specular highlights */}
+                <filter id="inf-glow2">
+                  <feGaussianBlur stdDeviation="2" result="b" />
+                  <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
                 </filter>
               </defs>
 
-              <g transform="rotate(-12 250 250)" filter="url(#inf-shadow)">
-                {/* Back ribbon — bottom half of the twist, behind the cross */}
+              <g transform="rotate(-15 250 250)" filter="url(#inf-drop)">
+
+                {/* === BACK RIBBON (behind the cross) === */}
+                {/* Left-back lobe */}
                 <path
-                  d="M250 230
-                     C250 180, 175 140, 130 160
-                     C85 180, 75 230, 100 260
-                     C125 290, 180 280, 210 260
-                     L250 230Z"
-                  fill="url(#inf-bot)"
-                  stroke="url(#inf-edge2)"
-                  strokeWidth="1"
+                  d="M250 225
+                     C245 170, 165 125, 115 150
+                     C65 175, 55 235, 90 270
+                     C120 300, 190 285, 220 260
+                     L250 225Z"
+                  fill="url(#inf-face-dark)"
+                  stroke="url(#inf-dim)"
+                  strokeWidth="1.5"
                 />
+                {/* Right-back lobe */}
                 <path
-                  d="M250 270
-                     C250 320, 325 360, 370 340
-                     C415 320, 425 270, 400 240
-                     C375 210, 320 220, 290 240
-                     L250 270Z"
-                  fill="url(#inf-bot)"
-                  stroke="url(#inf-edge2)"
-                  strokeWidth="1"
+                  d="M250 275
+                     C255 330, 335 375, 385 350
+                     C435 325, 445 265, 410 230
+                     C380 200, 310 215, 280 240
+                     L250 275Z"
+                  fill="url(#inf-face-dark)"
+                  stroke="url(#inf-dim)"
+                  strokeWidth="1.5"
                 />
 
-                {/* Front ribbon — top half, over the cross */}
+                {/* === FRONT RIBBON (over the cross) === */}
+                {/* Left-front lobe */}
                 <path
-                  d="M250 270
-                     C250 320, 175 360, 130 340
-                     C85 320, 75 270, 100 240
-                     C125 210, 180 220, 210 240
-                     L250 270Z"
-                  fill="url(#inf-top)"
-                  stroke="url(#inf-edge)"
-                  strokeWidth="1.2"
+                  d="M250 275
+                     C245 330, 165 375, 115 350
+                     C65 325, 55 265, 90 230
+                     C120 200, 190 215, 220 240
+                     L250 275Z"
+                  fill="url(#inf-face-lit)"
+                  stroke="url(#inf-bright)"
+                  strokeWidth="1.8"
                 />
+                {/* Right-front lobe */}
                 <path
-                  d="M250 230
-                     C250 180, 325 140, 370 160
-                     C415 180, 425 230, 400 260
-                     C375 290, 320 280, 290 260
-                     L250 230Z"
-                  fill="url(#inf-top)"
-                  stroke="url(#inf-edge)"
-                  strokeWidth="1.2"
+                  d="M250 225
+                     C255 170, 335 125, 385 150
+                     C435 175, 445 235, 410 270
+                     C380 300, 310 285, 280 260
+                     L250 225Z"
+                  fill="url(#inf-face-lit)"
+                  stroke="url(#inf-bright)"
+                  strokeWidth="1.8"
                 />
 
-                {/* Center cross highlight */}
-                <ellipse cx="250" cy="250" rx="8" ry="22" fill="#E0A776" opacity="0.08" />
-
-                {/* Specular edge highlights — thin bright lines on top edges */}
+                {/* === SPECULAR HIGHLIGHTS === */}
+                {/* Top-edge bright line — left front */}
                 <path
-                  d="M250 270
-                     C250 320, 175 360, 130 340
-                     C85 320, 75 270, 100 240"
+                  d="M250 275
+                     C245 330, 165 375, 115 350
+                     C65 325, 55 265, 90 230"
                   fill="none"
-                  stroke="#E0A776"
-                  strokeWidth="0.5"
-                  opacity="0.5"
-                  filter="url(#inf-inner-glow)"
+                  stroke="#F0C9A0"
+                  strokeWidth="0.8"
+                  opacity="0.7"
+                  filter="url(#inf-glow2)"
                 />
+                {/* Top-edge bright line — right front */}
                 <path
-                  d="M250 230
-                     C250 180, 325 140, 370 160
-                     C415 180, 425 230, 400 260"
+                  d="M250 225
+                     C255 170, 335 125, 385 150
+                     C435 175, 445 235, 410 270"
                   fill="none"
-                  stroke="#E0A776"
-                  strokeWidth="0.5"
-                  opacity="0.5"
-                  filter="url(#inf-inner-glow)"
+                  stroke="#F0C9A0"
+                  strokeWidth="0.8"
+                  opacity="0.7"
+                  filter="url(#inf-glow2)"
                 />
+
+                {/* Center twist glow */}
+                <ellipse cx="250" cy="250" rx="12" ry="28" fill="#E0A776" opacity="0.12" />
+                <ellipse cx="250" cy="250" rx="4" ry="10" fill="#F0C9A0" opacity="0.2" />
               </g>
 
-              {/* Subtle decorative elements */}
-              <circle cx="250" cy="250" r="190" fill="none" stroke="#E0A776" strokeWidth="0.3" opacity="0.12" />
+              {/* Decorative outer ring */}
+              <circle cx="250" cy="250" r="210" fill="none" stroke="#E0A776" strokeWidth="0.4" opacity="0.15" />
+              <circle cx="250" cy="250" r="220" fill="none" stroke="#E0A776" strokeWidth="0.2" opacity="0.08" />
             </svg>
           </div>
         </div>
