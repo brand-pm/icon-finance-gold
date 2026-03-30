@@ -66,7 +66,7 @@ const Services = () => {
             Comprehensive Solutions for Your Capital
           </h2>
           <p className="text-slate text-base max-w-[520px] mx-auto mb-6">
-            Tailored wealth management services designed around your unique goals and circumstances
+            A tailored approach to wealth management that reflects your goals and international opportunities
           </p>
           <div className="gold-separator">
             <div className="dot" /><div className="dot-lg" /><div className="dot" />
