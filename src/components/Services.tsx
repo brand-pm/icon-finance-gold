@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { useScrollReveal } from "../hooks/useScrollReveal";
-import InfinitySymbol from "./InfinitySymbol";
+import infinityImg from "../assets/infinity-symbol.png";
+import familyImg from "../assets/family-office-symbol.png";
+import structuringImg from "../assets/structuring-tax-symbol.png";
+import corporateImg from "../assets/corporate-services-symbol.png";
+import specialImg from "../assets/special-solutions-symbol.png";
 
 const tabs = [
   {
@@ -8,30 +12,40 @@ const tabs = [
     title: "Holistic solutions for preserving and growing wealth",
     desc: "We focus on long-term partnerships and mutual growth, offering tailored financial strategies to meet our clients' changing needs.",
     items: ["Portfolio management", "Investment strategies", "Alternative assets"],
+    image: infinityImg,
+    alt: "Infinity symbol — wealth preservation across generations",
   },
   {
     name: "Family Office",
     title: "Complete family office services and governance",
     desc: "Comprehensive management of family assets, governance structures, and succession planning across generations.",
     items: ["Family governance", "Succession planning", "Philanthropy advisory"],
+    image: familyImg,
+    alt: "Family tree — multi-generational wealth stewardship",
   },
   {
     name: "Structuring & Tax",
     title: "Efficient wealth structuring and tax optimization",
     desc: "International tax planning and legal structuring to protect and optimize your wealth across jurisdictions.",
     items: ["Tax optimization", "Legal structuring", "Compliance advisory"],
+    image: structuringImg,
+    alt: "Shield with scales — legal protection and balance",
   },
   {
     name: "Corporate Services",
     title: "Strategic corporate and business advisory",
     desc: "Expert guidance on corporate structures, M&A transactions, and strategic business initiatives.",
     items: ["M&A advisory", "Corporate restructuring", "Business strategy"],
+    image: corporateImg,
+    alt: "Classical column — corporate strength and foundation",
   },
   {
     name: "Special Solutions",
     title: "Bespoke solutions for unique requirements",
     desc: "Custom-crafted solutions for complex situations that require innovative and creative approaches.",
     items: ["Art & collectibles", "Real estate advisory", "Lifestyle management"],
+    image: specialImg,
+    alt: "Diamond — bespoke luxury solutions",
   },
 ];
 
