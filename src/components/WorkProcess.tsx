@@ -49,7 +49,7 @@ const WorkProcess = () => {
                     backgroundRepeat: 'repeat',
                   }}
                 />
-                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 relative z-[1]">
                   <div>
                     <p className="eyebrow text-[10px] mb-1">Stage {i + 1}</p>
                     <h3 className="text-white text-xl font-normal">{stage.title}</h3>
