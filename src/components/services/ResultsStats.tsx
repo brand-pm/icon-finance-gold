@@ -20,7 +20,7 @@ const ResultsStats = ({ items }: ResultsStatsProps) => {
 
   const renderStat = (item: StatItem, i: number, arr: StatItem[]) => (
     <div key={i} className="flex items-center">
-      <div className="flex-1 flex flex-col items-center text-center py-10 px-4">
+      <div className="flex-1 flex flex-col items-center text-center py-6 px-4">
         {/* Value line */}
         <div className="flex items-start justify-center leading-none">
           {item.prefix && (
