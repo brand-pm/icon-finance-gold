@@ -21,7 +21,9 @@ const InvestmentOpportunities = ({ categories }: InvestmentOpportunitiesProps) =
           <h2 className="text-charcoal font-light" style={{ fontSize: "clamp(26px,4vw,38px)", maxWidth: "480px", margin: "0 auto" }}>
             Wide Range of Investment Opportunities
           </h2>
-          <div className="gold-separator mt-8"></div>
+          <div className="gold-separator mt-8">
+            <div className="dot" /><div className="dot-lg" /><div className="dot" />
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 opacity-0 animate-fade-up" style={{ animationDelay: "0.15s" }}>
