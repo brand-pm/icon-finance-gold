@@ -123,12 +123,12 @@ const WealthManagement = () => (
 
     <PortfolioManagement
       title="How We Manage Your Portfolio"
-      description="Our systematic approach ensures your portfolio is continuously optimized to meet your financial objectives while managing risk effectively."
+      description="Each stage is adapted to your family, assets and jurisdictions"
       steps={[
-        { number: "01", title: "Analysis & Planning", items: ["In-depth financial analysis", "Risk profiling and assessment", "Goal-based strategy formulation", "Tax-optimized planning"] },
-        { number: "02", title: "Portfolio Construction", items: ["Strategic asset allocation", "Instrument selection", "Diversification framework", "Position sizing and entry"] },
-        { number: "03", title: "Active Management", items: ["Continuous market monitoring", "Portfolio rebalancing", "Tactical opportunity capture", "Risk exposure adjustment"] },
-        { number: "04", title: "Reporting & Control", items: ["Monthly performance reports", "Quarterly strategy reviews", "Compliance monitoring", "Transparent fee disclosure"] },
+        { number: "1", title: "Analysis & Planning", timeline: "1–2 weeks", result: "Investment Policy Statement (IPS)", activities: ["Audit of current assets and liabilities", "Defining investment goals and constraints", "Risk profile and time horizon analysis", "Tax planning and optimization"] },
+        { number: "2", title: "Portfolio Construction", timeline: "3–4 weeks", result: "Diversified Portfolio", activities: ["Strategic asset allocation", "Selection of specific instruments", "Due diligence of managers and funds", "Opening accounts and structuring"] },
+        { number: "3", title: "Active Management", timeline: "Ongoing", result: "Optimal risk/return ratio", activities: ["Daily market monitoring", "Tactical allocation adjustments", "Portfolio rebalancing (quarterly)", "Risk and liquidity management"] },
+        { number: "4", title: "Reporting & Control", timeline: "Regular", result: "Full transparency and control", activities: ["Monthly portfolio reports", "Quarterly client meetings", "Annual strategy review", "Tax reporting"] },
       ]}
     />
 
