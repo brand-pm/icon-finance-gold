@@ -47,12 +47,12 @@ const WealthManagement = () => (
 
     <Philosophy
       sectionTitle="Icon Finance Wealth Management Philosophy"
-      subtitle="At Icon Finance, our philosophy is built on four foundational pillars that guide every decision we make on behalf of our clients."
+      subtitle="We apply an institutional approach to private wealth management, combining the best practices of global investment houses with the flexibility and personalization of a family office. Each portfolio is built individually, taking into account the client's goals and time horizon."
       items={[
-        { number: "01", title: "Client-First Approach", description: "Every strategy begins with understanding your unique situation, goals, and risk tolerance to deliver truly personalized solutions." },
-        { number: "02", title: "Active Management", description: "Our portfolio managers continuously monitor markets and adjust allocations to capture opportunities and mitigate risks." },
-        { number: "03", title: "Risk Control", description: "We employ rigorous risk management frameworks to protect your capital while pursuing optimal risk-adjusted returns." },
-        { number: "04", title: "Diversification", description: "We build resilient portfolios diversified across asset classes, geographies, and investment styles to reduce concentration risk." },
+        { number: "01", title: "Global Approach", description: "Investments in developed and emerging markets worldwide" },
+        { number: "02", title: "Active Management", description: "Tactical allocation to capitalize on market opportunities" },
+        { number: "03", title: "Risk Control", description: "Continuous monitoring and management of all types of risks" },
+        { number: "04", title: "Diversification", description: "Distribution across 15+ asset classes to reduce risk" },
       ]}
     />
 
