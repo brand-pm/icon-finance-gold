@@ -15,12 +15,12 @@ const ServiceHero = ({ eyebrow, title, description, image, imageAlt }: ServiceHe
       <img
         src={image}
         alt=""
-        className="absolute top-1/2 right-0 -translate-y-1/2 w-[55%] h-[90%] object-contain opacity-80 hidden lg:block"
-        style={{ filter: "brightness(0.85) saturate(1.2)" }}
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ filter: "brightness(0.7) saturate(1.2)", objectPosition: "60% center" }}
       />
       {/* Gradient overlays to blend with navy */}
-      <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/95 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-navy/60" />
+      <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/80 to-navy/20" />
+      <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-navy/50" />
       <div className="absolute inset-0 bg-gradient-to-b from-navy/80 via-transparent to-navy" />
     </div>
 
