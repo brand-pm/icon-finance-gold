@@ -22,7 +22,7 @@ const ResultsStats = ({ items }: ResultsStatsProps) => {
     <div key={i} className="flex items-center">
       <div className="flex-1 flex flex-col items-center text-center py-6 px-4">
         {/* Value line */}
-        <div className="flex items-end justify-center leading-none">
+        <div className="flex items-baseline justify-center leading-none">
           {item.prefix && (
             <span className="text-gold font-light" style={{ fontSize: "clamp(24px, 3vw, 36px)", marginBottom: "0.15em" }}>
               {item.prefix}
@@ -32,7 +32,7 @@ const ResultsStats = ({ items }: ResultsStatsProps) => {
             {item.main}
           </span>
           {item.suffix && (
-            <span className="text-gold/70 font-light" style={{ fontSize: "clamp(20px, 2.5vw, 28px)", marginTop: "0.15em" }}>
+            <span className="text-gold/70 font-light self-start" style={{ fontSize: "clamp(20px, 2.5vw, 28px)", marginTop: "0.15em" }}>
               {item.suffix}
             </span>
           )}
