@@ -9,7 +9,7 @@ interface ServiceHeroProps {
 }
 
 const ServiceHero = ({ eyebrow, title, description, image, imageAlt }: ServiceHeroProps) => (
-  <section className="relative bg-navy overflow-hidden pt-28 pb-20" style={{ minHeight: "70vh" }}>
+  <section className="relative bg-navy overflow-hidden pt-24 pb-12" style={{ minHeight: "35vh" }}>
     {/* Background image — stretched across right side */}
     <div className="absolute inset-0">
       <img
@@ -23,7 +23,7 @@ const ServiceHero = ({ eyebrow, title, description, image, imageAlt }: ServiceHe
       <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-navy/50" />
     </div>
 
-    <div className="container-main relative z-10 flex items-center" style={{ minHeight: "55vh" }}>
+    <div className="container-main relative z-10 flex items-center" style={{ minHeight: "28vh" }}>
       <div className="max-w-xl">
         <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
           <p className="eyebrow mb-6">{eyebrow}</p>
