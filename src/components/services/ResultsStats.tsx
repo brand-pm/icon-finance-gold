@@ -38,11 +38,11 @@ const ResultsStats = ({ items }: ResultsStatsProps) => {
           )}
         </div>
         {/* Subtitle — gold italic, tight to number */}
-        <div className="text-gold font-light italic" style={{ fontSize: "clamp(18px, 2.5vw, 26px)", marginTop: "-2px" }}>
+        <div className="text-gold font-light italic" style={{ fontSize: "clamp(18px, 2.5vw, 26px)", marginTop: "-4px", lineHeight: 1.2 }}>
           {item.subtitle}
         </div>
         {/* Label — white */}
-        <div className="text-white/70 text-sm mt-3">{item.label}</div>
+        <div className="text-white/70 text-sm mt-1">{item.label}</div>
       </div>
       {i < arr.length - 1 && (
         <div className="hidden md:block w-px self-stretch" style={{ background: "linear-gradient(180deg, transparent 10%, rgba(224,167,118,0.25) 50%, transparent 90%)" }} />
