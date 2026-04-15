@@ -35,15 +35,15 @@ const WhoBenefits = ({ sectionTitle, items }: WhoBenefitsProps) => {
               return (
                 <div
                   key={i}
-                  className={`transition-colors duration-300 ${isOpen ? "bg-navy" : "border-b border-black/10"}`}
+                  className={`transition-colors duration-300 border-b border-gold/30 ${isOpen ? "bg-navy" : ""}`}
                 >
                   <button
                     onClick={() => setOpenIndex(isOpen ? null : i)}
                     className="w-full flex items-center justify-between py-5 px-5 text-left"
                   >
                     <span className="flex items-center gap-3">
-                      <span className={`text-xs ${isOpen ? "text-gold" : "text-gold"}`}>◆</span>
-                      <span className={`font-medium text-[15px] ${isOpen ? "text-white" : "text-charcoal"}`}>{item.title}</span>
+                      <span className="text-gold text-xs">◆</span>
+                      <span className={`font-medium text-[15px] ${isOpen ? "text-gold" : "text-charcoal"}`}>{item.title}</span>
                     </span>
                     <ChevronDown
                       className={`w-5 h-5 text-gold transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
