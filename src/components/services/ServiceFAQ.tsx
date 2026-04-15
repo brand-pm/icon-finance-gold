@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { useScrollReveal } from "../../hooks/useScrollReveal";
 
 interface FAQItem {
   question: string;
@@ -12,21 +13,22 @@ interface ServiceFAQProps {
 
 const ServiceFAQ = ({ items }: ServiceFAQProps) => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const ref = useScrollReveal();
 
   return (
     <section className="section-padding marble-texture" style={{ background: "linear-gradient(180deg, #F5F3F0 0%, #EDE9E4 100%)" }}>
-      <div className="container-main">
+      <div className="container-main" ref={ref}>
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left */}
-          <div>
+          <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
             <p className="eyebrow mb-4">FAQ</p>
             <h2 className="text-charcoal font-light" style={{ fontSize: "clamp(26px,4vw,38px)" }}>
-              Frequently Asked Questions
+              Frequently Asked<br />Questions
             </h2>
           </div>
 
           {/* Right */}
-          <div className="flex flex-col">
+          <div className="flex flex-col opacity-0 animate-fade-up" style={{ animationDelay: "0.2s" }}>
             {items.map((item, i) => (
               <div key={i} className="border-b border-black/10">
                 <button
