@@ -21,7 +21,6 @@ const ServiceHero = ({ eyebrow, title, description, image, imageAlt }: ServiceHe
       {/* Gradient overlays to blend with navy */}
       <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/80 to-navy/20" />
       <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-navy/50" />
-      </div>
     </div>
 
     <div className="container-main relative z-10 flex items-center" style={{ minHeight: "55vh" }}>
