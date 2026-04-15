@@ -97,19 +97,25 @@ const WealthManagement = () => (
         {
           name: "Traditional Assets",
           items: [
-            { title: "Equities", description: "Global equity markets with focus on quality and value" },
-            { title: "Fixed Income", description: "Government and corporate bonds across maturities" },
-            { title: "Real Estate", description: "Direct and indirect real estate investments" },
-            { title: "Cash & Equivalents", description: "Money market and short-term instruments" },
+            { title: "Developed market equities", description: "US, Europe, Japan" },
+            { title: "Equities of emerging markets", description: "China, India, Latin America" },
+            { title: "Government bonds", description: "US Treasuries, German Bunds" },
+            { title: "Corporate bonds", description: "Investment grade and high yield" },
+            { title: "Money market and deposits", description: "" },
           ],
         },
         {
           name: "Alternative Investments",
+          dark: true,
           items: [
-            { title: "Hedge Funds", description: "Multi-strategy and market-neutral approaches" },
-            { title: "Private Equity", description: "Growth capital and buyout opportunities" },
-            { title: "Venture Capital", description: "Early-stage and growth-stage investments" },
-            { title: "Commodities", description: "Precious metals, energy, and agricultural products" },
+            { title: "Private Equity", description: "direct investments in companies" },
+            { title: "Venture funds", description: "technology startups" },
+            { title: "Hedge funds", description: "market neutral, long/short" },
+            { title: "Real estate", description: "commercial and residential" },
+            { title: "Commodities", description: "gold, oil, agricultural" },
+            { title: "Crypto assets", description: "Bitcoin, Ethereum" },
+            { title: "Infrastructure projects", description: "" },
+            { title: "Art and collectibles", description: "" },
           ],
         },
       ]}
