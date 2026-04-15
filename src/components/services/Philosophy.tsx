@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 
 interface PhilosophyItem {
