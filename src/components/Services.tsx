@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import infinityImg from "../assets/infinity-symbol.png";
 import familyImg from "../assets/family-office-symbol.png";
@@ -14,6 +15,7 @@ const tabs = [
     items: ["Portfolio management", "Investment strategies", "Alternative assets"],
     image: infinityImg,
     alt: "Infinity symbol — wealth preservation across generations",
+    link: "/services/wealth-management",
   },
   {
     name: "Family Office",
@@ -22,6 +24,7 @@ const tabs = [
     items: ["Family governance", "Succession planning", "Philanthropy advisory"],
     image: familyImg,
     alt: "Family tree — multi-generational wealth stewardship",
+    link: "#",
   },
   {
     name: "Structuring & Tax",
@@ -30,6 +33,7 @@ const tabs = [
     items: ["Tax optimization", "Legal structuring", "Compliance advisory"],
     image: structuringImg,
     alt: "Shield with scales — legal protection and balance",
+    link: "#",
   },
   {
     name: "Corporate Services",
@@ -38,6 +42,7 @@ const tabs = [
     items: ["M&A advisory", "Corporate restructuring", "Business strategy"],
     image: corporateImg,
     alt: "Classical column — corporate strength and foundation",
+    link: "#",
   },
   {
     name: "Special Solutions",
@@ -46,6 +51,7 @@ const tabs = [
     items: ["Art & collectibles", "Real estate advisory", "Lifestyle management"],
     image: specialImg,
     alt: "Diamond — bespoke luxury solutions",
+    link: "#",
   },
 ];
 
@@ -129,12 +135,12 @@ const Services = () => {
                 </div>
               ))}
             </div>
-            <a
-              href="#contact"
+            <Link
+              to={tabs[active].link}
               className="btn-gold px-8 py-3 inline-block text-[12px] self-start"
             >
               Learn more
-            </a>
+            </Link>
           </div>
 
           {/* Image */}
