@@ -31,19 +31,14 @@ const Philosophy = ({ sectionTitle, subtitle, items }: PhilosophyProps) => {
         </div>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 items-start">
           {items.map((item, i) => (
             <div
               key={i}
-              className="bg-white p-8 flex flex-col items-center text-center gap-4 group hover:shadow-xl transition-all duration-500 opacity-0 animate-fade-up cursor-pointer"
+              className="bg-white p-8 flex flex-col items-center text-center gap-4 group hover:shadow-xl hover:scale-110 hover:z-10 transition-all duration-500 opacity-0 animate-fade-up cursor-pointer origin-center relative"
               style={{ border: "1px solid rgba(0,0,0,0.06)", animationDelay: `${0.2 + i * 0.1}s` }}
             >
-              <span
-                className="text-gold/40 font-light transition-all duration-500 group-hover:text-gold"
-                style={{ fontSize: "56px", lineHeight: 1, transition: "font-size 0.5s ease, color 0.5s ease" }}
-                onMouseEnter={(e) => { (e.target as HTMLElement).style.fontSize = "100px"; }}
-                onMouseLeave={(e) => { (e.target as HTMLElement).style.fontSize = "56px"; }}
-              >
+              <span className="text-gold/40 font-light transition-colors duration-500 group-hover:text-gold" style={{ fontSize: "56px", lineHeight: 1 }}>
                 {item.number}
               </span>
               <h3 className="text-charcoal font-semibold text-base">{item.title}</h3>
