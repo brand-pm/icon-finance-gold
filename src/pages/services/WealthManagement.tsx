@@ -58,12 +58,12 @@ const WealthManagement = () => (
 
     <ResultsStats
       items={[
-        { main: "$500", suffix: "+", subtitle: "million", label: "Assets under management" },
+        { prefix: "$", main: "500", suffix: "+", subtitle: "million", label: "Assets under management" },
         { main: "95", suffix: "%", subtitle: "year-on-year", label: "Client retention" },
         { main: "12", suffix: "%", subtitle: "per annum", label: "Average return (over 5 years)" },
-        { main: "1.4", subtitle: "Sharpe ratio", label: "(risk/return)" },
+        { main: "1.4", suffix: "", subtitle: "Sharpe ratio", label: "(risk/return)" },
         { main: "-8", suffix: "%", subtitle: "Maximum drawdown", label: "(during 2020 crisis)" },
-        { main: "$5", suffix: "M", subtitle: "Average portfolio size", label: "" },
+        { prefix: "$", main: "5", suffix: "M", subtitle: "Average portfolio size", label: "" },
       ]}
     />
 
