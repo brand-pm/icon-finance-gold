@@ -74,7 +74,7 @@ const PortfolioManagement = ({
                 <div
                   className="opacity-0 animate-fade-up relative overflow-hidden"
                   style={{
-                    background: "rgba(255,255,255,0.01)",
+                    background: "rgba(0,0,0,0.15)",
                     border: "1px solid rgba(255,255,255,0.05)",
                     animationDelay: `${i * 0.15}s`,
                   }}
