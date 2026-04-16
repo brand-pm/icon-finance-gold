@@ -50,7 +50,7 @@ const PortfolioManagement = ({
             {steps.map((step) => (
               <article key={`${step.number}-${step.title}`} className="portfolio-stage-card">
                 <div className="portfolio-stage-card__inner">
-                  <div>
+                  <div className="flex flex-col h-full">
                     <div className="mb-4 flex flex-wrap items-baseline gap-x-3 gap-y-2">
                       <span className="portfolio-stage-label">Stage {step.number}</span>
                       <span className="portfolio-stage-timeline">{step.timeline}</span>
