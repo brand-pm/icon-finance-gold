@@ -19,9 +19,9 @@ const InvestmentStrategies = ({ strategies }: InvestmentStrategiesProps) => {
     <section className="section-padding" style={{ background: "linear-gradient(180deg, #F5F3F0 0%, #EDE9E4 100%)" }}>
       <div className="container-main" ref={ref}>
         <div className="text-center mb-12 opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-          <p className="eyebrow mb-4">Why Icon Finance</p>
+          <p className="eyebrow mb-4">Strategies</p>
           <h2 className="text-charcoal font-light" style={{ fontSize: "clamp(26px,4vw,38px)" }}>
-            What Sets Our Approach Apart
+            Our Investment Strategies
           </h2>
           <div className="gold-separator mt-6">
             <div className="dot" /><div className="dot-lg" /><div className="dot" />
