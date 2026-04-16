@@ -304,7 +304,7 @@
   @media (min-width: 640px) {
     .portfolio-stage-card__inner {
       grid-template-columns: minmax(0, 1fr) 240px;
-      align-items: start;
+      align-items: stretch;
     }
 
     .portfolio-stage-activities {
