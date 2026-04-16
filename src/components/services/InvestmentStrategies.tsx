@@ -5,6 +5,7 @@ interface Strategy {
   name: string;
   description: string;
   items: string[];
+  image?: string;
 }
 
 interface InvestmentStrategiesProps {
@@ -47,20 +48,34 @@ const InvestmentStrategies = ({ strategies }: InvestmentStrategiesProps) => {
             ))}
           </div>
 
-          {/* Right — content */}
-          <div className="bg-white p-8 lg:p-10" style={{ border: "1px solid rgba(0,0,0,0.06)" }}>
-            <h3 className="text-charcoal font-semibold text-lg mb-4">{strategies[active].name}</h3>
-            <p className="text-slate text-sm leading-relaxed mb-6">
-              {strategies[active].description}
-            </p>
-            <div className="grid sm:grid-cols-2 gap-x-8 gap-y-3">
-              {strategies[active].items.map((item, i) => (
-                <div key={i} className="flex items-start gap-3">
-                  <span className="text-gold text-xs mt-1">◆</span>
-                  <span className="text-charcoal text-sm">{item}</span>
-                </div>
-              ))}
+          {/* Right — content with image */}
+          <div className="bg-white grid lg:grid-cols-[60%_40%] overflow-hidden" style={{ border: "1px solid rgba(0,0,0,0.06)" }}>
+            <div className="p-8 lg:p-10">
+              <h3 className="text-charcoal font-semibold text-lg mb-4">{strategies[active].name}</h3>
+              <p className="text-slate text-sm leading-relaxed mb-6">
+                {strategies[active].description}
+              </p>
+              <div className="grid sm:grid-cols-2 gap-x-8 gap-y-3">
+                {strategies[active].items.map((item, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <span className="text-gold text-xs mt-1">◆</span>
+                    <span className="text-charcoal text-sm">{item}</span>
+                  </div>
+                ))}
+              </div>
             </div>
+            {strategies[active].image && (
+              <div className="relative overflow-hidden min-h-[280px]">
+                <img
+                  key={active}
+                  src={strategies[active].image}
+                  alt={strategies[active].name}
+                  className="w-full h-full object-cover absolute inset-0"
+                  style={{ filter: "sepia(100%)", transition: "opacity 0.3s ease" }}
+                  loading="lazy"
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>
