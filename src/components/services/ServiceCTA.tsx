@@ -7,64 +7,115 @@ interface ServiceCTAProps {
 }
 
 const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
-  const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" });
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    subject: "",
+  });
   const ref = useScrollReveal();
 
+  const labelClass = "block text-white/70 text-xs uppercase tracking-wider mb-2";
   const inputClass =
-    "w-full bg-transparent border border-black/10 px-4 py-3 text-sm text-charcoal placeholder:text-slate/50 focus:outline-none focus:border-gold transition-colors";
+    "w-full bg-transparent border border-white/15 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-gold transition-colors";
 
   return (
-    <section className="relative" ref={ref}>
-      <div className="grid lg:grid-cols-2">
-        {/* Left — marble bg */}
-        <div className="marble-texture-strong p-12 lg:p-20 flex flex-col justify-center opacity-0 animate-fade-up" style={{ background: "#F5F3F0", animationDelay: "0.1s" }}>
+    <section className="relative marble-texture-strong" style={{ background: "#F5F3F0" }} ref={ref}>
+      <div className="container-main grid lg:grid-cols-2 gap-12 lg:gap-16 items-center py-20 lg:py-28">
+        {/* Left — vertically centered */}
+        <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
           <p className="eyebrow mb-4">Get in Touch</p>
           <h2 className="text-charcoal font-light mb-6" style={{ fontSize: "clamp(26px,4vw,36px)" }}>
             {title}
           </h2>
+          <div className="gold-separator mb-6">
+            <div className="line" />
+            <div className="dot" />
+            <div className="dot-lg" />
+            <div className="dot" />
+            <div className="line" />
+          </div>
           <p className="text-slate text-sm leading-relaxed max-w-md">
             {description}
           </p>
         </div>
 
-        {/* Right — form on dark */}
-        <div className="bg-navy p-12 lg:p-20 flex flex-col justify-center opacity-0 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-          <h3 className="text-gold font-light text-xl mb-8">Send Us a Message</h3>
+        {/* Right — floating dark card */}
+        <div
+          className="bg-navy opacity-0 animate-fade-up"
+          style={{
+            padding: "40px",
+            animationDelay: "0.2s",
+            boxShadow: "0 30px 60px -20px rgba(0,0,0,0.35)",
+          }}
+        >
+          <h3 className="font-light mb-3" style={{ fontSize: "28px", color: "#E0A776" }}>
+            Send Us a Message
+          </h3>
+          <p className="mb-8" style={{ fontSize: "14px", color: "#9CA3AF" }}>
+            Leave an inquiry and our expert will contact you within 24 hours.
+          </p>
           <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
-            <input
-              type="text"
-              placeholder="Your name"
-              className="w-full bg-transparent border border-white/15 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-gold transition-colors"
-              value={formData.name}
-              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            />
-            <input
-              type="email"
-              placeholder="Your email"
-              className="w-full bg-transparent border border-white/15 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-gold transition-colors"
-              value={formData.email}
-              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            />
-            <input
-              type="tel"
-              placeholder="Your phone (optional)"
-              className="w-full bg-transparent border border-white/15 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-gold transition-colors"
-              value={formData.phone}
-              onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-            />
-            <textarea
-              placeholder="Tell us about your situation — assets, goals, timeline, or anything else relevant."
-              rows={4}
-              className="w-full bg-transparent border border-white/15 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-gold transition-colors resize-none"
-              value={formData.message}
-              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-            />
-            <button type="submit" className="btn-gold px-8 py-4 text-[12px] self-stretch">
-              Send Request
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label className={labelClass}>First name</label>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  className={inputClass}
+                  value={formData.firstName}
+                  onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                />
+              </div>
+              <div>
+                <label className={labelClass}>Last name</label>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  className={inputClass}
+                  value={formData.lastName}
+                  onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+                />
+              </div>
+            </div>
+
+            <div>
+              <label className={labelClass}>Work email</label>
+              <input
+                type="email"
+                placeholder="example@email.com"
+                className={inputClass}
+                value={formData.email}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+              />
+            </div>
+
+            <div>
+              <label className={labelClass}>Subject</label>
+              <select
+                className={`${inputClass} appearance-none cursor-pointer`}
+                value={formData.subject}
+                onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                style={{
+                  backgroundImage:
+                    "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'><path d='M1 1L6 6L11 1' stroke='%23E0A776' stroke-width='1.5'/></svg>\")",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "right 16px center",
+                  paddingRight: "40px",
+                }}
+              >
+                <option value="" className="bg-navy">Select a subject</option>
+                <option value="wealth" className="bg-navy">Wealth Management</option>
+                <option value="family" className="bg-navy">Family Office</option>
+                <option value="structuring" className="bg-navy">Structuring & Tax</option>
+                <option value="ma" className="bg-navy">M&A Consulting</option>
+                <option value="other" className="bg-navy">Other</option>
+              </select>
+            </div>
+
+            <button type="submit" className="btn-gold w-full py-4 text-[12px] mt-2">
+              Send
             </button>
-            <p className="text-white/50 text-xs leading-relaxed">
-              We respond to all inquiries within 24 hours. All information is treated with strict confidentiality.
-            </p>
           </form>
         </div>
       </div>
