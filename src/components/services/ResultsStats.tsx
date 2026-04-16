@@ -32,7 +32,7 @@ const ResultsStats = ({ items }: ResultsStatsProps) => {
             {item.main}
           </span>
           {item.suffix && (
-            <span className="text-gold/70 font-light self-start" style={{ fontSize: "clamp(20px, 2.5vw, 28px)", marginTop: "0.15em" }}>
+            <span className={`text-gold/70 font-light ${item.suffix === '+' ? 'self-start' : 'self-end'}`} style={{ fontSize: "clamp(20px, 2.5vw, 28px)", ...(item.suffix === '+' ? { marginTop: "0.15em" } : { marginBottom: "0.15em" }) }}>
               {item.suffix}
             </span>
           )}
