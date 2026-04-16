@@ -26,12 +26,12 @@ const InvestmentOpportunities = ({ categories }: InvestmentOpportunitiesProps) =
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 opacity-0 animate-fade-up" style={{ animationDelay: "0.15s" }}>
+        <div className="grid md:grid-cols-2 gap-6 items-stretch opacity-0 animate-fade-up" style={{ animationDelay: "0.15s" }}>
           {categories.map((cat, ci) => (
             <div
               key={ci}
-              className={`p-8 md:p-10 ${cat.dark ? "bg-navy" : "bg-white"}`}
-              style={{ border: cat.dark ? "1px solid rgba(224,167,118,0.15)" : "1px solid rgba(0,0,0,0.06)" }}
+              className={`h-full flex flex-col ${cat.dark ? "bg-navy" : "bg-white"}`}
+              style={{ border: cat.dark ? "1px solid rgba(224,167,118,0.15)" : "1px solid rgba(0,0,0,0.06)", padding: "48px" }}
             >
               <h3
                 className={`font-light mb-8 ${cat.dark ? "text-gold" : "text-charcoal"}`}
@@ -43,10 +43,10 @@ const InvestmentOpportunities = ({ categories }: InvestmentOpportunitiesProps) =
               <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6">
                 {cat.items.map((item, i) => (
                   <div key={i}>
-                    <h4 className={`font-semibold text-sm mb-1 ${cat.dark ? "text-white" : "text-charcoal"}`}>
+                    <h4 className={`text-sm mb-1 ${cat.dark ? "text-white" : "text-charcoal"}`} style={{ fontWeight: 400 }}>
                       {item.title}
                     </h4>
-                    <p className={`text-xs leading-relaxed ${cat.dark ? "text-white/50" : "text-slate"}`}>
+                    <p className={`leading-relaxed ${cat.dark ? "text-white/50" : ""}`} style={{ fontSize: "14px", color: cat.dark ? undefined : "#6B7280" }}>
                       {item.description}
                     </p>
                   </div>
