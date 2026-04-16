@@ -3,11 +3,8 @@ import Footer from "../../components/Footer";
 import ServiceHero from "../../components/services/ServiceHero";
 import WhoBenefits from "../../components/services/WhoBenefits";
 import Philosophy from "../../components/services/Philosophy";
-import ResultsStats from "../../components/services/ResultsStats";
-import InvestmentStrategies from "../../components/services/InvestmentStrategies";
 import InvestmentOpportunities from "../../components/services/InvestmentOpportunities";
-import PortfolioManagement from "../../components/services/PortfolioManagement";
-import ServiceFAQ from "../../components/services/ServiceFAQ";
+import InvestmentStrategies from "../../components/services/InvestmentStrategies";
 import ServiceCTA from "../../components/services/ServiceCTA";
 import infinityImg from "../../assets/infinity-symbol.png";
 
@@ -17,133 +14,79 @@ const WealthManagement = () => (
 
     <ServiceHero
       eyebrow="Wealth Management"
-      title="Professional Wealth Management For Affluent Families"
-      description="Icon Financial provides bespoke wealth management strategies for high-net-worth individuals and families. Our team of seasoned professionals delivers personalized solutions, combining institutional-grade expertise with a client-first philosophy to preserve and grow your wealth across generations."
+      title="Your Capital. Structured for Generations."
+      description="We provide independent, conflict-free wealth management for entrepreneurs and families navigating complex financial lives — from portfolio strategy to cross-border asset coordination."
       image={infinityImg}
       imageAlt="Infinity symbol — wealth preservation across generations"
     />
 
     <WhoBenefits
-      sectionTitle={"Who Benefits from\nOur Wealth Management"}
+      sectionTitle={"Built for Those With\nMore at Stake"}
       items={[
         {
-          title: "Top Managers & Professionals",
-          description: "You have accumulated substantial capital and want to ensure its protection and growth without personal involvement in management.",
+          title: "Business Owners",
+          description: "You've built significant wealth through your company — but your personal capital is still tied to the same risks. We help you separate, structure, and protect what you've earned.",
         },
         {
-          title: "Business Owners After Exit",
-          description: "You have sold your company or exited operational management and need professional management of the capital received.",
+          title: "Multi-Generational Families",
+          description: "Wealth that spans two or three generations requires more than a portfolio. We coordinate investment strategy with governance, succession, and family alignment.",
         },
         {
-          title: "Affluent Families",
-          description: "Your family capital exceeds $10 million and requires a structured approach to management and preservation.",
+          title: "International Clients",
+          description: "Assets in multiple jurisdictions demand more than local advice. We bring cross-border expertise to simplify complexity and reduce unnecessary tax drag.",
         },
         {
-          title: "International Investors",
-          description: "You have assets in different countries and currencies, and need centralized management and optimization.",
+          title: "Entrepreneurs Post-Exit",
+          description: "After a liquidity event, preserving capital becomes as critical as growing it. We design structures that protect your proceeds and put them to work deliberately.",
         },
       ]}
     />
 
     <Philosophy
-      sectionTitle={"Icon Finance\nWealth Management Philosophy"}
-      subtitle="We apply an institutional approach to private wealth management, combining the best practices of global investment houses with the flexibility and personalization of a family office. Each portfolio is built individually, taking into account the client's goals and time horizon."
-      items={[
-        { number: "01", title: "Global Approach", description: "Investments in developed and emerging markets worldwide" },
-        { number: "02", title: "Active Management", description: "Tactical allocation to capitalize on market opportunities" },
-        { number: "03", title: "Risk Control", description: "Continuous monitoring and management of all types of risks" },
-        { number: "04", title: "Diversification", description: "Distribution across 15+ asset classes to reduce risk" },
-      ]}
+      sectionTitle={"Independence Is Our\nCompetitive Advantage"}
+      subtitle={"Most wealth managers are compensated by the products they sell. We are not. Icon Finance operates on a fee-based model with no product commissions, no hidden incentives, and no conflicts of interest — only advice aligned with your goals.\n\nWe treat each client relationship as a long-term partnership. That means understanding your full financial picture: not just your portfolio, but your business interests, family structure, tax position, and long-term intentions.\n\nOur team brings experience across private banking, asset management, and family office advisory — giving you access to institutional-grade thinking without institutional bureaucracy."}
+      items={[]}
     />
 
-    <ResultsStats
-      items={[
-        { prefix: "$", main: "500", suffix: "+", subtitle: "million", label: "Assets under management" },
-        { main: "95", suffix: "%", subtitle: "year-on-year", label: "Client retention" },
-        { main: "12", suffix: "%", subtitle: "per annum", label: "Average return (over 5 years)" },
-        { main: "1.4", suffix: "", subtitle: "Sharpe ratio", label: "(risk/return)" },
-        { main: "-8", suffix: "%", subtitle: "Maximum drawdown", label: "(during 2020 crisis)" },
-        { prefix: "$", main: "5", suffix: "M", subtitle: "Average portfolio size", label: "" },
+    <InvestmentOpportunities
+      categories={[
+        {
+          name: "Comprehensive. Coordinated. Ongoing.",
+          items: [
+            { title: "Investment Strategy & Asset Allocation", description: "Custom portfolio construction based on your risk profile, liquidity needs, tax situation, and long-term objectives. Reviewed and rebalanced proactively — not reactively." },
+            { title: "Portfolio Management & Monitoring", description: "Active oversight of your investments across asset classes and custodians. You receive consolidated reporting with full transparency on performance, fees, and positioning." },
+            { title: "Alternative Investments", description: "Access to private equity, private credit, hedge funds, and real assets — with independent due diligence and allocation recommendations tailored to your portfolio." },
+            { title: "Currency & Liquidity Management", description: "Strategic management of cash flows, currency exposure, and liquidity reserves to ensure your capital is always positioned efficiently." },
+            { title: "Tax-Aware Investment Planning", description: "Investment decisions made in coordination with your tax position. We work alongside your tax advisors or provide integrated tax planning as part of our service." },
+            { title: "Consolidated Reporting", description: "A single, clear view of your entire wealth — across all accounts, custodians, and asset classes. Delivered quarterly or on demand." },
+          ],
+        },
       ]}
     />
 
     <InvestmentStrategies
       strategies={[
         {
-          name: "Conservative Strategy",
-          description: "A conservative approach focused on capital preservation and stable income generation through high-quality fixed income instruments and dividend-paying equities.",
-          items: ["Low-risk fixed income focus", "Stable income generation", "Capital preservation priority"],
+          name: "Truly Independent",
+          description: "We are not affiliated with any bank, fund manager, or product provider. Our recommendations are driven by your interests alone — not by distribution agreements or placement fees.",
+          items: [],
         },
         {
-          name: "Balanced Strategy",
-          description: "A balanced strategy offering a mix of growth and income through diversified asset allocation across equities, fixed income, and alternative investments.",
-          items: ["Balanced risk-return profile", "Diversified asset allocation", "Long-term growth orientation"],
+          name: "Integrated Expertise",
+          description: "Wealth management at this level cannot exist in isolation. We coordinate seamlessly with structuring, tax, and family office services — so your financial strategy is always coherent across every dimension.",
+          items: [],
         },
         {
-          name: "Growth Strategy",
-          description: "An aggressive growth strategy targeting higher returns through active management and concentrated positions in high-conviction equity and alternative opportunities.",
-          items: ["Higher risk tolerance", "Focus on capital appreciation", "Active management approach"],
+          name: "Senior-Level Access",
+          description: "You work directly with experienced professionals — not handed off to junior relationship managers. Every client receives dedicated senior attention throughout the engagement.",
+          items: [],
         },
-        {
-          name: "Aggressive Strategy",
-          description: "A high-conviction approach focused on maximum capital appreciation through concentrated positions in emerging markets, venture capital, and high-growth sectors.",
-          items: ["Maximum growth potential", "Concentrated high-conviction bets", "Emerging markets exposure"],
-        },
-      ]}
-    />
-
-    <InvestmentOpportunities
-      categories={[
-        {
-          name: "Traditional Assets",
-          items: [
-            { title: "Developed market equities", description: "US, Europe, Japan" },
-            { title: "Equities of emerging markets", description: "China, India, Latin America" },
-            { title: "Government bonds", description: "US Treasuries, German Bunds" },
-            { title: "Corporate bonds", description: "Investment grade and high yield" },
-            { title: "Money market and deposits", description: "" },
-          ],
-        },
-        {
-          name: "Alternative Investments",
-          dark: true,
-          items: [
-            { title: "Private Equity", description: "direct investments in companies" },
-            { title: "Venture funds", description: "technology startups" },
-            { title: "Hedge funds", description: "market neutral, long/short" },
-            { title: "Real estate", description: "commercial and residential" },
-            { title: "Commodities", description: "gold, oil, agricultural" },
-            { title: "Crypto assets", description: "Bitcoin, Ethereum" },
-            { title: "Infrastructure projects", description: "" },
-            { title: "Art and collectibles", description: "" },
-          ],
-        },
-      ]}
-    />
-
-    <PortfolioManagement
-      title="How We Manage Your Portfolio"
-      description="Each stage is adapted to your family, assets and jurisdictions"
-      steps={[
-        { number: "1", title: "Analysis & Planning", timeline: "1–2 weeks", result: "Investment Policy Statement (IPS)", activities: ["Audit of current assets and liabilities", "Defining investment goals and constraints", "Risk profile and time horizon analysis", "Tax planning and optimization"] },
-        { number: "2", title: "Portfolio Construction", timeline: "3–4 weeks", result: "Diversified Portfolio", activities: ["Strategic asset allocation", "Selection of specific instruments", "Due diligence of managers and funds", "Opening accounts and structuring"] },
-        { number: "3", title: "Active Management", timeline: "Ongoing", result: "Optimal risk/return ratio", activities: ["Daily market monitoring", "Tactical allocation adjustments", "Portfolio rebalancing (quarterly)", "Risk and liquidity management"] },
-        { number: "4", title: "Reporting & Control", timeline: "Regular", result: "Full transparency and control", activities: ["Monthly portfolio reports", "Quarterly client meetings", "Annual strategy review", "Tax reporting"] },
-      ]}
-    />
-
-    <ServiceFAQ
-      items={[
-        { question: "What is the minimum amount you work with?", answer: "Our minimum investment amount is $500,000. This allows us to provide the level of personalized service and diversification that our clients expect." },
-        { question: "What fees do you charge?", answer: "We operate on a transparent fee structure with management fees based on assets under management. There are no hidden charges, and all fees are disclosed upfront before engagement." },
-        { question: "Can I withdraw funds at any time?", answer: "Yes, you can access your funds at any time. We recommend discussing withdrawals with your advisor to ensure they align with your long-term financial plan." },
-        { question: "How are my assets protected?", answer: "Your assets are held at independent custodians and are fully segregated. We maintain comprehensive insurance coverage and follow strict compliance protocols." },
       ]}
     />
 
     <ServiceCTA
-      title="Start Managing Your Wealth Today"
-      description="Arrange a confidential consultation with our team to discuss your financial goals and discover how Icon Finance can help you preserve and grow your wealth."
+      title="Ready to Take a Clearer View of Your Wealth?"
+      description="A conversation costs nothing. We'll listen first, and only propose a path forward if we're confident we can add meaningful value."
     />
 
     <Footer />
