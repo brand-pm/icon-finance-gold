@@ -10,9 +10,11 @@ interface StatItem {
 
 interface ResultsStatsProps {
   items: StatItem[];
+  eyebrow?: string;
+  title?: string;
 }
 
-const ResultsStats = ({ items }: ResultsStatsProps) => {
+const ResultsStats = ({ items, eyebrow = "Results and Metrics", title = "Our Results Speak for Themselves" }: ResultsStatsProps) => {
   const ref = useScrollReveal();
 
   const topRow = items.slice(0, 3);
@@ -54,9 +56,9 @@ const ResultsStats = ({ items }: ResultsStatsProps) => {
     <section className="section-padding bg-navy relative">
       <div className="container-main" ref={ref}>
         <div className="text-center mb-16 opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-          <p className="eyebrow mb-4">Results and Metrics</p>
+          <p className="eyebrow mb-4">{eyebrow}</p>
           <h2 className="text-white font-light mb-4" style={{ fontSize: "clamp(26px,4vw,38px)" }}>
-            Our Results Speak for Themselves
+            {title}
           </h2>
           <div className="gold-separator">
             <div className="dot" /><div className="dot-lg" /><div className="dot" />
