@@ -50,35 +50,21 @@ const PortfolioManagement = ({
             {steps.map((step) => (
               <article key={`${step.number}-${step.title}`} className="portfolio-stage-card">
                 <div className="portfolio-stage-card__inner">
-                  <div className="flex flex-col">
+                  <div>
                     <div className="mb-4 flex flex-wrap items-baseline gap-x-3 gap-y-2">
                       <span className="portfolio-stage-label">Stage {step.number}</span>
                       <span className="portfolio-stage-timeline">{step.timeline}</span>
                     </div>
 
                     <h3 className="portfolio-stage-title whitespace-pre-line">{step.title}</h3>
-                  </div>
 
-                  <div className="portfolio-stage-activities">
-                    <p className="portfolio-stage-activities-label">Activities:</p>
-                    <ul className="space-y-2.5">
-                      {step.activities.map((item, index) => (
-                        <li key={index} className="portfolio-stage-activity">
-                          <span className="portfolio-stage-bullet">◆</span>
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {step.result && (
-                    <div className="portfolio-stage-result sm:col-span-2 sm:flex sm:justify-end">
-                      <div className="sm:text-right">
+                    {step.result && (
+                      <div className="portfolio-stage-result">
                         <span className="portfolio-stage-result-label">Result:</span>
                         <p className="portfolio-stage-result-text">{step.result}</p>
                       </div>
-                    </div>
-                  )}
+                    )}
+                  </div>
 
                   <div className="portfolio-stage-activities">
                     <p className="portfolio-stage-activities-label">Activities:</p>
