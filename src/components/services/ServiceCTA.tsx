@@ -17,7 +17,7 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
     <section className="relative" ref={ref}>
       <div className="grid lg:grid-cols-2">
         {/* Left — marble bg */}
-        <div className="marble-texture-strong p-12 lg:p-20 flex flex-col justify-center opacity-0 animate-fade-up" style={{ background: "linear-gradient(180deg, #EDE9E4 0%, #F5F3F0 100%)", animationDelay: "0.1s" }}>
+        <div className="p-12 lg:p-20 flex flex-col justify-center opacity-0 animate-fade-up" style={{ background: "#EDE9E4", animationDelay: "0.1s" }}>
           <p className="eyebrow mb-4">Get in Touch</p>
           <h2 className="text-charcoal font-light mb-6" style={{ fontSize: "clamp(26px,4vw,36px)" }}>
             {title}
