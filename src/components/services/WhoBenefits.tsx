@@ -26,7 +26,9 @@ const WhoBenefits = ({ sectionTitle, items }: WhoBenefitsProps) => {
             <h2 className="text-charcoal font-light whitespace-pre-line" style={{ fontSize: "clamp(26px,4vw,38px)" }}>
               {sectionTitle}
             </h2>
-            <div className="gold-separator mt-6" />
+            <div className="gold-separator mt-6">
+              <div className="dot" /><div className="dot-lg" /><div className="dot" />
+            </div>
           </div>
 
           {/* Right — accordion */}
