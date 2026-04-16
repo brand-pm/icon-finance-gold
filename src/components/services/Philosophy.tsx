@@ -21,13 +21,13 @@ const Philosophy = ({ sectionTitle, subtitle, items }: PhilosophyProps) => {
         {/* Header */}
         <div className="text-center mb-16 opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
           <p className="eyebrow mb-4">Our Approach</p>
-          <h2 className="text-charcoal font-light mb-4" style={{ fontSize: "clamp(26px,4vw,38px)" }}>
+          <h2 className="text-charcoal font-light whitespace-pre-line mb-4" style={{ fontSize: "clamp(26px,4vw,38px)" }}>
             {sectionTitle}
           </h2>
-          <p className="text-slate text-base max-w-[520px] mx-auto mb-6">{subtitle}</p>
-          <div className="gold-separator">
+          <div className="gold-separator mb-6">
             <div className="dot" /><div className="dot-lg" /><div className="dot" />
           </div>
+          <p className="text-slate text-base max-w-[520px] mx-auto">{subtitle}</p>
         </div>
 
         {/* Cards */}

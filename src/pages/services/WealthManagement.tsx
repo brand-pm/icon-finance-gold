@@ -46,7 +46,7 @@ const WealthManagement = () => (
     />
 
     <Philosophy
-      sectionTitle="Icon Finance Wealth Management Philosophy"
+      sectionTitle={"Icon Finance\nWealth Management Philosophy"}
       subtitle="We apply an institutional approach to private wealth management, combining the best practices of global investment houses with the flexibility and personalization of a family office. Each portfolio is built individually, taking into account the client's goals and time horizon."
       items={[
         { number: "01", title: "Global Approach", description: "Investments in developed and emerging markets worldwide" },
