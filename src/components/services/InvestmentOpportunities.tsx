@@ -17,9 +17,9 @@ const InvestmentOpportunities = ({ categories }: InvestmentOpportunitiesProps) =
     <section className="section-padding" style={{ background: "linear-gradient(180deg, #EDE9E4 0%, #F5F3F0 100%)" }}>
       <div className="container-main" ref={ref}>
         <div className="text-center mb-16 opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-          <p className="eyebrow mb-4">Asset Classes</p>
-          <h2 className="text-charcoal font-light" style={{ fontSize: "clamp(26px,4vw,38px)", maxWidth: "480px", margin: "0 auto" }}>
-            Wide Range of Investment Opportunities
+          <p className="eyebrow mb-4">Service Scope</p>
+          <h2 className="text-charcoal font-light" style={{ fontSize: "clamp(26px,4vw,38px)", maxWidth: "520px", margin: "0 auto" }}>
+            Comprehensive. Coordinated. Ongoing.
           </h2>
           <div className="gold-separator mt-8">
             <div className="dot" /><div className="dot-lg" /><div className="dot" />

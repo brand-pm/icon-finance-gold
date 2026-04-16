@@ -60,8 +60,12 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
             />
             <button type="submit" className="btn-gold px-8 py-4 text-[12px] self-stretch">
-              Send
+              Request a Private Consultation
             </button>
+            <p className="text-white/40 text-xs text-center mt-2 leading-relaxed">
+              We respond to all inquiries within 24 hours.<br />
+              Your information is handled with strict confidentiality.
+            </p>
           </form>
         </div>
       </div>
