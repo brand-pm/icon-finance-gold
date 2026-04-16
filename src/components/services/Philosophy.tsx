@@ -27,7 +27,7 @@ const Philosophy = ({ sectionTitle, subtitle, items }: PhilosophyProps) => {
           <div className="gold-separator mb-6">
             <div className="dot" /><div className="dot-lg" /><div className="dot" />
           </div>
-          <p className="text-slate text-base max-w-[520px] mx-auto">{subtitle}</p>
+          <p className="text-slate text-base max-w-[720px] mx-auto text-justify">{subtitle}</p>
         </div>
 
         {/* Cards */}
