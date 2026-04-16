@@ -17,7 +17,7 @@ const InvestmentStrategies = ({ strategies }: InvestmentStrategiesProps) => {
   const ref = useScrollReveal();
 
   return (
-    <section className="section-padding" style={{ background: "linear-gradient(180deg, #F5F3F0 0%, #EDE9E4 100%)" }}>
+    <section className="section-padding bg-offwhite">
       <div className="container-main" ref={ref}>
         <div className="text-center mb-12 opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
           <p className="eyebrow mb-4">Strategies</p>
