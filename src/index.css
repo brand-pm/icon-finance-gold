@@ -193,7 +193,7 @@
   .portfolio-stage-card {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, hsl(var(--gradient-dark-start)) 0%, hsl(var(--footer)) 100%);
+    background: linear-gradient(135deg, hsl(220 44% 15%) 0%, hsl(224 54% 10%) 100%);
     border: 1px solid transparent;
     border-bottom: 1px solid hsl(var(--gold) / 0.25);
     box-shadow: 0 1px 8px hsl(var(--gold) / 0.06);
@@ -214,9 +214,9 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.34;
-    filter: grayscale(1) brightness(0.16) contrast(1.7);
-    mix-blend-mode: multiply;
+    opacity: 0.55;
+    filter: grayscale(1) brightness(0.35) contrast(2.2);
+    mix-blend-mode: screen;
   }
 
   .portfolio-stage-card::after {
@@ -224,7 +224,7 @@
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background: hsl(var(--footer) / 0.08);
+    background: linear-gradient(160deg, hsl(220 44% 18% / 0.3) 0%, transparent 50%);
   }
 
   .portfolio-stage-card__inner {
