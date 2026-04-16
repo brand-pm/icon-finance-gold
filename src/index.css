@@ -207,8 +207,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.18;
-    filter: brightness(0.58) saturate(0.85);
+    opacity: 0.26;
+    filter: brightness(0.72) saturate(0.95);
     mix-blend-mode: screen;
   }
 
@@ -217,7 +217,7 @@
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background: linear-gradient(90deg, hsl(var(--gradient-dark-start) / 0.14) 0%, transparent 48%);
+    background: linear-gradient(90deg, hsl(var(--gradient-dark-start) / 0.08) 0%, transparent 48%);
   }
 
   .portfolio-stage-card__inner {
