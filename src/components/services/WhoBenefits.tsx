@@ -17,12 +17,12 @@ const WhoBenefits = ({ sectionTitle, items }: WhoBenefitsProps) => {
   const ref = useScrollReveal();
 
   return (
-    <section className="section-padding marble-texture" style={{ background: "linear-gradient(180deg, #F5F3F0 0%, #EDE9E4 100%)" }}>
+    <section className="section-padding bg-offwhite">
       <div className="container-main" ref={ref}>
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left */}
           <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            <p className="eyebrow mb-4">Who Benefits</p>
+            <p className="eyebrow mb-4">Who this service is for</p>
             <h2 className="text-charcoal font-light" style={{ fontSize: "clamp(26px,4vw,38px)" }}>
               {sectionTitle}
             </h2>

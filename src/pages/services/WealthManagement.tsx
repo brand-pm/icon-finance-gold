@@ -24,23 +24,23 @@ const WealthManagement = () => (
     />
 
     <WhoBenefits
-      sectionTitle="Who Benefits from Our Wealth Management"
+      sectionTitle="Who Benefits from&#10;Our Wealth Management"
       items={[
         {
           title: "Top Managers & Professionals",
-          description: "Our partnership with top-tier asset managers and financial professionals ensures access to exclusive strategies, institutional-grade analytics, and premium service tailored to sophisticated portfolios.",
+          description: "You have accumulated substantial capital and want to ensure its protection and growth without personal involvement in management.",
         },
         {
-          title: "Business Owners & HNI",
-          description: "We help high-net-worth individuals and business owners navigate complex financial landscapes, offering tailored wealth structuring, succession planning, and investment strategies aligned with their unique goals.",
+          title: "Business Owners After Exit",
+          description: "You have sold your company or exited operational management and need professional management of the capital received.",
         },
         {
           title: "Affluent Families",
-          description: "Our multi-generational approach helps affluent families preserve and grow wealth through customized estate planning, tax-efficient strategies, and comprehensive financial stewardship.",
+          description: "Your family capital exceeds $10 million and requires a structured approach to management and preservation.",
         },
         {
           title: "International Investors",
-          description: "For clients with cross-border interests, we provide multi-jurisdictional expertise, currency management, and globally diversified portfolio solutions to optimize international wealth.",
+          description: "You have assets in different countries and currencies, and need centralized management and optimization.",
         },
       ]}
     />
