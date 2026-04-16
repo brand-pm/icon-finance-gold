@@ -33,35 +33,38 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
           <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
             <input
               type="text"
-              placeholder="Name"
+              placeholder="Your name"
               className="w-full bg-transparent border border-white/15 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-gold transition-colors"
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             />
             <input
               type="email"
-              placeholder="Email"
+              placeholder="Your email"
               className="w-full bg-transparent border border-white/15 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-gold transition-colors"
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             />
             <input
               type="tel"
-              placeholder="Phone"
+              placeholder="Your phone (optional)"
               className="w-full bg-transparent border border-white/15 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-gold transition-colors"
               value={formData.phone}
               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
             />
             <textarea
-              placeholder="Message"
+              placeholder="Tell us about your situation — assets, goals, timeline, or anything else relevant."
               rows={4}
               className="w-full bg-transparent border border-white/15 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-gold transition-colors resize-none"
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
             />
             <button type="submit" className="btn-gold px-8 py-4 text-[12px] self-stretch">
-              Send
+              Send Request
             </button>
+            <p className="text-white/50 text-xs leading-relaxed">
+              We respond to all inquiries within 24 hours. All information is treated with strict confidentiality.
+            </p>
           </form>
         </div>
       </div>
