@@ -81,7 +81,7 @@ const PortfolioManagement = ({
                 >
                   {/* Marble texture overlay */}
                   <div
-                    className="absolute inset-0 pointer-events-none z-0 opacity-[0.06]"
+                    className="absolute inset-0 pointer-events-none z-0 opacity-[0.15]"
                     style={{
                       backgroundImage: `url(${marbleTexture})`,
                       backgroundSize: "cover",
