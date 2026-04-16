@@ -24,7 +24,7 @@ const WealthManagement = () => (
     />
 
     <WhoBenefits
-      sectionTitle="Who Benefits from&#10;Our Wealth Management"
+      sectionTitle={"Who Benefits from\nOur Wealth Management"}
       items={[
         {
           title: "Top Managers & Professionals",
