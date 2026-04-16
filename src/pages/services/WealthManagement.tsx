@@ -10,6 +10,10 @@ import PortfolioManagement from "../../components/services/PortfolioManagement";
 import ServiceFAQ from "../../components/services/ServiceFAQ";
 import ServiceCTA from "../../components/services/ServiceCTA";
 import infinityImg from "../../assets/infinity-symbol.png";
+import strategyConservative from "../../assets/strategy-conservative.jpg";
+import strategyBalanced from "../../assets/strategy-balanced.jpg";
+import strategyGrowth from "../../assets/strategy-growth.jpg";
+import strategyOpportunistic from "../../assets/strategy-opportunistic.jpg";
 
 const WealthManagement = () => (
   <div className="min-h-screen">
@@ -75,25 +79,25 @@ const WealthManagement = () => (
           name: "Conservative Strategy",
           description: "Focused on capital preservation and stable income through high-quality fixed income instruments and dividend-paying equities. Suitable for clients prioritizing protection over growth.",
           items: ["Capital preservation as the primary objective", "High-quality bonds and investment grade credit", "Low volatility, stable income profile"],
-          image: "https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?w=600&q=80",
+          image: strategyConservative,
         },
         {
           name: "Balanced Strategy",
           description: "A diversified approach combining income-generating assets with selective equity exposure. Designed for clients seeking steady growth with controlled downside risk.",
           items: ["Equal focus on growth and income", "Broad diversification across asset classes", "Moderate risk with long-term appreciation"],
-          image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80",
+          image: strategyBalanced,
         },
         {
           name: "Growth Strategy",
           description: "Equity-oriented portfolio with meaningful allocation to alternative investments. For clients with longer time horizons and higher tolerance for short-term volatility.",
           items: ["Equity-led with alternative diversifiers", "Private markets and real asset exposure", "Higher return potential over 5–10 year horizon"],
-          image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80",
+          image: strategyGrowth,
         },
         {
           name: "Opportunistic Strategy",
           description: "High-conviction, concentrated exposure to high-growth opportunities including private equity, venture, and emerging markets. Suitable for a portion of a larger diversified portfolio.",
           items: ["Concentrated bets in high-conviction themes", "Private equity, venture, and special situations", "Maximum return potential with commensurate risk"],
-          image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80",
+          image: strategyOpportunistic,
         },
       ]}
     />
