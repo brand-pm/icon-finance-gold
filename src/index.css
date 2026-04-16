@@ -259,7 +259,7 @@
 
   .portfolio-stage-result {
     margin-top: auto;
-    align-self: end;
+    align-self: start;
   }
 
   .portfolio-stage-result-label {
