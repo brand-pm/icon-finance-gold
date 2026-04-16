@@ -21,7 +21,7 @@ const WhoBenefits = ({ sectionTitle, items }: WhoBenefitsProps) => {
       <div className="container-main" ref={ref}>
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left */}
-          <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+          <div className="opacity-0 animate-fade-up text-center" style={{ animationDelay: "0.1s" }}>
             <p className="eyebrow mb-4">Who this service is for</p>
             <h2 className="text-charcoal font-light whitespace-pre-line" style={{ fontSize: "clamp(26px,4vw,38px)" }}>
               {sectionTitle}
