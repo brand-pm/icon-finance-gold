@@ -207,9 +207,9 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.26;
-    filter: brightness(0.72) saturate(0.95);
-    mix-blend-mode: screen;
+    opacity: 0.34;
+    filter: grayscale(1) brightness(0.16) contrast(1.7);
+    mix-blend-mode: multiply;
   }
 
   .portfolio-stage-card::after {
