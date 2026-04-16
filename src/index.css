@@ -85,7 +85,7 @@
     inset: 0;
     pointer-events: none;
     z-index: 0;
-    background-image: url('./assets/marble-texture.webp');
+    background-image: url('./assets/marble-texture.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -104,23 +104,113 @@
     inset: 0;
     pointer-events: none;
     z-index: 0;
-    background-image: url('./assets/marble-texture.webp');
+    background-image: url('./assets/marble-texture.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 1;
+    opacity: 1.5;
   }
   .marble-texture-strong > * {
     position: relative;
     z-index: 1;
   }
-...
+
+  .gold-separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .gold-separator::before,
+  .gold-separator::after {
+    content: '';
+    width: 40px;
+    height: 1.5px;
+    background: hsl(var(--gold));
+    opacity: 0.7;
+  }
+  .gold-separator .dot {
+    width: 8px;
+    height: 8px;
+    background: hsl(var(--gold));
+    transform: rotate(45deg);
+  }
+  .gold-separator .dot-lg {
+    width: 14px;
+    height: 14px;
+    background: hsl(var(--gold));
+    transform: rotate(45deg);
+  }
+
+  .btn-gold {
+    background: hsl(var(--gold));
+    color: hsl(var(--navy));
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all 300ms ease;
+  }
+  .btn-gold:hover {
+    background: hsl(var(--gold-hover));
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px hsl(var(--gold) / 0.3);
+  }
+
+  .btn-outline-gold {
+    border: 1px solid hsl(var(--gold));
+    color: hsl(var(--gold));
+    background: transparent;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all 300ms ease;
+  }
+  .btn-outline-gold:hover {
+    background: hsl(var(--gold) / 0.1);
+    transform: translateY(-2px);
+  }
+
+  .portfolio-management-section {
+    background: linear-gradient(180deg, hsl(var(--gradient-dark-start)) 0%, hsl(var(--gradient-dark-end)) 100%);
+  }
+
+  .portfolio-management-title {
+    color: hsl(var(--offwhite));
+    font-weight: 300;
+    font-size: clamp(28px, 5vw, 42px);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+  }
+
+  .portfolio-management-description {
+    color: hsl(var(--offwhite) / 0.5);
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .portfolio-stage-card {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, hsl(220 44% 15%) 0%, hsl(224 54% 10%) 100%);
+    border: 1px solid transparent;
+    border-bottom: 1px solid hsl(var(--gold) / 0.25);
+    box-shadow: 0 1px 8px hsl(var(--gold) / 0.06);
+    animation: stage-shimmer 4s ease-in-out infinite;
+  }
+
+  @keyframes stage-shimmer {
+    0%, 100% { border-bottom-color: hsl(var(--gold) / 0.18); }
+    50% { border-bottom-color: hsl(var(--gold) / 0.38); }
+  }
+
   .portfolio-stage-card::before {
     content: '';
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background-image: url('./assets/marble-texture.webp');
+    background-image: url('./assets/marble-texture.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
