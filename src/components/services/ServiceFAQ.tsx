@@ -16,7 +16,7 @@ const ServiceFAQ = ({ items }: ServiceFAQProps) => {
   const ref = useScrollReveal();
 
   return (
-    <section className="section-padding marble-texture-strong" style={{ background: "linear-gradient(180deg, #F5F3F0 0%, #EDE9E4 100%)" }}>
+    <section className="section-padding" style={{ background: "#EDE9E4" }}>
       <div className="container-main" ref={ref}>
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left */}
