@@ -90,8 +90,17 @@
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.15;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 100%);
-    mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 100%);
+  }
+  .marble-texture::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 240px;
+    pointer-events: none;
+    z-index: 0;
+    background: linear-gradient(to bottom, hsl(var(--offwhite)) 0%, hsl(var(--offwhite) / 0.9) 30%, hsl(var(--offwhite) / 0.5) 65%, transparent 100%);
   }
   .marble-texture > * {
     position: relative;
@@ -112,8 +121,17 @@
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.15;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 100%);
-    mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 100%);
+  }
+  .marble-texture-strong::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 240px;
+    pointer-events: none;
+    z-index: 0;
+    background: linear-gradient(to bottom, hsl(var(--offwhite)) 0%, hsl(var(--offwhite) / 0.9) 30%, hsl(var(--offwhite) / 0.5) 65%, transparent 100%);
   }
   .marble-texture-strong > * {
     position: relative;
