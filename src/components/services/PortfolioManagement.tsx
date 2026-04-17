@@ -56,7 +56,7 @@ const PortfolioManagement = ({
             {steps.map((step, idx) => (
               <article
                 key={`${step.number}-${step.title}`}
-                className="portfolio-stage-card"
+                className={`portfolio-stage-card${idx < steps.length - 1 ? ' portfolio-stage-card--has-arrow' : ''}`}
                 style={{ ['--stage-texture' as string]: `url(${stageTextures[idx % stageTextures.length]})` }}
               >
                 <div className="portfolio-stage-card__inner">
@@ -66,7 +66,15 @@ const PortfolioManagement = ({
                       <span className="portfolio-stage-timeline">{step.timeline}</span>
                     </div>
 
-                    <h3 className="portfolio-stage-title whitespace-pre-line">{step.title}</h3>
+                    <div className="portfolio-stage-title-row">
+                      {idx < steps.length - 1 && (
+                        <span className="portfolio-stage-arrow" aria-hidden="true">
+                          <span className="portfolio-stage-arrow__line" />
+                          <span className="portfolio-stage-arrow__head" />
+                        </span>
+                      )}
+                      <h3 className="portfolio-stage-title whitespace-pre-line">{step.title}</h3>
+                    </div>
 
                     {step.result && (
                       <div className="portfolio-stage-result">
