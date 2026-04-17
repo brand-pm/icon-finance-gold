@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import marbleMono1 from "@/assets/marble-mono-1.jpg";
+import marbleMono1 from "@/assets/marble-mono-1-v3.jpg";
 import marbleMono2 from "@/assets/marble-mono-2.jpg";
-import marbleMono3 from "@/assets/marble-mono-3.jpg";
-import marbleMono4 from "@/assets/marble-mono-4.jpg";
+import marbleMono3 from "@/assets/marble-mono-3-v2.jpg";
+import marbleMono4 from "@/assets/marble-mono-4-v2.jpg";
 
 const stageTextures = [marbleMono1, marbleMono2, marbleMono3, marbleMono4];
 
