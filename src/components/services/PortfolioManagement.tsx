@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import marbleDark1 from "@/assets/marble-dark-1.jpg";
-import marbleDark2 from "@/assets/marble-dark-2.jpg";
-import marbleDark3 from "@/assets/marble-dark-3.jpg";
-import marbleDark4 from "@/assets/marble-dark-4.jpg";
+import marbleMono1 from "@/assets/marble-mono-1.jpg";
+import marbleMono2 from "@/assets/marble-mono-2.jpg";
+import marbleMono3 from "@/assets/marble-mono-3.jpg";
+import marbleMono4 from "@/assets/marble-mono-4.jpg";
 
-const stageTextures = [marbleDark1, marbleDark2, marbleDark3, marbleDark4];
+const stageTextures = [marbleMono1, marbleMono2, marbleMono3, marbleMono4];
 
 interface Step {
   number: string;
