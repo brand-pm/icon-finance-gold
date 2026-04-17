@@ -1,4 +1,10 @@
 import { Link } from "react-router-dom";
+import marbleDark1 from "@/assets/marble-dark-1.jpg";
+import marbleDark2 from "@/assets/marble-dark-2.jpg";
+import marbleDark3 from "@/assets/marble-dark-3.jpg";
+import marbleDark4 from "@/assets/marble-dark-4.jpg";
+
+const stageTextures = [marbleDark1, marbleDark2, marbleDark3, marbleDark4];
 
 interface Step {
   number: string;
@@ -47,8 +53,12 @@ const PortfolioManagement = ({
           </div>
 
           <div className="flex flex-col gap-8">
-            {steps.map((step) => (
-              <article key={`${step.number}-${step.title}`} className="portfolio-stage-card">
+            {steps.map((step, idx) => (
+              <article
+                key={`${step.number}-${step.title}`}
+                className="portfolio-stage-card"
+                style={{ ['--stage-texture' as string]: `url(${stageTextures[idx % stageTextures.length]})` }}
+              >
                 <div className="portfolio-stage-card__inner">
                   <div className="flex flex-col h-full">
                     <div className="mb-4 flex flex-wrap items-baseline gap-x-3 gap-y-2">
