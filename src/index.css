@@ -90,6 +90,8 @@
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.15;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 100%);
   }
   .marble-texture > * {
     position: relative;
@@ -110,6 +112,8 @@
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.15;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 100%);
   }
   .marble-texture-strong > * {
     position: relative;
