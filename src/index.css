@@ -221,6 +221,8 @@
     border-bottom: 1px solid hsl(var(--gold) / 0.25);
     box-shadow: 0 1px 8px hsl(var(--gold) / 0.06);
     animation: stage-shimmer 4s ease-in-out infinite;
+    min-height: 280px;
+    display: flex;
   }
 
   @keyframes stage-shimmer {
@@ -233,12 +235,11 @@
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background-image: url('./assets/marble-calacatta-gold.jpg');
+    background-image: var(--stage-texture, url('./assets/marble-calacatta-gold.jpg'));
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.55;
-    filter: grayscale(1) brightness(0.35) contrast(2.2);
     mix-blend-mode: screen;
   }
 
@@ -256,6 +257,7 @@
     display: grid;
     gap: 24px;
     padding: 32px;
+    width: 100%;
   }
 
   .portfolio-stage-label {
