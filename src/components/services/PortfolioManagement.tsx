@@ -56,7 +56,7 @@ const PortfolioManagement = ({
             {steps.map((step, idx) => (
               <article
                 key={`${step.number}-${step.title}`}
-                className="portfolio-stage-card"
+                className={`portfolio-stage-card${idx < steps.length - 1 ? ' portfolio-stage-card--has-arrow' : ''}`}
                 style={{ ['--stage-texture' as string]: `url(${stageTextures[idx % stageTextures.length]})` }}
               >
                 <div className="portfolio-stage-card__inner">
