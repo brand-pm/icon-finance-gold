@@ -31,7 +31,7 @@ const Philosophy = ({ sectionTitle, subtitle, items }: PhilosophyProps) => {
         </div>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+        <div className={`grid md:grid-cols-2 gap-6 items-stretch justify-center mx-auto ${items.length === 3 ? 'lg:grid-cols-3 max-w-5xl' : 'lg:grid-cols-4'}`}>
           {items.map((item, i) => (
             <div
               key={i}
