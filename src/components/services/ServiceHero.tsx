@@ -36,7 +36,7 @@ const ServiceHero = ({ eyebrow, title, description, image, imageAlt }: ServiceHe
           <p className="text-white/70 text-base max-w-lg mb-10 leading-relaxed">
             {description}
           </p>
-          <Link to="/#contact" className="btn-gold px-8 py-4 inline-block">
+          <Link to="/contact" className="btn-gold px-8 py-4 inline-block">
             Start a dialogue
           </Link>
         </div>

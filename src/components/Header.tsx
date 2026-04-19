@@ -86,9 +86,9 @@ const Header = () => {
     >
       <div className="container-main h-full flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img src={logo} alt="Icon Finance & Wealth Management" className="h-[46px]" />
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-8">
@@ -143,9 +143,9 @@ const Header = () => {
             <span className="text-[13px]">EN</span>
             <ChevronDown size={12} />
           </div>
-          <a href="#contact" className="text-[13px] text-gold hover:text-white transition-colors duration-300 uppercase tracking-wider font-medium">
+          <Link to="/contact" className="text-[13px] text-gold hover:text-white transition-colors duration-300 uppercase tracking-wider font-medium">
             Start a dialogue →
-          </a>
+          </Link>
         </nav>
 
         {/* Mobile toggle */}
@@ -260,23 +260,38 @@ const Header = () => {
       {mobileOpen && (
         <div className="lg:hidden fixed inset-0 top-20 bg-navy/98 backdrop-blur-lg z-40 animate-slide-in-right">
           <nav className="flex flex-col items-center gap-8 pt-16">
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                onClick={() => setMobileOpen(false)}
-                className="text-lg text-white/80 hover:text-gold transition-colors uppercase tracking-wider"
-              >
-                {item.label}
-              </a>
-            ))}
-            <a
-              href="#contact"
+            {navItems.map((item) =>
+              item.href.startsWith("/") ? (
+                <Link
+                  key={item.label}
+                  to={item.href}
+                  onClick={() => setMobileOpen(false)}
+                  className={`text-lg transition-colors uppercase tracking-wider ${
+                    isActive(item.href) ? "text-gold" : "text-white/80 hover:text-gold"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  onClick={() => setMobileOpen(false)}
+                  className={`text-lg transition-colors uppercase tracking-wider ${
+                    isServiceActive ? "text-gold" : "text-white/80 hover:text-gold"
+                  }`}
+                >
+                  {item.label}
+                </a>
+              ),
+            )}
+            <Link
+              to="/contact"
               onClick={() => setMobileOpen(false)}
               className="btn-gold px-8 py-4 mt-4"
             >
               Start a dialogue →
-            </a>
+            </Link>
           </nav>
         </div>
       )}
