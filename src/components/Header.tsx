@@ -82,7 +82,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full h-20 z-50 transition-all duration-300 ${
-        scrolled || megaOpen ? "bg-navy/95 backdrop-blur-md shadow-lg" : "bg-transparent"
+        scrolled || megaOpen || mobileOpen ? "bg-navy/95 backdrop-blur-md shadow-lg" : "bg-transparent"
       }`}
     >
       <div className="container-main h-full flex items-center justify-between">
