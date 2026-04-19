@@ -99,7 +99,7 @@ const Insights = () => {
       <section
         className="relative w-full flex items-center"
         style={{
-          minHeight: "55vh",
+          minHeight: "35vh",
           backgroundImage: `url(${marbleHero})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
