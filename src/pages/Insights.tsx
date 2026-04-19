@@ -248,7 +248,7 @@ const Insights = () => {
             className="inline-block btn-gold px-10 py-4 text-[13px] font-medium"
           >
             Get in Touch
-          </a>
+          </Link>
         </div>
       </section>
 
