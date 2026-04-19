@@ -6,27 +6,17 @@ interface ServiceHeroProps {
   description: string;
   image: string;
   imageAlt: string;
-  imagePosition?: string;
-  imageFit?: "cover" | "contain";
 }
 
-const ServiceHero = ({
-  eyebrow,
-  title,
-  description,
-  image,
-  imageAlt,
-  imagePosition = "60% center",
-  imageFit = "cover",
-}: ServiceHeroProps) => (
+const ServiceHero = ({ eyebrow, title, description, image, imageAlt }: ServiceHeroProps) => (
   <section className="relative bg-navy overflow-hidden pt-24 pb-12" style={{ minHeight: "35vh" }}>
     {/* Background image — stretched across right side */}
     <div className="absolute inset-0">
       <img
         src={image}
         alt=""
-        className={`absolute inset-0 w-full h-full ${imageFit === "contain" ? "object-contain" : "object-cover"}`}
-        style={{ filter: "brightness(0.7) saturate(1.2)", objectPosition: imagePosition }}
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ filter: "brightness(0.7) saturate(1.2)", objectPosition: "60% center" }}
       />
       {/* Gradient overlays to blend with navy */}
       <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/80 to-navy/20" />
