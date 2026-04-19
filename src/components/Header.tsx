@@ -2,6 +2,11 @@ import { useState, useEffect, useRef } from "react";
 import { Menu, X, Globe, ChevronDown, ArrowRight } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo.svg";
+import wealthImg from "../assets/infinity-symbol.png";
+import familyImg from "../assets/family-office-symbol.png";
+import structuringImg from "../assets/structuring-tax-symbol.png";
+import maImg from "../assets/corporate-services-symbol.png";
+import specialImg from "../assets/special-solutions-symbol.png";
 
 const navItems = [
   { label: "Services", href: "#services", hasMega: true },
@@ -16,35 +21,35 @@ const serviceColumns = [
     title: "Wealth Management",
     description: "Independent investment management for entrepreneurs and families",
     link: "/services/wealth-management",
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80",
+    image: wealthImg,
   },
   {
     number: "02",
     title: "Family Office",
     description: "Full-service family office design and operations",
     link: "/services/family-office",
-    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80",
+    image: familyImg,
   },
   {
     number: "03",
     title: "Structuring & Tax",
     description: "International structuring and tax planning for complex wealth",
     link: "/services/structuring-tax",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80",
+    image: structuringImg,
   },
   {
     number: "04",
     title: "M&A Consulting",
     description: "Corporate advisory for acquisitions, exits, and capital raising",
     link: "/services/ma-consulting",
-    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&q=80",
+    image: maImg,
   },
   {
     number: "05",
     title: "Special Solutions",
     description: "Bespoke solutions for unique assets and complex situations",
     link: "/services/special-solutions",
-    image: "https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=600&q=80",
+    image: specialImg,
   },
 ];
 
