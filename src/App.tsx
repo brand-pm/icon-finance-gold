@@ -11,6 +11,7 @@ import FamilyOffice from "./pages/services/FamilyOffice.tsx";
 import StructuringTax from "./pages/services/StructuringTax.tsx";
 import MAConsulting from "./pages/services/MAConsulting.tsx";
 import SpecialSolutions from "./pages/services/SpecialSolutions.tsx";
+import Contact from "./pages/Contact.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/services/structuring-tax" element={<StructuringTax />} />
           <Route path="/services/ma-consulting" element={<MAConsulting />} />
           <Route path="/services/special-solutions" element={<SpecialSolutions />} />
+          <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
