@@ -56,6 +56,7 @@ const serviceColumns = [
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [megaOpen, setMegaOpen] = useState(false);
   const [hoveredCol, setHoveredCol] = useState<number | null>(null);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
