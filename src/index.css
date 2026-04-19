@@ -55,6 +55,13 @@
     @apply bg-background text-foreground;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
+
+  button,
+  [role="button"],
+  a.btn-gold,
+  a.btn-outline-gold {
+    border-radius: 12px;
+  }
 }
 
 @layer components {
@@ -171,7 +178,7 @@
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    border-radius: 16px;
+    border-radius: 12px;
     transition: all 300ms ease;
   }
   .btn-gold:hover {
@@ -188,7 +195,7 @@
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    border-radius: 16px;
+    border-radius: 12px;
     transition: all 300ms ease;
   }
   .btn-outline-gold:hover {
