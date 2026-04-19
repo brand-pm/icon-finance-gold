@@ -273,104 +273,85 @@ const Header = () => {
 
       {/* Mobile panel */}
       <div
-        className={`lg:hidden fixed inset-0 top-20 z-40 transition-opacity duration-300 ${
+        className={`lg:hidden fixed inset-0 top-20 z-40 bg-navy transition-opacity duration-200 ${
           mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
-        style={{ backgroundColor: "#0A0F1E" }}
       >
-        {/* Top gold hairline to separate from header */}
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
-
         <div className="flex flex-col h-full">
-          <div className="flex-1 overflow-y-auto pb-36 px-6 pt-7">
-            {/* Eyebrow MENU */}
-            <div className="text-[10px] uppercase tracking-[0.28em] text-gold/80 mb-6">Menu</div>
-
-            {/* Services list — Blueprint style: big gold numbers as art */}
-            <div className="space-y-6 mb-10">
-              {serviceColumns.map((col, idx) => (
-                <div key={col.title}>
-                  <Link
-                    to={col.link}
-                    onClick={() => setMobileOpen(false)}
-                    className="relative block pl-14 group"
-                  >
-                    <div className="absolute left-0 top-0 text-[28px] leading-none font-light text-gold/70 group-hover:text-gold transition-colors">
-                      {col.number}
-                    </div>
-                    <h3 className="text-white text-[15px] font-semibold uppercase tracking-[0.12em] mb-1 group-hover:text-gold transition-colors">
-                      {col.title}
-                    </h3>
-                    <p className="text-white/55 text-[12px] leading-snug">{col.description}</p>
-                  </Link>
-                  {idx < serviceColumns.length - 1 && (
-                    <div className="h-px bg-gold/15 mt-6" />
-                  )}
+          <div className="flex-1 overflow-y-auto pb-24">
+            <nav className="flex flex-col">
+              {/* Services accordion */}
+              <button
+                onClick={() => setMobileServicesOpen((v) => !v)}
+                className={`w-full flex items-center justify-between px-6 py-4 border-b border-white/10 text-[15px] font-medium transition-colors ${
+                  isServiceActive ? "text-gold" : "text-white"
+                }`}
+              >
+                <span>Services</span>
+                <ChevronDown
+                  size={18}
+                  className={`transition-transform duration-200 ${mobileServicesOpen ? "rotate-180 text-gold" : "text-white/60"}`}
+                />
+              </button>
+              {mobileServicesOpen && (
+                <div className="bg-white/[0.03] border-b border-white/10">
+                  {serviceColumns.map((col) => (
+                    <Link
+                      key={col.title}
+                      to={col.link}
+                      onClick={() => {
+                        setMobileOpen(false);
+                        setMobileServicesOpen(false);
+                      }}
+                      className="flex items-center gap-3 px-6 py-3.5 border-b border-white/5 last:border-b-0 text-white hover:text-gold transition-colors"
+                    >
+                      <span className="text-gold/70 text-[12px] w-6">{col.number}</span>
+                      <span className="text-[14px]">{col.title}</span>
+                    </Link>
+                  ))}
                 </div>
-              ))}
-            </div>
+              )}
 
-            {/* Eyebrow NAVIGATE */}
-            <div className="text-[10px] uppercase tracking-[0.28em] text-gold/80 mb-3">Navigate</div>
-            <div className="flex flex-col mb-8">
+              {/* Other items */}
               {navItems
                 .filter((item) => !item.hasMega)
-                .map((item) =>
-                  item.href.startsWith("/") ? (
-                    <Link
-                      key={item.label}
-                      to={item.href}
-                      onClick={() => setMobileOpen(false)}
-                      className={`py-3 text-[14px] uppercase tracking-[0.18em] font-medium transition-colors border-b border-white/5 ${
-                        isActive(item.href) ? "text-gold" : "text-white hover:text-gold"
-                      }`}
-                    >
-                      {item.label}
-                    </Link>
-                  ) : (
-                    <a
-                      key={item.label}
-                      href={item.href}
-                      onClick={() => setMobileOpen(false)}
-                      className="py-3 text-[14px] uppercase tracking-[0.18em] font-medium text-white hover:text-gold transition-colors border-b border-white/5"
-                    >
-                      {item.label}
-                    </a>
-                  ),
-                )}
+                .map((item) => (
+                  <Link
+                    key={item.label}
+                    to={item.href}
+                    onClick={() => setMobileOpen(false)}
+                    className={`px-6 py-4 border-b border-white/10 text-[15px] font-medium transition-colors ${
+                      isActive(item.href) ? "text-gold" : "text-white hover:text-gold"
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+
               <Link
                 to="/contact"
                 onClick={() => setMobileOpen(false)}
-                className={`py-3 text-[14px] uppercase tracking-[0.18em] font-medium transition-colors border-b border-white/5 ${
+                className={`px-6 py-4 border-b border-white/10 text-[15px] font-medium transition-colors ${
                   isActive("/contact") ? "text-gold" : "text-white hover:text-gold"
                 }`}
               >
                 Contact
               </Link>
-            </div>
 
-            {/* Language */}
-            <div className="text-[10px] uppercase tracking-[0.28em] text-gold/80 mb-3">Language</div>
-            <button className="flex items-center justify-between w-full py-3 px-4 border border-white/10 rounded-lg text-white/80 text-[13px] hover:border-gold/40 transition-colors">
-              <div className="flex items-center gap-2">
-                <Globe size={14} className="text-gold" />
-                <span>English</span>
-              </div>
-              <ChevronDown size={14} className="text-white/50" />
-            </button>
+              <button className="flex items-center gap-2 px-6 py-4 text-white/60 text-[14px]">
+                <Globe size={14} />
+                <span>EN</span>
+                <ChevronDown size={12} />
+              </button>
+            </nav>
           </div>
 
           {/* Sticky bottom CTA */}
-          <div
-            className="absolute bottom-0 left-0 right-0 px-6 py-5 border-t border-gold/20"
-            style={{ backgroundColor: "#0A0F1E" }}
-          >
-            <div className="text-[10px] uppercase tracking-[0.28em] text-gold/80 mb-3">Get in touch</div>
+          <div className="absolute bottom-0 left-0 right-0 bg-navy border-t border-white/10 p-4">
             <Link
               to="/contact"
               onClick={() => setMobileOpen(false)}
-              className="flex items-center justify-center gap-2 w-full py-4 text-[12px] uppercase tracking-[0.2em] font-semibold rounded-lg text-navy"
-              style={{ background: "linear-gradient(90deg, #E0A776 0%, #f0c395 100%)" }}
+              className="flex items-center justify-center gap-2 w-full bg-gold text-navy py-3.5 text-[14px] font-semibold rounded"
             >
               Start a Dialogue
               <ArrowRight size={14} />
