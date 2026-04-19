@@ -38,6 +38,7 @@ const WhoBenefits = ({ sectionTitle, items }: WhoBenefitsProps) => {
               return (
                 <div
                   key={i}
+                  data-radius-block
                   className={`transition-colors duration-300 border-b border-gold/30 ${isOpen ? "bg-navy" : ""}`}
                 >
                   <button
