@@ -16,7 +16,7 @@ const ServiceHero = ({ eyebrow, title, description, image, imageAlt, imagePositi
       <img
         src={image}
         alt=""
-        className="absolute inset-0 w-full h-full object-contain lg:object-cover"
+        className="absolute inset-0 w-full h-full object-cover"
         style={{ filter: "brightness(0.7) saturate(1.2)", objectPosition: imagePosition }}
       />
       {/* Gradient overlays to blend with navy */}
