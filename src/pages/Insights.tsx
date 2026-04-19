@@ -172,8 +172,9 @@ const Insights = () => {
         <div className="container-main">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filtered.map((a, i) => (
-              <article
-                key={a.title}
+              <Link
+                to={`/insights/${a.slug}`}
+                key={a.slug}
                 className="bg-white opacity-0 animate-fade-up cursor-pointer group border border-charcoal/[0.06] border-b-[3px] border-b-transparent hover:border-b-gold transition-all duration-300"
                 style={{ animationDelay: `${i * 0.05}s` }}
               >
@@ -195,7 +196,7 @@ const Insights = () => {
                   </h3>
                   <p className="text-slate text-[14px]">{a.date}</p>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
 
