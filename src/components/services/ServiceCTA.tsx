@@ -42,6 +42,7 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
 
         {/* Right — floating dark card */}
         <div
+          data-radius-block
           className="bg-navy opacity-0 animate-fade-up"
           style={{
             padding: "40px",
