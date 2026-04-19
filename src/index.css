@@ -69,6 +69,15 @@
   section {
     border-radius: 0 !important;
   }
+
+  /* Targeted block rounding (12px) */
+  .portfolio-stage-card,
+  [data-radius-block],
+  .accordion-card,
+  .who-benefits-item {
+    border-radius: 12px !important;
+    overflow: hidden;
+  }
 }
 
 @layer components {
