@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" width="1200" height="600">
+  <defs>
+    <!-- Three tones for the cube faces: top (lightest), left (mid), right (darkest) -->
+    <linearGradient id="top" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2340"/>
+      <stop offset="100%" stop-color="#141b33"/>
+    </linearGradient>
+    <linearGradient id="left" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f1530"/>
+      <stop offset="100%" stop-color="#0a0f24"/>
+    </linearGradient>
+    <linearGradient id="right" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0c1228"/>
+      <stop offset="100%" stop-color="#070b1c"/>
+    </linearGradient>
+
+    <!-- Soft vignette to add depth and keep edges dark -->
+    <radialGradient id="vignette" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#0F162D" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#05091a" stop-opacity="0.85"/>
+    </radialGradient>
+
+    <!-- One isometric cube unit. w=120 (half-width), h=104 (half-height ≈ w*sin60), d=120 (depth/height) -->
+    <symbol id="cube" overflow="visible">
+      <!-- Top face (rhombus) -->
+      <polygon points="0,-104 120,-34 0,36 -120,-34" fill="url(#top)"/>
+      <!-- Left face -->
+      <polygon points="-120,-34 0,36 0,156 -120,86" fill="url(#left)"/>
+      <!-- Right face -->
+      <polygon points="120,-34 0,36 0,156 120,86" fill="url(#right)"/>
+      <!-- Subtle hairline edges -->
+      <g fill="none" stroke="#2a3358" stroke-width="0.6" stroke-opacity="0.35">
+        <polyline points="-120,-34 0,-104 120,-34"/>
+        <line x1="0" y1="36" x2="0" y2="156"/>
+      </g>
+    </symbol>
+  </defs>
+
+  <!-- Base navy -->
+  <rect width="1200" height="600" fill="#0F162D"/>
+
+  <!-- Tessellated isometric cubes. Row spacing 240px (2*w), staggered by 120px on odd rows. -->
+  <g>
+    <!-- Row 1 (y = 30) -->
+    <use href="#cube" x="0" y="30"/>
+    <use href="#cube" x="240" y="30"/>
+    <use href="#cube" x="480" y="30"/>
+    <use href="#cube" x="720" y="30"/>
+    <use href="#cube" x="960" y="30"/>
+    <use href="#cube" x="1200" y="30"/>
+
+    <!-- Row 2 (staggered, y = 170) -->
+    <use href="#cube" x="120" y="170"/>
+    <use href="#cube" x="360" y="170"/>
+    <use href="#cube" x="600" y="170"/>
+    <use href="#cube" x="840" y="170"/>
+    <use href="#cube" x="1080" y="170"/>
+
+    <!-- Row 3 (y = 310) -->
+    <use href="#cube" x="0" y="310"/>
+    <use href="#cube" x="240" y="310"/>
+    <use href="#cube" x="480" y="310"/>
+    <use href="#cube" x="720" y="310"/>
+    <use href="#cube" x="960" y="310"/>
+    <use href="#cube" x="1200" y="310"/>
+
+    <!-- Row 4 (staggered, y = 450) -->
+    <use href="#cube" x="120" y="450"/>
+    <use href="#cube" x="360" y="450"/>
+    <use href="#cube" x="600" y="450"/>
+    <use href="#cube" x="840" y="450"/>
+    <use href="#cube" x="1080" y="450"/>
+
+    <!-- Row 5 (y = 590) -->
+    <use href="#cube" x="0" y="590"/>
+    <use href="#cube" x="240" y="590"/>
+    <use href="#cube" x="480" y="590"/>
+    <use href="#cube" x="720" y="590"/>
+    <use href="#cube" x="960" y="590"/>
+    <use href="#cube" x="1200" y="590"/>
+  </g>
+
+  <!-- Vignette overlay -->
+  <rect width="1200" height="600" fill="url(#vignette)"/>
+</svg>
