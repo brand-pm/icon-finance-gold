@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import heroBgWebp from "../assets/hero-bg.webp";
-import heroBgPng from "../assets/hero-bg.png";
 
 const stats = [
   { value: 10, prefix: "$", suffix: "M", label: "under management" },
@@ -56,37 +55,34 @@ const Hero = () => (
   <section className="relative flex items-center bg-navy overflow-hidden pt-20" style={{ minHeight: '75vh' }}>
     {/* Background */}
     <div className="absolute inset-0">
-      <picture>
-        <source srcSet={heroBgWebp} type="image/webp" />
-        <img
-          src={heroBgPng}
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover"
-          fetchPriority="high"
-          decoding="async"
-        />
-      </picture>
+      <img
+        src={heroBgWebp}
+        alt=""
+        className="absolute inset-0 w-full h-full object-cover"
+        fetchPriority="high"
+        decoding="async"
+      />
       <div className="absolute inset-0 bg-navy/20" />
     </div>
 
     <div className="container-main relative z-10 w-full">
-      <div className="grid lg:grid-cols-2 gap-16 items-center w-full">
+      <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center w-full py-12 lg:py-0">
         {/* Left */}
         <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-          <p className="eyebrow mb-6">Wealth Management</p>
+          <p className="eyebrow mb-4 md:mb-6">Wealth Management</p>
           <h1
-            className="text-gold font-light leading-[1.15] mb-6"
-            style={{ fontSize: "clamp(32px,6vw,56px)" }}
+            className="text-gold font-light leading-[1.15] mb-5 md:mb-6"
+            style={{ fontSize: "clamp(28px,6vw,56px)" }}
           >
             Preserving & Growing Wealth Across Generations
           </h1>
-          <p className="text-white/70 text-base max-w-lg mb-10 leading-relaxed">
+          <p className="text-white/70 text-[15px] md:text-base max-w-lg mb-8 md:mb-10 leading-relaxed">
             Comprehensive wealth management for families and entrepreneurs with
             international expertise and a tailored approach
           </p>
-          <div className="flex flex-wrap gap-4">
-            <Link to="/contact" className="btn-gold px-8 py-4">Start a dialogue</Link>
-            <Link to="/expertise" className="btn-outline-gold px-8 py-4">Our expertise</Link>
+          <div className="flex flex-wrap gap-3 md:gap-4">
+            <Link to="/contact" className="btn-gold px-6 md:px-8 py-3.5 md:py-4">Start a dialogue</Link>
+            <Link to="/expertise" className="btn-outline-gold px-6 md:px-8 py-3.5 md:py-4">Our expertise</Link>
           </div>
         </div>
 

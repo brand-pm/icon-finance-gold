@@ -35,14 +35,14 @@ const Hero = () => (
     <div className="container-main relative z-10 flex items-center" style={{ minHeight: "28vh" }}>
       <div className="max-w-xl">
         <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-          <p className="eyebrow mb-6">Contact</p>
+        <p className="eyebrow mb-4 md:mb-6">Contact</p>
           <h1
-            className="text-gold font-light leading-[1.15] mb-6"
-            style={{ fontSize: "clamp(32px,5vw,48px)" }}
+            className="text-gold font-light leading-[1.15] mb-5 md:mb-6"
+            style={{ fontSize: "clamp(28px,5vw,48px)" }}
           >
             Start a Confidential Conversation
           </h1>
-          <p className="text-white/70 text-base max-w-lg leading-relaxed">
+          <p className="text-white/70 text-[15px] md:text-base max-w-lg leading-relaxed">
             We listen first. We only propose a path forward when we are confident we can add
             meaningful value to your situation.
           </p>
@@ -83,7 +83,7 @@ const ContactBody = () => {
 
   const labelClass = "block text-white/70 text-xs uppercase tracking-wider mb-2";
   const inputClass =
-    "w-full bg-transparent border border-white/15 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-gold transition-colors";
+    "w-full bg-transparent border border-white/15 px-4 py-3.5 md:py-3 text-base md:text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-gold transition-colors";
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -159,7 +159,7 @@ const ContactBody = () => {
           </p>
 
           <form className="flex flex-col gap-5" onSubmit={handleSubmit} noValidate>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-4">
               <div>
                 <label className={labelClass}>First name</label>
                 <input

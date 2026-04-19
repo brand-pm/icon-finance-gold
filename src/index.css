@@ -82,7 +82,7 @@
 
 @layer components {
   .container-main {
-    @apply max-w-[1280px] mx-auto px-6;
+    @apply max-w-[1280px] mx-auto px-5 md:px-6;
   }
 
   .eyebrow {
@@ -94,7 +94,7 @@
   }
 
   .section-padding {
-    @apply py-24 md:py-32;
+    @apply py-16 md:py-24 lg:py-32;
   }
 
   .marble-texture {

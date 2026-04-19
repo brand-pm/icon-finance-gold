@@ -120,21 +120,21 @@ const Insights = () => {
               "linear-gradient(rgba(15,22,45,0.92), rgba(15,22,45,0.85))",
           }}
         />
-        <div className="container-main relative z-20 pt-24 pb-12">
+        <div className="container-main relative z-20 pt-24 pb-10 md:pb-12">
           <div className="max-w-3xl">
-            <p className="eyebrow text-gold mb-6">Insights & Analysis</p>
+            <p className="eyebrow text-gold mb-4 md:mb-6">Insights & Analysis</p>
             <h1
-              className="text-white font-light leading-[1.1] mb-6"
-              style={{ fontSize: "clamp(36px,5.5vw,60px)" }}
+              className="text-white font-light leading-[1.1] mb-5 md:mb-6"
+              style={{ fontSize: "clamp(28px,5.5vw,60px)" }}
             >
               Perspectives on Wealth, Markets, and Strategy
             </h1>
-            <div className="gold-separator !justify-start mb-6">
+            <div className="gold-separator !justify-start mb-5 md:mb-6">
               <div className="dot" />
               <div className="dot-lg" />
               <div className="dot" />
             </div>
-            <p className="text-white/75 text-lg leading-relaxed max-w-2xl">
+            <p className="text-white/75 text-[15px] md:text-lg leading-relaxed max-w-2xl">
               Expert commentary from the Icon Finance team on markets, structuring,
               family office, and the forces shaping private wealth.
             </p>
@@ -145,14 +145,14 @@ const Insights = () => {
       {/* FILTER BAR */}
       <div className="sticky top-20 z-30 bg-offwhite/95 backdrop-blur-md border-b border-charcoal/10">
         <div className="container-main">
-          <div className="flex gap-8 overflow-x-auto py-5 scrollbar-hide">
+          <div className="flex gap-5 md:gap-8 overflow-x-auto py-4 md:py-5 scrollbar-hide -mx-5 px-5 md:mx-0 md:px-0">
             {categories.map((cat) => {
               const active = activeCategory === cat;
               return (
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`relative whitespace-nowrap text-[12px] uppercase tracking-[0.12em] font-medium transition-colors duration-300 pb-2 ${
+                  className={`relative whitespace-nowrap text-[12px] md:text-[12px] uppercase tracking-[0.12em] font-medium transition-colors duration-300 pb-2 min-h-[44px] flex items-center ${
                     active ? "text-gold" : "text-slate hover:text-charcoal"
                   }`}
                 >
