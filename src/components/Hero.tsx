@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import heroBg from "../assets/hero-bg.svg";
+import heroBg from "../assets/hero-cubes.png";
 
 const stats = [
   { value: 10, prefix: "$", suffix: "M", label: "under management" },
@@ -52,17 +52,20 @@ const StatCard = ({ stat }: { stat: (typeof stats)[0] }) => {
 };
 
 const Hero = () => (
-  <section className="relative flex items-center bg-navy overflow-hidden pt-20" style={{ minHeight: '60vh' }}>
-    {/* Background */}
+  <section
+    className="relative flex items-center overflow-hidden pt-20"
+    style={{ minHeight: '60vh', backgroundColor: '#070D20' }}
+  >
+    {/* Background — designer's cube pattern at 10% opacity over #070D20 */}
     <div className="absolute inset-0">
       <img
         src={heroBg}
         alt=""
         className="absolute inset-0 w-full h-full object-cover"
+        style={{ opacity: 0.1 }}
         fetchPriority="high"
         decoding="async"
       />
-      <div className="absolute inset-0 bg-navy/20" />
     </div>
 
     <div className="container-main relative z-10 w-full">
