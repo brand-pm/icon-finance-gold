@@ -59,7 +59,17 @@
   button,
   [role="button"],
   a.btn-gold,
-  a.btn-outline-gold {
+  a.btn-outline-gold,
+  input,
+  select,
+  textarea,
+  img,
+  section > div,
+  article,
+  aside,
+  .portfolio-stage-card,
+  [class*="bg-"],
+  [class*="border"] {
     border-radius: 12px;
   }
 }
