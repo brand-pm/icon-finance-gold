@@ -55,6 +55,13 @@
     @apply bg-background text-foreground;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
+
+  button,
+  [role="button"],
+  a.btn-gold,
+  a.btn-outline-gold {
+    border-radius: 12px;
+  }
 }
 
 @layer components {
