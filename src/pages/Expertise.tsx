@@ -8,7 +8,7 @@ import marbleHero from "../assets/marble-calacatta-gold.jpg";
 
 /* ---------- HERO ---------- */
 const Hero = () => (
-  <section className="relative bg-navy overflow-hidden pt-24 pb-12" style={{ minHeight: "60vh" }}>
+  <section className="relative bg-navy overflow-hidden pt-24 pb-12" style={{ minHeight: "35vh" }}>
     <div className="absolute inset-0">
       <img
         src={marbleHero}
@@ -25,17 +25,17 @@ const Hero = () => (
       />
     </div>
 
-    <div className="container-main relative z-10 flex items-center" style={{ minHeight: "50vh" }}>
-      <div className="max-w-2xl">
+    <div className="container-main relative z-10 flex items-center" style={{ minHeight: "28vh" }}>
+      <div className="max-w-xl">
         <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
           <p className="eyebrow mb-6">Expertise</p>
           <h1
             className="text-gold font-light leading-[1.15] mb-6"
-            style={{ fontSize: "clamp(36px,5.5vw,56px)" }}
+            style={{ fontSize: "clamp(32px,5vw,48px)" }}
           >
             Decades of Experience.<br />One Integrated Team.
           </h1>
-          <p className="text-white/70 text-base lg:text-lg max-w-xl mb-10 leading-relaxed">
+          <p className="text-white/70 text-base max-w-lg mb-10 leading-relaxed">
             We bring together specialists in wealth management, family office, structuring, tax,
             and corporate advisory — working as one team around each client's complete financial
             life.
