@@ -35,14 +35,14 @@ const Hero = () => (
     <div className="container-main relative z-10 flex items-center" style={{ minHeight: "28vh" }}>
       <div className="max-w-xl">
         <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-          <p className="eyebrow mb-6">Contact</p>
+        <p className="eyebrow mb-4 md:mb-6">Contact</p>
           <h1
-            className="text-gold font-light leading-[1.15] mb-6"
-            style={{ fontSize: "clamp(32px,5vw,48px)" }}
+            className="text-gold font-light leading-[1.15] mb-5 md:mb-6"
+            style={{ fontSize: "clamp(28px,5vw,48px)" }}
           >
             Start a Confidential Conversation
           </h1>
-          <p className="text-white/70 text-base max-w-lg leading-relaxed">
+          <p className="text-white/70 text-[15px] md:text-base max-w-lg leading-relaxed">
             We listen first. We only propose a path forward when we are confident we can add
             meaningful value to your situation.
           </p>

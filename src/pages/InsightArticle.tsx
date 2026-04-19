@@ -70,19 +70,19 @@ const InsightArticle = () => {
       <Header />
 
       {/* HERO */}
-      <section className="bg-navy pt-32 pb-16">
+      <section className="bg-navy pt-28 md:pt-32 pb-12 md:pb-16">
         <div className="container-main">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-gold text-[12px] uppercase tracking-[0.14em] font-semibold mb-6">
+            <p className="text-gold text-[11px] md:text-[12px] uppercase tracking-[0.14em] font-semibold mb-4 md:mb-6">
               Wealth Management
             </p>
             <h1
-              className="text-white font-light leading-[1.15] mb-6"
-              style={{ fontSize: "clamp(30px,4.5vw,48px)" }}
+              className="text-white font-light leading-[1.15] mb-5 md:mb-6"
+              style={{ fontSize: "clamp(26px,4.5vw,48px)" }}
             >
               Interest Rate Cycles and What They Mean for Private Portfolios in 2025
             </h1>
-            <p className="text-slate text-[14px] mb-12">Apr 14, 2025 · 4 min read</p>
+            <p className="text-slate text-[13px] md:text-[14px] mb-10 md:mb-12">Apr 14, 2025 · 4 min read</p>
 
             <div className="max-w-[560px] mx-auto">
               <img

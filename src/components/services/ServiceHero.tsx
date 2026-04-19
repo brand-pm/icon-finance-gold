@@ -26,14 +26,14 @@ const ServiceHero = ({ eyebrow, title, description, image, imageAlt }: ServiceHe
     <div className="container-main relative z-10 flex items-center" style={{ minHeight: "28vh" }}>
       <div className="max-w-xl">
         <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-          <p className="eyebrow mb-6">{eyebrow}</p>
+          <p className="eyebrow mb-4 md:mb-6">{eyebrow}</p>
           <h1
-            className="text-gold font-light leading-[1.15] mb-6"
-            style={{ fontSize: "clamp(32px,5vw,48px)" }}
+            className="text-gold font-light leading-[1.15] mb-5 md:mb-6"
+            style={{ fontSize: "clamp(28px,5vw,48px)" }}
           >
             {title}
           </h1>
-          <p className="text-white/70 text-base max-w-lg mb-10 leading-relaxed">
+          <p className="text-white/70 text-[15px] md:text-base max-w-lg mb-8 md:mb-10 leading-relaxed">
             {description}
           </p>
           <Link to="/contact" className="btn-gold px-8 py-4 inline-block">
