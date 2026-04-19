@@ -121,7 +121,7 @@ const Services = () => {
             </div>
             <Link
               to={tabs[active].link}
-              className="btn-gold px-8 py-3 inline-block text-[12px] self-start"
+              className="btn-gold px-8 py-3 inline-block text-[12px] self-start text-white"
             >
               Learn more
             </Link>
