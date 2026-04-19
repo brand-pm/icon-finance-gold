@@ -71,8 +71,25 @@ const InvestmentStrategies = ({ strategies }: InvestmentStrategiesProps) => {
                   src={strategies[active].image}
                   alt={strategies[active].name}
                   className="w-full h-full object-cover absolute inset-0"
-                  style={{ filter: "sepia(100%)", transition: "opacity 0.3s ease" }}
+                  style={{ filter: "grayscale(100%) contrast(0.95) brightness(0.95)", transition: "opacity 0.3s ease" }}
                   loading="lazy"
+                />
+                {/* Brand tint overlay — navy base + gold warmth */}
+                <div
+                  className="absolute inset-0 pointer-events-none"
+                  style={{
+                    background:
+                      "linear-gradient(135deg, hsla(228, 51%, 12%, 0.55) 0%, hsla(24, 60%, 67%, 0.35) 100%)",
+                    mixBlendMode: "multiply",
+                  }}
+                />
+                <div
+                  className="absolute inset-0 pointer-events-none"
+                  style={{
+                    background:
+                      "linear-gradient(135deg, hsla(24, 60%, 67%, 0.18) 0%, transparent 60%)",
+                    mixBlendMode: "screen",
+                  }}
                 />
               </div>
             )}
