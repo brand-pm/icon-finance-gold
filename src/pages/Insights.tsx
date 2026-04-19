@@ -145,14 +145,14 @@ const Insights = () => {
       {/* FILTER BAR */}
       <div className="sticky top-20 z-30 bg-offwhite/95 backdrop-blur-md border-b border-charcoal/10">
         <div className="container-main">
-          <div className="flex gap-8 overflow-x-auto py-5 scrollbar-hide">
+          <div className="flex gap-5 md:gap-8 overflow-x-auto py-4 md:py-5 scrollbar-hide -mx-5 px-5 md:mx-0 md:px-0">
             {categories.map((cat) => {
               const active = activeCategory === cat;
               return (
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`relative whitespace-nowrap text-[12px] uppercase tracking-[0.12em] font-medium transition-colors duration-300 pb-2 ${
+                  className={`relative whitespace-nowrap text-[12px] md:text-[12px] uppercase tracking-[0.12em] font-medium transition-colors duration-300 pb-2 min-h-[44px] flex items-center ${
                     active ? "text-gold" : "text-slate hover:text-charcoal"
                   }`}
                 >
