@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ServiceCTA from "../components/services/ServiceCTA";
 import { useScrollReveal } from "../hooks/useScrollReveal";
-import marbleHero from "../assets/marble-calacatta-gold.jpg";
+import marbleHero from "../assets/expertise-hero-bg.jpg";
 
 /* ---------- HERO ---------- */
 const Hero = () => (
@@ -20,7 +20,7 @@ const Hero = () => (
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(to right, rgba(15,22,45,0.92) 40%, rgba(15,22,45,0.5) 100%)",
+            "linear-gradient(to right, rgba(15,22,45,0.9) 35%, rgba(15,22,45,0.35) 100%)",
         }}
       />
     </div>
