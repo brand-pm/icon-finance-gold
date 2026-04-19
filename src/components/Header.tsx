@@ -273,7 +273,7 @@ const Header = () => {
 
       {/* Mobile panel */}
       <div
-        className={`lg:hidden fixed inset-0 top-20 z-40 bg-navy transition-opacity duration-200 ${
+        className={`lg:hidden fixed left-0 right-0 bottom-0 top-20 z-40 bg-navy transition-opacity duration-200 ${
           mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
       >
