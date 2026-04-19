@@ -1,137 +1,279 @@
+import { Link } from "react-router-dom";
+import { Briefcase, Users, Globe, Building2, Heart, Shield } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import ServiceHero from "../components/services/ServiceHero";
-import Philosophy from "../components/services/Philosophy";
-import ResultsStats from "../components/services/ResultsStats";
-import InvestmentStrategies from "../components/services/InvestmentStrategies";
-import InvestmentOpportunities from "../components/services/InvestmentOpportunities";
-import PortfolioManagement from "../components/services/PortfolioManagement";
-import ServiceFAQ from "../components/services/ServiceFAQ";
 import ServiceCTA from "../components/services/ServiceCTA";
+import { useScrollReveal } from "../hooks/useScrollReveal";
 import marbleHero from "../assets/marble-calacatta-gold.jpg";
-import industryEntrepreneurs from "../assets/expertise-entrepreneurs.jpg";
-import industryFamilies from "../assets/expertise-families.jpg";
-import industryInternational from "../assets/expertise-international.jpg";
-import industryCorporate from "../assets/expertise-corporate.jpg";
 
+/* ---------- HERO ---------- */
+const Hero = () => (
+  <section className="relative bg-navy overflow-hidden pt-24 pb-12" style={{ minHeight: "60vh" }}>
+    <div className="absolute inset-0">
+      <img
+        src={marbleHero}
+        alt=""
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ objectPosition: "center" }}
+      />
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(to right, rgba(15,22,45,0.92) 40%, rgba(15,22,45,0.5) 100%)",
+        }}
+      />
+    </div>
+
+    <div className="container-main relative z-10 flex items-center" style={{ minHeight: "50vh" }}>
+      <div className="max-w-2xl">
+        <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+          <p className="eyebrow mb-6">Expertise</p>
+          <h1
+            className="text-gold font-light leading-[1.15] mb-6"
+            style={{ fontSize: "clamp(36px,5.5vw,56px)" }}
+          >
+            Decades of Experience.<br />One Integrated Team.
+          </h1>
+          <p className="text-white/70 text-base lg:text-lg max-w-xl mb-10 leading-relaxed">
+            We bring together specialists in wealth management, family office, structuring, tax,
+            and corporate advisory — working as one team around each client's complete financial
+            life.
+          </p>
+          <Link to="/#contact" className="btn-gold px-8 py-4 inline-block">
+            Start a dialogue
+          </Link>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
+/* ---------- SECTION 1 — COMPETENCIES ---------- */
+const competencies = [
+  {
+    n: "01",
+    title: "Wealth Management",
+    body: "Independent investment management and portfolio advisory for entrepreneurs and families. No product commissions. No institutional quotas. Only advice aligned with your goals.",
+  },
+  {
+    n: "02",
+    title: "Family Office",
+    body: "We design and operate family office structures for multi-generational families — coordinating investments, governance, succession, and reporting from a single point.",
+  },
+  {
+    n: "03",
+    title: "Structuring & Tax",
+    body: "International wealth structuring and tax planning across multiple jurisdictions — designed to protect assets, reduce unnecessary tax drag, and ensure full legal compliance.",
+  },
+  {
+    n: "04",
+    title: "Corporate Advisory",
+    body: "M&A advisory, exit planning, capital raising, and due diligence for business owners — from early growth through to final transaction close.",
+  },
+];
+
+const Competencies = () => {
+  const ref = useScrollReveal();
+  return (
+    <section
+      ref={ref}
+      className="relative marble-texture-strong section-padding"
+      style={{ background: "#F5F3F0" }}
+    >
+      <div className="container-main">
+        <div className="text-center max-w-2xl mx-auto mb-20 opacity-0 animate-fade-up">
+          <p className="eyebrow mb-4">Our Competencies</p>
+          <h2 className="text-charcoal font-light mb-6" style={{ fontSize: "clamp(32px,5vw,48px)" }}>
+            What We Do
+          </h2>
+          <div className="gold-separator mx-auto">
+            <div className="line" />
+            <div className="dot" />
+            <div className="dot-lg" />
+            <div className="dot" />
+            <div className="line" />
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-x-16 lg:gap-x-24 gap-y-16">
+          {competencies.map((c, i) => (
+            <div
+              key={c.n}
+              className="opacity-0 animate-fade-up"
+              style={{ animationDelay: `${0.1 + i * 0.08}s` }}
+            >
+              <div
+                className="text-gold font-light leading-none mb-6"
+                style={{ fontSize: "clamp(56px,7vw,80px)" }}
+              >
+                {c.n}
+              </div>
+              <h3 className="text-charcoal font-light mb-4" style={{ fontSize: "clamp(22px,2.4vw,28px)" }}>
+                {c.title}
+              </h3>
+              <div className="w-12 h-px bg-gold/60 mb-5" />
+              <p className="text-slate text-base leading-relaxed max-w-md">{c.body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+/* ---------- SECTION 2 — INDUSTRIES ---------- */
+const industries = [
+  { Icon: Briefcase, title: "Entrepreneurs & Founders", body: "Business owners navigating the intersection of personal and corporate wealth at every stage of growth." },
+  { Icon: Users, title: "Multi-Generational Families", body: "Families managing wealth across two or three generations with complex governance and succession needs." },
+  { Icon: Globe, title: "International Clients", body: "Individuals and families with assets, residency, and interests spread across multiple jurisdictions." },
+  { Icon: Building2, title: "Post-Exit Principals", body: "Founders and executives following a liquidity event who need disciplined capital deployment and protection." },
+  { Icon: Heart, title: "Philanthropists", body: "Families and individuals seeking to deploy capital for lasting impact through structured giving." },
+  { Icon: Shield, title: "Corporate & Institutional", body: "Companies and family businesses requiring independent M&A, capital, and restructuring advisory." },
+];
+
+const Industries = () => {
+  const ref = useScrollReveal();
+  return (
+    <section ref={ref} className="bg-navy section-padding">
+      <div className="container-main">
+        <div className="text-center max-w-2xl mx-auto mb-20 opacity-0 animate-fade-up">
+          <p className="eyebrow mb-4" style={{ color: "#E0A776" }}>Industries We Serve</p>
+          <h2 className="text-white font-light mb-6" style={{ fontSize: "clamp(32px,5vw,48px)" }}>
+            Who We Work With
+          </h2>
+          <div className="gold-separator mx-auto">
+            <div className="line" />
+            <div className="dot" />
+            <div className="dot-lg" />
+            <div className="dot" />
+            <div className="line" />
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
+          {industries.map(({ Icon, title, body }, i) => (
+            <div
+              key={title}
+              className="opacity-0 animate-fade-up"
+              style={{ animationDelay: `${0.1 + i * 0.06}s` }}
+            >
+              <Icon className="text-gold mb-6" size={36} strokeWidth={1.25} />
+              <h3 className="text-white font-light mb-3" style={{ fontSize: "20px" }}>
+                {title}
+              </h3>
+              <div className="w-10 h-px bg-gold/50 mb-4" />
+              <p className="text-white/60 text-sm leading-relaxed">{body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+/* ---------- SECTION 3 — INTERNATIONAL EXPERIENCE ---------- */
+const jurisdictions = [
+  { name: "Poland", desc: "Primary hub and regulatory base" },
+  { name: "European Union", desc: "Cross-border structuring and compliance" },
+  { name: "UAE / Dubai", desc: "Holding structures and residency planning" },
+  { name: "Cyprus & Malta", desc: "EU-based tax planning vehicles" },
+  { name: "Luxembourg", desc: "Fund and family holding structures" },
+  { name: "BVI & Cayman", desc: "International holding vehicles" },
+];
+
+const International = () => {
+  const ref = useScrollReveal();
+  return (
+    <section
+      ref={ref}
+      className="relative marble-texture-strong section-padding"
+      style={{ background: "#F5F3F0" }}
+    >
+      <div className="container-main grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        {/* Left */}
+        <div className="opacity-0 animate-fade-up text-center lg:text-left flex flex-col items-center lg:items-start">
+          <p className="eyebrow mb-4">International Experience</p>
+          <h2 className="text-charcoal font-light mb-6" style={{ fontSize: "clamp(32px,5vw,48px)" }}>
+            Where We Work
+          </h2>
+          <div className="gold-separator mb-8">
+            <div className="line" />
+            <div className="dot" />
+            <div className="dot-lg" />
+            <div className="dot" />
+            <div className="line" />
+          </div>
+          <p className="text-slate text-base lg:text-lg leading-relaxed max-w-md">
+            Our clients' lives do not stop at one border — and neither does our expertise.
+            We coordinate across jurisdictions, time zones, and regulatory frameworks to give
+            clients a single coherent view of their international wealth.
+          </p>
+        </div>
+
+        {/* Right — jurisdiction grid */}
+        <div className="grid sm:grid-cols-2 gap-x-8 gap-y-8 opacity-0 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+          {jurisdictions.map((j) => (
+            <div key={j.name} className="border-l border-gold/40 pl-5">
+              <div className="text-charcoal font-medium text-base mb-1.5">{j.name}</div>
+              <div className="text-slate text-sm leading-relaxed">{j.desc}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+/* ---------- SECTION 4 — KEY NUMBERS ---------- */
+const stats = [
+  { n: "15+", label: "Years in wealth management" },
+  { n: "4", label: "Core service disciplines" },
+  { n: "6+", label: "Jurisdictions covered" },
+  { n: "4", label: "Languages spoken" },
+];
+
+const KeyNumbers = () => {
+  const ref = useScrollReveal();
+  return (
+    <section ref={ref} className="bg-navy section-padding">
+      <div className="container-main">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-14 gap-x-8">
+          {stats.map((s, i) => (
+            <div
+              key={s.label}
+              className="text-center opacity-0 animate-fade-up"
+              style={{ animationDelay: `${0.1 + i * 0.08}s` }}
+            >
+              <div
+                className="text-gold font-light leading-none mb-4"
+                style={{ fontSize: "clamp(56px,7vw,84px)" }}
+              >
+                {s.n}
+              </div>
+              <div className="w-10 h-px bg-gold/50 mx-auto mb-4" />
+              <p className="text-white/70 text-sm uppercase tracking-wider">{s.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+/* ---------- PAGE ---------- */
 const Expertise = () => (
   <div className="min-h-screen">
     <Header />
-
-    <ServiceHero
-      eyebrow="Expertise"
-      title="Decades of Experience. One Integrated Team."
-      description="Icon Finance brings together specialists in wealth management, family office, structuring, tax, and corporate advisory — working as one team around each client's complete financial life."
-      image={marbleHero}
-      imageAlt="Calacatta gold marble — premium expertise"
-    />
-
-    <Philosophy
-      sectionTitle={"What We\nDo Best"}
-      subtitle="Our expertise is not divided into silos. Every discipline we practice is connected — because your financial life does not exist in isolated compartments."
-      items={[
-        { number: "01", title: "Wealth Management", description: "Independent portfolio management, asset allocation, and investment advisory for entrepreneurs and families with complex financial lives." },
-        { number: "02", title: "Family Office", description: "Full-service family office design and operations — from governance and succession to consolidated reporting and generational planning." },
-        { number: "03", title: "Structuring & Tax", description: "International wealth structuring, tax planning, and compliance across multiple jurisdictions — fully integrated with investment and succession strategy." },
-        { number: "04", title: "Corporate Advisory", description: "M&A, exit planning, capital raising, and due diligence for business owners at every stage of their company's lifecycle." },
-      ]}
-    />
-
-    <ResultsStats
-      eyebrow="Why It Matters"
-      title="The Icon Finance Difference"
-      items={[
-        { main: "Independent", subtitle: "", label: "No bank affiliations, no product commissions, ever" },
-        { main: "Integrated", subtitle: "", label: "All disciplines working together around one client" },
-        { main: "Senior", subtitle: "", label: "Direct access to experienced professionals at all times" },
-        { main: "Cross-Border", subtitle: "", label: "Expertise across multiple European jurisdictions" },
-        { main: "Discreet", subtitle: "", label: "Absolute confidentiality as a professional standard" },
-        { main: "Long-Term", subtitle: "", label: "Client relationships measured in decades, not mandates" },
-      ]}
-    />
-
-    <InvestmentStrategies
-      strategies={[
-        {
-          name: "Entrepreneurs & Business Owners",
-          description: "We work with founders and business owners at every stage — from growing a company to preparing for exit. We understand that personal and business wealth are deeply intertwined, and we manage both.",
-          items: ["Pre-exit and post-exit wealth planning", "Business and personal wealth coordination", "M&A advisory and capital strategy"],
-          image: industryEntrepreneurs,
-        },
-        {
-          name: "Multi-Generational Families",
-          description: "Families with wealth spanning two or three generations need more than investment management. We design the governance, succession, and education frameworks that keep family capital — and family unity — intact.",
-          items: ["Family office design and operations", "Succession and inheritance planning", "Next generation financial education"],
-          image: industryFamilies,
-        },
-        {
-          name: "International Clients",
-          description: "Clients with assets, residency, and interests across multiple countries face unique complexity. We provide the cross-border coordination that turns that complexity into a manageable, efficient structure.",
-          items: ["Multi-jurisdiction structuring", "Residency and tax planning", "Consolidated cross-border reporting"],
-          image: industryInternational,
-        },
-        {
-          name: "Corporate & Institutional",
-          description: "We work with corporations, family businesses, and institutional investors on M&A transactions, capital raising, and strategic advisory — bringing the same independence and rigour as in our private client work.",
-          items: ["M&A and transaction advisory", "Capital raising and investor relations", "Corporate governance and restructuring"],
-          image: industryCorporate,
-        },
-      ]}
-    />
-
-    <InvestmentOpportunities
-      categories={[
-        {
-          name: "Jurisdictions We Cover",
-          items: [
-            { title: "Poland", description: "primary hub, regulatory expertise" },
-            { title: "European Union", description: "cross-border structuring and compliance" },
-            { title: "UAE / Dubai", description: "holding structures and residency planning" },
-            { title: "Cyprus & Malta", description: "EU-based holding and tax planning" },
-            { title: "Luxembourg", description: "fund structures and family holdings" },
-            { title: "BVI & Cayman Islands", description: "international holding vehicles" },
-          ],
-        },
-        {
-          name: "What Cross-Border Means in Practice",
-          dark: true,
-          items: [
-            { title: "Multi-jurisdiction tax analysis", description: "global tax position in one view" },
-            { title: "International entity coordination", description: "companies, trusts, foundations" },
-            { title: "CRS & FATCA compliance", description: "full regulatory transparency" },
-            { title: "Residency planning", description: "for individuals and families" },
-            { title: "Cross-border succession", description: "inheritance across jurisdictions" },
-            { title: "Currency and FX coordination", description: "multi-currency portfolio management" },
-          ],
-        },
-      ]}
-    />
-
-    <PortfolioManagement
-      title="Our Client Engagement Model"
-      description="Every client relationship follows the same disciplined process — regardless of mandate size or complexity."
-      steps={[
-        { number: "1", title: "Discovery", timeline: "Week 1–2", result: "Complete Client Picture", activities: ["Goals", "Assets", "Family structure", "Tax position", "Existing advisors"] },
-        { number: "2", title: "Analysis & Design", timeline: "Week 3–4", result: "Integrated Advisory Plan", activities: ["Gap analysis", "Opportunity mapping", "Structure review", "Recommendations"] },
-        { number: "3", title: "Implementation", timeline: "Week 5–8", result: "Solutions in Place", activities: ["Structure setup", "Portfolio construction", "Advisor coordination", "Documentation"] },
-        { number: "4", title: "Partnership", timeline: "Ongoing", result: "Long-term client relationship", activities: ["Regular reviews", "Reporting", "Proactive advice", "Life event response"] },
-      ]}
-    />
-
-    <ServiceFAQ
-      items={[
-        { question: "Do you work with clients outside Poland?", answer: "Yes. While our office is based in Warsaw, we serve clients across Europe and internationally. The nature of wealth management and structuring work means most of our engagement is not location-dependent." },
-        { question: "Do you work alongside existing advisors?", answer: "Yes — and we prefer it. We often act as a coordinating layer above existing legal, tax, and investment advisors, ensuring all advice is coherent and working toward the same goals." },
-        { question: "What languages do you work in?", answer: "Our team works in English, Polish, Ukrainian, and Russian — reflecting the diversity of our client base across Central and Eastern Europe." },
-        { question: "How do you charge for your services?", answer: "Fee structures vary by mandate — advisory retainers, AUM-based fees, and project fees depending on the service. All fees are agreed transparently in advance. We receive no commissions or third-party payments." },
-      ]}
-    />
-
+    <Hero />
+    <Competencies />
+    <Industries />
+    <International />
+    <KeyNumbers />
     <ServiceCTA
       title="Start a Confidential Conversation"
       description="Arrange a private consultation with our team. We will listen to your situation first — and only propose a path forward if we are confident we can add meaningful value."
     />
-
     <Footer />
   </div>
 );
