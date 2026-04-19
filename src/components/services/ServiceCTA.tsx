@@ -22,8 +22,8 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
   return (
     <section className="relative marble-texture-strong" style={{ background: "#F5F3F0" }} ref={ref}>
       <div className="container-main grid lg:grid-cols-2 gap-12 lg:gap-16 items-center py-20 lg:py-28">
-        {/* Left — vertically centered */}
-        <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+        {/* Left — centered horizontally and vertically */}
+        <div className="opacity-0 animate-fade-up text-center flex flex-col items-center" style={{ animationDelay: "0.1s" }}>
           <p className="eyebrow mb-4">Get in Touch</p>
           <h2 className="text-charcoal font-light mb-6" style={{ fontSize: "clamp(26px,4vw,36px)" }}>
             {title}

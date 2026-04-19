@@ -18,14 +18,14 @@ const ServiceFAQ = ({ items }: ServiceFAQProps) => {
   return (
     <section className="section-padding bg-offwhite">
       <div className="container-main" ref={ref}>
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-          {/* Left */}
-          <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            <p className="eyebrow mb-4">FAQ</p>
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left — centered horizontally and vertically */}
+          <div className="opacity-0 animate-fade-up text-center flex flex-col items-center" style={{ animationDelay: "0.1s" }}>
+            <p className="eyebrow mb-4">FAQ Section</p>
             <h2 className="text-charcoal font-light" style={{ fontSize: "clamp(26px,4vw,38px)" }}>
               Frequently Asked<br />Questions
             </h2>
-            <div className="gold-separator justify-start mt-6">
+            <div className="gold-separator mt-6">
               <div className="dot" /><div className="dot-lg" /><div className="dot" />
             </div>
           </div>
