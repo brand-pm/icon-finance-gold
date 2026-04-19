@@ -9,6 +9,10 @@ import PortfolioManagement from "../components/services/PortfolioManagement";
 import ServiceFAQ from "../components/services/ServiceFAQ";
 import ServiceCTA from "../components/services/ServiceCTA";
 import marbleHero from "../assets/marble-calacatta-gold.jpg";
+import industryEntrepreneurs from "../assets/expertise-entrepreneurs.jpg";
+import industryFamilies from "../assets/expertise-families.jpg";
+import industryInternational from "../assets/expertise-international.jpg";
+import industryCorporate from "../assets/expertise-corporate.jpg";
 
 const Expertise = () => (
   <div className="min-h-screen">
@@ -52,25 +56,25 @@ const Expertise = () => (
           name: "Entrepreneurs & Business Owners",
           description: "We work with founders and business owners at every stage — from growing a company to preparing for exit. We understand that personal and business wealth are deeply intertwined, and we manage both.",
           items: ["Pre-exit and post-exit wealth planning", "Business and personal wealth coordination", "M&A advisory and capital strategy"],
-          image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&q=80",
+          image: industryEntrepreneurs,
         },
         {
           name: "Multi-Generational Families",
           description: "Families with wealth spanning two or three generations need more than investment management. We design the governance, succession, and education frameworks that keep family capital — and family unity — intact.",
           items: ["Family office design and operations", "Succession and inheritance planning", "Next generation financial education"],
-          image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80",
+          image: industryFamilies,
         },
         {
           name: "International Clients",
           description: "Clients with assets, residency, and interests across multiple countries face unique complexity. We provide the cross-border coordination that turns that complexity into a manageable, efficient structure.",
           items: ["Multi-jurisdiction structuring", "Residency and tax planning", "Consolidated cross-border reporting"],
-          image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80",
+          image: industryInternational,
         },
         {
           name: "Corporate & Institutional",
           description: "We work with corporations, family businesses, and institutional investors on M&A transactions, capital raising, and strategic advisory — bringing the same independence and rigour as in our private client work.",
           items: ["M&A and transaction advisory", "Capital raising and investor relations", "Corporate governance and restructuring"],
-          image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&q=80",
+          image: industryCorporate,
         },
       ]}
     />
