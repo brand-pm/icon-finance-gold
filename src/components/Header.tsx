@@ -6,7 +6,7 @@ import logo from "../assets/logo.svg";
 const navItems = [
   { label: "Services", href: "#services", hasMega: true },
   { label: "Expertise", href: "#expertise" },
-  { label: "Insights", href: "#insights" },
+  { label: "Insights", href: "/insights" },
   { label: "About", href: "/about" },
 ];
 
