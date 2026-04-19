@@ -60,13 +60,8 @@ const Services = () => {
   const ref = useScrollReveal();
 
   return (
-    <section
-      id="services"
-      className="section-padding relative"
-      style={{ background: "linear-gradient(180deg, #F5F3F0 0%, #EDE9E4 100%)" }}
-    >
+    <section id="services" className="section-padding relative marble-texture">
       <div className="container-main" ref={ref}>
-        {/* Header */}
         <div className="text-center mb-16 opacity-0 animate-fade-up">
           <p className="eyebrow mb-4">Our Services</p>
           <h2
@@ -83,38 +78,27 @@ const Services = () => {
           </div>
         </div>
 
-        {/* Main content card */}
-        <div
-          className="grid lg:grid-cols-[200px_1fr_380px] gap-0 overflow-hidden"
-          style={{
-            background: "linear-gradient(135deg, #FAFAFA 0%, #F0ECE7 50%, #D8D4CE 100%)",
-            boxShadow: "0 8px 40px rgba(0,0,0,0.08)",
-          }}
-        >
-          {/* Tabs */}
-          <div className="py-6 px-2 border-r border-black/[0.06]">
+        <div className="services-shell grid lg:grid-cols-[220px_1fr_420px] gap-0">
+          <div className="services-tabs-panel py-6 px-2 lg:border-r lg:border-border/70">
             {tabs.map((tab, i) => (
               <button
                 key={i}
                 onClick={() => setActive(i)}
-                className={`w-full text-left px-5 py-4 text-sm transition-all duration-300 flex items-center justify-between ${
-                  i === active
-                    ? "text-charcoal font-semibold"
-                    : "text-slate hover:text-charcoal"
-                } ${i < tabs.length - 1 ? "border-b border-black/[0.05]" : ""}`}
+                className={`services-tab-button ${
+                  i === active ? "services-tab-button--active" : "services-tab-button--inactive"
+                }`}
               >
                 <span className="flex items-center gap-2.5">
-                  {i === active && <span className="text-gold text-[8px]">◆</span>}
+                  <span className={`services-tab-marker ${i === active ? "opacity-100" : "opacity-0"}`}>◆</span>
                   {tab.name}
                 </span>
-                {i === active && <span className="text-gold text-lg leading-none">›</span>}
+                <span className={`services-tab-chevron ${i === active ? "opacity-100" : "opacity-0"}`}>›</span>
               </button>
             ))}
           </div>
 
-          {/* Content */}
           <div
-            className="opacity-0 animate-fade-up flex flex-col justify-center px-10 py-10"
+            className="opacity-0 animate-fade-up flex flex-col justify-center px-8 py-10 md:px-10 lg:px-12"
             key={active}
             style={{ animationDelay: "0.1s" }}
           >
@@ -124,14 +108,14 @@ const Services = () => {
             >
               {tabs[active].title}
             </h3>
-            <p className="text-slate text-[15px] leading-[1.75] mb-10">
+            <p className="text-slate text-[15px] leading-[1.75] mb-10 max-w-[720px]">
               {tabs[active].desc}
             </p>
-            <div className="flex gap-12 mb-10">
+            <div className="flex flex-wrap gap-x-10 gap-y-6 mb-10">
               {tabs[active].items.map((item, i) => (
-                <div key={i} className="flex flex-col gap-1.5">
+                <div key={i} className="flex flex-col gap-1.5 min-w-[150px]">
                   <span className="text-gold font-light text-2xl">0{i + 1}</span>
-                  <span className="text-charcoal text-sm">{item}</span>
+                  <span className="text-charcoal text-sm md:text-base">{item}</span>
                 </div>
               ))}
             </div>
@@ -143,11 +127,7 @@ const Services = () => {
             </Link>
           </div>
 
-          {/* Image */}
-          <div
-            className="flex items-center justify-center overflow-hidden"
-            style={{ background: "#D8D4CE" }}
-          >
+          <div className="services-image-panel flex items-center justify-center overflow-hidden">
             <img
               key={active}
               src={tabs[active].image}
@@ -155,7 +135,7 @@ const Services = () => {
               loading="lazy"
               width={1024}
               height={1024}
-              className="w-full h-full object-cover animate-scale-in"
+              className="service-symbol-image animate-scale-in"
               style={{ animation: "scale-in 0.5s ease-out forwards" }}
             />
           </div>
