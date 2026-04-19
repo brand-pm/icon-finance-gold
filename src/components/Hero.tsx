@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import heroBgWebp from "../assets/hero-bg.webp";
-import heroBgPng from "../assets/hero-bg.png";
 
 const stats = [
   { value: 10, prefix: "$", suffix: "M", label: "under management" },
@@ -56,16 +55,13 @@ const Hero = () => (
   <section className="relative flex items-center bg-navy overflow-hidden pt-20" style={{ minHeight: '75vh' }}>
     {/* Background */}
     <div className="absolute inset-0">
-      <picture>
-        <source srcSet={heroBgWebp} type="image/webp" />
-        <img
-          src={heroBgPng}
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover"
-          fetchPriority="high"
-          decoding="async"
-        />
-      </picture>
+      <img
+        src={heroBgWebp}
+        alt=""
+        className="absolute inset-0 w-full h-full object-cover"
+        fetchPriority="high"
+        decoding="async"
+      />
       <div className="absolute inset-0 bg-navy/20" />
     </div>
 
