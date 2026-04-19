@@ -6,7 +6,7 @@ import logo from "../assets/logo.svg";
 const navItems = [
   { label: "Services", href: "#services", hasMega: true },
   { label: "Expertise", href: "#expertise" },
-  { label: "Insights", href: "#insights" },
+  { label: "Insights", href: "/insights" },
   { label: "About", href: "/about" },
 ];
 
@@ -103,6 +103,14 @@ const Header = () => {
                   />
                 </button>
               </div>
+            ) : item.href.startsWith("/") ? (
+              <Link
+                key={item.label}
+                to={item.href}
+                className="text-[13px] text-white/70 hover:text-gold transition-colors duration-300 uppercase tracking-wider font-medium"
+              >
+                {item.label}
+              </Link>
             ) : (
               <a
                 key={item.label}
