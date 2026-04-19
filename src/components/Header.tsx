@@ -1,11 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import { Menu, X, Globe, ChevronDown, TrendingUp, Users, Shield, Briefcase, Star, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo.svg";
 
 const navItems = [
   { label: "Services", href: "#services", hasMega: true },
-  { label: "Expertise", href: "#expertise" },
+  { label: "Expertise", href: "/expertise" },
   { label: "Insights", href: "/insights" },
   { label: "About", href: "/about" },
 ];
@@ -54,6 +54,10 @@ const Header = () => {
   const [megaOpen, setMegaOpen] = useState(false);
   const [hoveredCol, setHoveredCol] = useState<number | null>(null);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const location = useLocation();
+  const isServiceActive = location.pathname.startsWith("/services/");
+  const isActive = (href: string) =>
+    href.startsWith("/") && (location.pathname === href || location.pathname.startsWith(href + "/"));
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -89,11 +93,11 @@ const Header = () => {
                 key={item.label}
                 onMouseEnter={openMega}
                 onMouseLeave={closeMega}
-                className="h-20 flex items-center"
+                className="h-20 flex items-center relative"
               >
                 <button
                   className={`flex items-center gap-1 text-[13px] transition-colors duration-300 uppercase tracking-wider font-medium ${
-                    megaOpen ? "text-gold" : "text-white/70 hover:text-gold"
+                    megaOpen || isServiceActive ? "text-gold" : "text-white/70 hover:text-gold"
                   }`}
                 >
                   {item.label}
@@ -102,14 +106,22 @@ const Header = () => {
                     className={`transition-transform duration-300 ${megaOpen ? "rotate-180" : ""}`}
                   />
                 </button>
+                {isServiceActive && (
+                  <span className="absolute bottom-5 left-0 right-4 h-[2px] bg-gold" />
+                )}
               </div>
             ) : item.href.startsWith("/") ? (
               <Link
                 key={item.label}
                 to={item.href}
-                className="text-[13px] text-white/70 hover:text-gold transition-colors duration-300 uppercase tracking-wider font-medium"
+                className={`relative h-20 flex items-center text-[13px] transition-colors duration-300 uppercase tracking-wider font-medium ${
+                  isActive(item.href) ? "text-gold" : "text-white/70 hover:text-gold"
+                }`}
               >
                 {item.label}
+                {isActive(item.href) && (
+                  <span className="absolute bottom-5 left-0 right-0 h-[2px] bg-gold" />
+                )}
               </Link>
             ) : (
               <a
