@@ -7,7 +7,7 @@ const subjects = [
 ];
 
 const inputClass =
-  "w-full p-4 bg-[rgba(255,255,255,0.06)] border border-[rgba(255,255,255,0.15)] text-white placeholder:text-white/40 text-sm outline-none focus:border-gold transition-colors duration-300";
+  "w-full p-4 bg-[rgba(255,255,255,0.06)] border border-[rgba(255,255,255,0.15)] text-white placeholder:text-white/40 text-base md:text-sm outline-none focus:border-gold transition-colors duration-300";
 
 const Contact = () => {
   const [subject, setSubject] = useState("");
