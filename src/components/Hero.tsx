@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import heroBgWebp from "../assets/hero-bg.webp";
+import heroBg from "../assets/hero-bg.svg";
 
 const stats = [
   { value: 10, prefix: "$", suffix: "M", label: "under management" },
@@ -56,13 +56,13 @@ const Hero = () => (
     {/* Background */}
     <div className="absolute inset-0">
       <img
-        src={heroBgWebp}
+        src={heroBg}
         alt=""
         className="absolute inset-0 w-full h-full object-cover"
         fetchPriority="high"
         decoding="async"
       />
-      <div className="absolute inset-0 bg-navy/20" />
+      <div className="absolute inset-0 bg-navy/30" />
     </div>
 
     <div className="container-main relative z-10 w-full">
