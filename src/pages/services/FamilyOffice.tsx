@@ -10,11 +10,10 @@ import PortfolioManagement from "../../components/services/PortfolioManagement";
 import ServiceFAQ from "../../components/services/ServiceFAQ";
 import ServiceCTA from "../../components/services/ServiceCTA";
 import familyImg from "../../assets/family-office-symbol.png";
-
-const strategyConservative = "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80";
-const strategyBalanced = "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=80";
-const strategyGrowth = "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80";
-const strategyOpportunistic = "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&q=80";
+import strategyConservative from "../../assets/family-single-office.jpg";
+import strategyBalanced from "../../assets/family-shared-office.jpg";
+import strategyGrowth from "../../assets/family-advisory-office.jpg";
+import strategyOpportunistic from "../../assets/family-virtual-office.jpg";
 
 const FamilyOffice = () => (
   <div className="min-h-screen">
