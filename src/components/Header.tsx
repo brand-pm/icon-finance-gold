@@ -257,44 +257,111 @@ const Header = () => {
       </div>
 
       {/* Mobile panel */}
-      {mobileOpen && (
-        <div className="lg:hidden fixed inset-0 top-20 bg-navy/98 backdrop-blur-lg z-40 animate-slide-in-right">
-          <nav className="flex flex-col items-center gap-8 pt-16">
-            {navItems.map((item) =>
-              item.href.startsWith("/") ? (
-                <Link
-                  key={item.label}
-                  to={item.href}
-                  onClick={() => setMobileOpen(false)}
-                  className={`text-lg transition-colors uppercase tracking-wider ${
-                    isActive(item.href) ? "text-gold" : "text-white/80 hover:text-gold"
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              ) : (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  onClick={() => setMobileOpen(false)}
-                  className={`text-lg transition-colors uppercase tracking-wider ${
-                    isServiceActive ? "text-gold" : "text-white/80 hover:text-gold"
-                  }`}
-                >
-                  {item.label}
-                </a>
-              ),
-            )}
+      <div
+        className={`lg:hidden fixed inset-0 top-20 bg-navy z-40 transition-opacity duration-300 ${
+          mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        }`}
+      >
+        <div className="flex flex-col h-full">
+          <div className="flex-1 overflow-y-auto pb-32">
+            <nav className="px-6 pt-6">
+              {/* Services accordion */}
+              <button
+                onClick={() => setMobileServicesOpen((v) => !v)}
+                className={`w-full flex items-center justify-between py-5 border-b border-white/10 text-[15px] uppercase tracking-[0.18em] font-medium transition-colors ${
+                  isServiceActive ? "text-gold" : "text-white"
+                }`}
+              >
+                <span>Services</span>
+                <ChevronDown
+                  size={18}
+                  className={`transition-transform duration-300 ${mobileServicesOpen ? "rotate-180 text-gold" : "text-white/60"}`}
+                />
+              </button>
+              <div
+                className={`overflow-hidden transition-all duration-300 ${
+                  mobileServicesOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
+                }`}
+              >
+                <div className="py-3">
+                  {serviceColumns.map((col) => (
+                    <Link
+                      key={col.title}
+                      to={col.link}
+                      onClick={() => {
+                        setMobileOpen(false);
+                        setMobileServicesOpen(false);
+                      }}
+                      className="flex items-center gap-4 py-4 px-2 border-b border-white/5"
+                    >
+                      <span className="text-gold text-[12px] tracking-[0.2em] w-8">{col.number}</span>
+                      <div className="flex-1">
+                        <div className="text-white text-[15px] font-medium">{col.title}</div>
+                        <div className="text-white/50 text-[12px] mt-1 leading-snug">{col.description}</div>
+                      </div>
+                      <ArrowRight size={16} className="text-gold/60" />
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              {/* Other items */}
+              {navItems
+                .filter((item) => !item.hasMega)
+                .map((item) =>
+                  item.href.startsWith("/") ? (
+                    <Link
+                      key={item.label}
+                      to={item.href}
+                      onClick={() => setMobileOpen(false)}
+                      className={`block py-5 border-b border-white/10 text-[15px] uppercase tracking-[0.18em] font-medium transition-colors ${
+                        isActive(item.href) ? "text-gold" : "text-white hover:text-gold"
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  ) : (
+                    <a
+                      key={item.label}
+                      href={item.href}
+                      onClick={() => setMobileOpen(false)}
+                      className="block py-5 border-b border-white/10 text-[15px] uppercase tracking-[0.18em] font-medium text-white hover:text-gold transition-colors"
+                    >
+                      {item.label}
+                    </a>
+                  ),
+                )}
+
+              <Link
+                to="/contact"
+                onClick={() => setMobileOpen(false)}
+                className={`block py-5 border-b border-white/10 text-[15px] uppercase tracking-[0.18em] font-medium transition-colors ${
+                  isActive("/contact") ? "text-gold" : "text-white hover:text-gold"
+                }`}
+              >
+                Contact
+              </Link>
+
+              <div className="flex items-center gap-2 py-5 text-white/50 text-[13px]">
+                <Globe size={14} />
+                <span>EN</span>
+              </div>
+            </nav>
+          </div>
+
+          {/* Sticky bottom CTA */}
+          <div className="absolute bottom-0 left-0 right-0 bg-[#0A0F1E] border-t border-gold/20 p-5">
             <Link
               to="/contact"
               onClick={() => setMobileOpen(false)}
-              className="btn-gold px-8 py-4 mt-4"
+              className="flex items-center justify-center gap-2 w-full bg-gold text-navy py-4 text-[12px] uppercase tracking-[0.2em] font-semibold"
             >
-              Start a dialogue →
+              Start a Dialogue
+              <ArrowRight size={14} />
             </Link>
-          </nav>
+          </div>
         </div>
-      )}
+      </div>
     </header>
   );
 };
