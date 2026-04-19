@@ -45,7 +45,9 @@ const Philosophy = ({ sectionTitle, subtitle, items }: PhilosophyProps) => {
               </span>
               <h3 className="text-charcoal font-semibold text-base">{item.title}</h3>
               <p className="text-slate text-sm leading-relaxed flex-1">{item.description}</p>
-              <span className="text-gold text-xl mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">∞</span>
+              {item.number !== "02" && (
+                <span className="text-gold text-xl mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">∞</span>
+              )}
             </div>
           ))}
         </div>
