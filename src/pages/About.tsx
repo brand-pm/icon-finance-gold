@@ -5,7 +5,7 @@ import Philosophy from "../components/services/Philosophy";
 import PortfolioManagement from "../components/services/PortfolioManagement";
 import ServiceCTA from "../components/services/ServiceCTA";
 import TeamSection from "../components/about/TeamSection";
-import infinityImg from "../assets/infinity-symbol.png";
+import aboutSymbol from "../assets/about-symbol.png";
 import teamPlaceholder from "../assets/team-placeholder.jpg";
 
 const About = () => (
@@ -16,7 +16,7 @@ const About = () => (
       eyebrow="About Icon Finance"
       title="About Icon Finance"
       description="We are an independent wealth management and family office advisory firm, built for clients who expect more than a product — and deserve more than a bank."
-      image={infinityImg}
+      image={aboutSymbol}
       imageAlt="Icon Finance — independent wealth management"
     />
 
