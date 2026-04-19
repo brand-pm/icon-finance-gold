@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
 import { Menu, X, Globe, ChevronDown, ArrowRight } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo.svg";
@@ -271,94 +272,97 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile panel */}
-      <div
-        className={`lg:hidden fixed inset-0 top-20 z-40 bg-navy transition-opacity duration-200 ${
-          mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-        }`}
-      >
-        <div className="flex flex-col h-full">
-          <div className="flex-1 overflow-y-auto pb-24">
-            <nav className="flex flex-col">
-              {/* Services accordion */}
-              <button
-                onClick={() => setMobileServicesOpen((v) => !v)}
-                className={`w-full flex items-center justify-between px-6 py-4 border-b border-white/10 text-[15px] font-medium transition-colors ${
-                  isServiceActive ? "text-gold" : "text-white"
-                }`}
-              >
-                <span>Services</span>
-                <ChevronDown
-                  size={18}
-                  className={`transition-transform duration-200 ${mobileServicesOpen ? "rotate-180 text-gold" : "text-white/60"}`}
-                />
-              </button>
-              {mobileServicesOpen && (
-                <div className="bg-white/[0.03] border-b border-white/10">
-                  {serviceColumns.map((col) => (
+      {/* Mobile panel — rendered via portal to escape header's stacking context (backdrop-blur creates containing block for fixed) */}
+      {createPortal(
+        <div
+          className={`lg:hidden fixed left-0 right-0 bottom-0 top-20 z-[60] bg-navy transition-opacity duration-200 ${
+            mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          }`}
+        >
+          <div className="flex flex-col h-full">
+            <div className="flex-1 overflow-y-auto pb-24">
+              <nav className="flex flex-col">
+                {/* Services accordion */}
+                <button
+                  onClick={() => setMobileServicesOpen((v) => !v)}
+                  className={`w-full flex items-center justify-between px-6 py-4 border-b border-white/10 text-[15px] font-medium transition-colors ${
+                    isServiceActive ? "text-gold" : "text-white"
+                  }`}
+                >
+                  <span>Services</span>
+                  <ChevronDown
+                    size={18}
+                    className={`transition-transform duration-200 ${mobileServicesOpen ? "rotate-180 text-gold" : "text-white/60"}`}
+                  />
+                </button>
+                {mobileServicesOpen && (
+                  <div className="bg-white/[0.03] border-b border-white/10">
+                    {serviceColumns.map((col) => (
+                      <Link
+                        key={col.title}
+                        to={col.link}
+                        onClick={() => {
+                          setMobileOpen(false);
+                          setMobileServicesOpen(false);
+                        }}
+                        className="flex items-center gap-3 px-6 py-3.5 border-b border-white/5 last:border-b-0 text-white hover:text-gold transition-colors"
+                      >
+                        <span className="text-gold/70 text-[12px] w-6">{col.number}</span>
+                        <span className="text-[14px]">{col.title}</span>
+                      </Link>
+                    ))}
+                  </div>
+                )}
+
+                {/* Other items */}
+                {navItems
+                  .filter((item) => !item.hasMega)
+                  .map((item) => (
                     <Link
-                      key={col.title}
-                      to={col.link}
-                      onClick={() => {
-                        setMobileOpen(false);
-                        setMobileServicesOpen(false);
-                      }}
-                      className="flex items-center gap-3 px-6 py-3.5 border-b border-white/5 last:border-b-0 text-white hover:text-gold transition-colors"
+                      key={item.label}
+                      to={item.href}
+                      onClick={() => setMobileOpen(false)}
+                      className={`px-6 py-4 border-b border-white/10 text-[15px] font-medium transition-colors ${
+                        isActive(item.href) ? "text-gold" : "text-white hover:text-gold"
+                      }`}
                     >
-                      <span className="text-gold/70 text-[12px] w-6">{col.number}</span>
-                      <span className="text-[14px]">{col.title}</span>
+                      {item.label}
                     </Link>
                   ))}
-                </div>
-              )}
 
-              {/* Other items */}
-              {navItems
-                .filter((item) => !item.hasMega)
-                .map((item) => (
-                  <Link
-                    key={item.label}
-                    to={item.href}
-                    onClick={() => setMobileOpen(false)}
-                    className={`px-6 py-4 border-b border-white/10 text-[15px] font-medium transition-colors ${
-                      isActive(item.href) ? "text-gold" : "text-white hover:text-gold"
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
+                <Link
+                  to="/contact"
+                  onClick={() => setMobileOpen(false)}
+                  className={`px-6 py-4 border-b border-white/10 text-[15px] font-medium transition-colors ${
+                    isActive("/contact") ? "text-gold" : "text-white hover:text-gold"
+                  }`}
+                >
+                  Contact
+                </Link>
 
+                <button className="flex items-center gap-2 px-6 py-4 text-white/60 text-[14px]">
+                  <Globe size={14} />
+                  <span>EN</span>
+                  <ChevronDown size={12} />
+                </button>
+              </nav>
+            </div>
+
+            {/* Sticky bottom CTA */}
+            <div className="absolute bottom-0 left-0 right-0 bg-navy border-t border-white/10 p-4">
               <Link
                 to="/contact"
                 onClick={() => setMobileOpen(false)}
-                className={`px-6 py-4 border-b border-white/10 text-[15px] font-medium transition-colors ${
-                  isActive("/contact") ? "text-gold" : "text-white hover:text-gold"
-                }`}
+                className="flex items-center justify-center gap-2 w-full bg-gold text-navy py-3.5 text-[14px] font-semibold rounded"
               >
-                Contact
+                Start a Dialogue
+                <ArrowRight size={14} />
               </Link>
-
-              <button className="flex items-center gap-2 px-6 py-4 text-white/60 text-[14px]">
-                <Globe size={14} />
-                <span>EN</span>
-                <ChevronDown size={12} />
-              </button>
-            </nav>
+            </div>
           </div>
-
-          {/* Sticky bottom CTA */}
-          <div className="absolute bottom-0 left-0 right-0 bg-navy border-t border-white/10 p-4">
-            <Link
-              to="/contact"
-              onClick={() => setMobileOpen(false)}
-              className="flex items-center justify-center gap-2 w-full bg-gold text-navy py-3.5 text-[14px] font-semibold rounded"
-            >
-              Start a Dialogue
-              <ArrowRight size={14} />
-            </Link>
-          </div>
-        </div>
-      </div>
+        </div>,
+        document.body,
+      )}
     </header>
   );
 };
