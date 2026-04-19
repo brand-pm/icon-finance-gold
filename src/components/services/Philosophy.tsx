@@ -1,4 +1,5 @@
 import { useScrollReveal } from "../../hooks/useScrollReveal";
+import cardAccent from "../../assets/card-accent.svg";
 
 interface PhilosophyItem {
   number: string;
@@ -46,9 +47,13 @@ const Philosophy = ({ sectionTitle, subtitle, items }: PhilosophyProps) => {
               </span>
               <h3 className="text-charcoal font-semibold text-base">{item.title}</h3>
               <p className="text-slate text-sm leading-relaxed flex-1">{item.description}</p>
-              {item.number !== "02" && (
-                <span className="text-gold text-xl mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">∞</span>
-              )}
+              <img
+                src={cardAccent}
+                alt=""
+                aria-hidden="true"
+                className="mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                style={{ width: "32px", height: "16px" }}
+              />
             </div>
           ))}
         </div>
