@@ -7,7 +7,7 @@ const navItems = [
   { label: "Services", href: "#services", hasMega: true },
   { label: "Expertise", href: "#expertise" },
   { label: "Insights", href: "#insights" },
-  { label: "About", href: "#about" },
+  { label: "About", href: "/about" },
 ];
 
 const serviceColumns = [
