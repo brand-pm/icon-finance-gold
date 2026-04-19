@@ -62,15 +62,12 @@
   a.btn-outline-gold,
   input,
   select,
-  textarea,
-  img,
-  section > div,
-  article,
-  aside,
-  .portfolio-stage-card,
-  [class*="bg-"],
-  [class*="border"] {
+  textarea {
     border-radius: 12px;
+  }
+
+  section {
+    border-radius: 0 !important;
   }
 }
 
