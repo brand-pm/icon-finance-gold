@@ -52,7 +52,7 @@ const StatCard = ({ stat }: { stat: (typeof stats)[0] }) => {
 };
 
 const Hero = () => (
-  <section className="relative flex items-center bg-navy overflow-hidden pt-20" style={{ minHeight: '75vh' }}>
+  <section className="relative flex items-center bg-navy overflow-hidden pt-20" style={{ minHeight: '60vh' }}>
     {/* Background */}
     <div className="absolute inset-0">
       <img
