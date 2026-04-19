@@ -103,6 +103,14 @@ const Header = () => {
                   />
                 </button>
               </div>
+            ) : item.href.startsWith("/") ? (
+              <Link
+                key={item.label}
+                to={item.href}
+                className="text-[13px] text-white/70 hover:text-gold transition-colors duration-300 uppercase tracking-wider font-medium"
+              >
+                {item.label}
+              </Link>
             ) : (
               <a
                 key={item.label}
