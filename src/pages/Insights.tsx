@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
@@ -16,54 +17,63 @@ const categories = [
 
 const articles = [
   {
+    slug: "interest-rate-cycles-2025",
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80",
     category: "Wealth Management",
     title: "Interest Rate Cycles and What They Mean for Private Portfolios in 2025",
     date: "Apr 14, 2025 · 4 min read",
   },
   {
+    slug: "family-constitution-governance",
     image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80",
     category: "Family Office",
     title: "Building a Family Constitution: Why Governance Matters More Than Returns",
     date: "Apr 7, 2025 · 5 min read",
   },
   {
+    slug: "crs-2025-international",
     image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80",
     category: "Structuring & Tax",
     title: "CRS in 2025: What Has Changed and What It Means for International Asset Holders",
     date: "Mar 28, 2025 · 6 min read",
   },
   {
+    slug: "selling-business-mistakes",
     image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&q=80",
     category: "M&A & Corporate",
     title: "Selling Your Business: The Five Mistakes Owners Make Before Going to Market",
     date: "Mar 21, 2025 · 5 min read",
   },
   {
+    slug: "art-as-asset-class",
     image: "https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=600&q=80",
     category: "Special Solutions",
     title: "Art as an Asset Class: How Collectors Are Integrating Works Into Wealth Strategy",
     date: "Mar 14, 2025 · 4 min read",
   },
   {
+    slug: "private-credit-high-rate",
     image: "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?w=600&q=80",
     category: "Wealth Management",
     title: "Private Credit in a High-Rate Environment: Opportunity or Overreach?",
     date: "Mar 7, 2025 · 5 min read",
   },
   {
+    slug: "shared-family-office-model",
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80",
     category: "Family Office",
     title: "The Shared Family Office Model: When It Works and When It Doesn't",
     date: "Feb 28, 2025 · 4 min read",
   },
   {
+    slug: "malta-vs-cyprus-holding",
     image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&q=80",
     category: "Structuring & Tax",
     title: "Malta vs Cyprus: Choosing the Right EU Holding Jurisdiction in 2025",
     date: "Feb 21, 2025 · 6 min read",
   },
   {
+    slug: "philanthropic-foundations-poland",
     image: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&q=80",
     category: "Special Solutions",
     title: "Philanthropic Foundations in Poland: A Practical Guide for Wealthy Families",
@@ -162,8 +172,9 @@ const Insights = () => {
         <div className="container-main">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filtered.map((a, i) => (
-              <article
-                key={a.title}
+              <Link
+                to={`/insights/${a.slug}`}
+                key={a.slug}
                 className="bg-white opacity-0 animate-fade-up cursor-pointer group border border-charcoal/[0.06] border-b-[3px] border-b-transparent hover:border-b-gold transition-all duration-300"
                 style={{ animationDelay: `${i * 0.05}s` }}
               >
@@ -185,7 +196,7 @@ const Insights = () => {
                   </h3>
                   <p className="text-slate text-[14px]">{a.date}</p>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
 

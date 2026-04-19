@@ -13,6 +13,7 @@ import MAConsulting from "./pages/services/MAConsulting.tsx";
 import SpecialSolutions from "./pages/services/SpecialSolutions.tsx";
 import Contact from "./pages/Contact.tsx";
 import Insights from "./pages/Insights.tsx";
+import InsightArticle from "./pages/InsightArticle.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/services/special-solutions" element={<SpecialSolutions />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/insights" element={<Insights />} />
+          <Route path="/insights/:slug" element={<InsightArticle />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
