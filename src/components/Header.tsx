@@ -1,11 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import { Menu, X, Globe, ChevronDown, TrendingUp, Users, Shield, Briefcase, Star, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo.svg";
 
 const navItems = [
   { label: "Services", href: "#services", hasMega: true },
-  { label: "Expertise", href: "#expertise" },
+  { label: "Expertise", href: "/expertise" },
   { label: "Insights", href: "/insights" },
   { label: "About", href: "/about" },
 ];
