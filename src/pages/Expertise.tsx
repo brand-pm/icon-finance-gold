@@ -16,11 +16,20 @@ const Hero = () => (
         className="absolute inset-0 w-full h-full object-cover"
         style={{ objectPosition: "center" }}
       />
+      {/* Top gradient — guarantees navbar readability */}
+      <div
+        className="absolute inset-x-0 top-0 h-40"
+        style={{
+          background:
+            "linear-gradient(to bottom, rgba(10,15,30,0.95) 0%, rgba(10,15,30,0.6) 60%, rgba(10,15,30,0) 100%)",
+        }}
+      />
+      {/* Main left-to-right overlay for hero text */}
       <div
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(to right, rgba(15,22,45,0.9) 35%, rgba(15,22,45,0.35) 100%)",
+            "linear-gradient(to right, rgba(15,22,45,0.94) 35%, rgba(15,22,45,0.55) 100%)",
         }}
       />
     </div>
