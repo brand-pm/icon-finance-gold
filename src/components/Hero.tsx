@@ -62,7 +62,7 @@ const Hero = () => (
         fetchPriority="high"
         decoding="async"
       />
-      <div className="absolute inset-0 bg-navy/30" />
+      <div className="absolute inset-0 bg-navy/20" />
     </div>
 
     <div className="container-main relative z-10 w-full">

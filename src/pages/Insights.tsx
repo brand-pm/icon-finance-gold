@@ -110,14 +110,14 @@ const Insights = () => {
           className="absolute inset-x-0 top-0 h-40 z-10"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(10,15,30,0.95) 0%, rgba(10,15,30,0.6) 60%, rgba(10,15,30,0) 100%)",
+              "linear-gradient(to bottom, hsl(var(--navy) / 0.95) 0%, hsl(var(--navy) / 0.6) 60%, hsl(var(--navy) / 0) 100%)",
           }}
         />
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(rgba(15,22,45,0.92), rgba(15,22,45,0.85))",
+              "linear-gradient(hsl(var(--navy) / 0.78), hsl(var(--navy) / 0.7))",
           }}
         />
         <div className="container-main relative z-20 pt-24 pb-10 md:pb-12">
@@ -210,7 +210,7 @@ const Insights = () => {
                 key={n}
                 className={`w-10 h-10 text-sm transition-colors ${
                   n === 1
-                    ? "bg-charcoal text-white"
+                    ? "bg-gold text-navy"
                     : "text-charcoal hover:text-gold"
                 }`}
               >
