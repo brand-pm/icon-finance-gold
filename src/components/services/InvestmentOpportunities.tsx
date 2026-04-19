@@ -30,6 +30,7 @@ const InvestmentOpportunities = ({ categories }: InvestmentOpportunitiesProps) =
           {categories.map((cat, ci) => (
             <div
               key={ci}
+              data-radius-block
               className={`h-full flex flex-col ${cat.dark ? "bg-navy" : "bg-white"}`}
               style={{ border: cat.dark ? "1px solid rgba(224,167,118,0.15)" : "1px solid rgba(0,0,0,0.06)", padding: "48px" }}
             >

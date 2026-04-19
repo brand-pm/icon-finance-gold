@@ -35,6 +35,7 @@ const Philosophy = ({ sectionTitle, subtitle, items }: PhilosophyProps) => {
           {items.map((item, i) => (
             <div
               key={i}
+              data-radius-block
               className="bg-white p-8 flex flex-col items-center text-center gap-4 group hover:shadow-xl hover:z-10 opacity-0 animate-fade-up cursor-pointer origin-center relative h-full"
               style={{ border: "1px solid rgba(0,0,0,0.06)", animationDelay: `${0.2 + i * 0.1}s`, transition: "all 0.3s ease" }}
               onMouseEnter={(e) => { e.currentTarget.style.transform = "scale(1.2)"; }}

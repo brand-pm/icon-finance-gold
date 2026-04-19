@@ -49,7 +49,7 @@ const InvestmentStrategies = ({ strategies }: InvestmentStrategiesProps) => {
           </div>
 
           {/* Right — content with image */}
-          <div className="bg-white grid lg:grid-cols-[60%_40%] overflow-hidden" style={{ border: "1px solid rgba(0,0,0,0.06)" }}>
+          <div data-radius-block className="bg-white grid lg:grid-cols-[60%_40%] overflow-hidden" style={{ border: "1px solid rgba(0,0,0,0.06)" }}>
             <div className="p-8 lg:p-10">
               <h3 className="text-charcoal font-semibold text-lg mb-4">{strategies[active].name}</h3>
               <p className="text-slate text-sm leading-relaxed mb-6">

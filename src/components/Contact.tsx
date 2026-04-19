@@ -32,7 +32,7 @@ const Contact = () => {
           </div>
 
           {/* Right */}
-          <div className="bg-navy p-10 opacity-0 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+          <div data-radius-block className="bg-navy p-10 opacity-0 animate-fade-up" style={{ animationDelay: "0.2s" }}>
             <h3 className="text-gold text-[28px] font-light mb-2">Send Us a Message</h3>
             <p className="text-white/70 text-sm mb-8">
               Leave an inquiry and our expert will contact you within 24 hours.
