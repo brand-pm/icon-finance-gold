@@ -29,7 +29,7 @@ const PortfolioManagement = ({
   steps,
   ctaLink = "/#contact",
   ctaLabel = "Start a dialogue",
-  ctaVariant = "outline",
+  ctaVariant = "filled",
 }: PortfolioManagementProps) => {
   return (
     <section className="portfolio-management-section">
@@ -46,7 +46,7 @@ const PortfolioManagement = ({
             <p className="portfolio-management-description mb-10 max-w-sm">{description}</p>
             <Link
               to={ctaLink}
-              className={`${ctaVariant === "filled" ? "btn-gold" : "btn-outline-gold"} inline-block px-8 py-3 text-[13px]`}
+              className={`${ctaVariant === "filled" ? "btn-gold" : "btn-outline-gold"} inline-block px-10 py-4 text-[14px] rounded-lg`}
             >
               {ctaLabel}
             </Link>
