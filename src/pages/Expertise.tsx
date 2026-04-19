@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ServiceCTA from "../components/services/ServiceCTA";
 import { useScrollReveal } from "../hooks/useScrollReveal";
-import marbleHero from "../assets/marble-calacatta-gold.jpg";
+import marbleHero from "../assets/expertise-hero-bg.jpg";
 
 /* ---------- HERO ---------- */
 const Hero = () => (
