@@ -49,7 +49,7 @@ const Hero = () => (
             and corporate advisory — working as one team around each client's complete financial
             life.
           </p>
-          <Link to="/#contact" className="btn-gold px-8 py-4 inline-block">
+          <Link to="/contact" className="btn-gold px-8 py-4 inline-block">
             Start a dialogue
           </Link>
         </div>

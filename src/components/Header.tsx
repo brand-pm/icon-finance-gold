@@ -86,9 +86,9 @@ const Header = () => {
     >
       <div className="container-main h-full flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img src={logo} alt="Icon Finance & Wealth Management" className="h-[46px]" />
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-8">
@@ -143,9 +143,9 @@ const Header = () => {
             <span className="text-[13px]">EN</span>
             <ChevronDown size={12} />
           </div>
-          <a href="#contact" className="text-[13px] text-gold hover:text-white transition-colors duration-300 uppercase tracking-wider font-medium">
+          <Link to="/contact" className="text-[13px] text-gold hover:text-white transition-colors duration-300 uppercase tracking-wider font-medium">
             Start a dialogue →
-          </a>
+          </Link>
         </nav>
 
         {/* Mobile toggle */}

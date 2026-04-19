@@ -84,8 +84,8 @@ const Hero = () => (
             international expertise and a tailored approach
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="#contact" className="btn-gold px-8 py-4">Start a dialogue</a>
-            <a href="#services" className="btn-outline-gold px-8 py-4">Our expertise</a>
+            <Link to="/contact" className="btn-gold px-8 py-4">Start a dialogue</Link>
+            <Link to="/expertise" className="btn-outline-gold px-8 py-4">Our expertise</Link>
           </div>
         </div>
 

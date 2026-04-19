@@ -243,8 +243,8 @@ const Insights = () => {
             We publish market perspectives and expert commentary for clients and
             subscribers. Reach out to be added to our distribution list.
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="inline-block btn-gold px-10 py-4 text-[13px] font-medium"
           >
             Get in Touch
