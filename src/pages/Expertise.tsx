@@ -8,7 +8,7 @@ import marbleHero from "../assets/marble-calacatta-gold.jpg";
 
 /* ---------- HERO ---------- */
 const Hero = () => (
-  <section className="relative bg-navy overflow-hidden pt-24 pb-12" style={{ minHeight: "60vh" }}>
+  <section className="relative bg-navy overflow-hidden pt-24 pb-12" style={{ minHeight: "35vh" }}>
     <div className="absolute inset-0">
       <img
         src={marbleHero}
@@ -25,8 +25,8 @@ const Hero = () => (
       />
     </div>
 
-    <div className="container-main relative z-10 flex items-center" style={{ minHeight: "50vh" }}>
-      <div className="max-w-2xl">
+    <div className="container-main relative z-10 flex items-center" style={{ minHeight: "28vh" }}>
+      <div className="max-w-xl">
         <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
           <p className="eyebrow mb-6">Expertise</p>
           <h1
