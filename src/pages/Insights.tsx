@@ -99,7 +99,7 @@ const Insights = () => {
       <section
         className="relative w-full flex items-center"
         style={{
-          minHeight: "55vh",
+          minHeight: "35vh",
           backgroundImage: `url(${marbleHero})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -120,7 +120,7 @@ const Insights = () => {
               "linear-gradient(rgba(15,22,45,0.92), rgba(15,22,45,0.85))",
           }}
         />
-        <div className="container-main relative z-20 pt-32 pb-20">
+        <div className="container-main relative z-20 pt-24 pb-12">
           <div className="max-w-3xl">
             <p className="eyebrow text-gold mb-6">Insights & Analysis</p>
             <h1
