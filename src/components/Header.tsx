@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Menu, X, Globe, ChevronDown, TrendingUp, Users, Shield, Briefcase, Star, ArrowRight } from "lucide-react";
+import { Menu, X, Globe, ChevronDown, ArrowRight } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo.svg";
 
@@ -12,39 +12,39 @@ const navItems = [
 
 const serviceColumns = [
   {
-    icon: TrendingUp,
+    number: "01",
     title: "Wealth Management",
     description: "Independent investment management for entrepreneurs and families",
     link: "/services/wealth-management",
-    items: ["Investment Strategy", "Portfolio Management", "Alternative Investments", "Consolidated Reporting"],
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80",
   },
   {
-    icon: Users,
+    number: "02",
     title: "Family Office",
     description: "Full-service family office design and operations",
     link: "/services/family-office",
-    items: ["Single Family Office", "Shared Family Office", "Virtual Family Office", "Family Governance"],
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80",
   },
   {
-    icon: Shield,
+    number: "03",
     title: "Structuring & Tax",
     description: "International structuring and tax planning for complex wealth",
     link: "/services/structuring-tax",
-    items: ["Wealth Structuring", "Tax Planning", "Trusts & Foundations", "Estate Planning"],
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80",
   },
   {
-    icon: Briefcase,
+    number: "04",
     title: "M&A Consulting",
     description: "Corporate advisory for acquisitions, exits, and capital raising",
     link: "/services/ma-consulting",
-    items: ["M&A Advisory", "Exit Strategies", "Capital Raising", "Due Diligence"],
+    image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&q=80",
   },
   {
-    icon: Star,
+    number: "05",
     title: "Special Solutions",
     description: "Bespoke solutions for unique assets and complex situations",
     link: "/services/special-solutions",
-    items: ["Real Estate", "Art & Collectibles", "Philanthropy", "ESG Investing"],
+    image: "https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=600&q=80",
   },
 ];
 
@@ -163,11 +163,10 @@ const Header = () => {
         }`}
         style={{ backgroundColor: "#0F162D" }}
       >
-        <div className="container-main py-12">
-          <div className="grid grid-cols-5 gap-0">
+        <div className="w-full">
+          <div className="grid grid-cols-5">
             {serviceColumns.map((col, i) => {
-              const Icon = col.icon;
-              const isActive = hoveredCol === i;
+              const active = hoveredCol === i;
               return (
                 <Link
                   key={col.title}
@@ -175,58 +174,79 @@ const Header = () => {
                   onClick={() => setMegaOpen(false)}
                   onMouseEnter={() => setHoveredCol(i)}
                   onMouseLeave={() => setHoveredCol(null)}
-                  className={`group px-6 py-2 border-l transition-all duration-300 ${
-                    isActive ? "border-gold bg-white/[0.02]" : "border-white/5"
-                  }`}
+                  className="group relative block overflow-hidden border-r border-gold/10 last:border-r-0"
+                  style={{ height: "320px" }}
                 >
-                  <Icon
-                    size={28}
-                    className={`mb-4 transition-colors duration-300 ${
-                      isActive ? "text-gold" : "text-gold/70"
-                    }`}
-                    strokeWidth={1.5}
+                  {/* BG image */}
+                  <div
+                    className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                    style={{
+                      backgroundImage: `url(${col.image})`,
+                      filter: "grayscale(100%)",
+                    }}
                   />
-                  <h3
-                    className={`text-[15px] font-medium mb-2 transition-colors duration-300 ${
-                      isActive ? "text-gold" : "text-white"
+                  {/* Overlay */}
+                  <div
+                    className="absolute inset-0 transition-all duration-500"
+                    style={{
+                      background: active
+                        ? "linear-gradient(180deg, rgba(15,22,45,0.35) 0%, rgba(224,167,118,0.78) 100%)"
+                        : "linear-gradient(180deg, rgba(15,22,45,0.55) 0%, rgba(15,22,45,0.96) 100%)",
+                    }}
+                  />
+                  {/* Content */}
+                  <div className="relative z-10 h-full flex flex-col justify-end p-6">
+                    <div
+                      className={`text-[10px] tracking-[0.24em] mb-2 transition-colors duration-300 ${
+                        active ? "text-white" : "text-gold"
+                      }`}
+                    >
+                      {col.number}
+                    </div>
+                    <h3 className="text-white text-[16px] font-medium mb-2 leading-tight">
+                      {col.title}
+                    </h3>
+                    <p
+                      className={`text-[11px] leading-[1.55] mb-4 transition-colors duration-300 ${
+                        active ? "text-white/90" : "text-white/55"
+                      }`}
+                    >
+                      {col.description}
+                    </p>
+                    <div
+                      className={`inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] font-semibold transition-all duration-300 ${
+                        active ? "text-white opacity-100 translate-x-0" : "text-gold opacity-0 -translate-x-2"
+                      }`}
+                    >
+                      Explore <ArrowRight size={12} />
+                    </div>
+                  </div>
+                  {/* Active gold top accent */}
+                  <div
+                    className={`absolute top-0 left-0 right-0 h-[2px] bg-gold transition-transform duration-500 origin-left ${
+                      active ? "scale-x-100" : "scale-x-0"
                     }`}
-                  >
-                    {col.title}
-                  </h3>
-                  <p className="text-[12px] text-white/50 leading-relaxed mb-5 min-h-[48px]">
-                    {col.description}
-                  </p>
-                  <ul className="space-y-2">
-                    {col.items.map((item) => (
-                      <li
-                        key={item}
-                        className="text-[12px] text-white/65 hover:text-gold transition-colors duration-200 uppercase tracking-wide"
-                      >
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
+                  />
                 </Link>
               );
             })}
           </div>
 
-          {/* Gold divider */}
-          <div className="mt-10 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
-
           {/* CTA strip */}
-          <div className="mt-6 flex items-center justify-between">
-            <p className="text-[14px] text-white/70">
-              Not sure where to start? <span className="text-white">Let's talk.</span>
-            </p>
-            <a
-              href="#contact"
-              onClick={() => setMegaOpen(false)}
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gold text-navy text-[12px] uppercase tracking-wider font-medium hover:bg-gold/90 transition-colors duration-300"
-            >
-              Start a Dialogue
-              <ArrowRight size={14} />
-            </a>
+          <div className="bg-[#0A0F1E] border-t border-gold/10">
+            <div className="container-main py-5 flex items-center justify-between flex-wrap gap-4">
+              <p className="text-[13px] text-white/60">
+                Not sure where to start? <span className="text-white">Let's talk.</span>
+              </p>
+              <Link
+                to="/contact"
+                onClick={() => setMegaOpen(false)}
+                className="inline-flex items-center gap-2 px-7 py-3 bg-gold text-navy text-[11px] uppercase tracking-[0.18em] font-semibold hover:bg-gold/90 transition-colors duration-300"
+              >
+                Start a Dialogue
+                <ArrowRight size={14} />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
