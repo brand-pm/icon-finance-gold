@@ -25,6 +25,8 @@ const MAConsulting = () => (
       description="Icon Finance provides independent M&A advisory for business owners and entrepreneurs navigating acquisitions, sales, mergers, and capital raising. We protect your interests from first conversation to final close."
       image={heroImg}
       imageAlt="M&A consulting symbol"
+      imageFit="contain"
+      imagePosition="right center"
     />
 
     <WhoBenefits
