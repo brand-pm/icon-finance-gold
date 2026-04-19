@@ -273,54 +273,46 @@ const Header = () => {
 
       {/* Mobile panel */}
       <div
-        className={`lg:hidden fixed inset-0 top-20 bg-navy z-40 transition-opacity duration-300 ${
+        className={`lg:hidden fixed inset-0 top-20 z-40 transition-opacity duration-300 ${
           mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
+        style={{ backgroundColor: "#0A0F1E" }}
       >
-        <div className="flex flex-col h-full">
-          <div className="flex-1 overflow-y-auto pb-32">
-            <nav className="px-6 pt-6">
-              {/* Services accordion */}
-              <button
-                onClick={() => setMobileServicesOpen((v) => !v)}
-                className={`w-full flex items-center justify-between py-5 border-b border-white/10 text-[15px] uppercase tracking-[0.18em] font-medium transition-colors ${
-                  isServiceActive ? "text-gold" : "text-white"
-                }`}
-              >
-                <span>Services</span>
-                <ChevronDown
-                  size={18}
-                  className={`transition-transform duration-300 ${mobileServicesOpen ? "rotate-180 text-gold" : "text-white/60"}`}
-                />
-              </button>
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  mobileServicesOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
-                }`}
-              >
-                <div className="py-3">
-                  {serviceColumns.map((col) => (
-                    <Link
-                      key={col.title}
-                      to={col.link}
-                      onClick={() => {
-                        setMobileOpen(false);
-                        setMobileServicesOpen(false);
-                      }}
-                      className="flex items-center gap-4 py-4 px-2 border-b border-white/5"
-                    >
-                      <span className="text-gold text-[12px] tracking-[0.2em] w-8">{col.number}</span>
-                      <div className="flex-1">
-                        <div className="text-white text-[15px] font-medium">{col.title}</div>
-                        <div className="text-white/50 text-[12px] mt-1 leading-snug">{col.description}</div>
-                      </div>
-                      <ArrowRight size={16} className="text-gold/60" />
-                    </Link>
-                  ))}
-                </div>
-              </div>
+        {/* Top gold hairline to separate from header */}
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
 
-              {/* Other items */}
+        <div className="flex flex-col h-full">
+          <div className="flex-1 overflow-y-auto pb-36 px-6 pt-7">
+            {/* Eyebrow MENU */}
+            <div className="text-[10px] uppercase tracking-[0.28em] text-gold/80 mb-6">Menu</div>
+
+            {/* Services list — Blueprint style: big gold numbers as art */}
+            <div className="space-y-6 mb-10">
+              {serviceColumns.map((col, idx) => (
+                <div key={col.title}>
+                  <Link
+                    to={col.link}
+                    onClick={() => setMobileOpen(false)}
+                    className="relative block pl-14 group"
+                  >
+                    <div className="absolute left-0 top-0 text-[28px] leading-none font-light text-gold/70 group-hover:text-gold transition-colors">
+                      {col.number}
+                    </div>
+                    <h3 className="text-white text-[15px] font-semibold uppercase tracking-[0.12em] mb-1 group-hover:text-gold transition-colors">
+                      {col.title}
+                    </h3>
+                    <p className="text-white/55 text-[12px] leading-snug">{col.description}</p>
+                  </Link>
+                  {idx < serviceColumns.length - 1 && (
+                    <div className="h-px bg-gold/15 mt-6" />
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* Eyebrow NAVIGATE */}
+            <div className="text-[10px] uppercase tracking-[0.28em] text-gold/80 mb-3">Navigate</div>
+            <div className="flex flex-col mb-8">
               {navItems
                 .filter((item) => !item.hasMega)
                 .map((item) =>
@@ -329,7 +321,7 @@ const Header = () => {
                       key={item.label}
                       to={item.href}
                       onClick={() => setMobileOpen(false)}
-                      className={`block py-5 border-b border-white/10 text-[15px] uppercase tracking-[0.18em] font-medium transition-colors ${
+                      className={`py-3 text-[14px] uppercase tracking-[0.18em] font-medium transition-colors border-b border-white/5 ${
                         isActive(item.href) ? "text-gold" : "text-white hover:text-gold"
                       }`}
                     >
@@ -340,36 +332,45 @@ const Header = () => {
                       key={item.label}
                       href={item.href}
                       onClick={() => setMobileOpen(false)}
-                      className="block py-5 border-b border-white/10 text-[15px] uppercase tracking-[0.18em] font-medium text-white hover:text-gold transition-colors"
+                      className="py-3 text-[14px] uppercase tracking-[0.18em] font-medium text-white hover:text-gold transition-colors border-b border-white/5"
                     >
                       {item.label}
                     </a>
                   ),
                 )}
-
               <Link
                 to="/contact"
                 onClick={() => setMobileOpen(false)}
-                className={`block py-5 border-b border-white/10 text-[15px] uppercase tracking-[0.18em] font-medium transition-colors ${
+                className={`py-3 text-[14px] uppercase tracking-[0.18em] font-medium transition-colors border-b border-white/5 ${
                   isActive("/contact") ? "text-gold" : "text-white hover:text-gold"
                 }`}
               >
                 Contact
               </Link>
+            </div>
 
-              <div className="flex items-center gap-2 py-5 text-white/50 text-[13px]">
-                <Globe size={14} />
-                <span>EN</span>
+            {/* Language */}
+            <div className="text-[10px] uppercase tracking-[0.28em] text-gold/80 mb-3">Language</div>
+            <button className="flex items-center justify-between w-full py-3 px-4 border border-white/10 rounded-lg text-white/80 text-[13px] hover:border-gold/40 transition-colors">
+              <div className="flex items-center gap-2">
+                <Globe size={14} className="text-gold" />
+                <span>English</span>
               </div>
-            </nav>
+              <ChevronDown size={14} className="text-white/50" />
+            </button>
           </div>
 
           {/* Sticky bottom CTA */}
-          <div className="absolute bottom-0 left-0 right-0 bg-[#0A0F1E] border-t border-gold/20 p-5">
+          <div
+            className="absolute bottom-0 left-0 right-0 px-6 py-5 border-t border-gold/20"
+            style={{ backgroundColor: "#0A0F1E" }}
+          >
+            <div className="text-[10px] uppercase tracking-[0.28em] text-gold/80 mb-3">Get in touch</div>
             <Link
               to="/contact"
               onClick={() => setMobileOpen(false)}
-              className="flex items-center justify-center gap-2 w-full bg-gold text-navy py-4 text-[12px] uppercase tracking-[0.2em] font-semibold"
+              className="flex items-center justify-center gap-2 w-full py-4 text-[12px] uppercase tracking-[0.2em] font-semibold rounded-lg text-navy"
+              style={{ background: "linear-gradient(90deg, #E0A776 0%, #f0c395 100%)" }}
             >
               Start a Dialogue
               <ArrowRight size={14} />
