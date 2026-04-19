@@ -25,6 +25,9 @@ const ServiceFAQ = ({ items }: ServiceFAQProps) => {
             <h2 className="text-charcoal font-light" style={{ fontSize: "clamp(26px,4vw,38px)" }}>
               Frequently Asked<br />Questions
             </h2>
+            <div className="gold-separator justify-start mt-6">
+              <div className="dot" /><div className="dot-lg" /><div className="dot" />
+            </div>
           </div>
 
           {/* Right */}
