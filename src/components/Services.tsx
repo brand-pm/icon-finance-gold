@@ -24,7 +24,7 @@ const tabs = [
     items: ["Family governance", "Succession planning", "Philanthropy advisory"],
     image: familyImg,
     alt: "Family tree — multi-generational wealth stewardship",
-    link: "#",
+    link: "/services/family-office",
   },
   {
     name: "Structuring & Tax",
@@ -33,16 +33,16 @@ const tabs = [
     items: ["Tax optimization", "Legal structuring", "Compliance advisory"],
     image: structuringImg,
     alt: "Shield with scales — legal protection and balance",
-    link: "#",
+    link: "/services/structuring-tax",
   },
   {
-    name: "Corporate Services",
-    title: "Strategic corporate and business advisory",
-    desc: "Expert guidance on corporate structures, M&A transactions, and strategic business initiatives.",
-    items: ["M&A advisory", "Corporate restructuring", "Business strategy"],
+    name: "M&A Consulting",
+    title: "Strategic corporate and M&A advisory",
+    desc: "Expert guidance on M&A transactions, exit strategies, capital raising, and corporate restructuring.",
+    items: ["M&A advisory", "Exit strategies", "Capital raising"],
     image: corporateImg,
     alt: "Classical column — corporate strength and foundation",
-    link: "#",
+    link: "/services/ma-consulting",
   },
   {
     name: "Special Solutions",
@@ -51,7 +51,7 @@ const tabs = [
     items: ["Art & collectibles", "Real estate advisory", "Lifestyle management"],
     image: specialImg,
     alt: "Diamond — bespoke luxury solutions",
-    link: "#",
+    link: "/services/special-solutions",
   },
 ];
 
