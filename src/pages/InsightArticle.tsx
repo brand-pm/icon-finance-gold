@@ -4,6 +4,7 @@ import { Facebook, Twitter, Linkedin, ArrowRight } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
+import { useLocalizedPath } from "@/i18n/useLocalizedPath";
 
 const toc = [
   { id: "rate-environment", label: "The Rate Environment in Context" },
@@ -38,6 +39,7 @@ const related = [
 ];
 
 const InsightArticle = () => {
+  const localize = useLocalizedPath();
   const [activeId, setActiveId] = useState<string>(toc[0].id);
 
   useEffect(() => {
@@ -274,7 +276,7 @@ const InsightArticle = () => {
               </h2>
             </div>
             <Link
-              to="/insights"
+              to={localize("/insights")}
               className="inline-flex items-center gap-2 text-gold text-[12px] uppercase tracking-wider font-medium hover:text-white transition-colors"
             >
               Show more <ArrowRight size={14} />
@@ -284,7 +286,7 @@ const InsightArticle = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {related.map((a) => (
               <Link
-                to={`/insights/${a.slug}`}
+                to={localize(`/insights/${a.slug}`)}
                 key={a.slug}
                 className="bg-white group cursor-pointer border border-white/[0.06] border-b-[3px] border-b-transparent hover:border-b-gold transition-all duration-300"
               >

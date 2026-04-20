@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "services": "Usługi",
+    "expertise": "Ekspertyza",
+    "insights": "Analizy",
+    "about": "O nas",
+    "contact": "Kontakt",
+    "startDialogue": "Rozpocznij rozmowę",
+    "menu": "Menu"
+  },
+  "services": {
+    "wealthManagement": {
+      "title": "Zarządzanie majątkiem",
+      "description": "Niezależne zarządzanie inwestycjami dla przedsiębiorców i rodzin"
+    },
+    "familyOffice": {
+      "title": "Family Office",
+      "description": "Kompleksowa organizacja i obsługa family office"
+    },
+    "structuringTax": {
+      "title": "Strukturyzacja i podatki",
+      "description": "Międzynarodowa strukturyzacja i planowanie podatkowe dla złożonych majątków"
+    },
+    "maConsulting": {
+      "title": "Doradztwo M&A",
+      "description": "Doradztwo korporacyjne w zakresie akwizycji, wyjść i pozyskiwania kapitału"
+    },
+    "specialSolutions": {
+      "title": "Rozwiązania specjalne",
+      "description": "Indywidualne rozwiązania dla unikatowych aktywów i złożonych sytuacji"
+    }
+  },
+  "megaMenu": {
+    "explore": "Poznaj",
+    "tagline": "Nie wiesz, od czego zacząć?",
+    "talk": "Porozmawiajmy."
+  },
+  "footer": {
+    "tagline": "Niezależne zarządzanie majątkiem i usługi family office dla przedsiębiorców i rodzin z międzynarodowym majątkiem.",
+    "navigate": "Nawigacja",
+    "services": "Usługi",
+    "contact": "Kontakt",
+    "legal": "Informacje prawne",
+    "privacy": "Polityka prywatności",
+    "terms": "Regulamin",
+    "cookies": "Pliki cookies",
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "office": "Biuro",
+    "email": "E-mail",
+    "phone": "Telefon"
+  }
+}

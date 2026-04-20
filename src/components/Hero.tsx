@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { useLocalizedPath } from "@/i18n/useLocalizedPath";
 import heroBg from "../assets/hero-cubes.webp";
 
 const stats = [
@@ -51,7 +52,9 @@ const StatCard = ({ stat }: { stat: (typeof stats)[0] }) => {
   );
 };
 
-const Hero = () => (
+const Hero = () => {
+  const localize = useLocalizedPath();
+  return (
   <section
     className="relative flex items-center overflow-hidden pt-20"
     style={{ minHeight: '60vh', backgroundColor: '#070D20' }}
@@ -84,8 +87,8 @@ const Hero = () => (
             international expertise and a tailored approach
           </p>
           <div className="flex flex-wrap gap-3 md:gap-4">
-            <Link to="/contact" className="btn-gold px-6 md:px-8 py-3.5 md:py-4">Start a dialogue</Link>
-            <Link to="/expertise" className="btn-outline-gold px-6 md:px-8 py-3.5 md:py-4">Our expertise</Link>
+            <Link to={localize("/contact")} className="btn-gold px-6 md:px-8 py-3.5 md:py-4">Start a dialogue</Link>
+            <Link to={localize("/expertise")} className="btn-outline-gold px-6 md:px-8 py-3.5 md:py-4">Our expertise</Link>
           </div>
         </div>
 
@@ -107,6 +110,7 @@ const Hero = () => (
       </div>
     </div>
   </section>
-);
+  );
+};
 
 export default Hero;

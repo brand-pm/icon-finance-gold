@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "services": "Services",
+    "expertise": "Expertise",
+    "insights": "Insights",
+    "about": "About",
+    "contact": "Contact",
+    "startDialogue": "Start a Dialogue",
+    "menu": "Menu"
+  },
+  "services": {
+    "wealthManagement": {
+      "title": "Wealth Management",
+      "description": "Independent investment management for entrepreneurs and families"
+    },
+    "familyOffice": {
+      "title": "Family Office",
+      "description": "Full-service family office design and operations"
+    },
+    "structuringTax": {
+      "title": "Structuring & Tax",
+      "description": "International structuring and tax planning for complex wealth"
+    },
+    "maConsulting": {
+      "title": "M&A Consulting",
+      "description": "Corporate advisory for acquisitions, exits, and capital raising"
+    },
+    "specialSolutions": {
+      "title": "Special Solutions",
+      "description": "Bespoke solutions for unique assets and complex situations"
+    }
+  },
+  "megaMenu": {
+    "explore": "Explore",
+    "tagline": "Not sure where to start?",
+    "talk": "Let's talk."
+  },
+  "footer": {
+    "tagline": "Independent wealth management and family office services for entrepreneurs and families with international wealth.",
+    "navigate": "Navigate",
+    "services": "Services",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookies",
+    "rights": "All rights reserved.",
+    "office": "Office",
+    "email": "Email",
+    "phone": "Phone"
+  }
+}

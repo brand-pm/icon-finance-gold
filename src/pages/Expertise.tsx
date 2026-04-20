@@ -4,10 +4,13 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ServiceCTA from "../components/services/ServiceCTA";
 import { useScrollReveal } from "../hooks/useScrollReveal";
+import { useLocalizedPath } from "@/i18n/useLocalizedPath";
 import marbleHero from "../assets/expertise-hero-bg.jpg";
 
 /* ---------- HERO ---------- */
-const Hero = () => (
+const Hero = () => {
+  const localize = useLocalizedPath();
+  return (
   <section className="relative bg-navy overflow-hidden pt-24 pb-12" style={{ minHeight: "35vh" }}>
     <div className="absolute inset-0">
       <img
@@ -49,14 +52,15 @@ const Hero = () => (
             and corporate advisory — working as one team around each client's complete financial
             life.
           </p>
-          <Link to="/contact" className="btn-gold px-8 py-4 inline-block">
+          <Link to={localize("/contact")} className="btn-gold px-8 py-4 inline-block">
             Start a dialogue
           </Link>
         </div>
       </div>
     </div>
   </section>
-);
+  );
+};
 
 /* ---------- SECTION 1 — COMPETENCIES ---------- */
 const competencies = [

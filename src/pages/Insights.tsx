@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import { useScrollReveal } from "../hooks/useScrollReveal";
+import { useLocalizedPath } from "@/i18n/useLocalizedPath";
 import marbleHero from "../assets/marble-mono-1.jpg";
 
 const categories = [
@@ -82,6 +83,7 @@ const articles = [
 ];
 
 const Insights = () => {
+  const localize = useLocalizedPath();
   const [activeCategory, setActiveCategory] = useState("All");
   const gridRef = useScrollReveal();
   const ctaRef = useScrollReveal();
@@ -244,7 +246,7 @@ const Insights = () => {
             subscribers. Reach out to be added to our distribution list.
           </p>
           <Link
-            to="/contact"
+            to={localize("/contact")}
             className="inline-block btn-gold px-10 py-4 text-[13px] font-medium"
           >
             Get in Touch
