@@ -5,12 +5,17 @@
 import { writeFileSync, mkdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { createClient } from "@sanity/client";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const SITE = "https://iconfinance.io";
 const LANGS = ["en", "pl", "uk", "ru"];
 const DEFAULT_LANG = "en";
+
+const SANITY_PROJECT_ID = "yqrl1o3x";
+const SANITY_DATASET = "production";
+const SANITY_API_VERSION = "2024-01-01";
 
 // Static routes (paths after /:lang). Empty string = home.
 const ROUTES = [
