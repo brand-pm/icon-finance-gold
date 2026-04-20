@@ -58,35 +58,55 @@
         "name": "Wealth Management",
         "title": "Holistic solutions for preserving and growing wealth",
         "desc": "We focus on long-term partnerships and mutual growth, offering tailored financial strategies to meet our clients' changing needs.",
-        "items": ["Portfolio management", "Investment strategies", "Alternative assets"],
+        "items": [
+          "Portfolio management",
+          "Investment strategies",
+          "Alternative assets"
+        ],
         "alt": "Infinity symbol — wealth preservation across generations"
       },
       "familyOffice": {
         "name": "Family Office",
         "title": "Complete family office services and governance",
         "desc": "Comprehensive management of family assets, governance structures, and succession planning across generations.",
-        "items": ["Family governance", "Succession planning", "Philanthropy advisory"],
+        "items": [
+          "Family governance",
+          "Succession planning",
+          "Philanthropy advisory"
+        ],
         "alt": "Family tree — multi-generational wealth stewardship"
       },
       "structuringTax": {
         "name": "Structuring & Tax",
         "title": "Efficient wealth structuring and tax optimization",
         "desc": "International tax planning and legal structuring to protect and optimize your wealth across jurisdictions.",
-        "items": ["Tax optimization", "Legal structuring", "Compliance advisory"],
+        "items": [
+          "Tax optimization",
+          "Legal structuring",
+          "Compliance advisory"
+        ],
         "alt": "Shield with scales — legal protection and balance"
       },
       "maConsulting": {
         "name": "M&A Consulting",
         "title": "Strategic corporate and M&A advisory",
         "desc": "Expert guidance on M&A transactions, exit strategies, capital raising, and corporate restructuring.",
-        "items": ["M&A advisory", "Exit strategies", "Capital raising"],
+        "items": [
+          "M&A advisory",
+          "Exit strategies",
+          "Capital raising"
+        ],
         "alt": "Classical column — corporate strength and foundation"
       },
       "specialSolutions": {
         "name": "Special Solutions",
         "title": "Bespoke solutions for unique requirements",
         "desc": "Custom-crafted solutions for complex situations that require innovative and creative approaches.",
-        "items": ["Art & collectibles", "Real estate advisory", "Lifestyle management"],
+        "items": [
+          "Art & collectibles",
+          "Real estate advisory",
+          "Lifestyle management"
+        ],
         "alt": "Diamond — bespoke luxury solutions"
       }
     }
@@ -123,10 +143,22 @@
     "title": "Your Trusted Partner in Wealth Management",
     "subtitle": "We combine international expertise from leading financial institutions with the personalized approach of a family office. Our team provides end-to-end support at all stages of managing your wealth",
     "cards": {
-      "c1": { "title": "Confidentiality", "desc": "Absolute protection of client information and assets" },
-      "c2": { "title": "Global Expertise", "desc": "Operating in 5+ jurisdictions with international partners" },
-      "c3": { "title": "Personal Approach", "desc": "Custom solutions for families involve tailoring approaches" },
-      "c4": { "title": "Transparency", "desc": "Detailed reporting and monitoring of all assets" }
+      "c1": {
+        "title": "Confidentiality",
+        "desc": "Absolute protection of client information and assets"
+      },
+      "c2": {
+        "title": "Global Expertise",
+        "desc": "Operating in 5+ jurisdictions with international partners"
+      },
+      "c3": {
+        "title": "Personal Approach",
+        "desc": "Custom solutions for families involve tailoring approaches"
+      },
+      "c4": {
+        "title": "Transparency",
+        "desc": "Detailed reporting and monitoring of all assets"
+      }
     }
   },
   "insightsTeaser": {
@@ -210,30 +242,100 @@
       "title": "What We Believe",
       "subtitle": "Three principles guide every relationship, every recommendation, and every decision we make on your behalf.",
       "items": [
-        { "title": "Client Interests Above All", "description": "We act as fiduciaries — always. Our independence from banks, funds, and product providers means every recommendation we make is driven by your goals alone." },
-        { "title": "Long-Term Relationships", "description": "We measure our success in decades, not transactions. Our clients stay with us because we earn that relationship every year — not because they are locked in." },
-        { "title": "Confidentiality and Trust", "description": "Your affairs are yours. We treat client information with absolute discretion — as a professional obligation and a personal one." }
+        {
+          "title": "Client Interests Above All",
+          "description": "We act as fiduciaries — always. Our independence from banks, funds, and product providers means every recommendation we make is driven by your goals alone."
+        },
+        {
+          "title": "Long-Term Relationships",
+          "description": "We measure our success in decades, not transactions. Our clients stay with us because we earn that relationship every year — not because they are locked in."
+        },
+        {
+          "title": "Confidentiality and Trust",
+          "description": "Your affairs are yours. We treat client information with absolute discretion — as a professional obligation and a personal one."
+        }
       ]
     },
     "story": {
       "title": "Built Over Time.\nRefined by Experience.",
       "description": "From a small Warsaw practice to an independent multi-disciplinary firm — every chapter of our story has been shaped by client needs.",
       "steps": [
-        { "title": "Foundation", "timeline": "2009", "result": "Independent advice, no conflicts of interest", "activities": ["Established in Warsaw", "Founders from private banking and asset management", "Clear mandate from day one"] },
-        { "title": "Family Office Practice", "timeline": "2013", "result": "Dedicated multi-generational practice", "activities": ["Coordinated investments", "Governance frameworks", "Succession planning under one roof"] },
-        { "title": "Structuring & Tax Expertise", "timeline": "2017", "result": "International wealth structuring capability", "activities": ["Cross-border tax planning", "Holding and trust structures", "Response to client complexity"] },
-        { "title": "Corporate Advisory", "timeline": "2021", "result": "Full lifecycle support for entrepreneurs", "activities": ["M&A advisory added", "Capital raising and exit support", "Personal and business wealth aligned"] },
-        { "title": "Icon Finance", "timeline": "Today", "result": "Independent multi-disciplinary advisory firm", "activities": ["Entrepreneurs, families, business owners", "Clients across Europe", "Headquartered in Warsaw"] }
+        {
+          "title": "Foundation",
+          "timeline": "2009",
+          "result": "Independent advice, no conflicts of interest",
+          "activities": [
+            "Established in Warsaw",
+            "Founders from private banking and asset management",
+            "Clear mandate from day one"
+          ]
+        },
+        {
+          "title": "Family Office Practice",
+          "timeline": "2013",
+          "result": "Dedicated multi-generational practice",
+          "activities": [
+            "Coordinated investments",
+            "Governance frameworks",
+            "Succession planning under one roof"
+          ]
+        },
+        {
+          "title": "Structuring & Tax Expertise",
+          "timeline": "2017",
+          "result": "International wealth structuring capability",
+          "activities": [
+            "Cross-border tax planning",
+            "Holding and trust structures",
+            "Response to client complexity"
+          ]
+        },
+        {
+          "title": "Corporate Advisory",
+          "timeline": "2021",
+          "result": "Full lifecycle support for entrepreneurs",
+          "activities": [
+            "M&A advisory added",
+            "Capital raising and exit support",
+            "Personal and business wealth aligned"
+          ]
+        },
+        {
+          "title": "Icon Finance",
+          "timeline": "Today",
+          "result": "Independent multi-disciplinary advisory firm",
+          "activities": [
+            "Entrepreneurs, families, business owners",
+            "Clients across Europe",
+            "Headquartered in Warsaw"
+          ]
+        }
       ]
     },
     "team": {
       "eyebrow": "Our Team",
       "title": "Meet the Team",
       "members": [
-        { "role": "Founder", "name": "Oleg Zabolotnyi", "bio": "Founder of Icon Finance with a background in private banking and investment advisory. Oleg built the firm around a single principle: independent advice that serves clients — not institutions." },
-        { "role": "Chief Executive Officer", "name": "Yurii Labenko", "bio": "Yurii leads the firm's operations and client strategy. His experience spans investment management and financial advisory across Central and Eastern European markets." },
-        { "role": "Chief Business Development Officer", "name": "Ksenia Romanchuk", "bio": "Ksenia drives the firm's growth and partnership strategy. She brings deep expertise in building institutional-grade client relationships across private wealth markets." },
-        { "role": "Partnership Development Manager", "name": "Maksym Sydorov", "bio": "Maksym develops and manages Icon Finance's partner network — connecting clients with the right specialists across legal, tax, and investment disciplines." }
+        {
+          "role": "Founder",
+          "name": "Oleg Zabolotnyi",
+          "bio": "Founder of Icon Finance with a background in private banking and investment advisory. Oleg built the firm around a single principle: independent advice that serves clients — not institutions."
+        },
+        {
+          "role": "Chief Executive Officer",
+          "name": "Yurii Labenko",
+          "bio": "Yurii leads the firm's operations and client strategy. His experience spans investment management and financial advisory across Central and Eastern European markets."
+        },
+        {
+          "role": "Chief Business Development Officer",
+          "name": "Ksenia Romanchuk",
+          "bio": "Ksenia drives the firm's growth and partnership strategy. She brings deep expertise in building institutional-grade client relationships across private wealth markets."
+        },
+        {
+          "role": "Partnership Development Manager",
+          "name": "Maksym Sydorov",
+          "bio": "Maksym develops and manages Icon Finance's partner network — connecting clients with the right specialists across legal, tax, and investment disciplines."
+        }
       ]
     },
     "cta": {
@@ -252,22 +354,52 @@
       "eyebrow": "Our Competencies",
       "title": "What We Do",
       "items": [
-        { "title": "Wealth Management", "body": "Independent investment management and portfolio advisory for entrepreneurs and families. No product commissions. No institutional quotas. Only advice aligned with your goals." },
-        { "title": "Family Office", "body": "We design and operate family office structures for multi-generational families — coordinating investments, governance, succession, and reporting from a single point." },
-        { "title": "Structuring & Tax", "body": "International wealth structuring and tax planning across multiple jurisdictions — designed to protect assets, reduce unnecessary tax drag, and ensure full legal compliance." },
-        { "title": "Corporate Advisory", "body": "M&A advisory, exit planning, capital raising, and due diligence for business owners — from early growth through to final transaction close." }
+        {
+          "title": "Wealth Management",
+          "body": "Independent investment management and portfolio advisory for entrepreneurs and families. No product commissions. No institutional quotas. Only advice aligned with your goals."
+        },
+        {
+          "title": "Family Office",
+          "body": "We design and operate family office structures for multi-generational families — coordinating investments, governance, succession, and reporting from a single point."
+        },
+        {
+          "title": "Structuring & Tax",
+          "body": "International wealth structuring and tax planning across multiple jurisdictions — designed to protect assets, reduce unnecessary tax drag, and ensure full legal compliance."
+        },
+        {
+          "title": "Corporate Advisory",
+          "body": "M&A advisory, exit planning, capital raising, and due diligence for business owners — from early growth through to final transaction close."
+        }
       ]
     },
     "industries": {
       "eyebrow": "Industries We Serve",
       "title": "Who We Work With",
       "items": [
-        { "title": "Entrepreneurs & Founders", "body": "Business owners navigating the intersection of personal and corporate wealth at every stage of growth." },
-        { "title": "Multi-Generational Families", "body": "Families managing wealth across two or three generations with complex governance and succession needs." },
-        { "title": "International Clients", "body": "Individuals and families with assets, residency, and interests spread across multiple jurisdictions." },
-        { "title": "Post-Exit Principals", "body": "Founders and executives following a liquidity event who need disciplined capital deployment and protection." },
-        { "title": "Philanthropists", "body": "Families and individuals seeking to deploy capital for lasting impact through structured giving." },
-        { "title": "Corporate & Institutional", "body": "Companies and family businesses requiring independent M&A, capital, and restructuring advisory." }
+        {
+          "title": "Entrepreneurs & Founders",
+          "body": "Business owners navigating the intersection of personal and corporate wealth at every stage of growth."
+        },
+        {
+          "title": "Multi-Generational Families",
+          "body": "Families managing wealth across two or three generations with complex governance and succession needs."
+        },
+        {
+          "title": "International Clients",
+          "body": "Individuals and families with assets, residency, and interests spread across multiple jurisdictions."
+        },
+        {
+          "title": "Post-Exit Principals",
+          "body": "Founders and executives following a liquidity event who need disciplined capital deployment and protection."
+        },
+        {
+          "title": "Philanthropists",
+          "body": "Families and individuals seeking to deploy capital for lasting impact through structured giving."
+        },
+        {
+          "title": "Corporate & Institutional",
+          "body": "Companies and family businesses requiring independent M&A, capital, and restructuring advisory."
+        }
       ]
     },
     "international": {
@@ -275,19 +407,49 @@
       "title": "Where We Work",
       "description": "Our clients' lives do not stop at one border — and neither does our expertise. We coordinate across jurisdictions, time zones, and regulatory frameworks to give clients a single coherent view of their international wealth.",
       "items": [
-        { "name": "Poland", "desc": "Primary hub and regulatory base" },
-        { "name": "European Union", "desc": "Cross-border structuring and compliance" },
-        { "name": "UAE / Dubai", "desc": "Holding structures and residency planning" },
-        { "name": "Cyprus & Malta", "desc": "EU-based tax planning vehicles" },
-        { "name": "Luxembourg", "desc": "Fund and family holding structures" },
-        { "name": "BVI & Cayman", "desc": "International holding vehicles" }
+        {
+          "name": "Poland",
+          "desc": "Primary hub and regulatory base"
+        },
+        {
+          "name": "European Union",
+          "desc": "Cross-border structuring and compliance"
+        },
+        {
+          "name": "UAE / Dubai",
+          "desc": "Holding structures and residency planning"
+        },
+        {
+          "name": "Cyprus & Malta",
+          "desc": "EU-based tax planning vehicles"
+        },
+        {
+          "name": "Luxembourg",
+          "desc": "Fund and family holding structures"
+        },
+        {
+          "name": "BVI & Cayman",
+          "desc": "International holding vehicles"
+        }
       ]
     },
     "stats": [
-      { "n": "15+", "label": "Years in wealth management" },
-      { "n": "4", "label": "Core service disciplines" },
-      { "n": "6+", "label": "Jurisdictions covered" },
-      { "n": "4", "label": "Languages spoken" }
+      {
+        "n": "15+",
+        "label": "Years in wealth management"
+      },
+      {
+        "n": "4",
+        "label": "Core service disciplines"
+      },
+      {
+        "n": "6+",
+        "label": "Jurisdictions covered"
+      },
+      {
+        "n": "4",
+        "label": "Languages spoken"
+      }
     ],
     "cta": {
       "title": "Start a Confidential Conversation",
@@ -324,10 +486,22 @@
       "eyebrow": "Get in Touch",
       "title": "How to Reach Us",
       "blocks": [
-        { "title": "Office", "body": "Warsaw, Poland" },
-        { "title": "Email", "body": "info@iconfinance.io" },
-        { "title": "Response Time", "body": "We respond to all inquiries within 24 hours." },
-        { "title": "Confidentiality", "body": "All information shared with us is treated with strict professional discretion. NDA available on request." }
+        {
+          "title": "Office",
+          "body": "Warsaw, Poland"
+        },
+        {
+          "title": "Email",
+          "body": "info@iconfinance.io"
+        },
+        {
+          "title": "Response Time",
+          "body": "We respond to all inquiries within 24 hours."
+        },
+        {
+          "title": "Confidentiality",
+          "body": "All information shared with us is treated with strict professional discretion. NDA available on request."
+        }
       ]
     },
     "form": {
@@ -354,6 +528,1271 @@
       "title": "Not Sure Where to Start?",
       "description": "Many of our clients come to us without a clear brief — just a sense that their current situation could be better managed. That is a perfectly good place to begin.",
       "button": "Send Us a Message"
+    }
+  },
+  "servicePages": {
+    "wealthManagement": {
+      "hero": {
+        "eyebrow": "Wealth Management",
+        "title": "Preserving and Growing Capital Across Generations",
+        "description": "Icon Finance delivers independent wealth management for entrepreneurs, business owners, and families with complex financial lives. We combine institutional expertise with the personal attention your capital deserves.",
+        "imageAlt": "Infinity symbol — wealth preservation across generations"
+      },
+      "whoBenefits": {
+        "sectionTitle": "Built for Those\nWith More at Stake",
+        "items": [
+          {
+            "title": "Business Owners",
+            "description": "You have built significant wealth through your business — but your personal capital remains exposed to the same risks. We help you separate, structure, and protect what you have earned, independently of your operating business."
+          },
+          {
+            "title": "Entrepreneurs After Exit",
+            "description": "You have sold your company or stepped back from operations and now face a different challenge: preserving and deploying substantial liquidity. We design structures that protect your proceeds and put them to work with discipline."
+          },
+          {
+            "title": "Multi-Generational Families",
+            "description": "Family wealth that spans two or three generations requires more than a portfolio. We coordinate investment strategy with governance, succession planning, and family alignment — so capital serves the family, not the other way around."
+          },
+          {
+            "title": "International Clients",
+            "description": "Assets spread across multiple jurisdictions demand more than local advice. We bring cross-border expertise to reduce complexity, eliminate redundant tax drag, and give you a single coherent view of your wealth."
+          }
+        ]
+      },
+      "philosophy": {
+        "sectionTitle": "How We Think\nAbout Your Wealth",
+        "subtitle": "We operate without product commissions, bank affiliations, or placement fees. Every recommendation we make is driven by your goals alone — not by distribution agreements or institutional quotas. This independence is the foundation of everything we do.",
+        "items": [
+          {
+            "number": "01",
+            "title": "Independent Advice",
+            "description": "No conflicts of interest. No affiliated products. We are compensated only by you — which means we work only for you."
+          },
+          {
+            "number": "02",
+            "title": "Integrated Approach",
+            "description": "We coordinate investment strategy with tax planning, structuring, and succession — so your financial decisions are always coherent across every dimension."
+          },
+          {
+            "number": "03",
+            "title": "Active Risk Management",
+            "description": "Continuous monitoring across all asset classes and custodians. We act on risk before it becomes loss."
+          },
+          {
+            "number": "04",
+            "title": "Full Transparency",
+            "description": "Clear, consolidated reporting across all your accounts and holdings. You always know exactly where you stand."
+          }
+        ]
+      },
+      "results": {
+        "eyebrow": "Why It Matters",
+        "title": "What Independent Wealth Management Delivers",
+        "items": [
+          {
+            "main": "Fee-Based",
+            "label": "No product commissions or placement fees — ever"
+          },
+          {
+            "main": "Senior Access",
+            "label": "You work directly with experienced professionals, not junior managers"
+          },
+          {
+            "main": "Cross-Border",
+            "label": "Expertise across multiple jurisdictions and asset classes"
+          },
+          {
+            "main": "Consolidated",
+            "label": "Single view of all your wealth, regardless of where assets are held"
+          },
+          {
+            "main": "Confidential",
+            "label": "Strict discretion as a professional and legal obligation"
+          },
+          {
+            "main": "Long-Term",
+            "label": "We measure success in decades, not quarters"
+          }
+        ]
+      },
+      "strategies": [
+        {
+          "name": "Conservative Strategy",
+          "description": "Focused on capital preservation and stable income through high-quality fixed income instruments and dividend-paying equities. Suitable for clients prioritizing protection over growth.",
+          "items": [
+            "Capital preservation as the primary objective",
+            "High-quality bonds and investment grade credit",
+            "Low volatility, stable income profile"
+          ]
+        },
+        {
+          "name": "Balanced Strategy",
+          "description": "A diversified approach combining income-generating assets with selective equity exposure. Designed for clients seeking steady growth with controlled downside risk.",
+          "items": [
+            "Equal focus on growth and income",
+            "Broad diversification across asset classes",
+            "Moderate risk with long-term appreciation"
+          ]
+        },
+        {
+          "name": "Growth Strategy",
+          "description": "Equity-oriented portfolio with meaningful allocation to alternative investments. For clients with longer time horizons and higher tolerance for short-term volatility.",
+          "items": [
+            "Equity-led with alternative diversifiers",
+            "Private markets and real asset exposure",
+            "Higher return potential over 5–10 year horizon"
+          ]
+        },
+        {
+          "name": "Opportunistic Strategy",
+          "description": "High-conviction, concentrated exposure to high-growth opportunities including private equity, venture, and emerging markets. Suitable for a portion of a larger diversified portfolio.",
+          "items": [
+            "Concentrated bets in high-conviction themes",
+            "Private equity, venture, and special situations",
+            "Maximum return potential with commensurate risk"
+          ]
+        }
+      ],
+      "opportunities": [
+        {
+          "name": "Traditional Assets",
+          "items": [
+            {
+              "title": "Developed market equities",
+              "description": "US, Europe, Japan"
+            },
+            {
+              "title": "Equities of emerging markets",
+              "description": "China, India, Latin America"
+            },
+            {
+              "title": "Government bonds",
+              "description": "US Treasuries, German Bunds"
+            },
+            {
+              "title": "Corporate bonds",
+              "description": "Investment grade and high yield"
+            },
+            {
+              "title": "Money market and deposits",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Alternative Investments",
+          "items": [
+            {
+              "title": "Private Equity",
+              "description": "direct investments in companies"
+            },
+            {
+              "title": "Venture funds",
+              "description": "technology startups"
+            },
+            {
+              "title": "Hedge funds",
+              "description": "market neutral, long/short"
+            },
+            {
+              "title": "Real estate",
+              "description": "commercial and residential"
+            },
+            {
+              "title": "Commodities",
+              "description": "gold, oil, agricultural"
+            },
+            {
+              "title": "Crypto assets",
+              "description": "Bitcoin, Ethereum"
+            },
+            {
+              "title": "Infrastructure projects",
+              "description": ""
+            },
+            {
+              "title": "Art and collectibles",
+              "description": ""
+            }
+          ]
+        }
+      ],
+      "portfolio": {
+        "title": "How We Work With You",
+        "description": "A structured process built around your family, your assets, and your jurisdictions.",
+        "steps": [
+          {
+            "title": "Discovery & Planning",
+            "timeline": "1–2 weeks",
+            "result": "Investment Policy Statement (IPS)",
+            "activities": [
+              "Full asset and liability audit",
+              "Goal setting",
+              "Risk profiling",
+              "Tax position review"
+            ]
+          },
+          {
+            "title": "Portfolio Construction",
+            "timeline": "3–4 weeks",
+            "result": "Diversified Portfolio",
+            "activities": [
+              "Strategic allocation",
+              "Instrument selection",
+              "Due diligence",
+              "Account and custody setup"
+            ]
+          },
+          {
+            "title": "Active Management",
+            "timeline": "Ongoing",
+            "result": "Optimal risk/return profile",
+            "activities": [
+              "Daily monitoring",
+              "Tactical adjustments",
+              "Quarterly rebalancing",
+              "Risk management"
+            ]
+          },
+          {
+            "title": "Reporting & Review",
+            "timeline": "Regular",
+            "result": "Full transparency and control",
+            "activities": [
+              "Monthly reports",
+              "Quarterly meetings",
+              "Annual strategy review",
+              "Tax reporting"
+            ]
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "What is the minimum investment threshold?",
+          "answer": "We typically work with clients whose investable assets start from $500,000. For family office and structuring mandates, the threshold may be higher depending on complexity."
+        },
+        {
+          "question": "How are your fees structured?",
+          "answer": "We operate on a transparent, fee-based model. Fees are agreed in advance and based on assets under advisory — we receive no commissions, rebates, or payments from product providers."
+        },
+        {
+          "question": "Can I access my funds at any time?",
+          "answer": "Yes. Your assets are held at independent custodians in your name and remain fully accessible. We recommend consulting with your advisor before significant withdrawals to assess portfolio impact."
+        },
+        {
+          "question": "How do you protect client confidentiality?",
+          "answer": "Confidentiality is both a professional obligation and a legal one. Client information is never shared with third parties without explicit consent. NDA arrangements are available on request."
+        }
+      ],
+      "cta": {
+        "title": "Start a Confidential Conversation",
+        "description": "Arrange a private consultation with our team. We will listen to your situation first — and only propose a path forward if we are confident we can add meaningful value."
+      }
+    },
+    "familyOffice": {
+      "hero": {
+        "eyebrow": "Family Office",
+        "title": "When Wealth Becomes a Family Responsibility",
+        "description": "Icon Finance designs and operates family office structures for families navigating the complexity of multi-generational wealth — from investment coordination to succession, governance, and legacy planning.",
+        "imageAlt": "Family office — multi-generational wealth coordination"
+      },
+      "whoBenefits": {
+        "sectionTitle": "Built for Families\nThinking in Generations",
+        "items": [
+          {
+            "title": "Families With $10M+ in Assets",
+            "description": "Your family wealth has grown to a scale where informal management no longer works. You need a structured approach that coordinates investments, legal entities, taxes, and succession in one place."
+          },
+          {
+            "title": "Business Owners Planning an Exit",
+            "description": "You are preparing to sell your business and thinking carefully about what happens next. A family office structure gives your post-exit capital the governance and management framework it deserves."
+          },
+          {
+            "title": "Multi-Generational Families",
+            "description": "Your family spans two or three generations with different financial needs, risk appetites, and goals. We create the structure and processes that keep capital — and family — aligned."
+          },
+          {
+            "title": "Families Relocating Internationally",
+            "description": "Moving across jurisdictions brings new tax obligations, regulatory requirements, and asset management challenges. We coordinate every dimension of your financial relocation from a single point."
+          }
+        ]
+      },
+      "philosophy": {
+        "sectionTitle": "How We Build\nYour Family Office",
+        "subtitle": "A family office is not a product — it is an infrastructure. We design it around your family's specific composition, values, assets, and long-term intentions. No templates. No off-the-shelf solutions.",
+        "items": [
+          {
+            "number": "01",
+            "title": "Custom Design",
+            "description": "Every family office we build starts with a blank page. We map your family's full picture before recommending any structure."
+          },
+          {
+            "number": "02",
+            "title": "Full Coordination",
+            "description": "Investments, legal, tax, succession, and reporting — all coordinated from one place, eliminating gaps between advisors."
+          },
+          {
+            "number": "03",
+            "title": "Governance First",
+            "description": "We establish clear decision-making processes, family councils, and investment committees — so wealth doesn't create conflict."
+          },
+          {
+            "number": "04",
+            "title": "Succession Ready",
+            "description": "Every structure we build is designed with the next generation in mind — legally, financially, and in terms of family readiness."
+          }
+        ]
+      },
+      "results": {
+        "eyebrow": "Why It Matters",
+        "title": "What a Proper Family Office Delivers",
+        "items": [
+          {
+            "main": "Single Point",
+            "label": "One place for all family financial decisions and reporting"
+          },
+          {
+            "main": "Conflict-Free",
+            "label": "Governance structures that prevent wealth from dividing families"
+          },
+          {
+            "main": "Cross-Border",
+            "label": "Coordination across jurisdictions, entities, and currencies"
+          },
+          {
+            "main": "Confidential",
+            "label": "Full discretion — your family's affairs stay within your family"
+          },
+          {
+            "main": "Generational",
+            "label": "Built to serve not just you, but your children and grandchildren"
+          },
+          {
+            "main": "Integrated",
+            "label": "Investments, tax, legal, and succession under one framework"
+          }
+        ]
+      },
+      "strategies": [
+        {
+          "name": "Single Family Office",
+          "description": "A fully dedicated structure built exclusively for your family. Complete control, maximum confidentiality, and bespoke infrastructure — designed for families with $30M+ in assets.",
+          "items": [
+            "Exclusive infrastructure for one family only",
+            "Full control over investment and governance decisions",
+            "Maximum confidentiality and customization"
+          ]
+        },
+        {
+          "name": "Shared Family Office",
+          "description": "Access to institutional-grade family office services shared across a select group of families. The benefits of a full family office at a fraction of the standalone cost.",
+          "items": [
+            "Institutional infrastructure at optimized cost",
+            "Select group of non-competing families",
+            "Shared operations, separate reporting and assets"
+          ]
+        },
+        {
+          "name": "Family Office Advisory",
+          "description": "You already have a family office but need an experienced outside perspective. We serve as your strategic advisor: reviewing structures, optimizing processes, and filling expertise gaps.",
+          "items": [
+            "Independent review of existing family office",
+            "Process optimization and governance upgrade",
+            "On-demand senior expertise without full retainer"
+          ]
+        },
+        {
+          "name": "Virtual Family Office",
+          "description": "For families who want family office-level coordination without a physical infrastructure. We act as your outsourced family office, delivering all services without the overhead.",
+          "items": [
+            "Full coordination without physical office costs",
+            "Scalable — grows with your family's needs",
+            "Ideal for families in transition or relocation"
+          ]
+        }
+      ],
+      "opportunities": [
+        {
+          "name": "Core Services",
+          "items": [
+            {
+              "title": "Investment management and oversight",
+              "description": "across all custodians and accounts"
+            },
+            {
+              "title": "Consolidated financial reporting",
+              "description": "monthly, quarterly, annual"
+            },
+            {
+              "title": "Tax planning and compliance",
+              "description": "multi-jurisdiction coordination"
+            },
+            {
+              "title": "Legal entity management",
+              "description": "holding structures and corporate admin"
+            },
+            {
+              "title": "Cash flow and liquidity management",
+              "description": "family budgeting and distributions"
+            }
+          ]
+        },
+        {
+          "name": "Extended Services",
+          "items": [
+            {
+              "title": "Succession planning",
+              "description": "wills, trusts, inheritance structures"
+            },
+            {
+              "title": "Family governance",
+              "description": "councils, charters, decision frameworks"
+            },
+            {
+              "title": "Philanthropy management",
+              "description": "foundations, donor programs, impact"
+            },
+            {
+              "title": "Real estate coordination",
+              "description": "acquisition, management, disposition"
+            },
+            {
+              "title": "Art and lifestyle assets",
+              "description": "collection management, insurance, valuation"
+            },
+            {
+              "title": "Next generation education",
+              "description": "financial literacy, onboarding programs"
+            }
+          ]
+        }
+      ],
+      "portfolio": {
+        "title": "How We Build Your Family Office",
+        "description": "A structured engagement from discovery to full operational family office.",
+        "steps": [
+          {
+            "title": "Family Discovery",
+            "timeline": "2–4 weeks",
+            "result": "Family Wealth Map",
+            "activities": [
+              "Asset inventory",
+              "Family structure review",
+              "Goal alignment",
+              "Jurisdiction mapping"
+            ]
+          },
+          {
+            "title": "Structure Design",
+            "timeline": "4–6 weeks",
+            "result": "Family Office Blueprint",
+            "activities": [
+              "Entity design",
+              "Governance framework",
+              "Advisor coordination",
+              "Reporting architecture"
+            ]
+          },
+          {
+            "title": "Implementation",
+            "timeline": "6–8 weeks",
+            "result": "Operational Family Office",
+            "activities": [
+              "Entity formation",
+              "Account setup",
+              "Policy documentation",
+              "System onboarding"
+            ]
+          },
+          {
+            "title": "Operations & Oversight",
+            "timeline": "Ongoing",
+            "result": "Fully managed family office",
+            "activities": [
+              "Monthly reporting",
+              "Investment oversight",
+              "Family meetings",
+              "Annual structure review"
+            ]
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "What is the minimum asset level for a family office?",
+          "answer": "A dedicated Single Family Office typically requires $30M+ in investable assets to be cost-efficient. Our Shared Family Office model is designed for families starting from $5–10M, and our Virtual Family Office has no strict minimum."
+        },
+        {
+          "question": "How is a family office different from a private bank?",
+          "answer": "A private bank sells products and manages your portfolio within their platform. A family office coordinates every dimension of your financial life — across all banks, advisors, and jurisdictions — with no product to sell and no conflicts of interest."
+        },
+        {
+          "question": "Can you work alongside our existing advisors?",
+          "answer": "Yes. We often work as a coordinating layer above existing legal, tax, and investment advisors — ensuring they work coherently together rather than in isolated silos."
+        },
+        {
+          "question": "How do you handle confidentiality across multiple family members?",
+          "answer": "We establish clear information boundaries at the outset. Each family member's personal financial information is protected, while consolidated family reporting is shared only with designated principals."
+        }
+      ],
+      "cta": {
+        "title": "Start a Confidential Conversation",
+        "description": "Arrange a private consultation with our team. We will listen to your situation first — and only propose a path forward if we are confident we can add meaningful value."
+      }
+    },
+    "structuringTax": {
+      "hero": {
+        "eyebrow": "Structuring & Tax",
+        "title": "Structure That Protects. Planning That Preserves.",
+        "description": "Icon Finance provides international wealth structuring and tax planning for entrepreneurs, families, and investors with assets across multiple jurisdictions. We turn complexity into clarity.",
+        "imageAlt": "Structuring and tax symbol"
+      },
+      "whoBenefits": {
+        "sectionTitle": "Built for Those Facing\nComplex Tax Realities",
+        "items": [
+          {
+            "title": "International Asset Holders",
+            "description": "You hold assets in multiple countries — real estate, companies, investments, bank accounts. Without proper structuring, you face overlapping tax obligations, regulatory exposure, and unnecessary costs."
+          },
+          {
+            "title": "Entrepreneurs Before and After Exit",
+            "description": "The tax consequences of selling a business can be significant — or minimized with the right structure in place beforehand. We help you plan ahead and protect what you've built."
+          },
+          {
+            "title": "Families Planning Succession",
+            "description": "Passing wealth to the next generation across borders involves inheritance taxes, forced heirship rules, and jurisdictional conflicts. We design structures that make succession orderly and efficient."
+          },
+          {
+            "title": "Relocating Individuals and Families",
+            "description": "Changing your tax residency or domicile has profound implications for your global assets. We coordinate the full picture — before, during, and after your move."
+          }
+        ]
+      },
+      "philosophy": {
+        "sectionTitle": "Structuring Built Around\nYour Life, Not a Template",
+        "subtitle": "Effective structuring is not about aggressive tax avoidance — it is about ensuring that your wealth is held in the most logical, efficient, and legally sound way possible. We work within the law, across jurisdictions, with your long-term interests as the only guide.",
+        "items": [
+          {
+            "number": "01",
+            "title": "Jurisdiction Analysis",
+            "description": "We assess every jurisdiction where you have assets, income, or residency — and identify the optimal holding structure for each situation."
+          },
+          {
+            "number": "02",
+            "title": "Integrated Planning",
+            "description": "Tax planning does not happen in isolation. We coordinate with your investment strategy, succession plan, and family office to ensure full coherence."
+          },
+          {
+            "number": "03",
+            "title": "Legal Compliance",
+            "description": "Every structure we design is fully compliant with applicable law. We work with qualified local counsel in each jurisdiction."
+          },
+          {
+            "number": "04",
+            "title": "Long-Term View",
+            "description": "We design for durability — structures that hold up as laws change, families grow, and circumstances evolve."
+          }
+        ]
+      },
+      "results": {
+        "eyebrow": "Why It Matters",
+        "title": "What Proper Structuring Delivers",
+        "items": [
+          {
+            "main": "Tax Efficient",
+            "label": "Eliminate unnecessary tax drag across all jurisdictions"
+          },
+          {
+            "main": "Protected",
+            "label": "Assets shielded from undue claims, creditors, and exposure"
+          },
+          {
+            "main": "Compliant",
+            "label": "Fully legal structures that withstand regulatory scrutiny"
+          },
+          {
+            "main": "Succession Ready",
+            "label": "Wealth transfers smoothly to the next generation"
+          },
+          {
+            "main": "Consolidated",
+            "label": "All structures coordinated under one coherent framework"
+          },
+          {
+            "main": "Adaptable",
+            "label": "Built to evolve as your life, laws, and assets change"
+          }
+        ]
+      },
+      "strategies": [
+        {
+          "name": "Wealth Structuring",
+          "description": "We design holding structures for your global assets — companies, real estate, investments, and liquid wealth — to ensure efficient ownership, protection, and management across jurisdictions.",
+          "items": [
+            "Holding company and entity design",
+            "Cross-border ownership optimization",
+            "Asset protection frameworks"
+          ]
+        },
+        {
+          "name": "Tax Planning",
+          "description": "Strategic tax planning that reduces your global tax burden through legitimate means — residency planning, income structuring, and treaty optimization across jurisdictions.",
+          "items": [
+            "Multi-jurisdiction tax analysis",
+            "Residency and domicile planning",
+            "Tax treaty optimization"
+          ]
+        },
+        {
+          "name": "Trusts & Foundations",
+          "description": "Trusts and private foundations are powerful tools for asset protection, succession planning, and philanthropy. We advise on structure, jurisdiction, and administration.",
+          "items": [
+            "Trust establishment and structuring",
+            "Private foundation setup",
+            "Ongoing administration and oversight"
+          ]
+        },
+        {
+          "name": "Estate Planning",
+          "description": "Comprehensive planning for the transfer of wealth across generations — minimizing inheritance tax, avoiding probate, and ensuring your assets reach the right people at the right time.",
+          "items": [
+            "Cross-border succession planning",
+            "Inheritance tax minimization",
+            "Will and estate documentation"
+          ]
+        }
+      ],
+      "opportunities": [
+        {
+          "name": "Structuring Services",
+          "items": [
+            {
+              "title": "International holding structures",
+              "description": "companies, foundations, trusts"
+            },
+            {
+              "title": "Ownership optimization",
+              "description": "across multiple jurisdictions"
+            },
+            {
+              "title": "Asset protection planning",
+              "description": "creditor and legal exposure"
+            },
+            {
+              "title": "Corporate restructuring",
+              "description": "consolidation and simplification"
+            },
+            {
+              "title": "Residency and domicile planning",
+              "description": "for individuals and families"
+            }
+          ]
+        },
+        {
+          "name": "Tax Services",
+          "items": [
+            {
+              "title": "Multi-jurisdiction tax analysis",
+              "description": "global tax position mapping"
+            },
+            {
+              "title": "Income and dividend structuring",
+              "description": "efficient distribution planning"
+            },
+            {
+              "title": "Tax treaty optimization",
+              "description": "leverage bilateral agreements"
+            },
+            {
+              "title": "Exit tax planning",
+              "description": "pre-sale and post-sale structuring"
+            },
+            {
+              "title": "Compliance coordination",
+              "description": "across all relevant jurisdictions"
+            },
+            {
+              "title": "Reporting and disclosure",
+              "description": "CRS, FATCA, local requirements"
+            }
+          ]
+        }
+      ],
+      "portfolio": {
+        "title": "How We Structure Your Wealth",
+        "description": "A methodical process from analysis to implementation and ongoing compliance.",
+        "steps": [
+          {
+            "title": "Global Asset Mapping",
+            "timeline": "2–3 weeks",
+            "result": "Complete Wealth & Tax Map",
+            "activities": [
+              "Asset inventory",
+              "Jurisdiction review",
+              "Current structure audit",
+              "Tax exposure analysis"
+            ]
+          },
+          {
+            "title": "Structure Design",
+            "timeline": "3–4 weeks",
+            "result": "Optimal Holding Framework",
+            "activities": [
+              "Entity selection",
+              "Jurisdiction planning",
+              "Legal counsel coordination",
+              "Compliance review"
+            ]
+          },
+          {
+            "title": "Implementation",
+            "timeline": "4–8 weeks",
+            "result": "Fully Operational Structure",
+            "activities": [
+              "Entity formation",
+              "Account setup",
+              "Asset transfer",
+              "Documentation and registration"
+            ]
+          },
+          {
+            "title": "Maintenance & Compliance",
+            "timeline": "Ongoing",
+            "result": "Compliant and efficient structure",
+            "activities": [
+              "Annual reviews",
+              "Regulatory updates",
+              "Reporting obligations",
+              "Structure optimization"
+            ]
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Is international tax planning legal?",
+          "answer": "Yes. We design structures that are fully compliant with applicable law in every jurisdiction. Our approach is based on legitimate tax planning — not aggressive avoidance or evasion."
+        },
+        {
+          "question": "Which jurisdictions do you work with?",
+          "answer": "We work across major financial and holding jurisdictions including Poland, UAE, Cyprus, Malta, Luxembourg, BVI, Cayman, and others — always selecting the most appropriate jurisdiction for your specific situation."
+        },
+        {
+          "question": "Do I need to change my residency?",
+          "answer": "Not necessarily. Residency planning is one tool among many. We assess whether a residency change would benefit your overall position and only recommend it when it makes genuine sense."
+        },
+        {
+          "question": "How do you handle CRS and FATCA reporting?",
+          "answer": "We design structures with full transparency in mind. All our solutions are compatible with CRS and FATCA requirements, and we coordinate reporting obligations across jurisdictions."
+        }
+      ],
+      "cta": {
+        "title": "Start a Confidential Conversation",
+        "description": "Arrange a private consultation with our team. We will listen to your situation first — and only propose a path forward if we are confident we can add meaningful value."
+      }
+    },
+    "maConsulting": {
+      "hero": {
+        "eyebrow": "M&A Consulting",
+        "title": "From Growth to Exit — Strategic Advice at Every Stage",
+        "description": "Icon Finance provides independent M&A advisory for business owners and entrepreneurs navigating acquisitions, sales, mergers, and capital raising. We protect your interests from first conversation to final close.",
+        "imageAlt": "M&A consulting symbol"
+      },
+      "whoBenefits": {
+        "sectionTitle": "Built for Owners Making\nHigh-Stakes Decisions",
+        "items": [
+          {
+            "title": "Business Owners Planning an Exit",
+            "description": "You are considering selling your business and want to ensure you receive full value — with the right structure, the right buyers, and the right terms. We manage the entire process on your behalf."
+          },
+          {
+            "title": "Entrepreneurs Seeking Acquisitions",
+            "description": "You want to grow through acquisition but need experienced guidance on target identification, valuation, due diligence, and deal structuring. We act as your independent advisor throughout."
+          },
+          {
+            "title": "Companies Raising Capital",
+            "description": "You need growth capital — debt, equity, or a combination — and want to approach the right investors with the right story and structure. We prepare, position, and represent you."
+          },
+          {
+            "title": "Family Businesses in Transition",
+            "description": "You are navigating a generational transition, partnership restructuring, or partial liquidity event. We bring both financial and family dynamics expertise to these complex situations."
+          }
+        ]
+      },
+      "philosophy": {
+        "sectionTitle": "Independent Advice.\nNo Hidden Agendas.",
+        "subtitle": "Most M&A advisors are paid on completion — which creates pressure to close deals rather than protect your interests. We operate differently: our advice is driven by what is right for you, not by transaction fees or banking relationships.",
+        "items": [
+          {
+            "number": "01",
+            "title": "Owner-Side Only",
+            "description": "We represent buyers or sellers — never both sides of the same transaction. Your interests are always our only focus."
+          },
+          {
+            "number": "02",
+            "title": "Full Process Management",
+            "description": "From preparation and positioning through negotiation and close — we manage every stage so you can focus on running your business."
+          },
+          {
+            "number": "03",
+            "title": "Valuation Discipline",
+            "description": "We provide rigorous, independent valuation analysis — ensuring you never leave value on the table or overpay for an acquisition."
+          },
+          {
+            "number": "04",
+            "title": "Network Access",
+            "description": "Access to a curated network of strategic buyers, financial investors, and capital providers across Europe and beyond."
+          }
+        ]
+      },
+      "results": {
+        "eyebrow": "Why It Matters",
+        "title": "What Independent M&A Advisory Delivers",
+        "items": [
+          {
+            "main": "Independent",
+            "label": "No banking affiliations or conflicted relationships"
+          },
+          {
+            "main": "Full Value",
+            "label": "Rigorous preparation and positioning maximizes outcome"
+          },
+          {
+            "main": "Confidential",
+            "label": "Strict process control — only the right parties engaged"
+          },
+          {
+            "main": "Structured",
+            "label": "Tax and legal structure optimized from day one"
+          },
+          {
+            "main": "Network",
+            "label": "Access to qualified buyers and investors across Europe"
+          },
+          {
+            "main": "End-to-End",
+            "label": "One advisor from strategy through signed documents"
+          }
+        ]
+      },
+      "strategies": [
+        {
+          "name": "Exit Advisory",
+          "description": "We manage the full sale process on behalf of business owners — from preparation and valuation through buyer identification, negotiation, and close.",
+          "items": [
+            "Business preparation and positioning",
+            "Buyer identification and approach",
+            "Negotiation and deal structuring"
+          ]
+        },
+        {
+          "name": "Acquisition Advisory",
+          "description": "We support buyers through the full acquisition process — target identification, valuation, due diligence, structuring, and post-merger integration planning.",
+          "items": [
+            "Target identification and screening",
+            "Valuation and due diligence",
+            "Deal structuring and negotiation"
+          ]
+        },
+        {
+          "name": "Capital Raising",
+          "description": "We help businesses raise growth capital from the right investors — equity, debt, or hybrid — with the right structure and on the right terms.",
+          "items": [
+            "Investor identification and approach",
+            "Investment memorandum preparation",
+            "Term negotiation and close"
+          ]
+        },
+        {
+          "name": "Due Diligence",
+          "description": "Independent financial, commercial, and legal due diligence — giving you a clear, unbiased picture of any transaction before you commit.",
+          "items": [
+            "Financial and commercial analysis",
+            "Risk identification and assessment",
+            "Independent reporting to decision makers"
+          ]
+        }
+      ],
+      "opportunities": [
+        {
+          "name": "Transaction Services",
+          "items": [
+            {
+              "title": "Exit and sale advisory",
+              "description": "full process management"
+            },
+            {
+              "title": "Acquisition support",
+              "description": "from target to close"
+            },
+            {
+              "title": "Merger advisory",
+              "description": "structure and integration"
+            },
+            {
+              "title": "Management buyout",
+              "description": "MBO and MBI transactions"
+            },
+            {
+              "title": "Business valuation",
+              "description": "independent and rigorous"
+            }
+          ]
+        },
+        {
+          "name": "Capital & Restructuring",
+          "items": [
+            {
+              "title": "Equity capital raising",
+              "description": "growth and expansion financing"
+            },
+            {
+              "title": "Debt advisory",
+              "description": "structure and lender negotiation"
+            },
+            {
+              "title": "Private placement",
+              "description": "qualified investor introductions"
+            },
+            {
+              "title": "Corporate restructuring",
+              "description": "ownership and operational"
+            },
+            {
+              "title": "IPO preparation",
+              "description": "readiness and positioning"
+            },
+            {
+              "title": "Strategic partnerships",
+              "description": "joint ventures and alliances"
+            }
+          ]
+        }
+      ],
+      "portfolio": {
+        "title": "How We Run Your Transaction",
+        "description": "A disciplined process that maximizes value and minimizes execution risk.",
+        "steps": [
+          {
+            "title": "Preparation & Positioning",
+            "timeline": "2–4 weeks",
+            "result": "Transaction Readiness",
+            "activities": [
+              "Business analysis",
+              "Valuation",
+              "Information memorandum",
+              "Process design"
+            ]
+          },
+          {
+            "title": "Market Approach",
+            "timeline": "4–6 weeks",
+            "result": "Qualified Interest",
+            "activities": [
+              "Buyer/investor identification",
+              "Confidential outreach",
+              "NDA management",
+              "Initial meetings"
+            ]
+          },
+          {
+            "title": "Negotiation & Structuring",
+            "timeline": "4–8 weeks",
+            "result": "Agreed Terms",
+            "activities": [
+              "Offer evaluation",
+              "Term negotiation",
+              "Deal structuring",
+              "Due diligence management"
+            ]
+          },
+          {
+            "title": "Close & Transition",
+            "timeline": "4–6 weeks",
+            "result": "Completed Transaction",
+            "activities": [
+              "Legal documentation",
+              "Regulatory approvals",
+              "Signing",
+              "Post-close transition support"
+            ]
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "How are you compensated on M&A transactions?",
+          "answer": "We charge a retainer fee for advisory work and a success fee upon transaction completion. Fee structures are agreed transparently upfront. We never receive undisclosed payments from counterparties or investors."
+        },
+        {
+          "question": "How long does a typical sale process take?",
+          "answer": "A well-run sale process typically takes 6–12 months from preparation to close. Complex transactions or difficult market conditions may extend this timeline. We set realistic expectations from day one."
+        },
+        {
+          "question": "Can you maintain confidentiality during the process?",
+          "answer": "Yes. We manage the entire process under strict confidentiality protocols — including NDAs with all counterparties, controlled information release, and anonymized initial approaches where appropriate."
+        },
+        {
+          "question": "What size of transactions do you work on?",
+          "answer": "We typically work on transactions ranging from €5M to €200M in enterprise value. For larger or more complex transactions, we engage specialized partners from our network."
+        }
+      ],
+      "cta": {
+        "title": "Start a Confidential Conversation",
+        "description": "Arrange a private consultation with our team. We will listen to your situation first — and only propose a path forward if we are confident we can add meaningful value."
+      }
+    },
+    "specialSolutions": {
+      "hero": {
+        "eyebrow": "Special Solutions",
+        "title": "Beyond the Conventional. Built Around You.",
+        "description": "Icon Finance provides bespoke advisory for clients with unique assets, complex situations, and needs that fall outside standard wealth management. When conventional solutions are not enough, we design something better.",
+        "imageAlt": "Special solutions symbol"
+      },
+      "whoBenefits": {
+        "sectionTitle": "Built for the\nUnconventional Client",
+        "items": [
+          {
+            "title": "Collectors and Art Holders",
+            "description": "Your wealth includes significant art, collectibles, or other passion assets that require specialist management — valuation, insurance, storage, financing, and eventual disposition — handled with the same rigour as your financial portfolio."
+          },
+          {
+            "title": "Real Estate Investors",
+            "description": "You hold substantial real estate across jurisdictions and need coordinated advisory on acquisition structuring, financing, management, and disposal — integrated with your broader wealth strategy."
+          },
+          {
+            "title": "Philanthropists and Foundation Founders",
+            "description": "You want your wealth to create lasting impact beyond your own family. We help you design, establish, and operate philanthropic structures that reflect your values and maximize your impact."
+          },
+          {
+            "title": "ESG and Impact Investors",
+            "description": "You want your investments to generate returns while aligning with your values. We design ESG and impact portfolios that do not compromise on financial discipline."
+          }
+        ]
+      },
+      "philosophy": {
+        "sectionTitle": "Unconventional Problems\nRequire Bespoke Solutions",
+        "subtitle": "Standard wealth management frameworks were not built for clients with art collections, complex real estate portfolios, philanthropic ambitions, or impact investing mandates. We start from your specific situation and build from there.",
+        "items": [
+          {
+            "number": "01",
+            "title": "Asset-Specific Expertise",
+            "description": "We bring specialist knowledge to each asset class — art, real estate, philanthropy, ESG — rather than applying a generic framework."
+          },
+          {
+            "number": "02",
+            "title": "Full Integration",
+            "description": "Non-standard assets are integrated into your overall wealth strategy — not managed in isolation from your financial portfolio."
+          },
+          {
+            "number": "03",
+            "title": "Network of Specialists",
+            "description": "We coordinate with art advisors, real estate experts, legal counsel, and impact measurement specialists as needed."
+          },
+          {
+            "number": "04",
+            "title": "Values Alignment",
+            "description": "We take your values seriously as an investment parameter — whether that means ESG exclusions, impact targets, or philanthropic allocation."
+          }
+        ]
+      },
+      "results": {
+        "eyebrow": "Why It Matters",
+        "title": "What Bespoke Advisory Delivers",
+        "items": [
+          {
+            "main": "Specialist",
+            "label": "Deep expertise in non-standard asset classes"
+          },
+          {
+            "main": "Integrated",
+            "label": "All assets coordinated within one wealth strategy"
+          },
+          {
+            "main": "Bespoke",
+            "label": "Solutions designed for your situation, not a template"
+          },
+          {
+            "main": "Impact",
+            "label": "Philanthropy and ESG with real measurable outcomes"
+          },
+          {
+            "main": "Network",
+            "label": "Access to curated specialists across asset classes"
+          },
+          {
+            "main": "Discreet",
+            "label": "Sensitive assets managed with absolute confidentiality"
+          }
+        ]
+      },
+      "strategies": [
+        {
+          "name": "Real Estate Advisory",
+          "description": "Strategic advisory on real estate as a wealth asset — acquisition structuring, financing, portfolio management, and disposition — integrated with your broader investment strategy.",
+          "items": [
+            "Acquisition and disposal advisory",
+            "Ownership structure optimization",
+            "Portfolio coordination and reporting"
+          ]
+        },
+        {
+          "name": "Art & Lifestyle Assets",
+          "description": "Comprehensive management of art collections and lifestyle assets — valuation, insurance, storage, financing, and strategic disposition handled by specialists.",
+          "items": [
+            "Collection valuation and documentation",
+            "Insurance and storage coordination",
+            "Art financing and disposition advisory"
+          ]
+        },
+        {
+          "name": "Philanthropy Advisory",
+          "description": "We help families and individuals design and operate philanthropic structures — foundations, donor programs, and impact initiatives — that reflect their values and create lasting change.",
+          "items": [
+            "Philanthropic strategy and structure",
+            "Foundation establishment and governance",
+            "Impact measurement and reporting"
+          ]
+        },
+        {
+          "name": "ESG & Impact Investing",
+          "description": "Portfolios built around your values without sacrificing financial returns. We design ESG frameworks, screen investments rigorously, and measure real-world impact alongside performance.",
+          "items": [
+            "ESG policy and exclusion framework",
+            "Impact investment selection",
+            "ESG reporting and impact measurement"
+          ]
+        }
+      ],
+      "opportunities": [
+        {
+          "name": "Asset Advisory",
+          "items": [
+            {
+              "title": "Real estate portfolio advisory",
+              "description": "acquisition, management, disposal"
+            },
+            {
+              "title": "Art collection management",
+              "description": "valuation, insurance, storage"
+            },
+            {
+              "title": "Art financing",
+              "description": "liquidity against collection assets"
+            },
+            {
+              "title": "Lifestyle asset coordination",
+              "description": "yachts, aircraft, collectibles"
+            },
+            {
+              "title": "Alternative asset reporting",
+              "description": "integrated with financial portfolio"
+            }
+          ]
+        },
+        {
+          "name": "Impact & Legacy",
+          "items": [
+            {
+              "title": "Philanthropic strategy",
+              "description": "values-based giving frameworks"
+            },
+            {
+              "title": "Foundation establishment",
+              "description": "legal structure and governance"
+            },
+            {
+              "title": "Donor-advised programs",
+              "description": "flexible giving vehicles"
+            },
+            {
+              "title": "ESG portfolio construction",
+              "description": "screened and impact-focused"
+            },
+            {
+              "title": "Impact measurement",
+              "description": "real-world outcome tracking"
+            },
+            {
+              "title": "Legacy planning",
+              "description": "charitable and family legacy integration"
+            }
+          ]
+        }
+      ],
+      "portfolio": {
+        "title": "How We Approach Special Solutions",
+        "description": "Every engagement starts with understanding your specific situation — not with a pre-built product.",
+        "steps": [
+          {
+            "title": "Situation Assessment",
+            "timeline": "1–2 weeks",
+            "result": "Clear Problem Definition",
+            "activities": [
+              "Asset review",
+              "Goals alignment",
+              "Specialist assessment",
+              "Scope definition"
+            ]
+          },
+          {
+            "title": "Solution Design",
+            "timeline": "2–4 weeks",
+            "result": "Bespoke Advisory Plan",
+            "activities": [
+              "Framework design",
+              "Specialist coordination",
+              "Legal and tax review",
+              "Approach confirmation"
+            ]
+          },
+          {
+            "title": "Implementation",
+            "timeline": "4–8 weeks",
+            "result": "Solution in Operation",
+            "activities": [
+              "Structure setup",
+              "Specialist engagement",
+              "Asset transfer",
+              "Documentation and reporting"
+            ]
+          },
+          {
+            "title": "Oversight & Reporting",
+            "timeline": "Ongoing",
+            "result": "Fully coordinated special assets",
+            "activities": [
+              "Regular reporting",
+              "Performance review",
+              "Specialist coordination",
+              "Annual strategy review"
+            ]
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Can you manage art collections alongside a financial portfolio?",
+          "answer": "Yes. We treat art and collectibles as a distinct asset class within your overall wealth — with proper valuation, insurance, and reporting — integrated into your consolidated wealth picture."
+        },
+        {
+          "question": "What is the minimum for a philanthropic foundation?",
+          "answer": "This depends on the jurisdiction and structure. Private foundations can be established from relatively modest levels, while more complex structures require larger endowments. We assess the most appropriate vehicle for your goals and budget."
+        },
+        {
+          "question": "Does ESG investing mean lower returns?",
+          "answer": "Not necessarily. The evidence increasingly shows that well-constructed ESG portfolios can match or outperform conventional ones over the long term. We build ESG portfolios with the same financial rigour as any other."
+        },
+        {
+          "question": "Can you help with real estate in multiple countries?",
+          "answer": "Yes. We coordinate real estate advisory across jurisdictions — working with local specialists while providing a single point of coordination and consolidated reporting."
+        }
+      ],
+      "cta": {
+        "title": "Start a Confidential Conversation",
+        "description": "Arrange a private consultation with our team. We will listen to your situation first — and only propose a path forward if we are confident we can add meaningful value."
+      }
     }
   }
 }
