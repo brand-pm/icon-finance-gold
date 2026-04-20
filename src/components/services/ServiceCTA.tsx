@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 
 interface ServiceCTAProps {
@@ -7,6 +8,7 @@ interface ServiceCTAProps {
 }
 
 const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -22,9 +24,8 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
   return (
     <section className="relative marble-texture-strong" style={{ background: "#F5F3F0" }} ref={ref}>
       <div className="container-main grid lg:grid-cols-2 gap-12 lg:gap-16 items-center py-20 lg:py-28">
-        {/* Left — centered horizontally and vertically */}
         <div className="opacity-0 animate-fade-up text-center flex flex-col items-center" style={{ animationDelay: "0.1s" }}>
-          <p className="eyebrow mb-4">Get in Touch</p>
+          <p className="eyebrow mb-4">{t("serviceCTA.eyebrow")}</p>
           <h2 className="text-charcoal font-light mb-6" style={{ fontSize: "clamp(26px,4vw,36px)" }}>
             {title}
           </h2>
@@ -35,12 +36,9 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
             <div className="dot" />
             <div className="line" />
           </div>
-          <p className="text-slate text-sm leading-relaxed max-w-md">
-            {description}
-          </p>
+          <p className="text-slate text-sm leading-relaxed max-w-md">{description}</p>
         </div>
 
-        {/* Right — floating dark card */}
         <div
           data-radius-block
           className="bg-navy opacity-0 animate-fade-up"
@@ -51,28 +49,28 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
           }}
         >
           <h3 className="font-light mb-3" style={{ fontSize: "28px", color: "#E0A776" }}>
-            Send Us a Message
+            {t("serviceCTA.formTitle")}
           </h3>
           <p className="mb-8" style={{ fontSize: "14px", color: "#9CA3AF" }}>
-            Leave an inquiry and our expert will contact you within 24 hours.
+            {t("serviceCTA.formSubtitle")}
           </p>
           <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <label className={labelClass}>First name</label>
+                <label className={labelClass}>{t("serviceCTA.firstName")}</label>
                 <input
                   type="text"
-                  placeholder="Enter your name"
+                  placeholder={t("common.placeholderFirstName")}
                   className={inputClass}
                   value={formData.firstName}
                   onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
                 />
               </div>
               <div>
-                <label className={labelClass}>Last name</label>
+                <label className={labelClass}>{t("serviceCTA.lastName")}</label>
                 <input
                   type="text"
-                  placeholder="Enter your name"
+                  placeholder={t("common.placeholderLastName")}
                   className={inputClass}
                   value={formData.lastName}
                   onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
@@ -81,10 +79,10 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
             </div>
 
             <div>
-              <label className={labelClass}>Work email</label>
+              <label className={labelClass}>{t("serviceCTA.email")}</label>
               <input
                 type="email"
-                placeholder="example@email.com"
+                placeholder={t("common.placeholderEmail")}
                 className={inputClass}
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -92,7 +90,7 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
             </div>
 
             <div>
-              <label className={labelClass}>Subject</label>
+              <label className={labelClass}>{t("serviceCTA.subject")}</label>
               <select
                 className={`${inputClass} appearance-none cursor-pointer`}
                 value={formData.subject}
@@ -105,17 +103,17 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
                   paddingRight: "40px",
                 }}
               >
-                <option value="" className="bg-navy">Select a subject</option>
-                <option value="wealth" className="bg-navy">Wealth Management</option>
-                <option value="family" className="bg-navy">Family Office</option>
-                <option value="structuring" className="bg-navy">Structuring & Tax</option>
-                <option value="ma" className="bg-navy">M&A Consulting</option>
-                <option value="other" className="bg-navy">Other</option>
+                <option value="" className="bg-navy">{t("common.selectSubject")}</option>
+                <option value="wealth" className="bg-navy">{t("contactTeaser.subjects.wealthManagement")}</option>
+                <option value="family" className="bg-navy">{t("contactTeaser.subjects.familyOffice")}</option>
+                <option value="structuring" className="bg-navy">{t("contactTeaser.subjects.structuringTax")}</option>
+                <option value="ma" className="bg-navy">{t("services.maConsulting.title")}</option>
+                <option value="other" className="bg-navy">{t("contactTeaser.subjects.other")}</option>
               </select>
             </div>
 
             <button type="submit" className="btn-gold w-full py-4 text-[12px] mt-2">
-              Send
+              {t("serviceCTA.send")}
             </button>
           </form>
         </div>

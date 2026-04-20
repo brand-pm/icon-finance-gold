@@ -1,4 +1,5 @@
 import { Linkedin } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 
 interface TeamMember {
@@ -15,8 +16,10 @@ interface TeamSectionProps {
   members: TeamMember[];
 }
 
-const TeamSection = ({ eyebrow = "Our Team", title, members }: TeamSectionProps) => {
+const TeamSection = ({ eyebrow, title, members }: TeamSectionProps) => {
+  const { t } = useTranslation();
   const ref = useScrollReveal();
+  const eyebrowText = eyebrow ?? t("about.team.eyebrow");
 
   return (
     <section
@@ -24,16 +27,12 @@ const TeamSection = ({ eyebrow = "Our Team", title, members }: TeamSectionProps)
       style={{ background: "linear-gradient(180deg, #F5F3F0 0%, #EDE9E4 100%)" }}
     >
       <div className="container-main" ref={ref}>
-        {/* Header */}
         <div
           className="text-center mb-16 opacity-0 animate-fade-up flex flex-col items-center"
           style={{ animationDelay: "0.1s" }}
         >
-          <p className="eyebrow mb-4">{eyebrow}</p>
-          <h2
-            className="text-charcoal font-light mb-4"
-            style={{ fontSize: "clamp(26px,4vw,38px)" }}
-          >
+          <p className="eyebrow mb-4">{eyebrowText}</p>
+          <h2 className="text-charcoal font-light mb-4" style={{ fontSize: "clamp(26px,4vw,38px)" }}>
             {title}
           </h2>
           <div className="gold-separator mb-6">
@@ -43,7 +42,6 @@ const TeamSection = ({ eyebrow = "Our Team", title, members }: TeamSectionProps)
           </div>
         </div>
 
-        {/* Cards */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
           {members.map((m, i) => (
             <article
