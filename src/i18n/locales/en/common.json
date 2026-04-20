@@ -35,6 +35,140 @@
     "tagline": "Not sure where to start?",
     "talk": "Let's talk."
   },
+  "hero": {
+    "eyebrow": "Wealth Management",
+    "title": "Preserving & Growing Wealth Across Generations",
+    "subtitle": "Comprehensive wealth management for families and entrepreneurs with international expertise and a tailored approach",
+    "ctaPrimary": "Start a dialogue",
+    "ctaSecondary": "Our expertise",
+    "stats": {
+      "aum": "under management",
+      "clients": "family clients",
+      "experience": "years of experience",
+      "jurisdictions": "jurisdictions"
+    }
+  },
+  "servicesSection": {
+    "eyebrow": "Our Services",
+    "title": "Comprehensive Solutions for Your Capital",
+    "subtitle": "A tailored approach to wealth management that reflects your goals and international opportunities",
+    "learnMore": "Learn more",
+    "tabs": {
+      "wealthManagement": {
+        "name": "Wealth Management",
+        "title": "Holistic solutions for preserving and growing wealth",
+        "desc": "We focus on long-term partnerships and mutual growth, offering tailored financial strategies to meet our clients' changing needs.",
+        "items": ["Portfolio management", "Investment strategies", "Alternative assets"],
+        "alt": "Infinity symbol — wealth preservation across generations"
+      },
+      "familyOffice": {
+        "name": "Family Office",
+        "title": "Complete family office services and governance",
+        "desc": "Comprehensive management of family assets, governance structures, and succession planning across generations.",
+        "items": ["Family governance", "Succession planning", "Philanthropy advisory"],
+        "alt": "Family tree — multi-generational wealth stewardship"
+      },
+      "structuringTax": {
+        "name": "Structuring & Tax",
+        "title": "Efficient wealth structuring and tax optimization",
+        "desc": "International tax planning and legal structuring to protect and optimize your wealth across jurisdictions.",
+        "items": ["Tax optimization", "Legal structuring", "Compliance advisory"],
+        "alt": "Shield with scales — legal protection and balance"
+      },
+      "maConsulting": {
+        "name": "M&A Consulting",
+        "title": "Strategic corporate and M&A advisory",
+        "desc": "Expert guidance on M&A transactions, exit strategies, capital raising, and corporate restructuring.",
+        "items": ["M&A advisory", "Exit strategies", "Capital raising"],
+        "alt": "Classical column — corporate strength and foundation"
+      },
+      "specialSolutions": {
+        "name": "Special Solutions",
+        "title": "Bespoke solutions for unique requirements",
+        "desc": "Custom-crafted solutions for complex situations that require innovative and creative approaches.",
+        "items": ["Art & collectibles", "Real estate advisory", "Lifestyle management"],
+        "alt": "Diamond — bespoke luxury solutions"
+      }
+    }
+  },
+  "homeProcess": {
+    "title": "How We Work\nwith Clients",
+    "description": "Each stage is adapted to your family, assets and jurisdictions",
+    "cta": "Start a dialogue",
+    "steps": {
+      "s1": {
+        "title": "Introduction and\nanalysis",
+        "timeline": "1–2 weeks",
+        "activity": "We study your situation, goals and current asset structure"
+      },
+      "s2": {
+        "title": "Strategy development\nand planning",
+        "timeline": "2–3 weeks",
+        "activity": "We develop a bespoke wealth management strategy"
+      },
+      "s3": {
+        "title": "Implementation\nof solutions",
+        "timeline": "4–8 weeks",
+        "activity": "We implement the agreed strategy and structure the assets"
+      },
+      "s4": {
+        "title": "Management and\ncontrol",
+        "timeline": "Ongoing",
+        "activity": "We provide continuous support and optimization"
+      }
+    }
+  },
+  "whyUs": {
+    "eyebrow": "Why Icon Finance",
+    "title": "Your Trusted Partner in Wealth Management",
+    "subtitle": "We combine international expertise from leading financial institutions with the personalized approach of a family office. Our team provides end-to-end support at all stages of managing your wealth",
+    "cards": {
+      "c1": { "title": "Confidentiality", "desc": "Absolute protection of client information and assets" },
+      "c2": { "title": "Global Expertise", "desc": "Operating in 5+ jurisdictions with international partners" },
+      "c3": { "title": "Personal Approach", "desc": "Custom solutions for families involve tailoring approaches" },
+      "c4": { "title": "Transparency", "desc": "Detailed reporting and monitoring of all assets" }
+    }
+  },
+  "insightsTeaser": {
+    "eyebrow": "Trending Topics",
+    "title": "Insights & News",
+    "showMore": "Show more",
+    "minRead": "min read",
+    "articles": {
+      "a1": {
+        "category": "Family Office Perspective",
+        "title": "Goldman Sachs Family Office Investment Insights report, Adapting to the Terrain"
+      },
+      "a2": {
+        "category": "Private Briefings",
+        "title": "The One Big Beautiful Bill Act has been enacted..."
+      },
+      "a3": {
+        "category": "Strategic Insights",
+        "title": "Quarterly Insights"
+      }
+    }
+  },
+  "contactTeaser": {
+    "eyebrow": "Contact Form",
+    "title": "Start Managing Your Wealth Today",
+    "subtitle": "We respond personally within 24 hours. No call centers, no intermediaries.",
+    "formTitle": "Send Us a Message",
+    "formSubtitle": "Leave an inquiry and our expert will contact you within 24 hours.",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Work email",
+    "subject": "Subject",
+    "send": "Send",
+    "subjects": {
+      "wealthManagement": "Wealth Management",
+      "familyOffice": "Family Office",
+      "structuringTax": "Structuring & Tax",
+      "corporateServices": "Corporate Services",
+      "specialSolutions": "Special Solutions",
+      "other": "Other"
+    }
+  },
   "footer": {
     "tagline": "Independent wealth management and family office services for entrepreneurs and families with international wealth.",
     "navigate": "Navigate",

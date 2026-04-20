@@ -35,6 +35,140 @@
     "tagline": "Nie wiesz, od czego zacząć?",
     "talk": "Porozmawiajmy."
   },
+  "hero": {
+    "eyebrow": "Zarządzanie majątkiem",
+    "title": "Ochrona i pomnażanie majątku przez pokolenia",
+    "subtitle": "Kompleksowe zarządzanie majątkiem dla rodzin i przedsiębiorców z międzynarodowym doświadczeniem i indywidualnym podejściem",
+    "ctaPrimary": "Rozpocznij rozmowę",
+    "ctaSecondary": "Nasza ekspertyza",
+    "stats": {
+      "aum": "w zarządzaniu",
+      "clients": "klientów rodzinnych",
+      "experience": "lat doświadczenia",
+      "jurisdictions": "jurysdykcji"
+    }
+  },
+  "servicesSection": {
+    "eyebrow": "Nasze usługi",
+    "title": "Kompleksowe rozwiązania dla Twojego kapitału",
+    "subtitle": "Indywidualne podejście do zarządzania majątkiem, dopasowane do Twoich celów i międzynarodowych możliwości",
+    "learnMore": "Dowiedz się więcej",
+    "tabs": {
+      "wealthManagement": {
+        "name": "Zarządzanie majątkiem",
+        "title": "Holistyczne rozwiązania ochrony i wzrostu majątku",
+        "desc": "Stawiamy na długoterminowe partnerstwo i wspólny rozwój, oferując dopasowane strategie finansowe odpowiadające zmieniającym się potrzebom klientów.",
+        "items": ["Zarządzanie portfelem", "Strategie inwestycyjne", "Aktywa alternatywne"],
+        "alt": "Symbol nieskończoności — ochrona majątku przez pokolenia"
+      },
+      "familyOffice": {
+        "name": "Family Office",
+        "title": "Pełna obsługa family office i ład rodzinny",
+        "desc": "Kompleksowe zarządzanie majątkiem rodzinnym, struktury ładu i planowanie sukcesji przez pokolenia.",
+        "items": ["Ład rodzinny", "Planowanie sukcesji", "Doradztwo filantropijne"],
+        "alt": "Drzewo rodzinne — wielopokoleniowa opieka nad majątkiem"
+      },
+      "structuringTax": {
+        "name": "Strukturyzacja i podatki",
+        "title": "Efektywna strukturyzacja majątku i optymalizacja podatkowa",
+        "desc": "Międzynarodowe planowanie podatkowe i strukturyzacja prawna w celu ochrony i optymalizacji majątku w wielu jurysdykcjach.",
+        "items": ["Optymalizacja podatkowa", "Strukturyzacja prawna", "Doradztwo compliance"],
+        "alt": "Tarcza z wagą — ochrona prawna i równowaga"
+      },
+      "maConsulting": {
+        "name": "Doradztwo M&A",
+        "title": "Strategiczne doradztwo korporacyjne i M&A",
+        "desc": "Eksperckie wsparcie w transakcjach M&A, strategiach wyjścia, pozyskiwaniu kapitału i restrukturyzacji.",
+        "items": ["Doradztwo M&A", "Strategie wyjścia", "Pozyskiwanie kapitału"],
+        "alt": "Klasyczna kolumna — siła i fundament korporacji"
+      },
+      "specialSolutions": {
+        "name": "Rozwiązania specjalne",
+        "title": "Indywidualne rozwiązania dla wyjątkowych potrzeb",
+        "desc": "Rozwiązania szyte na miarę dla złożonych sytuacji, wymagających kreatywnego podejścia.",
+        "items": ["Sztuka i kolekcje", "Doradztwo nieruchomości", "Zarządzanie stylem życia"],
+        "alt": "Diament — luksusowe rozwiązania na miarę"
+      }
+    }
+  },
+  "homeProcess": {
+    "title": "Jak pracujemy\nz klientami",
+    "description": "Każdy etap dopasowujemy do Twojej rodziny, aktywów i jurysdykcji",
+    "cta": "Rozpocznij rozmowę",
+    "steps": {
+      "s1": {
+        "title": "Wprowadzenie\ni analiza",
+        "timeline": "1–2 tygodnie",
+        "activity": "Analizujemy Twoją sytuację, cele i aktualną strukturę aktywów"
+      },
+      "s2": {
+        "title": "Opracowanie strategii\ni planowanie",
+        "timeline": "2–3 tygodnie",
+        "activity": "Tworzymy indywidualną strategię zarządzania majątkiem"
+      },
+      "s3": {
+        "title": "Wdrożenie\nrozwiązań",
+        "timeline": "4–8 tygodni",
+        "activity": "Realizujemy uzgodnioną strategię i strukturyzujemy aktywa"
+      },
+      "s4": {
+        "title": "Zarządzanie\ni kontrola",
+        "timeline": "Stale",
+        "activity": "Zapewniamy ciągłe wsparcie i optymalizację"
+      }
+    }
+  },
+  "whyUs": {
+    "eyebrow": "Dlaczego Icon Finance",
+    "title": "Twój zaufany partner w zarządzaniu majątkiem",
+    "subtitle": "Łączymy międzynarodową ekspertyzę wiodących instytucji finansowych z indywidualnym podejściem family office. Nasz zespół zapewnia pełne wsparcie na wszystkich etapach zarządzania Twoim majątkiem",
+    "cards": {
+      "c1": { "title": "Poufność", "desc": "Pełna ochrona informacji i aktywów klientów" },
+      "c2": { "title": "Globalna ekspertyza", "desc": "Działamy w ponad 5 jurysdykcjach z międzynarodowymi partnerami" },
+      "c3": { "title": "Indywidualne podejście", "desc": "Rozwiązania szyte na miarę potrzeb rodziny" },
+      "c4": { "title": "Transparentność", "desc": "Szczegółowe raportowanie i monitoring wszystkich aktywów" }
+    }
+  },
+  "insightsTeaser": {
+    "eyebrow": "Aktualne tematy",
+    "title": "Analizy i aktualności",
+    "showMore": "Pokaż więcej",
+    "minRead": "min czytania",
+    "articles": {
+      "a1": {
+        "category": "Perspektywa Family Office",
+        "title": "Raport Goldman Sachs Family Office Investment Insights — adaptacja do warunków rynkowych"
+      },
+      "a2": {
+        "category": "Briefingi prywatne",
+        "title": "Wszedł w życie One Big Beautiful Bill Act..."
+      },
+      "a3": {
+        "category": "Analizy strategiczne",
+        "title": "Analizy kwartalne"
+      }
+    }
+  },
+  "contactTeaser": {
+    "eyebrow": "Formularz kontaktowy",
+    "title": "Zacznij zarządzać swoim majątkiem już dziś",
+    "subtitle": "Odpowiadamy osobiście w ciągu 24 godzin. Bez call center, bez pośredników.",
+    "formTitle": "Wyślij wiadomość",
+    "formSubtitle": "Zostaw zapytanie, a nasz ekspert skontaktuje się w ciągu 24 godzin.",
+    "firstName": "Imię",
+    "lastName": "Nazwisko",
+    "email": "E-mail służbowy",
+    "subject": "Temat",
+    "send": "Wyślij",
+    "subjects": {
+      "wealthManagement": "Zarządzanie majątkiem",
+      "familyOffice": "Family Office",
+      "structuringTax": "Strukturyzacja i podatki",
+      "corporateServices": "Usługi korporacyjne",
+      "specialSolutions": "Rozwiązania specjalne",
+      "other": "Inne"
+    }
+  },
   "footer": {
     "tagline": "Niezależne zarządzanie majątkiem i usługi family office dla przedsiębiorców i rodzin z międzynarodowym majątkiem.",
     "navigate": "Nawigacja",
