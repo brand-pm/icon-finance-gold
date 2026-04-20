@@ -252,7 +252,7 @@ const Header = () => {
               <Link
                 to={localize("/contact")}
                 onClick={() => setMegaOpen(false)}
-                className="inline-flex items-center gap-2 px-7 py-3 rounded-md bg-gold text-navy text-[11px] uppercase tracking-[0.18em] font-semibold hover:bg-gold/90 transition-colors duration-300"
+                className="inline-flex items-center gap-2 px-7 py-3 rounded-md bg-gold text-[11px] uppercase tracking-[0.18em] font-semibold hover:bg-gold/90 transition-colors duration-300 text-destructive-foreground"
               >
                 {t("nav.startDialogue")}
                 <ArrowRight size={14} />
