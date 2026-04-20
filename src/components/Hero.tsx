@@ -107,8 +107,8 @@ const Hero = () => {
             {t("hero.subtitle")}
           </p>
           <div className="flex flex-wrap gap-3 md:gap-4">
-            <Link to={localize("/contact")} className="btn-gold px-6 md:px-8 py-3.5 md:py-4">{t("hero.ctaPrimary")}</Link>
-            <Link to={localize("/expertise")} className="btn-outline-gold px-6 md:px-8 py-3.5 md:py-4">{t("hero.ctaSecondary")}</Link>
+            <Link to={localize("/contact")} className="btn-gold px-6 md:px-8 py-2.5 md:py-3">{t("hero.ctaPrimary")}</Link>
+            <Link to={localize("/expertise")} className="btn-outline-gold px-6 md:px-8 py-2.5 md:py-3">{t("hero.ctaSecondary")}</Link>
           </div>
         </div>
 
