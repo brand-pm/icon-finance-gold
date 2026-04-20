@@ -4,10 +4,13 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ServiceCTA from "../components/services/ServiceCTA";
 import { useScrollReveal } from "../hooks/useScrollReveal";
+import { useLocalizedPath } from "@/i18n/useLocalizedPath";
 import marbleHero from "../assets/expertise-hero-bg.jpg";
 
 /* ---------- HERO ---------- */
-const Hero = () => (
+const Hero = () => {
+  const localize = useLocalizedPath();
+  return (
   <section className="relative bg-navy overflow-hidden pt-24 pb-12" style={{ minHeight: "35vh" }}>
     <div className="absolute inset-0">
       <img
