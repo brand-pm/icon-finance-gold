@@ -34,8 +34,8 @@ const Insights = () => {
             return (
               <div
                 key={a.key}
-                className="bg-white opacity-0 animate-fade-up cursor-pointer group"
-                style={{ border: "1px solid rgba(0,0,0,0.06)", animationDelay: `${i * 0.1}s` }}
+                className="bg-white opacity-0 animate-fade-up cursor-pointer group transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_24px_48px_-24px_hsl(var(--charcoal)/0.18),0_0_0_1px_hsl(var(--gold)/0.18)]"
+                style={{ border: "1px solid hsl(var(--charcoal) / 0.06)", animationDelay: `${i * 0.1}s` }}
               >
                 <div className="aspect-video overflow-hidden relative">
                   <div
