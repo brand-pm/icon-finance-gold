@@ -5,10 +5,10 @@ import { useLocalizedPath } from "@/i18n/useLocalizedPath";
 import heroBg from "../assets/hero-cubes.webp";
 
 const statsConfig = [
-  { value: 0, prefix: "", suffix: "", labelKey: "aum", isText: true },
-  { value: 100, prefix: "", suffix: "+", labelKey: "clients" },
-  { value: 15, prefix: "", suffix: "+", labelKey: "experience" },
-  { value: 5, prefix: "", suffix: "", labelKey: "jurisdictions" },
+  { value: 0, prefix: "", suffix: "", labelKey: "aum", isText: true as const },
+  { value: 100, prefix: "", suffix: "+", labelKey: "clients", isText: false as const },
+  { value: 15, prefix: "", suffix: "+", labelKey: "experience", isText: false as const },
+  { value: 5, prefix: "", suffix: "", labelKey: "jurisdictions", isText: false as const },
 ] as const;
 
 function useCounter(target: number, duration = 2000) {
