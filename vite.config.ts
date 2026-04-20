@@ -16,6 +16,7 @@ export default defineConfig(({ mode }) => ({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+      "react/compiler-runtime": path.resolve(__dirname, "./src/shims/react-compiler-runtime.js"),
     },
     dedupe: ["react", "react-dom", "react/jsx-runtime", "react/jsx-dev-runtime"],
   },
