@@ -1,42 +1,40 @@
 import { useScrollReveal } from "../hooks/useScrollReveal";
+import { useTranslation } from "react-i18next";
 
-const cards = [
-  { num: "01", title: "Confidentiality", desc: "Absolute protection of client information and assets", icon: "∞" },
-  { num: "02", title: "Global Expertise", desc: "Operating in 5+ jurisdictions with international partners", icon: "◈" },
-  { num: "03", title: "Personal Approach", desc: "Custom solutions for families involve tailoring approaches", icon: "◉" },
-  { num: "04", title: "Transparency", desc: "Detailed reporting and monitoring of all assets", icon: "◎" },
-];
+const cardKeys = ["c1", "c2", "c3", "c4"] as const;
+const icons = ["∞", "◈", "◉", "◎"];
 
 const WhyUs = () => {
   const ref = useScrollReveal();
+  const { t } = useTranslation();
 
   return (
     <section className="section-padding bg-offwhite marble-texture" ref={ref}>
       <div className="container-main">
         <div className="text-center mb-16 opacity-0 animate-fade-up">
-          <p className="eyebrow mb-4">Why Icon Finance</p>
+          <p className="eyebrow mb-4">{t("whyUs.eyebrow")}</p>
           <h2 className="text-charcoal font-light mb-4" style={{ fontSize: "clamp(28px,5vw,42px)" }}>
-            Your Trusted Partner in Wealth Management
+            {t("whyUs.title")}
           </h2>
           <p className="text-slate text-base max-w-[560px] mx-auto">
-            We combine international expertise from leading financial institutions with the personalized approach of a family office. Our team provides end-to-end support at all stages of managing your wealth
+            {t("whyUs.subtitle")}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-          {cards.map((card, i) => (
+          {cardKeys.map((key, i) => (
             <div
-              key={i}
+              key={key}
               className="bg-white p-8 opacity-0 animate-fade-up"
               style={{
                 border: "1px solid rgba(224,167,118,0.15)",
                 animationDelay: `${i * 0.1}s`,
               }}
             >
-              <div className="text-gold font-light text-5xl opacity-90 mb-4">{card.num}</div>
-              <h3 className="text-charcoal text-lg font-medium mb-3">{card.title}</h3>
-              <p className="text-slate text-sm leading-relaxed mb-6">{card.desc}</p>
-              <div className="text-gold text-2xl">{card.icon}</div>
+              <div className="text-gold font-light text-5xl opacity-90 mb-4">{`0${i + 1}`}</div>
+              <h3 className="text-charcoal text-lg font-medium mb-3">{t(`whyUs.cards.${key}.title`)}</h3>
+              <p className="text-slate text-sm leading-relaxed mb-6">{t(`whyUs.cards.${key}.desc`)}</p>
+              <div className="text-gold text-2xl">{icons[i]}</div>
             </div>
           ))}
         </div>
