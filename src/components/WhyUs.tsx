@@ -25,7 +25,7 @@ const WhyUs = () => {
           {cardKeys.map((key, i) => (
             <div
               key={key}
-              className="bg-white p-8 opacity-0 animate-fade-up"
+              className="bg-white p-8 flex flex-col items-center text-center opacity-0 animate-fade-up"
               style={{
                 border: "1px solid rgba(224,167,118,0.15)",
                 animationDelay: `${i * 0.1}s`,
@@ -34,7 +34,8 @@ const WhyUs = () => {
               <div className="text-gold font-light text-5xl opacity-90 mb-4">{`0${i + 1}`}</div>
               <h3 className="text-charcoal text-lg font-medium mb-3">{t(`whyUs.cards.${key}.title`)}</h3>
               <p className="text-slate text-sm leading-relaxed mb-6">{t(`whyUs.cards.${key}.desc`)}</p>
-              <img src={whyUsIcon} alt="" aria-hidden="true" width={32} height={16} className="block" />
+              <img src={whyUsIcon} alt="" aria-hidden="true" width={32} height={16} className="block mt-auto" />
+            </div>
             </div>
           ))}
         </div>
