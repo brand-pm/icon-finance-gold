@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { useLocalizedPath } from "@/i18n/useLocalizedPath";
 import heroBg from "../assets/hero-cubes.webp";
 
 const stats = [
