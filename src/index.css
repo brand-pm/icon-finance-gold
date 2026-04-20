@@ -246,18 +246,49 @@
     transition: transform 200ms ease, background-color 200ms ease, box-shadow 200ms ease, color 200ms ease, border-color 200ms ease;
   }
 
+  .services-tab-button {
+    position: relative;
+  }
+
+  .services-tab-button::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 2px;
+    height: 0;
+    background: hsl(var(--gold));
+    transform: translateY(-50%);
+    transition: height 350ms ease, opacity 350ms ease;
+    opacity: 0;
+    border-radius: 2px;
+  }
+
   .services-tab-button:hover {
     transform: translateX(2px);
     color: hsl(var(--foreground));
     background: hsl(var(--card) / 0.72);
   }
 
+  .services-tab-button:hover::before {
+    height: 40%;
+    opacity: 0.6;
+  }
+
   .services-tab-button--active {
     color: hsl(var(--foreground));
     font-weight: 600;
     background: hsl(var(--card));
-    border-color: hsl(var(--gold) / 0.35);
-    box-shadow: 0 16px 34px -22px hsl(var(--foreground) / 0.22);
+    border-color: hsl(var(--gold) / 0.45);
+    box-shadow:
+      0 16px 34px -22px hsl(var(--foreground) / 0.22),
+      0 0 0 1px hsl(var(--gold) / 0.12),
+      inset 0 0 24px -12px hsl(var(--gold) / 0.18);
+  }
+
+  .services-tab-button--active::before {
+    height: 65%;
+    opacity: 1;
   }
 
   .services-tab-button--inactive {
