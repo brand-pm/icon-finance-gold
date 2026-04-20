@@ -80,9 +80,13 @@ const Footer = () => {
             <Link to={localize("/privacy-policy")} className="text-slate text-xs md:text-sm hover:text-white transition-colors whitespace-nowrap">
               {t("footer.privacy")}
             </Link>
-            <Link to={localize("/cookie-policy")} className="text-slate text-xs md:text-sm hover:text-white transition-colors whitespace-nowrap">
+            <button
+              type="button"
+              onClick={() => window.dispatchEvent(new CustomEvent("cookieconsent:open"))}
+              className="text-slate text-xs md:text-sm hover:text-white transition-colors whitespace-nowrap"
+            >
               {t("footer.cookies")}
-            </Link>
+            </button>
             <Link to={localize("/terms")} className="text-slate text-xs md:text-sm hover:text-white transition-colors whitespace-nowrap">
               {t("footer.terms")}
             </Link>
