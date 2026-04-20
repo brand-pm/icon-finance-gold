@@ -5,10 +5,10 @@ import { useLocalizedPath } from "@/i18n/useLocalizedPath";
 import heroBg from "../assets/hero-cubes.webp";
 
 const statsConfig = [
-  { value: 10, prefix: "$", suffix: "M", labelKey: "aum" },
-  { value: 100, prefix: "", suffix: "+", labelKey: "clients" },
-  { value: 15, prefix: "", suffix: "+", labelKey: "experience" },
-  { value: 5, prefix: "", suffix: "", labelKey: "jurisdictions" },
+  { value: 0, prefix: "", suffix: "", labelKey: "aum", isText: true as const },
+  { value: 100, prefix: "", suffix: "+", labelKey: "clients", isText: false as const },
+  { value: 15, prefix: "", suffix: "+", labelKey: "experience", isText: false as const },
+  { value: 5, prefix: "", suffix: "", labelKey: "jurisdictions", isText: false as const },
 ] as const;
 
 function useCounter(target: number, duration = 2000) {
@@ -48,17 +48,28 @@ const StatCard = ({ stat, label }: { stat: (typeof statsConfig)[number]; label: 
       ref={ref}
       className="flex flex-col items-center justify-center text-center px-4 py-10 md:py-12 min-h-[160px] md:min-h-[200px]"
     >
-      <div
-        className="text-gold font-light leading-none tabular-nums whitespace-nowrap"
-        style={{ fontSize: "clamp(38px, 5vw, 56px)", fontVariantNumeric: "tabular-nums" }}
-      >
-        {stat.prefix}
-        {count}
-        {stat.suffix}
-      </div>
-      <div className="text-[12px] md:text-[13px] text-white/55 mt-3 tracking-wide">
-        {label}
-      </div>
+      {stat.isText ? (
+        <div
+          className="text-gold font-light leading-tight text-center px-2"
+          style={{ fontSize: "clamp(14px, 2vw, 18px)", lineHeight: 1.3 }}
+        >
+          {label}
+        </div>
+      ) : (
+        <>
+          <div
+            className="text-gold font-light leading-none tabular-nums whitespace-nowrap"
+            style={{ fontSize: "clamp(38px, 5vw, 56px)", fontVariantNumeric: "tabular-nums" }}
+          >
+            {stat.prefix}
+            {count}
+            {stat.suffix}
+          </div>
+          <div className="text-[12px] md:text-[13px] text-white/55 mt-3 tracking-wide">
+            {label}
+          </div>
+        </>
+      )}
     </div>
   );
 };
