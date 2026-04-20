@@ -1807,44 +1807,56 @@
         "description": "Independent wealth management, family office, structuring & tax, M&A and special solutions for entrepreneurs and multi-generational families."
       },
       "about": {
-        "title": "About Icon Finance — Our Philosophy & Team",
+        "title": "About | Icon Finance",
         "description": "Meet the Icon Finance team. Independent advice, integrated approach, and a long-term view across generations and jurisdictions."
       },
       "expertise": {
-        "title": "Expertise — Industries, Jurisdictions & Competencies",
+        "title": "Our Expertise | Icon Finance",
         "description": "Cross-border expertise across industries and jurisdictions. Discover Icon Finance competencies in wealth, family office, tax and M&A."
       },
       "contact": {
-        "title": "Contact Icon Finance — Confidential Consultation",
+        "title": "Contact | Icon Finance",
         "description": "Arrange a private, confidential consultation with our team. We listen first and only propose a path forward when we can add value."
       },
       "insights": {
-        "title": "Insights — Wealth Management Articles & Analysis",
+        "title": "Insights | Icon Finance",
         "description": "Articles, analysis and perspectives on wealth management, structuring, family office and capital markets from Icon Finance."
       },
       "wealthManagement": {
-        "title": "Wealth Management — Icon Finance",
+        "title": "Wealth Management | Icon Finance",
         "description": "Independent wealth management for entrepreneurs and families. Preserving and growing capital across generations."
       },
       "familyOffice": {
-        "title": "Family Office — Icon Finance",
+        "title": "Family Office | Icon Finance",
         "description": "Single, shared, advisory and virtual family office solutions for multi-generational wealth coordination."
       },
       "structuringTax": {
-        "title": "Structuring & Tax — Icon Finance",
+        "title": "Structuring & Tax | Icon Finance",
         "description": "International wealth structuring and tax planning across multiple jurisdictions. Compliant, efficient, succession-ready."
       },
       "maConsulting": {
-        "title": "M&A Consulting — Icon Finance",
+        "title": "M&A Consulting | Icon Finance",
         "description": "Independent M&A advisory for owners and entrepreneurs — exits, acquisitions, capital raising and due diligence."
       },
       "specialSolutions": {
-        "title": "Special Solutions — Icon Finance",
+        "title": "Special Solutions | Icon Finance",
         "description": "Bespoke advisory for art, real estate, philanthropy and ESG — when conventional wealth management is not enough."
       },
       "notFound": {
         "title": "Page Not Found — Icon Finance",
         "description": "The page you are looking for does not exist."
+      },
+      "privacyPolicy": {
+        "description": "",
+        "title": "Privacy Policy | Icon Finance"
+      },
+      "cookiePolicy": {
+        "description": "",
+        "title": "Cookie Policy | Icon Finance"
+      },
+      "terms": {
+        "description": "",
+        "title": "Terms & Conditions | Icon Finance"
       }
     }
   },
