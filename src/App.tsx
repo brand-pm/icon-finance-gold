@@ -23,6 +23,7 @@ const PrivacyPolicy = lazy(() => import("./pages/legal/PrivacyPolicy.tsx"));
 const CookiePolicy = lazy(() => import("./pages/legal/CookiePolicy.tsx"));
 const Terms = lazy(() => import("./pages/legal/Terms.tsx"));
 const NotFound = lazy(() => import("./pages/NotFound.tsx"));
+const StudioPage = lazy(() => import("./pages/Studio.tsx"));
 
 const queryClient = new QueryClient();
 
@@ -114,6 +115,14 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<RootRedirect />} />
+          <Route
+            path="/studio/*"
+            element={
+              <Suspense fallback={<RouteFallback />}>
+                <StudioPage />
+              </Suspense>
+            }
+          />
           <Route path=":lang/*" element={<LocalizedRoutes />} />
         </Routes>
         <CookieConsent />
