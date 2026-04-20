@@ -44,11 +44,21 @@ function useCounter(target: number, duration = 2000) {
 const StatCard = ({ stat, label }: { stat: (typeof statsConfig)[number]; label: string }) => {
   const { count, ref } = useCounter(stat.value);
   return (
-    <div ref={ref} className="text-center p-6">
-      <div className="text-gold font-light" style={{ fontSize: "clamp(36px,6vw,52px)" }}>
-        {stat.prefix}{count}{stat.suffix}
+    <div
+      ref={ref}
+      className="flex flex-col items-center justify-center text-center px-4 py-10 md:py-12 min-h-[160px] md:min-h-[200px]"
+    >
+      <div
+        className="text-gold font-light leading-none tabular-nums whitespace-nowrap"
+        style={{ fontSize: "clamp(38px, 5vw, 56px)", fontVariantNumeric: "tabular-nums" }}
+      >
+        {stat.prefix}
+        {count}
+        {stat.suffix}
       </div>
-      <div className="text-[13px] text-white/60 mt-2">{label}</div>
+      <div className="text-[12px] md:text-[13px] text-white/55 mt-3 tracking-wide">
+        {label}
+      </div>
     </div>
   );
 };
@@ -92,18 +102,26 @@ const Hero = () => {
         </div>
 
         <div
-          className="grid grid-cols-2 opacity-0 animate-fade-up"
+          className="relative grid grid-cols-2 opacity-0 animate-fade-up"
           style={{ animationDelay: "0.4s" }}
         >
           {statsConfig.map((stat, i) => (
-            <div
-              key={i}
-              className={`${i % 2 === 0 ? "border-r" : ""} ${i < 2 ? "border-b" : ""}`}
-              style={{ borderColor: "rgba(224,167,118,0.3)" }}
-            >
+            <div key={i} className="relative">
               <StatCard stat={stat} label={t(`hero.stats.${stat.labelKey}`)} />
             </div>
           ))}
+          {/* Vertical divider */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute top-[10%] bottom-[10%] left-1/2 w-px -translate-x-1/2"
+            style={{ background: "linear-gradient(180deg, transparent 0%, rgba(224,167,118,0.35) 50%, transparent 100%)" }}
+          />
+          {/* Horizontal divider */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute left-[6%] right-[6%] top-1/2 h-px -translate-y-1/2"
+            style={{ background: "linear-gradient(90deg, transparent 0%, rgba(224,167,118,0.35) 50%, transparent 100%)" }}
+          />
         </div>
       </div>
     </div>
