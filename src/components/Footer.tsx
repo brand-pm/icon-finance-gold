@@ -77,15 +77,15 @@ const Footer = () => {
             © 2025 Icon Finance. {t("footer.rights")}
           </p>
           <div className="flex flex-wrap justify-center md:justify-end gap-x-5 gap-y-2">
-            <a href="#" className="text-slate text-xs md:text-sm hover:text-white transition-colors whitespace-nowrap">
+            <Link to={localize("/privacy-policy")} className="text-slate text-xs md:text-sm hover:text-white transition-colors whitespace-nowrap">
               {t("footer.privacy")}
-            </a>
-            <a href="#" className="text-slate text-xs md:text-sm hover:text-white transition-colors whitespace-nowrap">
+            </Link>
+            <Link to={localize("/cookie-policy")} className="text-slate text-xs md:text-sm hover:text-white transition-colors whitespace-nowrap">
               {t("footer.cookies")}
-            </a>
-            <a href="#" className="text-slate text-xs md:text-sm hover:text-white transition-colors whitespace-nowrap">
+            </Link>
+            <Link to={localize("/terms")} className="text-slate text-xs md:text-sm hover:text-white transition-colors whitespace-nowrap">
               {t("footer.terms")}
-            </a>
+            </Link>
           </div>
         </div>
       </div>
