@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Linkedin, ArrowRight } from "lucide-react";
+import Seo from "../components/Seo";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
@@ -69,6 +70,7 @@ const InsightArticle = () => {
 
   return (
     <div className="min-h-screen bg-offwhite">
+      <Seo pageKey="insights" />
       <Header />
 
       {/* HERO */}

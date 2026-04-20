@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Briefcase, Users, Globe, Building2, Heart, Shield } from "lucide-react";
+import Seo from "../components/Seo";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ServiceCTA from "../components/services/ServiceCTA";
@@ -146,6 +147,7 @@ const Expertise = () => {
   const { t } = useTranslation();
   return (
     <div className="min-h-screen">
+      <Seo pageKey="expertise" />
       <Header />
       <Hero />
       <Competencies />

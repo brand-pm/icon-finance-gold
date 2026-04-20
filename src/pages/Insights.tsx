@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import Seo from "../components/Seo";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
@@ -32,6 +33,7 @@ const Insights = () => {
 
   return (
     <div className="min-h-screen bg-offwhite">
+      <Seo pageKey="insights" />
       <Header />
 
       <section className="relative w-full flex items-center" style={{ minHeight: "35vh", backgroundImage: `url(${marbleHero})`, backgroundSize: "cover", backgroundPosition: "center" }}>

@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import Seo from "../components/Seo";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ServiceHero from "../components/services/ServiceHero";
@@ -17,6 +18,7 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
+      <Seo pageKey="about" />
       <Header />
 
       <ServiceHero
