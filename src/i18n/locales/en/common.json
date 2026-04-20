@@ -1843,5 +1843,13 @@
         "description": "The page you are looking for does not exist."
       }
     }
+  },
+  "notFound": {
+    "eyebrow": "Error 404",
+    "title": "This page does not exist",
+    "description": "The page you are looking for has been moved, removed, or never existed. Let us help you find your way back.",
+    "primaryCta": "Return Home",
+    "secondaryCta": "Contact Us",
+    "pathLabel": "Requested path"
   }
 }

@@ -1843,5 +1843,13 @@
         "description": "Strona, której szukasz, nie istnieje."
       }
     }
+  },
+  "notFound": {
+    "eyebrow": "Błąd 404",
+    "title": "Ta strona nie istnieje",
+    "description": "Strona, której szukasz, została przeniesiona, usunięta lub nigdy nie istniała. Pozwól, że pomożemy Ci wrócić.",
+    "primaryCta": "Powrót na stronę główną",
+    "secondaryCta": "Skontaktuj się z nami",
+    "pathLabel": "Żądana ścieżka"
   }
 }
