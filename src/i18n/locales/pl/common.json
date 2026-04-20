@@ -58,35 +58,55 @@
         "name": "Zarządzanie majątkiem",
         "title": "Holistyczne rozwiązania ochrony i pomnażania majątku",
         "desc": "Koncentrujemy się na długoterminowych partnerstwach i wspólnym rozwoju, oferując dostosowane strategie finansowe odpowiadające zmieniającym się potrzebom klientów.",
-        "items": ["Zarządzanie portfelem", "Strategie inwestycyjne", "Aktywa alternatywne"],
+        "items": [
+          "Zarządzanie portfelem",
+          "Strategie inwestycyjne",
+          "Aktywa alternatywne"
+        ],
         "alt": "Symbol nieskończoności — ochrona majątku przez pokolenia"
       },
       "familyOffice": {
         "name": "Family Office",
         "title": "Kompleksowe usługi family office i ład rodzinny",
         "desc": "Pełne zarządzanie aktywami rodzinnymi, strukturami zarządzania i planowaniem sukcesji przez pokolenia.",
-        "items": ["Ład rodzinny", "Planowanie sukcesji", "Doradztwo filantropijne"],
+        "items": [
+          "Ład rodzinny",
+          "Planowanie sukcesji",
+          "Doradztwo filantropijne"
+        ],
         "alt": "Drzewo genealogiczne — wielopokoleniowe zarządzanie majątkiem"
       },
       "structuringTax": {
         "name": "Strukturyzacja i podatki",
         "title": "Efektywna strukturyzacja majątku i optymalizacja podatkowa",
         "desc": "Międzynarodowe planowanie podatkowe i strukturyzacja prawna chroniąca i optymalizująca majątek w wielu jurysdykcjach.",
-        "items": ["Optymalizacja podatkowa", "Strukturyzacja prawna", "Doradztwo compliance"],
+        "items": [
+          "Optymalizacja podatkowa",
+          "Strukturyzacja prawna",
+          "Doradztwo compliance"
+        ],
         "alt": "Tarcza z wagami — ochrona prawna i równowaga"
       },
       "maConsulting": {
         "name": "Doradztwo M&A",
         "title": "Strategiczne doradztwo korporacyjne i M&A",
         "desc": "Profesjonalne wsparcie w transakcjach M&A, strategiach exit, pozyskiwaniu kapitału i restrukturyzacji korporacyjnej.",
-        "items": ["Doradztwo M&A", "Strategie exit", "Pozyskiwanie kapitału"],
+        "items": [
+          "Doradztwo M&A",
+          "Strategie exit",
+          "Pozyskiwanie kapitału"
+        ],
         "alt": "Klasyczna kolumna — siła i fundament korporacyjny"
       },
       "specialSolutions": {
         "name": "Rozwiązania specjalne",
         "title": "Indywidualne rozwiązania dla unikalnych potrzeb",
         "desc": "Dedykowane rozwiązania dla złożonych sytuacji wymagających innowacyjnego i kreatywnego podejścia.",
-        "items": ["Sztuka i kolekcje", "Doradztwo nieruchomości", "Lifestyle management"],
+        "items": [
+          "Sztuka i kolekcje",
+          "Doradztwo nieruchomości",
+          "Lifestyle management"
+        ],
         "alt": "Diament — luksusowe rozwiązania szyte na miarę"
       }
     }
@@ -123,10 +143,22 @@
     "title": "Zaufany partner w zarządzaniu majątkiem",
     "subtitle": "Łączymy międzynarodową ekspertyzę wiodących instytucji finansowych z indywidualnym podejściem family office. Nasz zespół zapewnia kompleksowe wsparcie na każdym etapie zarządzania majątkiem",
     "cards": {
-      "c1": { "title": "Poufność", "desc": "Absolutna ochrona informacji i aktywów klienta" },
-      "c2": { "title": "Globalna ekspertyza", "desc": "Działalność w 5+ jurysdykcjach z międzynarodowymi partnerami" },
-      "c3": { "title": "Indywidualne podejście", "desc": "Rozwiązania dostosowane do potrzeb każdej rodziny" },
-      "c4": { "title": "Transparentność", "desc": "Szczegółowa sprawozdawczość i monitoring wszystkich aktywów" }
+      "c1": {
+        "title": "Poufność",
+        "desc": "Absolutna ochrona informacji i aktywów klienta"
+      },
+      "c2": {
+        "title": "Globalna ekspertyza",
+        "desc": "Działalność w 5+ jurysdykcjach z międzynarodowymi partnerami"
+      },
+      "c3": {
+        "title": "Indywidualne podejście",
+        "desc": "Rozwiązania dostosowane do potrzeb każdej rodziny"
+      },
+      "c4": {
+        "title": "Transparentność",
+        "desc": "Szczegółowa sprawozdawczość i monitoring wszystkich aktywów"
+      }
     }
   },
   "insightsTeaser": {
@@ -210,30 +242,100 @@
       "title": "W co wierzymy",
       "subtitle": "Trzy zasady kierują każdą relacją, każdą rekomendacją i każdą decyzją, którą podejmujemy w Twoim imieniu.",
       "items": [
-        { "title": "Interes klienta przede wszystkim", "description": "Zawsze działamy jak powiernicy. Nasza niezależność od banków, funduszy i dostawców produktów oznacza, że każda nasza rekomendacja kierowana jest wyłącznie Twoimi celami." },
-        { "title": "Długoterminowe relacje", "description": "Mierzymy nasz sukces dekadami, nie transakcjami. Klienci zostają z nami, ponieważ zasługujemy na tę relację każdego roku — nie dlatego, że są związani umową." },
-        { "title": "Poufność i zaufanie", "description": "Twoje sprawy należą do Ciebie. Traktujemy informacje klienta z absolutną dyskrecją — jako obowiązek zawodowy i osobisty." }
+        {
+          "title": "Interes klienta przede wszystkim",
+          "description": "Zawsze działamy jak powiernicy. Nasza niezależność od banków, funduszy i dostawców produktów oznacza, że każda nasza rekomendacja kierowana jest wyłącznie Twoimi celami."
+        },
+        {
+          "title": "Długoterminowe relacje",
+          "description": "Mierzymy nasz sukces dekadami, nie transakcjami. Klienci zostają z nami, ponieważ zasługujemy na tę relację każdego roku — nie dlatego, że są związani umową."
+        },
+        {
+          "title": "Poufność i zaufanie",
+          "description": "Twoje sprawy należą do Ciebie. Traktujemy informacje klienta z absolutną dyskrecją — jako obowiązek zawodowy i osobisty."
+        }
       ]
     },
     "story": {
       "title": "Zbudowane w czasie.\nUdoskonalone doświadczeniem.",
       "description": "Od małej praktyki w Warszawie do niezależnej, multidyscyplinarnej firmy — każdy rozdział naszej historii kształtowały potrzeby klientów.",
       "steps": [
-        { "title": "Założenie", "timeline": "2009", "result": "Niezależne doradztwo, brak konfliktu interesów", "activities": ["Powstanie w Warszawie", "Założyciele z bankowości prywatnej i zarządzania aktywami", "Jasny mandat od pierwszego dnia"] },
-        { "title": "Praktyka Family Office", "timeline": "2013", "result": "Dedykowana praktyka wielopokoleniowa", "activities": ["Skoordynowane inwestycje", "Ramy ładu", "Planowanie sukcesji pod jednym dachem"] },
-        { "title": "Strukturyzacja i podatki", "timeline": "2017", "result": "Międzynarodowa zdolność strukturyzowania majątku", "activities": ["Międzynarodowe planowanie podatkowe", "Struktury holdingowe i powiernicze", "Odpowiedź na złożoność klientów"] },
-        { "title": "Doradztwo korporacyjne", "timeline": "2021", "result": "Pełne wsparcie cyklu życia dla przedsiębiorców", "activities": ["Doradztwo M&A", "Pozyskiwanie kapitału i wsparcie exit", "Spójność majątku osobistego i biznesowego"] },
-        { "title": "Icon Finance", "timeline": "Dziś", "result": "Niezależna multidyscyplinarna firma doradcza", "activities": ["Przedsiębiorcy, rodziny, właściciele firm", "Klienci w całej Europie", "Siedziba w Warszawie"] }
+        {
+          "title": "Założenie",
+          "timeline": "2009",
+          "result": "Niezależne doradztwo, brak konfliktu interesów",
+          "activities": [
+            "Powstanie w Warszawie",
+            "Założyciele z bankowości prywatnej i zarządzania aktywami",
+            "Jasny mandat od pierwszego dnia"
+          ]
+        },
+        {
+          "title": "Praktyka Family Office",
+          "timeline": "2013",
+          "result": "Dedykowana praktyka wielopokoleniowa",
+          "activities": [
+            "Skoordynowane inwestycje",
+            "Ramy ładu",
+            "Planowanie sukcesji pod jednym dachem"
+          ]
+        },
+        {
+          "title": "Strukturyzacja i podatki",
+          "timeline": "2017",
+          "result": "Międzynarodowa zdolność strukturyzowania majątku",
+          "activities": [
+            "Międzynarodowe planowanie podatkowe",
+            "Struktury holdingowe i powiernicze",
+            "Odpowiedź na złożoność klientów"
+          ]
+        },
+        {
+          "title": "Doradztwo korporacyjne",
+          "timeline": "2021",
+          "result": "Pełne wsparcie cyklu życia dla przedsiębiorców",
+          "activities": [
+            "Doradztwo M&A",
+            "Pozyskiwanie kapitału i wsparcie exit",
+            "Spójność majątku osobistego i biznesowego"
+          ]
+        },
+        {
+          "title": "Icon Finance",
+          "timeline": "Dziś",
+          "result": "Niezależna multidyscyplinarna firma doradcza",
+          "activities": [
+            "Przedsiębiorcy, rodziny, właściciele firm",
+            "Klienci w całej Europie",
+            "Siedziba w Warszawie"
+          ]
+        }
       ]
     },
     "team": {
       "eyebrow": "Nasz zespół",
       "title": "Poznaj zespół",
       "members": [
-        { "role": "Założyciel", "name": "Oleg Zabolotnyi", "bio": "Założyciel Icon Finance z doświadczeniem w bankowości prywatnej i doradztwie inwestycyjnym. Oleg zbudował firmę wokół jednej zasady: niezależnego doradztwa służącego klientom, nie instytucjom." },
-        { "role": "Dyrektor generalny", "name": "Yurii Labenko", "bio": "Yurii kieruje operacjami firmy i strategią klienta. Jego doświadczenie obejmuje zarządzanie inwestycjami i doradztwo finansowe na rynkach Europy Środkowo-Wschodniej." },
-        { "role": "Dyrektor ds. rozwoju biznesu", "name": "Ksenia Romanchuk", "bio": "Ksenia napędza rozwój firmy i strategię partnerstw. Wnosi głęboką wiedzę w budowaniu relacji klienckich klasy instytucjonalnej na rynkach private wealth." },
-        { "role": "Manager ds. rozwoju partnerstw", "name": "Maksym Sydorov", "bio": "Maksym rozwija i zarządza siecią partnerów Icon Finance — łącząc klientów z odpowiednimi specjalistami w dziedzinie prawa, podatków i inwestycji." }
+        {
+          "role": "Założyciel",
+          "name": "Oleg Zabolotnyi",
+          "bio": "Założyciel Icon Finance z doświadczeniem w bankowości prywatnej i doradztwie inwestycyjnym. Oleg zbudował firmę wokół jednej zasady: niezależnego doradztwa służącego klientom, nie instytucjom."
+        },
+        {
+          "role": "Dyrektor generalny",
+          "name": "Yurii Labenko",
+          "bio": "Yurii kieruje operacjami firmy i strategią klienta. Jego doświadczenie obejmuje zarządzanie inwestycjami i doradztwo finansowe na rynkach Europy Środkowo-Wschodniej."
+        },
+        {
+          "role": "Dyrektor ds. rozwoju biznesu",
+          "name": "Ksenia Romanchuk",
+          "bio": "Ksenia napędza rozwój firmy i strategię partnerstw. Wnosi głęboką wiedzę w budowaniu relacji klienckich klasy instytucjonalnej na rynkach private wealth."
+        },
+        {
+          "role": "Manager ds. rozwoju partnerstw",
+          "name": "Maksym Sydorov",
+          "bio": "Maksym rozwija i zarządza siecią partnerów Icon Finance — łącząc klientów z odpowiednimi specjalistami w dziedzinie prawa, podatków i inwestycji."
+        }
       ]
     },
     "cta": {
@@ -252,22 +354,52 @@
       "eyebrow": "Nasze kompetencje",
       "title": "Co robimy",
       "items": [
-        { "title": "Zarządzanie majątkiem", "body": "Niezależne zarządzanie inwestycjami i doradztwo portfelowe dla przedsiębiorców i rodzin. Bez prowizji produktowych. Bez kwot instytucjonalnych. Tylko doradztwo zgodne z Twoimi celami." },
-        { "title": "Family Office", "body": "Projektujemy i prowadzimy struktury family office dla rodzin wielopokoleniowych — koordynując inwestycje, ład, sukcesję i raportowanie z jednego punktu." },
-        { "title": "Strukturyzacja i podatki", "body": "Międzynarodowa strukturyzacja majątku i planowanie podatkowe w wielu jurysdykcjach — w celu ochrony aktywów, zmniejszenia obciążeń podatkowych i pełnej zgodności prawnej." },
-        { "title": "Doradztwo korporacyjne", "body": "Doradztwo M&A, planowanie exit, pozyskiwanie kapitału i due diligence dla właścicieli firm — od wczesnego rozwoju po finalne zamknięcie transakcji." }
+        {
+          "title": "Zarządzanie majątkiem",
+          "body": "Niezależne zarządzanie inwestycjami i doradztwo portfelowe dla przedsiębiorców i rodzin. Bez prowizji produktowych. Bez kwot instytucjonalnych. Tylko doradztwo zgodne z Twoimi celami."
+        },
+        {
+          "title": "Family Office",
+          "body": "Projektujemy i prowadzimy struktury family office dla rodzin wielopokoleniowych — koordynując inwestycje, ład, sukcesję i raportowanie z jednego punktu."
+        },
+        {
+          "title": "Strukturyzacja i podatki",
+          "body": "Międzynarodowa strukturyzacja majątku i planowanie podatkowe w wielu jurysdykcjach — w celu ochrony aktywów, zmniejszenia obciążeń podatkowych i pełnej zgodności prawnej."
+        },
+        {
+          "title": "Doradztwo korporacyjne",
+          "body": "Doradztwo M&A, planowanie exit, pozyskiwanie kapitału i due diligence dla właścicieli firm — od wczesnego rozwoju po finalne zamknięcie transakcji."
+        }
       ]
     },
     "industries": {
       "eyebrow": "Branże, które obsługujemy",
       "title": "Z kim pracujemy",
       "items": [
-        { "title": "Przedsiębiorcy i założyciele", "body": "Właściciele firm na styku majątku osobistego i korporacyjnego, na każdym etapie wzrostu." },
-        { "title": "Rodziny wielopokoleniowe", "body": "Rodziny zarządzające majątkiem przez dwa lub trzy pokolenia ze złożonymi potrzebami ładu i sukcesji." },
-        { "title": "Klienci międzynarodowi", "body": "Osoby i rodziny z aktywami, rezydencją i interesami rozsianymi po wielu jurysdykcjach." },
-        { "title": "Klienci po exicie", "body": "Założyciele i menedżerowie po zdarzeniu płynnościowym, którzy potrzebują zdyscyplinowanego rozmieszczenia i ochrony kapitału." },
-        { "title": "Filantropi", "body": "Rodziny i osoby pragnące lokować kapitał dla trwałego wpływu poprzez ustrukturyzowaną dobroczynność." },
-        { "title": "Korporacje i instytucje", "body": "Spółki i firmy rodzinne wymagające niezależnego doradztwa M&A, kapitałowego i restrukturyzacyjnego." }
+        {
+          "title": "Przedsiębiorcy i założyciele",
+          "body": "Właściciele firm na styku majątku osobistego i korporacyjnego, na każdym etapie wzrostu."
+        },
+        {
+          "title": "Rodziny wielopokoleniowe",
+          "body": "Rodziny zarządzające majątkiem przez dwa lub trzy pokolenia ze złożonymi potrzebami ładu i sukcesji."
+        },
+        {
+          "title": "Klienci międzynarodowi",
+          "body": "Osoby i rodziny z aktywami, rezydencją i interesami rozsianymi po wielu jurysdykcjach."
+        },
+        {
+          "title": "Klienci po exicie",
+          "body": "Założyciele i menedżerowie po zdarzeniu płynnościowym, którzy potrzebują zdyscyplinowanego rozmieszczenia i ochrony kapitału."
+        },
+        {
+          "title": "Filantropi",
+          "body": "Rodziny i osoby pragnące lokować kapitał dla trwałego wpływu poprzez ustrukturyzowaną dobroczynność."
+        },
+        {
+          "title": "Korporacje i instytucje",
+          "body": "Spółki i firmy rodzinne wymagające niezależnego doradztwa M&A, kapitałowego i restrukturyzacyjnego."
+        }
       ]
     },
     "international": {
@@ -275,19 +407,49 @@
       "title": "Gdzie działamy",
       "description": "Życie naszych klientów nie kończy się na jednej granicy — i nasza ekspertyza również. Koordynujemy działania w różnych jurysdykcjach, strefach czasowych i ramach regulacyjnych, aby zapewnić klientom spójny obraz ich międzynarodowego majątku.",
       "items": [
-        { "name": "Polska", "desc": "Główna siedziba i baza regulacyjna" },
-        { "name": "Unia Europejska", "desc": "Strukturyzacja transgraniczna i compliance" },
-        { "name": "ZEA / Dubaj", "desc": "Struktury holdingowe i planowanie rezydencji" },
-        { "name": "Cypr i Malta", "desc": "Wehikuły planowania podatkowego w UE" },
-        { "name": "Luksemburg", "desc": "Struktury funduszowe i holdingowe rodzin" },
-        { "name": "BVI i Kajmany", "desc": "Międzynarodowe wehikuły holdingowe" }
+        {
+          "name": "Polska",
+          "desc": "Główna siedziba i baza regulacyjna"
+        },
+        {
+          "name": "Unia Europejska",
+          "desc": "Strukturyzacja transgraniczna i compliance"
+        },
+        {
+          "name": "ZEA / Dubaj",
+          "desc": "Struktury holdingowe i planowanie rezydencji"
+        },
+        {
+          "name": "Cypr i Malta",
+          "desc": "Wehikuły planowania podatkowego w UE"
+        },
+        {
+          "name": "Luksemburg",
+          "desc": "Struktury funduszowe i holdingowe rodzin"
+        },
+        {
+          "name": "BVI i Kajmany",
+          "desc": "Międzynarodowe wehikuły holdingowe"
+        }
       ]
     },
     "stats": [
-      { "n": "15+", "label": "Lat w zarządzaniu majątkiem" },
-      { "n": "4", "label": "Główne dyscypliny usług" },
-      { "n": "6+", "label": "Obsługiwane jurysdykcje" },
-      { "n": "4", "label": "Języki" }
+      {
+        "n": "15+",
+        "label": "Lat w zarządzaniu majątkiem"
+      },
+      {
+        "n": "4",
+        "label": "Główne dyscypliny usług"
+      },
+      {
+        "n": "6+",
+        "label": "Obsługiwane jurysdykcje"
+      },
+      {
+        "n": "4",
+        "label": "Języki"
+      }
     ],
     "cta": {
       "title": "Rozpocznij poufną rozmowę",
@@ -324,10 +486,22 @@
       "eyebrow": "Skontaktuj się",
       "title": "Jak się z nami skontaktować",
       "blocks": [
-        { "title": "Biuro", "body": "Warszawa, Polska" },
-        { "title": "Email", "body": "info@iconfinance.io" },
-        { "title": "Czas odpowiedzi", "body": "Odpowiadamy na wszystkie zapytania w ciągu 24 godzin." },
-        { "title": "Poufność", "body": "Wszystkie udostępnione informacje traktujemy z najwyższą dyskrecją zawodową. NDA na życzenie." }
+        {
+          "title": "Biuro",
+          "body": "Warszawa, Polska"
+        },
+        {
+          "title": "Email",
+          "body": "info@iconfinance.io"
+        },
+        {
+          "title": "Czas odpowiedzi",
+          "body": "Odpowiadamy na wszystkie zapytania w ciągu 24 godzin."
+        },
+        {
+          "title": "Poufność",
+          "body": "Wszystkie udostępnione informacje traktujemy z najwyższą dyskrecją zawodową. NDA na życzenie."
+        }
       ]
     },
     "form": {
@@ -354,6 +528,1271 @@
       "title": "Nie wiesz, od czego zacząć?",
       "description": "Wielu naszych klientów przychodzi do nas bez konkretnego briefu — z poczuciem, że ich obecna sytuacja mogłaby być lepiej zarządzana. To doskonały punkt wyjścia.",
       "button": "Wyślij nam wiadomość"
+    }
+  },
+  "servicePages": {
+    "wealthManagement": {
+      "hero": {
+        "eyebrow": "Zarządzanie Majątkiem",
+        "title": "Ochrona i pomnażanie kapitału przez pokolenia",
+        "description": "Icon Finance oferuje niezależne zarządzanie majątkiem dla przedsiębiorców, właścicieli firm i rodzin o złożonych finansach. Łączymy wiedzę instytucjonalną z osobistą uwagą, na jaką zasługuje Państwa kapitał.",
+        "imageAlt": "Symbol nieskończoności — ochrona majątku przez pokolenia"
+      },
+      "whoBenefits": {
+        "sectionTitle": "Stworzone dla tych,\nktórzy mają więcej do stracenia",
+        "items": [
+          {
+            "title": "Właściciele Firm",
+            "description": "Zbudowali Państwo znaczny majątek dzięki swojej firmie — ale Państwa kapitał osobisty pozostaje narażony na te same ryzyka. Pomagamy oddzielić, ustrukturyzować i ochronić to, co zostało wypracowane, niezależnie od Państwa działalności operacyjnej."
+          },
+          {
+            "title": "Przedsiębiorcy po wyjściu z biznesu",
+            "description": "Sprzedali Państwo firmę lub wycofali się z działalności i stoją teraz przed innym wyzwaniem: zachowaniem i rozdysponowaniem znacznej płynności. Projektujemy struktury, które chronią Państwa wpływy i z dyscypliną wprowadzają je do pracy."
+          },
+          {
+            "title": "Rodziny wielopokoleniowe",
+            "description": "Majątek rodzinny obejmujący dwa lub trzy pokolenia wymaga czegoś więcej niż portfel inwestycyjny. Koordynujemy strategię inwestycyjną z ładem korporacyjnym, planowaniem sukcesji i zgodnością rodzinną — aby kapitał służył rodzinie, a nie odwrotnie."
+          },
+          {
+            "title": "Klienci Międzynarodowi",
+            "description": "Aktywa rozproszone w wielu jurysdykcjach wymagają więcej niż lokalnych porad. Wnosimy ekspertyzę transgraniczną, aby zmniejszyć złożoność, wyeliminować zbędne obciążenia podatkowe i dać Państwu jeden spójny obraz majątku."
+          }
+        ]
+      },
+      "philosophy": {
+        "sectionTitle": "Jak myślimy\no Państwa majątku",
+        "subtitle": "Działamy bez prowizji od produktów, powiązań bankowych czy opłat za plasowanie. Każda nasza rekomendacja kieruje się wyłącznie Państwa celami — nie umowami dystrybucyjnymi czy limitami instytucjonalnymi. Ta niezależność jest fundamentem wszystkiego, co robimy.",
+        "items": [
+          {
+            "number": "01",
+            "title": "Niezależne Doradztwo",
+            "description": "Brak konfliktów interesów. Brak produktów własnych. Otrzymujemy wynagrodzenie wyłącznie od Państwa — co oznacza, że pracujemy wyłącznie dla Państwa."
+          },
+          {
+            "number": "02",
+            "title": "Podejście Zintegrowane",
+            "description": "Koordynujemy strategię inwestycyjną z planowaniem podatkowym, strukturyzacją i sukcesją — aby Państwa decyzje finansowe były zawsze spójne we wszystkich wymiarach."
+          },
+          {
+            "number": "03",
+            "title": "Aktywne Zarządzanie Ryzykiem",
+            "description": "Ciągły monitoring wszystkich klas aktywów i powierników. Reagujemy na ryzyko, zanim stanie się stratą."
+          },
+          {
+            "number": "04",
+            "title": "Pełna Transparentność",
+            "description": "Jasne, skonsolidowane raportowanie wszystkich Państwa rachunków i pozycji. Zawsze dokładnie wiedzą Państwo, gdzie się znajdują."
+          }
+        ]
+      },
+      "results": {
+        "eyebrow": "Dlaczego to ma znaczenie",
+        "title": "Co daje niezależne zarządzanie majątkiem",
+        "items": [
+          {
+            "main": "Stała Opłata",
+            "label": "Bez prowizji od produktów ani opłat za plasowanie — nigdy"
+          },
+          {
+            "main": "Dostęp do Ekspertów",
+            "label": "Pracują Państwo bezpośrednio z doświadczonymi profesjonalistami, nie z młodszymi menedżerami"
+          },
+          {
+            "main": "Transgranicznie",
+            "label": "Ekspertyza w wielu jurysdykcjach i klasach aktywów"
+          },
+          {
+            "main": "Skonsolidowane",
+            "label": "Jeden widok całego majątku, niezależnie od miejsca przechowywania aktywów"
+          },
+          {
+            "main": "Poufne",
+            "label": "Ścisła dyskrecja jako zobowiązanie zawodowe i prawne"
+          },
+          {
+            "main": "Długoterminowe",
+            "label": "Sukces mierzymy w dekadach, nie w kwartałach"
+          }
+        ]
+      },
+      "strategies": [
+        {
+          "name": "Strategia Konserwatywna",
+          "description": "Skoncentrowana na ochronie kapitału i stabilnym dochodzie poprzez wysokiej jakości instrumenty o stałym dochodzie i akcje dywidendowe. Odpowiednia dla klientów stawiających ochronę ponad wzrost.",
+          "items": [
+            "Ochrona kapitału jako główny cel",
+            "Wysokiej jakości obligacje i kredyt o ratingu inwestycyjnym",
+            "Niska zmienność, stabilny profil dochodu"
+          ]
+        },
+        {
+          "name": "Strategia Zrównoważona",
+          "description": "Zdywersyfikowane podejście łączące aktywa generujące dochód z selektywną ekspozycją na akcje. Zaprojektowana dla klientów szukających stabilnego wzrostu z kontrolowanym ryzykiem spadkowym.",
+          "items": [
+            "Równa koncentracja na wzroście i dochodzie",
+            "Szeroka dywersyfikacja w klasach aktywów",
+            "Umiarkowane ryzyko z długoterminową aprecjacją"
+          ]
+        },
+        {
+          "name": "Strategia Wzrostu",
+          "description": "Portfel zorientowany na akcje ze znaczącą alokacją w inwestycje alternatywne. Dla klientów z dłuższym horyzontem i wyższą tolerancją krótkoterminowej zmienności.",
+          "items": [
+            "Akcje wiodące z dywersyfikatorami alternatywnymi",
+            "Ekspozycja na rynki prywatne i aktywa realne",
+            "Wyższy potencjał zwrotu w horyzoncie 5–10 lat"
+          ]
+        },
+        {
+          "name": "Strategia Oportunistyczna",
+          "description": "Skoncentrowana, oparta na przekonaniu ekspozycja na okazje wzrostowe, w tym private equity, venture i rynki wschodzące. Odpowiednia dla części większego zdywersyfikowanego portfela.",
+          "items": [
+            "Skoncentrowane zakłady w tematach o wysokim przekonaniu",
+            "Private equity, venture i sytuacje specjalne",
+            "Maksymalny potencjał zwrotu z proporcjonalnym ryzykiem"
+          ]
+        }
+      ],
+      "opportunities": [
+        {
+          "name": "Aktywa Tradycyjne",
+          "items": [
+            {
+              "title": "Akcje rynków rozwiniętych",
+              "description": "USA, Europa, Japonia"
+            },
+            {
+              "title": "Akcje rynków wschodzących",
+              "description": "Chiny, Indie, Ameryka Łacińska"
+            },
+            {
+              "title": "Obligacje skarbowe",
+              "description": "obligacje USA, niemieckie Bundy"
+            },
+            {
+              "title": "Obligacje korporacyjne",
+              "description": "Investment grade i high yield"
+            },
+            {
+              "title": "Rynek pieniężny i depozyty",
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Inwestycje Alternatywne",
+          "items": [
+            {
+              "title": "Private Equity",
+              "description": "bezpośrednie inwestycje w spółki"
+            },
+            {
+              "title": "Fundusze venture",
+              "description": "startupy technologiczne"
+            },
+            {
+              "title": "Fundusze hedgingowe",
+              "description": "market neutral, long/short"
+            },
+            {
+              "title": "Nieruchomości",
+              "description": "komercyjne i mieszkalne"
+            },
+            {
+              "title": "Surowce",
+              "description": "złoto, ropa, rolne"
+            },
+            {
+              "title": "Aktywa kryptograficzne",
+              "description": "Bitcoin, Ethereum"
+            },
+            {
+              "title": "Projekty infrastrukturalne",
+              "description": ""
+            },
+            {
+              "title": "Sztuka i kolekcje",
+              "description": ""
+            }
+          ]
+        }
+      ],
+      "portfolio": {
+        "title": "Jak z Państwem pracujemy",
+        "description": "Ustrukturyzowany proces zbudowany wokół Państwa rodziny, aktywów i jurysdykcji.",
+        "steps": [
+          {
+            "title": "Odkrycie i Planowanie",
+            "timeline": "1–2 tygodnie",
+            "result": "Polityka Inwestycyjna (IPS)",
+            "activities": [
+              "Pełny audyt aktywów i zobowiązań",
+              "Wyznaczanie celów",
+              "Profilowanie ryzyka",
+              "Przegląd sytuacji podatkowej"
+            ]
+          },
+          {
+            "title": "Budowa Portfela",
+            "timeline": "3–4 tygodnie",
+            "result": "Zdywersyfikowany Portfel",
+            "activities": [
+              "Alokacja strategiczna",
+              "Dobór instrumentów",
+              "Due diligence",
+              "Otwarcie rachunków i depozytariusza"
+            ]
+          },
+          {
+            "title": "Aktywne Zarządzanie",
+            "timeline": "Stale",
+            "result": "Optymalny profil ryzyko/zwrot",
+            "activities": [
+              "Codzienny monitoring",
+              "Korekty taktyczne",
+              "Kwartalne rebalansowanie",
+              "Zarządzanie ryzykiem"
+            ]
+          },
+          {
+            "title": "Raportowanie i Przegląd",
+            "timeline": "Regularnie",
+            "result": "Pełna transparentność i kontrola",
+            "activities": [
+              "Raporty miesięczne",
+              "Spotkania kwartalne",
+              "Roczny przegląd strategii",
+              "Raportowanie podatkowe"
+            ]
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Jaki jest minimalny próg inwestycyjny?",
+          "answer": "Współpracujemy zazwyczaj z klientami, których aktywa inwestycyjne wynoszą od 500 000 USD. Dla mandatów family office i strukturyzacji próg może być wyższy w zależności od złożoności."
+        },
+        {
+          "question": "Jak skonstruowane są Państwa wynagrodzenia?",
+          "answer": "Działamy w oparciu o przejrzysty model fee-based. Opłaty są ustalane z góry na podstawie aktywów pod doradztwem — nie otrzymujemy żadnych prowizji, rabatów ani płatności od dostawców produktów."
+        },
+        {
+          "question": "Czy mogę uzyskać dostęp do środków w dowolnym momencie?",
+          "answer": "Tak. Państwa aktywa są przechowywane u niezależnych depozytariuszy na Państwa nazwisko i pozostają w pełni dostępne. Zalecamy konsultację z doradcą przed znaczącymi wypłatami w celu oceny wpływu na portfel."
+        },
+        {
+          "question": "Jak chronią Państwo poufność klientów?",
+          "answer": "Poufność jest zarówno obowiązkiem zawodowym, jak i prawnym. Informacje o kliencie nigdy nie są udostępniane stronom trzecim bez wyraźnej zgody. Umowy NDA są dostępne na życzenie."
+        }
+      ],
+      "cta": {
+        "title": "Rozpocznij Poufną Rozmowę",
+        "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Państwa sytuacji — i zaproponujemy ścieżkę naprzód tylko, jeśli będziemy pewni, że możemy wnieść istotną wartość."
+      }
+    },
+    "familyOffice": {
+      "hero": {
+        "eyebrow": "Family Office",
+        "title": "Gdy majątek staje się odpowiedzialnością rodziny",
+        "description": "Icon Finance projektuje i prowadzi struktury family office dla rodzin poruszających się w złożoności majątku wielopokoleniowego — od koordynacji inwestycji po sukcesję, ład rodzinny i planowanie spuścizny.",
+        "imageAlt": "Family office — koordynacja majątku wielopokoleniowego"
+      },
+      "whoBenefits": {
+        "sectionTitle": "Dla rodzin myślących\nw kategoriach pokoleń",
+        "items": [
+          {
+            "title": "Rodziny z aktywami od 10 mln USD",
+            "description": "Państwa majątek rodzinny urósł do skali, w której nieformalne zarządzanie już nie wystarcza. Potrzebują Państwo ustrukturyzowanego podejścia, które koordynuje inwestycje, podmioty prawne, podatki i sukcesję w jednym miejscu."
+          },
+          {
+            "title": "Właściciele firm planujący wyjście",
+            "description": "Przygotowują się Państwo do sprzedaży firmy i myślą uważnie o tym, co dalej. Struktura family office daje Państwa kapitałowi po wyjściu ramy ładu i zarządzania, na które zasługuje."
+          },
+          {
+            "title": "Rodziny Wielopokoleniowe",
+            "description": "Państwa rodzina obejmuje dwa lub trzy pokolenia o różnych potrzebach finansowych, apetytach na ryzyko i celach. Tworzymy strukturę i procesy, które utrzymują kapitał — i rodzinę — w zgodzie."
+          },
+          {
+            "title": "Rodziny relokujące się międzynarodowo",
+            "description": "Przeprowadzka między jurysdykcjami niesie nowe obowiązki podatkowe, wymogi regulacyjne i wyzwania w zarządzaniu aktywami. Koordynujemy każdy wymiar Państwa relokacji finansowej z jednego punktu."
+          }
+        ]
+      },
+      "philosophy": {
+        "sectionTitle": "Jak budujemy\nPaństwa family office",
+        "subtitle": "Family office to nie produkt — to infrastruktura. Projektujemy ją wokół konkretnego składu, wartości, aktywów i długoterminowych intencji Państwa rodziny. Bez szablonów. Bez gotowych rozwiązań.",
+        "items": [
+          {
+            "number": "01",
+            "title": "Indywidualny Projekt",
+            "description": "Każde family office, które budujemy, zaczyna się od czystej kartki. Mapujemy pełny obraz Państwa rodziny przed zarekomendowaniem jakiejkolwiek struktury."
+          },
+          {
+            "number": "02",
+            "title": "Pełna Koordynacja",
+            "description": "Inwestycje, prawo, podatki, sukcesja i raportowanie — wszystko koordynowane z jednego miejsca, eliminując luki między doradcami."
+          },
+          {
+            "number": "03",
+            "title": "Ład Przede Wszystkim",
+            "description": "Ustanawiamy jasne procesy decyzyjne, rady rodzinne i komitety inwestycyjne — aby majątek nie tworzył konfliktów."
+          },
+          {
+            "number": "04",
+            "title": "Gotowi na Sukcesję",
+            "description": "Każda struktura, którą budujemy, jest projektowana z myślą o następnym pokoleniu — prawnie, finansowo i pod kątem gotowości rodziny."
+          }
+        ]
+      },
+      "results": {
+        "eyebrow": "Dlaczego to ma znaczenie",
+        "title": "Co daje prawdziwe family office",
+        "items": [
+          {
+            "main": "Jeden Punkt",
+            "label": "Jedno miejsce dla wszystkich decyzji finansowych i raportów rodziny"
+          },
+          {
+            "main": "Bez Konfliktów",
+            "label": "Struktury ładu zapobiegające dzieleniu rodzin przez majątek"
+          },
+          {
+            "main": "Transgranicznie",
+            "label": "Koordynacja w jurysdykcjach, podmiotach i walutach"
+          },
+          {
+            "main": "Poufne",
+            "label": "Pełna dyskrecja — sprawy rodziny pozostają w rodzinie"
+          },
+          {
+            "main": "Pokoleniowe",
+            "label": "Zbudowane, by służyć nie tylko Państwu, ale dzieciom i wnukom"
+          },
+          {
+            "main": "Zintegrowane",
+            "label": "Inwestycje, podatki, prawo i sukcesja w jednym ramieniu"
+          }
+        ]
+      },
+      "strategies": [
+        {
+          "name": "Single Family Office",
+          "description": "W pełni dedykowana struktura zbudowana wyłącznie dla Państwa rodziny. Pełna kontrola, maksymalna poufność i indywidualna infrastruktura — zaprojektowana dla rodzin z aktywami od 30 mln USD.",
+          "items": [
+            "Wyłączna infrastruktura tylko dla jednej rodziny",
+            "Pełna kontrola nad decyzjami inwestycyjnymi i ładu",
+            "Maksymalna poufność i personalizacja"
+          ]
+        },
+        {
+          "name": "Shared Family Office",
+          "description": "Dostęp do usług family office klasy instytucjonalnej dzielonych z wybraną grupą rodzin. Korzyści pełnego family office za ułamek kosztu samodzielnego.",
+          "items": [
+            "Infrastruktura instytucjonalna przy zoptymalizowanym koszcie",
+            "Wybrana grupa niekonkurencyjnych rodzin",
+            "Wspólne operacje, oddzielne raportowanie i aktywa"
+          ]
+        },
+        {
+          "name": "Family Office Advisory",
+          "description": "Mają już Państwo family office, ale potrzebują doświadczonej zewnętrznej perspektywy. Działamy jako Państwa strategiczny doradca: oceniamy struktury, optymalizujemy procesy i uzupełniamy luki kompetencyjne.",
+          "items": [
+            "Niezależny przegląd istniejącego family office",
+            "Optymalizacja procesów i ulepszenie ładu",
+            "Ekspertyza seniorska na żądanie bez pełnego retaineru"
+          ]
+        },
+        {
+          "name": "Virtual Family Office",
+          "description": "Dla rodzin, które chcą koordynacji na poziomie family office bez fizycznej infrastruktury. Działamy jako Państwa zewnętrzne family office, dostarczając wszystkie usługi bez kosztów ogólnych.",
+          "items": [
+            "Pełna koordynacja bez kosztów fizycznego biura",
+            "Skalowalne — rośnie wraz z potrzebami rodziny",
+            "Idealne dla rodzin w okresie zmian lub relokacji"
+          ]
+        }
+      ],
+      "opportunities": [
+        {
+          "name": "Usługi Podstawowe",
+          "items": [
+            {
+              "title": "Zarządzanie inwestycjami i nadzór",
+              "description": "we wszystkich depozytariuszach i rachunkach"
+            },
+            {
+              "title": "Skonsolidowane raportowanie finansowe",
+              "description": "miesięczne, kwartalne, roczne"
+            },
+            {
+              "title": "Planowanie podatkowe i compliance",
+              "description": "koordynacja wielu jurysdykcji"
+            },
+            {
+              "title": "Zarządzanie podmiotami prawnymi",
+              "description": "struktury holdingowe i administracja korporacyjna"
+            },
+            {
+              "title": "Zarządzanie przepływami i płynnością",
+              "description": "budżet rodzinny i wypłaty"
+            }
+          ]
+        },
+        {
+          "name": "Usługi Rozszerzone",
+          "items": [
+            {
+              "title": "Planowanie sukcesji",
+              "description": "testamenty, trusty, struktury spadkowe"
+            },
+            {
+              "title": "Ład rodzinny",
+              "description": "rady, statuty, ramy decyzyjne"
+            },
+            {
+              "title": "Zarządzanie filantropią",
+              "description": "fundacje, programy darczyńców, wpływ"
+            },
+            {
+              "title": "Koordynacja nieruchomości",
+              "description": "nabycie, zarządzanie, zbycie"
+            },
+            {
+              "title": "Sztuka i aktywa lifestyle",
+              "description": "zarządzanie kolekcją, ubezpieczenia, wycena"
+            },
+            {
+              "title": "Edukacja następnego pokolenia",
+              "description": "wiedza finansowa, programy onboardingowe"
+            }
+          ]
+        }
+      ],
+      "portfolio": {
+        "title": "Jak budujemy Państwa family office",
+        "description": "Ustrukturyzowane zaangażowanie od odkrycia po w pełni operacyjne family office.",
+        "steps": [
+          {
+            "title": "Odkrycie Rodziny",
+            "timeline": "2–4 tygodnie",
+            "result": "Mapa Majątku Rodzinnego",
+            "activities": [
+              "Inwentaryzacja aktywów",
+              "Przegląd struktury rodziny",
+              "Zgodność celów",
+              "Mapowanie jurysdykcji"
+            ]
+          },
+          {
+            "title": "Projekt Struktury",
+            "timeline": "4–6 tygodni",
+            "result": "Schemat Family Office",
+            "activities": [
+              "Projekt podmiotów",
+              "Ramy ładu",
+              "Koordynacja doradców",
+              "Architektura raportowania"
+            ]
+          },
+          {
+            "title": "Wdrożenie",
+            "timeline": "6–8 tygodni",
+            "result": "Operacyjne Family Office",
+            "activities": [
+              "Tworzenie podmiotów",
+              "Otwarcie rachunków",
+              "Dokumentacja polityk",
+              "Onboarding systemów"
+            ]
+          },
+          {
+            "title": "Operacje i Nadzór",
+            "timeline": "Stale",
+            "result": "W pełni zarządzane family office",
+            "activities": [
+              "Miesięczne raportowanie",
+              "Nadzór inwestycyjny",
+              "Spotkania rodzinne",
+              "Roczny przegląd struktury"
+            ]
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Jaki jest minimalny poziom aktywów dla family office?",
+          "answer": "Dedykowane Single Family Office wymaga zwykle aktywów inwestycyjnych od 30 mln USD, aby było efektywne kosztowo. Nasz model Shared Family Office zaprojektowany jest dla rodzin od 5–10 mln USD, a Virtual Family Office nie ma sztywnego minimum."
+        },
+        {
+          "question": "Czym family office różni się od banku prywatnego?",
+          "answer": "Bank prywatny sprzedaje produkty i zarządza Państwa portfelem w ramach swojej platformy. Family office koordynuje każdy wymiar Państwa życia finansowego — we wszystkich bankach, doradcach i jurysdykcjach — bez produktów do sprzedania i bez konfliktów interesów."
+        },
+        {
+          "question": "Czy mogą Państwo pracować z naszymi obecnymi doradcami?",
+          "answer": "Tak. Często działamy jako warstwa koordynująca ponad istniejącymi doradcami prawnymi, podatkowymi i inwestycyjnymi — zapewniając, że pracują spójnie razem, a nie w odizolowanych silosach."
+        },
+        {
+          "question": "Jak radzą sobie Państwo z poufnością wśród wielu członków rodziny?",
+          "answer": "Od początku ustanawiamy jasne granice informacyjne. Osobiste informacje finansowe każdego członka rodziny są chronione, a skonsolidowane raporty rodzinne są udostępniane tylko wyznaczonym pryncypałom."
+        }
+      ],
+      "cta": {
+        "title": "Rozpocznij Poufną Rozmowę",
+        "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Państwa sytuacji — i zaproponujemy ścieżkę naprzód tylko, jeśli będziemy pewni, że możemy wnieść istotną wartość."
+      }
+    },
+    "structuringTax": {
+      "hero": {
+        "eyebrow": "Strukturyzacja i Podatki",
+        "title": "Struktura, która chroni. Planowanie, które zachowuje.",
+        "description": "Icon Finance zapewnia międzynarodową strukturyzację majątku i planowanie podatkowe dla przedsiębiorców, rodzin i inwestorów z aktywami w wielu jurysdykcjach. Zamieniamy złożoność w przejrzystość.",
+        "imageAlt": "Symbol strukturyzacji i podatków"
+      },
+      "whoBenefits": {
+        "sectionTitle": "Dla tych, którzy mierzą się\nze złożoną rzeczywistością podatkową",
+        "items": [
+          {
+            "title": "Posiadacze Aktywów Międzynarodowych",
+            "description": "Posiadają Państwo aktywa w wielu krajach — nieruchomości, spółki, inwestycje, rachunki bankowe. Bez właściwej strukturyzacji są Państwo narażeni na nakładające się obowiązki podatkowe, ekspozycję regulacyjną i niepotrzebne koszty."
+          },
+          {
+            "title": "Przedsiębiorcy przed i po wyjściu",
+            "description": "Skutki podatkowe sprzedaży firmy mogą być znaczące — lub zminimalizowane przy odpowiedniej wcześniejszej strukturze. Pomagamy Państwu planować z wyprzedzeniem i chronić to, co Państwo zbudowali."
+          },
+          {
+            "title": "Rodziny planujące sukcesję",
+            "description": "Przekazanie majątku następnemu pokoleniu ponad granicami obejmuje podatki spadkowe, zasady zachowku i konflikty jurysdykcyjne. Projektujemy struktury, które czynią sukcesję uporządkowaną i efektywną."
+          },
+          {
+            "title": "Osoby i rodziny w trakcie relokacji",
+            "description": "Zmiana Państwa rezydencji podatkowej lub domicylu ma głębokie implikacje dla Państwa globalnych aktywów. Koordynujemy pełny obraz — przed, w trakcie i po przeprowadzce."
+          }
+        ]
+      },
+      "philosophy": {
+        "sectionTitle": "Strukturyzacja zbudowana wokół\nPaństwa życia, a nie szablonu",
+        "subtitle": "Skuteczna strukturyzacja nie polega na agresywnym unikaniu opodatkowania — chodzi o to, by Państwa majątek był przechowywany w najbardziej logiczny, efektywny i prawnie poprawny sposób. Pracujemy w ramach prawa, w wielu jurysdykcjach, z Państwa długoterminowymi interesami jako jedynym drogowskazem.",
+        "items": [
+          {
+            "number": "01",
+            "title": "Analiza Jurysdykcji",
+            "description": "Oceniamy każdą jurysdykcję, w której mają Państwo aktywa, dochody lub rezydencję — i identyfikujemy optymalną strukturę holdingową dla każdej sytuacji."
+          },
+          {
+            "number": "02",
+            "title": "Planowanie Zintegrowane",
+            "description": "Planowanie podatkowe nie odbywa się w izolacji. Koordynujemy je z Państwa strategią inwestycyjną, planem sukcesji i family office, aby zapewnić pełną spójność."
+          },
+          {
+            "number": "03",
+            "title": "Zgodność Prawna",
+            "description": "Każda struktura, którą projektujemy, jest w pełni zgodna z obowiązującym prawem. Współpracujemy z wykwalifikowanymi prawnikami lokalnymi w każdej jurysdykcji."
+          },
+          {
+            "number": "04",
+            "title": "Spojrzenie Długoterminowe",
+            "description": "Projektujemy z myślą o trwałości — struktury, które wytrzymają zmiany prawa, rozwój rodzin i ewolucję okoliczności."
+          }
+        ]
+      },
+      "results": {
+        "eyebrow": "Dlaczego to ma znaczenie",
+        "title": "Co daje właściwa strukturyzacja",
+        "items": [
+          {
+            "main": "Efektywne Podatkowo",
+            "label": "Eliminacja zbędnego obciążenia podatkowego we wszystkich jurysdykcjach"
+          },
+          {
+            "main": "Chronione",
+            "label": "Aktywa zabezpieczone przed nieuzasadnionymi roszczeniami i wierzycielami"
+          },
+          {
+            "main": "Zgodne",
+            "label": "W pełni legalne struktury wytrzymujące kontrolę regulacyjną"
+          },
+          {
+            "main": "Gotowe do Sukcesji",
+            "label": "Majątek płynnie przekazywany następnemu pokoleniu"
+          },
+          {
+            "main": "Skonsolidowane",
+            "label": "Wszystkie struktury skoordynowane w jednym spójnym ramieniu"
+          },
+          {
+            "main": "Adaptowalne",
+            "label": "Zbudowane, by ewoluować wraz ze zmianą życia, prawa i aktywów"
+          }
+        ]
+      },
+      "strategies": [
+        {
+          "name": "Strukturyzacja Majątku",
+          "description": "Projektujemy struktury holdingowe dla Państwa globalnych aktywów — spółek, nieruchomości, inwestycji i płynnego majątku — aby zapewnić efektywną własność, ochronę i zarządzanie w jurysdykcjach.",
+          "items": [
+            "Projektowanie spółek holdingowych i podmiotów",
+            "Optymalizacja transgranicznej własności",
+            "Ramy ochrony aktywów"
+          ]
+        },
+        {
+          "name": "Planowanie Podatkowe",
+          "description": "Strategiczne planowanie podatkowe redukujące Państwa globalne obciążenia podatkowe legalnymi środkami — planowanie rezydencji, strukturyzacja dochodów i optymalizacja umów.",
+          "items": [
+            "Analiza podatkowa wielu jurysdykcji",
+            "Planowanie rezydencji i domicylu",
+            "Optymalizacja umów podatkowych"
+          ]
+        },
+        {
+          "name": "Trusty i Fundacje",
+          "description": "Trusty i fundacje prywatne to potężne narzędzia ochrony aktywów, planowania sukcesji i filantropii. Doradzamy w zakresie struktury, jurysdykcji i administracji.",
+          "items": [
+            "Ustanowienie i strukturyzacja trustu",
+            "Założenie fundacji prywatnej",
+            "Bieżąca administracja i nadzór"
+          ]
+        },
+        {
+          "name": "Planowanie Spadkowe",
+          "description": "Kompleksowe planowanie transferu majątku przez pokolenia — minimalizacja podatku spadkowego, unikanie postępowania spadkowego i zapewnienie, że Państwa aktywa trafią do właściwych osób we właściwym czasie.",
+          "items": [
+            "Transgraniczne planowanie sukcesji",
+            "Minimalizacja podatku spadkowego",
+            "Dokumentacja testamentowa i spadkowa"
+          ]
+        }
+      ],
+      "opportunities": [
+        {
+          "name": "Usługi Strukturyzacyjne",
+          "items": [
+            {
+              "title": "Międzynarodowe struktury holdingowe",
+              "description": "spółki, fundacje, trusty"
+            },
+            {
+              "title": "Optymalizacja własności",
+              "description": "w wielu jurysdykcjach"
+            },
+            {
+              "title": "Planowanie ochrony aktywów",
+              "description": "ekspozycja na wierzycieli i prawo"
+            },
+            {
+              "title": "Restrukturyzacja korporacyjna",
+              "description": "konsolidacja i uproszczenie"
+            },
+            {
+              "title": "Planowanie rezydencji i domicylu",
+              "description": "dla osób i rodzin"
+            }
+          ]
+        },
+        {
+          "name": "Usługi Podatkowe",
+          "items": [
+            {
+              "title": "Analiza podatkowa wielu jurysdykcji",
+              "description": "mapowanie globalnej pozycji podatkowej"
+            },
+            {
+              "title": "Strukturyzacja dochodów i dywidend",
+              "description": "efektywne planowanie wypłat"
+            },
+            {
+              "title": "Optymalizacja umów podatkowych",
+              "description": "wykorzystanie umów dwustronnych"
+            },
+            {
+              "title": "Planowanie podatku wyjściowego",
+              "description": "strukturyzacja przed i po sprzedaży"
+            },
+            {
+              "title": "Koordynacja compliance",
+              "description": "we wszystkich istotnych jurysdykcjach"
+            },
+            {
+              "title": "Raportowanie i ujawnienia",
+              "description": "CRS, FATCA, wymogi lokalne"
+            }
+          ]
+        }
+      ],
+      "portfolio": {
+        "title": "Jak strukturyzujemy Państwa majątek",
+        "description": "Metodyczny proces od analizy po wdrożenie i bieżącą zgodność.",
+        "steps": [
+          {
+            "title": "Globalne Mapowanie Aktywów",
+            "timeline": "2–3 tygodnie",
+            "result": "Pełna Mapa Majątku i Podatków",
+            "activities": [
+              "Inwentaryzacja aktywów",
+              "Przegląd jurysdykcji",
+              "Audyt obecnej struktury",
+              "Analiza ekspozycji podatkowej"
+            ]
+          },
+          {
+            "title": "Projekt Struktury",
+            "timeline": "3–4 tygodnie",
+            "result": "Optymalne Ramy Holdingowe",
+            "activities": [
+              "Wybór podmiotów",
+              "Planowanie jurysdykcji",
+              "Koordynacja prawnika",
+              "Przegląd compliance"
+            ]
+          },
+          {
+            "title": "Wdrożenie",
+            "timeline": "4–8 tygodni",
+            "result": "W pełni operacyjna struktura",
+            "activities": [
+              "Tworzenie podmiotów",
+              "Otwarcie rachunków",
+              "Transfer aktywów",
+              "Dokumentacja i rejestracja"
+            ]
+          },
+          {
+            "title": "Utrzymanie i Compliance",
+            "timeline": "Stale",
+            "result": "Zgodna i efektywna struktura",
+            "activities": [
+              "Roczne przeglądy",
+              "Aktualizacje regulacyjne",
+              "Obowiązki raportowe",
+              "Optymalizacja struktury"
+            ]
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Czy międzynarodowe planowanie podatkowe jest legalne?",
+          "answer": "Tak. Projektujemy struktury w pełni zgodne z obowiązującym prawem w każdej jurysdykcji. Nasze podejście opiera się na uprawnionym planowaniu podatkowym — nie na agresywnym unikaniu czy uchylaniu się."
+        },
+        {
+          "question": "Z jakimi jurysdykcjami Państwo pracują?",
+          "answer": "Pracujemy w głównych jurysdykcjach finansowych i holdingowych, w tym Polsce, ZEA, Cyprze, Malcie, Luksemburgu, BVI, Kajmanach i innych — zawsze wybierając najbardziej odpowiednią dla Państwa konkretnej sytuacji."
+        },
+        {
+          "question": "Czy muszę zmienić rezydencję?",
+          "answer": "Niekoniecznie. Planowanie rezydencji to jedno z wielu narzędzi. Oceniamy, czy zmiana rezydencji przyniesie korzyści Państwa ogólnej pozycji i rekomendujemy ją tylko, gdy ma to prawdziwy sens."
+        },
+        {
+          "question": "Jak radzą sobie Państwo z raportowaniem CRS i FATCA?",
+          "answer": "Projektujemy struktury z myślą o pełnej transparentności. Wszystkie nasze rozwiązania są zgodne z wymogami CRS i FATCA, a obowiązki raportowe koordynujemy w jurysdykcjach."
+        }
+      ],
+      "cta": {
+        "title": "Rozpocznij Poufną Rozmowę",
+        "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Państwa sytuacji — i zaproponujemy ścieżkę naprzód tylko, jeśli będziemy pewni, że możemy wnieść istotną wartość."
+      }
+    },
+    "maConsulting": {
+      "hero": {
+        "eyebrow": "Doradztwo M&A",
+        "title": "Od wzrostu po wyjście — strategiczne doradztwo na każdym etapie",
+        "description": "Icon Finance zapewnia niezależne doradztwo M&A dla właścicieli firm i przedsiębiorców poruszających się w przejęciach, sprzedażach, fuzjach i pozyskiwaniu kapitału. Chronimy Państwa interesy od pierwszej rozmowy do finalnego zamknięcia.",
+        "imageAlt": "Symbol doradztwa M&A"
+      },
+      "whoBenefits": {
+        "sectionTitle": "Dla właścicieli podejmujących\ndecyzje o wysokiej stawce",
+        "items": [
+          {
+            "title": "Właściciele firm planujący wyjście",
+            "description": "Rozważają Państwo sprzedaż firmy i chcą zapewnić, że otrzymają pełną wartość — z odpowiednią strukturą, właściwymi nabywcami i odpowiednimi warunkami. Zarządzamy całym procesem w Państwa imieniu."
+          },
+          {
+            "title": "Przedsiębiorcy poszukujący przejęć",
+            "description": "Chcą Państwo rosnąć przez przejęcia, ale potrzebują doświadczonego doradztwa w identyfikacji celów, wycenie, due diligence i strukturyzacji transakcji. Działamy jako Państwa niezależny doradca przez cały proces."
+          },
+          {
+            "title": "Spółki pozyskujące kapitał",
+            "description": "Potrzebują Państwo kapitału na rozwój — dług, kapitał lub kombinacja — i chcą podejść do właściwych inwestorów z odpowiednią historią i strukturą. Przygotowujemy, pozycjonujemy i reprezentujemy Państwa."
+          },
+          {
+            "title": "Firmy rodzinne w okresie zmian",
+            "description": "Poruszają się Państwo w transformacji pokoleniowej, restrukturyzacji partnerskiej lub częściowej płynności. Wnosimy zarówno ekspertyzę finansową, jak i znajomość dynamiki rodzinnej do tych złożonych sytuacji."
+          }
+        ]
+      },
+      "philosophy": {
+        "sectionTitle": "Niezależne doradztwo.\nBez ukrytych celów.",
+        "subtitle": "Większość doradców M&A jest opłacana po zamknięciu — co tworzy presję na zamykanie transakcji zamiast ochrony Państwa interesów. Działamy inaczej: nasze doradztwo kieruje się tym, co dla Państwa właściwe, a nie opłatami transakcyjnymi czy relacjami bankowymi.",
+        "items": [
+          {
+            "number": "01",
+            "title": "Tylko Strona Właściciela",
+            "description": "Reprezentujemy nabywców lub sprzedających — nigdy obu stron tej samej transakcji. Państwa interesy są zawsze naszym jedynym celem."
+          },
+          {
+            "number": "02",
+            "title": "Pełne Zarządzanie Procesem",
+            "description": "Od przygotowania i pozycjonowania po negocjacje i zamknięcie — zarządzamy każdym etapem, abyście Państwo mogli skupić się na prowadzeniu firmy."
+          },
+          {
+            "number": "03",
+            "title": "Dyscyplina Wyceny",
+            "description": "Zapewniamy rygorystyczną, niezależną analizę wyceny — zapewniając, że nigdy nie zostawią Państwo wartości na stole ani nie przepłacą za przejęcie."
+          },
+          {
+            "number": "04",
+            "title": "Dostęp do Sieci",
+            "description": "Dostęp do wyselekcjonowanej sieci nabywców strategicznych, inwestorów finansowych i dostawców kapitału w Europie i poza nią."
+          }
+        ]
+      },
+      "results": {
+        "eyebrow": "Dlaczego to ma znaczenie",
+        "title": "Co daje niezależne doradztwo M&A",
+        "items": [
+          {
+            "main": "Niezależne",
+            "label": "Brak powiązań bankowych ani konfliktowych relacji"
+          },
+          {
+            "main": "Pełna Wartość",
+            "label": "Rygorystyczne przygotowanie i pozycjonowanie maksymalizuje wynik"
+          },
+          {
+            "main": "Poufne",
+            "label": "Ścisła kontrola procesu — angażowane są tylko właściwe strony"
+          },
+          {
+            "main": "Ustrukturyzowane",
+            "label": "Struktura podatkowa i prawna zoptymalizowana od pierwszego dnia"
+          },
+          {
+            "main": "Sieć",
+            "label": "Dostęp do kwalifikowanych nabywców i inwestorów w Europie"
+          },
+          {
+            "main": "Kompleksowe",
+            "label": "Jeden doradca od strategii po podpisane dokumenty"
+          }
+        ]
+      },
+      "strategies": [
+        {
+          "name": "Doradztwo przy Wyjściu",
+          "description": "Zarządzamy pełnym procesem sprzedaży w imieniu właścicieli firm — od przygotowania i wyceny po identyfikację nabywców, negocjacje i zamknięcie.",
+          "items": [
+            "Przygotowanie i pozycjonowanie firmy",
+            "Identyfikacja i podejście do nabywców",
+            "Negocjacje i strukturyzacja transakcji"
+          ]
+        },
+        {
+          "name": "Doradztwo przy Przejęciu",
+          "description": "Wspieramy nabywców w pełnym procesie przejęcia — identyfikacja celów, wycena, due diligence, strukturyzacja i planowanie integracji po fuzji.",
+          "items": [
+            "Identyfikacja i selekcja celów",
+            "Wycena i due diligence",
+            "Strukturyzacja i negocjacje transakcji"
+          ]
+        },
+        {
+          "name": "Pozyskiwanie Kapitału",
+          "description": "Pomagamy firmom pozyskać kapitał na rozwój od właściwych inwestorów — kapitałowy, dłużny lub hybrydowy — z właściwą strukturą i na odpowiednich warunkach.",
+          "items": [
+            "Identyfikacja i podejście do inwestorów",
+            "Przygotowanie memorandum inwestycyjnego",
+            "Negocjacje warunków i zamknięcie"
+          ]
+        },
+        {
+          "name": "Due Diligence",
+          "description": "Niezależne due diligence finansowe, handlowe i prawne — dające Państwu jasny, bezstronny obraz każdej transakcji przed podjęciem zobowiązania.",
+          "items": [
+            "Analiza finansowa i handlowa",
+            "Identyfikacja i ocena ryzyk",
+            "Niezależne raportowanie do decydentów"
+          ]
+        }
+      ],
+      "opportunities": [
+        {
+          "name": "Usługi Transakcyjne",
+          "items": [
+            {
+              "title": "Doradztwo przy wyjściu i sprzedaży",
+              "description": "pełne zarządzanie procesem"
+            },
+            {
+              "title": "Wsparcie przy przejęciu",
+              "description": "od celu po zamknięcie"
+            },
+            {
+              "title": "Doradztwo przy fuzji",
+              "description": "struktura i integracja"
+            },
+            {
+              "title": "Wykup menedżerski",
+              "description": "transakcje MBO i MBI"
+            },
+            {
+              "title": "Wycena przedsiębiorstwa",
+              "description": "niezależna i rygorystyczna"
+            }
+          ]
+        },
+        {
+          "name": "Kapitał i Restrukturyzacja",
+          "items": [
+            {
+              "title": "Pozyskanie kapitału własnego",
+              "description": "finansowanie wzrostu i ekspansji"
+            },
+            {
+              "title": "Doradztwo dłużne",
+              "description": "struktura i negocjacje z kredytodawcą"
+            },
+            {
+              "title": "Oferta prywatna",
+              "description": "wprowadzenie do kwalifikowanych inwestorów"
+            },
+            {
+              "title": "Restrukturyzacja korporacyjna",
+              "description": "własnościowa i operacyjna"
+            },
+            {
+              "title": "Przygotowanie do IPO",
+              "description": "gotowość i pozycjonowanie"
+            },
+            {
+              "title": "Partnerstwa strategiczne",
+              "description": "joint ventures i alianse"
+            }
+          ]
+        }
+      ],
+      "portfolio": {
+        "title": "Jak prowadzimy Państwa transakcję",
+        "description": "Zdyscyplinowany proces, który maksymalizuje wartość i minimalizuje ryzyko realizacji.",
+        "steps": [
+          {
+            "title": "Przygotowanie i Pozycjonowanie",
+            "timeline": "2–4 tygodnie",
+            "result": "Gotowość Transakcyjna",
+            "activities": [
+              "Analiza biznesu",
+              "Wycena",
+              "Memorandum informacyjne",
+              "Projekt procesu"
+            ]
+          },
+          {
+            "title": "Podejście do Rynku",
+            "timeline": "4–6 tygodni",
+            "result": "Kwalifikowane Zainteresowanie",
+            "activities": [
+              "Identyfikacja nabywcy/inwestora",
+              "Poufne dotarcie",
+              "Zarządzanie NDA",
+              "Spotkania wstępne"
+            ]
+          },
+          {
+            "title": "Negocjacje i Strukturyzacja",
+            "timeline": "4–8 tygodni",
+            "result": "Uzgodnione Warunki",
+            "activities": [
+              "Ocena ofert",
+              "Negocjacje warunków",
+              "Strukturyzacja transakcji",
+              "Zarządzanie due diligence"
+            ]
+          },
+          {
+            "title": "Zamknięcie i Przejście",
+            "timeline": "4–6 tygodni",
+            "result": "Zakończona Transakcja",
+            "activities": [
+              "Dokumentacja prawna",
+              "Zatwierdzenia regulacyjne",
+              "Podpisanie",
+              "Wsparcie poprzejęciowe"
+            ]
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Jak są Państwo wynagradzani w transakcjach M&A?",
+          "answer": "Pobieramy opłatę retainer za prace doradcze i prowizję sukcesu po zakończeniu transakcji. Struktury opłat są ustalane transparentnie z góry. Nigdy nie otrzymujemy ukrytych płatności od kontrahentów ani inwestorów."
+        },
+        {
+          "question": "Jak długo trwa typowy proces sprzedaży?",
+          "answer": "Dobrze prowadzony proces sprzedaży trwa zazwyczaj 6–12 miesięcy od przygotowania do zamknięcia. Złożone transakcje lub trudne warunki rynkowe mogą wydłużyć ten czas. Ustalamy realistyczne oczekiwania od pierwszego dnia."
+        },
+        {
+          "question": "Czy mogą Państwo zachować poufność podczas procesu?",
+          "answer": "Tak. Zarządzamy całym procesem w ścisłych protokołach poufności — w tym NDA ze wszystkimi kontrahentami, kontrolowanym ujawnianiem informacji i zanonimizowanym wstępnym podejściem, jeśli to właściwe."
+        },
+        {
+          "question": "Jakiej wielkości transakcjami się Państwo zajmują?",
+          "answer": "Zazwyczaj pracujemy nad transakcjami o wartości przedsiębiorstwa od 5 mln do 200 mln EUR. Dla większych lub bardziej złożonych transakcji angażujemy wyspecjalizowanych partnerów z naszej sieci."
+        }
+      ],
+      "cta": {
+        "title": "Rozpocznij Poufną Rozmowę",
+        "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Państwa sytuacji — i zaproponujemy ścieżkę naprzód tylko, jeśli będziemy pewni, że możemy wnieść istotną wartość."
+      }
+    },
+    "specialSolutions": {
+      "hero": {
+        "eyebrow": "Rozwiązania Specjalne",
+        "title": "Poza standardem. Zbudowane wokół Państwa.",
+        "description": "Icon Finance zapewnia indywidualne doradztwo dla klientów z unikalnymi aktywami, złożonymi sytuacjami i potrzebami wykraczającymi poza standardowe zarządzanie majątkiem. Gdy konwencjonalne rozwiązania nie wystarczają, projektujemy coś lepszego.",
+        "imageAlt": "Symbol rozwiązań specjalnych"
+      },
+      "whoBenefits": {
+        "sectionTitle": "Dla niestandardowego\nklienta",
+        "items": [
+          {
+            "title": "Kolekcjonerzy i Posiadacze Sztuki",
+            "description": "Państwa majątek obejmuje znaczącą sztukę, kolekcje lub inne pasjonujące aktywa wymagające specjalistycznego zarządzania — wycena, ubezpieczenie, przechowywanie, finansowanie i ostateczne zbycie — obsługiwane z taką samą rygorystycznością jak Państwa portfel finansowy."
+          },
+          {
+            "title": "Inwestorzy w Nieruchomości",
+            "description": "Posiadają Państwo znaczne nieruchomości w jurysdykcjach i potrzebują skoordynowanego doradztwa w zakresie strukturyzacji nabycia, finansowania, zarządzania i zbycia — zintegrowanego z szerszą strategią majątkową."
+          },
+          {
+            "title": "Filantropi i Założyciele Fundacji",
+            "description": "Chcą Państwo, by Państwa majątek tworzył trwały wpływ poza Państwa rodziną. Pomagamy projektować, ustanawiać i prowadzić struktury filantropijne odzwierciedlające Państwa wartości i maksymalizujące wpływ."
+          },
+          {
+            "title": "Inwestorzy ESG i Impact",
+            "description": "Chcą Państwo, by inwestycje generowały zwroty zgodnie z Państwa wartościami. Projektujemy portfele ESG i impact, które nie idą na kompromis w zakresie dyscypliny finansowej."
+          }
+        ]
+      },
+      "philosophy": {
+        "sectionTitle": "Niestandardowe problemy\nwymagają indywidualnych rozwiązań",
+        "subtitle": "Standardowe ramy zarządzania majątkiem nie zostały zbudowane dla klientów z kolekcjami sztuki, złożonymi portfelami nieruchomości, ambicjami filantropijnymi czy mandatami impact investing. Zaczynamy od Państwa konkretnej sytuacji i budujemy stąd.",
+        "items": [
+          {
+            "number": "01",
+            "title": "Ekspertyza Specyficzna dla Aktywów",
+            "description": "Wnosimy specjalistyczną wiedzę dla każdej klasy aktywów — sztuka, nieruchomości, filantropia, ESG — zamiast stosować ogólne ramy."
+          },
+          {
+            "number": "02",
+            "title": "Pełna Integracja",
+            "description": "Aktywa niestandardowe są integrowane z Państwa ogólną strategią majątkową — nie zarządzane w izolacji od Państwa portfela finansowego."
+          },
+          {
+            "number": "03",
+            "title": "Sieć Specjalistów",
+            "description": "Koordynujemy z doradcami artystycznymi, ekspertami od nieruchomości, prawnikami i specjalistami od pomiaru wpływu w razie potrzeby."
+          },
+          {
+            "number": "04",
+            "title": "Zgodność z Wartościami",
+            "description": "Traktujemy Państwa wartości poważnie jako parametr inwestycyjny — czy to wykluczenia ESG, cele wpływu, czy alokacja filantropijna."
+          }
+        ]
+      },
+      "results": {
+        "eyebrow": "Dlaczego to ma znaczenie",
+        "title": "Co daje indywidualne doradztwo",
+        "items": [
+          {
+            "main": "Specjalistyczne",
+            "label": "Głęboka ekspertyza w niestandardowych klasach aktywów"
+          },
+          {
+            "main": "Zintegrowane",
+            "label": "Wszystkie aktywa skoordynowane w jednej strategii majątkowej"
+          },
+          {
+            "main": "Indywidualne",
+            "label": "Rozwiązania zaprojektowane dla Państwa sytuacji, nie szablonu"
+          },
+          {
+            "main": "Wpływ",
+            "label": "Filantropia i ESG z prawdziwymi mierzalnymi rezultatami"
+          },
+          {
+            "main": "Sieć",
+            "label": "Dostęp do wyselekcjonowanych specjalistów w klasach aktywów"
+          },
+          {
+            "main": "Dyskretne",
+            "label": "Wrażliwe aktywa zarządzane z absolutną poufnością"
+          }
+        ]
+      },
+      "strategies": [
+        {
+          "name": "Doradztwo Nieruchomości",
+          "description": "Strategiczne doradztwo dotyczące nieruchomości jako aktywa majątkowego — strukturyzacja nabycia, finansowanie, zarządzanie portfelem i zbycie — zintegrowane z szerszą strategią inwestycyjną.",
+          "items": [
+            "Doradztwo przy nabyciu i zbyciu",
+            "Optymalizacja struktury własności",
+            "Koordynacja portfela i raportowanie"
+          ]
+        },
+        {
+          "name": "Sztuka i Aktywa Lifestyle",
+          "description": "Kompleksowe zarządzanie kolekcjami sztuki i aktywami lifestyle — wycena, ubezpieczenie, przechowywanie, finansowanie i strategiczne zbycie obsługiwane przez specjalistów.",
+          "items": [
+            "Wycena i dokumentacja kolekcji",
+            "Koordynacja ubezpieczenia i przechowywania",
+            "Finansowanie sztuki i doradztwo przy zbyciu"
+          ]
+        },
+        {
+          "name": "Doradztwo Filantropijne",
+          "description": "Pomagamy rodzinom i osobom projektować i prowadzić struktury filantropijne — fundacje, programy darczyńców i inicjatywy wpływu — które odzwierciedlają ich wartości i tworzą trwałą zmianę.",
+          "items": [
+            "Strategia i struktura filantropijna",
+            "Założenie i ład fundacji",
+            "Pomiar i raportowanie wpływu"
+          ]
+        },
+        {
+          "name": "ESG i Impact Investing",
+          "description": "Portfele zbudowane wokół Państwa wartości bez poświęcania zwrotów finansowych. Projektujemy ramy ESG, rygorystycznie selekcjonujemy inwestycje i mierzymy realny wpływ obok wyników.",
+          "items": [
+            "Polityka ESG i ramy wykluczeń",
+            "Selekcja inwestycji impact",
+            "Raportowanie ESG i pomiar wpływu"
+          ]
+        }
+      ],
+      "opportunities": [
+        {
+          "name": "Doradztwo Aktywami",
+          "items": [
+            {
+              "title": "Doradztwo portfelem nieruchomości",
+              "description": "nabycie, zarządzanie, zbycie"
+            },
+            {
+              "title": "Zarządzanie kolekcją sztuki",
+              "description": "wycena, ubezpieczenie, przechowywanie"
+            },
+            {
+              "title": "Finansowanie sztuki",
+              "description": "płynność pod aktywa kolekcji"
+            },
+            {
+              "title": "Koordynacja aktywów lifestyle",
+              "description": "jachty, samoloty, kolekcje"
+            },
+            {
+              "title": "Raportowanie alternatywne",
+              "description": "zintegrowane z portfelem finansowym"
+            }
+          ]
+        },
+        {
+          "name": "Wpływ i Spuścizna",
+          "items": [
+            {
+              "title": "Strategia filantropijna",
+              "description": "ramy darowizn oparte na wartościach"
+            },
+            {
+              "title": "Założenie fundacji",
+              "description": "struktura prawna i ład"
+            },
+            {
+              "title": "Programy donor-advised",
+              "description": "elastyczne narzędzia darowizn"
+            },
+            {
+              "title": "Konstrukcja portfela ESG",
+              "description": "selekcjonowane i nastawione na wpływ"
+            },
+            {
+              "title": "Pomiar wpływu",
+              "description": "śledzenie realnych rezultatów"
+            },
+            {
+              "title": "Planowanie spuścizny",
+              "description": "integracja spuścizny charytatywnej i rodzinnej"
+            }
+          ]
+        }
+      ],
+      "portfolio": {
+        "title": "Jak podchodzimy do rozwiązań specjalnych",
+        "description": "Każde zaangażowanie zaczyna się od zrozumienia Państwa konkretnej sytuacji — nie od gotowego produktu.",
+        "steps": [
+          {
+            "title": "Ocena Sytuacji",
+            "timeline": "1–2 tygodnie",
+            "result": "Jasna Definicja Problemu",
+            "activities": [
+              "Przegląd aktywów",
+              "Zgodność celów",
+              "Ocena specjalistów",
+              "Definicja zakresu"
+            ]
+          },
+          {
+            "title": "Projekt Rozwiązania",
+            "timeline": "2–4 tygodnie",
+            "result": "Indywidualny Plan Doradczy",
+            "activities": [
+              "Projekt ram",
+              "Koordynacja specjalistów",
+              "Przegląd prawny i podatkowy",
+              "Potwierdzenie podejścia"
+            ]
+          },
+          {
+            "title": "Wdrożenie",
+            "timeline": "4–8 tygodni",
+            "result": "Działające Rozwiązanie",
+            "activities": [
+              "Konfiguracja struktury",
+              "Zaangażowanie specjalistów",
+              "Transfer aktywów",
+              "Dokumentacja i raportowanie"
+            ]
+          },
+          {
+            "title": "Nadzór i Raportowanie",
+            "timeline": "Stale",
+            "result": "W pełni skoordynowane aktywa specjalne",
+            "activities": [
+              "Regularne raportowanie",
+              "Przegląd wyników",
+              "Koordynacja specjalistów",
+              "Roczny przegląd strategii"
+            ]
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Czy mogą Państwo zarządzać kolekcjami sztuki obok portfela finansowego?",
+          "answer": "Tak. Traktujemy sztukę i kolekcje jako odrębną klasę aktywów w ramach Państwa ogólnego majątku — z odpowiednią wyceną, ubezpieczeniem i raportowaniem — zintegrowane w skonsolidowanym obrazie majątku."
+        },
+        {
+          "question": "Jakie jest minimum dla fundacji filantropijnej?",
+          "answer": "Zależy to od jurysdykcji i struktury. Fundacje prywatne można ustanowić od stosunkowo skromnych poziomów, podczas gdy bardziej złożone struktury wymagają większych dotacji. Oceniamy najbardziej odpowiedni instrument dla Państwa celów i budżetu."
+        },
+        {
+          "question": "Czy inwestowanie ESG oznacza niższe zwroty?",
+          "answer": "Niekoniecznie. Dane coraz częściej pokazują, że dobrze skonstruowane portfele ESG mogą dorównywać lub przewyższać konwencjonalne w długim terminie. Budujemy portfele ESG z taką samą rygorystycznością finansową jak każde inne."
+        },
+        {
+          "question": "Czy mogą Państwo pomóc z nieruchomościami w wielu krajach?",
+          "answer": "Tak. Koordynujemy doradztwo nieruchomości w jurysdykcjach — pracując ze specjalistami lokalnymi, zapewniając jednocześnie pojedynczy punkt koordynacji i skonsolidowane raportowanie."
+        }
+      ],
+      "cta": {
+        "title": "Rozpocznij Poufną Rozmowę",
+        "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Państwa sytuacji — i zaproponujemy ścieżkę naprzód tylko, jeśli będziemy pewni, że możemy wnieść istotną wartość."
+      }
     }
   }
 }
