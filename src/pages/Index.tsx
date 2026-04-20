@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useLocalizedPath } from "@/i18n/useLocalizedPath";
+import Seo from "../components/Seo";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
@@ -16,6 +17,7 @@ const Index = () => {
 
   return (
     <>
+      <Seo pageKey="home" />
       <Header />
       <Hero />
       <Services />

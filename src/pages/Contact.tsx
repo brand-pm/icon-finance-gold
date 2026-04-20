@@ -2,6 +2,7 @@ import { useState } from "react";
 import { z } from "zod";
 import { toast } from "sonner";
 import { useTranslation } from "react-i18next";
+import Seo from "../components/Seo";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useScrollReveal } from "../hooks/useScrollReveal";
@@ -158,6 +159,7 @@ const BottomCTA = () => {
 
 const Contact = () => (
   <div className="min-h-screen">
+    <Seo pageKey="contact" />
     <Header />
     <Hero />
     <ContactBody />
