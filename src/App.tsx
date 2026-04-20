@@ -6,6 +6,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { SUPPORTED_LANGUAGES, DEFAULT_LANGUAGE, type SupportedLanguage } from "@/i18n/config";
+import CookieConsent from "@/components/CookieConsent";
 import Index from "./pages/Index.tsx";
 
 const About = lazy(() => import("./pages/About.tsx"));
@@ -115,6 +116,7 @@ const App = () => (
           <Route path="/" element={<RootRedirect />} />
           <Route path=":lang/*" element={<LocalizedRoutes />} />
         </Routes>
+        <CookieConsent />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
