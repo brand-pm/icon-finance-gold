@@ -71,7 +71,7 @@ const ContactBody = () => {
               <div key={i}>
                 <div className="py-6">
                   <h3 className="text-charcoal font-medium text-base mb-2 uppercase tracking-wider">{b.title}</h3>
-                  <p className="text-slate text-base leading-relaxed max-w-md">{b.body}</p>
+                  <p className="text-slate text-base leading-relaxed max-w-md whitespace-pre-line">{b.body}</p>
                 </div>
                 {i < detailBlocks.length - 1 && (
                   <div className="gold-separator opacity-70"><div className="line" /><div className="dot" /><div className="dot-lg" /><div className="dot" /><div className="line" /></div>
