@@ -1,8 +1,8 @@
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import { useTranslation } from "react-i18next";
+import whyUsIcon from "../assets/why-us-icon.svg";
 
 const cardKeys = ["c1", "c2", "c3", "c4"] as const;
-const icons = ["∞", "◈", "◉", "◎"];
 
 const WhyUs = () => {
   const ref = useScrollReveal();
@@ -34,7 +34,7 @@ const WhyUs = () => {
               <div className="text-gold font-light text-5xl opacity-90 mb-4">{`0${i + 1}`}</div>
               <h3 className="text-charcoal text-lg font-medium mb-3">{t(`whyUs.cards.${key}.title`)}</h3>
               <p className="text-slate text-sm leading-relaxed mb-6">{t(`whyUs.cards.${key}.desc`)}</p>
-              <div className="text-gold text-2xl">{icons[i]}</div>
+              <img src={whyUsIcon} alt="" aria-hidden="true" width={32} height={16} className="block" />
             </div>
           ))}
         </div>
