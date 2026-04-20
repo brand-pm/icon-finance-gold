@@ -1,5 +1,5 @@
 import LegalPage from "../../components/legal/LegalPage";
-import Seo from "../../components/Seo";
+import { Helmet } from "react-helmet-async";
 
 const Para = ({ children }: { children: React.ReactNode }) => (
   <p className="mb-4 last:mb-0 whitespace-pre-line">{children}</p>
@@ -8,10 +8,10 @@ const Para = ({ children }: { children: React.ReactNode }) => (
 const Terms = () => {
   return (
     <>
-      <Seo
-        title="Terms and Conditions | Icon Finance"
-        description="Terms governing the use of the Icon Finance website."
-      />
+      <Helmet>
+        <title>Terms and Conditions | Icon Finance</title>
+        <meta name="description" content="Terms governing the use of the Icon Finance website." />
+      </Helmet>
       <LegalPage
         label="LEGAL"
         title="Terms and Conditions"

@@ -1,5 +1,5 @@
 import LegalPage from "../../components/legal/LegalPage";
-import Seo from "../../components/Seo";
+import { Helmet } from "react-helmet-async";
 
 const Para = ({ children }: { children: React.ReactNode }) => (
   <p className="mb-4 last:mb-0 whitespace-pre-line">{children}</p>
@@ -16,10 +16,10 @@ const Bullets = ({ items }: { items: React.ReactNode[] }) => (
 const CookiePolicy = () => {
   return (
     <>
-      <Seo
-        title="Cookie Policy | Icon Finance"
-        description="How Icon Finance uses cookies and similar technologies on its website."
-      />
+      <Helmet>
+        <title>Cookie Policy | Icon Finance</title>
+        <meta name="description" content="How Icon Finance uses cookies and similar technologies on its website." />
+      </Helmet>
       <LegalPage
         label="LEGAL"
         title="Cookie Policy"
