@@ -63,20 +63,20 @@ const LanguageSwitcher = ({ variant = "desktop" }: Props) => {
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen((v) => !v)}
-        className="text-white/60 hover:text-gold transition-colors text-[11px] uppercase tracking-[0.24em]"
+        className="text-[13px] uppercase tracking-wider font-medium text-white/70 hover:text-gold transition-colors duration-300"
         aria-label="Change language"
       >
         {LANGUAGE_LABELS[lang].code}
       </button>
       {open && (
-        <div className="absolute top-full right-0 mt-4 flex flex-col bg-navy/95 backdrop-blur-sm border border-white/5 z-50 min-w-[80px]">
+        <div className="absolute top-full right-0 mt-4 flex flex-col bg-navy/95 backdrop-blur-sm border border-white/5 z-50 min-w-[90px]">
           {SUPPORTED_LANGUAGES.map((code) => {
             const active = code === lang;
             return (
               <button
                 key={code}
                 onClick={() => handleSelect(code)}
-                className={`px-4 py-2.5 text-[11px] uppercase tracking-[0.24em] text-left transition-colors ${
+                className={`px-4 py-2.5 text-[13px] uppercase tracking-wider font-medium text-left transition-colors duration-300 ${
                   active ? "text-gold" : "text-white/60 hover:text-white"
                 }`}
               >
