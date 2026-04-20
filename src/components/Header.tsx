@@ -180,7 +180,7 @@ const Header = () => {
             ? "opacity-100 translate-y-0 pointer-events-auto"
             : "opacity-0 -translate-y-2 pointer-events-none"
         }`}
-        style={{ backgroundColor: "#0F162D" }}
+        
       >
         <div className="w-full">
           <div className="grid grid-cols-5">
