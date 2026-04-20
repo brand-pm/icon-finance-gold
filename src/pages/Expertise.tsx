@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Briefcase, Users, Globe, Building2, Heart, Shield } from "lucide-react";
+import { IndustryIcons } from "../components/icons/IndustryIcons";
 import Seo from "../components/Seo";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -69,7 +69,7 @@ const Industries = () => {
   const { t } = useTranslation();
   const ref = useScrollReveal();
   const items = t("expertise.industries.items", { returnObjects: true }) as Array<{ title: string; body: string }>;
-  const icons = [Briefcase, Users, Globe, Building2, Heart, Shield];
+  
   return (
     <section ref={ref} className="bg-navy section-padding">
       <div className="container-main">
@@ -80,10 +80,10 @@ const Industries = () => {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16">
           {items.map((it, i) => {
-            const Icon = icons[i] || Briefcase;
+            const Icon = IndustryIcons[i] || IndustryIcons[0];
             return (
               <div key={i} className="opacity-0 animate-fade-up" style={{ animationDelay: `${0.1 + i * 0.06}s` }}>
-                <Icon className="text-gold mb-6" size={36} strokeWidth={1.25} />
+                <Icon className="text-gold mb-6" size={44} />
                 <h3 className="text-white font-light mb-3" style={{ fontSize: "20px" }}>{it.title}</h3>
                 <div className="w-10 h-px bg-gold/50 mb-4" />
                 <p className="text-white/60 text-sm leading-relaxed">{it.body}</p>
