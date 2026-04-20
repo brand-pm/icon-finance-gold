@@ -488,7 +488,11 @@
       "blocks": [
         {
           "title": "Biuro",
-          "body": "Warszawa, Polska"
+          "body": "Warszawa, Polska\nul. Złota 59, 00-120 Warsaw, Poland\n15th Floor"
+        },
+        {
+          "title": "Telefon",
+          "body": "+48 22 000 00 00"
         },
         {
           "title": "Email",
