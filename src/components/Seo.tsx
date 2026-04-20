@@ -6,7 +6,60 @@ import { SUPPORTED_LANGUAGES, DEFAULT_LANGUAGE, type SupportedLanguage } from "@
 interface SeoProps {
   /** Key under `seo.pages` in the locale, e.g. "home", "wealthManagement". */
   pageKey: string;
+  /** Inject Organization + FinancialService JSON-LD (use on homepage). */
+  includeOrganizationSchema?: boolean;
 }
+
+const CANONICAL_ORIGIN = "https://iconfinance.io";
+
+const ORGANIZATION_SCHEMA = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${CANONICAL_ORIGIN}/#organization`,
+      name: "Icon Finance",
+      url: `${CANONICAL_ORIGIN}/`,
+      logo: {
+        "@type": "ImageObject",
+        url: `${CANONICAL_ORIGIN}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+      },
+      foundingDate: "2009",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Warsaw",
+        addressCountry: "PL",
+      },
+      areaServed: ["PL", "EU"],
+    },
+    {
+      "@type": "FinancialService",
+      "@id": `${CANONICAL_ORIGIN}/#service`,
+      name: "Icon Finance — Independent Wealth Management & Family Office",
+      description:
+        "Independent wealth management and family office advisory for entrepreneurs, families, and principals navigating complex financial lives across Europe.",
+      url: `${CANONICAL_ORIGIN}/`,
+      image: `${CANONICAL_ORIGIN}/og-image.jpg`,
+      priceRange: "$$$$",
+      parentOrganization: { "@id": `${CANONICAL_ORIGIN}/#organization` },
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Warsaw",
+        addressCountry: "PL",
+      },
+      areaServed: ["PL", "EU"],
+      serviceType: [
+        "Wealth Management",
+        "Family Office",
+        "Structuring & Tax Advisory",
+        "M&A Consulting",
+        "Special Solutions",
+      ],
+    },
+  ],
+};
 
 const SITE_ORIGIN =
   typeof window !== "undefined" && window.location?.origin
@@ -21,7 +74,7 @@ const HREFLANG: Record<SupportedLanguage, string> = {
   ru: "ru",
 };
 
-const Seo = ({ pageKey }: SeoProps) => {
+const Seo = ({ pageKey, includeOrganizationSchema = false }: SeoProps) => {
   const { t, i18n } = useTranslation();
   const { pathname } = useLocation();
 
@@ -75,6 +128,13 @@ const Seo = ({ pageKey }: SeoProps) => {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
+
+      {/* JSON-LD Organization + FinancialService (homepage only) */}
+      {includeOrganizationSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(ORGANIZATION_SCHEMA)}
+        </script>
+      )}
     </Helmet>
   );
 };
