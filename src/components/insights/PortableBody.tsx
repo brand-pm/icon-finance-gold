@@ -5,7 +5,9 @@ import { slugify } from "@/lib/sanity";
 const components: PortableTextComponents = {
   block: {
     h2: ({ children, value }) => {
-      const text = (value?.children ?? []).map((c: { text?: string }) => c.text ?? "").join("");
+      const text = ((value?.children ?? []) as Array<{ text?: string }>)
+        .map((c) => c.text ?? "")
+        .join("");
       const id = slugify(text);
       return (
         <h2
