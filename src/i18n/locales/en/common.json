@@ -1851,5 +1851,37 @@
     "primaryCta": "Return Home",
     "secondaryCta": "Contact Us",
     "pathLabel": "Requested path"
+  },
+  "cookieConsent": {
+    "eyebrow": "Privacy Preferences",
+    "title": "We value your privacy",
+    "intro": "We use cookies to ensure essential site functionality, analyse traffic and remember your preferences. You may accept all cookies, reject non-essential ones, or choose your preferences in detail.",
+    "policyLine": "For more information, see our",
+    "policyLink": "Cookie Policy",
+    "alwaysOn": "Always on",
+    "optional": "Optional",
+    "tabs": {
+      "consent": "Consent",
+      "details": "Details"
+    },
+    "categories": {
+      "essential": {
+        "title": "Essential",
+        "desc": "Required for the website to function correctly. These cookies cannot be disabled."
+      },
+      "analytics": {
+        "title": "Analytics",
+        "desc": "Help us understand how visitors interact with our website. Data is aggregated and anonymised."
+      },
+      "preferences": {
+        "title": "Preferences",
+        "desc": "Remember your language and interface choices for a better experience."
+      }
+    },
+    "actions": {
+      "acceptAll": "Accept all",
+      "reject": "Reject non-essential",
+      "save": "Save preferences"
+    }
   }
 }
