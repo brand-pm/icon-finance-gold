@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import heroBg from "../assets/hero-cubes.png";
+import heroBg from "../assets/hero-cubes.webp";
 
 const stats = [
   { value: 10, prefix: "$", suffix: "M", label: "under management" },
