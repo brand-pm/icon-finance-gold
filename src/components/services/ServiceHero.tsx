@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useLocalizedPath } from "@/i18n/useLocalizedPath";
 
 interface ServiceHeroProps {
   eyebrow: string;
@@ -8,7 +9,9 @@ interface ServiceHeroProps {
   imageAlt: string;
 }
 
-const ServiceHero = ({ eyebrow, title, description, image, imageAlt }: ServiceHeroProps) => (
+const ServiceHero = ({ eyebrow, title, description, image, imageAlt }: ServiceHeroProps) => {
+  const localize = useLocalizedPath();
+  return (
   <section className="relative bg-navy overflow-hidden pt-24 pb-12" style={{ minHeight: "35vh" }}>
     {/* Background image — stretched across right side */}
     <div className="absolute inset-0">
@@ -36,13 +39,14 @@ const ServiceHero = ({ eyebrow, title, description, image, imageAlt }: ServiceHe
           <p className="text-white/70 text-[15px] md:text-base max-w-lg mb-8 md:mb-10 leading-relaxed">
             {description}
           </p>
-          <Link to="/contact" className="btn-gold px-8 py-4 inline-block">
+          <Link to={localize("/contact")} className="btn-gold px-8 py-4 inline-block">
             Start a dialogue
           </Link>
         </div>
       </div>
     </div>
   </section>
-);
+  );
+};
 
 export default ServiceHero;
