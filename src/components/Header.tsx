@@ -244,21 +244,6 @@ const Header = () => {
             })}
           </div>
 
-          <div className="bg-[#0A0F1E] border-t border-gold/10">
-            <div className="container-main py-5 flex items-center justify-between flex-wrap gap-4">
-              <p className="text-[13px] text-white/60">
-                {t("megaMenu.tagline")} <span className="text-white">{t("megaMenu.talk")}</span>
-              </p>
-              <Link
-                to={localize("/contact")}
-                onClick={() => setMegaOpen(false)}
-                className="inline-flex items-center gap-2 px-7 py-3 rounded-md bg-gold text-[11px] uppercase tracking-[0.18em] font-semibold hover:bg-gold/90 transition-colors duration-300 text-destructive-foreground"
-              >
-                {t("nav.startDialogue")}
-                <ArrowRight size={14} />
-              </Link>
-            </div>
-          </div>
         </div>
       </div>
 
