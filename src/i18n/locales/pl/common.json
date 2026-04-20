@@ -1851,5 +1851,37 @@
     "primaryCta": "Powrót na stronę główną",
     "secondaryCta": "Skontaktuj się z nami",
     "pathLabel": "Żądana ścieżka"
+  },
+  "cookieConsent": {
+    "eyebrow": "Preferencje prywatności",
+    "title": "Cenimy Twoją prywatność",
+    "intro": "Używamy plików cookie, aby zapewnić prawidłowe działanie strony, analizować ruch i zapamiętywać Twoje preferencje. Możesz zaakceptować wszystkie, odrzucić zbędne lub dostosować wybór.",
+    "policyLine": "Więcej informacji znajdziesz w naszej",
+    "policyLink": "Polityce plików cookie",
+    "alwaysOn": "Zawsze wł.",
+    "optional": "Opcjonalne",
+    "tabs": {
+      "consent": "Zgoda",
+      "details": "Szczegóły"
+    },
+    "categories": {
+      "essential": {
+        "title": "Niezbędne",
+        "desc": "Wymagane do prawidłowego działania strony. Tych plików cookie nie można wyłączyć."
+      },
+      "analytics": {
+        "title": "Analityczne",
+        "desc": "Pomagają nam zrozumieć, jak użytkownicy korzystają ze strony. Dane są zagregowane i anonimowe."
+      },
+      "preferences": {
+        "title": "Preferencje",
+        "desc": "Zapamiętują wybrany język i ustawienia interfejsu dla lepszego komfortu."
+      }
+    },
+    "actions": {
+      "acceptAll": "Akceptuj wszystkie",
+      "reject": "Odrzuć opcjonalne",
+      "save": "Zapisz preferencje"
+    }
   }
 }
