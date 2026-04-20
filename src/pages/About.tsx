@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ServiceHero from "../components/services/ServiceHero";
@@ -8,146 +9,66 @@ import TeamSection from "../components/about/TeamSection";
 import aboutSymbol from "../assets/about-symbol.png";
 import teamPlaceholder from "../assets/team-placeholder.jpg";
 
-const About = () => (
-  <div className="min-h-screen">
-    <Header />
+const About = () => {
+  const { t } = useTranslation();
+  const philosophyItems = t("about.philosophy.items", { returnObjects: true }) as Array<{ title: string; description: string }>;
+  const storySteps = t("about.story.steps", { returnObjects: true }) as Array<{ title: string; timeline: string; result: string; activities: string[] }>;
+  const teamMembers = t("about.team.members", { returnObjects: true }) as Array<{ role: string; name: string; bio: string }>;
 
-    <ServiceHero
-      eyebrow="About Icon Finance"
-      title="About Icon Finance"
-      description="We are an independent wealth management and family office advisory firm, built for clients who expect more than a product — and deserve more than a bank."
-      image={aboutSymbol}
-      imageAlt="Icon Finance — independent wealth management"
-    />
+  return (
+    <div className="min-h-screen">
+      <Header />
 
-    <Philosophy
-      sectionTitle="What We Believe"
-      subtitle="Three principles guide every relationship, every recommendation, and every decision we make on your behalf."
-      items={[
-        {
-          number: "01",
-          title: "Client Interests Above All",
-          description:
-            "We act as fiduciaries — always. Our independence from banks, funds, and product providers means every recommendation we make is driven by your goals alone.",
-        },
-        {
-          number: "02",
-          title: "Long-Term Relationships",
-          description:
-            "We measure our success in decades, not transactions. Our clients stay with us because we earn that relationship every year — not because they are locked in.",
-        },
-        {
-          number: "03",
-          title: "Confidentiality and Trust",
-          description:
-            "Your affairs are yours. We treat client information with absolute discretion — as a professional obligation and a personal one.",
-        },
-      ]}
-    />
+      <ServiceHero
+        eyebrow={t("about.hero.eyebrow")}
+        title={t("about.hero.title")}
+        description={t("about.hero.description")}
+        image={aboutSymbol}
+        imageAlt={t("about.hero.imageAlt")}
+      />
 
-    <PortfolioManagement
-      title={"Built Over Time.\nRefined by Experience."}
-      description="From a small Warsaw practice to an independent multi-disciplinary firm — every chapter of our story has been shaped by client needs."
-      steps={[
-        {
-          number: "1",
-          title: "Foundation",
-          timeline: "2009",
-          result: "Independent advice, no conflicts of interest",
-          activities: [
-            "Established in Warsaw",
-            "Founders from private banking and asset management",
-            "Clear mandate from day one",
-          ],
-        },
-        {
-          number: "2",
-          title: "Family Office Practice",
-          timeline: "2013",
-          result: "Dedicated multi-generational practice",
-          activities: [
-            "Coordinated investments",
-            "Governance frameworks",
-            "Succession planning under one roof",
-          ],
-        },
-        {
-          number: "3",
-          title: "Structuring & Tax Expertise",
-          timeline: "2017",
-          result: "International wealth structuring capability",
-          activities: [
-            "Cross-border tax planning",
-            "Holding and trust structures",
-            "Response to client complexity",
-          ],
-        },
-        {
-          number: "4",
-          title: "Corporate Advisory",
-          timeline: "2021",
-          result: "Full lifecycle support for entrepreneurs",
-          activities: [
-            "M&A advisory added",
-            "Capital raising and exit support",
-            "Personal and business wealth aligned",
-          ],
-        },
-        {
-          number: "5",
-          title: "Icon Finance",
-          timeline: "Today",
-          result: "Independent multi-disciplinary advisory firm",
-          activities: [
-            "Entrepreneurs, families, business owners",
-            "Clients across Europe",
-            "Headquartered in Warsaw",
-          ],
-        },
-      ]}
-    />
+      <Philosophy
+        sectionTitle={t("about.philosophy.title")}
+        subtitle={t("about.philosophy.subtitle")}
+        items={philosophyItems.map((item, idx) => ({
+          number: String(idx + 1).padStart(2, "0"),
+          title: item.title,
+          description: item.description,
+        }))}
+      />
 
-    <TeamSection
-      title="Meet the Team"
-      members={[
-        {
-          role: "Founder",
-          name: "Oleg Zabolotnyi",
-          bio: "Founder of Icon Finance with a background in private banking and investment advisory. Oleg built the firm around a single principle: independent advice that serves clients — not institutions.",
+      <PortfolioManagement
+        title={t("about.story.title")}
+        description={t("about.story.description")}
+        steps={storySteps.map((s, idx) => ({
+          number: String(idx + 1),
+          title: s.title,
+          timeline: s.timeline,
+          result: s.result,
+          activities: s.activities,
+        }))}
+      />
+
+      <TeamSection
+        eyebrow={t("about.team.eyebrow")}
+        title={t("about.team.title")}
+        members={teamMembers.map((m) => ({
+          role: m.role,
+          name: m.name,
+          bio: m.bio,
           image: teamPlaceholder,
           linkedin: "#",
-        },
-        {
-          role: "Chief Executive Officer",
-          name: "Yurii Labenko",
-          bio: "Yurii leads the firm's operations and client strategy. His experience spans investment management and financial advisory across Central and Eastern European markets.",
-          image: teamPlaceholder,
-          linkedin: "#",
-        },
-        {
-          role: "Chief Business Development Officer",
-          name: "Ksenia Romanchuk",
-          bio: "Ksenia drives the firm's growth and partnership strategy. She brings deep expertise in building institutional-grade client relationships across private wealth markets.",
-          image: teamPlaceholder,
-          linkedin: "#",
-        },
-        {
-          role: "Partnership Development Manager",
-          name: "Maksym Sydorov",
-          bio: "Maksym develops and manages Icon Finance's partner network — connecting clients with the right specialists across legal, tax, and investment disciplines.",
-          image: teamPlaceholder,
-          linkedin: "#",
-        },
-      ]}
-    />
+        }))}
+      />
 
-    <ServiceCTA
-      title="Start a Confidential Conversation"
-      description="Arrange a private consultation with our team. We will listen to your situation first — and only propose a path forward if we are confident we can add meaningful value."
-    />
+      <ServiceCTA
+        title={t("about.cta.title")}
+        description={t("about.cta.description")}
+      />
 
-    <Footer />
-  </div>
-);
+      <Footer />
+    </div>
+  );
+};
 
 export default About;

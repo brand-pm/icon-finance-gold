@@ -5,7 +5,7 @@
     "insights": "Analizy",
     "about": "O nas",
     "contact": "Kontakt",
-    "startDialogue": "Rozpocznij rozmowę",
+    "startDialogue": "Rozpocznij dialog",
     "menu": "Menu"
   },
   "services": {
@@ -15,7 +15,7 @@
     },
     "familyOffice": {
       "title": "Family Office",
-      "description": "Kompleksowa organizacja i obsługa family office"
+      "description": "Kompleksowe projektowanie i prowadzenie family office"
     },
     "structuringTax": {
       "title": "Strukturyzacja i podatki",
@@ -23,27 +23,27 @@
     },
     "maConsulting": {
       "title": "Doradztwo M&A",
-      "description": "Doradztwo korporacyjne w zakresie akwizycji, wyjść i pozyskiwania kapitału"
+      "description": "Doradztwo korporacyjne w zakresie akwizycji, exitów i pozyskiwania kapitału"
     },
     "specialSolutions": {
       "title": "Rozwiązania specjalne",
-      "description": "Indywidualne rozwiązania dla unikatowych aktywów i złożonych sytuacji"
+      "description": "Indywidualne rozwiązania dla unikalnych aktywów i złożonych sytuacji"
     }
   },
   "megaMenu": {
-    "explore": "Poznaj",
+    "explore": "Odkryj",
     "tagline": "Nie wiesz, od czego zacząć?",
     "talk": "Porozmawiajmy."
   },
   "hero": {
     "eyebrow": "Zarządzanie majątkiem",
     "title": "Ochrona i pomnażanie majątku przez pokolenia",
-    "subtitle": "Kompleksowe zarządzanie majątkiem dla rodzin i przedsiębiorców z międzynarodowym doświadczeniem i indywidualnym podejściem",
-    "ctaPrimary": "Rozpocznij rozmowę",
+    "subtitle": "Kompleksowe zarządzanie majątkiem dla rodzin i przedsiębiorców z międzynarodową ekspertyzą i indywidualnym podejściem",
+    "ctaPrimary": "Rozpocznij dialog",
     "ctaSecondary": "Nasza ekspertyza",
     "stats": {
       "aum": "w zarządzaniu",
-      "clients": "klientów rodzinnych",
+      "clients": "rodzin klientów",
       "experience": "lat doświadczenia",
       "jurisdictions": "jurysdykcji"
     }
@@ -51,55 +51,55 @@
   "servicesSection": {
     "eyebrow": "Nasze usługi",
     "title": "Kompleksowe rozwiązania dla Twojego kapitału",
-    "subtitle": "Indywidualne podejście do zarządzania majątkiem, dopasowane do Twoich celów i międzynarodowych możliwości",
+    "subtitle": "Indywidualne podejście do zarządzania majątkiem, odzwierciedlające Twoje cele i międzynarodowe możliwości",
     "learnMore": "Dowiedz się więcej",
     "tabs": {
       "wealthManagement": {
         "name": "Zarządzanie majątkiem",
-        "title": "Holistyczne rozwiązania ochrony i wzrostu majątku",
-        "desc": "Stawiamy na długoterminowe partnerstwo i wspólny rozwój, oferując dopasowane strategie finansowe odpowiadające zmieniającym się potrzebom klientów.",
+        "title": "Holistyczne rozwiązania ochrony i pomnażania majątku",
+        "desc": "Koncentrujemy się na długoterminowych partnerstwach i wspólnym rozwoju, oferując dostosowane strategie finansowe odpowiadające zmieniającym się potrzebom klientów.",
         "items": ["Zarządzanie portfelem", "Strategie inwestycyjne", "Aktywa alternatywne"],
         "alt": "Symbol nieskończoności — ochrona majątku przez pokolenia"
       },
       "familyOffice": {
         "name": "Family Office",
-        "title": "Pełna obsługa family office i ład rodzinny",
-        "desc": "Kompleksowe zarządzanie majątkiem rodzinnym, struktury ładu i planowanie sukcesji przez pokolenia.",
+        "title": "Kompleksowe usługi family office i ład rodzinny",
+        "desc": "Pełne zarządzanie aktywami rodzinnymi, strukturami zarządzania i planowaniem sukcesji przez pokolenia.",
         "items": ["Ład rodzinny", "Planowanie sukcesji", "Doradztwo filantropijne"],
-        "alt": "Drzewo rodzinne — wielopokoleniowa opieka nad majątkiem"
+        "alt": "Drzewo genealogiczne — wielopokoleniowe zarządzanie majątkiem"
       },
       "structuringTax": {
         "name": "Strukturyzacja i podatki",
         "title": "Efektywna strukturyzacja majątku i optymalizacja podatkowa",
-        "desc": "Międzynarodowe planowanie podatkowe i strukturyzacja prawna w celu ochrony i optymalizacji majątku w wielu jurysdykcjach.",
+        "desc": "Międzynarodowe planowanie podatkowe i strukturyzacja prawna chroniąca i optymalizująca majątek w wielu jurysdykcjach.",
         "items": ["Optymalizacja podatkowa", "Strukturyzacja prawna", "Doradztwo compliance"],
-        "alt": "Tarcza z wagą — ochrona prawna i równowaga"
+        "alt": "Tarcza z wagami — ochrona prawna i równowaga"
       },
       "maConsulting": {
         "name": "Doradztwo M&A",
         "title": "Strategiczne doradztwo korporacyjne i M&A",
-        "desc": "Eksperckie wsparcie w transakcjach M&A, strategiach wyjścia, pozyskiwaniu kapitału i restrukturyzacji.",
-        "items": ["Doradztwo M&A", "Strategie wyjścia", "Pozyskiwanie kapitału"],
-        "alt": "Klasyczna kolumna — siła i fundament korporacji"
+        "desc": "Profesjonalne wsparcie w transakcjach M&A, strategiach exit, pozyskiwaniu kapitału i restrukturyzacji korporacyjnej.",
+        "items": ["Doradztwo M&A", "Strategie exit", "Pozyskiwanie kapitału"],
+        "alt": "Klasyczna kolumna — siła i fundament korporacyjny"
       },
       "specialSolutions": {
         "name": "Rozwiązania specjalne",
-        "title": "Indywidualne rozwiązania dla wyjątkowych potrzeb",
-        "desc": "Rozwiązania szyte na miarę dla złożonych sytuacji, wymagających kreatywnego podejścia.",
-        "items": ["Sztuka i kolekcje", "Doradztwo nieruchomości", "Zarządzanie stylem życia"],
-        "alt": "Diament — luksusowe rozwiązania na miarę"
+        "title": "Indywidualne rozwiązania dla unikalnych potrzeb",
+        "desc": "Dedykowane rozwiązania dla złożonych sytuacji wymagających innowacyjnego i kreatywnego podejścia.",
+        "items": ["Sztuka i kolekcje", "Doradztwo nieruchomości", "Lifestyle management"],
+        "alt": "Diament — luksusowe rozwiązania szyte na miarę"
       }
     }
   },
   "homeProcess": {
     "title": "Jak pracujemy\nz klientami",
-    "description": "Każdy etap dopasowujemy do Twojej rodziny, aktywów i jurysdykcji",
-    "cta": "Rozpocznij rozmowę",
+    "description": "Każdy etap dostosowany do Twojej rodziny, aktywów i jurysdykcji",
+    "cta": "Rozpocznij dialog",
     "steps": {
       "s1": {
         "title": "Wprowadzenie\ni analiza",
         "timeline": "1–2 tygodnie",
-        "activity": "Analizujemy Twoją sytuację, cele i aktualną strukturę aktywów"
+        "activity": "Badamy Twoją sytuację, cele i obecną strukturę aktywów"
       },
       "s2": {
         "title": "Opracowanie strategii\ni planowanie",
@@ -109,42 +109,42 @@
       "s3": {
         "title": "Wdrożenie\nrozwiązań",
         "timeline": "4–8 tygodni",
-        "activity": "Realizujemy uzgodnioną strategię i strukturyzujemy aktywa"
+        "activity": "Wdrażamy ustaloną strategię i strukturyzujemy aktywa"
       },
       "s4": {
         "title": "Zarządzanie\ni kontrola",
-        "timeline": "Stale",
+        "timeline": "Ciągłe",
         "activity": "Zapewniamy ciągłe wsparcie i optymalizację"
       }
     }
   },
   "whyUs": {
     "eyebrow": "Dlaczego Icon Finance",
-    "title": "Twój zaufany partner w zarządzaniu majątkiem",
-    "subtitle": "Łączymy międzynarodową ekspertyzę wiodących instytucji finansowych z indywidualnym podejściem family office. Nasz zespół zapewnia pełne wsparcie na wszystkich etapach zarządzania Twoim majątkiem",
+    "title": "Zaufany partner w zarządzaniu majątkiem",
+    "subtitle": "Łączymy międzynarodową ekspertyzę wiodących instytucji finansowych z indywidualnym podejściem family office. Nasz zespół zapewnia kompleksowe wsparcie na każdym etapie zarządzania majątkiem",
     "cards": {
-      "c1": { "title": "Poufność", "desc": "Pełna ochrona informacji i aktywów klientów" },
-      "c2": { "title": "Globalna ekspertyza", "desc": "Działamy w ponad 5 jurysdykcjach z międzynarodowymi partnerami" },
-      "c3": { "title": "Indywidualne podejście", "desc": "Rozwiązania szyte na miarę potrzeb rodziny" },
-      "c4": { "title": "Transparentność", "desc": "Szczegółowe raportowanie i monitoring wszystkich aktywów" }
+      "c1": { "title": "Poufność", "desc": "Absolutna ochrona informacji i aktywów klienta" },
+      "c2": { "title": "Globalna ekspertyza", "desc": "Działalność w 5+ jurysdykcjach z międzynarodowymi partnerami" },
+      "c3": { "title": "Indywidualne podejście", "desc": "Rozwiązania dostosowane do potrzeb każdej rodziny" },
+      "c4": { "title": "Transparentność", "desc": "Szczegółowa sprawozdawczość i monitoring wszystkich aktywów" }
     }
   },
   "insightsTeaser": {
     "eyebrow": "Aktualne tematy",
-    "title": "Analizy i aktualności",
+    "title": "Analizy i wiadomości",
     "showMore": "Pokaż więcej",
     "minRead": "min czytania",
     "articles": {
       "a1": {
         "category": "Perspektywa Family Office",
-        "title": "Raport Goldman Sachs Family Office Investment Insights — adaptacja do warunków rynkowych"
+        "title": "Raport Goldman Sachs Family Office Investment Insights — Adapting to the Terrain"
       },
       "a2": {
         "category": "Briefingi prywatne",
-        "title": "Wszedł w życie One Big Beautiful Bill Act..."
+        "title": "Uchwalono One Big Beautiful Bill Act..."
       },
       "a3": {
-        "category": "Analizy strategiczne",
+        "category": "Strategiczne analizy",
         "title": "Analizy kwartalne"
       }
     }
@@ -153,11 +153,11 @@
     "eyebrow": "Formularz kontaktowy",
     "title": "Zacznij zarządzać swoim majątkiem już dziś",
     "subtitle": "Odpowiadamy osobiście w ciągu 24 godzin. Bez call center, bez pośredników.",
-    "formTitle": "Wyślij wiadomość",
+    "formTitle": "Wyślij nam wiadomość",
     "formSubtitle": "Zostaw zapytanie, a nasz ekspert skontaktuje się w ciągu 24 godzin.",
     "firstName": "Imię",
     "lastName": "Nazwisko",
-    "email": "E-mail służbowy",
+    "email": "Email służbowy",
     "subject": "Temat",
     "send": "Wyślij",
     "subjects": {
@@ -170,17 +170,190 @@
     }
   },
   "footer": {
-    "tagline": "Niezależne zarządzanie majątkiem i usługi family office dla przedsiębiorców i rodzin z międzynarodowym majątkiem.",
+    "tagline": "Niezależne usługi zarządzania majątkiem i family office dla przedsiębiorców i rodzin z międzynarodowym majątkiem.",
     "navigate": "Nawigacja",
     "services": "Usługi",
     "contact": "Kontakt",
-    "legal": "Informacje prawne",
+    "legal": "Prawne",
     "privacy": "Polityka prywatności",
     "terms": "Regulamin",
-    "cookies": "Pliki cookies",
+    "cookies": "Cookies",
     "rights": "Wszelkie prawa zastrzeżone.",
     "office": "Biuro",
-    "email": "E-mail",
+    "email": "Email",
     "phone": "Telefon"
+  },
+  "common": {
+    "placeholderFirstName": "Wpisz swoje imię",
+    "placeholderLastName": "Wpisz swoje nazwisko",
+    "placeholderEmail": "example@email.com",
+    "selectSubject": "Wybierz temat"
+  },
+  "serviceCTA": {
+    "eyebrow": "Skontaktuj się",
+    "formTitle": "Wyślij nam wiadomość",
+    "formSubtitle": "Zostaw zapytanie, a nasz ekspert skontaktuje się w ciągu 24 godzin.",
+    "firstName": "Imię",
+    "lastName": "Nazwisko",
+    "email": "Email służbowy",
+    "subject": "Temat",
+    "send": "Wyślij"
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "O Icon Finance",
+      "title": "O Icon Finance",
+      "description": "Jesteśmy niezależną firmą doradczą zarządzania majątkiem i family office, stworzoną dla klientów oczekujących więcej niż produktu — i zasługujących na więcej niż bank.",
+      "imageAlt": "Icon Finance — niezależne zarządzanie majątkiem"
+    },
+    "philosophy": {
+      "title": "W co wierzymy",
+      "subtitle": "Trzy zasady kierują każdą relacją, każdą rekomendacją i każdą decyzją, którą podejmujemy w Twoim imieniu.",
+      "items": [
+        { "title": "Interes klienta przede wszystkim", "description": "Zawsze działamy jak powiernicy. Nasza niezależność od banków, funduszy i dostawców produktów oznacza, że każda nasza rekomendacja kierowana jest wyłącznie Twoimi celami." },
+        { "title": "Długoterminowe relacje", "description": "Mierzymy nasz sukces dekadami, nie transakcjami. Klienci zostają z nami, ponieważ zasługujemy na tę relację każdego roku — nie dlatego, że są związani umową." },
+        { "title": "Poufność i zaufanie", "description": "Twoje sprawy należą do Ciebie. Traktujemy informacje klienta z absolutną dyskrecją — jako obowiązek zawodowy i osobisty." }
+      ]
+    },
+    "story": {
+      "title": "Zbudowane w czasie.\nUdoskonalone doświadczeniem.",
+      "description": "Od małej praktyki w Warszawie do niezależnej, multidyscyplinarnej firmy — każdy rozdział naszej historii kształtowały potrzeby klientów.",
+      "steps": [
+        { "title": "Założenie", "timeline": "2009", "result": "Niezależne doradztwo, brak konfliktu interesów", "activities": ["Powstanie w Warszawie", "Założyciele z bankowości prywatnej i zarządzania aktywami", "Jasny mandat od pierwszego dnia"] },
+        { "title": "Praktyka Family Office", "timeline": "2013", "result": "Dedykowana praktyka wielopokoleniowa", "activities": ["Skoordynowane inwestycje", "Ramy ładu", "Planowanie sukcesji pod jednym dachem"] },
+        { "title": "Strukturyzacja i podatki", "timeline": "2017", "result": "Międzynarodowa zdolność strukturyzowania majątku", "activities": ["Międzynarodowe planowanie podatkowe", "Struktury holdingowe i powiernicze", "Odpowiedź na złożoność klientów"] },
+        { "title": "Doradztwo korporacyjne", "timeline": "2021", "result": "Pełne wsparcie cyklu życia dla przedsiębiorców", "activities": ["Doradztwo M&A", "Pozyskiwanie kapitału i wsparcie exit", "Spójność majątku osobistego i biznesowego"] },
+        { "title": "Icon Finance", "timeline": "Dziś", "result": "Niezależna multidyscyplinarna firma doradcza", "activities": ["Przedsiębiorcy, rodziny, właściciele firm", "Klienci w całej Europie", "Siedziba w Warszawie"] }
+      ]
+    },
+    "team": {
+      "eyebrow": "Nasz zespół",
+      "title": "Poznaj zespół",
+      "members": [
+        { "role": "Założyciel", "name": "Oleg Zabolotnyi", "bio": "Założyciel Icon Finance z doświadczeniem w bankowości prywatnej i doradztwie inwestycyjnym. Oleg zbudował firmę wokół jednej zasady: niezależnego doradztwa służącego klientom, nie instytucjom." },
+        { "role": "Dyrektor generalny", "name": "Yurii Labenko", "bio": "Yurii kieruje operacjami firmy i strategią klienta. Jego doświadczenie obejmuje zarządzanie inwestycjami i doradztwo finansowe na rynkach Europy Środkowo-Wschodniej." },
+        { "role": "Dyrektor ds. rozwoju biznesu", "name": "Ksenia Romanchuk", "bio": "Ksenia napędza rozwój firmy i strategię partnerstw. Wnosi głęboką wiedzę w budowaniu relacji klienckich klasy instytucjonalnej na rynkach private wealth." },
+        { "role": "Manager ds. rozwoju partnerstw", "name": "Maksym Sydorov", "bio": "Maksym rozwija i zarządza siecią partnerów Icon Finance — łącząc klientów z odpowiednimi specjalistami w dziedzinie prawa, podatków i inwestycji." }
+      ]
+    },
+    "cta": {
+      "title": "Rozpocznij poufną rozmowę",
+      "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Twojej sytuacji — i zaproponujemy drogę naprzód tylko wtedy, gdy będziemy pewni, że możemy wnieść istotną wartość."
+    }
+  },
+  "expertise": {
+    "hero": {
+      "eyebrow": "Ekspertyza",
+      "title": "Dziesięciolecia doświadczenia.\nJeden zintegrowany zespół.",
+      "description": "Łączymy specjalistów z zakresu zarządzania majątkiem, family office, strukturyzacji, podatków i doradztwa korporacyjnego — pracując jako jeden zespół wokół całego życia finansowego każdego klienta.",
+      "cta": "Rozpocznij dialog"
+    },
+    "competencies": {
+      "eyebrow": "Nasze kompetencje",
+      "title": "Co robimy",
+      "items": [
+        { "title": "Zarządzanie majątkiem", "body": "Niezależne zarządzanie inwestycjami i doradztwo portfelowe dla przedsiębiorców i rodzin. Bez prowizji produktowych. Bez kwot instytucjonalnych. Tylko doradztwo zgodne z Twoimi celami." },
+        { "title": "Family Office", "body": "Projektujemy i prowadzimy struktury family office dla rodzin wielopokoleniowych — koordynując inwestycje, ład, sukcesję i raportowanie z jednego punktu." },
+        { "title": "Strukturyzacja i podatki", "body": "Międzynarodowa strukturyzacja majątku i planowanie podatkowe w wielu jurysdykcjach — w celu ochrony aktywów, zmniejszenia obciążeń podatkowych i pełnej zgodności prawnej." },
+        { "title": "Doradztwo korporacyjne", "body": "Doradztwo M&A, planowanie exit, pozyskiwanie kapitału i due diligence dla właścicieli firm — od wczesnego rozwoju po finalne zamknięcie transakcji." }
+      ]
+    },
+    "industries": {
+      "eyebrow": "Branże, które obsługujemy",
+      "title": "Z kim pracujemy",
+      "items": [
+        { "title": "Przedsiębiorcy i założyciele", "body": "Właściciele firm na styku majątku osobistego i korporacyjnego, na każdym etapie wzrostu." },
+        { "title": "Rodziny wielopokoleniowe", "body": "Rodziny zarządzające majątkiem przez dwa lub trzy pokolenia ze złożonymi potrzebami ładu i sukcesji." },
+        { "title": "Klienci międzynarodowi", "body": "Osoby i rodziny z aktywami, rezydencją i interesami rozsianymi po wielu jurysdykcjach." },
+        { "title": "Klienci po exicie", "body": "Założyciele i menedżerowie po zdarzeniu płynnościowym, którzy potrzebują zdyscyplinowanego rozmieszczenia i ochrony kapitału." },
+        { "title": "Filantropi", "body": "Rodziny i osoby pragnące lokować kapitał dla trwałego wpływu poprzez ustrukturyzowaną dobroczynność." },
+        { "title": "Korporacje i instytucje", "body": "Spółki i firmy rodzinne wymagające niezależnego doradztwa M&A, kapitałowego i restrukturyzacyjnego." }
+      ]
+    },
+    "international": {
+      "eyebrow": "Doświadczenie międzynarodowe",
+      "title": "Gdzie działamy",
+      "description": "Życie naszych klientów nie kończy się na jednej granicy — i nasza ekspertyza również. Koordynujemy działania w różnych jurysdykcjach, strefach czasowych i ramach regulacyjnych, aby zapewnić klientom spójny obraz ich międzynarodowego majątku.",
+      "items": [
+        { "name": "Polska", "desc": "Główna siedziba i baza regulacyjna" },
+        { "name": "Unia Europejska", "desc": "Strukturyzacja transgraniczna i compliance" },
+        { "name": "ZEA / Dubaj", "desc": "Struktury holdingowe i planowanie rezydencji" },
+        { "name": "Cypr i Malta", "desc": "Wehikuły planowania podatkowego w UE" },
+        { "name": "Luksemburg", "desc": "Struktury funduszowe i holdingowe rodzin" },
+        { "name": "BVI i Kajmany", "desc": "Międzynarodowe wehikuły holdingowe" }
+      ]
+    },
+    "stats": [
+      { "n": "15+", "label": "Lat w zarządzaniu majątkiem" },
+      { "n": "4", "label": "Główne dyscypliny usług" },
+      { "n": "6+", "label": "Obsługiwane jurysdykcje" },
+      { "n": "4", "label": "Języki" }
+    ],
+    "cta": {
+      "title": "Rozpocznij poufną rozmowę",
+      "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Twojej sytuacji — i zaproponujemy drogę naprzód tylko wtedy, gdy będziemy pewni, że możemy wnieść istotną wartość."
+    }
+  },
+  "insights": {
+    "hero": {
+      "eyebrow": "Analizy i komentarze",
+      "title": "Perspektywy dotyczące majątku, rynków i strategii",
+      "description": "Eksperckie komentarze zespołu Icon Finance na temat rynków, strukturyzacji, family office oraz sił kształtujących prywatne majątki."
+    },
+    "categories": {
+      "all": "Wszystkie",
+      "wealth": "Zarządzanie majątkiem",
+      "family": "Family Office",
+      "structuring": "Strukturyzacja i podatki",
+      "ma": "M&A i korporacyjne",
+      "special": "Rozwiązania specjalne"
+    },
+    "ctaSection": {
+      "title": "Chcesz otrzymywać nasze analizy bezpośrednio?",
+      "description": "Publikujemy perspektywy rynkowe i eksperckie komentarze dla klientów i subskrybentów. Skontaktuj się, aby zostać dodanym do naszej listy dystrybucyjnej.",
+      "button": "Skontaktuj się"
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "eyebrow": "Kontakt",
+      "title": "Rozpocznij poufną rozmowę",
+      "description": "Najpierw słuchamy. Proponujemy drogę naprzód tylko wtedy, gdy jesteśmy pewni, że możemy wnieść istotną wartość do Twojej sytuacji."
+    },
+    "details": {
+      "eyebrow": "Skontaktuj się",
+      "title": "Jak się z nami skontaktować",
+      "blocks": [
+        { "title": "Biuro", "body": "Warszawa, Polska" },
+        { "title": "Email", "body": "info@iconfinance.io" },
+        { "title": "Czas odpowiedzi", "body": "Odpowiadamy na wszystkie zapytania w ciągu 24 godzin." },
+        { "title": "Poufność", "body": "Wszystkie udostępnione informacje traktujemy z najwyższą dyskrecją zawodową. NDA na życzenie." }
+      ]
+    },
+    "form": {
+      "title": "Wyślij nam wiadomość",
+      "subtitle": "Zostaw zapytanie, a nasz ekspert skontaktuje się w ciągu 24 godzin.",
+      "firstName": "Imię",
+      "lastName": "Nazwisko",
+      "email": "Email służbowy",
+      "subject": "Temat",
+      "message": "Wiadomość",
+      "messagePlaceholder": "Opisz swoją sytuację — aktywa, cele, harmonogram lub cokolwiek istotnego.",
+      "submit": "Wyślij zapytanie",
+      "footnote": "Odpowiadamy w ciągu 24 godzin. Wszystkie informacje są ściśle poufne.",
+      "errors": {
+        "firstName": "Imię jest wymagane",
+        "lastName": "Nazwisko jest wymagane",
+        "email": "Wprowadź poprawny email",
+        "subject": "Wybierz temat",
+        "message": "Dodaj nieco więcej szczegółów"
+      },
+      "success": "Wiadomość wysłana. Odpowiemy w ciągu 24 godzin."
+    },
+    "bottomCTA": {
+      "title": "Nie wiesz, od czego zacząć?",
+      "description": "Wielu naszych klientów przychodzi do nas bez konkretnego briefu — z poczuciem, że ich obecna sytuacja mogłaby być lepiej zarządzana. To doskonały punkt wyjścia.",
+      "button": "Wyślij nam wiadomość"
+    }
   }
 }

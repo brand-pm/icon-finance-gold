@@ -182,5 +182,178 @@
     "office": "Office",
     "email": "Email",
     "phone": "Phone"
+  },
+  "common": {
+    "placeholderFirstName": "Enter your name",
+    "placeholderLastName": "Enter your name",
+    "placeholderEmail": "example@email.com",
+    "selectSubject": "Select a subject"
+  },
+  "serviceCTA": {
+    "eyebrow": "Get in Touch",
+    "formTitle": "Send Us a Message",
+    "formSubtitle": "Leave an inquiry and our expert will contact you within 24 hours.",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Work email",
+    "subject": "Subject",
+    "send": "Send"
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "About Icon Finance",
+      "title": "About Icon Finance",
+      "description": "We are an independent wealth management and family office advisory firm, built for clients who expect more than a product — and deserve more than a bank.",
+      "imageAlt": "Icon Finance — independent wealth management"
+    },
+    "philosophy": {
+      "title": "What We Believe",
+      "subtitle": "Three principles guide every relationship, every recommendation, and every decision we make on your behalf.",
+      "items": [
+        { "title": "Client Interests Above All", "description": "We act as fiduciaries — always. Our independence from banks, funds, and product providers means every recommendation we make is driven by your goals alone." },
+        { "title": "Long-Term Relationships", "description": "We measure our success in decades, not transactions. Our clients stay with us because we earn that relationship every year — not because they are locked in." },
+        { "title": "Confidentiality and Trust", "description": "Your affairs are yours. We treat client information with absolute discretion — as a professional obligation and a personal one." }
+      ]
+    },
+    "story": {
+      "title": "Built Over Time.\nRefined by Experience.",
+      "description": "From a small Warsaw practice to an independent multi-disciplinary firm — every chapter of our story has been shaped by client needs.",
+      "steps": [
+        { "title": "Foundation", "timeline": "2009", "result": "Independent advice, no conflicts of interest", "activities": ["Established in Warsaw", "Founders from private banking and asset management", "Clear mandate from day one"] },
+        { "title": "Family Office Practice", "timeline": "2013", "result": "Dedicated multi-generational practice", "activities": ["Coordinated investments", "Governance frameworks", "Succession planning under one roof"] },
+        { "title": "Structuring & Tax Expertise", "timeline": "2017", "result": "International wealth structuring capability", "activities": ["Cross-border tax planning", "Holding and trust structures", "Response to client complexity"] },
+        { "title": "Corporate Advisory", "timeline": "2021", "result": "Full lifecycle support for entrepreneurs", "activities": ["M&A advisory added", "Capital raising and exit support", "Personal and business wealth aligned"] },
+        { "title": "Icon Finance", "timeline": "Today", "result": "Independent multi-disciplinary advisory firm", "activities": ["Entrepreneurs, families, business owners", "Clients across Europe", "Headquartered in Warsaw"] }
+      ]
+    },
+    "team": {
+      "eyebrow": "Our Team",
+      "title": "Meet the Team",
+      "members": [
+        { "role": "Founder", "name": "Oleg Zabolotnyi", "bio": "Founder of Icon Finance with a background in private banking and investment advisory. Oleg built the firm around a single principle: independent advice that serves clients — not institutions." },
+        { "role": "Chief Executive Officer", "name": "Yurii Labenko", "bio": "Yurii leads the firm's operations and client strategy. His experience spans investment management and financial advisory across Central and Eastern European markets." },
+        { "role": "Chief Business Development Officer", "name": "Ksenia Romanchuk", "bio": "Ksenia drives the firm's growth and partnership strategy. She brings deep expertise in building institutional-grade client relationships across private wealth markets." },
+        { "role": "Partnership Development Manager", "name": "Maksym Sydorov", "bio": "Maksym develops and manages Icon Finance's partner network — connecting clients with the right specialists across legal, tax, and investment disciplines." }
+      ]
+    },
+    "cta": {
+      "title": "Start a Confidential Conversation",
+      "description": "Arrange a private consultation with our team. We will listen to your situation first — and only propose a path forward if we are confident we can add meaningful value."
+    }
+  },
+  "expertise": {
+    "hero": {
+      "eyebrow": "Expertise",
+      "title": "Decades of Experience.\nOne Integrated Team.",
+      "description": "We bring together specialists in wealth management, family office, structuring, tax, and corporate advisory — working as one team around each client's complete financial life.",
+      "cta": "Start a dialogue"
+    },
+    "competencies": {
+      "eyebrow": "Our Competencies",
+      "title": "What We Do",
+      "items": [
+        { "title": "Wealth Management", "body": "Independent investment management and portfolio advisory for entrepreneurs and families. No product commissions. No institutional quotas. Only advice aligned with your goals." },
+        { "title": "Family Office", "body": "We design and operate family office structures for multi-generational families — coordinating investments, governance, succession, and reporting from a single point." },
+        { "title": "Structuring & Tax", "body": "International wealth structuring and tax planning across multiple jurisdictions — designed to protect assets, reduce unnecessary tax drag, and ensure full legal compliance." },
+        { "title": "Corporate Advisory", "body": "M&A advisory, exit planning, capital raising, and due diligence for business owners — from early growth through to final transaction close." }
+      ]
+    },
+    "industries": {
+      "eyebrow": "Industries We Serve",
+      "title": "Who We Work With",
+      "items": [
+        { "title": "Entrepreneurs & Founders", "body": "Business owners navigating the intersection of personal and corporate wealth at every stage of growth." },
+        { "title": "Multi-Generational Families", "body": "Families managing wealth across two or three generations with complex governance and succession needs." },
+        { "title": "International Clients", "body": "Individuals and families with assets, residency, and interests spread across multiple jurisdictions." },
+        { "title": "Post-Exit Principals", "body": "Founders and executives following a liquidity event who need disciplined capital deployment and protection." },
+        { "title": "Philanthropists", "body": "Families and individuals seeking to deploy capital for lasting impact through structured giving." },
+        { "title": "Corporate & Institutional", "body": "Companies and family businesses requiring independent M&A, capital, and restructuring advisory." }
+      ]
+    },
+    "international": {
+      "eyebrow": "International Experience",
+      "title": "Where We Work",
+      "description": "Our clients' lives do not stop at one border — and neither does our expertise. We coordinate across jurisdictions, time zones, and regulatory frameworks to give clients a single coherent view of their international wealth.",
+      "items": [
+        { "name": "Poland", "desc": "Primary hub and regulatory base" },
+        { "name": "European Union", "desc": "Cross-border structuring and compliance" },
+        { "name": "UAE / Dubai", "desc": "Holding structures and residency planning" },
+        { "name": "Cyprus & Malta", "desc": "EU-based tax planning vehicles" },
+        { "name": "Luxembourg", "desc": "Fund and family holding structures" },
+        { "name": "BVI & Cayman", "desc": "International holding vehicles" }
+      ]
+    },
+    "stats": [
+      { "n": "15+", "label": "Years in wealth management" },
+      { "n": "4", "label": "Core service disciplines" },
+      { "n": "6+", "label": "Jurisdictions covered" },
+      { "n": "4", "label": "Languages spoken" }
+    ],
+    "cta": {
+      "title": "Start a Confidential Conversation",
+      "description": "Arrange a private consultation with our team. We will listen to your situation first — and only propose a path forward if we are confident we can add meaningful value."
+    }
+  },
+  "insights": {
+    "hero": {
+      "eyebrow": "Insights & Analysis",
+      "title": "Perspectives on Wealth, Markets, and Strategy",
+      "description": "Expert commentary from the Icon Finance team on markets, structuring, family office, and the forces shaping private wealth."
+    },
+    "categories": {
+      "all": "All",
+      "wealth": "Wealth Management",
+      "family": "Family Office",
+      "structuring": "Structuring & Tax",
+      "ma": "M&A & Corporate",
+      "special": "Special Solutions"
+    },
+    "ctaSection": {
+      "title": "Want Our Analysis Delivered Directly?",
+      "description": "We publish market perspectives and expert commentary for clients and subscribers. Reach out to be added to our distribution list.",
+      "button": "Get in Touch"
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Start a Confidential Conversation",
+      "description": "We listen first. We only propose a path forward when we are confident we can add meaningful value to your situation."
+    },
+    "details": {
+      "eyebrow": "Get in Touch",
+      "title": "How to Reach Us",
+      "blocks": [
+        { "title": "Office", "body": "Warsaw, Poland" },
+        { "title": "Email", "body": "info@iconfinance.io" },
+        { "title": "Response Time", "body": "We respond to all inquiries within 24 hours." },
+        { "title": "Confidentiality", "body": "All information shared with us is treated with strict professional discretion. NDA available on request." }
+      ]
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "subtitle": "Leave an inquiry and our expert will contact you within 24 hours.",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Work email",
+      "subject": "Subject",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your situation — assets, goals, timeline, or anything else relevant.",
+      "submit": "Send Request",
+      "footnote": "We respond within 24 hours. All information is strictly confidential.",
+      "errors": {
+        "firstName": "First name is required",
+        "lastName": "Last name is required",
+        "email": "Please enter a valid email",
+        "subject": "Please select a subject",
+        "message": "Please add a bit more detail"
+      },
+      "success": "Message sent. We will respond within 24 hours."
+    },
+    "bottomCTA": {
+      "title": "Not Sure Where to Start?",
+      "description": "Many of our clients come to us without a clear brief — just a sense that their current situation could be better managed. That is a perfectly good place to begin.",
+      "button": "Send Us a Message"
+    }
   }
 }
