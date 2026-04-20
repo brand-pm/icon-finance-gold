@@ -18,6 +18,9 @@ const SpecialSolutions = lazy(() => import("./pages/services/SpecialSolutions.ts
 const Contact = lazy(() => import("./pages/Contact.tsx"));
 const Insights = lazy(() => import("./pages/Insights.tsx"));
 const InsightArticle = lazy(() => import("./pages/InsightArticle.tsx"));
+const PrivacyPolicy = lazy(() => import("./pages/legal/PrivacyPolicy.tsx"));
+const CookiePolicy = lazy(() => import("./pages/legal/CookiePolicy.tsx"));
+const Terms = lazy(() => import("./pages/legal/Terms.tsx"));
 const NotFound = lazy(() => import("./pages/NotFound.tsx"));
 
 const queryClient = new QueryClient();
@@ -93,6 +96,9 @@ const LocalizedRoutes = () => (
         <Route path="contact" element={<Contact />} />
         <Route path="insights" element={<Insights />} />
         <Route path="insights/:slug" element={<InsightArticle />} />
+        <Route path="privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="cookie-policy" element={<CookiePolicy />} />
+        <Route path="terms" element={<Terms />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>
