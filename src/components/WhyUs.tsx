@@ -36,7 +36,6 @@ const WhyUs = () => {
               <p className="text-slate text-sm leading-relaxed mb-6">{t(`whyUs.cards.${key}.desc`)}</p>
               <img src={whyUsIcon} alt="" aria-hidden="true" width={32} height={16} className="block mt-auto" />
             </div>
-            </div>
           ))}
         </div>
       </div>
