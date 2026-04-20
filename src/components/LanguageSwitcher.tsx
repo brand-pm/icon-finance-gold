@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import { ChevronDown, Globe, Check } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { LANGUAGE_LABELS, SUPPORTED_LANGUAGES, type SupportedLanguage } from "@/i18n/config";
 import { useCurrentLanguage, useSwitchLanguage } from "@/i18n/useLocalizedPath";
@@ -37,24 +36,21 @@ const LanguageSwitcher = ({ variant = "desktop" }: Props) => {
   if (variant === "mobile") {
     return (
       <div className="px-6 py-4">
-        <div className="text-[11px] uppercase tracking-[0.2em] text-white/50 mb-3">
-          {LANGUAGE_LABELS[lang].name}
+        <div className="text-[10px] uppercase tracking-[0.24em] text-white/40 mb-3">
+          Language
         </div>
-        <div className="grid grid-cols-2 gap-2">
+        <div className="flex items-center gap-5">
           {SUPPORTED_LANGUAGES.map((code) => {
             const active = code === lang;
             return (
               <button
                 key={code}
                 onClick={() => switchLang(code)}
-                className={`flex items-center justify-between px-3 py-2.5 rounded border text-[13px] transition-colors ${
-                  active
-                    ? "border-gold/60 bg-gold/10 text-gold"
-                    : "border-white/10 text-white/80 hover:border-gold/40"
+                className={`text-[12px] uppercase tracking-[0.2em] transition-colors ${
+                  active ? "text-gold" : "text-white/50 hover:text-white"
                 }`}
               >
-                <span>{LANGUAGE_LABELS[code].name}</span>
-                <span className="text-[11px] opacity-70">{LANGUAGE_LABELS[code].code}</span>
+                {LANGUAGE_LABELS[code].code}
               </button>
             );
           })}
@@ -67,30 +63,24 @@ const LanguageSwitcher = ({ variant = "desktop" }: Props) => {
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen((v) => !v)}
-        className="flex items-center gap-1.5 text-white/70 hover:text-gold transition-colors text-[13px]"
+        className="text-white/60 hover:text-gold transition-colors text-[11px] uppercase tracking-[0.24em]"
         aria-label="Change language"
       >
-        <Globe size={14} />
-        <span>{LANGUAGE_LABELS[lang].code}</span>
-        <ChevronDown size={12} className={`transition-transform ${open ? "rotate-180" : ""}`} />
+        {LANGUAGE_LABELS[lang].code}
       </button>
       {open && (
-        <div className="absolute top-full right-0 mt-3 min-w-[180px] bg-navy border border-white/10 shadow-xl rounded-md overflow-hidden z-50">
+        <div className="absolute top-full right-0 mt-4 flex flex-col bg-navy/95 backdrop-blur-sm border border-white/5 z-50 min-w-[80px]">
           {SUPPORTED_LANGUAGES.map((code) => {
             const active = code === lang;
             return (
               <button
                 key={code}
                 onClick={() => handleSelect(code)}
-                className={`w-full flex items-center justify-between px-4 py-3 text-[13px] transition-colors ${
-                  active ? "text-gold bg-white/5" : "text-white/80 hover:text-gold hover:bg-white/5"
+                className={`px-4 py-2.5 text-[11px] uppercase tracking-[0.24em] text-left transition-colors ${
+                  active ? "text-gold" : "text-white/60 hover:text-white"
                 }`}
               >
-                <span>{LANGUAGE_LABELS[code].name}</span>
-                <div className="flex items-center gap-2">
-                  <span className="text-[11px] opacity-60">{LANGUAGE_LABELS[code].code}</span>
-                  {active && <Check size={12} />}
-                </div>
+                {LANGUAGE_LABELS[code].code}
               </button>
             );
           })}
