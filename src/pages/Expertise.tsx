@@ -103,7 +103,7 @@ const International = () => {
   return (
     <section ref={ref} className="relative marble-texture-strong section-padding" style={{ background: "#F5F3F0" }}>
       <div className="container-main grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-        <div className="opacity-0 animate-fade-up text-center lg:text-left flex flex-col items-center lg:items-start">
+        <div className="opacity-0 animate-fade-up text-center flex flex-col items-center">
           <p className="eyebrow mb-4">{t("expertise.international.eyebrow")}</p>
           <h2 className="text-charcoal font-light mb-6" style={{ fontSize: "clamp(32px,5vw,48px)" }}>{t("expertise.international.title")}</h2>
           <div className="gold-separator mb-8"><div className="line" /><div className="dot" /><div className="dot-lg" /><div className="dot" /><div className="line" /></div>
