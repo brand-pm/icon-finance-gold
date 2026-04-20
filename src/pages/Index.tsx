@@ -17,7 +17,7 @@ const Index = () => {
 
   return (
     <>
-      <Seo pageKey="home" />
+      <Seo pageKey="home" includeOrganizationSchema />
       <Header />
       <Hero />
       <Services />
