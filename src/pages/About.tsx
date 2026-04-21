@@ -12,11 +12,13 @@ import teamPlaceholder from "../assets/team-placeholder.jpg";
 import olegPhoto from "../assets/team/oleg-zabolotnyi.jpg";
 import yuriiPhoto from "../assets/team/yurii-labenko.jpg";
 import maksymPhoto from "../assets/team/maksym-sydorov.jpg";
+import kseniaPhoto from "../assets/team/ksenia-romanchuk.jpg";
 
 const TEAM_PHOTOS: Record<string, string> = {
   "Oleg Zabolotnyi": olegPhoto,
   "Yurii Labenko": yuriiPhoto,
   "Maksym Sydorov": maksymPhoto,
+  "Ksenia Romanchuk": kseniaPhoto,
 };
 
 const About = () => {
