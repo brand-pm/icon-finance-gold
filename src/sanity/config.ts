@@ -6,7 +6,7 @@ import { SANITY_PROJECT_ID, SANITY_DATASET } from "@/lib/sanity";
 
 export const sanityConfig = defineConfig({
   name: "default",
-  title: "Icon Finance — Insights",
+  title: "Icon Finance - Insights",
   projectId: SANITY_PROJECT_ID,
   dataset: SANITY_DATASET,
   basePath: "/studio",

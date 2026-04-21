@@ -21,7 +21,7 @@ const ServiceFAQ = ({ items }: ServiceFAQProps) => {
     <section className="section-padding bg-offwhite">
       <div className="container-main" ref={ref}>
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left — centered horizontally and vertically */}
+          {/* Left - centered horizontally and vertically */}
           <div className="opacity-0 animate-fade-up text-center flex flex-col items-center" style={{ animationDelay: "0.1s" }}>
             <p className="eyebrow mb-4">{t("sectionLabels.faq")}</p>
             <h2 className="text-charcoal font-light whitespace-pre-line" style={{ fontSize: "clamp(26px,4vw,38px)" }}>

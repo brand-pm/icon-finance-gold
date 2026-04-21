@@ -37,7 +37,7 @@ const ORGANIZATION_SCHEMA = {
     {
       "@type": "FinancialService",
       "@id": `${CANONICAL_ORIGIN}/#service`,
-      name: "Icon Finance — Independent Wealth Management & Family Office",
+      name: "Icon Finance - Independent Wealth Management & Family Office",
       description:
         "Independent wealth management and family office advisory for entrepreneurs, families, and principals navigating complex financial lives across Europe.",
       url: `${CANONICAL_ORIGIN}/`,

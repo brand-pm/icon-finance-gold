@@ -26,7 +26,7 @@ const Terms = () => {
             ),
           },
           {
-            heading: "2. Information Only — Not Financial Advice",
+            heading: "2. Information Only - Not Financial Advice",
             body: (
               <>
                 <Para>
@@ -53,7 +53,7 @@ const Terms = () => {
             heading: "4. Intellectual Property",
             body: (
               <Para>
-                All content on this website — including text, graphics, logos, and design — is the property of Icon Finance or its licensors and is protected by applicable intellectual property law. You may not reproduce, distribute, or use any content from this website without our express written consent.
+                All content on this website - including text, graphics, logos, and design - is the property of Icon Finance or its licensors and is protected by applicable intellectual property law. You may not reproduce, distribute, or use any content from this website without our express written consent.
               </Para>
             ),
           },

@@ -53,13 +53,13 @@ const ResultsStats = ({ items, eyebrow, title }: ResultsStatsProps) => {
             </span>
           )}
         </div>
-        {/* Subtitle — gold italic, tight to number */}
+        {/* Subtitle - gold italic, tight to number */}
         {item.subtitle && (
           <div className="text-gold font-light italic" style={{ fontSize: "clamp(16px, 2vw, 22px)", marginTop: "4px", lineHeight: 1.2 }}>
             {item.subtitle}
           </div>
         )}
-        {/* Label — white */}
+        {/* Label - white */}
         <div className="text-white/70 text-sm mt-3 max-w-[260px]">{item.label}</div>
       </div>
       {i < arr.length - 1 && (
