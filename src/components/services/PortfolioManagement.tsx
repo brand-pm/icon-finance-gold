@@ -80,7 +80,7 @@ const PortfolioManagement = ({
 
                     {step.result && (
                       <div className="portfolio-stage-result">
-                        <span className="portfolio-stage-result-label">Result:</span>
+                        <span className="portfolio-stage-result-label">{t("portfolioManagement.result")}:</span>
                         <p className="portfolio-stage-result-text">{step.result}</p>
                       </div>
                     )}
