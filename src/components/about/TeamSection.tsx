@@ -56,13 +56,17 @@ const TeamSection = ({ eyebrow, title, members }: TeamSectionProps) => {
               }}
             >
               <div className="relative overflow-hidden bg-charcoal/10" style={{ aspectRatio: "4/5" }}>
+                <div
+                  className="absolute inset-0 z-10 mix-blend-color group-hover:opacity-0 transition-opacity duration-500 pointer-events-none"
+                  style={{ background: "linear-gradient(135deg, #0F162D 0%, #E0A776 100%)" }}
+                />
                 <img
                   src={m.image}
                   alt={`${m.name} — ${m.role}`}
                   loading="lazy"
                   width={512}
                   height={640}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
                 />
               </div>
               <div className="p-6 flex flex-col flex-1">
