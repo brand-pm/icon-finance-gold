@@ -63,7 +63,7 @@
           "Strategie inwestycyjne",
           "Aktywa alternatywne"
         ],
-        "alt": "Symbol nieskończoności — ochrona majątku przez pokolenia"
+        "alt": "Symbol nieskończoności - ochrona majątku przez pokolenia"
       },
       "familyOffice": {
         "name": "Biuro rodzinne",
@@ -74,7 +74,7 @@
           "Planowanie sukcesji",
           "Doradztwo filantropijne"
         ],
-        "alt": "Drzewo rodzinne — zarządzanie majątkiem wielu pokoleń"
+        "alt": "Drzewo rodzinne - zarządzanie majątkiem wielu pokoleń"
       },
       "structuringTax": {
         "name": "Strukturyzacja i podatki",
@@ -85,7 +85,7 @@
           "Strukturyzacja prawna",
           "Doradztwo w zakresie compliance"
         ],
-        "alt": "Tarcza z wagami — ochrona prawna i równowaga"
+        "alt": "Tarcza z wagami - ochrona prawna i równowaga"
       },
       "maConsulting": {
         "name": "Fuzje i przejęcia",
@@ -96,7 +96,7 @@
           "Strategie wyjścia z inwestycji",
           "Pozyskiwanie kapitału"
         ],
-        "alt": "Klasyczna kolumna — siła i fundament korporacyjny"
+        "alt": "Klasyczna kolumna - siła i fundament korporacyjny"
       },
       "specialSolutions": {
         "name": "Rozwiązania specjalne",
@@ -107,7 +107,7 @@
           "Doradztwo w zakresie nieruchomości",
           "Zarządzanie stylem życia"
         ],
-        "alt": "Diament — indywidualne rozwiązania premium"
+        "alt": "Diament - indywidualne rozwiązania premium"
       }
     }
   },
@@ -118,17 +118,17 @@
     "steps": {
       "s1": {
         "title": "Wprowadzenie\ni analiza",
-        "timeline": "1–2 tygodnie",
+        "timeline": "1-2 tygodnie",
         "activity": "Badamy Twoją sytuację, cele i obecną strukturę aktywów"
       },
       "s2": {
         "title": "Opracowanie strategii\ni planowanie",
-        "timeline": "2–3 tygodnie",
+        "timeline": "2-3 tygodnie",
         "activity": "Tworzymy indywidualną strategię zarządzania majątkiem"
       },
       "s3": {
         "title": "Wdrożenie\nrozwiązań",
-        "timeline": "4–8 tygodni",
+        "timeline": "4-8 tygodni",
         "activity": "Wdrażamy ustaloną strategię i strukturyzujemy aktywa"
       },
       "s4": {
@@ -169,11 +169,11 @@
     "articles": {
       "a1": {
         "category": "Perspektywa biura rodzinnego",
-        "title": "Raport Goldman Sachs o inwestycjach biur rodzinnych — dostosowanie do nowej rzeczywistości"
+        "title": "Raport Goldman Sachs o inwestycjach biur rodzinnych - dostosowanie do nowej rzeczywistości"
       },
       "a2": {
         "category": "Briefingi prywatne",
-        "title": "Uchwalono ustawę One Big Beautiful Bill Act — co to oznacza dla dużych majątków"
+        "title": "Uchwalono ustawę One Big Beautiful Bill Act - co to oznacza dla dużych majątków"
       },
       "a3": {
         "category": "Strategiczne analizy",
@@ -235,8 +235,8 @@
     "hero": {
       "eyebrow": "O Icon Finance",
       "title": "O Icon Finance",
-      "description": "Jesteśmy niezależną firmą doradczą w zakresie zarządzania majątkiem i usług biura rodzinnego, stworzoną dla klientów, którzy oczekują więcej niż produkt — i zasługują na więcej niż bank.",
-      "imageAlt": "Icon Finance — niezależne zarządzanie majątkiem"
+      "description": "Jesteśmy niezależną firmą doradczą w zakresie zarządzania majątkiem i usług biura rodzinnego, stworzoną dla klientów, którzy oczekują więcej niż produkt - i zasługują na więcej niż bank.",
+      "imageAlt": "Icon Finance - niezależne zarządzanie majątkiem"
     },
     "philosophy": {
       "title": "W co wierzymy",
@@ -248,17 +248,17 @@
         },
         {
           "title": "Długoterminowe relacje",
-          "description": "Sukces mierzymy dekadami, nie transakcjami. Klienci zostają z nami, ponieważ co roku zasługujemy na tę relację — a nie dlatego, że są związani umową."
+          "description": "Sukces mierzymy dekadami, nie transakcjami. Klienci zostają z nami, ponieważ co roku zasługujemy na tę relację - a nie dlatego, że są związani umową."
         },
         {
           "title": "Poufność i zaufanie",
-          "description": "Państwa sprawy są wyłącznie Państwa. Informacje klientów traktujemy z absolutną dyskrecją — jako obowiązek zarówno zawodowy, jak i osobisty."
+          "description": "Państwa sprawy są wyłącznie Państwa. Informacje klientów traktujemy z absolutną dyskrecją - jako obowiązek zarówno zawodowy, jak i osobisty."
         }
       ]
     },
     "story": {
       "title": "Zbudowane w czasie.\nUdoskonalone doświadczeniem.",
-      "description": "Od małej praktyki w Warszawie do niezależnej, multidyscyplinarnej firmy — każdy rozdział naszej historii kształtowały potrzeby klientów.",
+      "description": "Od małej praktyki w Warszawie do niezależnej, multidyscyplinarnej firmy - każdy rozdział naszej historii kształtowały potrzeby klientów.",
       "steps": [
         {
           "title": "Założenie",
@@ -334,20 +334,20 @@
         {
           "role": "Menedżer ds. Rozwoju Partnerstw",
           "name": "Maksym Sydorov",
-          "bio": "Maksym rozwija i zarządza siecią partnerów Icon Finance — łącząc klientów z odpowiednimi specjalistami w zakresie prawa, podatków i inwestycji."
+          "bio": "Maksym rozwija i zarządza siecią partnerów Icon Finance - łącząc klientów z odpowiednimi specjalistami w zakresie prawa, podatków i inwestycji."
         }
       ]
     },
     "cta": {
       "title": "Rozpocznij poufną rozmowę",
-      "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Twojej sytuacji — i zaproponujemy drogę naprzód tylko wtedy, gdy będziemy pewni, że możemy wnieść istotną wartość."
+      "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Twojej sytuacji - i zaproponujemy drogę naprzód tylko wtedy, gdy będziemy pewni, że możemy wnieść istotną wartość."
     }
   },
   "expertise": {
     "hero": {
       "eyebrow": "Ekspertyza",
       "title": "Dziesięciolecia doświadczenia.\nJeden zintegrowany zespół.",
-      "description": "Łączymy specjalistów z zakresu zarządzania majątkiem, usług biura rodzinnego, strukturyzacji, podatków i doradztwa korporacyjnego — pracując jako jeden zespół wokół całego życia finansowego każdego klienta.",
+      "description": "Łączymy specjalistów z zakresu zarządzania majątkiem, usług biura rodzinnego, strukturyzacji, podatków i doradztwa korporacyjnego - pracując jako jeden zespół wokół całego życia finansowego każdego klienta.",
       "cta": "Rozpocznij dialog"
     },
     "competencies": {
@@ -360,15 +360,15 @@
         },
         {
           "title": "Biuro rodzinne",
-          "body": "Projektujemy i prowadzimy struktury biura rodzinnego dla rodzin wielopokoleniowych — koordynując inwestycje, ład korporacyjny, sukcesję i raportowanie z jednego punktu."
+          "body": "Projektujemy i prowadzimy struktury biura rodzinnego dla rodzin wielopokoleniowych - koordynując inwestycje, ład korporacyjny, sukcesję i raportowanie z jednego punktu."
         },
         {
           "title": "Strukturyzacja i podatki",
-          "body": "Międzynarodowa strukturyzacja majątku i planowanie podatkowe w wielu jurysdykcjach — w celu ochrony aktywów, zmniejszenia zbędnych obciążeń podatkowych i pełnej zgodności prawnej."
+          "body": "Międzynarodowa strukturyzacja majątku i planowanie podatkowe w wielu jurysdykcjach - w celu ochrony aktywów, zmniejszenia zbędnych obciążeń podatkowych i pełnej zgodności prawnej."
         },
         {
           "title": "Doradztwo korporacyjne",
-          "body": "Doradztwo w fuzjach i przejęciach, planowanie wyjścia z inwestycji, pozyskiwanie kapitału oraz analiza due diligence dla właścicieli firm — od wczesnego etapu wzrostu po zamknięcie transakcji."
+          "body": "Doradztwo w fuzjach i przejęciach, planowanie wyjścia z inwestycji, pozyskiwanie kapitału oraz analiza due diligence dla właścicieli firm - od wczesnego etapu wzrostu po zamknięcie transakcji."
         }
       ]
     },
@@ -405,7 +405,7 @@
     "international": {
       "eyebrow": "Doświadczenie międzynarodowe",
       "title": "Gdzie działamy",
-      "description": "Życie naszych klientów nie kończy się na jednej granicy — i nasza ekspertyza również. Koordynujemy działania w różnych jurysdykcjach, strefach czasowych i ramach regulacyjnych, aby zapewnić klientom spójny obraz ich międzynarodowego majątku.",
+      "description": "Życie naszych klientów nie kończy się na jednej granicy - i nasza ekspertyza również. Koordynujemy działania w różnych jurysdykcjach, strefach czasowych i ramach regulacyjnych, aby zapewnić klientom spójny obraz ich międzynarodowego majątku.",
       "items": [
         {
           "name": "Polska",
@@ -453,7 +453,7 @@
     ],
     "cta": {
       "title": "Rozpocznij poufną rozmowę",
-      "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Twojej sytuacji — i zaproponujemy drogę naprzód tylko wtedy, gdy będziemy pewni, że możemy wnieść istotną wartość."
+      "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Twojej sytuacji - i zaproponujemy drogę naprzód tylko wtedy, gdy będziemy pewni, że możemy wnieść istotną wartość."
     }
   },
   "insights": {
@@ -516,7 +516,7 @@
       "email": "Email służbowy",
       "subject": "Temat",
       "message": "Wiadomość",
-      "messagePlaceholder": "Opisz swoją sytuację — aktywa, cele, harmonogram lub cokolwiek istotnego.",
+      "messagePlaceholder": "Opisz swoją sytuację - aktywa, cele, harmonogram lub cokolwiek istotnego.",
       "submit": "Wyślij zapytanie",
       "footnote": "Odpowiadamy w ciągu 24 godzin. Wszystkie informacje są ściśle poufne.",
       "errors": {
@@ -530,7 +530,7 @@
     },
     "bottomCTA": {
       "title": "Nie wiesz, od czego zacząć?",
-      "description": "Wielu naszych klientów przychodzi do nas bez konkretnego briefu — z poczuciem, że ich obecna sytuacja mogłaby być lepiej zarządzana. To doskonały punkt wyjścia.",
+      "description": "Wielu naszych klientów przychodzi do nas bez konkretnego briefu - z poczuciem, że ich obecna sytuacja mogłaby być lepiej zarządzana. To doskonały punkt wyjścia.",
       "button": "Wyślij nam wiadomość"
     }
   },
@@ -540,14 +540,14 @@
         "eyebrow": "Zarządzanie Majątkiem",
         "title": "Ochrona i pomnażanie kapitału przez pokolenia",
         "description": "Icon Finance oferuje niezależne zarządzanie majątkiem dla przedsiębiorców, właścicieli firm i rodzin o złożonych finansach. Łączymy wiedzę instytucjonalną z osobistą uwagą, na jaką zasługuje Państwa kapitał.",
-        "imageAlt": "Symbol nieskończoności — ochrona majątku przez pokolenia"
+        "imageAlt": "Symbol nieskończoności - ochrona majątku przez pokolenia"
       },
       "whoBenefits": {
         "sectionTitle": "Stworzone dla tych,\nktórzy mają więcej do stracenia",
         "items": [
           {
             "title": "Właściciele Firm",
-            "description": "Zbudowali Państwo znaczny majątek dzięki swojej firmie — ale Państwa kapitał osobisty pozostaje narażony na te same ryzyka. Pomagamy oddzielić, ustrukturyzować i ochronić to, co zostało wypracowane, niezależnie od Państwa działalności operacyjnej."
+            "description": "Zbudowali Państwo znaczny majątek dzięki swojej firmie - ale Państwa kapitał osobisty pozostaje narażony na te same ryzyka. Pomagamy oddzielić, ustrukturyzować i ochronić to, co zostało wypracowane, niezależnie od Państwa działalności operacyjnej."
           },
           {
             "title": "Przedsiębiorcy po wyjściu z biznesu",
@@ -555,7 +555,7 @@
           },
           {
             "title": "Rodziny wielopokoleniowe",
-            "description": "Majątek rodzinny obejmujący dwa lub trzy pokolenia wymaga czegoś więcej niż portfel inwestycyjny. Koordynujemy strategię inwestycyjną z ładem korporacyjnym, planowaniem sukcesji i zgodnością rodzinną — aby kapitał służył rodzinie, a nie odwrotnie."
+            "description": "Majątek rodzinny obejmujący dwa lub trzy pokolenia wymaga czegoś więcej niż portfel inwestycyjny. Koordynujemy strategię inwestycyjną z ładem korporacyjnym, planowaniem sukcesji i zgodnością rodzinną - aby kapitał służył rodzinie, a nie odwrotnie."
           },
           {
             "title": "Klienci Międzynarodowi",
@@ -565,17 +565,17 @@
       },
       "philosophy": {
         "sectionTitle": "Jak myślimy\no Państwa majątku",
-        "subtitle": "Działamy bez prowizji od produktów, powiązań bankowych czy opłat za plasowanie. Każda nasza rekomendacja kieruje się wyłącznie Państwa celami — nie umowami dystrybucyjnymi czy limitami instytucjonalnymi. Ta niezależność jest fundamentem wszystkiego, co robimy.",
+        "subtitle": "Działamy bez prowizji od produktów, powiązań bankowych czy opłat za plasowanie. Każda nasza rekomendacja kieruje się wyłącznie Państwa celami - nie umowami dystrybucyjnymi czy limitami instytucjonalnymi. Ta niezależność jest fundamentem wszystkiego, co robimy.",
         "items": [
           {
             "number": "01",
             "title": "Niezależne Doradztwo",
-            "description": "Brak konfliktów interesów. Brak produktów własnych. Otrzymujemy wynagrodzenie wyłącznie od Państwa — co oznacza, że pracujemy wyłącznie dla Państwa."
+            "description": "Brak konfliktów interesów. Brak produktów własnych. Otrzymujemy wynagrodzenie wyłącznie od Państwa - co oznacza, że pracujemy wyłącznie dla Państwa."
           },
           {
             "number": "02",
             "title": "Podejście Zintegrowane",
-            "description": "Koordynujemy strategię inwestycyjną z planowaniem podatkowym, strukturyzacją i sukcesją — aby Państwa decyzje finansowe były zawsze spójne we wszystkich wymiarach."
+            "description": "Koordynujemy strategię inwestycyjną z planowaniem podatkowym, strukturyzacją i sukcesją - aby Państwa decyzje finansowe były zawsze spójne we wszystkich wymiarach."
           },
           {
             "number": "03",
@@ -595,7 +595,7 @@
         "items": [
           {
             "main": "Stała Opłata",
-            "label": "Bez prowizji od produktów ani opłat za plasowanie — nigdy"
+            "label": "Bez prowizji od produktów ani opłat za plasowanie - nigdy"
           },
           {
             "main": "Dostęp do Ekspertów",
@@ -644,7 +644,7 @@
           "items": [
             "Akcje wiodące z dywersyfikatorami alternatywnymi",
             "Ekspozycja na rynki prywatne i aktywa realne",
-            "Wyższy potencjał zwrotu w horyzoncie 5–10 lat"
+            "Wyższy potencjał zwrotu w horyzoncie 5-10 lat"
           ]
         },
         {
@@ -727,7 +727,7 @@
         "steps": [
           {
             "title": "Odkrycie i Planowanie",
-            "timeline": "1–2 tygodnie",
+            "timeline": "1-2 tygodnie",
             "result": "Polityka Inwestycyjna (IPS)",
             "activities": [
               "Pełny audyt aktywów i zobowiązań",
@@ -738,7 +738,7 @@
           },
           {
             "title": "Budowa Portfela",
-            "timeline": "3–4 tygodnie",
+            "timeline": "3-4 tygodnie",
             "result": "Zdywersyfikowany Portfel",
             "activities": [
               "Alokacja strategiczna",
@@ -778,7 +778,7 @@
         },
         {
           "question": "Jak skonstruowane są Państwa wynagrodzenia?",
-          "answer": "Działamy w oparciu o przejrzysty model fee-based. Opłaty są ustalane z góry na podstawie aktywów pod doradztwem — nie otrzymujemy żadnych prowizji, rabatów ani płatności od dostawców produktów."
+          "answer": "Działamy w oparciu o przejrzysty model fee-based. Opłaty są ustalane z góry na podstawie aktywów pod doradztwem - nie otrzymujemy żadnych prowizji, rabatów ani płatności od dostawców produktów."
         },
         {
           "question": "Czy mogę uzyskać dostęp do środków w dowolnym momencie?",
@@ -791,15 +791,15 @@
       ],
       "cta": {
         "title": "Rozpocznij Poufną Rozmowę",
-        "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Państwa sytuacji — i zaproponujemy ścieżkę naprzód tylko, jeśli będziemy pewni, że możemy wnieść istotną wartość."
+        "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Państwa sytuacji - i zaproponujemy ścieżkę naprzód tylko, jeśli będziemy pewni, że możemy wnieść istotną wartość."
       }
     },
     "familyOffice": {
       "hero": {
         "eyebrow": "Family Office",
         "title": "Gdy majątek staje się odpowiedzialnością rodziny",
-        "description": "Icon Finance projektuje i prowadzi struktury family office dla rodzin poruszających się w złożoności majątku wielopokoleniowego — od koordynacji inwestycji po sukcesję, ład rodzinny i planowanie spuścizny.",
-        "imageAlt": "Family office — koordynacja majątku wielopokoleniowego"
+        "description": "Icon Finance projektuje i prowadzi struktury family office dla rodzin poruszających się w złożoności majątku wielopokoleniowego - od koordynacji inwestycji po sukcesję, ład rodzinny i planowanie spuścizny.",
+        "imageAlt": "Family office - koordynacja majątku wielopokoleniowego"
       },
       "whoBenefits": {
         "sectionTitle": "Dla rodzin myślących\nw kategoriach pokoleń",
@@ -814,7 +814,7 @@
           },
           {
             "title": "Rodziny Wielopokoleniowe",
-            "description": "Państwa rodzina obejmuje dwa lub trzy pokolenia o różnych potrzebach finansowych, apetytach na ryzyko i celach. Tworzymy strukturę i procesy, które utrzymują kapitał — i rodzinę — w zgodzie."
+            "description": "Państwa rodzina obejmuje dwa lub trzy pokolenia o różnych potrzebach finansowych, apetytach na ryzyko i celach. Tworzymy strukturę i procesy, które utrzymują kapitał - i rodzinę - w zgodzie."
           },
           {
             "title": "Rodziny relokujące się międzynarodowo",
@@ -824,7 +824,7 @@
       },
       "philosophy": {
         "sectionTitle": "Jak budujemy\nPaństwa family office",
-        "subtitle": "Family office to nie produkt — to infrastruktura. Projektujemy ją wokół konkretnego składu, wartości, aktywów i długoterminowych intencji Państwa rodziny. Bez szablonów. Bez gotowych rozwiązań.",
+        "subtitle": "Family office to nie produkt - to infrastruktura. Projektujemy ją wokół konkretnego składu, wartości, aktywów i długoterminowych intencji Państwa rodziny. Bez szablonów. Bez gotowych rozwiązań.",
         "items": [
           {
             "number": "01",
@@ -834,17 +834,17 @@
           {
             "number": "02",
             "title": "Pełna Koordynacja",
-            "description": "Inwestycje, prawo, podatki, sukcesja i raportowanie — wszystko koordynowane z jednego miejsca, eliminując luki między doradcami."
+            "description": "Inwestycje, prawo, podatki, sukcesja i raportowanie - wszystko koordynowane z jednego miejsca, eliminując luki między doradcami."
           },
           {
             "number": "03",
             "title": "Ład Przede Wszystkim",
-            "description": "Ustanawiamy jasne procesy decyzyjne, rady rodzinne i komitety inwestycyjne — aby majątek nie tworzył konfliktów."
+            "description": "Ustanawiamy jasne procesy decyzyjne, rady rodzinne i komitety inwestycyjne - aby majątek nie tworzył konfliktów."
           },
           {
             "number": "04",
             "title": "Gotowi na Sukcesję",
-            "description": "Każda struktura, którą budujemy, jest projektowana z myślą o następnym pokoleniu — prawnie, finansowo i pod kątem gotowości rodziny."
+            "description": "Każda struktura, którą budujemy, jest projektowana z myślą o następnym pokoleniu - prawnie, finansowo i pod kątem gotowości rodziny."
           }
         ]
       },
@@ -866,7 +866,7 @@
           },
           {
             "main": "Poufne",
-            "label": "Pełna dyskrecja — sprawy rodziny pozostają w rodzinie"
+            "label": "Pełna dyskrecja - sprawy rodziny pozostają w rodzinie"
           },
           {
             "main": "Pokoleniowe",
@@ -881,7 +881,7 @@
       "strategies": [
         {
           "name": "Dedykowany Family Office",
-          "description": "W pełni dedykowana struktura zbudowana wyłącznie dla Państwa rodziny. Pełna kontrola, maksymalna poufność i indywidualna infrastruktura — zaprojektowana dla rodzin z aktywami od 30 mln USD.",
+          "description": "W pełni dedykowana struktura zbudowana wyłącznie dla Państwa rodziny. Pełna kontrola, maksymalna poufność i indywidualna infrastruktura - zaprojektowana dla rodzin z aktywami od 30 mln USD.",
           "items": [
             "Wyłączna infrastruktura tylko dla jednej rodziny",
             "Pełna kontrola nad decyzjami inwestycyjnymi i ładu",
@@ -911,7 +911,7 @@
           "description": "Dla rodzin, które chcą koordynacji na poziomie family office bez fizycznej infrastruktury. Działamy jako Państwa zewnętrzne family office, dostarczając wszystkie usługi bez kosztów ogólnych.",
           "items": [
             "Pełna koordynacja bez kosztów fizycznego biura",
-            "Skalowalne — rośnie wraz z potrzebami rodziny",
+            "Skalowalne - rośnie wraz z potrzebami rodziny",
             "Idealne dla rodzin w okresie zmian lub relokacji"
           ]
         }
@@ -978,7 +978,7 @@
         "steps": [
           {
             "title": "Odkrycie Rodziny",
-            "timeline": "2–4 tygodnie",
+            "timeline": "2-4 tygodnie",
             "result": "Mapa Majątku Rodzinnego",
             "activities": [
               "Inwentaryzacja aktywów",
@@ -989,7 +989,7 @@
           },
           {
             "title": "Projekt Struktury",
-            "timeline": "4–6 tygodni",
+            "timeline": "4-6 tygodni",
             "result": "Schemat Family Office",
             "activities": [
               "Projekt podmiotów",
@@ -1000,7 +1000,7 @@
           },
           {
             "title": "Wdrożenie",
-            "timeline": "6–8 tygodni",
+            "timeline": "6-8 tygodni",
             "result": "Operacyjne Family Office",
             "activities": [
               "Tworzenie podmiotów",
@@ -1025,15 +1025,15 @@
       "faq": [
         {
           "question": "Jaki jest minimalny poziom aktywów dla family office?",
-          "answer": "Dedykowane Dedykowany Family Office wymaga zwykle aktywów inwestycyjnych od 30 mln USD, aby było efektywne kosztowo. Nasz model Współdzielony Family Office zaprojektowany jest dla rodzin od 5–10 mln USD, a Wirtualny Family Office nie ma sztywnego minimum."
+          "answer": "Dedykowane Dedykowany Family Office wymaga zwykle aktywów inwestycyjnych od 30 mln USD, aby było efektywne kosztowo. Nasz model Współdzielony Family Office zaprojektowany jest dla rodzin od 5-10 mln USD, a Wirtualny Family Office nie ma sztywnego minimum."
         },
         {
           "question": "Czym family office różni się od banku prywatnego?",
-          "answer": "Bank prywatny sprzedaje produkty i zarządza Państwa portfelem w ramach swojej platformy. Family office koordynuje każdy wymiar Państwa życia finansowego — we wszystkich bankach, doradcach i jurysdykcjach — bez produktów do sprzedania i bez konfliktów interesów."
+          "answer": "Bank prywatny sprzedaje produkty i zarządza Państwa portfelem w ramach swojej platformy. Family office koordynuje każdy wymiar Państwa życia finansowego - we wszystkich bankach, doradcach i jurysdykcjach - bez produktów do sprzedania i bez konfliktów interesów."
         },
         {
           "question": "Czy mogą Państwo pracować z naszymi obecnymi doradcami?",
-          "answer": "Tak. Często działamy jako warstwa koordynująca ponad istniejącymi doradcami prawnymi, podatkowymi i inwestycyjnymi — zapewniając, że pracują spójnie razem, a nie w odizolowanych silosach."
+          "answer": "Tak. Często działamy jako warstwa koordynująca ponad istniejącymi doradcami prawnymi, podatkowymi i inwestycyjnymi - zapewniając, że pracują spójnie razem, a nie w odizolowanych silosach."
         },
         {
           "question": "Jak radzą sobie Państwo z poufnością wśród wielu członków rodziny?",
@@ -1042,7 +1042,7 @@
       ],
       "cta": {
         "title": "Rozpocznij Poufną Rozmowę",
-        "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Państwa sytuacji — i zaproponujemy ścieżkę naprzód tylko, jeśli będziemy pewni, że możemy wnieść istotną wartość."
+        "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Państwa sytuacji - i zaproponujemy ścieżkę naprzód tylko, jeśli będziemy pewni, że możemy wnieść istotną wartość."
       }
     },
     "structuringTax": {
@@ -1057,11 +1057,11 @@
         "items": [
           {
             "title": "Posiadacze Aktywów Międzynarodowych",
-            "description": "Posiadają Państwo aktywa w wielu krajach — nieruchomości, spółki, inwestycje, rachunki bankowe. Bez właściwej strukturyzacji są Państwo narażeni na nakładające się obowiązki podatkowe, ekspozycję regulacyjną i niepotrzebne koszty."
+            "description": "Posiadają Państwo aktywa w wielu krajach - nieruchomości, spółki, inwestycje, rachunki bankowe. Bez właściwej strukturyzacji są Państwo narażeni na nakładające się obowiązki podatkowe, ekspozycję regulacyjną i niepotrzebne koszty."
           },
           {
             "title": "Przedsiębiorcy przed i po wyjściu",
-            "description": "Skutki podatkowe sprzedaży firmy mogą być znaczące — lub zminimalizowane przy odpowiedniej wcześniejszej strukturze. Pomagamy Państwu planować z wyprzedzeniem i chronić to, co Państwo zbudowali."
+            "description": "Skutki podatkowe sprzedaży firmy mogą być znaczące - lub zminimalizowane przy odpowiedniej wcześniejszej strukturze. Pomagamy Państwu planować z wyprzedzeniem i chronić to, co Państwo zbudowali."
           },
           {
             "title": "Rodziny planujące sukcesję",
@@ -1069,18 +1069,18 @@
           },
           {
             "title": "Osoby i rodziny w trakcie relokacji",
-            "description": "Zmiana Państwa rezydencji podatkowej lub domicylu ma głębokie implikacje dla Państwa globalnych aktywów. Koordynujemy pełny obraz — przed, w trakcie i po przeprowadzce."
+            "description": "Zmiana Państwa rezydencji podatkowej lub domicylu ma głębokie implikacje dla Państwa globalnych aktywów. Koordynujemy pełny obraz - przed, w trakcie i po przeprowadzce."
           }
         ]
       },
       "philosophy": {
         "sectionTitle": "Strukturyzacja zbudowana wokół\nPaństwa życia, a nie szablonu",
-        "subtitle": "Skuteczna strukturyzacja nie polega na agresywnym unikaniu opodatkowania — chodzi o to, by Państwa majątek był przechowywany w najbardziej logiczny, efektywny i prawnie poprawny sposób. Pracujemy w ramach prawa, w wielu jurysdykcjach, z Państwa długoterminowymi interesami jako jedynym drogowskazem.",
+        "subtitle": "Skuteczna strukturyzacja nie polega na agresywnym unikaniu opodatkowania - chodzi o to, by Państwa majątek był przechowywany w najbardziej logiczny, efektywny i prawnie poprawny sposób. Pracujemy w ramach prawa, w wielu jurysdykcjach, z Państwa długoterminowymi interesami jako jedynym drogowskazem.",
         "items": [
           {
             "number": "01",
             "title": "Analiza Jurysdykcji",
-            "description": "Oceniamy każdą jurysdykcję, w której mają Państwo aktywa, dochody lub rezydencję — i identyfikujemy optymalną strukturę holdingową dla każdej sytuacji."
+            "description": "Oceniamy każdą jurysdykcję, w której mają Państwo aktywa, dochody lub rezydencję - i identyfikujemy optymalną strukturę holdingową dla każdej sytuacji."
           },
           {
             "number": "02",
@@ -1095,7 +1095,7 @@
           {
             "number": "04",
             "title": "Spojrzenie Długoterminowe",
-            "description": "Projektujemy z myślą o trwałości — struktury, które wytrzymają zmiany prawa, rozwój rodzin i ewolucję okoliczności."
+            "description": "Projektujemy z myślą o trwałości - struktury, które wytrzymają zmiany prawa, rozwój rodzin i ewolucję okoliczności."
           }
         ]
       },
@@ -1132,7 +1132,7 @@
       "strategies": [
         {
           "name": "Strukturyzacja Majątku",
-          "description": "Projektujemy struktury holdingowe dla Państwa globalnych aktywów — spółek, nieruchomości, inwestycji i płynnego majątku — aby zapewnić efektywną własność, ochronę i zarządzanie w jurysdykcjach.",
+          "description": "Projektujemy struktury holdingowe dla Państwa globalnych aktywów - spółek, nieruchomości, inwestycji i płynnego majątku - aby zapewnić efektywną własność, ochronę i zarządzanie w jurysdykcjach.",
           "items": [
             "Projektowanie spółek holdingowych i podmiotów",
             "Optymalizacja transgranicznej własności",
@@ -1141,7 +1141,7 @@
         },
         {
           "name": "Planowanie Podatkowe",
-          "description": "Strategiczne planowanie podatkowe redukujące Państwa globalne obciążenia podatkowe legalnymi środkami — planowanie rezydencji, strukturyzacja dochodów i optymalizacja umów.",
+          "description": "Strategiczne planowanie podatkowe redukujące Państwa globalne obciążenia podatkowe legalnymi środkami - planowanie rezydencji, strukturyzacja dochodów i optymalizacja umów.",
           "items": [
             "Analiza podatkowa wielu jurysdykcji",
             "Planowanie rezydencji i domicylu",
@@ -1159,7 +1159,7 @@
         },
         {
           "name": "Planowanie Spadkowe",
-          "description": "Kompleksowe planowanie transferu majątku przez pokolenia — minimalizacja podatku spadkowego, unikanie postępowania spadkowego i zapewnienie, że Państwa aktywa trafią do właściwych osób we właściwym czasie.",
+          "description": "Kompleksowe planowanie transferu majątku przez pokolenia - minimalizacja podatku spadkowego, unikanie postępowania spadkowego i zapewnienie, że Państwa aktywa trafią do właściwych osób we właściwym czasie.",
           "items": [
             "Transgraniczne planowanie sukcesji",
             "Minimalizacja podatku spadkowego",
@@ -1229,7 +1229,7 @@
         "steps": [
           {
             "title": "Globalne Mapowanie Aktywów",
-            "timeline": "2–3 tygodnie",
+            "timeline": "2-3 tygodnie",
             "result": "Pełna Mapa Majątku i Podatków",
             "activities": [
               "Inwentaryzacja aktywów",
@@ -1240,7 +1240,7 @@
           },
           {
             "title": "Projekt Struktury",
-            "timeline": "3–4 tygodnie",
+            "timeline": "3-4 tygodnie",
             "result": "Optymalne Ramy Holdingowe",
             "activities": [
               "Wybór podmiotów",
@@ -1251,7 +1251,7 @@
           },
           {
             "title": "Wdrożenie",
-            "timeline": "4–8 tygodni",
+            "timeline": "4-8 tygodni",
             "result": "W pełni operacyjna struktura",
             "activities": [
               "Tworzenie podmiotów",
@@ -1276,11 +1276,11 @@
       "faq": [
         {
           "question": "Czy międzynarodowe planowanie podatkowe jest legalne?",
-          "answer": "Tak. Projektujemy struktury w pełni zgodne z obowiązującym prawem w każdej jurysdykcji. Nasze podejście opiera się na uprawnionym planowaniu podatkowym — nie na agresywnym unikaniu czy uchylaniu się."
+          "answer": "Tak. Projektujemy struktury w pełni zgodne z obowiązującym prawem w każdej jurysdykcji. Nasze podejście opiera się na uprawnionym planowaniu podatkowym - nie na agresywnym unikaniu czy uchylaniu się."
         },
         {
           "question": "Z jakimi jurysdykcjami Państwo pracują?",
-          "answer": "Pracujemy w głównych jurysdykcjach finansowych i holdingowych, w tym Polsce, ZEA, Cyprze, Malcie, Luksemburgu, BVI, Kajmanach i innych — zawsze wybierając najbardziej odpowiednią dla Państwa konkretnej sytuacji."
+          "answer": "Pracujemy w głównych jurysdykcjach finansowych i holdingowych, w tym Polsce, ZEA, Cyprze, Malcie, Luksemburgu, BVI, Kajmanach i innych - zawsze wybierając najbardziej odpowiednią dla Państwa konkretnej sytuacji."
         },
         {
           "question": "Czy muszę zmienić rezydencję?",
@@ -1293,13 +1293,13 @@
       ],
       "cta": {
         "title": "Rozpocznij Poufną Rozmowę",
-        "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Państwa sytuacji — i zaproponujemy ścieżkę naprzód tylko, jeśli będziemy pewni, że możemy wnieść istotną wartość."
+        "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Państwa sytuacji - i zaproponujemy ścieżkę naprzód tylko, jeśli będziemy pewni, że możemy wnieść istotną wartość."
       }
     },
     "maConsulting": {
       "hero": {
         "eyebrow": "Doradztwo M&A",
-        "title": "Od wzrostu po wyjście — strategiczne doradztwo na każdym etapie",
+        "title": "Od wzrostu po wyjście - strategiczne doradztwo na każdym etapie",
         "description": "Icon Finance zapewnia niezależne doradztwo M&A dla właścicieli firm i przedsiębiorców poruszających się w przejęciach, sprzedażach, fuzjach i pozyskiwaniu kapitału. Chronimy Państwa interesy od pierwszej rozmowy do finalnego zamknięcia.",
         "imageAlt": "Symbol doradztwa M&A"
       },
@@ -1308,7 +1308,7 @@
         "items": [
           {
             "title": "Właściciele firm planujący wyjście",
-            "description": "Rozważają Państwo sprzedaż firmy i chcą zapewnić, że otrzymają pełną wartość — z odpowiednią strukturą, właściwymi nabywcami i odpowiednimi warunkami. Zarządzamy całym procesem w Państwa imieniu."
+            "description": "Rozważają Państwo sprzedaż firmy i chcą zapewnić, że otrzymają pełną wartość - z odpowiednią strukturą, właściwymi nabywcami i odpowiednimi warunkami. Zarządzamy całym procesem w Państwa imieniu."
           },
           {
             "title": "Przedsiębiorcy poszukujący przejęć",
@@ -1316,7 +1316,7 @@
           },
           {
             "title": "Spółki pozyskujące kapitał",
-            "description": "Potrzebują Państwo kapitału na rozwój — dług, kapitał lub kombinacja — i chcą podejść do właściwych inwestorów z odpowiednią historią i strukturą. Przygotowujemy, pozycjonujemy i reprezentujemy Państwa."
+            "description": "Potrzebują Państwo kapitału na rozwój - dług, kapitał lub kombinacja - i chcą podejść do właściwych inwestorów z odpowiednią historią i strukturą. Przygotowujemy, pozycjonujemy i reprezentujemy Państwa."
           },
           {
             "title": "Firmy rodzinne w okresie zmian",
@@ -1326,22 +1326,22 @@
       },
       "philosophy": {
         "sectionTitle": "Niezależne doradztwo.\nBez ukrytych celów.",
-        "subtitle": "Większość doradców M&A jest opłacana po zamknięciu — co tworzy presję na zamykanie transakcji zamiast ochrony Państwa interesów. Działamy inaczej: nasze doradztwo kieruje się tym, co dla Państwa właściwe, a nie opłatami transakcyjnymi czy relacjami bankowymi.",
+        "subtitle": "Większość doradców M&A jest opłacana po zamknięciu - co tworzy presję na zamykanie transakcji zamiast ochrony Państwa interesów. Działamy inaczej: nasze doradztwo kieruje się tym, co dla Państwa właściwe, a nie opłatami transakcyjnymi czy relacjami bankowymi.",
         "items": [
           {
             "number": "01",
             "title": "Tylko Strona Właściciela",
-            "description": "Reprezentujemy nabywców lub sprzedających — nigdy obu stron tej samej transakcji. Państwa interesy są zawsze naszym jedynym celem."
+            "description": "Reprezentujemy nabywców lub sprzedających - nigdy obu stron tej samej transakcji. Państwa interesy są zawsze naszym jedynym celem."
           },
           {
             "number": "02",
             "title": "Pełne Zarządzanie Procesem",
-            "description": "Od przygotowania i pozycjonowania po negocjacje i zamknięcie — zarządzamy każdym etapem, abyście Państwo mogli skupić się na prowadzeniu firmy."
+            "description": "Od przygotowania i pozycjonowania po negocjacje i zamknięcie - zarządzamy każdym etapem, abyście Państwo mogli skupić się na prowadzeniu firmy."
           },
           {
             "number": "03",
             "title": "Dyscyplina Wyceny",
-            "description": "Zapewniamy rygorystyczną, niezależną analizę wyceny — zapewniając, że nigdy nie zostawią Państwo wartości na stole ani nie przepłacą za przejęcie."
+            "description": "Zapewniamy rygorystyczną, niezależną analizę wyceny - zapewniając, że nigdy nie zostawią Państwo wartości na stole ani nie przepłacą za przejęcie."
           },
           {
             "number": "04",
@@ -1364,7 +1364,7 @@
           },
           {
             "main": "Poufne",
-            "label": "Ścisła kontrola procesu — angażowane są tylko właściwe strony"
+            "label": "Ścisła kontrola procesu - angażowane są tylko właściwe strony"
           },
           {
             "main": "Ustrukturyzowane",
@@ -1383,7 +1383,7 @@
       "strategies": [
         {
           "name": "Doradztwo przy Wyjściu",
-          "description": "Zarządzamy pełnym procesem sprzedaży w imieniu właścicieli firm — od przygotowania i wyceny po identyfikację nabywców, negocjacje i zamknięcie.",
+          "description": "Zarządzamy pełnym procesem sprzedaży w imieniu właścicieli firm - od przygotowania i wyceny po identyfikację nabywców, negocjacje i zamknięcie.",
           "items": [
             "Przygotowanie i pozycjonowanie firmy",
             "Identyfikacja i podejście do nabywców",
@@ -1392,7 +1392,7 @@
         },
         {
           "name": "Doradztwo przy Przejęciu",
-          "description": "Wspieramy nabywców w pełnym procesie przejęcia — identyfikacja celów, wycena, due diligence, strukturyzacja i planowanie integracji po fuzji.",
+          "description": "Wspieramy nabywców w pełnym procesie przejęcia - identyfikacja celów, wycena, due diligence, strukturyzacja i planowanie integracji po fuzji.",
           "items": [
             "Identyfikacja i selekcja celów",
             "Wycena i due diligence",
@@ -1401,7 +1401,7 @@
         },
         {
           "name": "Pozyskiwanie Kapitału",
-          "description": "Pomagamy firmom pozyskać kapitał na rozwój od właściwych inwestorów — kapitałowy, dłużny lub hybrydowy — z właściwą strukturą i na odpowiednich warunkach.",
+          "description": "Pomagamy firmom pozyskać kapitał na rozwój od właściwych inwestorów - kapitałowy, dłużny lub hybrydowy - z właściwą strukturą i na odpowiednich warunkach.",
           "items": [
             "Identyfikacja i podejście do inwestorów",
             "Przygotowanie memorandum inwestycyjnego",
@@ -1410,7 +1410,7 @@
         },
         {
           "name": "Due Diligence",
-          "description": "Niezależne due diligence finansowe, handlowe i prawne — dające Państwu jasny, bezstronny obraz każdej transakcji przed podjęciem zobowiązania.",
+          "description": "Niezależne due diligence finansowe, handlowe i prawne - dające Państwu jasny, bezstronny obraz każdej transakcji przed podjęciem zobowiązania.",
           "items": [
             "Analiza finansowa i handlowa",
             "Identyfikacja i ocena ryzyk",
@@ -1480,7 +1480,7 @@
         "steps": [
           {
             "title": "Przygotowanie i Pozycjonowanie",
-            "timeline": "2–4 tygodnie",
+            "timeline": "2-4 tygodnie",
             "result": "Gotowość Transakcyjna",
             "activities": [
               "Analiza biznesu",
@@ -1491,7 +1491,7 @@
           },
           {
             "title": "Podejście do Rynku",
-            "timeline": "4–6 tygodni",
+            "timeline": "4-6 tygodni",
             "result": "Kwalifikowane Zainteresowanie",
             "activities": [
               "Identyfikacja nabywcy/inwestora",
@@ -1502,7 +1502,7 @@
           },
           {
             "title": "Negocjacje i Strukturyzacja",
-            "timeline": "4–8 tygodni",
+            "timeline": "4-8 tygodni",
             "result": "Uzgodnione Warunki",
             "activities": [
               "Ocena ofert",
@@ -1513,7 +1513,7 @@
           },
           {
             "title": "Zamknięcie i Przejście",
-            "timeline": "4–6 tygodni",
+            "timeline": "4-6 tygodni",
             "result": "Zakończona Transakcja",
             "activities": [
               "Dokumentacja prawna",
@@ -1531,11 +1531,11 @@
         },
         {
           "question": "Jak długo trwa typowy proces sprzedaży?",
-          "answer": "Dobrze prowadzony proces sprzedaży trwa zazwyczaj 6–12 miesięcy od przygotowania do zamknięcia. Złożone transakcje lub trudne warunki rynkowe mogą wydłużyć ten czas. Ustalamy realistyczne oczekiwania od pierwszego dnia."
+          "answer": "Dobrze prowadzony proces sprzedaży trwa zazwyczaj 6-12 miesięcy od przygotowania do zamknięcia. Złożone transakcje lub trudne warunki rynkowe mogą wydłużyć ten czas. Ustalamy realistyczne oczekiwania od pierwszego dnia."
         },
         {
           "question": "Czy mogą Państwo zachować poufność podczas procesu?",
-          "answer": "Tak. Zarządzamy całym procesem w ścisłych protokołach poufności — w tym NDA ze wszystkimi kontrahentami, kontrolowanym ujawnianiem informacji i zanonimizowanym wstępnym podejściem, jeśli to właściwe."
+          "answer": "Tak. Zarządzamy całym procesem w ścisłych protokołach poufności - w tym NDA ze wszystkimi kontrahentami, kontrolowanym ujawnianiem informacji i zanonimizowanym wstępnym podejściem, jeśli to właściwe."
         },
         {
           "question": "Jakiej wielkości transakcjami się Państwo zajmują?",
@@ -1544,7 +1544,7 @@
       ],
       "cta": {
         "title": "Rozpocznij Poufną Rozmowę",
-        "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Państwa sytuacji — i zaproponujemy ścieżkę naprzód tylko, jeśli będziemy pewni, że możemy wnieść istotną wartość."
+        "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Państwa sytuacji - i zaproponujemy ścieżkę naprzód tylko, jeśli będziemy pewni, że możemy wnieść istotną wartość."
       }
     },
     "specialSolutions": {
@@ -1803,7 +1803,7 @@
     "siteName": "Icon Finance",
     "pages": {
       "home": {
-        "title": "Icon Finance — Independent Wealth Management & Family Office",
+        "title": "Icon Finance - Independent Wealth Management & Family Office",
         "description": "Niezależne zarządzanie majątkiem, family office, strukturyzacja i podatki, M&A oraz rozwiązania specjalne dla przedsiębiorców i rodzin."
       },
       "about": {
@@ -1836,14 +1836,14 @@
       },
       "maConsulting": {
         "title": "M&A Consulting | Icon Finance",
-        "description": "Niezależne doradztwo M&A dla właścicieli i przedsiębiorców — sprzedaż, akwizycje, pozyskanie kapitału i due diligence."
+        "description": "Niezależne doradztwo M&A dla właścicieli i przedsiębiorców - sprzedaż, akwizycje, pozyskanie kapitału i due diligence."
       },
       "specialSolutions": {
         "title": "Special Solutions | Icon Finance",
-        "description": "Doradztwo szyte na miarę dla sztuki, nieruchomości, filantropii i ESG — gdy standardowe zarządzanie majątkiem nie wystarcza."
+        "description": "Doradztwo szyte na miarę dla sztuki, nieruchomości, filantropii i ESG - gdy standardowe zarządzanie majątkiem nie wystarcza."
       },
       "notFound": {
-        "title": "Nie znaleziono strony — Icon Finance",
+        "title": "Nie znaleziono strony - Icon Finance",
         "description": "Strona, której szukasz, nie istnieje."
       },
       "privacyPolicy": {

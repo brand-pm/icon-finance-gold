@@ -15,7 +15,7 @@ const ServiceHero = ({ eyebrow, title, description, image, imageAlt }: ServiceHe
   const { t } = useTranslation();
   return (
   <section className="relative bg-navy overflow-hidden pt-24 pb-12" style={{ minHeight: "35vh" }}>
-    {/* Background image — stretched across right side */}
+    {/* Background image - stretched across right side */}
     <div className="absolute inset-0">
       <img
         src={image}

@@ -29,7 +29,7 @@ const CookiePolicy = () => {
             heading: "1. What Are Cookies",
             body: (
               <Para>
-                Cookies are small text files placed on your device when you visit a website. They allow the website to recognise your device and remember certain information about your visit — such as your language preference or whether you have previously accepted our cookie notice.
+                Cookies are small text files placed on your device when you visit a website. They allow the website to recognise your device and remember certain information about your visit - such as your language preference or whether you have previously accepted our cookie notice.
               </Para>
             ),
           },
@@ -41,7 +41,7 @@ const CookiePolicy = () => {
                 <Bullets
                   items={[
                     <><strong>Essential cookies:</strong> required for the website to function correctly. These cannot be disabled without affecting site functionality.</>,
-                    <><strong>Analytics cookies:</strong> we use Google Analytics 4 to understand how visitors interact with our website. Data is aggregated and anonymised — we do not identify individual visitors.</>,
+                    <><strong>Analytics cookies:</strong> we use Google Analytics 4 to understand how visitors interact with our website. Data is aggregated and anonymised - we do not identify individual visitors.</>,
                     <><strong>Preference cookies:</strong> to remember your language selection and other interface preferences.</>,
                   ]}
                 />
@@ -55,10 +55,10 @@ const CookiePolicy = () => {
                 <Para>The following cookies may be set when you visit our website:</Para>
                 <Bullets
                   items={[
-                    <><strong>_ga / _ga_*</strong> — Google Analytics, session and user tracking (2 years)</>,
-                    <><strong>_gid</strong> — Google Analytics, distinguishes users (24 hours)</>,
-                    <><strong>i18next</strong> — language preference selected by user (session)</>,
-                    <><strong>cookieConsent</strong> — records whether you have accepted our cookie policy (1 year)</>,
+                    <><strong>_ga / _ga_*</strong> - Google Analytics, session and user tracking (2 years)</>,
+                    <><strong>_gid</strong> - Google Analytics, distinguishes users (24 hours)</>,
+                    <><strong>i18next</strong> - language preference selected by user (session)</>,
+                    <><strong>cookieConsent</strong> - records whether you have accepted our cookie policy (1 year)</>,
                   ]}
                 />
               </>

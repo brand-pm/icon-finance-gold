@@ -33,7 +33,7 @@ const InvestmentStrategies = ({ strategies }: InvestmentStrategiesProps) => {
 
         {/* Layout: left tabs + right content */}
         <div className="grid lg:grid-cols-[280px_1fr] gap-8 opacity-0 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-          {/* Left — tab list */}
+          {/* Left - tab list */}
           <div className="flex flex-col">
             {strategies.map((s, i) => (
               <button
@@ -50,7 +50,7 @@ const InvestmentStrategies = ({ strategies }: InvestmentStrategiesProps) => {
             ))}
           </div>
 
-          {/* Right — content with image */}
+          {/* Right - content with image */}
           <div data-radius-block className="bg-white grid lg:grid-cols-[60%_40%] overflow-hidden" style={{ border: "1px solid rgba(0,0,0,0.06)" }}>
             <div className="p-8 lg:p-10">
               <h3 className="text-charcoal font-semibold text-lg mb-4">{strategies[active].name}</h3>

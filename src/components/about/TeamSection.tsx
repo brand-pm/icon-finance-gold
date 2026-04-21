@@ -62,7 +62,7 @@ const TeamSection = ({ eyebrow, title, members }: TeamSectionProps) => {
                 />
                 <img
                   src={m.image}
-                  alt={`${m.name} — ${m.role}`}
+                  alt={`${m.name} - ${m.role}`}
                   loading="lazy"
                   width={512}
                   height={640}
