@@ -21,7 +21,7 @@ const Terms = () => {
             heading: "1. About This Website",
             body: (
               <Para>
-                This website is operated by Icon Finance, a financial advisory firm with its registered office at ul. Złota 59, 00-120 Warsaw, Poland. By accessing and using this website, you agree to be bound by these Terms and Conditions.
+                This website is operated by Icon Finance, a financial advisory firm with its registered office at ul. Próżna 5, 00-107 Warsaw, Poland. By accessing and using this website, you agree to be bound by these Terms and Conditions.
               </Para>
             ),
           },
