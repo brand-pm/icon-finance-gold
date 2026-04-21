@@ -96,7 +96,7 @@ const Hero = () => {
     <div className="container-main relative z-10 w-full">
       <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center w-full py-12 lg:py-0">
         <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-          <p className="eyebrow mb-4 md:mb-6">{t("hero.eyebrow")}</p>
+          
           <h1
             className="text-gold font-light leading-[1.15] mb-5 md:mb-6"
             style={{ fontSize: "clamp(28px,6vw,56px)" }}
