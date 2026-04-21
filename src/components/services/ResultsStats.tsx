@@ -72,9 +72,9 @@ const ResultsStats = ({ items, eyebrow, title }: ResultsStatsProps) => {
     <section className="section-padding bg-navy relative">
       <div className="container-main" ref={ref}>
         <div className="text-center mb-16 opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-          <p className="eyebrow mb-4">{eyebrow}</p>
+          <p className="eyebrow mb-4">{finalEyebrow}</p>
           <h2 className="text-white font-light mb-4" style={{ fontSize: "clamp(26px,4vw,38px)" }}>
-            {title}
+            {finalTitle}
           </h2>
           <div className="gold-separator">
             <div className="dot" /><div className="dot-lg" /><div className="dot" />
