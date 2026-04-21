@@ -583,3 +583,16 @@
 .why-us-card:hover::after {
   width: 100%;
 }
+
+/* Investment Opportunities — list item hover */
+.opp-item {
+  border-radius: 4px;
+}
+.opp-item:hover {
+  background: rgba(224, 167, 118, 0.06);
+  transform: translateX(6px);
+}
+.opp-item:hover .opp-marker {
+  transform: rotate(45deg) scale(1.35);
+  box-shadow: 0 0 12px rgba(224, 167, 118, 0.6);
+}

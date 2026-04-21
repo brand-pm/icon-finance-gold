@@ -106,7 +106,7 @@ const InvestmentOpportunities = ({ categories }: InvestmentOpportunitiesProps) =
                     return (
                       <li
                         key={i}
-                        className="flex items-start gap-4 py-4"
+                        className="opp-item group flex items-start gap-4 py-4 px-3 -mx-3 cursor-default transition-all duration-300 ease-out"
                         style={{
                           borderBottom: isLast
                             ? "none"
@@ -118,7 +118,7 @@ const InvestmentOpportunities = ({ categories }: InvestmentOpportunitiesProps) =
                         {/* Gold diamond marker */}
                         <div
                           aria-hidden
-                          className="flex-shrink-0 mt-2"
+                          className="opp-marker flex-shrink-0 mt-2 transition-all duration-300 ease-out"
                           style={{
                             width: "8px",
                             height: "8px",
