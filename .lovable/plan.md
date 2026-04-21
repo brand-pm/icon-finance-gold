@@ -1,61 +1,61 @@
 
 
-# Plan: Individual Service Pages
+# Качественная вычитка переводов: страница за страницей
 
-## What we're building
-A complete **Wealth Management** service page based on the reference, then replicate the structure for all 5 services. Each service gets its own route (`/services/wealth-management`, etc.).
+Цель: пройти все 4 языка (EN-эталон, RU, UK, PL) экран за экраном вручную. Никаких массовых regex-замен. Каждый блок — осознанный перевод с естественными формулировками, без англицизмов и без латиницы (кроме email и аббревиатур BVI/NDA).
 
-## Modules identified from the reference (top to bottom)
+## Глобальные правила (применяются ко всем блокам)
 
-1. **ServiceHero** — Dark navy bg, service title ("Professional Wealth Management For Affluent Families"), description text, CTA button, large 3D golden icon on the right
-2. **WhoBenefits** — Light bg, "Who Benefits from Our Wealth Management" left title, right side has expandable accordion items (Family Offices & Professionals, Business Owners & HNI, Affluent Families, International Investors)
-3. **Philosophy** — Light bg, "Icon Financial Wealth Management Philosophy" with gold separator, 4 numbered cards (01-04: Client-first, Active Management, Risk Control, Diversification) with descriptions and arrow icons
-4. **ResultsStats** — Dark navy bg, "Our Results Speak for Themselves", 6 stats in 2x3 grid ($500M+, 95%, 12%, 1.4, ~8%, $5M) with labels
-5. **InvestmentStrategies** — Dark navy bg, "Our Investment Strategies" with tab navigation (Conservative Strategy, Balanced, Growth, etc.), each tab shows description + image
-6. **InvestmentOpportunities** — Dark navy bg, "Wide Range of Investment Opportunities" with two tab categories (Traditional Assets / Alternative Investments), grid of cards below each
-7. **PortfolioManagement** — Split layout — dark left with "How We Manage Your Portfolio" + CTA, right side with 4 numbered steps (Analysis & Planning, Portfolio Construction, Active Management, Reporting & Control) each with sub-items
-8. **ServiceFAQ** — Light bg, "Frequently Asked Questions" left, accordion items right
-9. **ServiceCTA** — Split — left dark with "Start Managing Your Wealth Today" text + description, right with contact form (gold accent)
-10. **Footer** — Reuse existing
+- **Family Office** → RU «семейный офис», UK «сімейний офіс», PL «biuro rodzinne». В первом упоминании в hero-описаниях допустимо «семейный офис (family office)».
+- **M&A** → RU «слияния и поглощения», UK «злиття та поглинання», PL «fuzje i przejęcia». В технических ярлыках вкладок сохраняется аббревиатура M&A только если стоит рядом с переводом.
+- **Private Equity / Venture / Hedge / ESG / Due Diligence / Exit / Governance / Private Banking / Asset Management / Lifestyle Management** — переводятся:
+  - Private Equity → прямые инвестиции / прямі інвестиції / inwestycje private equity → inwestycje kapitałowe
+  - Venture → венчурные инвестиции / венчурні інвестиції / inwestycje venture → kapitał wysokiego ryzyka
+  - Due Diligence → комплексная проверка / комплексна перевірка / due diligence → analiza due diligence (PL — допустимо, термин принят)
+  - Exit → выход из инвестиции / вихід з інвестиції / wyjście z inwestycji
+  - Governance → корпоративное управление / корпоративне управління / ład korporacyjny
+  - Private Banking → частный банкинг / приватний банкінг / bankowość prywatna
+  - Asset Management → управление активами / управління активами / zarządzanie aktywami
+  - Lifestyle Management → управление образом жизни / управління способом життя / zarządzanie stylem życia
+- **Cookies / Email** в UI лейблах → «Файлы cookie», «Cookies» (PL — ok), «Електронна пошта», «Email» (PL — ok).
+- **SEO-тайтлы и описания** — полностью локализуются для каждой страницы и каждого языка.
+- **Имена людей** (Oleg, Yurii и т.д.) в PL — транслитерируются по-польски: Oleh Zabolotnyi, Yurii Łabenko и т.п. (либо оставляем латиницей как есть — уточню при правке PL-блока, по умолчанию оставляем как сейчас, т.к. это собственные имена).
+- **Адрес**: «Próżna» — собственное название, остаётся латиницей. Город — на языке.
 
-## Technical approach
+## Порядок блоков (по экранам)
 
-### Routing
-- Add routes in `App.tsx`: `/services/wealth-management`, `/services/family-office`, etc.
-- Update "Learn more" links in `Services.tsx` to navigate to these pages
-- Each route uses a shared `ServicePage` layout with service-specific data
+| # | Блок | Что входит | Что фиксим |
+|---|------|------------|------------|
+| 1 | Главная (Home) | `hero`, `services`, `servicesSection`, `homeProcess`, `whyUs`, `insightsTeaser`, `contactTeaser`, `nav`, `megaMenu`, `footer`, `common`, `serviceCTA` | family office, M&A, governance, exit, Cookies, Email, Lifestyle management, ровные формулировки |
+| 2 | About | `about` (hero, philosophy, story, team) | private banking, asset management, governance, Family Office, бренд-имя в hero |
+| 3 | Expertise | `expertise` (hero, competencies, industries, international, key numbers) | family office, M&A, due diligence, exit, governance, BVI |
+| 4 | Insights (главная + страница) | `insights`, `insightsTeaser` | категории «Family Office», «M&A», ровный business-tone |
+| 5 | Contact | `contactPage` (hero, details, form, CTA) | Email-блок, NDA, тон формы, subjects |
+| 6a | Service: Wealth Management | `servicePages.wealthManagement` (hero, whoBenefits, philosophy, results, strategies, opportunities, portfolio, faq, cta) | Private Equity, market neutral, Bitcoin/Ethereum, Due diligence, грамматика стратегий |
+| 6b | Service: Family Office | `servicePages.familyOffice` | Single/Shared/Virtual Family Office как названия моделей |
+| 6c | Service: Structuring & Tax | `servicePages.structuringTax` | комплаенс, структуры, термины |
+| 6d | Service: M&A Consulting | `servicePages.maConsulting` | exit, due diligence, M&A в названиях стратегий |
+| 6e | Service: Special Solutions | `servicePages.specialSolutions` | ESG, Lifestyle |
+| 7 | SEO + системные | `seo.pages.*` (полная локализация всех title/description), `notFound`, `cookieConsent`, legal pages references | все страницы |
 
-### File structure
-```text
-src/pages/services/
-  WealthManagement.tsx        — page composing all modules
-src/components/services/
-  ServiceHero.tsx             — module 1
-  WhoBenefits.tsx             — module 2
-  Philosophy.tsx              — module 3
-  ResultsStats.tsx            — module 4
-  InvestmentStrategies.tsx    — module 5
-  InvestmentOpportunities.tsx — module 6
-  PortfolioManagement.tsx     — module 7
-  ServiceFAQ.tsx              — module 8
-  ServiceCTA.tsx              — module 9
-```
+## Процесс по каждому блоку
 
-### Data-driven design
-- Each service page will use the same component set but with different data (titles, stats, FAQ items, strategies)
-- Start with **Wealth Management** first, pixel-perfect to the reference
-- Then create remaining 4 service pages with adapted content
+1. Открываем EN как эталон смысла.
+2. Сравниваем с текущими RU / UK / PL.
+3. Переписываем проблемные строки **вручную, осмысленно**, выдерживая бизнес-тон, без кальки с английского.
+4. Сохраняем правки одновременно во всех 3 нелатинских языках.
+5. После блока — JSON-валидация всех 4 файлов.
+6. Я отчитываюсь: «Блок N готов, исправлено столько-то строк, пример до/после». Жду «дальше» — и перехожу к следующему.
 
-### Styling
-- Follows existing design tokens (navy, gold, charcoal, offwhite)
-- Marble texture where appropriate
-- Gold separators, zero border-radius
-- Accordion from existing shadcn/ui components
+## Технические детали
 
-## Implementation order
-1. Create all 9 service section components for Wealth Management
-2. Create `WealthManagement.tsx` page composing them
-3. Add route in `App.tsx`
-4. Update Services tab "Learn more" to link to service pages
-5. Create remaining 4 service pages with adapted content
+- Файлы: только `src/i18n/locales/{ru,uk,pl}/common.json`. EN не трогаем.
+- Никаких regex-скриптов с массовыми заменами по всему файлу — это и привело к «переносам букв» и кривым фразам ранее.
+- Правки делаем через `code--line_replace` точечно, по одному ключевому пути за раз (или JSON-патч для всего блока, который я проверяю глазами перед записью).
+- После каждого блока: `python3 -c "import json; json.load(open('...'))"` для всех 4 файлов.
+- Memory: после согласования глоссария сохраню `mem://design/translation-glossary` со словарём терминов, чтобы больше не возвращаться к этому вопросу.
+
+## Что начнём первым (после твоего «ок»)
+
+**Блок 1 — Главная страница**, потому что это первое, что видит клиент, и именно там сейчас «Family Office», «M&A», «governance», «Cookies», «Lifestyle management» торчат в кириллическом тексте.
 
