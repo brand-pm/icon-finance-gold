@@ -30,7 +30,7 @@ const PrivacyPolicy = () => {
             body: (
               <>
                 <Para>
-                  Icon Finance is a wealth management and financial advisory firm incorporated in Poland, with its registered office at ul. Złota 59, 00-120 Warsaw, Poland. We are the data controller for all personal data collected through this website and in the course of our advisory relationships.
+                  Icon Finance is a wealth management and financial advisory firm incorporated in Poland, with its registered office at ul. Próżna 5, 00-107 Warsaw, Poland. We are the data controller for all personal data collected through this website and in the course of our advisory relationships.
                 </Para>
                 <Para>
                   For all data protection enquiries, please contact us at:{" "}
