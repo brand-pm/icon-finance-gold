@@ -79,18 +79,6 @@ const InvestmentOpportunities = ({ categories }: InvestmentOpportunitiesProps) =
 
                 {/* Category title with eyebrow */}
                 <div className="mb-10">
-                  <p
-                    className="uppercase tracking-[0.24em] mb-3"
-                    style={{
-                      fontSize: "11px",
-                      color: isDark
-                        ? "rgba(224,167,118,0.7)"
-                        : "rgba(224,167,118,0.85)",
-                      fontWeight: 500,
-                    }}
-                  >
-                    {String(ci + 1).padStart(2, "0")} / {String(categories.length).padStart(2, "0")}
-                  </p>
                   <h3
                     className={`font-light leading-tight ${
                       isDark ? "text-gold" : "text-charcoal"
