@@ -33,14 +33,13 @@ const ResultsStats = ({ items, eyebrow = "Results and Metrics", title = "Our Res
           <span
             className="text-gold block min-w-0"
             style={{
-              fontSize: "clamp(24px, 3.4vw, 44px)",
+              fontSize: "clamp(22px, 3.2vw, 40px)",
               fontWeight: 300,
               lineHeight: 1.1,
-              wordBreak: "break-word",
-              overflowWrap: "break-word",
-              hyphens: "auto",
+              overflowWrap: "normal",
+              wordBreak: "normal",
+              hyphens: "none",
             }}
-            lang="auto"
           >
             {item.main}
           </span>
