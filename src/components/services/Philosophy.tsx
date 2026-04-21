@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 import cardAccent from "../../assets/card-accent.svg";
 
@@ -15,13 +16,14 @@ interface PhilosophyProps {
 
 const Philosophy = ({ sectionTitle, subtitle, items }: PhilosophyProps) => {
   const ref = useScrollReveal();
+  const { t } = useTranslation();
 
   return (
     <section className="section-padding marble-texture-strong" style={{ background: "linear-gradient(180deg, #EDE9E4 0%, #F5F3F0 100%)" }}>
       <div className="container-main" ref={ref}>
         {/* Header */}
         <div className="text-center mb-16 opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-          <p className="eyebrow mb-4">Our Approach</p>
+          <p className="eyebrow mb-4">{t("sectionLabels.ourApproach")}</p>
           <h2 className="text-charcoal font-light whitespace-pre-line mb-4" style={{ fontSize: "clamp(26px,4vw,38px)" }}>
             {sectionTitle}
           </h2>
