@@ -880,7 +880,7 @@
       },
       "strategies": [
         {
-          "name": "Single Family Office",
+          "name": "Dedykowany Family Office",
           "description": "W pełni dedykowana struktura zbudowana wyłącznie dla Państwa rodziny. Pełna kontrola, maksymalna poufność i indywidualna infrastruktura — zaprojektowana dla rodzin z aktywami od 30 mln USD.",
           "items": [
             "Wyłączna infrastruktura tylko dla jednej rodziny",
@@ -889,7 +889,7 @@
           ]
         },
         {
-          "name": "Shared Family Office",
+          "name": "Współdzielony Family Office",
           "description": "Dostęp do usług family office klasy instytucjonalnej dzielonych z wybraną grupą rodzin. Korzyści pełnego family office za ułamek kosztu samodzielnego.",
           "items": [
             "Infrastruktura instytucjonalna przy zoptymalizowanym koszcie",
@@ -898,16 +898,16 @@
           ]
         },
         {
-          "name": "Family Office Advisory",
+          "name": "Doradczy Family Office",
           "description": "Mają już Państwo family office, ale potrzebują doświadczonej zewnętrznej perspektywy. Działamy jako Państwa strategiczny doradca: oceniamy struktury, optymalizujemy procesy i uzupełniamy luki kompetencyjne.",
           "items": [
             "Niezależny przegląd istniejącego family office",
             "Optymalizacja procesów i ulepszenie ładu",
-            "Ekspertyza seniorska na żądanie bez pełnego retaineru"
+            "Ekspertyza partnerów na żądanie bez pełnego abonamentu"
           ]
         },
         {
-          "name": "Virtual Family Office",
+          "name": "Wirtualny Family Office",
           "description": "Dla rodzin, które chcą koordynacji na poziomie family office bez fizycznej infrastruktury. Działamy jako Państwa zewnętrzne family office, dostarczając wszystkie usługi bez kosztów ogólnych.",
           "items": [
             "Pełna koordynacja bez kosztów fizycznego biura",
@@ -967,7 +967,7 @@
             },
             {
               "title": "Edukacja następnego pokolenia",
-              "description": "wiedza finansowa, programy onboardingowe"
+              "description": "wiedza finansowa, programy wdrożeniowe"
             }
           ]
         }
@@ -1006,7 +1006,7 @@
               "Tworzenie podmiotów",
               "Otwarcie rachunków",
               "Dokumentacja polityk",
-              "Onboarding systemów"
+              "Wdrożenie systemów"
             ]
           },
           {
@@ -1025,7 +1025,7 @@
       "faq": [
         {
           "question": "Jaki jest minimalny poziom aktywów dla family office?",
-          "answer": "Dedykowane Single Family Office wymaga zwykle aktywów inwestycyjnych od 30 mln USD, aby było efektywne kosztowo. Nasz model Shared Family Office zaprojektowany jest dla rodzin od 5–10 mln USD, a Virtual Family Office nie ma sztywnego minimum."
+          "answer": "Dedykowane Dedykowany Family Office wymaga zwykle aktywów inwestycyjnych od 30 mln USD, aby było efektywne kosztowo. Nasz model Współdzielony Family Office zaprojektowany jest dla rodzin od 5–10 mln USD, a Wirtualny Family Office nie ma sztywnego minimum."
         },
         {
           "question": "Czym family office różni się od banku prywatnego?",
@@ -1527,7 +1527,7 @@
       "faq": [
         {
           "question": "Jak są Państwo wynagradzani w transakcjach M&A?",
-          "answer": "Pobieramy opłatę retainer za prace doradcze i prowizję sukcesu po zakończeniu transakcji. Struktury opłat są ustalane transparentnie z góry. Nigdy nie otrzymujemy ukrytych płatności od kontrahentów ani inwestorów."
+          "answer": "Pobieramy opłatę abonament za prace doradcze i prowizję sukcesu po zakończeniu transakcji. Struktury opłat są ustalane transparentnie z góry. Nigdy nie otrzymujemy ukrytych płatności od kontrahentów ani inwestorów."
         },
         {
           "question": "Jak długo trwa typowy proces sprzedaży?",
@@ -1828,7 +1828,7 @@
       },
       "familyOffice": {
         "title": "Family Office | Icon Finance",
-        "description": "Single, shared, advisory i virtual family office dla wielopokoleniowej koordynacji majątku."
+        "description": "Dedykowany, współdzielony, doradczy i wirtualny family office dla wielopokoleniowej koordynacji majątku."
       },
       "structuringTax": {
         "title": "Structuring & Tax | Icon Finance",
