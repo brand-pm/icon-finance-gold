@@ -47,10 +47,10 @@ const Footer = () => {
       <div className="container-main relative z-10 pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 mb-12">
           <div>
-            <Link to={localize("/")} className="inline-block">
-              <img src={logo} alt="Icon Finance & Wealth Management" className="h-[46px] mb-4" />
+            <Link to={localize("/")} className="inline-block mb-5">
+              <img src={logo} alt="Icon Finance & Wealth Management" className="h-[46px] block" />
             </Link>
-            <p className="text-white/50 text-sm leading-relaxed max-w-xs">{t("footer.tagline")}</p>
+            <p className="text-white/50 text-sm leading-relaxed max-w-xs pl-[3px]">{t("footer.tagline")}</p>
           </div>
 
           {footerCols.map((col, i) => (
