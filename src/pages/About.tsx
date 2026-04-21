@@ -62,11 +62,11 @@ const About = () => {
       <TeamSection
         eyebrow={t("about.team.eyebrow")}
         title={t("about.team.title")}
-        members={teamMembers.map((m) => ({
+        members={teamMembers.map((m, idx) => ({
           role: m.role,
           name: m.name,
           bio: m.bio,
-          image: TEAM_PHOTOS[m.name] ?? teamPlaceholder,
+          image: TEAM_PHOTOS_BY_INDEX[idx] ?? teamPlaceholder,
           linkedin: "#",
         }))}
       />
