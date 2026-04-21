@@ -29,10 +29,11 @@ const PortfolioManagement = ({
   description,
   steps,
   ctaLink = "/#contact",
-  ctaLabel = "Start a dialogue",
+  ctaLabel,
   ctaVariant = "filled",
 }: PortfolioManagementProps) => {
   const { t } = useTranslation();
+  const finalCtaLabel = ctaLabel ?? t("nav.startDialogue");
   return (
     <section className="portfolio-management-section">
       <div className="container-main section-padding">
@@ -50,7 +51,7 @@ const PortfolioManagement = ({
               to={ctaLink}
               className={`${ctaVariant === "filled" ? "btn-gold" : "btn-outline-gold"} inline-block px-10 py-4 text-[14px] rounded-lg`}
             >
-              {ctaLabel}
+              {finalCtaLabel}
             </Link>
           </div>
 
