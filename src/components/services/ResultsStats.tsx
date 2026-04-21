@@ -22,19 +22,30 @@ const ResultsStats = ({ items, eyebrow = "Results and Metrics", title = "Our Res
 
   const renderStat = (item: StatItem, i: number, arr: StatItem[]) => (
     <div key={i} className="flex items-center">
-      <div className="flex-1 flex flex-col items-center text-center py-8 px-8 min-w-0">
+      <div className="flex-1 flex flex-col items-center text-center py-8 px-8 min-w-0 w-full">
         {/* Value line */}
-        <div className="flex items-baseline justify-center leading-none max-w-full">
+        <div className="flex items-baseline justify-center leading-none w-full max-w-full">
           {item.prefix && (
-            <span className="text-gold font-light" style={{ fontSize: "clamp(20px, 2vw, 28px)", marginBottom: "0.15em" }}>
+            <span className="text-gold font-light shrink-0" style={{ fontSize: "clamp(20px, 2vw, 28px)", marginBottom: "0.15em" }}>
               {item.prefix}
             </span>
           )}
-          <span className="text-gold break-words" style={{ fontSize: "clamp(32px, 4.2vw, 52px)", fontWeight: 300, lineHeight: 1.05 }}>
+          <span
+            className="text-gold block min-w-0"
+            style={{
+              fontSize: "clamp(24px, 3.4vw, 44px)",
+              fontWeight: 300,
+              lineHeight: 1.1,
+              wordBreak: "break-word",
+              overflowWrap: "break-word",
+              hyphens: "auto",
+            }}
+            lang="auto"
+          >
             {item.main}
           </span>
           {item.suffix && (
-            <span className={`text-gold/70 font-light ${item.suffix === '+' ? 'self-start' : 'self-end'}`} style={{ fontSize: "clamp(16px, 1.8vw, 22px)", ...(item.suffix === '+' ? { marginTop: "0.15em" } : { marginBottom: "0.15em" }) }}>
+            <span className={`text-gold/70 font-light shrink-0 ${item.suffix === '+' ? 'self-start' : 'self-end'}`} style={{ fontSize: "clamp(16px, 1.8vw, 22px)", ...(item.suffix === '+' ? { marginTop: "0.15em" } : { marginBottom: "0.15em" }) }}>
               {item.suffix}
             </span>
           )}
