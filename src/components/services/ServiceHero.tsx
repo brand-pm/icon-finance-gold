@@ -42,7 +42,7 @@ const ServiceHero = ({ eyebrow, title, description, image, imageAlt }: ServiceHe
             {description}
           </p>
           <Link to={localize("/contact")} className="btn-gold px-8 py-4 inline-block">
-            Start a dialogue
+            {t("nav.startDialogue")}
           </Link>
         </div>
       </div>
