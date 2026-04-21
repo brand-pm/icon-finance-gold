@@ -14,12 +14,9 @@ import yuriiPhoto from "../assets/team/yurii-labenko.jpg";
 import maksymPhoto from "../assets/team/maksym-sydorov.jpg";
 import kseniaPhoto from "../assets/team/ksenia-romanchuk.jpg";
 
-const TEAM_PHOTOS: Record<string, string> = {
-  "Oleg Zabolotnyi": olegPhoto,
-  "Yurii Labenko": yuriiPhoto,
-  "Maksym Sydorov": maksymPhoto,
-  "Ksenia Romanchuk": kseniaPhoto,
-};
+// Photos are matched by position in the team array (same order across all locales):
+// 0: Founder, 1: CEO, 2: CBDO, 3: Partnership Development Manager
+const TEAM_PHOTOS_BY_INDEX: string[] = [olegPhoto, yuriiPhoto, kseniaPhoto, maksymPhoto];
 
 const About = () => {
   const { t } = useTranslation();
