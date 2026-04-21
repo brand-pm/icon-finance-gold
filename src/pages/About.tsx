@@ -9,6 +9,15 @@ import ServiceCTA from "../components/services/ServiceCTA";
 import TeamSection from "../components/about/TeamSection";
 import aboutSymbol from "../assets/about-symbol.png";
 import teamPlaceholder from "../assets/team-placeholder.jpg";
+import olegPhoto from "../assets/team/oleg-zabolotnyi.jpg";
+import yuriiPhoto from "../assets/team/yurii-labenko.jpg";
+import maksymPhoto from "../assets/team/maksym-sydorov.jpg";
+
+const TEAM_PHOTOS: Record<string, string> = {
+  "Oleg Zabolotnyi": olegPhoto,
+  "Yurii Labenko": yuriiPhoto,
+  "Maksym Sydorov": maksymPhoto,
+};
 
 const About = () => {
   const { t } = useTranslation();
@@ -58,7 +67,7 @@ const About = () => {
           role: m.role,
           name: m.name,
           bio: m.bio,
-          image: teamPlaceholder,
+          image: TEAM_PHOTOS[m.name] ?? teamPlaceholder,
           linkedin: "#",
         }))}
       />
