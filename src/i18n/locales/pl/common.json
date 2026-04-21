@@ -14,16 +14,16 @@
       "description": "Niezależne zarządzanie inwestycjami dla przedsiębiorców i rodzin"
     },
     "familyOffice": {
-      "title": "Family Office",
-      "description": "Kompleksowe projektowanie i prowadzenie family office"
+      "title": "Biuro rodzinne",
+      "description": "Kompleksowe tworzenie i prowadzenie biura rodzinnego"
     },
     "structuringTax": {
       "title": "Strukturyzacja i podatki",
       "description": "Międzynarodowa strukturyzacja i planowanie podatkowe dla złożonych majątków"
     },
     "maConsulting": {
-      "title": "Doradztwo M&A",
-      "description": "Doradztwo korporacyjne w zakresie akwizycji, exitów i pozyskiwania kapitału"
+      "title": "Fuzje i przejęcia",
+      "description": "Doradztwo korporacyjne w zakresie transakcji, wyjść z inwestycji i pozyskiwania kapitału"
     },
     "specialSolutions": {
       "title": "Rozwiązania specjalne",
@@ -66,15 +66,15 @@
         "alt": "Symbol nieskończoności — ochrona majątku przez pokolenia"
       },
       "familyOffice": {
-        "name": "Family Office",
-        "title": "Kompleksowe usługi family office i ład rodzinny",
-        "desc": "Pełne zarządzanie aktywami rodzinnymi, strukturami zarządzania i planowaniem sukcesji przez pokolenia.",
+        "name": "Biuro rodzinne",
+        "title": "Pełny zakres usług biura rodzinnego i ładu korporacyjnego",
+        "desc": "Kompleksowe zarządzanie aktywami rodziny, ład korporacyjny oraz planowanie sukcesji pomiędzy pokoleniami.",
         "items": [
           "Ład rodzinny",
           "Planowanie sukcesji",
           "Doradztwo filantropijne"
         ],
-        "alt": "Drzewo genealogiczne — wielopokoleniowe zarządzanie majątkiem"
+        "alt": "Drzewo rodzinne — zarządzanie majątkiem wielu pokoleń"
       },
       "structuringTax": {
         "name": "Strukturyzacja i podatki",
@@ -83,17 +83,17 @@
         "items": [
           "Optymalizacja podatkowa",
           "Strukturyzacja prawna",
-          "Doradztwo compliance"
+          "Doradztwo w zakresie compliance"
         ],
         "alt": "Tarcza z wagami — ochrona prawna i równowaga"
       },
       "maConsulting": {
-        "name": "Doradztwo M&A",
-        "title": "Strategiczne doradztwo korporacyjne i M&A",
-        "desc": "Profesjonalne wsparcie w transakcjach M&A, strategiach exit, pozyskiwaniu kapitału i restrukturyzacji korporacyjnej.",
+        "name": "Fuzje i przejęcia",
+        "title": "Strategiczne doradztwo korporacyjne w transakcjach M&A",
+        "desc": "Eksperckie wsparcie transakcji fuzji i przejęć, strategii wyjścia z inwestycji, pozyskiwania kapitału oraz restrukturyzacji korporacyjnej.",
         "items": [
           "Doradztwo M&A",
-          "Strategie exit",
+          "Strategie wyjścia z inwestycji",
           "Pozyskiwanie kapitału"
         ],
         "alt": "Klasyczna kolumna — siła i fundament korporacyjny"
@@ -104,10 +104,10 @@
         "desc": "Dedykowane rozwiązania dla złożonych sytuacji wymagających innowacyjnego i kreatywnego podejścia.",
         "items": [
           "Sztuka i kolekcje",
-          "Doradztwo nieruchomości",
-          "Lifestyle management"
+          "Doradztwo w zakresie nieruchomości",
+          "Zarządzanie stylem życia"
         ],
-        "alt": "Diament — luksusowe rozwiązania szyte na miarę"
+        "alt": "Diament — indywidualne rozwiązania premium"
       }
     }
   },
@@ -141,7 +141,7 @@
   "whyUs": {
     "eyebrow": "Dlaczego Icon Finance",
     "title": "Zaufany partner w zarządzaniu majątkiem",
-    "subtitle": "Łączymy międzynarodową ekspertyzę wiodących instytucji finansowych z indywidualnym podejściem family office. Nasz zespół zapewnia kompleksowe wsparcie na każdym etapie zarządzania majątkiem",
+    "subtitle": "Łączymy międzynarodowe doświadczenie wiodących instytucji finansowych z osobistym podejściem biura rodzinnego. Nasz zespół zapewnia wsparcie na wszystkich etapach zarządzania majątkiem.",
     "cards": {
       "c1": {
         "title": "Poufność",
@@ -168,12 +168,12 @@
     "minRead": "min czytania",
     "articles": {
       "a1": {
-        "category": "Perspektywa Family Office",
-        "title": "Raport Goldman Sachs Family Office Investment Insights — Adapting to the Terrain"
+        "category": "Perspektywa biura rodzinnego",
+        "title": "Raport Goldman Sachs o inwestycjach biur rodzinnych — dostosowanie do nowej rzeczywistości"
       },
       "a2": {
         "category": "Briefingi prywatne",
-        "title": "Uchwalono One Big Beautiful Bill Act..."
+        "title": "Uchwalono ustawę One Big Beautiful Bill Act — co to oznacza dla dużych majątków"
       },
       "a3": {
         "category": "Strategiczne analizy",
@@ -202,17 +202,17 @@
     }
   },
   "footer": {
-    "tagline": "Niezależne usługi zarządzania majątkiem i family office dla przedsiębiorców i rodzin z międzynarodowym majątkiem.",
+    "tagline": "Niezależne zarządzanie majątkiem i usługi biura rodzinnego dla przedsiębiorców i rodzin z aktywami międzynarodowymi.",
     "navigate": "Nawigacja",
     "services": "Usługi",
     "contact": "Kontakt",
     "legal": "Prawne",
     "privacy": "Polityka prywatności",
     "terms": "Regulamin",
-    "cookies": "Cookies",
+    "cookies": "Pliki cookie",
     "rights": "Wszelkie prawa zastrzeżone.",
     "office": "Biuro",
-    "email": "Email",
+    "email": "E-mail",
     "phone": "Telefon"
   },
   "common": {
