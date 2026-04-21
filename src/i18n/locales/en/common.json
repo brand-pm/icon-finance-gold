@@ -1905,5 +1905,17 @@
     "stage": "Stage",
     "result": "Result",
     "activities": "Activities"
+  },
+  "sectionLabels": {
+    "whoFor": "Who this service is for",
+    "ourApproach": "Our Approach",
+    "strategies": "Strategies",
+    "strategiesTitle": "Our Investment Strategies",
+    "assetClasses": "Asset Classes",
+    "opportunitiesTitle": "Wide Range of Investment Opportunities",
+    "faq": "FAQ Section",
+    "faqTitle": "Frequently Asked\nQuestions",
+    "results": "Results and Metrics",
+    "resultsTitle": "Our Results Speak for Themselves"
   }
 }
