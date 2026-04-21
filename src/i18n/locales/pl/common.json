@@ -347,7 +347,7 @@
     "hero": {
       "eyebrow": "Ekspertyza",
       "title": "Dziesięciolecia doświadczenia.\nJeden zintegrowany zespół.",
-      "description": "Łączymy specjalistów z zakresu zarządzania majątkiem, family office, strukturyzacji, podatków i doradztwa korporacyjnego — pracując jako jeden zespół wokół całego życia finansowego każdego klienta.",
+      "description": "Łączymy specjalistów z zakresu zarządzania majątkiem, usług biura rodzinnego, strukturyzacji, podatków i doradztwa korporacyjnego — pracując jako jeden zespół wokół całego życia finansowego każdego klienta.",
       "cta": "Rozpocznij dialog"
     },
     "competencies": {
@@ -356,19 +356,19 @@
       "items": [
         {
           "title": "Zarządzanie majątkiem",
-          "body": "Niezależne zarządzanie inwestycjami i doradztwo portfelowe dla przedsiębiorców i rodzin. Bez prowizji produktowych. Bez kwot instytucjonalnych. Tylko doradztwo zgodne z Twoimi celami."
+          "body": "Niezależne zarządzanie inwestycjami i doradztwo portfelowe dla przedsiębiorców i rodzin. Bez prowizji od sprzedaży produktów. Bez kwot instytucjonalnych. Wyłącznie rekomendacje zgodne z Państwa celami."
         },
         {
-          "title": "Family Office",
-          "body": "Projektujemy i prowadzimy struktury family office dla rodzin wielopokoleniowych — koordynując inwestycje, ład, sukcesję i raportowanie z jednego punktu."
+          "title": "Biuro rodzinne",
+          "body": "Projektujemy i prowadzimy struktury biura rodzinnego dla rodzin wielopokoleniowych — koordynując inwestycje, ład korporacyjny, sukcesję i raportowanie z jednego punktu."
         },
         {
           "title": "Strukturyzacja i podatki",
-          "body": "Międzynarodowa strukturyzacja majątku i planowanie podatkowe w wielu jurysdykcjach — w celu ochrony aktywów, zmniejszenia obciążeń podatkowych i pełnej zgodności prawnej."
+          "body": "Międzynarodowa strukturyzacja majątku i planowanie podatkowe w wielu jurysdykcjach — w celu ochrony aktywów, zmniejszenia zbędnych obciążeń podatkowych i pełnej zgodności prawnej."
         },
         {
           "title": "Doradztwo korporacyjne",
-          "body": "Doradztwo M&A, planowanie exit, pozyskiwanie kapitału i due diligence dla właścicieli firm — od wczesnego rozwoju po finalne zamknięcie transakcji."
+          "body": "Doradztwo w fuzjach i przejęciach, planowanie wyjścia z inwestycji, pozyskiwanie kapitału oraz analiza due diligence dla właścicieli firm — od wczesnego etapu wzrostu po zamknięcie transakcji."
         }
       ]
     },
@@ -378,27 +378,27 @@
       "items": [
         {
           "title": "Przedsiębiorcy i założyciele",
-          "body": "Właściciele firm na styku majątku osobistego i korporacyjnego, na każdym etapie wzrostu."
+          "body": "Właściciele firm balansujący między majątkiem osobistym a korporacyjnym na każdym etapie wzrostu."
         },
         {
           "title": "Rodziny wielopokoleniowe",
-          "body": "Rodziny zarządzające majątkiem przez dwa lub trzy pokolenia ze złożonymi potrzebami ładu i sukcesji."
+          "body": "Rodziny zarządzające majątkiem przez dwa lub trzy pokolenia, ze złożonymi potrzebami w zakresie ładu korporacyjnego i sukcesji."
         },
         {
           "title": "Klienci międzynarodowi",
-          "body": "Osoby i rodziny z aktywami, rezydencją i interesami rozsianymi po wielu jurysdykcjach."
+          "body": "Osoby i rodziny posiadające aktywa, rezydencję i interesy w wielu jurysdykcjach."
         },
         {
-          "title": "Klienci po exicie",
+          "title": "Klienci po sprzedaży biznesu",
           "body": "Założyciele i menedżerowie po zdarzeniu płynnościowym, którzy potrzebują zdyscyplinowanego rozmieszczenia i ochrony kapitału."
         },
         {
           "title": "Filantropi",
-          "body": "Rodziny i osoby pragnące lokować kapitał dla trwałego wpływu poprzez ustrukturyzowaną dobroczynność."
+          "body": "Rodziny i osoby kierujące kapitał na trwały wpływ społeczny poprzez ustrukturyzowaną dobroczynność."
         },
         {
-          "title": "Korporacje i instytucje",
-          "body": "Spółki i firmy rodzinne wymagające niezależnego doradztwa M&A, kapitałowego i restrukturyzacyjnego."
+          "title": "Klienci korporacyjni i instytucjonalni",
+          "body": "Spółki i firmy rodzinne potrzebujące niezależnego doradztwa w fuzjach i przejęciach, pozyskiwaniu kapitału i restrukturyzacji."
         }
       ]
     },
@@ -425,11 +425,11 @@
         },
         {
           "name": "Luksemburg",
-          "desc": "Struktury funduszowe i holdingowe rodzin"
+          "desc": "Struktury funduszowe i rodzinne struktury holdingowe"
         },
         {
           "name": "BVI i Kajmany",
-          "desc": "Międzynarodowe wehikuły holdingowe"
+          "desc": "Międzynarodowe struktury holdingowe"
         }
       ]
     },
