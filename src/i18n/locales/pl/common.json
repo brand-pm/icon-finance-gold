@@ -235,7 +235,7 @@
     "hero": {
       "eyebrow": "O Icon Finance",
       "title": "O Icon Finance",
-      "description": "Jesteśmy niezależną firmą doradczą zarządzania majątkiem i family office, stworzoną dla klientów oczekujących więcej niż produktu — i zasługujących na więcej niż bank.",
+      "description": "Jesteśmy niezależną firmą doradczą w zakresie zarządzania majątkiem i usług biura rodzinnego, stworzoną dla klientów, którzy oczekują więcej niż produkt — i zasługują na więcej niż bank.",
       "imageAlt": "Icon Finance — niezależne zarządzanie majątkiem"
     },
     "philosophy": {
@@ -243,16 +243,16 @@
       "subtitle": "Trzy zasady kierują każdą relacją, każdą rekomendacją i każdą decyzją, którą podejmujemy w Twoim imieniu.",
       "items": [
         {
-          "title": "Interes klienta przede wszystkim",
-          "description": "Zawsze działamy jak powiernicy. Nasza niezależność od banków, funduszy i dostawców produktów oznacza, że każda nasza rekomendacja kierowana jest wyłącznie Twoimi celami."
+          "title": "Interesy klienta ponad wszystko",
+          "description": "Zawsze działamy jako zaufani doradcy. Nasza niezależność od banków, funduszy i dostawców produktów finansowych oznacza, że każda rekomendacja podyktowana jest wyłącznie Państwa celami."
         },
         {
           "title": "Długoterminowe relacje",
-          "description": "Mierzymy nasz sukces dekadami, nie transakcjami. Klienci zostają z nami, ponieważ zasługujemy na tę relację każdego roku — nie dlatego, że są związani umową."
+          "description": "Sukces mierzymy dekadami, nie transakcjami. Klienci zostają z nami, ponieważ co roku zasługujemy na tę relację — a nie dlatego, że są związani umową."
         },
         {
           "title": "Poufność i zaufanie",
-          "description": "Twoje sprawy należą do Ciebie. Traktujemy informacje klienta z absolutną dyskrecją — jako obowiązek zawodowy i osobisty."
+          "description": "Państwa sprawy są wyłącznie Państwa. Informacje klientów traktujemy z absolutną dyskrecją — jako obowiązek zarówno zawodowy, jak i osobisty."
         }
       ]
     },
@@ -263,49 +263,49 @@
         {
           "title": "Założenie",
           "timeline": "2009",
-          "result": "Niezależne doradztwo, brak konfliktu interesów",
+          "result": "Niezależne doradztwo bez konfliktu interesów",
           "activities": [
-            "Powstanie w Warszawie",
-            "Założyciele z bankowości prywatnej i zarządzania aktywami",
+            "Założenie w Warszawie",
+            "Założyciele wywodzą się z bankowości prywatnej i zarządzania aktywami",
             "Jasny mandat od pierwszego dnia"
           ]
         },
         {
-          "title": "Praktyka Family Office",
+          "title": "Praktyka biura rodzinnego",
           "timeline": "2013",
-          "result": "Dedykowana praktyka wielopokoleniowa",
+          "result": "Wyodrębniona praktyka dla wielu pokoleń",
           "activities": [
             "Skoordynowane inwestycje",
-            "Ramy ładu",
+            "Ramy ładu korporacyjnego rodziny",
             "Planowanie sukcesji pod jednym dachem"
           ]
         },
         {
           "title": "Strukturyzacja i podatki",
           "timeline": "2017",
-          "result": "Międzynarodowa zdolność strukturyzowania majątku",
+          "result": "Międzynarodowe możliwości strukturyzacji majątku",
           "activities": [
             "Międzynarodowe planowanie podatkowe",
             "Struktury holdingowe i powiernicze",
-            "Odpowiedź na złożoność klientów"
+            "Odpowiedź na rosnącą złożoność potrzeb klientów"
           ]
         },
         {
           "title": "Doradztwo korporacyjne",
           "timeline": "2021",
-          "result": "Pełne wsparcie cyklu życia dla przedsiębiorców",
+          "result": "Pełen cykl wsparcia przedsiębiorców",
           "activities": [
-            "Doradztwo M&A",
-            "Pozyskiwanie kapitału i wsparcie exit",
-            "Spójność majątku osobistego i biznesowego"
+            "Dodano doradztwo w fuzjach i przejęciach",
+            "Pozyskiwanie kapitału i wsparcie wyjść z inwestycji",
+            "Spójne zarządzanie majątkiem osobistym i firmowym"
           ]
         },
         {
           "title": "Icon Finance",
-          "timeline": "Dziś",
+          "timeline": "Dzisiaj",
           "result": "Niezależna multidyscyplinarna firma doradcza",
           "activities": [
-            "Przedsiębiorcy, rodziny, właściciele firm",
+            "Przedsiębiorcy, rodziny i właściciele firm",
             "Klienci w całej Europie",
             "Siedziba w Warszawie"
           ]
@@ -319,22 +319,22 @@
         {
           "role": "Założyciel",
           "name": "Oleg Zabolotnyi",
-          "bio": "Założyciel Icon Finance z doświadczeniem w bankowości prywatnej i doradztwie inwestycyjnym. Oleg zbudował firmę wokół jednej zasady: niezależnego doradztwa służącego klientom, nie instytucjom."
+          "bio": "Założyciel Icon Finance z doświadczeniem w bankowości prywatnej i doradztwie inwestycyjnym. Oleg zbudował firmę wokół jednej zasady: niezależnego doradztwa, które służy klientom, a nie instytucjom."
         },
         {
-          "role": "Dyrektor generalny",
+          "role": "Dyrektor Generalny",
           "name": "Yurii Labenko",
-          "bio": "Yurii kieruje operacjami firmy i strategią klienta. Jego doświadczenie obejmuje zarządzanie inwestycjami i doradztwo finansowe na rynkach Europy Środkowo-Wschodniej."
+          "bio": "Yurii kieruje działalnością operacyjną firmy i strategią obsługi klienta. Jego doświadczenie obejmuje zarządzanie inwestycjami i doradztwo finansowe na rynkach Europy Środkowo-Wschodniej."
         },
         {
-          "role": "Dyrektor ds. rozwoju biznesu",
+          "role": "Dyrektor ds. Rozwoju Biznesu",
           "name": "Ksenia Romanchuk",
-          "bio": "Ksenia napędza rozwój firmy i strategię partnerstw. Wnosi głęboką wiedzę w budowaniu relacji klienckich klasy instytucjonalnej na rynkach private wealth."
+          "bio": "Ksenia odpowiada za strategię wzrostu i partnerstw firmy. Posiada głębokie doświadczenie w budowaniu długoterminowych, instytucjonalnych relacji z klientami na rynku zarządzania majątkiem prywatnym."
         },
         {
-          "role": "Manager ds. rozwoju partnerstw",
+          "role": "Menedżer ds. Rozwoju Partnerstw",
           "name": "Maksym Sydorov",
-          "bio": "Maksym rozwija i zarządza siecią partnerów Icon Finance — łącząc klientów z odpowiednimi specjalistami w dziedzinie prawa, podatków i inwestycji."
+          "bio": "Maksym rozwija i zarządza siecią partnerów Icon Finance — łącząc klientów z odpowiednimi specjalistami w zakresie prawa, podatków i inwestycji."
         }
       ]
     },
