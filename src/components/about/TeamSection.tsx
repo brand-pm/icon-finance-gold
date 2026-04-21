@@ -70,7 +70,7 @@ const TeamSection = ({ eyebrow, title, members }: TeamSectionProps) => {
                 />
               </div>
               <div className="p-6 flex flex-col flex-1">
-                <p className="eyebrow mb-2">{m.role}</p>
+                <p className="eyebrow mb-2 min-h-[2.5rem]">{m.role}</p>
                 <h3 className="text-charcoal font-semibold text-lg mb-3">{m.name}</h3>
                 <p className="text-slate text-sm leading-relaxed flex-1 text-justify">{m.bio}</p>
                 <a
