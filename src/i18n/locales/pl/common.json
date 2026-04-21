@@ -1899,5 +1899,11 @@
       "reject": "Odrzuć opcjonalne",
       "save": "Zapisz preferencje"
     }
+  },
+  "portfolioManagement": {
+    "eyebrow": "Proces pracy",
+    "stage": "Etap",
+    "result": "Wynik",
+    "activities": "Działania"
   }
 }

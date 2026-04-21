@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import marbleMono1 from "@/assets/marble-mono-1-v3.jpg";
 import marbleMono2 from "@/assets/marble-mono-2.jpg";
 import marbleMono3 from "@/assets/marble-mono-3-v2.jpg";
@@ -31,12 +32,13 @@ const PortfolioManagement = ({
   ctaLabel = "Start a dialogue",
   ctaVariant = "filled",
 }: PortfolioManagementProps) => {
+  const { t } = useTranslation();
   return (
     <section className="portfolio-management-section">
       <div className="container-main section-padding">
         <div className="grid items-start gap-16 lg:grid-cols-[minmax(320px,38%)_minmax(0,62%)]">
           <div className="lg:sticky lg:top-24 text-center flex flex-col items-center">
-            <p className="eyebrow mb-4">Work Process</p>
+            <p className="eyebrow mb-4">{t("portfolioManagement.eyebrow")}</p>
             <h2 className="portfolio-management-title mb-5 whitespace-pre-line">{title}</h2>
             <div className="gold-separator mb-6">
               <div className="dot" />
@@ -62,7 +64,7 @@ const PortfolioManagement = ({
                 <div className="portfolio-stage-card__inner">
                   <div className="flex flex-col h-full">
                     <div className="mb-4 flex flex-wrap items-baseline gap-x-3 gap-y-2">
-                      <span className="portfolio-stage-label">Stage {step.number}</span>
+                      <span className="portfolio-stage-label">{t("portfolioManagement.stage")} {step.number}</span>
                       <span className="portfolio-stage-timeline">{step.timeline}</span>
                     </div>
 
@@ -78,14 +80,14 @@ const PortfolioManagement = ({
 
                     {step.result && (
                       <div className="portfolio-stage-result">
-                        <span className="portfolio-stage-result-label">Result:</span>
+                        <span className="portfolio-stage-result-label">{t("portfolioManagement.result")}:</span>
                         <p className="portfolio-stage-result-text">{step.result}</p>
                       </div>
                     )}
                   </div>
 
                   <div className="portfolio-stage-activities">
-                    <p className="portfolio-stage-activities-label">Activities:</p>
+                    <p className="portfolio-stage-activities-label">{t("portfolioManagement.activities")}:</p>
                     <ul className="space-y-2.5">
                       {step.activities.map((item, index) => (
                         <li key={index} className="portfolio-stage-activity">

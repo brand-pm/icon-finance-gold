@@ -1899,5 +1899,11 @@
       "reject": "Reject non-essential",
       "save": "Save preferences"
     }
+  },
+  "portfolioManagement": {
+    "eyebrow": "Work Process",
+    "stage": "Stage",
+    "result": "Result",
+    "activities": "Activities"
   }
 }
