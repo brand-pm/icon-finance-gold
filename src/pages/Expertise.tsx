@@ -84,7 +84,7 @@ const Industries = () => {
             return (
               <div key={i} className="opacity-0 animate-fade-up" style={{ animationDelay: `${0.1 + i * 0.06}s` }}>
                 <Icon className="text-gold mb-6" size={44} />
-                <h3 className="text-white font-light mb-3" style={{ fontSize: "20px" }}>{it.title}</h3>
+                <h3 className="text-white font-light mb-3 flex items-start" style={{ fontSize: "20px", minHeight: "3.2em", lineHeight: "1.3" }}>{it.title}</h3>
                 <div className="w-10 h-px bg-gold/50 mb-4" />
                 <p className="text-white/60 text-sm leading-relaxed">{it.body}</p>
               </div>
