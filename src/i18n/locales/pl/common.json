@@ -460,14 +460,14 @@
     "hero": {
       "eyebrow": "Analizy i komentarze",
       "title": "Perspektywy dotyczące majątku, rynków i strategii",
-      "description": "Eksperckie komentarze zespołu Icon Finance na temat rynków, strukturyzacji, family office oraz sił kształtujących prywatne majątki."
+      "description": "Eksperckie komentarze zespołu Icon Finance na temat rynków, strukturyzacji, usług biura rodzinnego oraz czynników kształtujących majątki prywatne."
     },
     "categories": {
       "all": "Wszystkie",
       "wealth": "Zarządzanie majątkiem",
-      "family": "Family Office",
+      "family": "Biuro rodzinne",
       "structuring": "Strukturyzacja i podatki",
-      "ma": "M&A i korporacyjne",
+      "ma": "Fuzje i przejęcia",
       "special": "Rozwiązania specjalne"
     },
     "ctaSection": {
