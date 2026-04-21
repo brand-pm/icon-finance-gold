@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 
 interface Strategy {
@@ -15,14 +16,15 @@ interface InvestmentStrategiesProps {
 const InvestmentStrategies = ({ strategies }: InvestmentStrategiesProps) => {
   const [active, setActive] = useState(0);
   const ref = useScrollReveal();
+  const { t } = useTranslation();
 
   return (
     <section className="section-padding bg-offwhite">
       <div className="container-main" ref={ref}>
         <div className="text-center mb-12 opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-          <p className="eyebrow mb-4">Strategies</p>
+          <p className="eyebrow mb-4">{t("sectionLabels.strategies")}</p>
           <h2 className="text-charcoal font-light" style={{ fontSize: "clamp(26px,4vw,38px)" }}>
-            Our Investment Strategies
+            {t("sectionLabels.strategiesTitle")}
           </h2>
           <div className="gold-separator mt-6">
             <div className="dot" /><div className="dot-lg" /><div className="dot" />
