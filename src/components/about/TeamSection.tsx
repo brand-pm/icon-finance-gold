@@ -72,7 +72,7 @@ const TeamSection = ({ eyebrow, title, members }: TeamSectionProps) => {
               <div className="p-6 flex flex-col flex-1">
                 <p className="eyebrow mb-2">{m.role}</p>
                 <h3 className="text-charcoal font-semibold text-lg mb-3">{m.name}</h3>
-                <p className="text-slate text-sm leading-relaxed flex-1">{m.bio}</p>
+                <p className="text-slate text-sm leading-relaxed flex-1 text-justify">{m.bio}</p>
                 <a
                   href={m.linkedin || "#"}
                   target="_blank"
