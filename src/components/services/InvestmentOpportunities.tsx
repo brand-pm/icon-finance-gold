@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 
 interface OpportunityCategory {
@@ -12,14 +13,15 @@ interface InvestmentOpportunitiesProps {
 
 const InvestmentOpportunities = ({ categories }: InvestmentOpportunitiesProps) => {
   const ref = useScrollReveal();
+  const { t } = useTranslation();
 
   return (
     <section className="section-padding bg-offwhite">
       <div className="container-main" ref={ref}>
         <div className="text-center mb-16 opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-          <p className="eyebrow mb-4">Asset Classes</p>
+          <p className="eyebrow mb-4">{t("sectionLabels.assetClasses")}</p>
           <h2 className="text-charcoal font-light" style={{ fontSize: "clamp(26px,4vw,38px)", maxWidth: "480px", margin: "0 auto" }}>
-            Wide Range of Investment Opportunities
+            {t("sectionLabels.opportunitiesTitle")}
           </h2>
           <div className="gold-separator mt-8">
             <div className="dot" /><div className="dot-lg" /><div className="dot" />
