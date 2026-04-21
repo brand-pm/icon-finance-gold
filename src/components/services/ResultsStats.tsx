@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 
 interface StatItem {
@@ -14,8 +15,11 @@ interface ResultsStatsProps {
   title?: string;
 }
 
-const ResultsStats = ({ items, eyebrow = "Results and Metrics", title = "Our Results Speak for Themselves" }: ResultsStatsProps) => {
+const ResultsStats = ({ items, eyebrow, title }: ResultsStatsProps) => {
   const ref = useScrollReveal();
+  const { t } = useTranslation();
+  const finalEyebrow = eyebrow ?? t("sectionLabels.results");
+  const finalTitle = title ?? t("sectionLabels.resultsTitle");
 
   const topRow = items.slice(0, 3);
   const bottomRow = items.slice(3, 6);
