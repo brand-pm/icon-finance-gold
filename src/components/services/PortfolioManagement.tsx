@@ -87,7 +87,7 @@ const PortfolioManagement = ({
                   </div>
 
                   <div className="portfolio-stage-activities">
-                    <p className="portfolio-stage-activities-label">Activities:</p>
+                    <p className="portfolio-stage-activities-label">{t("portfolioManagement.activities")}:</p>
                     <ul className="space-y-2.5">
                       {step.activities.map((item, index) => (
                         <li key={index} className="portfolio-stage-activity">
