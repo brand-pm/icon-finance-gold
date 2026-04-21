@@ -1899,5 +1899,11 @@
       "reject": "Відхилити необов’язкові",
       "save": "Зберегти вибір"
     }
+  },
+  "portfolioManagement": {
+    "eyebrow": "Процес роботи",
+    "stage": "Етап",
+    "result": "Результат",
+    "activities": "Дії"
   }
 }
