@@ -1549,144 +1549,144 @@
     },
     "specialSolutions": {
       "hero": {
-        "eyebrow": "Rozwiązania Specjalne",
-        "title": "Poza standardem. Zbudowane wokół Państwa.",
-        "description": "Icon Finance zapewnia indywidualne doradztwo dla klientów z unikalnymi aktywami, złożonymi sytuacjami i potrzebami wykraczającymi poza standardowe zarządzanie majątkiem. Gdy konwencjonalne rozwiązania nie wystarczają, projektujemy coś lepszego.",
+        "eyebrow": "Rozwiązania specjalne",
+        "title": "Poza standardem. Stworzone wokół Państwa.",
+        "description": "Icon Finance zapewnia indywidualne doradztwo dla klientów z wyjątkowymi aktywami, złożonymi sytuacjami i potrzebami wykraczającymi poza standardowe zarządzanie majątkiem. Gdy typowe rozwiązania nie wystarczają, projektujemy to, co pasuje właśnie do Państwa.",
         "imageAlt": "Symbol rozwiązań specjalnych"
       },
       "whoBenefits": {
         "sectionTitle": "Dla niestandardowego\nklienta",
         "items": [
           {
-            "title": "Kolekcjonerzy i Posiadacze Sztuki",
-            "description": "Państwa majątek obejmuje znaczącą sztukę, kolekcje lub inne pasjonujące aktywa wymagające specjalistycznego zarządzania — wycena, ubezpieczenie, przechowywanie, finansowanie i ostateczne zbycie — obsługiwane z taką samą rygorystycznością jak Państwa portfel finansowy."
+            "title": "Kolekcjonerzy i właściciele sztuki",
+            "description": "Państwa majątek obejmuje znaczące kolekcje sztuki lub inne przedmioty pasji, wymagające specjalistycznego podejścia - wycena, ubezpieczenie, przechowywanie, finansowanie i sprzedaż prowadzone z tą samą dyscypliną co portfel finansowy."
           },
           {
-            "title": "Inwestorzy w Nieruchomości",
-            "description": "Posiadają Państwo znaczne nieruchomości w jurysdykcjach i potrzebują skoordynowanego doradztwa w zakresie strukturyzacji nabycia, finansowania, zarządzania i zbycia — zintegrowanego z szerszą strategią majątkową."
+            "title": "Inwestorzy w nieruchomości",
+            "description": "Posiadają Państwo znaczące nieruchomości w różnych jurysdykcjach i potrzebują skoordynowanego doradztwa w zakresie struktury nabycia, finansowania, zarządzania i sprzedaży - zintegrowanego z szerszą strategią majątkową."
           },
           {
-            "title": "Filantropi i Założyciele Fundacji",
-            "description": "Chcą Państwo, by Państwa majątek tworzył trwały wpływ poza Państwa rodziną. Pomagamy projektować, ustanawiać i prowadzić struktury filantropijne odzwierciedlające Państwa wartości i maksymalizujące wpływ."
+            "title": "Filantropi i założyciele fundacji",
+            "description": "Chcą Państwo, by majątek tworzył trwały wpływ poza rodziną. Pomagamy zaprojektować, utworzyć i prowadzić struktury filantropijne odzwierciedlające Państwa wartości i wzmacniające realny rezultat."
           },
           {
-            "title": "Inwestorzy ESG i Impact",
-            "description": "Chcą Państwo, by inwestycje generowały zwroty zgodnie z Państwa wartościami. Projektujemy portfele ESG i impact, które nie idą na kompromis w zakresie dyscypliny finansowej."
+            "title": "Inwestorzy zrównoważeni",
+            "description": "Chcą Państwo, by inwestycje przynosiły dochód i jednocześnie odpowiadały Państwa wartościom. Budujemy portfele inwestowania odpowiedzialnego społecznie bez kompromisów w dyscyplinie finansowej."
           }
         ]
       },
       "philosophy": {
-        "sectionTitle": "Niestandardowe problemy\nwymagają indywidualnych rozwiązań",
+        "sectionTitle": "Niestandardowe wyzwania\nwymagają indywidualnych rozwiązań",
         "subtitle": "Standardowe modele zarządzania majątkiem nie są dostosowane do klientów z kolekcjami sztuki, złożonymi portfelami nieruchomości, ambicjami filantropijnymi czy zadaniami inwestowania odpowiedzialnego społecznie. Wychodzimy od Państwa konkretnej sytuacji i budujemy rozwiązanie pod nią.",
         "items": [
           {
             "number": "01",
-            "title": "Ekspertyza Specyficzna dla Aktywów",
-            "description": "Wnosimy specjalistyczną wiedzę dla każdej klasy aktywów — sztuka, nieruchomości, filantropia, ESG — zamiast stosować ogólne ramy."
+            "title": "Ekspertyza wg klas aktywów",
+            "description": "Dla każdego obszaru - sztuka, nieruchomości, filantropia, inwestycje odpowiedzialne - angażujemy wyspecjalizowanych ekspertów, zamiast stosować jedną ramę."
           },
           {
             "number": "02",
-            "title": "Pełna Integracja",
-            "description": "Aktywa niestandardowe są integrowane z Państwa ogólną strategią majątkową — nie zarządzane w izolacji od Państwa portfela finansowego."
+            "title": "Pełna integracja",
+            "description": "Niestandardowe aktywa są włączone w ogólną strategię majątkową, nie funkcjonują w oderwaniu od portfela finansowego."
           },
           {
             "number": "03",
-            "title": "Sieć Specjalistów",
-            "description": "Koordynujemy z doradcami artystycznymi, ekspertami od nieruchomości, prawnikami i specjalistami od pomiaru wpływu w razie potrzeby."
+            "title": "Sieć specjalistów",
+            "description": "Koordynujemy współpracę z doradcami artystycznymi, ekspertami nieruchomości, prawnikami i specjalistami od pomiaru wpływu społecznego - wedle potrzeb."
           },
           {
             "number": "04",
-            "title": "Zgodność z Wartościami",
-            "description": "Traktujemy Państwa wartości poważnie jako parametr inwestycyjny — czy to wykluczenia ESG, cele wpływu, czy alokacja filantropijna."
+            "title": "Zgodność z wartościami",
+            "description": "Państwa wartości traktujemy jako pełnoprawne kryterium inwestycyjne - czy to ograniczenia etyczne, cele wpływu społecznego, czy udział filantropii w portfelu."
           }
         ]
       },
       "results": {
-        "eyebrow": "Dlaczego to ma znaczenie",
+        "eyebrow": "Dlaczego to ważne",
         "title": "Co daje indywidualne doradztwo",
         "items": [
           {
-            "main": "Specjalistyczne",
-            "label": "Głęboka ekspertyza w niestandardowych klasach aktywów"
+            "main": "Ekspertyza",
+            "label": "Głęboka wiedza w niestandardowych klasach aktywów"
           },
           {
-            "main": "Zintegrowane",
+            "main": "Spójnie",
             "label": "Wszystkie aktywa skoordynowane w jednej strategii majątkowej"
           },
           {
-            "main": "Indywidualne",
-            "label": "Rozwiązania zaprojektowane dla Państwa sytuacji, nie szablonu"
+            "main": "Pod Państwa",
+            "label": "Rozwiązania projektowane pod Państwa sytuację, nie pod szablon"
           },
           {
             "main": "Wpływ",
-            "label": "Filantropia i ESG z prawdziwymi mierzalnymi rezultatami"
+            "label": "Filantropia i inwestycje odpowiedzialne z mierzalnym rezultatem"
           },
           {
             "main": "Sieć",
-            "label": "Dostęp do wyselekcjonowanych specjalistów w klasach aktywów"
+            "label": "Dostęp do sprawdzonych specjalistów dla każdej klasy aktywów"
           },
           {
-            "main": "Dyskretne",
-            "label": "Wrażliwe aktywa zarządzane z absolutną poufnością"
+            "main": "Dyskretnie",
+            "label": "Wrażliwe aktywa prowadzone z zachowaniem pełnej poufności"
           }
         ]
       },
       "strategies": [
         {
-          "name": "Doradztwo Nieruchomości",
-          "description": "Strategiczne doradztwo dotyczące nieruchomości jako aktywa majątkowego — strukturyzacja nabycia, finansowanie, zarządzanie portfelem i zbycie — zintegrowane z szerszą strategią inwestycyjną.",
+          "name": "Doradztwo nieruchomościowe",
+          "description": "Strategiczne doradztwo dotyczące nieruchomości jako składnika majątku - struktura nabycia, finansowanie, zarządzanie portfelem i sprzedaż - powiązane z ogólną strategią inwestycyjną.",
           "items": [
-            "Doradztwo przy nabyciu i zbyciu",
+            "Wsparcie przy zakupie i sprzedaży",
             "Optymalizacja struktury własności",
             "Koordynacja portfela i raportowanie"
           ]
         },
         {
-          "name": "Sztuka i Aktywa Lifestyle",
-          "description": "Kompleksowe zarządzanie kolekcjami sztuki i aktywami lifestyle — wycena, ubezpieczenie, przechowywanie, finansowanie i strategiczne zbycie obsługiwane przez specjalistów.",
+          "name": "Sztuka i przedmioty stylu życia",
+          "description": "Kompleksowa obsługa kolekcji sztuki i wartościowych przedmiotów stylu życia - wycena, ubezpieczenie, przechowywanie, finansowanie i strategiczna sprzedaż - z udziałem wyspecjalizowanych ekspertów.",
           "items": [
-            "Wycena i dokumentacja kolekcji",
+            "Wycena i katalogowanie kolekcji",
             "Koordynacja ubezpieczenia i przechowywania",
-            "Finansowanie sztuki i doradztwo przy zbyciu"
+            "Finansowanie pod dzieła sztuki i wsparcie sprzedaży"
           ]
         },
         {
-          "name": "Doradztwo Filantropijne",
-          "description": "Pomagamy rodzinom i osobom projektować i prowadzić struktury filantropijne — fundacje, programy darczyńców i inicjatywy wpływu — które odzwierciedlają ich wartości i tworzą trwałą zmianę.",
+          "name": "Filantropia",
+          "description": "Pomagamy rodzinom i osobom prywatnym projektować i prowadzić struktury filantropijne - prywatne fundacje, programy darowizn celowanych i projekty wpływu społecznego - odzwierciedlające Państwa wartości i tworzące trwałe zmiany.",
           "items": [
-            "Strategia i struktura filantropijna",
-            "Założenie i ład fundacji",
-            "Pomiar i raportowanie wpływu"
+            "Strategia i struktura filantropii",
+            "Utworzenie i prowadzenie fundacji",
+            "Pomiar i raportowanie wpływu społecznego"
           ]
         },
         {
-          "name": "ESG i Impact Investing",
-          "description": "Portfele zbudowane wokół Państwa wartości bez poświęcania zwrotów finansowych. Projektujemy ramy ESG, rygorystycznie selekcjonujemy inwestycje i mierzymy realny wpływ obok wyników.",
+          "name": "Inwestowanie odpowiedzialne społecznie",
+          "description": "Portfele zbudowane wokół Państwa wartości bez utraty rentowności finansowej. Definiujemy kryteria selekcji, starannie dobieramy inwestycje i mierzymy realny wpływ obok wyników.",
           "items": [
-            "Polityka ESG i ramy wykluczeń",
-            "Selekcja inwestycji impact",
-            "Raportowanie ESG i pomiar wpływu"
+            "Polityka selekcji i lista wykluczeń",
+            "Dobór inwestycji wpływu społecznego",
+            "Raportowanie wyników i wpływu społecznego"
           ]
         }
       ],
       "opportunities": [
         {
-          "name": "Doradztwo Aktywami",
+          "name": "Obsługa aktywów",
           "items": [
             {
-              "title": "Doradztwo portfelem nieruchomości",
-              "description": "nabycie, zarządzanie, zbycie"
+              "title": "Obsługa portfela nieruchomości",
+              "description": "nabycie, zarządzanie, sprzedaż"
             },
             {
-              "title": "Zarządzanie kolekcją sztuki",
+              "title": "Obsługa kolekcji sztuki",
               "description": "wycena, ubezpieczenie, przechowywanie"
             },
             {
-              "title": "Finansowanie sztuki",
+              "title": "Finansowanie pod dzieła sztuki",
               "description": "płynność pod aktywa kolekcji"
             },
             {
-              "title": "Koordynacja aktywów lifestyle",
+              "title": "Koordynacja przedmiotów stylu życia",
               "description": "jachty, samoloty, kolekcje"
             },
             {
@@ -1696,106 +1696,106 @@
           ]
         },
         {
-          "name": "Wpływ i Spuścizna",
+          "name": "Wpływ i spuścizna",
           "items": [
             {
-              "title": "Strategia filantropijna",
-              "description": "ramy darowizn oparte na wartościach"
+              "title": "Strategia filantropii",
+              "description": "podejście do darowizn oparte na wartościach"
             },
             {
-              "title": "Założenie fundacji",
-              "description": "struktura prawna i ład"
+              "title": "Utworzenie prywatnej fundacji",
+              "description": "struktura prawna i zarządzanie"
             },
             {
-              "title": "Programy donor-advised",
-              "description": "elastyczne narzędzia darowizn"
+              "title": "Programy darowizn celowanych",
+              "description": "elastyczne narzędzia filantropii"
             },
             {
-              "title": "Konstrukcja portfela ESG",
-              "description": "selekcjonowane i nastawione na wpływ"
+              "title": "Budowa portfela inwestycji odpowiedzialnych",
+              "description": "staranna selekcja i nastawienie na wpływ"
             },
             {
-              "title": "Pomiar wpływu",
+              "title": "Pomiar wpływu społecznego",
               "description": "śledzenie realnych rezultatów"
             },
             {
               "title": "Planowanie spuścizny",
-              "description": "integracja spuścizny charytatywnej i rodzinnej"
+              "description": "powiązanie spuścizny dobroczynnej i rodzinnej"
             }
           ]
         }
       ],
       "portfolio": {
-        "title": "Jak podchodzimy do rozwiązań specjalnych",
-        "description": "Każde zaangażowanie zaczyna się od zrozumienia Państwa konkretnej sytuacji — nie od gotowego produktu.",
+        "title": "Jak pracujemy\nnad rozwiązaniami specjalnymi",
+        "description": "Każda współpraca zaczyna się od zrozumienia Państwa konkretnej sytuacji, a nie od gotowego produktu.",
         "steps": [
           {
-            "title": "Ocena Sytuacji",
-            "timeline": "1–2 tygodnie",
-            "result": "Jasna Definicja Problemu",
+            "title": "Ocena sytuacji",
+            "timeline": "1-2 tygodnie",
+            "result": "Jasne sformułowanie zadania",
             "activities": [
               "Przegląd aktywów",
-              "Zgodność celów",
+              "Uzgodnienie celów",
               "Ocena specjalistów",
-              "Definicja zakresu"
+              "Określenie zakresu prac"
             ]
           },
           {
-            "title": "Projekt Rozwiązania",
-            "timeline": "2–4 tygodnie",
-            "result": "Indywidualny Plan Doradczy",
+            "title": "Projekt rozwiązania",
+            "timeline": "2-4 tygodnie",
+            "result": "Indywidualny plan obsługi",
             "activities": [
-              "Projekt ram",
-              "Koordynacja specjalistów",
+              "Projekt struktury",
+              "Dobór specjalistów",
               "Przegląd prawny i podatkowy",
-              "Potwierdzenie podejścia"
+              "Zatwierdzenie podejścia"
             ]
           },
           {
             "title": "Wdrożenie",
-            "timeline": "4–8 tygodni",
-            "result": "Działające Rozwiązanie",
+            "timeline": "4-8 tygodni",
+            "result": "Rozwiązanie w działaniu",
             "activities": [
-              "Konfiguracja struktury",
-              "Zaangażowanie specjalistów",
-              "Transfer aktywów",
+              "Utworzenie struktury",
+              "Włączenie specjalistów",
+              "Przekazanie aktywów",
               "Dokumentacja i raportowanie"
             ]
           },
           {
-            "title": "Nadzór i Raportowanie",
-            "timeline": "Stale",
+            "title": "Nadzór i raportowanie",
+            "timeline": "Na bieżąco",
             "result": "W pełni skoordynowane aktywa specjalne",
             "activities": [
               "Regularne raportowanie",
-              "Przegląd wyników",
+              "Analiza wyników",
               "Koordynacja specjalistów",
-              "Roczny przegląd strategii"
+              "Coroczny przegląd strategii"
             ]
           }
         ]
       },
       "faq": [
         {
-          "question": "Czy mogą Państwo zarządzać kolekcjami sztuki obok portfela finansowego?",
-          "answer": "Tak. Traktujemy sztukę i kolekcje jako odrębną klasę aktywów w ramach Państwa ogólnego majątku — z odpowiednią wyceną, ubezpieczeniem i raportowaniem — zintegrowane w skonsolidowanym obrazie majątku."
+          "question": "Czy mogą Państwo prowadzić kolekcje sztuki obok portfela finansowego?",
+          "answer": "Tak. Traktujemy sztukę i kolekcje jako odrębną klasę aktywów w ramach ogólnego majątku - z właściwą wyceną, ubezpieczeniem i raportowaniem - włączoną w jednolity obraz majątkowy."
         },
         {
-          "question": "Jakie jest minimum dla fundacji filantropijnej?",
-          "answer": "Zależy to od jurysdykcji i struktury. Fundacje prywatne można ustanowić od stosunkowo skromnych poziomów, podczas gdy bardziej złożone struktury wymagają większych dotacji. Oceniamy najbardziej odpowiedni instrument dla Państwa celów i budżetu."
+          "question": "Jakie minimum jest potrzebne do utworzenia fundacji filantropijnej?",
+          "answer": "Zależy to od jurysdykcji i wybranej struktury. Prywatne fundacje można utworzyć przy stosunkowo skromnych kwotach, bardziej złożone struktury wymagają większego kapitału. Dobieramy narzędzie pod Państwa cele i budżet."
         },
         {
-          "question": "Czy inwestowanie ESG oznacza niższe zwroty?",
-          "answer": "Niekoniecznie. Dane coraz częściej pokazują, że dobrze skonstruowane portfele ESG mogą dorównywać lub przewyższać konwencjonalne w długim terminie. Budujemy portfele ESG z taką samą rygorystycznością finansową jak każde inne."
+          "question": "Czy inwestowanie odpowiedzialne społecznie oznacza niższe zyski?",
+          "answer": "Niekoniecznie. Coraz więcej danych pokazuje, że dobrze zbudowane portfele inwestowania odpowiedzialnego w długim horyzoncie dorównują tradycyjnym lub je przewyższają. Budujemy je z tą samą dyscypliną finansową co każde inne."
         },
         {
           "question": "Czy mogą Państwo pomóc z nieruchomościami w wielu krajach?",
-          "answer": "Tak. Koordynujemy doradztwo nieruchomości w jurysdykcjach — pracując ze specjalistami lokalnymi, zapewniając jednocześnie pojedynczy punkt koordynacji i skonsolidowane raportowanie."
+          "answer": "Tak. Koordynujemy obsługę nieruchomości w różnych jurysdykcjach - współpracujemy z lokalnymi specjalistami, zapewniając jeden punkt koordynacji i skonsolidowane raportowanie."
         }
       ],
       "cta": {
-        "title": "Rozpocznij Poufną Rozmowę",
-        "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Państwa sytuacji — i zaproponujemy ścieżkę naprzód tylko, jeśli będziemy pewni, że możemy wnieść istotną wartość."
+        "title": "Rozpocznijcie Państwo poufną rozmowę",
+        "description": "Umówcie się Państwo na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Państwa sytuacji i zaproponujemy drogę dopiero wtedy, gdy mamy pewność, że możemy przynieść istotną wartość."
       }
     }
   },
