@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 
 interface StatItem {
@@ -14,8 +15,11 @@ interface ResultsStatsProps {
   title?: string;
 }
 
-const ResultsStats = ({ items, eyebrow = "Results and Metrics", title = "Our Results Speak for Themselves" }: ResultsStatsProps) => {
+const ResultsStats = ({ items, eyebrow, title }: ResultsStatsProps) => {
   const ref = useScrollReveal();
+  const { t } = useTranslation();
+  const finalEyebrow = eyebrow ?? t("sectionLabels.results");
+  const finalTitle = title ?? t("sectionLabels.resultsTitle");
 
   const topRow = items.slice(0, 3);
   const bottomRow = items.slice(3, 6);
@@ -68,9 +72,9 @@ const ResultsStats = ({ items, eyebrow = "Results and Metrics", title = "Our Res
     <section className="section-padding bg-navy relative">
       <div className="container-main" ref={ref}>
         <div className="text-center mb-16 opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-          <p className="eyebrow mb-4">{eyebrow}</p>
+          <p className="eyebrow mb-4">{finalEyebrow}</p>
           <h2 className="text-white font-light mb-4" style={{ fontSize: "clamp(26px,4vw,38px)" }}>
-            {title}
+            {finalTitle}
           </h2>
           <div className="gold-separator">
             <div className="dot" /><div className="dot-lg" /><div className="dot" />

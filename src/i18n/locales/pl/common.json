@@ -1905,5 +1905,17 @@
     "stage": "Etap",
     "result": "Wynik",
     "activities": "Działania"
+  },
+  "sectionLabels": {
+    "whoFor": "Dla kogo ta usługa",
+    "ourApproach": "Nasze podejście",
+    "strategies": "Strategie",
+    "strategiesTitle": "Nasze strategie inwestycyjne",
+    "assetClasses": "Klasy aktywów",
+    "opportunitiesTitle": "Szeroki zakres możliwości inwestycyjnych",
+    "faq": "Najczęstsze pytania",
+    "faqTitle": "Najczęściej zadawane\npytania",
+    "results": "Wyniki i wskaźniki",
+    "resultsTitle": "Nasze wyniki mówią same za siebie"
   }
 }

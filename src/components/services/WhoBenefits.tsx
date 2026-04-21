@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 
 interface BenefitItem {
@@ -15,6 +16,7 @@ interface WhoBenefitsProps {
 const WhoBenefits = ({ sectionTitle, items }: WhoBenefitsProps) => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const ref = useScrollReveal();
+  const { t } = useTranslation();
 
   return (
     <section className="section-padding bg-offwhite">
@@ -22,7 +24,7 @@ const WhoBenefits = ({ sectionTitle, items }: WhoBenefitsProps) => {
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left */}
           <div className="opacity-0 animate-fade-up text-center" style={{ animationDelay: "0.1s" }}>
-            <p className="eyebrow mb-4">Who this service is for</p>
+            <p className="eyebrow mb-4">{t("sectionLabels.whoFor")}</p>
             <h2 className="text-charcoal font-light whitespace-pre-line" style={{ fontSize: "clamp(26px,4vw,38px)" }}>
               {sectionTitle}
             </h2>

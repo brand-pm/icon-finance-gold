@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 
 interface FAQItem {
@@ -14,6 +15,7 @@ interface ServiceFAQProps {
 const ServiceFAQ = ({ items }: ServiceFAQProps) => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const ref = useScrollReveal();
+  const { t } = useTranslation();
 
   return (
     <section className="section-padding bg-offwhite">
@@ -21,9 +23,9 @@ const ServiceFAQ = ({ items }: ServiceFAQProps) => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left — centered horizontally and vertically */}
           <div className="opacity-0 animate-fade-up text-center flex flex-col items-center" style={{ animationDelay: "0.1s" }}>
-            <p className="eyebrow mb-4">FAQ Section</p>
-            <h2 className="text-charcoal font-light" style={{ fontSize: "clamp(26px,4vw,38px)" }}>
-              Frequently Asked<br />Questions
+            <p className="eyebrow mb-4">{t("sectionLabels.faq")}</p>
+            <h2 className="text-charcoal font-light whitespace-pre-line" style={{ fontSize: "clamp(26px,4vw,38px)" }}>
+              {t("sectionLabels.faqTitle")}
             </h2>
             <div className="gold-separator mt-6">
               <div className="dot" /><div className="dot-lg" /><div className="dot" />

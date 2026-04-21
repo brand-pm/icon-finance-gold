@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { useLocalizedPath } from "@/i18n/useLocalizedPath";
 
 interface ServiceHeroProps {
@@ -11,6 +12,7 @@ interface ServiceHeroProps {
 
 const ServiceHero = ({ eyebrow, title, description, image, imageAlt }: ServiceHeroProps) => {
   const localize = useLocalizedPath();
+  const { t } = useTranslation();
   return (
   <section className="relative bg-navy overflow-hidden pt-24 pb-12" style={{ minHeight: "35vh" }}>
     {/* Background image — stretched across right side */}
@@ -40,7 +42,7 @@ const ServiceHero = ({ eyebrow, title, description, image, imageAlt }: ServiceHe
             {description}
           </p>
           <Link to={localize("/contact")} className="btn-gold px-8 py-4 inline-block">
-            Start a dialogue
+            {t("nav.startDialogue")}
           </Link>
         </div>
       </div>
