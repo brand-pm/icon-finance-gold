@@ -64,7 +64,7 @@ const PortfolioManagement = ({
                 <div className="portfolio-stage-card__inner">
                   <div className="flex flex-col h-full">
                     <div className="mb-4 flex flex-wrap items-baseline gap-x-3 gap-y-2">
-                      <span className="portfolio-stage-label">Stage {step.number}</span>
+                      <span className="portfolio-stage-label">{t("portfolioManagement.stage")} {step.number}</span>
                       <span className="portfolio-stage-timeline">{step.timeline}</span>
                     </div>
 
