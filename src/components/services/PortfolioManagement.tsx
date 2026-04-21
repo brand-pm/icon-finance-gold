@@ -32,12 +32,13 @@ const PortfolioManagement = ({
   ctaLabel = "Start a dialogue",
   ctaVariant = "filled",
 }: PortfolioManagementProps) => {
+  const { t } = useTranslation();
   return (
     <section className="portfolio-management-section">
       <div className="container-main section-padding">
         <div className="grid items-start gap-16 lg:grid-cols-[minmax(320px,38%)_minmax(0,62%)]">
           <div className="lg:sticky lg:top-24 text-center flex flex-col items-center">
-            <p className="eyebrow mb-4">Work Process</p>
+            <p className="eyebrow mb-4">{t("portfolioManagement.eyebrow")}</p>
             <h2 className="portfolio-management-title mb-5 whitespace-pre-line">{title}</h2>
             <div className="gold-separator mb-6">
               <div className="dot" />
