@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import marbleMono1 from "@/assets/marble-mono-1-v3.jpg";
 import marbleMono2 from "@/assets/marble-mono-2.jpg";
 import marbleMono3 from "@/assets/marble-mono-3-v2.jpg";
