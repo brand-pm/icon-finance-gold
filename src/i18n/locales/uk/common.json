@@ -191,6 +191,7 @@
     "lastName": "Прізвище",
     "email": "Робоча електронна пошта",
     "subject": "Тема",
+    "messagePlaceholder": "Ваше повідомлення",
     "send": "Надіслати",
     "subjects": {
       "wealthManagement": "Управління капіталом",
@@ -229,6 +230,8 @@
     "lastName": "Прізвище",
     "email": "Робоча електронна пошта",
     "subject": "Тема",
+    "message": "Ваше повідомлення",
+    "messagePlaceholder": "Коротко розкажіть про ваші цілі",
     "send": "Надіслати"
   },
   "about": {

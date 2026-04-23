@@ -191,6 +191,7 @@
     "lastName": "Фамилия",
     "email": "Рабочая почта",
     "subject": "Тема",
+    "messagePlaceholder": "Ваше сообщение",
     "send": "Отправить",
     "subjects": {
       "wealthManagement": "Управление капиталом",
@@ -229,6 +230,8 @@
     "lastName": "Фамилия",
     "email": "Рабочая почта",
     "subject": "Тема",
+    "message": "Ваше сообщение",
+    "messagePlaceholder": "Кратко расскажите о ваших целях",
     "send": "Отправить"
   },
   "about": {

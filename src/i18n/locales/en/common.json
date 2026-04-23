@@ -191,6 +191,7 @@
     "lastName": "Last name",
     "email": "Work email",
     "subject": "Subject",
+    "messagePlaceholder": "Your message",
     "send": "Send",
     "subjects": {
       "wealthManagement": "Wealth Management",
@@ -229,6 +230,8 @@
     "lastName": "Last name",
     "email": "Work email",
     "subject": "Subject",
+    "message": "Your message",
+    "messagePlaceholder": "Tell us briefly about your goals",
     "send": "Send"
   },
   "about": {
