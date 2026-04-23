@@ -79,8 +79,8 @@ const Hero = () => {
   const { t } = useTranslation();
   return (
   <section
-    className="relative flex items-center overflow-hidden pt-20"
-    style={{ minHeight: '60vh', backgroundColor: '#070D20' }}
+    className="relative flex items-center overflow-hidden pt-20 pb-16 lg:pb-20"
+    style={{ minHeight: '70vh', backgroundColor: '#070D20' }}
   >
     <div className="absolute inset-0">
       <img
@@ -98,8 +98,8 @@ const Hero = () => {
         <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
           
           <h1
-            className="text-gold font-light leading-[1.15] mb-5 md:mb-6"
-            style={{ fontSize: "clamp(28px,6vw,56px)" }}
+            className="text-gold font-light leading-[1.15] mb-5 md:mb-6 max-w-[18ch] hyphens-auto"
+            style={{ fontSize: "clamp(26px,4.2vw,52px)", wordBreak: "normal", overflowWrap: "break-word" }}
           >
             {t("hero.title")}
           </h1>
