@@ -1,11 +1,14 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { toast } from "sonner";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 
 interface ServiceCTAProps {
   title: string;
   description: string;
 }
+
+const MIN_MESSAGE_LENGTH = 50;
 
 const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
   const { t } = useTranslation();
@@ -16,11 +19,33 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
     subject: "",
     message: "",
   });
+  const [messageError, setMessageError] = useState<string | null>(null);
   const ref = useScrollReveal();
 
   const labelClass = "block text-white/70 text-xs uppercase tracking-wider mb-2";
   const inputClass =
     "w-full bg-transparent border border-white/15 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-gold transition-colors";
+
+  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const raw = e.target.value;
+    const hadDigits = /\d/.test(raw);
+    const cleaned = raw.replace(/\d/g, "");
+    setFormData((p) => ({ ...p, message: cleaned }));
+    setMessageError(hadDigits ? t("common.messageNoDigits") : null);
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (formData.message.trim().length < MIN_MESSAGE_LENGTH) {
+      const err = t("common.messageMin");
+      setMessageError(err);
+      toast.error(err);
+      return;
+    }
+    toast.success(t("common.formSuccess"));
+    setFormData({ firstName: "", lastName: "", email: "", subject: "", message: "" });
+    setMessageError(null);
+  };
 
   return (
     <section className="relative marble-texture-strong" style={{ background: "#F5F3F0" }} ref={ref}>
