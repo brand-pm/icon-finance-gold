@@ -67,7 +67,7 @@ const About = () => {
           name: m.name,
           bio: m.bio,
           image: TEAM_PHOTOS_BY_INDEX[idx] ?? teamPlaceholder,
-          linkedin: "#",
+          linkedin: TEAM_LINKEDIN_BY_INDEX[idx],
         }))}
       />
 
