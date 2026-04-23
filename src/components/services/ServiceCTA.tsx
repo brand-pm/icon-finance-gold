@@ -10,42 +10,58 @@ interface ServiceCTAProps {
 
 const MIN_MESSAGE_LENGTH = 50;
 
+type Errors = Partial<Record<"firstName" | "lastName" | "email" | "subject" | "message", string>>;
+
 const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
   const { t } = useTranslation();
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-  const [messageError, setMessageError] = useState<string | null>(null);
+  const [data, setData] = useState({ firstName: "", lastName: "", email: "", subject: "", message: "" });
+  const [errors, setErrors] = useState<Errors>({});
   const ref = useScrollReveal();
 
   const labelClass = "block text-white/70 text-xs uppercase tracking-wider mb-2";
-  const inputClass =
-    "w-full bg-transparent border border-white/15 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-gold transition-colors";
+  const inputBase =
+    "w-full bg-transparent border px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none transition-colors";
+  const inputOk = "border-white/15 focus:border-gold";
+  const inputErr = "border-red-400/60 focus:border-red-400";
+  const cls = (key: keyof Errors) => `${inputBase} ${errors[key] ? inputErr : inputOk}`;
 
-  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    const raw = e.target.value;
-    const hadDigits = /\d/.test(raw);
-    const cleaned = raw.replace(/\d/g, "");
-    setFormData((p) => ({ ...p, message: cleaned }));
-    setMessageError(hadDigits ? t("common.messageNoDigits") : null);
+  const stripDigits = (v: string) => v.replace(/\d/g, "");
+
+  const setName = (key: "firstName" | "lastName", raw: string) => {
+    const cleaned = stripDigits(raw);
+    setData((p) => ({ ...p, [key]: cleaned }));
+    if (raw !== cleaned) {
+      setErrors((p) => ({ ...p, [key]: t("common.nameNoDigits") }));
+    } else if (errors[key]) {
+      setErrors((p) => ({ ...p, [key]: undefined }));
+    }
+  };
+
+  const validate = (): Errors => {
+    const e: Errors = {};
+    if (!data.firstName.trim()) e.firstName = t("common.required");
+    if (!data.lastName.trim()) e.lastName = t("common.required");
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email.trim())) e.email = t("common.invalidEmail");
+    if (!data.subject) e.subject = t("common.required");
+    if (data.message.trim().length < MIN_MESSAGE_LENGTH) e.message = t("common.messageMin");
+    return e;
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (formData.message.trim().length < MIN_MESSAGE_LENGTH) {
-      const err = t("common.messageMin");
-      setMessageError(err);
-      toast.error(err);
+    const v = validate();
+    setErrors(v);
+    if (Object.keys(v).length) {
+      toast.error(Object.values(v)[0]!);
       return;
     }
     toast.success(t("common.formSuccess"));
-    setFormData({ firstName: "", lastName: "", email: "", subject: "", message: "" });
-    setMessageError(null);
+    setData({ firstName: "", lastName: "", email: "", subject: "", message: "" });
+    setErrors({});
   };
+
+  const ErrMsg = ({ msg }: { msg?: string }) =>
+    msg ? <p className="mt-1.5 text-xs text-red-300">{msg}</p> : null;
 
   return (
     <section className="relative marble-texture-strong" style={{ background: "#F5F3F0" }} ref={ref}>
@@ -56,11 +72,7 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
             {title}
           </h2>
           <div className="gold-separator mb-6">
-            <div className="line" />
-            <div className="dot" />
-            <div className="dot-lg" />
-            <div className="dot" />
-            <div className="line" />
+            <div className="line" /><div className="dot" /><div className="dot-lg" /><div className="dot" /><div className="line" />
           </div>
           <p className="text-slate text-sm leading-relaxed max-w-md">{description}</p>
         </div>
@@ -68,11 +80,7 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
         <div
           data-radius-block
           className="bg-navy opacity-0 animate-fade-up"
-          style={{
-            padding: "40px",
-            animationDelay: "0.2s",
-            boxShadow: "0 30px 60px -20px rgba(0,0,0,0.35)",
-          }}
+          style={{ padding: "40px", animationDelay: "0.2s", boxShadow: "0 30px 60px -20px rgba(0,0,0,0.35)" }}
         >
           <h3 className="font-light mb-3" style={{ fontSize: "28px", color: "#E0A776" }}>
             {t("serviceCTA.formTitle")}
@@ -86,21 +94,25 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
                 <label className={labelClass}>{t("serviceCTA.firstName")}</label>
                 <input
                   type="text"
+                  maxLength={80}
                   placeholder={t("common.placeholderFirstName")}
-                  className={inputClass}
-                  value={formData.firstName}
-                  onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                  className={cls("firstName")}
+                  value={data.firstName}
+                  onChange={(e) => setName("firstName", e.target.value)}
                 />
+                <ErrMsg msg={errors.firstName} />
               </div>
               <div>
                 <label className={labelClass}>{t("serviceCTA.lastName")}</label>
                 <input
                   type="text"
+                  maxLength={80}
                   placeholder={t("common.placeholderLastName")}
-                  className={inputClass}
-                  value={formData.lastName}
-                  onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+                  className={cls("lastName")}
+                  value={data.lastName}
+                  onChange={(e) => setName("lastName", e.target.value)}
                 />
+                <ErrMsg msg={errors.lastName} />
               </div>
             </div>
 
@@ -108,19 +120,27 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
               <label className={labelClass}>{t("serviceCTA.email")}</label>
               <input
                 type="email"
+                maxLength={255}
                 placeholder={t("common.placeholderEmail")}
-                className={inputClass}
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                className={cls("email")}
+                value={data.email}
+                onChange={(e) => {
+                  setData({ ...data, email: e.target.value });
+                  if (errors.email) setErrors((p) => ({ ...p, email: undefined }));
+                }}
               />
+              <ErrMsg msg={errors.email} />
             </div>
 
             <div>
               <label className={labelClass}>{t("serviceCTA.subject")}</label>
               <select
-                className={`${inputClass} appearance-none cursor-pointer`}
-                value={formData.subject}
-                onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                className={`${cls("subject")} appearance-none cursor-pointer`}
+                value={data.subject}
+                onChange={(e) => {
+                  setData({ ...data, subject: e.target.value });
+                  if (errors.subject) setErrors((p) => ({ ...p, subject: undefined }));
+                }}
                 style={{
                   backgroundImage:
                     "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'><path d='M1 1L6 6L11 1' stroke='%23E0A776' stroke-width='1.5'/></svg>\")",
@@ -136,6 +156,7 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
                 <option value="ma" className="bg-navy">{t("services.maConsulting.title")}</option>
                 <option value="other" className="bg-navy">{t("contactTeaser.subjects.other")}</option>
               </select>
+              <ErrMsg msg={errors.subject} />
             </div>
 
             <div>
@@ -144,19 +165,14 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
                 rows={4}
                 maxLength={2000}
                 placeholder={t("serviceCTA.messagePlaceholder")}
-                className={`${inputClass} resize-none ${messageError ? "border-red-400/60" : ""}`}
-                value={formData.message}
-                onChange={handleMessageChange}
-                aria-invalid={!!messageError}
+                className={`${cls("message")} resize-none`}
+                value={data.message}
+                onChange={(e) => {
+                  setData({ ...data, message: e.target.value });
+                  if (errors.message) setErrors((p) => ({ ...p, message: undefined }));
+                }}
               />
-              <div className="flex items-center justify-between mt-1.5 text-xs">
-                <span className={messageError ? "text-red-300" : "text-white/40"}>
-                  {messageError ?? "\u00A0"}
-                </span>
-                <span className={formData.message.trim().length >= MIN_MESSAGE_LENGTH ? "text-gold/80" : "text-white/40"}>
-                  {t("common.messageCounter", { count: formData.message.trim().length })}
-                </span>
-              </div>
+              <ErrMsg msg={errors.message} />
             </div>
 
             <button type="submit" className="btn-gold w-full py-4 text-[12px] mt-2">

@@ -14,45 +14,57 @@ const subjectKeys = [
 
 const MIN_MESSAGE_LENGTH = 50;
 
-const inputClass =
-  "w-full p-4 bg-[rgba(255,255,255,0.06)] border border-[rgba(255,255,255,0.15)] text-white placeholder:text-white/40 text-base md:text-sm outline-none focus:border-gold transition-colors duration-300";
+const inputBase =
+  "w-full p-4 bg-[rgba(255,255,255,0.06)] border text-white placeholder:text-white/40 text-base md:text-sm outline-none transition-colors duration-300";
+const inputOk = "border-[rgba(255,255,255,0.15)] focus:border-gold";
+const inputErr = "border-red-400/60 focus:border-red-400";
+
+type Errors = Partial<Record<"firstName" | "lastName" | "email" | "subject" | "message", string>>;
 
 const Contact = () => {
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
-  const [messageError, setMessageError] = useState<string | null>(null);
-  const ref = useScrollReveal();
   const { t } = useTranslation();
+  const ref = useScrollReveal();
+  const [data, setData] = useState({ firstName: "", lastName: "", email: "", subject: "", message: "" });
+  const [errors, setErrors] = useState<Errors>({});
 
-  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    const raw = e.target.value;
-    const hadDigits = /\d/.test(raw);
-    const cleaned = raw.replace(/\d/g, "");
-    setMessage(cleaned);
-    if (hadDigits) {
-      setMessageError(t("common.messageNoDigits"));
-    } else if (cleaned.trim().length > 0 && cleaned.trim().length < MIN_MESSAGE_LENGTH) {
-      setMessageError(null);
-    } else {
-      setMessageError(null);
+  const stripDigits = (v: string) => v.replace(/\d/g, "");
+
+  const setName = (key: "firstName" | "lastName", raw: string) => {
+    const cleaned = stripDigits(raw);
+    setData((p) => ({ ...p, [key]: cleaned }));
+    if (raw !== cleaned) {
+      setErrors((p) => ({ ...p, [key]: t("common.nameNoDigits") }));
+    } else if (errors[key]) {
+      setErrors((p) => ({ ...p, [key]: undefined }));
     }
+  };
+
+  const validate = (): Errors => {
+    const e: Errors = {};
+    if (!data.firstName.trim()) e.firstName = t("common.required");
+    if (!data.lastName.trim()) e.lastName = t("common.required");
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email.trim())) e.email = t("common.invalidEmail");
+    if (!data.subject) e.subject = t("common.required");
+    if (data.message.trim().length < MIN_MESSAGE_LENGTH) e.message = t("common.messageMin");
+    return e;
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (message.trim().length < MIN_MESSAGE_LENGTH) {
-      const err = t("common.messageMin");
-      setMessageError(err);
-      toast.error(err);
+    const v = validate();
+    setErrors(v);
+    if (Object.keys(v).length) {
+      toast.error(Object.values(v)[0]!);
       return;
     }
     toast.success(t("common.formSuccess"));
-    setMessage("");
-    setSubject("");
-    setMessageError(null);
+    setData({ firstName: "", lastName: "", email: "", subject: "", message: "" });
+    setErrors({});
   };
 
-  const remaining = Math.max(0, MIN_MESSAGE_LENGTH - message.trim().length);
+  const cls = (key: keyof Errors) => `${inputBase} ${errors[key] ? inputErr : inputOk}`;
+  const ErrMsg = ({ msg }: { msg?: string }) =>
+    msg ? <p className="mt-1.5 text-xs text-red-300">{msg}</p> : null;
 
   return (
     <section id="contact" className="section-padding bg-offwhite marble-texture" ref={ref}>
@@ -66,58 +78,84 @@ const Contact = () => {
             <div className="gold-separator mb-6">
               <div className="dot" /><div className="dot-lg" /><div className="dot" />
             </div>
-            <p className="text-slate text-base max-w-md">
-              {t("contactTeaser.subtitle")}
-            </p>
+            <p className="text-slate text-base max-w-md">{t("contactTeaser.subtitle")}</p>
           </div>
 
           <div data-radius-block className="bg-navy p-10 opacity-0 animate-fade-up" style={{ animationDelay: "0.2s" }}>
             <h3 className="text-gold text-[28px] font-light mb-2">{t("contactTeaser.formTitle")}</h3>
-            <p className="text-white/70 text-sm mb-8">
-              {t("contactTeaser.formSubtitle")}
-            </p>
+            <p className="text-white/70 text-sm mb-8">{t("contactTeaser.formSubtitle")}</p>
             <form className="space-y-4" onSubmit={handleSubmit} noValidate>
               <div className="grid grid-cols-2 gap-4">
-                <input type="text" placeholder={t("contactTeaser.firstName")} className={inputClass} />
-                <input type="text" placeholder={t("contactTeaser.lastName")} className={inputClass} />
+                <div>
+                  <input
+                    type="text"
+                    maxLength={80}
+                    placeholder={t("contactTeaser.firstName")}
+                    className={cls("firstName")}
+                    value={data.firstName}
+                    onChange={(e) => setName("firstName", e.target.value)}
+                  />
+                  <ErrMsg msg={errors.firstName} />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    maxLength={80}
+                    placeholder={t("contactTeaser.lastName")}
+                    className={cls("lastName")}
+                    value={data.lastName}
+                    onChange={(e) => setName("lastName", e.target.value)}
+                  />
+                  <ErrMsg msg={errors.lastName} />
+                </div>
               </div>
-              <input type="email" placeholder={t("contactTeaser.email")} className={inputClass} />
-              <select
-                value={subject}
-                onChange={(e) => setSubject(e.target.value)}
-                className={`${inputClass} ${!subject ? "text-white/40" : ""}`}
-              >
-                <option value="" disabled>{t("contactTeaser.subject")}</option>
-                {subjectKeys.map((key) => (
-                  <option key={key} value={key} className="bg-navy text-white">
-                    {t(`contactTeaser.subjects.${key}`)}
-                  </option>
-                ))}
-              </select>
+              <div>
+                <input
+                  type="email"
+                  maxLength={255}
+                  placeholder={t("contactTeaser.email")}
+                  className={cls("email")}
+                  value={data.email}
+                  onChange={(e) => {
+                    setData({ ...data, email: e.target.value });
+                    if (errors.email) setErrors((p) => ({ ...p, email: undefined }));
+                  }}
+                />
+                <ErrMsg msg={errors.email} />
+              </div>
+              <div>
+                <select
+                  value={data.subject}
+                  onChange={(e) => {
+                    setData({ ...data, subject: e.target.value });
+                    if (errors.subject) setErrors((p) => ({ ...p, subject: undefined }));
+                  }}
+                  className={`${cls("subject")} ${!data.subject ? "text-white/40" : ""}`}
+                >
+                  <option value="" disabled>{t("contactTeaser.subject")}</option>
+                  {subjectKeys.map((key) => (
+                    <option key={key} value={key} className="bg-navy text-white">
+                      {t(`contactTeaser.subjects.${key}`)}
+                    </option>
+                  ))}
+                </select>
+                <ErrMsg msg={errors.subject} />
+              </div>
               <div>
                 <textarea
                   rows={4}
                   maxLength={2000}
                   placeholder={t("contactTeaser.messagePlaceholder")}
-                  value={message}
-                  onChange={handleMessageChange}
-                  className={`${inputClass} resize-none ${messageError ? "border-red-400/60" : ""}`}
-                  aria-invalid={!!messageError}
-                  aria-describedby="contact-msg-help"
+                  value={data.message}
+                  onChange={(e) => {
+                    setData({ ...data, message: e.target.value });
+                    if (errors.message) setErrors((p) => ({ ...p, message: undefined }));
+                  }}
+                  className={`${cls("message")} resize-none`}
                 />
-                <div id="contact-msg-help" className="flex items-center justify-between mt-1.5 text-xs">
-                  <span className={messageError ? "text-red-300" : "text-white/40"}>
-                    {messageError ?? "\u00A0"}
-                  </span>
-                  <span className={remaining > 0 ? "text-white/40" : "text-gold/80"}>
-                    {t("common.messageCounter", { count: message.trim().length })}
-                  </span>
-                </div>
+                <ErrMsg msg={errors.message} />
               </div>
-              <button
-                type="submit"
-                className="w-full btn-gold py-4 text-[13px] font-medium"
-              >
+              <button type="submit" className="w-full btn-gold py-4 text-[13px] font-medium">
                 {t("contactTeaser.send")}
               </button>
             </form>
