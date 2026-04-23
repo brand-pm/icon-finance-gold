@@ -138,22 +138,55 @@ const ContactBody = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-4">
               <div>
                 <label className={labelClass}>{t("contactPage.form.firstName")}</label>
-                <input type="text" maxLength={80} placeholder={t("common.placeholderFirstName")} className={inputClass} value={formData.firstName} onChange={(e) => setFormData({ ...formData, firstName: e.target.value })} />
+                <input
+                  type="text"
+                  maxLength={80}
+                  placeholder={t("common.placeholderFirstName")}
+                  className={cls("firstName")}
+                  value={formData.firstName}
+                  onChange={(e) => setName("firstName", e.target.value)}
+                />
+                <ErrMsg msg={errors.firstName} />
               </div>
               <div>
                 <label className={labelClass}>{t("contactPage.form.lastName")}</label>
-                <input type="text" maxLength={80} placeholder={t("common.placeholderLastName")} className={inputClass} value={formData.lastName} onChange={(e) => setFormData({ ...formData, lastName: e.target.value })} />
+                <input
+                  type="text"
+                  maxLength={80}
+                  placeholder={t("common.placeholderLastName")}
+                  className={cls("lastName")}
+                  value={formData.lastName}
+                  onChange={(e) => setName("lastName", e.target.value)}
+                />
+                <ErrMsg msg={errors.lastName} />
               </div>
             </div>
 
             <div>
               <label className={labelClass}>{t("contactPage.form.email")}</label>
-              <input type="email" maxLength={255} placeholder={t("common.placeholderEmail")} className={inputClass} value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
+              <input
+                type="email"
+                maxLength={255}
+                placeholder={t("common.placeholderEmail")}
+                className={cls("email")}
+                value={formData.email}
+                onChange={(e) => {
+                  setFormData({ ...formData, email: e.target.value });
+                  if (errors.email) setErrors((p) => ({ ...p, email: undefined }));
+                }}
+              />
+              <ErrMsg msg={errors.email} />
             </div>
 
             <div>
               <label className={labelClass}>{t("contactPage.form.subject")}</label>
-              <select className={`${inputClass} appearance-none cursor-pointer`} value={formData.subject} onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+              <select
+                className={`${cls("subject")} appearance-none cursor-pointer`}
+                value={formData.subject}
+                onChange={(e) => {
+                  setFormData({ ...formData, subject: e.target.value });
+                  if (errors.subject) setErrors((p) => ({ ...p, subject: undefined }));
+                }}
                 style={{
                   backgroundImage: "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'><path d='M1 1L6 6L11 1' stroke='%23E0A776' stroke-width='1.5'/></svg>\")",
                   backgroundRepeat: "no-repeat",
@@ -169,6 +202,7 @@ const ContactBody = () => {
                 <option value="special" className="bg-navy">{t("contactTeaser.subjects.specialSolutions")}</option>
                 <option value="other" className="bg-navy">{t("contactTeaser.subjects.other")}</option>
               </select>
+              <ErrMsg msg={errors.subject} />
             </div>
 
             <div>
@@ -177,19 +211,14 @@ const ContactBody = () => {
                 rows={4}
                 maxLength={2000}
                 placeholder={t("contactPage.form.messagePlaceholder")}
-                className={`${inputClass} resize-none ${messageError ? "border-red-400/60" : ""}`}
+                className={`${cls("message")} resize-none`}
                 value={formData.message}
-                onChange={handleMessageChange}
-                aria-invalid={!!messageError}
+                onChange={(e) => {
+                  setFormData({ ...formData, message: e.target.value });
+                  if (errors.message) setErrors((p) => ({ ...p, message: undefined }));
+                }}
               />
-              <div className="flex items-center justify-between mt-1.5 text-xs">
-                <span className={messageError ? "text-red-300" : "text-white/40"}>
-                  {messageError ?? "\u00A0"}
-                </span>
-                <span className={formData.message.trim().length >= 50 ? "text-gold/80" : "text-white/40"}>
-                  {t("common.messageCounter", { count: formData.message.trim().length })}
-                </span>
-              </div>
+              <ErrMsg msg={errors.message} />
             </div>
 
             <button type="submit" className="btn-gold w-full py-4 text-[12px] mt-2">{t("contactPage.form.submit")}</button>
