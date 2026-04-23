@@ -5,6 +5,13 @@ export const postSchema = defineType({
   title: "Insight Article",
   type: "document",
   fields: [
+    defineField({
+      name: "language",
+      title: "Language",
+      type: "string",
+      readOnly: true,
+      hidden: true,
+    }),
     defineField({ name: "title", title: "Title", type: "string", validation: (R) => R.required().max(200) }),
     defineField({
       name: "slug",
@@ -77,7 +84,29 @@ export const postSchema = defineType({
       ],
     }),
   ],
+  orderings: [
+    {
+      title: "Published Date, New",
+      name: "publishedAtDesc",
+      by: [{ field: "publishedAt", direction: "desc" }],
+    },
+    {
+      title: "Language, then Published Date",
+      name: "langPublishedAt",
+      by: [
+        { field: "language", direction: "asc" },
+        { field: "publishedAt", direction: "desc" },
+      ],
+    },
+  ],
   preview: {
-    select: { title: "title", media: "coverImage", subtitle: "category" },
+    select: { title: "title", media: "coverImage", subtitle: "category", language: "language" },
+    prepare({ title, media, subtitle, language }) {
+      return {
+        title,
+        media,
+        subtitle: language ? `[${String(language).toUpperCase()}] ${subtitle ?? ""}` : subtitle,
+      };
+    },
   },
 });
