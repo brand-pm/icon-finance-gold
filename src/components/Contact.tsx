@@ -16,6 +16,7 @@ const inputClass =
 
 const Contact = () => {
   const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
   const ref = useScrollReveal();
   const { t } = useTranslation();
 
@@ -59,6 +60,14 @@ const Contact = () => {
                   </option>
                 ))}
               </select>
+              <textarea
+                rows={4}
+                maxLength={2000}
+                placeholder={t("contactTeaser.messagePlaceholder")}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                className={`${inputClass} resize-none`}
+              />
               <button
                 type="submit"
                 className="w-full btn-gold py-4 text-[13px] font-medium"
