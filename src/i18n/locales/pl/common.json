@@ -220,7 +220,11 @@
     "placeholderFirstName": "Wpisz swoje imię",
     "placeholderLastName": "Wpisz swoje nazwisko",
     "placeholderEmail": "example@email.com",
-    "selectSubject": "Wybierz temat"
+    "selectSubject": "Wybierz temat",
+    "messageNoDigits": "Cyfry nie są dozwolone w wiadomości",
+    "messageMin": "Wpisz co najmniej 50 znaków",
+    "messageCounter": "{{count}}/50 znaków minimum",
+    "formSuccess": "Wiadomość wysłana. Odpowiemy w ciągu 24 godzin."
   },
   "serviceCTA": {
     "eyebrow": "Skontaktuj się",
