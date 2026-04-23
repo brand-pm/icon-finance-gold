@@ -221,10 +221,9 @@
     "placeholderLastName": "Введите фамилию",
     "placeholderEmail": "example@email.com",
     "selectSubject": "Выберите тему",
-    "messageNoDigits": "В сообщении нельзя использовать цифры",
     "messageMin": "Пожалуйста, напишите минимум 50 символов",
-    "messageCounter": "{{count}}/50 символов минимум",
-    "formSuccess": "Сообщение отправлено. Мы ответим в течение 24 часов."
+    "formSuccess": "Сообщение отправлено. Мы ответим в течение 24 часов.",
+    "nameNoDigits": "В этом поле нельзя использовать цифры"
   },
   "serviceCTA": {
     "eyebrow": "Свяжитесь с нами",

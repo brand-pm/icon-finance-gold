@@ -221,10 +221,9 @@
     "placeholderLastName": "Enter your name",
     "placeholderEmail": "example@email.com",
     "selectSubject": "Select a subject",
-    "messageNoDigits": "Numbers are not allowed in the message",
     "messageMin": "Please write at least 50 characters",
-    "messageCounter": "{{count}}/50 characters minimum",
-    "formSuccess": "Message sent. We will respond within 24 hours."
+    "formSuccess": "Message sent. We will respond within 24 hours.",
+    "nameNoDigits": "Numbers are not allowed in this field"
   },
   "serviceCTA": {
     "eyebrow": "Get in Touch",
