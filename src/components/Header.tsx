@@ -112,7 +112,11 @@ const Header = () => {
     >
       <div className="container-main h-full flex items-center justify-between">
         {/* Logo */}
-        <Link to={localize("/")} className="flex items-center">
+        <Link
+          to={localize("/")}
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="flex items-center cursor-pointer"
+        >
           <img src={logo} alt="Icon Finance & Wealth Management" className="h-[46px]" />
         </Link>
 
