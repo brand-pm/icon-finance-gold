@@ -80,7 +80,7 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
           <p className="mb-8" style={{ fontSize: "14px", color: "#9CA3AF" }}>
             {t("serviceCTA.formSubtitle")}
           </p>
-          <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
+          <form className="flex flex-col gap-5" onSubmit={handleSubmit} noValidate>
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <label className={labelClass}>{t("serviceCTA.firstName")}</label>
@@ -144,10 +144,19 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
                 rows={4}
                 maxLength={2000}
                 placeholder={t("serviceCTA.messagePlaceholder")}
-                className={`${inputClass} resize-none`}
+                className={`${inputClass} resize-none ${messageError ? "border-red-400/60" : ""}`}
                 value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                onChange={handleMessageChange}
+                aria-invalid={!!messageError}
               />
+              <div className="flex items-center justify-between mt-1.5 text-xs">
+                <span className={messageError ? "text-red-300" : "text-white/40"}>
+                  {messageError ?? "\u00A0"}
+                </span>
+                <span className={formData.message.trim().length >= MIN_MESSAGE_LENGTH ? "text-gold/80" : "text-white/40"}>
+                  {t("common.messageCounter", { count: formData.message.trim().length })}
+                </span>
+              </div>
             </div>
 
             <button type="submit" className="btn-gold w-full py-4 text-[12px] mt-2">
