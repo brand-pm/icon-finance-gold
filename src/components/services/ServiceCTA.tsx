@@ -14,6 +14,7 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
     lastName: "",
     email: "",
     subject: "",
+    message: "",
   });
   const ref = useScrollReveal();
 
@@ -110,6 +111,18 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
                 <option value="ma" className="bg-navy">{t("services.maConsulting.title")}</option>
                 <option value="other" className="bg-navy">{t("contactTeaser.subjects.other")}</option>
               </select>
+            </div>
+
+            <div>
+              <label className={labelClass}>{t("serviceCTA.message")}</label>
+              <textarea
+                rows={4}
+                maxLength={2000}
+                placeholder={t("serviceCTA.messagePlaceholder")}
+                className={`${inputClass} resize-none`}
+                value={formData.message}
+                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+              />
             </div>
 
             <button type="submit" className="btn-gold w-full py-4 text-[12px] mt-2">

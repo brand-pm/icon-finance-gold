@@ -191,6 +191,7 @@
     "lastName": "Nazwisko",
     "email": "Email służbowy",
     "subject": "Temat",
+    "messagePlaceholder": "Twoja wiadomość",
     "send": "Wyślij",
     "subjects": {
       "wealthManagement": "Zarządzanie majątkiem",
@@ -229,6 +230,8 @@
     "lastName": "Nazwisko",
     "email": "Email służbowy",
     "subject": "Temat",
+    "message": "Twoja wiadomość",
+    "messagePlaceholder": "Opowiedz krótko o swoich celach",
     "send": "Wyślij"
   },
   "about": {
