@@ -121,7 +121,7 @@ const Header = () => {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden xl:flex items-center gap-6 2xl:gap-8">
           {navItems.map((item) =>
             item.hasMega ? (
               <div
@@ -131,7 +131,7 @@ const Header = () => {
                 className="h-20 flex items-center relative"
               >
                 <button
-                  className={`flex items-center gap-1 text-[13px] transition-colors duration-300 uppercase tracking-wider font-medium ${
+                  className={`flex items-center gap-1 text-[13px] transition-colors duration-300 uppercase tracking-wider font-medium whitespace-nowrap ${
                     megaOpen || isServiceActive ? "text-gold" : "text-white/70 hover:text-gold"
                   }`}
                 >
@@ -149,7 +149,7 @@ const Header = () => {
               <Link
                 key={item.labelKey}
                 to={localize(item.href)}
-                className={`relative h-20 flex items-center text-[13px] transition-colors duration-300 uppercase tracking-wider font-medium ${
+                className={`relative h-20 flex items-center text-[13px] transition-colors duration-300 uppercase tracking-wider font-medium whitespace-nowrap ${
                   isActive(item.href) ? "text-gold" : "text-white/70 hover:text-gold"
                 }`}
               >
@@ -160,17 +160,18 @@ const Header = () => {
               </Link>
             ),
           )}
+          <span className="h-5 w-px bg-white/15" />
           <LanguageSwitcher variant="desktop" />
           <Link
             to={localize("/contact")}
-            className="text-[13px] text-gold hover:text-white transition-colors duration-300 uppercase tracking-wider font-medium"
+            className="text-[12px] text-gold hover:bg-gold hover:text-navy transition-colors duration-300 uppercase tracking-wider font-medium whitespace-nowrap border border-gold/60 px-4 py-2 rounded-full"
           >
             {t("nav.startDialogue")} →
           </Link>
         </nav>
 
         {/* Mobile toggle */}
-        <button className="lg:hidden text-white" onClick={() => setMobileOpen(!mobileOpen)}>
+        <button className="xl:hidden text-white" onClick={() => setMobileOpen(!mobileOpen)}>
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
