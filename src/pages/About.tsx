@@ -17,6 +17,12 @@ import kseniaPhoto from "../assets/team/ksenia-romanchuk.jpg";
 // Photos are matched by position in the team array (same order across all locales):
 // 0: Founder, 1: CEO, 2: CBDO, 3: Partnership Development Manager
 const TEAM_PHOTOS_BY_INDEX: string[] = [olegPhoto, yuriiPhoto, kseniaPhoto, maksymPhoto];
+const TEAM_LINKEDIN_BY_INDEX: string[] = [
+  "https://www.linkedin.com/in/oleg-zabolotnyi/",
+  "https://www.linkedin.com/in/yurii-labenko-178259a0/",
+  "https://www.linkedin.com/in/ksenia-romanchuk-abb745375/",
+  "https://www.linkedin.com/in/mvesna/",
+];
 
 const About = () => {
   const { t } = useTranslation();
@@ -67,7 +73,7 @@ const About = () => {
           name: m.name,
           bio: m.bio,
           image: TEAM_PHOTOS_BY_INDEX[idx] ?? teamPlaceholder,
-          linkedin: "#",
+          linkedin: TEAM_LINKEDIN_BY_INDEX[idx],
         }))}
       />
 
