@@ -208,7 +208,9 @@ const Header = () => {
                         : "linear-gradient(180deg, rgba(15,22,45,0.55) 0%, rgba(15,22,45,0.96) 100%)",
                     }}
                   />
-                  <div className="relative z-10 h-full flex flex-col justify-end p-6">
+                  <div className="relative z-10 h-full flex flex-col p-6">
+                    {/* Spacer pushes content to bottom but keeps title aligned */}
+                    <div className="flex-1" />
                     <div
                       className={`text-[10px] tracking-[0.24em] mb-2 transition-colors duration-300 ${
                         active ? "text-white" : "text-gold"
@@ -216,13 +218,17 @@ const Header = () => {
                     >
                       {col.number}
                     </div>
-                    <h3 className="text-white text-[16px] font-medium mb-2 leading-tight">
+                    <h3
+                      className="text-white text-[16px] font-medium mb-2 leading-tight flex items-start"
+                      style={{ minHeight: "2.6em" }}
+                    >
                       {t(col.titleKey)}
                     </h3>
                     <p
                       className={`text-[11px] leading-[1.55] mb-4 transition-colors duration-300 ${
                         active ? "text-white/90" : "text-white/55"
                       }`}
+                      style={{ minHeight: "3.4em" }}
                     >
                       {t(col.descKey)}
                     </p>
