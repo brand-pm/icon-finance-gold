@@ -161,16 +161,28 @@ const InsightArticle = () => {
                     Share Article
                   </p>
                   <div className="flex gap-5">
-                    {[Facebook, Twitter, Linkedin].map((Icon, i) => (
-                      <a
-                        key={i}
-                        href="#"
-                        className="text-slate hover:text-gold transition-colors duration-300"
-                        aria-label="Share"
-                      >
-                        <Icon size={18} strokeWidth={1.5} />
-                      </a>
-                    ))}
+                    {(() => {
+                      const shareUrl = typeof window !== "undefined" ? window.location.href : "";
+                      const encodedUrl = encodeURIComponent(shareUrl);
+                      const encodedTitle = encodeURIComponent(post.title);
+                      const shares = [
+                        { Icon: Facebook, href: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`, label: "Share on Facebook" },
+                        { Icon: Twitter, href: `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`, label: "Share on X" },
+                        { Icon: Linkedin, href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`, label: "Share on LinkedIn" },
+                      ];
+                      return shares.map(({ Icon, href, label }) => (
+                        <a
+                          key={label}
+                          href={href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-slate hover:text-gold transition-colors duration-300"
+                          aria-label={label}
+                        >
+                          <Icon size={18} strokeWidth={1.5} />
+                        </a>
+                      ));
+                    })()}
                   </div>
                 </div>
               </div>

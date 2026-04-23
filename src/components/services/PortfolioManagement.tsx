@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useLocalizedPath } from "@/i18n/useLocalizedPath";
 import marbleMono1 from "@/assets/marble-mono-1-v3.jpg";
 import marbleMono2 from "@/assets/marble-mono-2.jpg";
 import marbleMono3 from "@/assets/marble-mono-3-v2.jpg";
@@ -28,12 +29,14 @@ const PortfolioManagement = ({
   title,
   description,
   steps,
-  ctaLink = "/#contact",
+  ctaLink,
   ctaLabel,
   ctaVariant = "filled",
 }: PortfolioManagementProps) => {
   const { t } = useTranslation();
+  const localize = useLocalizedPath();
   const finalCtaLabel = ctaLabel ?? t("nav.startDialogue");
+  const finalCtaLink = ctaLink ?? localize("/contact");
   return (
     <section className="portfolio-management-section">
       <div className="container-main section-padding">
@@ -48,7 +51,7 @@ const PortfolioManagement = ({
             </div>
             <p className="portfolio-management-description mb-10 max-w-sm">{description}</p>
             <Link
-              to={ctaLink}
+              to={finalCtaLink}
               className={`${ctaVariant === "filled" ? "btn-gold" : "btn-outline-gold"} inline-block px-10 py-4 text-[14px] rounded-lg`}
             >
               {finalCtaLabel}
