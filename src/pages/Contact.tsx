@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { z } from "zod";
+
 import { toast } from "sonner";
 import { useTranslation } from "react-i18next";
 import Seo from "../components/Seo";
