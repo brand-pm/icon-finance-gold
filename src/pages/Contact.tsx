@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { z } from "zod";
+
 import { toast } from "sonner";
 import { useTranslation } from "react-i18next";
 import Seo from "../components/Seo";
@@ -37,45 +37,52 @@ const ContactBody = () => {
   const detailBlocks = t("contactPage.details.blocks", { returnObjects: true }) as Array<{ title: string; body: string }>;
 
   const MIN_MESSAGE_LENGTH = 50;
-  const [messageError, setMessageError] = useState<string | null>(null);
-
-  const contactSchema = z.object({
-    firstName: z.string().trim().min(1, t("contactPage.form.errors.firstName")).max(80),
-    lastName: z.string().trim().min(1, t("contactPage.form.errors.lastName")).max(80),
-    email: z.string().trim().email(t("contactPage.form.errors.email")).max(255),
-    subject: z.string().min(1, t("contactPage.form.errors.subject")),
-    message: z
-      .string()
-      .trim()
-      .min(MIN_MESSAGE_LENGTH, t("common.messageMin"))
-      .max(2000)
-      .refine((v) => !/\d/.test(v), { message: t("common.messageNoDigits") }),
-  });
+  type Errors = Partial<Record<"firstName" | "lastName" | "email" | "subject" | "message", string>>;
+  const [errors, setErrors] = useState<Errors>({});
 
   const labelClass = "block text-white/70 text-xs uppercase tracking-wider mb-2";
-  const inputClass = "w-full bg-transparent border border-white/15 px-4 py-3.5 md:py-3 text-base md:text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-gold transition-colors";
+  const inputBase = "w-full bg-transparent border px-4 py-3.5 md:py-3 text-base md:text-sm text-white placeholder:text-white/30 focus:outline-none transition-colors";
+  const inputOk = "border-white/15 focus:border-gold";
+  const inputErr = "border-red-400/60 focus:border-red-400";
+  const cls = (key: keyof Errors) => `${inputBase} ${errors[key] ? inputErr : inputOk}`;
 
-  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    const raw = e.target.value;
-    const hadDigits = /\d/.test(raw);
-    const cleaned = raw.replace(/\d/g, "");
-    setFormData({ ...formData, message: cleaned });
-    setMessageError(hadDigits ? t("common.messageNoDigits") : null);
+  const stripDigits = (v: string) => v.replace(/\d/g, "");
+
+  const setName = (key: "firstName" | "lastName", raw: string) => {
+    const cleaned = stripDigits(raw);
+    setFormData((p) => ({ ...p, [key]: cleaned }));
+    if (raw !== cleaned) {
+      setErrors((p) => ({ ...p, [key]: t("common.nameNoDigits") }));
+    } else if (errors[key]) {
+      setErrors((p) => ({ ...p, [key]: undefined }));
+    }
+  };
+
+  const validate = (): Errors => {
+    const e: Errors = {};
+    if (!formData.firstName.trim()) e.firstName = t("common.required");
+    if (!formData.lastName.trim()) e.lastName = t("common.required");
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email.trim())) e.email = t("common.invalidEmail");
+    if (!formData.subject) e.subject = t("common.required");
+    if (formData.message.trim().length < MIN_MESSAGE_LENGTH) e.message = t("common.messageMin");
+    return e;
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const result = contactSchema.safeParse(formData);
-    if (!result.success) {
-      const issue = result.error.issues[0];
-      if (issue.path[0] === "message") setMessageError(issue.message);
-      toast.error(issue.message);
+    const v = validate();
+    setErrors(v);
+    if (Object.keys(v).length) {
+      toast.error(Object.values(v)[0]!);
       return;
     }
     toast.success(t("contactPage.form.success"));
     setFormData({ firstName: "", lastName: "", email: "", subject: "", message: "" });
-    setMessageError(null);
+    setErrors({});
   };
+
+  const ErrMsg = ({ msg }: { msg?: string }) =>
+    msg ? <p className="mt-1.5 text-xs text-red-300">{msg}</p> : null;
 
   return (
     <section id="contact-form" ref={ref} className="relative marble-texture-strong section-padding" style={{ background: "#F5F3F0" }}>
@@ -131,22 +138,55 @@ const ContactBody = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-4">
               <div>
                 <label className={labelClass}>{t("contactPage.form.firstName")}</label>
-                <input type="text" maxLength={80} placeholder={t("common.placeholderFirstName")} className={inputClass} value={formData.firstName} onChange={(e) => setFormData({ ...formData, firstName: e.target.value })} />
+                <input
+                  type="text"
+                  maxLength={80}
+                  placeholder={t("common.placeholderFirstName")}
+                  className={cls("firstName")}
+                  value={formData.firstName}
+                  onChange={(e) => setName("firstName", e.target.value)}
+                />
+                <ErrMsg msg={errors.firstName} />
               </div>
               <div>
                 <label className={labelClass}>{t("contactPage.form.lastName")}</label>
-                <input type="text" maxLength={80} placeholder={t("common.placeholderLastName")} className={inputClass} value={formData.lastName} onChange={(e) => setFormData({ ...formData, lastName: e.target.value })} />
+                <input
+                  type="text"
+                  maxLength={80}
+                  placeholder={t("common.placeholderLastName")}
+                  className={cls("lastName")}
+                  value={formData.lastName}
+                  onChange={(e) => setName("lastName", e.target.value)}
+                />
+                <ErrMsg msg={errors.lastName} />
               </div>
             </div>
 
             <div>
               <label className={labelClass}>{t("contactPage.form.email")}</label>
-              <input type="email" maxLength={255} placeholder={t("common.placeholderEmail")} className={inputClass} value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
+              <input
+                type="email"
+                maxLength={255}
+                placeholder={t("common.placeholderEmail")}
+                className={cls("email")}
+                value={formData.email}
+                onChange={(e) => {
+                  setFormData({ ...formData, email: e.target.value });
+                  if (errors.email) setErrors((p) => ({ ...p, email: undefined }));
+                }}
+              />
+              <ErrMsg msg={errors.email} />
             </div>
 
             <div>
               <label className={labelClass}>{t("contactPage.form.subject")}</label>
-              <select className={`${inputClass} appearance-none cursor-pointer`} value={formData.subject} onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+              <select
+                className={`${cls("subject")} appearance-none cursor-pointer`}
+                value={formData.subject}
+                onChange={(e) => {
+                  setFormData({ ...formData, subject: e.target.value });
+                  if (errors.subject) setErrors((p) => ({ ...p, subject: undefined }));
+                }}
                 style={{
                   backgroundImage: "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'><path d='M1 1L6 6L11 1' stroke='%23E0A776' stroke-width='1.5'/></svg>\")",
                   backgroundRepeat: "no-repeat",
@@ -162,6 +202,7 @@ const ContactBody = () => {
                 <option value="special" className="bg-navy">{t("contactTeaser.subjects.specialSolutions")}</option>
                 <option value="other" className="bg-navy">{t("contactTeaser.subjects.other")}</option>
               </select>
+              <ErrMsg msg={errors.subject} />
             </div>
 
             <div>
@@ -170,19 +211,14 @@ const ContactBody = () => {
                 rows={4}
                 maxLength={2000}
                 placeholder={t("contactPage.form.messagePlaceholder")}
-                className={`${inputClass} resize-none ${messageError ? "border-red-400/60" : ""}`}
+                className={`${cls("message")} resize-none`}
                 value={formData.message}
-                onChange={handleMessageChange}
-                aria-invalid={!!messageError}
+                onChange={(e) => {
+                  setFormData({ ...formData, message: e.target.value });
+                  if (errors.message) setErrors((p) => ({ ...p, message: undefined }));
+                }}
               />
-              <div className="flex items-center justify-between mt-1.5 text-xs">
-                <span className={messageError ? "text-red-300" : "text-white/40"}>
-                  {messageError ?? "\u00A0"}
-                </span>
-                <span className={formData.message.trim().length >= 50 ? "text-gold/80" : "text-white/40"}>
-                  {t("common.messageCounter", { count: formData.message.trim().length })}
-                </span>
-              </div>
+              <ErrMsg msg={errors.message} />
             </div>
 
             <button type="submit" className="btn-gold w-full py-4 text-[12px] mt-2">{t("contactPage.form.submit")}</button>

@@ -221,10 +221,11 @@
     "placeholderLastName": "Вкажіть прізвище",
     "placeholderEmail": "example@email.com",
     "selectSubject": "Оберіть тему",
-    "messageNoDigits": "У повідомленні не можна використовувати цифри",
     "messageMin": "Будь ласка, напишіть щонайменше 50 символів",
-    "messageCounter": "{{count}}/50 символів мінімум",
-    "formSuccess": "Повідомлення надіслано. Ми відповімо протягом 24 годин."
+    "formSuccess": "Повідомлення надіслано. Ми відповімо протягом 24 годин.",
+    "nameNoDigits": "У цьому полі не можна використовувати цифри",
+    "required": "Це поле обов’язкове",
+    "invalidEmail": "Введіть коректний email"
   },
   "serviceCTA": {
     "eyebrow": "Зв'яжіться з нами",
