@@ -223,7 +223,9 @@
     "selectSubject": "Select a subject",
     "messageMin": "Please write at least 50 characters",
     "formSuccess": "Message sent. We will respond within 24 hours.",
-    "nameNoDigits": "Numbers are not allowed in this field"
+    "nameNoDigits": "Numbers are not allowed in this field",
+    "required": "This field is required",
+    "invalidEmail": "Please enter a valid email"
   },
   "serviceCTA": {
     "eyebrow": "Get in Touch",

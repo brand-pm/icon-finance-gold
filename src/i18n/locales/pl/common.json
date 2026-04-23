@@ -223,7 +223,9 @@
     "selectSubject": "Wybierz temat",
     "messageMin": "Wpisz co najmniej 50 znaków",
     "formSuccess": "Wiadomość wysłana. Odpowiemy w ciągu 24 godzin.",
-    "nameNoDigits": "Cyfry nie są dozwolone w tym polu"
+    "nameNoDigits": "Cyfry nie są dozwolone w tym polu",
+    "required": "To pole jest wymagane",
+    "invalidEmail": "Podaj poprawny email"
   },
   "serviceCTA": {
     "eyebrow": "Skontaktuj się",
