@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { useTranslation } from "react-i18next";
 import { useScrollReveal } from "../hooks/useScrollReveal";
-import { useLocalizedPath } from "@/i18n/useLocalizedPath";
+import { useLocalizedPath, useCurrentLanguage } from "@/i18n/useLocalizedPath";
 import { sanityClient, urlFor, formatPostDate, type PostListItem } from "@/lib/sanity";
 
-const POSTS_QUERY = `*[_type == "post"] | order(publishedAt desc)[0...3]{
+const POSTS_QUERY = `*[_type == "post" && language == $lang] | order(publishedAt desc)[0...3]{
   _id, title, "slug": slug.current, category, coverImage, excerpt, readTime, publishedAt
 }`;
 
@@ -13,11 +13,17 @@ const Insights = () => {
   const ref = useScrollReveal();
   const { t } = useTranslation();
   const localize = useLocalizedPath();
+  const lang = useCurrentLanguage();
 
   const { data: articles = [], isLoading } = useQuery({
-    queryKey: ["posts", "teaser"],
-    queryFn: () => sanityClient.fetch<PostListItem[]>(POSTS_QUERY),
+    queryKey: ["posts", "teaser", lang],
+    queryFn: () => sanityClient.fetch<PostListItem[]>(POSTS_QUERY, { lang }),
   });
+
+  // Hide entire section if no articles in current language (after loading)
+  if (!isLoading && articles.length === 0) {
+    return null;
+  }
 
   return (
     <section id="insights" className="section-padding bg-offwhite" ref={ref}>
