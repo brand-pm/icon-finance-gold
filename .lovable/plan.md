@@ -1,61 +1,47 @@
 
 
-# Качественная вычитка переводов: страница за страницей
+## Fix: Header overflow / CTA touching edge on desktop (UA/RU/PL)
 
-Цель: пройти все 4 языка (EN-эталон, RU, UK, PL) экран за экраном вручную. Никаких массовых regex-замен. Каждый блок — осознанный перевод с естественными формулировками, без англицизмов и без латиницы (кроме email и аббревиатур BVI/NDA).
+### Problem
+At desktop widths 1024–1300px the header nav becomes overcrowded in non-English locales because Cyrillic words ("РОЗПОЧАТИ ДІАЛОГ", "ЕКСПЕРТИЗА", "АНАЛІТИКА") are much longer than English. Result:
+- The "Start a Dialogue" CTA text touches the right edge of the viewport.
+- Items appear to break out of their block.
+- The whole bar looks unbalanced.
 
-## Глобальные правила (применяются ко всем блокам)
+Root causes in `src/components/Header.tsx`:
+1. Desktop nav activates at `lg:` (1024px) — too early for long Cyrillic labels.
+2. Fixed `gap-8` (32px) between every nav item.
+3. CTA is plain text without a contained button — visually merges with the right edge.
+4. No `whitespace-nowrap` on labels, no min-width safeguards.
 
-- **Family Office** → RU «семейный офис», UK «сімейний офіс», PL «biuro rodzinne». В первом упоминании в hero-описаниях допустимо «семейный офис (family office)».
-- **M&A** → RU «слияния и поглощения», UK «злиття та поглинання», PL «fuzje i przejęcia». В технических ярлыках вкладок сохраняется аббревиатура M&A только если стоит рядом с переводом.
-- **Private Equity / Venture / Hedge / ESG / Due Diligence / Exit / Governance / Private Banking / Asset Management / Lifestyle Management** — переводятся:
-  - Private Equity → прямые инвестиции / прямі інвестиції / inwestycje private equity → inwestycje kapitałowe
-  - Venture → венчурные инвестиции / венчурні інвестиції / inwestycje venture → kapitał wysokiego ryzyka
-  - Due Diligence → комплексная проверка / комплексна перевірка / due diligence → analiza due diligence (PL — допустимо, термин принят)
-  - Exit → выход из инвестиции / вихід з інвестиції / wyjście z inwestycji
-  - Governance → корпоративное управление / корпоративне управління / ład korporacyjny
-  - Private Banking → частный банкинг / приватний банкінг / bankowość prywatna
-  - Asset Management → управление активами / управління активами / zarządzanie aktywami
-  - Lifestyle Management → управление образом жизни / управління способом життя / zarządzanie stylem życia
-- **Cookies / Email** в UI лейблах → «Файлы cookie», «Cookies» (PL — ok), «Електронна пошта», «Email» (PL — ok).
-- **SEO-тайтлы и описания** — полностью локализуются для каждой страницы и каждого языка.
-- **Имена людей** (Oleg, Yurii и т.д.) в PL — транслитерируются по-польски: Oleh Zabolotnyi, Yurii Łabenko и т.п. (либо оставляем латиницей как есть — уточню при правке PL-блока, по умолчанию оставляем как сейчас, т.к. это собственные имена).
-- **Адрес**: «Próżna» — собственное название, остаётся латиницей. Город — на языке.
+### What will change
 
-## Порядок блоков (по экранам)
+**1. Header desktop breakpoint & spacing** (`src/components/Header.tsx`)
+- Switch desktop nav activation from `lg:` → `xl:` (1280px). Below that, mobile menu is shown — guarantees no cramming on mid-size laptops.
+- Reduce nav gap from `gap-8` → responsive `gap-6 2xl:gap-8`.
+- Add `whitespace-nowrap` to every nav label and the CTA.
+- Add a small left margin/divider before LanguageSwitcher so it doesn't visually merge with the previous label.
 
-| # | Блок | Что входит | Что фиксим |
-|---|------|------------|------------|
-| 1 | Главная (Home) | `hero`, `services`, `servicesSection`, `homeProcess`, `whyUs`, `insightsTeaser`, `contactTeaser`, `nav`, `megaMenu`, `footer`, `common`, `serviceCTA` | family office, M&A, governance, exit, Cookies, Email, Lifestyle management, ровные формулировки |
-| 2 | About | `about` (hero, philosophy, story, team) | private banking, asset management, governance, Family Office, бренд-имя в hero |
-| 3 | Expertise | `expertise` (hero, competencies, industries, international, key numbers) | family office, M&A, due diligence, exit, governance, BVI |
-| 4 | Insights (главная + страница) | `insights`, `insightsTeaser` | категории «Family Office», «M&A», ровный business-tone |
-| 5 | Contact | `contactPage` (hero, details, form, CTA) | Email-блок, NDA, тон формы, subjects |
-| 6a | Service: Wealth Management | `servicePages.wealthManagement` (hero, whoBenefits, philosophy, results, strategies, opportunities, portfolio, faq, cta) | Private Equity, market neutral, Bitcoin/Ethereum, Due diligence, грамматика стратегий |
-| 6b | Service: Family Office | `servicePages.familyOffice` | Single/Shared/Virtual Family Office как названия моделей |
-| 6c | Service: Structuring & Tax | `servicePages.structuringTax` | комплаенс, структуры, термины |
-| 6d | Service: M&A Consulting | `servicePages.maConsulting` | exit, due diligence, M&A в названиях стратегий |
-| 6e | Service: Special Solutions | `servicePages.specialSolutions` | ESG, Lifestyle |
-| 7 | SEO + системные | `seo.pages.*` (полная локализация всех title/description), `notFound`, `cookieConsent`, legal pages references | все страницы |
+**2. CTA styling**
+- Convert "Start a Dialogue →" link from plain text into a contained gold-outline pill: `border border-gold/60 px-4 py-2 rounded-full hover:bg-gold hover:text-navy`.
+- This visually anchors the right side and creates breathing room from the viewport edge.
 
-## Процесс по каждому блоку
+**3. Container padding**
+- Increase header container side padding at desktop: `px-5 md:px-6 xl:px-8` to give the CTA more room from the edge.
 
-1. Открываем EN как эталон смысла.
-2. Сравниваем с текущими RU / UK / PL.
-3. Переписываем проблемные строки **вручную, осмысленно**, выдерживая бизнес-тон, без кальки с английского.
-4. Сохраняем правки одновременно во всех 3 нелатинских языках.
-5. После блока — JSON-валидация всех 4 файлов.
-6. Я отчитываюсь: «Блок N готов, исправлено столько-то строк, пример до/после». Жду «дальше» — и перехожу к следующему.
+**4. Mobile toggle breakpoint**
+- Update the mobile menu button + portal panel from `lg:hidden` → `xl:hidden` to match the new breakpoint, so the burger appears up to 1279px.
+- Update the mega-menu dropdown from `hidden lg:block` → `hidden xl:block`.
 
-## Технические детали
+### Files touched
+- `src/components/Header.tsx` — breakpoint swaps, gap reduction, `whitespace-nowrap`, CTA pill styling, container padding tweak.
 
-- Файлы: только `src/i18n/locales/{ru,uk,pl}/common.json`. EN не трогаем.
-- Никаких regex-скриптов с массовыми заменами по всему файлу — это и привело к «переносам букв» и кривым фразам ранее.
-- Правки делаем через `code--line_replace` точечно, по одному ключевому пути за раз (или JSON-патч для всего блока, который я проверяю глазами перед записью).
-- После каждого блока: `python3 -c "import json; json.load(open('...'))"` для всех 4 файлов.
-- Memory: после согласования глоссария сохраню `mem://design/translation-glossary` со словарём терминов, чтобы больше не возвращаться к этому вопросу.
+No content, no translations, no other components changed. All four languages (EN/RU/UK/PL) benefit automatically because the layout now accommodates the longest labels.
 
-## Что начнём первым (после твоего «ок»)
-
-**Блок 1 — Главная страница**, потому что это первое, что видит клиент, и именно там сейчас «Family Office», «M&A», «governance», «Cookies», «Lifestyle management» торчат в кириллическом тексте.
+### Verification
+After the change I'll visually confirm in the preview at `/uk` (the worst case) that:
+- All nav items fit on one line without touching the edge.
+- The CTA pill has clear right-side padding from the viewport edge.
+- Mobile burger appears on viewports below 1280px.
+- English version (`/en`) still looks balanced and not too sparse.
 
