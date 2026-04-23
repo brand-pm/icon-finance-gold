@@ -110,7 +110,7 @@ const Header = () => {
         scrolled || megaOpen || mobileOpen ? "bg-navy/95 backdrop-blur-md shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className="container-main h-full flex items-center justify-between">
+      <div className="container-main h-full flex items-center justify-between xl:px-8">
         {/* Logo */}
         <Link
           to={localize("/")}
