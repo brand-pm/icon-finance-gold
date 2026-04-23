@@ -74,7 +74,7 @@ const Footer = () => {
 
         <div className="border-t border-white/[0.08] pt-6 mt-12 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
           <p className="text-slate text-xs md:text-sm text-center md:text-left">
-            © 2025 Icon Finance. {t("footer.rights")}
+            © 2026 Icon Finance. {t("footer.rights")}
           </p>
           <div className="flex flex-wrap justify-center md:justify-end gap-x-5 gap-y-2">
             <Link to={localize("/privacy-policy")} className="text-slate text-xs md:text-sm hover:text-white transition-colors whitespace-nowrap">
