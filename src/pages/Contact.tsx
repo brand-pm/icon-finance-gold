@@ -67,17 +67,40 @@ const ContactBody = () => {
           <div className="gold-separator mb-10"><div className="line" /><div className="dot" /><div className="dot-lg" /><div className="dot" /><div className="line" /></div>
 
           <div className="flex flex-col">
-            {detailBlocks.map((b, i) => (
-              <div key={i}>
-                <div className="py-6">
-                  <h3 className="text-charcoal font-medium text-base mb-2 uppercase tracking-wider">{b.title}</h3>
-                  <p className="text-slate text-base leading-relaxed max-w-md whitespace-pre-line">{b.body}</p>
+            {detailBlocks.map((b, i) => {
+              const titleLower = b.title.toLowerCase();
+              const isPhone = titleLower.includes("phone") || titleLower.includes("телефон") || titleLower.includes("telefon");
+              const isEmail = titleLower.includes("email") || titleLower.includes("пошта") || titleLower.includes("e-mail");
+              const renderBody = () => {
+                if (isPhone) {
+                  const tel = b.body.replace(/[^+\d]/g, "");
+                  return (
+                    <a href={`tel:${tel}`} className="text-slate text-base leading-relaxed max-w-md whitespace-pre-line hover:text-gold transition-colors">
+                      {b.body}
+                    </a>
+                  );
+                }
+                if (isEmail) {
+                  return (
+                    <a href={`mailto:${b.body.trim()}`} className="text-slate text-base leading-relaxed max-w-md whitespace-pre-line hover:text-gold transition-colors break-all">
+                      {b.body}
+                    </a>
+                  );
+                }
+                return <p className="text-slate text-base leading-relaxed max-w-md whitespace-pre-line">{b.body}</p>;
+              };
+              return (
+                <div key={i}>
+                  <div className="py-6">
+                    <h3 className="text-charcoal font-medium text-base mb-2 uppercase tracking-wider">{b.title}</h3>
+                    {renderBody()}
+                  </div>
+                  {i < detailBlocks.length - 1 && (
+                    <div className="gold-separator opacity-70"><div className="line" /><div className="dot" /><div className="dot-lg" /><div className="dot" /><div className="line" /></div>
+                  )}
                 </div>
-                {i < detailBlocks.length - 1 && (
-                  <div className="gold-separator opacity-70"><div className="line" /><div className="dot" /><div className="dot-lg" /><div className="dot" /><div className="line" /></div>
-                )}
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
