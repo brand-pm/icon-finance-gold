@@ -42,10 +42,6 @@ const Insights = () => {
           <div className="flex justify-center py-20">
             <div className="w-8 h-8 border-2 border-gold/30 border-t-gold rounded-full animate-spin" />
           </div>
-        ) : articles.length === 0 ? (
-          <div className="text-center py-12 mb-12">
-            <p className="text-slate text-[15px]">No articles published yet.</p>
-          </div>
         ) : (
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             {articles.map((a, i) => {
