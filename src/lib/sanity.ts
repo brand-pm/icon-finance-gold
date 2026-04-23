@@ -30,6 +30,7 @@ export interface PostListItem {
   excerpt?: string;
   readTime: number;
   publishedAt: string;
+  language?: string;
 }
 
 export interface Post extends PostListItem {

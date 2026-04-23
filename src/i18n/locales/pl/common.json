@@ -482,6 +482,14 @@
       "title": "Chcesz otrzymywać nasze analizy bezpośrednio?",
       "description": "Publikujemy perspektywy rynkowe i eksperckie komentarze dla klientów i subskrybentów. Skontaktuj się, aby zostać dodanym do naszej listy dystrybucyjnej.",
       "button": "Skontaktuj się"
+    },
+    "emptyState": {
+      "message": "Brak opublikowanych artykułów. Wróć wkrótce.",
+      "browseEnglish": "Przeglądaj artykuły po angielsku"
+    },
+    "fallbackBanner": {
+      "message": "Ten artykuł jest dostępny tylko w języku angielskim.",
+      "cta": "Czytaj po angielsku"
     }
   },
   "contactPage": {

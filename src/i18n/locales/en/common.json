@@ -482,6 +482,14 @@
       "title": "Want Our Analysis Delivered Directly?",
       "description": "We publish market perspectives and expert commentary for clients and subscribers. Reach out to be added to our distribution list.",
       "button": "Get in Touch"
+    },
+    "emptyState": {
+      "message": "No articles published yet. Check back soon.",
+      "browseEnglish": "Browse English Articles"
+    },
+    "fallbackBanner": {
+      "message": "This article is available in English only.",
+      "cta": "Read in English"
     }
   },
   "contactPage": {
