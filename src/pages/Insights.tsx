@@ -11,20 +11,22 @@ import { useLocalizedPath } from "@/i18n/useLocalizedPath";
 import marbleHero from "../assets/marble-mono-1.jpg";
 import { sanityClient, urlFor, formatPostDate, type PostListItem } from "@/lib/sanity";
 
-const POSTS_QUERY = `*[_type == "post"] | order(publishedAt desc){
-  _id, title, "slug": slug.current, category, coverImage, excerpt, readTime, publishedAt
+const POSTS_QUERY = `*[_type == "post" && language == $lang] | order(publishedAt desc){
+  _id, title, "slug": slug.current, category, coverImage, excerpt, readTime, publishedAt, language
 }`;
 
 const Insights = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const localize = useLocalizedPath();
   const [activeCategory, setActiveCategory] = useState("all");
   const gridRef = useScrollReveal();
   const ctaRef = useScrollReveal();
 
+  const lang = i18n.language?.split("-")[0] || "en";
+
   const { data: articles = [], isLoading } = useQuery({
-    queryKey: ["posts"],
-    queryFn: () => sanityClient.fetch<PostListItem[]>(POSTS_QUERY),
+    queryKey: ["posts", lang],
+    queryFn: () => sanityClient.fetch<PostListItem[]>(POSTS_QUERY, { lang }),
   });
 
   const categoryKeys = ["all", "wealth", "family", "structuring", "ma", "special"] as const;
@@ -74,7 +76,15 @@ const Insights = () => {
             </div>
           ) : filtered.length === 0 ? (
             <div className="text-center py-24">
-              <p className="text-slate text-[16px]">No articles published yet. Check back soon.</p>
+              <p className="text-slate text-[16px] mb-6">{t("insights.emptyState.message")}</p>
+              {lang !== "en" && (
+                <Link
+                  to="/en/insights"
+                  className="inline-block px-8 py-3 border border-charcoal text-charcoal text-sm font-medium uppercase tracking-wider hover:bg-charcoal hover:text-white transition-all duration-300"
+                >
+                  {t("insights.emptyState.browseEnglish")}
+                </Link>
+              )}
             </div>
           ) : (
             <>
