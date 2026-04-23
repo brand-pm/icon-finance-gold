@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams, Navigate } from "react-router-dom";
 import { Facebook, Twitter, Linkedin, ArrowRight } from "lucide-react";
 import { useQuery } from "@tanstack/react-query";
+import { useTranslation } from "react-i18next";
 import Seo from "../components/Seo";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -17,31 +18,70 @@ import {
   type PostListItem,
 } from "@/lib/sanity";
 import { PortableBody } from "@/components/insights/PortableBody";
+import { FallbackBanner } from "@/components/insights/FallbackBanner";
 
-const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]{
-  _id, title, "slug": slug.current, category, coverImage, excerpt, readTime, publishedAt, tableOfContents, body
+const POST_QUERY = `*[_type == "post" && slug.current == $slug && language == $lang][0]{
+  _id, title, "slug": slug.current, category, coverImage, excerpt, readTime, publishedAt,
+  tableOfContents, body, language
 }`;
 
-const RELATED_QUERY = `*[_type == "post" && slug.current != $slug] | order(publishedAt desc)[0...3]{
-  _id, title, "slug": slug.current, category, coverImage, readTime, publishedAt
+const POST_FALLBACK_QUERY = `*[_type == "post" && slug.current == $slug && language == "en"][0]{
+  _id, title, "slug": slug.current, category, coverImage, excerpt, readTime, publishedAt,
+  tableOfContents, body, language
+}`;
+
+const RELATED_QUERY = `{
+  "primary": *[_type == "post" && slug.current != $slug && language == $lang]
+    | order(publishedAt desc)[0...3]{
+      _id, title, "slug": slug.current, category, coverImage, readTime, publishedAt, language
+    },
+  "fallback": *[_type == "post" && slug.current != $slug && language == "en"]
+    | order(publishedAt desc)[0...3]{
+      _id, title, "slug": slug.current, category, coverImage, readTime, publishedAt, language
+    }
 }`;
 
 const InsightArticle = () => {
   const localize = useLocalizedPath();
+  const { i18n } = useTranslation();
   const { slug } = useParams<{ slug: string }>();
   const [activeId, setActiveId] = useState<string>("");
 
+  const lang = i18n.language?.split("-")[0] || "en";
+
   const { data: post, isLoading, isError } = useQuery({
-    queryKey: ["post", slug],
-    queryFn: () => sanityClient.fetch<Post | null>(POST_QUERY, { slug }),
+    queryKey: ["post", slug, lang],
+    queryFn: async () => {
+      const primary = await sanityClient.fetch<Post | null>(POST_QUERY, { slug, lang });
+      if (primary) return primary;
+      if (lang !== "en") {
+        return sanityClient.fetch<Post | null>(POST_FALLBACK_QUERY, { slug });
+      }
+      return null;
+    },
     enabled: !!slug,
   });
 
-  const { data: related = [] } = useQuery({
-    queryKey: ["related", slug],
-    queryFn: () => sanityClient.fetch<PostListItem[]>(RELATED_QUERY, { slug }),
+  const { data: relatedData } = useQuery({
+    queryKey: ["related", slug, lang],
+    queryFn: () =>
+      sanityClient.fetch<{ primary: PostListItem[]; fallback: PostListItem[] }>(RELATED_QUERY, {
+        slug,
+        lang,
+      }),
     enabled: !!slug,
   });
+
+  const related: PostListItem[] = (() => {
+    if (!relatedData) return [];
+    const primary = relatedData.primary ?? [];
+    if (primary.length >= 3) return primary.slice(0, 3);
+    const seen = new Set(primary.map((p) => p._id));
+    const filler = (relatedData.fallback ?? []).filter((p) => !seen.has(p._id));
+    return [...primary, ...filler].slice(0, 3);
+  })();
+
+  const showFallbackBanner = !!post && lang !== "en" && post.language === "en";
 
   const toc = (post?.tableOfContents ?? []).map((label) => ({ id: slugify(label), label }));
 
