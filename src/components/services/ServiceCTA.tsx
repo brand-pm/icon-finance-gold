@@ -1,11 +1,14 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { toast } from "sonner";
 import { useScrollReveal } from "../../hooks/useScrollReveal";
 
 interface ServiceCTAProps {
   title: string;
   description: string;
 }
+
+const MIN_MESSAGE_LENGTH = 50;
 
 const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
   const { t } = useTranslation();
@@ -16,11 +19,33 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
     subject: "",
     message: "",
   });
+  const [messageError, setMessageError] = useState<string | null>(null);
   const ref = useScrollReveal();
 
   const labelClass = "block text-white/70 text-xs uppercase tracking-wider mb-2";
   const inputClass =
     "w-full bg-transparent border border-white/15 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-gold transition-colors";
+
+  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const raw = e.target.value;
+    const hadDigits = /\d/.test(raw);
+    const cleaned = raw.replace(/\d/g, "");
+    setFormData((p) => ({ ...p, message: cleaned }));
+    setMessageError(hadDigits ? t("common.messageNoDigits") : null);
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (formData.message.trim().length < MIN_MESSAGE_LENGTH) {
+      const err = t("common.messageMin");
+      setMessageError(err);
+      toast.error(err);
+      return;
+    }
+    toast.success(t("common.formSuccess"));
+    setFormData({ firstName: "", lastName: "", email: "", subject: "", message: "" });
+    setMessageError(null);
+  };
 
   return (
     <section className="relative marble-texture-strong" style={{ background: "#F5F3F0" }} ref={ref}>
@@ -55,7 +80,7 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
           <p className="mb-8" style={{ fontSize: "14px", color: "#9CA3AF" }}>
             {t("serviceCTA.formSubtitle")}
           </p>
-          <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
+          <form className="flex flex-col gap-5" onSubmit={handleSubmit} noValidate>
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <label className={labelClass}>{t("serviceCTA.firstName")}</label>
@@ -119,10 +144,19 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
                 rows={4}
                 maxLength={2000}
                 placeholder={t("serviceCTA.messagePlaceholder")}
-                className={`${inputClass} resize-none`}
+                className={`${inputClass} resize-none ${messageError ? "border-red-400/60" : ""}`}
                 value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                onChange={handleMessageChange}
+                aria-invalid={!!messageError}
               />
+              <div className="flex items-center justify-between mt-1.5 text-xs">
+                <span className={messageError ? "text-red-300" : "text-white/40"}>
+                  {messageError ?? "\u00A0"}
+                </span>
+                <span className={formData.message.trim().length >= MIN_MESSAGE_LENGTH ? "text-gold/80" : "text-white/40"}>
+                  {t("common.messageCounter", { count: formData.message.trim().length })}
+                </span>
+              </div>
             </div>
 
             <button type="submit" className="btn-gold w-full py-4 text-[12px] mt-2">

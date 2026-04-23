@@ -220,7 +220,11 @@
     "placeholderFirstName": "Вкажіть ім'я",
     "placeholderLastName": "Вкажіть прізвище",
     "placeholderEmail": "example@email.com",
-    "selectSubject": "Оберіть тему"
+    "selectSubject": "Оберіть тему",
+    "messageNoDigits": "У повідомленні не можна використовувати цифри",
+    "messageMin": "Будь ласка, напишіть щонайменше 50 символів",
+    "messageCounter": "{{count}}/50 символів мінімум",
+    "formSuccess": "Повідомлення надіслано. Ми відповімо протягом 24 годин."
   },
   "serviceCTA": {
     "eyebrow": "Зв'яжіться з нами",

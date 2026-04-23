@@ -36,26 +36,45 @@ const ContactBody = () => {
   const [formData, setFormData] = useState({ firstName: "", lastName: "", email: "", subject: "", message: "" });
   const detailBlocks = t("contactPage.details.blocks", { returnObjects: true }) as Array<{ title: string; body: string }>;
 
+  const MIN_MESSAGE_LENGTH = 50;
+  const [messageError, setMessageError] = useState<string | null>(null);
+
   const contactSchema = z.object({
     firstName: z.string().trim().min(1, t("contactPage.form.errors.firstName")).max(80),
     lastName: z.string().trim().min(1, t("contactPage.form.errors.lastName")).max(80),
     email: z.string().trim().email(t("contactPage.form.errors.email")).max(255),
     subject: z.string().min(1, t("contactPage.form.errors.subject")),
-    message: z.string().trim().min(10, t("contactPage.form.errors.message")).max(2000),
+    message: z
+      .string()
+      .trim()
+      .min(MIN_MESSAGE_LENGTH, t("common.messageMin"))
+      .max(2000)
+      .refine((v) => !/\d/.test(v), { message: t("common.messageNoDigits") }),
   });
 
   const labelClass = "block text-white/70 text-xs uppercase tracking-wider mb-2";
   const inputClass = "w-full bg-transparent border border-white/15 px-4 py-3.5 md:py-3 text-base md:text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-gold transition-colors";
 
+  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const raw = e.target.value;
+    const hadDigits = /\d/.test(raw);
+    const cleaned = raw.replace(/\d/g, "");
+    setFormData({ ...formData, message: cleaned });
+    setMessageError(hadDigits ? t("common.messageNoDigits") : null);
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const result = contactSchema.safeParse(formData);
     if (!result.success) {
-      toast.error(result.error.issues[0].message);
+      const issue = result.error.issues[0];
+      if (issue.path[0] === "message") setMessageError(issue.message);
+      toast.error(issue.message);
       return;
     }
     toast.success(t("contactPage.form.success"));
     setFormData({ firstName: "", lastName: "", email: "", subject: "", message: "" });
+    setMessageError(null);
   };
 
   return (
@@ -147,7 +166,23 @@ const ContactBody = () => {
 
             <div>
               <label className={labelClass}>{t("contactPage.form.message")}</label>
-              <textarea rows={4} maxLength={2000} placeholder={t("contactPage.form.messagePlaceholder")} className={`${inputClass} resize-none`} value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} />
+              <textarea
+                rows={4}
+                maxLength={2000}
+                placeholder={t("contactPage.form.messagePlaceholder")}
+                className={`${inputClass} resize-none ${messageError ? "border-red-400/60" : ""}`}
+                value={formData.message}
+                onChange={handleMessageChange}
+                aria-invalid={!!messageError}
+              />
+              <div className="flex items-center justify-between mt-1.5 text-xs">
+                <span className={messageError ? "text-red-300" : "text-white/40"}>
+                  {messageError ?? "\u00A0"}
+                </span>
+                <span className={formData.message.trim().length >= 50 ? "text-gold/80" : "text-white/40"}>
+                  {t("common.messageCounter", { count: formData.message.trim().length })}
+                </span>
+              </div>
             </div>
 
             <button type="submit" className="btn-gold w-full py-4 text-[12px] mt-2">{t("contactPage.form.submit")}</button>
