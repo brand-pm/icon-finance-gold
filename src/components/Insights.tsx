@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { useTranslation } from "react-i18next";
 import { useScrollReveal } from "../hooks/useScrollReveal";
-import { useLocalizedPath } from "@/i18n/useLocalizedPath";
+import { useLocalizedPath, useCurrentLanguage } from "@/i18n/useLocalizedPath";
 import { sanityClient, urlFor, formatPostDate, type PostListItem } from "@/lib/sanity";
 
-const POSTS_QUERY = `*[_type == "post"] | order(publishedAt desc)[0...3]{
+const POSTS_QUERY = `*[_type == "post" && language == $lang] | order(publishedAt desc)[0...3]{
   _id, title, "slug": slug.current, category, coverImage, excerpt, readTime, publishedAt
 }`;
 
@@ -13,11 +13,17 @@ const Insights = () => {
   const ref = useScrollReveal();
   const { t } = useTranslation();
   const localize = useLocalizedPath();
+  const lang = useCurrentLanguage();
 
   const { data: articles = [], isLoading } = useQuery({
-    queryKey: ["posts", "teaser"],
-    queryFn: () => sanityClient.fetch<PostListItem[]>(POSTS_QUERY),
+    queryKey: ["posts", "teaser", lang],
+    queryFn: () => sanityClient.fetch<PostListItem[]>(POSTS_QUERY, { lang }),
   });
+
+  // Hide entire section if no articles in current language (after loading)
+  if (!isLoading && articles.length === 0) {
+    return null;
+  }
 
   return (
     <section id="insights" className="section-padding bg-offwhite" ref={ref}>
@@ -35,10 +41,6 @@ const Insights = () => {
         {isLoading ? (
           <div className="flex justify-center py-20">
             <div className="w-8 h-8 border-2 border-gold/30 border-t-gold rounded-full animate-spin" />
-          </div>
-        ) : articles.length === 0 ? (
-          <div className="text-center py-12 mb-12">
-            <p className="text-slate text-[15px]">No articles published yet.</p>
           </div>
         ) : (
           <div className="grid md:grid-cols-3 gap-6 mb-12">
