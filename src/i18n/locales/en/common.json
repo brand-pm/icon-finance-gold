@@ -218,7 +218,7 @@
   },
   "common": {
     "placeholderFirstName": "Enter your name",
-    "placeholderLastName": "Enter your name",
+    "placeholderLastName": "Enter your last name",
     "placeholderEmail": "example@email.com",
     "selectSubject": "Select a subject",
     "messageMin": "Please write at least 50 characters",
