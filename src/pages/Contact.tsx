@@ -37,45 +37,52 @@ const ContactBody = () => {
   const detailBlocks = t("contactPage.details.blocks", { returnObjects: true }) as Array<{ title: string; body: string }>;
 
   const MIN_MESSAGE_LENGTH = 50;
-  const [messageError, setMessageError] = useState<string | null>(null);
-
-  const contactSchema = z.object({
-    firstName: z.string().trim().min(1, t("contactPage.form.errors.firstName")).max(80),
-    lastName: z.string().trim().min(1, t("contactPage.form.errors.lastName")).max(80),
-    email: z.string().trim().email(t("contactPage.form.errors.email")).max(255),
-    subject: z.string().min(1, t("contactPage.form.errors.subject")),
-    message: z
-      .string()
-      .trim()
-      .min(MIN_MESSAGE_LENGTH, t("common.messageMin"))
-      .max(2000)
-      .refine((v) => !/\d/.test(v), { message: t("common.messageNoDigits") }),
-  });
+  type Errors = Partial<Record<"firstName" | "lastName" | "email" | "subject" | "message", string>>;
+  const [errors, setErrors] = useState<Errors>({});
 
   const labelClass = "block text-white/70 text-xs uppercase tracking-wider mb-2";
-  const inputClass = "w-full bg-transparent border border-white/15 px-4 py-3.5 md:py-3 text-base md:text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-gold transition-colors";
+  const inputBase = "w-full bg-transparent border px-4 py-3.5 md:py-3 text-base md:text-sm text-white placeholder:text-white/30 focus:outline-none transition-colors";
+  const inputOk = "border-white/15 focus:border-gold";
+  const inputErr = "border-red-400/60 focus:border-red-400";
+  const cls = (key: keyof Errors) => `${inputBase} ${errors[key] ? inputErr : inputOk}`;
 
-  const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    const raw = e.target.value;
-    const hadDigits = /\d/.test(raw);
-    const cleaned = raw.replace(/\d/g, "");
-    setFormData({ ...formData, message: cleaned });
-    setMessageError(hadDigits ? t("common.messageNoDigits") : null);
+  const stripDigits = (v: string) => v.replace(/\d/g, "");
+
+  const setName = (key: "firstName" | "lastName", raw: string) => {
+    const cleaned = stripDigits(raw);
+    setFormData((p) => ({ ...p, [key]: cleaned }));
+    if (raw !== cleaned) {
+      setErrors((p) => ({ ...p, [key]: t("common.nameNoDigits") }));
+    } else if (errors[key]) {
+      setErrors((p) => ({ ...p, [key]: undefined }));
+    }
+  };
+
+  const validate = (): Errors => {
+    const e: Errors = {};
+    if (!formData.firstName.trim()) e.firstName = t("common.required");
+    if (!formData.lastName.trim()) e.lastName = t("common.required");
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email.trim())) e.email = t("common.invalidEmail");
+    if (!formData.subject) e.subject = t("common.required");
+    if (formData.message.trim().length < MIN_MESSAGE_LENGTH) e.message = t("common.messageMin");
+    return e;
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const result = contactSchema.safeParse(formData);
-    if (!result.success) {
-      const issue = result.error.issues[0];
-      if (issue.path[0] === "message") setMessageError(issue.message);
-      toast.error(issue.message);
+    const v = validate();
+    setErrors(v);
+    if (Object.keys(v).length) {
+      toast.error(Object.values(v)[0]!);
       return;
     }
     toast.success(t("contactPage.form.success"));
     setFormData({ firstName: "", lastName: "", email: "", subject: "", message: "" });
-    setMessageError(null);
+    setErrors({});
   };
+
+  const ErrMsg = ({ msg }: { msg?: string }) =>
+    msg ? <p className="mt-1.5 text-xs text-red-300">{msg}</p> : null;
 
   return (
     <section id="contact-form" ref={ref} className="relative marble-texture-strong section-padding" style={{ background: "#F5F3F0" }}>
