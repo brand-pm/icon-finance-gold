@@ -11,6 +11,8 @@ import InvestmentOpportunities from "../../components/services/InvestmentOpportu
 import PortfolioManagement from "../../components/services/PortfolioManagement";
 import ServiceFAQ from "../../components/services/ServiceFAQ";
 import ServiceCTA from "../../components/services/ServiceCTA";
+import ClientScenariosSection from "../../components/ClientScenariosSection";
+import { maConsultingScenarios } from "../../data/clientScenarios";
 import heroImg from "../../assets/corporate-services-symbol.png";
 import strategyExit from "../../assets/ma-exit.jpg";
 import strategyAcquisition from "../../assets/ma-acquisition.jpg";
@@ -58,6 +60,12 @@ const MAConsulting = () => {
         eyebrow={results.eyebrow}
         title={results.title}
         items={results.items.map((it) => ({ ...it, subtitle: "" }))}
+      />
+
+      <ClientScenariosSection
+        headingKey="scenarios.ma.heading"
+        subheadingKey="scenarios.ma.subheading"
+        scenarios={maConsultingScenarios}
       />
 
       <InvestmentStrategies
