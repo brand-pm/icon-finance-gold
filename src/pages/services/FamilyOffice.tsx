@@ -70,6 +70,12 @@ const FamilyOffice = () => {
         categories={opportunities.map((c, i) => ({ ...c, dark: i === 1 }))}
       />
 
+      <ClientScenariosSection
+        headingKey="scenarios.fo.heading"
+        subheadingKey="scenarios.fo.subheading"
+        scenarios={familyOfficeScenarios}
+      />
+
       <PortfolioManagement
         title={portfolio.title}
         description={portfolio.description}
