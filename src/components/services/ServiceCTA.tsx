@@ -9,12 +9,13 @@ interface ServiceCTAProps {
 }
 
 const MIN_MESSAGE_LENGTH = 50;
+const PHONE_REGEX = /^[+\d][\d\s\-()]{5,}$/;
 
-type Errors = Partial<Record<"firstName" | "lastName" | "email" | "subject" | "message", string>>;
+type Errors = Partial<Record<"firstName" | "lastName" | "email" | "phone" | "subject" | "message", string>>;
 
 const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
   const { t } = useTranslation();
-  const [data, setData] = useState({ firstName: "", lastName: "", email: "", subject: "", message: "" });
+  const [data, setData] = useState({ firstName: "", lastName: "", email: "", phone: "", subject: "", message: "" });
   const [errors, setErrors] = useState<Errors>({});
   const ref = useScrollReveal();
 
@@ -42,6 +43,7 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
     if (!data.firstName.trim()) e.firstName = t("common.required");
     if (!data.lastName.trim()) e.lastName = t("common.required");
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email.trim())) e.email = t("common.invalidEmail");
+    if (data.phone.trim() && !PHONE_REGEX.test(data.phone.trim())) e.phone = t("contactTeaser.phoneInvalid");
     if (!data.subject) e.subject = t("common.required");
     if (data.message.trim().length < MIN_MESSAGE_LENGTH) e.message = t("common.messageMin");
     return e;
@@ -56,7 +58,7 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
       return;
     }
     toast.success(t("common.formSuccess"));
-    setData({ firstName: "", lastName: "", email: "", subject: "", message: "" });
+    setData({ firstName: "", lastName: "", email: "", phone: "", subject: "", message: "" });
     setErrors({});
   };
 
@@ -130,6 +132,22 @@ const ServiceCTA = ({ title, description }: ServiceCTAProps) => {
                 }}
               />
               <ErrMsg msg={errors.email} />
+            </div>
+
+            <div>
+              <label className={labelClass}>{t("serviceCTA.phone")}</label>
+              <input
+                type="tel"
+                maxLength={40}
+                placeholder=""
+                className={cls("phone")}
+                value={data.phone}
+                onChange={(e) => {
+                  setData({ ...data, phone: e.target.value });
+                  if (errors.phone) setErrors((p) => ({ ...p, phone: undefined }));
+                }}
+              />
+              <ErrMsg msg={errors.phone} />
             </div>
 
             <div>

@@ -245,7 +245,8 @@
     "subject": "Subject",
     "message": "Your message",
     "messagePlaceholder": "Tell us briefly about your goals",
-    "send": "Send"
+    "send": "Send",
+    "phone": "Phone (optional)"
   },
   "about": {
     "hero": {
@@ -550,7 +551,8 @@
         "subject": "Please select a subject",
         "message": "Please add a bit more detail"
       },
-      "success": "Message sent. We will respond within 24 hours."
+      "success": "Message sent. We will respond within 24 hours.",
+      "phone": "Phone (optional)"
     },
     "bottomCTA": {
       "title": "Not Sure Where to Start?",

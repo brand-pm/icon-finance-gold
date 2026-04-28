@@ -245,7 +245,8 @@
     "subject": "Temat",
     "message": "Twoja wiadomość",
     "messagePlaceholder": "Opowiedz krótko o swoich celach",
-    "send": "Wyślij"
+    "send": "Wyślij",
+    "phone": "Telefon (opcjonalnie)"
   },
   "about": {
     "hero": {
@@ -550,7 +551,8 @@
         "subject": "Wybierz temat",
         "message": "Dodaj nieco więcej szczegółów"
       },
-      "success": "Wiadomość wysłana. Odpowiemy w ciągu 24 godzin."
+      "success": "Wiadomość wysłana. Odpowiemy w ciągu 24 godzin.",
+      "phone": "Telefon (opcjonalnie)"
     },
     "bottomCTA": {
       "title": "Nie wiesz, od czego zacząć?",

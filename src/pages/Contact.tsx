@@ -33,11 +33,12 @@ const Hero = () => {
 const ContactBody = () => {
   const { t } = useTranslation();
   const ref = useScrollReveal();
-  const [formData, setFormData] = useState({ firstName: "", lastName: "", email: "", subject: "", message: "" });
+  const [formData, setFormData] = useState({ firstName: "", lastName: "", email: "", phone: "", subject: "", message: "" });
   const detailBlocks = t("contactPage.details.blocks", { returnObjects: true }) as Array<{ title: string; body: string }>;
 
   const MIN_MESSAGE_LENGTH = 50;
-  type Errors = Partial<Record<"firstName" | "lastName" | "email" | "subject" | "message", string>>;
+  const PHONE_REGEX = /^[+\d][\d\s\-()]{5,}$/;
+  type Errors = Partial<Record<"firstName" | "lastName" | "email" | "phone" | "subject" | "message", string>>;
   const [errors, setErrors] = useState<Errors>({});
 
   const labelClass = "block text-white/70 text-xs uppercase tracking-wider mb-2";
@@ -63,6 +64,7 @@ const ContactBody = () => {
     if (!formData.firstName.trim()) e.firstName = t("common.required");
     if (!formData.lastName.trim()) e.lastName = t("common.required");
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email.trim())) e.email = t("common.invalidEmail");
+    if (formData.phone.trim() && !PHONE_REGEX.test(formData.phone.trim())) e.phone = t("contactTeaser.phoneInvalid");
     if (!formData.subject) e.subject = t("common.required");
     if (formData.message.trim().length < MIN_MESSAGE_LENGTH) e.message = t("common.messageMin");
     return e;
@@ -77,7 +79,7 @@ const ContactBody = () => {
       return;
     }
     toast.success(t("contactPage.form.success"));
-    setFormData({ firstName: "", lastName: "", email: "", subject: "", message: "" });
+    setFormData({ firstName: "", lastName: "", email: "", phone: "", subject: "", message: "" });
     setErrors({});
   };
 
@@ -176,6 +178,22 @@ const ContactBody = () => {
                 }}
               />
               <ErrMsg msg={errors.email} />
+            </div>
+
+            <div>
+              <label className={labelClass}>{t("contactPage.form.phone")}</label>
+              <input
+                type="tel"
+                maxLength={40}
+                placeholder=""
+                className={cls("phone")}
+                value={formData.phone}
+                onChange={(e) => {
+                  setFormData({ ...formData, phone: e.target.value });
+                  if (errors.phone) setErrors((p) => ({ ...p, phone: undefined }));
+                }}
+              />
+              <ErrMsg msg={errors.phone} />
             </div>
 
             <div>
