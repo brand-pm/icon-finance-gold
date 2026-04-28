@@ -1990,6 +1990,31 @@
         "approach": "We architected a Shared Family Office model with clear separation of investment decisions, joint back-office services, and a governance protocol for shared decisions.",
         "outcome": "Combined operational costs reduced by 40%, each branch retains full investment autonomy, and shared services include reporting, accounting, and compliance."
       }
+    },
+    "st": {
+      "heading": "Client Scenarios",
+      "subheading": "Representative situations we structure for our clients.",
+      "case1": {
+        "tag": "MULTI-JURISDICTION HOLDING",
+        "title": "Entrepreneur with operations in five countries",
+        "situation": "An owner of an international consumer brand had operations in five jurisdictions but a fragmented holding structure that exposed the group to inefficient taxation and inheritance complexity.",
+        "approach": "We restructured ownership through a Luxembourg holding company with regional subsidiaries, implemented tax-efficient profit repatriation, and integrated estate planning provisions.",
+        "outcome": "Group effective tax rate reduced by 12 percentage points, dividend flows now operate predictably, and ownership transition mechanism is fully documented."
+      },
+      "case2": {
+        "tag": "TRUST IMPLEMENTATION",
+        "title": "Family establishing protective trust structure",
+        "situation": "A family wished to protect liquid assets from potential commercial liabilities tied to operating businesses, while preserving long-term family access.",
+        "approach": "We established a discretionary trust in a stable common-law jurisdiction, transferred designated assets, and implemented protector provisions to preserve family oversight.",
+        "outcome": "Designated assets ring-fenced from operational business risk, family retains influence through structured protocols, and intergenerational transfer mechanism in place."
+      },
+      "case3": {
+        "tag": "RESIDENCY OPTIMIZATION",
+        "title": "Professional considering tax residency change",
+        "situation": "A senior professional was contemplating relocation between two European jurisdictions, with significant tax implications depending on the structure of the move.",
+        "approach": "We coordinated with local counsel in both jurisdictions, modeled the long-term tax outcomes, restructured income-generating assets pre-move, and timed the residency change around fiscal year boundaries.",
+        "outcome": "Lifetime tax savings significant relative to a default approach, residency change executed without compliance issues, and ongoing structure remains efficient."
+      }
     }
   }
 }

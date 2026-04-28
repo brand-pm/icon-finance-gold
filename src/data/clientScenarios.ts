@@ -20,3 +20,5 @@ const buildScenarios = (base: string, ids: string[]): Scenario[] =>
 export const wealthManagementScenarios: Scenario[] = buildScenarios("wm", ["case1", "case2", "case3"]);
 
 export const familyOfficeScenarios: Scenario[] = buildScenarios("fo", ["case1", "case2", "case3"]);
+
+export const structuringTaxScenarios: Scenario[] = buildScenarios("st", ["case1", "case2", "case3"]);
