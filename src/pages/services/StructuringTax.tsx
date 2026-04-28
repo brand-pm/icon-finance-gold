@@ -56,16 +56,16 @@ const StructuringTax = () => {
         items={philosophy.items}
       />
 
-      <ClientScenariosSection
-        headingKey="scenarios.st.heading"
-        subheadingKey="scenarios.st.subheading"
-        scenarios={structuringTaxScenarios}
-      />
-
       <ResultsStats
         eyebrow={results.eyebrow}
         title={results.title}
         items={results.items.map((it) => ({ ...it, subtitle: "" }))}
+      />
+
+      <ClientScenariosSection
+        headingKey="scenarios.st.heading"
+        subheadingKey="scenarios.st.subheading"
+        scenarios={structuringTaxScenarios}
       />
 
       <InvestmentStrategies
