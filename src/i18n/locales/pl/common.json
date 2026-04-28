@@ -2066,5 +2066,36 @@
         "outcome": "Fundacja działa z własnym systemem zarządzania, zrównoważone coroczne finansowanie zapewnione przez dochód z funduszu wieczystego, osiągnięta zgoda dwóch pokoleń darczyńców."
       }
     }
+  },
+  "scenariosOverview": {
+    "eyebrow": "PRZYKŁADOWE SCENARIUSZE",
+    "heading": "Z jakimi sytuacjami pracujemy",
+    "subheading": "W każdym z obszarów naszej praktyki występują powtarzające się wzorce złożoności. Zobacz przykłady sytuacji, które strukturyzujemy dla klientów.",
+    "seeMore": "Zobacz 3 scenariusze",
+    "wm": {
+      "tag": "ZARZĄDZANIE MAJĄTKIEM",
+      "title": "Złożoność portfela, alokacja kapitału, ekspozycja walutowa",
+      "description": "Skoncentrowane pozycje akcyjne, alokacja po zdarzeniu płynnościowym, portfele wielowalutowe — sytuacje, w których kapitał wymaga zdyscyplinowanej struktury zamiast improwizacji."
+    },
+    "fo": {
+      "tag": "FAMILY OFFICE",
+      "title": "Tworzenie biura, sukcesja, zarządzanie między pokoleniami",
+      "description": "Uruchomienie własnego family office, przygotowanie następnego pokolenia do odpowiedzialnego dziedziczenia, łączenie infrastruktury między spokrewnionymi gałęziami — sytuacje, w których zarządzanie rodzinne staje się długoterminową przewagą."
+    },
+    "st": {
+      "tag": "STRUKTURYZACJA I PODATKI",
+      "title": "Holdingi transgraniczne, trusty, planowanie rezydencji",
+      "description": "Wielojurysdykcyjne struktury holdingowe, ochronne struktury trustowe, optymalizacja rezydencji podatkowej między jurysdykcjami europejskimi — tam, gdzie struktura wyprzedza rezultat."
+    },
+    "ma": {
+      "tag": "DORADZTWO M&A",
+      "title": "Wyjścia, akwizycje, pozyskiwanie kapitału",
+      "description": "Przygotowanie firmy do sprzedaży, ekspansja poprzez akwizycję strategiczną, pozyskanie kapitału na rozwój przy zachowaniu kontroli — sytuacje transakcyjne, w których przygotowanie decyduje o rezultacie."
+    },
+    "ss": {
+      "tag": "ROZWIĄZANIA SPECJALNE",
+      "title": "Nieruchomości, sztuka, filantropia",
+      "description": "Konsolidacja międzynarodowych portfeli nieruchomości, strukturyzowanie znaczących kolekcji sztuki, zakładanie dedykowanych fundacji filantropijnych — specjalistyczne sytuacje wykraczające poza standardową pracę portfelową."
+    }
   }
 }

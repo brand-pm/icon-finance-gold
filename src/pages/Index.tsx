@@ -6,6 +6,7 @@ import Hero from "../components/Hero";
 import Services from "../components/Services";
 import PortfolioManagement from "../components/services/PortfolioManagement";
 import WhyUs from "../components/WhyUs";
+import ScenariosOverviewSection from "../components/ScenariosOverviewSection";
 import Insights from "../components/Insights";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -21,6 +22,7 @@ const Index = () => {
       <Header />
       <Hero />
       <Services />
+      <ScenariosOverviewSection />
       <PortfolioManagement
         title={t("homeProcess.title")}
         description={t("homeProcess.description")}
