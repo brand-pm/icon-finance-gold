@@ -27,10 +27,6 @@ const Footer = () => {
         { labelKey: "nav.contact", to: "/contact" },
       ],
     },
-    {
-      titleKey: "nav.expertise",
-      links: [{ labelKey: "nav.expertise", to: "/expertise" }],
-    },
   ];
 
   return (
@@ -70,11 +66,36 @@ const Footer = () => {
               </ul>
             </div>
           ))}
+
+          <div>
+            <h4 className="eyebrow text-[11px] mb-6">{t("footer.contactEyebrow")}</h4>
+            <address className="not-italic space-y-3 text-sm">
+              <p className="text-white/60 leading-relaxed whitespace-pre-line">
+                {t("footer.address")}
+              </p>
+              <p>
+                <a
+                  href="tel:+48538354262"
+                  className="text-white/60 hover:text-gold transition-colors duration-300"
+                >
+                  +48 538 354 262
+                </a>
+              </p>
+              <p>
+                <a
+                  href="mailto:info@iconfinance.io"
+                  className="text-white/60 hover:text-gold transition-colors duration-300 break-all"
+                >
+                  info@iconfinance.io
+                </a>
+              </p>
+            </address>
+          </div>
         </div>
 
         <div className="border-t border-white/[0.08] pt-6 mt-12 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
           <p className="text-slate text-xs md:text-sm text-center md:text-left">
-            © 2026 Icon Finance. {t("footer.rights")}
+            © {new Date().getFullYear()} Icon Finance. {t("footer.rights")}
           </p>
           <div className="flex flex-wrap justify-center md:justify-end gap-x-5 gap-y-2">
             <Link to={localize("/privacy-policy")} className="text-slate text-xs md:text-sm hover:text-white transition-colors whitespace-nowrap">

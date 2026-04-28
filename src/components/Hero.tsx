@@ -1,78 +1,27 @@
-import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useLocalizedPath } from "@/i18n/useLocalizedPath";
 import heroBg from "../assets/hero-cubes.webp";
 
 const statsConfig = [
-  { value: 0, prefix: "", suffix: "", labelKey: "aum", isText: true as const },
-  { value: 100, prefix: "", suffix: "+", labelKey: "clients", isText: false as const },
-  { value: 15, prefix: "", suffix: "+", labelKey: "experience", isText: false as const },
-  { value: 5, prefix: "", suffix: "", labelKey: "jurisdictions", isText: false as const },
+  { display: "100+", labelKey: "clients" },
+  { display: "15+", labelKey: "experience" },
+  { display: "5+", labelKey: "jurisdictions" },
 ] as const;
 
-function useCounter(target: number, duration = 2000) {
-  const [count, setCount] = useState(0);
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          const start = performance.now();
-          const animate = (now: number) => {
-            const progress = Math.min((now - start) / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3);
-            setCount(Math.floor(eased * target));
-            if (progress < 1) requestAnimationFrame(animate);
-          };
-          requestAnimationFrame(animate);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.3 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [target, duration]);
-
-  return { count, ref };
-}
-
-const StatCard = ({ stat, label }: { stat: (typeof statsConfig)[number]; label: string }) => {
-  const { count, ref } = useCounter(stat.value);
-  return (
+const StatCard = ({ value, label }: { value: string; label: string }) => (
+  <div className="flex flex-col items-center justify-center text-center px-4 py-10 md:py-12 min-h-[160px] md:min-h-[200px]">
     <div
-      ref={ref}
-      className="flex flex-col items-center justify-center text-center px-4 py-10 md:py-12 min-h-[160px] md:min-h-[200px]"
+      className="text-gold font-light leading-none tabular-nums whitespace-nowrap"
+      style={{ fontSize: "clamp(38px, 5vw, 56px)", fontVariantNumeric: "tabular-nums" }}
     >
-      {stat.isText ? (
-        <div
-          className="text-gold font-light leading-tight text-center px-2"
-          style={{ fontSize: "clamp(14px, 2vw, 18px)", lineHeight: 1.3 }}
-        >
-          {label}
-        </div>
-      ) : (
-        <>
-          <div
-            className="text-gold font-light leading-none tabular-nums whitespace-nowrap"
-            style={{ fontSize: "clamp(38px, 5vw, 56px)", fontVariantNumeric: "tabular-nums" }}
-          >
-            {stat.prefix}
-            {count}
-            {stat.suffix}
-          </div>
-          <div className="text-[12px] md:text-[13px] text-white/55 mt-3 tracking-wide">
-            {label}
-          </div>
-        </>
-      )}
+      {value}
     </div>
-  );
-};
+    <div className="text-[12px] md:text-[13px] text-white/55 mt-3 tracking-wide">
+      {label}
+    </div>
+  </div>
+);
 
 const Hero = () => {
   const localize = useLocalizedPath();
@@ -113,26 +62,21 @@ const Hero = () => {
         </div>
 
         <div
-          className="relative grid grid-cols-2 opacity-0 animate-fade-up"
+          className="relative grid grid-cols-3 opacity-0 animate-fade-up"
           style={{ animationDelay: "0.4s" }}
         >
           {statsConfig.map((stat, i) => (
             <div key={i} className="relative">
-              <StatCard stat={stat} label={t(`hero.stats.${stat.labelKey}`)} />
+              <StatCard value={stat.display} label={t(`hero.stats.${stat.labelKey}`)} />
+              {i < statsConfig.length - 1 && (
+                <div
+                  aria-hidden
+                  className="pointer-events-none absolute top-[15%] bottom-[15%] right-0 w-px"
+                  style={{ background: "linear-gradient(180deg, transparent 0%, rgba(224,167,118,0.35) 50%, transparent 100%)" }}
+                />
+              )}
             </div>
           ))}
-          {/* Vertical divider */}
-          <div
-            aria-hidden
-            className="pointer-events-none absolute top-[10%] bottom-[10%] left-1/2 w-px -translate-x-1/2"
-            style={{ background: "linear-gradient(180deg, transparent 0%, rgba(224,167,118,0.35) 50%, transparent 100%)" }}
-          />
-          {/* Horizontal divider */}
-          <div
-            aria-hidden
-            className="pointer-events-none absolute left-[6%] right-[6%] top-1/2 h-px -translate-y-1/2"
-            style={{ background: "linear-gradient(90deg, transparent 0%, rgba(224,167,118,0.35) 50%, transparent 100%)" }}
-          />
         </div>
       </div>
     </div>

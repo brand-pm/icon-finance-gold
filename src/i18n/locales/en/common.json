@@ -149,7 +149,7 @@
       },
       "c2": {
         "title": "Global Expertise",
-        "desc": "Operating in 5+ jurisdictions with international partners"
+        "desc": "Operating across 5+ international jurisdictions"
       },
       "c3": {
         "title": "Personal Approach",
@@ -190,9 +190,15 @@
     "firstName": "First name",
     "lastName": "Last name",
     "email": "Work email",
+    "phone": "Phone (optional)",
     "subject": "Subject",
     "messagePlaceholder": "Your message",
+    "message": "Message",
     "send": "Send",
+    "consent": "I agree to the processing of my personal data in accordance with the [Privacy Policy](/privacy-policy).",
+    "consentRequired": "Consent is required to submit the form",
+    "phoneInvalid": "Please enter a valid phone number",
+    "privacyPolicy": "Privacy Policy",
     "subjects": {
       "wealthManagement": "Wealth Management",
       "familyOffice": "Family Office",
@@ -207,6 +213,8 @@
     "navigate": "Navigate",
     "services": "Services",
     "contact": "Contact",
+    "contactEyebrow": "CONTACT",
+    "address": "ul. Złota 59\n00-120 Warsaw, Poland",
     "legal": "Legal",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",

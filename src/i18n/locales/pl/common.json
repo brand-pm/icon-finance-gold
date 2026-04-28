@@ -149,7 +149,7 @@
       },
       "c2": {
         "title": "Globalna ekspertyza",
-        "desc": "Działalność w 5+ jurysdykcjach z międzynarodowymi partnerami"
+        "desc": "Działalność w 5+ międzynarodowych jurysdykcjach"
       },
       "c3": {
         "title": "Indywidualne podejście",
@@ -190,9 +190,15 @@
     "firstName": "Imię",
     "lastName": "Nazwisko",
     "email": "Email służbowy",
+    "phone": "Telefon (opcjonalnie)",
     "subject": "Temat",
     "messagePlaceholder": "Twoja wiadomość",
+    "message": "Wiadomość",
     "send": "Wyślij",
+    "consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z [Polityką prywatności](/privacy-policy).",
+    "consentRequired": "Zgoda jest wymagana do wysłania formularza",
+    "phoneInvalid": "Podaj prawidłowy numer telefonu",
+    "privacyPolicy": "Polityką prywatności",
     "subjects": {
       "wealthManagement": "Zarządzanie majątkiem",
       "familyOffice": "Family Office",
@@ -207,6 +213,8 @@
     "navigate": "Nawigacja",
     "services": "Usługi",
     "contact": "Kontakt",
+    "contactEyebrow": "KONTAKT",
+    "address": "ul. Złota 59\n00-120 Warsaw, Poland",
     "legal": "Prawne",
     "privacy": "Polityka prywatności",
     "terms": "Regulamin",
