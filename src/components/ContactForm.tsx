@@ -49,7 +49,7 @@ const countDigits = (v: string) => (v.match(/\d/g) || []).length;
 /* ---------------- Floating field primitives ---------------- */
 
 const fieldBase =
-  "peer w-full px-4 pt-6 pb-2 bg-[rgba(255,255,255,0.06)] border text-white text-base md:text-sm outline-none rounded-md transition-colors duration-200 motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy";
+  "peer w-full px-4 pt-6 pb-2 bg-[rgba(255,255,255,0.06)] border text-white text-base md:text-sm outline-none rounded-xl transition-colors duration-200 motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy";
 const fieldOk = "border-[rgba(255,255,255,0.15)] focus:border-gold";
 const fieldErr = "border-gold/70 focus:border-gold";
 
@@ -124,7 +124,7 @@ function SubjectSelect({
           id={id}
           aria-invalid={hasError || undefined}
           aria-describedby={describedBy}
-          className={`group peer w-full px-4 pt-6 pb-2 text-left bg-[rgba(255,255,255,0.06)] border rounded-md text-white text-base md:text-sm outline-none transition-colors duration-200 motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy flex items-center justify-between data-[state=open]:border-gold ${
+          className={`group peer w-full px-4 pt-6 pb-2 text-left bg-[rgba(255,255,255,0.06)] border rounded-xl text-white text-base md:text-sm outline-none transition-colors duration-200 motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy flex items-center justify-between data-[state=open]:border-gold ${
             hasError ? "border-gold/70" : "border-[rgba(255,255,255,0.15)] focus:border-gold"
           }`}
         >
@@ -163,14 +163,14 @@ function SubjectSelect({
           <SelectPrimitive.Content
             position="popper"
             sideOffset={6}
-            className="z-50 min-w-[var(--radix-select-trigger-width)] overflow-hidden rounded-md border border-white/10 bg-navy text-white shadow-2xl animate-in fade-in-0 zoom-in-95 motion-reduce:animate-none"
+            className="z-50 min-w-[var(--radix-select-trigger-width)] overflow-hidden rounded-xl border border-white/10 bg-navy text-white shadow-2xl animate-in fade-in-0 zoom-in-95 motion-reduce:animate-none"
           >
             <SelectPrimitive.Viewport className="p-1">
               {options.map((opt) => (
                 <SelectPrimitive.Item
                   key={opt.id}
                   value={opt.id}
-                  className="relative flex cursor-pointer select-none items-center justify-between rounded-sm px-3 py-2.5 text-sm text-white/85 outline-none data-[highlighted]:bg-white/[0.06] data-[highlighted]:text-gold data-[state=checked]:text-gold focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gold"
+                  className="relative flex cursor-pointer select-none items-center justify-between rounded-lg px-3 py-2.5 text-sm text-white/85 outline-none data-[highlighted]:bg-white/[0.06] data-[highlighted]:text-gold data-[state=checked]:text-gold focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gold"
                 >
                   <SelectPrimitive.ItemText>{opt.label}</SelectPrimitive.ItemText>
                   <SelectPrimitive.ItemIndicator>
@@ -333,7 +333,7 @@ const ContactForm = ({
   const consentText = t("contactForm.consent");
   const consentMatch = consentText.match(/^(.*)\[([^\]]+)\]\(\/privacy-policy\)(.*)$/);
 
-  const panelCls = `bg-navy p-10 rounded-md ${className}`;
+  const panelCls = `bg-navy p-10 rounded-2xl ${className}`;
 
   /* ---------- Success state ---------- */
   if (status === "success") {
