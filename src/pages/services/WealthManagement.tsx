@@ -11,6 +11,8 @@ import InvestmentOpportunities from "../../components/services/InvestmentOpportu
 import PortfolioManagement from "../../components/services/PortfolioManagement";
 import ServiceFAQ from "../../components/services/ServiceFAQ";
 import ServiceCTA from "../../components/services/ServiceCTA";
+import ClientScenariosSection from "../../components/ClientScenariosSection";
+import { wealthManagementScenarios } from "../../data/clientScenarios";
 import infinityImg from "../../assets/infinity-symbol.png";
 import strategyConservative from "../../assets/strategy-conservative.jpg";
 import strategyBalanced from "../../assets/strategy-balanced.jpg";
@@ -58,6 +60,12 @@ const WealthManagement = () => {
         eyebrow={results.eyebrow}
         title={results.title}
         items={results.items.map((it) => ({ ...it, subtitle: "" }))}
+      />
+
+      <ClientScenariosSection
+        headingKey="scenarios.wm.heading"
+        subheadingKey="scenarios.wm.subheading"
+        scenarios={wealthManagementScenarios}
       />
 
       <InvestmentStrategies
