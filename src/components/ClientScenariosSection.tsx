@@ -10,7 +10,7 @@ interface ClientScenariosSectionProps {
   scenarios: Scenario[];
 }
 
-const SERIF = "Georgia, 'Playfair Display', 'Times New Roman', serif";
+const CARD_TITLE_SERIF = "Georgia, 'Playfair Display', 'Times New Roman', serif";
 
 const ClientScenariosSection = ({ headingKey, subheadingKey, scenarios }: ClientScenariosSectionProps) => {
   const { t } = useTranslation();
@@ -21,34 +21,15 @@ const ClientScenariosSection = ({ headingKey, subheadingKey, scenarios }: Client
     <section className="section-padding" style={{ background: "#FFFFFF" }}>
       <div className="container-main" ref={ref}>
         {/* Header */}
-        <div className="text-center mb-12 md:mb-16 opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-          <p className="eyebrow mb-4">
-            <span
-              aria-hidden="true"
-              style={{
-                display: "inline-block",
-                width: "28px",
-                height: "1.5px",
-                background: "#E0A877",
-                verticalAlign: "middle",
-                marginRight: "10px",
-                opacity: 0.8,
-              }}
-            />
-            {t("scenarios.label")}
-          </p>
-          <h2
-            className="font-light mb-4"
-            style={{ fontFamily: SERIF, fontSize: "clamp(28px,4vw,42px)", color: "#0C172D" }}
-          >
+        <div className="text-center mb-12 md:mb-16 opacity-0 animate-fade-up flex flex-col items-center" style={{ animationDelay: "0.1s" }}>
+          <p className="eyebrow mb-4">{t("scenarios.label")}</p>
+          <h2 className="text-charcoal font-light mb-4" style={{ fontSize: "clamp(26px,4vw,38px)" }}>
             {t(headingKey)}
           </h2>
           <div className="gold-separator mb-6">
-            <div className="dot" /><div className="dot-lg" /><div className="dot" />
+            <div className="line" /><div className="dot" /><div className="dot-lg" /><div className="dot" /><div className="line" />
           </div>
-          <p className="text-base max-w-[720px] mx-auto" style={{ color: "#33363D" }}>
-            {t(subheadingKey)}
-          </p>
+          <p className="text-slate text-base max-w-[720px] mx-auto">{t(subheadingKey)}</p>
         </div>
 
         {/* Cards */}
@@ -87,7 +68,7 @@ const ClientScenariosSection = ({ headingKey, subheadingKey, scenarios }: Client
                 </p>
                 <h3
                   style={{
-                    fontFamily: SERIF,
+                    fontFamily: CARD_TITLE_SERIF,
                     fontWeight: 400,
                     fontSize: "clamp(20px,1.6vw,24px)",
                     color: "#0C172D",
