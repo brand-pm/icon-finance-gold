@@ -11,6 +11,8 @@ import InvestmentOpportunities from "../../components/services/InvestmentOpportu
 import PortfolioManagement from "../../components/services/PortfolioManagement";
 import ServiceFAQ from "../../components/services/ServiceFAQ";
 import ServiceCTA from "../../components/services/ServiceCTA";
+import ClientScenariosSection from "../../components/ClientScenariosSection";
+import { structuringTaxScenarios } from "../../data/clientScenarios";
 import heroImg from "../../assets/structuring-tax-symbol.png";
 import strategyWealth from "../../assets/structuring-wealth.jpg";
 import strategyTax from "../../assets/structuring-tax-planning.jpg";
