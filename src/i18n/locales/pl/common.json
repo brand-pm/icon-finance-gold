@@ -1965,6 +1965,31 @@
         "approach": "Zmapowaliśmy naturalne zobowiązania walutowe rodziny — rezydencje, edukacja, wydatki rodzinne — względem aktywów portfela, wdrożyliśmy strategiczne hedging na poziomie portfela oraz wprowadziliśmy kwartalne równoważenie.",
         "outcome": "Zmienność walutowa zmniejszona o ponad 40%, struktura walutowa portfela dopasowana do faktycznych potrzeb stylu życia, a funkcja skarbowa działa systematycznie, a nie reaktywnie."
       }
+    },
+    "fo": {
+      "heading": "Scenariusze klientów",
+      "subheading": "Przykłady sytuacji rodzinnych, którymi zajmuje się nasze biuro.",
+      "case1": {
+        "tag": "URUCHOMIENIE SINGLE FAMILY OFFICE",
+        "title": "Rodzina założycielska tworząca dedykowane biuro",
+        "situation": "Rodzina z aktywami przekraczającymi 200 mln USD w biznesach operacyjnych i inwestycjach planowała skonsolidować zarządzanie majątkiem w ramach jednego dedykowanego biura.",
+        "approach": "Zaprojektowaliśmy strukturę Single Family Office, określiliśmy procedury operacyjne, zbudowaliśmy początkowy trzyosobowy zespół oraz zaimplementowaliśmy infrastrukturę technologiczną dla skonsolidowanej sprawozdawczości.",
+        "outcome": "Biuro osiągnęło pełną operacyjność w ciągu dziewięciu miesięcy, wszystkie podmioty rodzinne są raportowane w jednolitym systemie, ramy zarządzania zostały sformalizowane i przyjęte przez wszystkich członków rodziny."
+      },
+      "case2": {
+        "tag": "PLANOWANIE SUKCESJI",
+        "title": "Patriarcha przygotowuje przekazanie następnemu pokoleniu",
+        "situation": "Założyciel prywatnego holdingu zamierzał wycofać się z aktywnego zarządzania, jednocześnie zapewniając odpowiedzialne dziedziczenie trojgu dorosłym dzieciom.",
+        "approach": "Przeprowadziliśmy serię spotkań rodzinnych dla uzgodnienia wartości, opracowaliśmy konstytucję rodzinną, wdrożyliśmy strukturę nieodwołalnego trustu oraz stworzyliśmy program edukacyjny dla dzieci obejmujący zasady inwestowania.",
+        "outcome": "Formalne przekazanie zakończone w ciągu 18 miesięcy, wszystkie troje dzieci aktywnie pełnią określone role, zarządzanie majątkiem rodziny nie zależy już od jednej osoby."
+      },
+      "case3": {
+        "tag": "SHARED FAMILY OFFICE",
+        "title": "Dwie spokrewnione gałęzie konsolidujące operacje",
+        "situation": "Dwie spokrewnione rodziny odkryły zdublowane koszty zarządzania majątkiem i chciały współdzielić infrastrukturę przy zachowaniu strategicznej niezależności.",
+        "approach": "Zaprojektowaliśmy model Shared Family Office z wyraźnym rozdzieleniem decyzji inwestycyjnych, wspólnymi usługami back-office oraz protokołem podejmowania wspólnych decyzji.",
+        "outcome": "Łączne koszty operacyjne zmniejszone o 40%, każda gałąź zachowuje pełną autonomię inwestycyjną, wspólne usługi obejmują sprawozdawczość, księgowość i compliance."
+      }
     }
   }
 }

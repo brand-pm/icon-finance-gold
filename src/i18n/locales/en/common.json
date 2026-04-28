@@ -1965,6 +1965,31 @@
         "approach": "We mapped natural currency liabilities across residences, education, and family commitments, implemented strategic hedging at the portfolio level, and rebalanced exposures quarterly.",
         "outcome": "FX-driven volatility reduced by over 40%, currency exposures now matched to actual lifestyle needs, and treasury function operating systematically rather than reactively."
       }
+    },
+    "fo": {
+      "heading": "Client Scenarios",
+      "subheading": "Examples of family situations our office serves.",
+      "case1": {
+        "tag": "SINGLE FAMILY OFFICE LAUNCH",
+        "title": "Founding family launching a dedicated office",
+        "situation": "A family with $200M+ in assets across operating businesses and investments wanted to consolidate wealth management under a single dedicated office.",
+        "approach": "We designed the Single Family Office structure, defined operational policies, recruited the initial team of three, and built the technology stack for consolidated reporting.",
+        "outcome": "Office operational within nine months, all family entities now reported in a unified dashboard, governance framework documented and adopted by all members."
+      },
+      "case2": {
+        "tag": "SUCCESSION PLANNING",
+        "title": "Patriarch preparing transition to next generation",
+        "situation": "The founder of a private holding wished to step back from active management while ensuring his three adult children inherited responsibly.",
+        "approach": "We facilitated family meetings to align values, drafted a family constitution, implemented an irrevocable trust structure, and created an education program for the children covering investment principles.",
+        "outcome": "Formal handover completed over 18 months, all three children active in defined roles, family wealth governance now transcends any single individual."
+      },
+      "case3": {
+        "tag": "SHARED FAMILY OFFICE",
+        "title": "Two cousin branches consolidating operations",
+        "situation": "Two related families discovered duplicated wealth management costs and wanted to share infrastructure while maintaining strategic independence.",
+        "approach": "We architected a Shared Family Office model with clear separation of investment decisions, joint back-office services, and a governance protocol for shared decisions.",
+        "outcome": "Combined operational costs reduced by 40%, each branch retains full investment autonomy, and shared services include reporting, accounting, and compliance."
+      }
     }
   }
 }
