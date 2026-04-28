@@ -2066,5 +2066,36 @@
         "outcome": "Foundation operational with dedicated governance, sustainable annual giving secured through endowment yield, and family alignment achieved across two generations of donors."
       }
     }
+  },
+  "scenariosOverview": {
+    "eyebrow": "ILLUSTRATIVE SCENARIOS",
+    "heading": "How We Address Client Situations",
+    "subheading": "Across our practice areas, we work through recurring patterns of complexity. Explore examples of the situations we structure for clients.",
+    "seeMore": "See 3 scenarios",
+    "wm": {
+      "tag": "WEALTH MANAGEMENT",
+      "title": "Portfolio complexity, deployed capital, currency exposure",
+      "description": "Concentrated equity positions, post-liquidity event allocation, multi-currency portfolios — situations where capital needs disciplined structure rather than improvisation."
+    },
+    "fo": {
+      "tag": "FAMILY OFFICE",
+      "title": "Office design, succession, governance across generations",
+      "description": "Launching a single family office, preparing the next generation for stewardship, consolidating shared infrastructure between cousin branches — situations where family governance becomes a long-term advantage."
+    },
+    "st": {
+      "tag": "STRUCTURING & TAX",
+      "title": "Cross-border holdings, trusts, residency planning",
+      "description": "Multi-jurisdiction holding structures, protective trust arrangements, tax residency optimization across European jurisdictions — where structure precedes outcome."
+    },
+    "ma": {
+      "tag": "M&A CONSULTING",
+      "title": "Exits, acquisitions, capital raises",
+      "description": "Preparing a business for sale, expanding through strategic acquisition, raising growth capital while preserving control — transaction situations where preparation determines outcome."
+    },
+    "ss": {
+      "tag": "SPECIAL SOLUTIONS",
+      "title": "Real estate, art, philanthropy",
+      "description": "Consolidating international property portfolios, structuring significant art holdings, establishing dedicated philanthropic foundations — specialized situations beyond standard portfolio work."
+    }
   }
 }
