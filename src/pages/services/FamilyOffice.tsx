@@ -11,6 +11,8 @@ import InvestmentOpportunities from "../../components/services/InvestmentOpportu
 import PortfolioManagement from "../../components/services/PortfolioManagement";
 import ServiceFAQ from "../../components/services/ServiceFAQ";
 import ServiceCTA from "../../components/services/ServiceCTA";
+import ClientScenariosSection from "../../components/ClientScenariosSection";
+import { familyOfficeScenarios } from "../../data/clientScenarios";
 import familyImg from "../../assets/family-office-symbol.png";
 import strategySingle from "../../assets/family-single-office.jpg";
 import strategyShared from "../../assets/family-shared-office.jpg";
@@ -66,6 +68,12 @@ const FamilyOffice = () => {
 
       <InvestmentOpportunities
         categories={opportunities.map((c, i) => ({ ...c, dark: i === 1 }))}
+      />
+
+      <ClientScenariosSection
+        headingKey="scenarios.fo.heading"
+        subheadingKey="scenarios.fo.subheading"
+        scenarios={familyOfficeScenarios}
       />
 
       <PortfolioManagement
