@@ -1933,5 +1933,38 @@
     "faqTitle": "Frequently Asked\nQuestions",
     "results": "Results and Metrics",
     "resultsTitle": "Our Results Speak for Themselves"
+  },
+  "scenarios": {
+    "label": "ILLUSTRATIVE SCENARIOS",
+    "situation": "SITUATION",
+    "approach": "APPROACH",
+    "outcome": "OUTCOME",
+    "disclaimer": "Illustrative scenario based on common client situations. Not representative of any specific engagement.",
+    "cta": "DISCUSS YOUR SITUATION",
+    "wm": {
+      "heading": "Client Scenarios",
+      "subheading": "Typical situations we address through our wealth management practice.",
+      "case1": {
+        "tag": "CONCENTRATED POSITION",
+        "title": "Founder with concentrated equity in a public company",
+        "situation": "The client held 70% of personal wealth in a single listed equity, with significant unrealized capital gains and reluctance to trigger immediate tax events.",
+        "approach": "We implemented a structured diversification program over 24 months using collar strategies, scheduled tax-aware sales, and built complementary uncorrelated allocations.",
+        "outcome": "Single-stock concentration reduced from 70% to 25% over two years, downside hedged throughout, capital gains realized in tax-efficient tranches."
+      },
+      "case2": {
+        "tag": "POST-LIQUIDITY EVENT",
+        "title": "Family with $15M liquidity from real estate sale",
+        "situation": "A family received unexpected liquidity following the sale of a long-held commercial property and required immediate guidance on deployment.",
+        "approach": "We constructed a 60/30/10 portfolio across equities, fixed income, and alternatives, staggered deployment over 12 months to mitigate market timing risk, and integrated municipal income streams.",
+        "outcome": "Capital fully deployed across institutional-grade strategies, year-one return aligned with the family's stated risk profile, and ongoing monitoring framework established."
+      },
+      "case3": {
+        "tag": "MULTI-CURRENCY EXPOSURE",
+        "title": "Entrepreneur with assets in three currency zones",
+        "situation": "A client's portfolio held EUR, USD, and CHF positions but lacked consistent currency strategy, leading to unintended FX losses over five years.",
+        "approach": "We mapped natural currency liabilities across residences, education, and family commitments, implemented strategic hedging at the portfolio level, and rebalanced exposures quarterly.",
+        "outcome": "FX-driven volatility reduced by over 40%, currency exposures now matched to actual lifestyle needs, and treasury function operating systematically rather than reactively."
+      }
+    }
   }
 }
