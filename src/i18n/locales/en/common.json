@@ -2015,6 +2015,31 @@
         "approach": "We coordinated with local counsel in both jurisdictions, modeled the long-term tax outcomes, restructured income-generating assets pre-move, and timed the residency change around fiscal year boundaries.",
         "outcome": "Lifetime tax savings significant relative to a default approach, residency change executed without compliance issues, and ongoing structure remains efficient."
       }
+    },
+    "ma": {
+      "heading": "Client Scenarios",
+      "subheading": "Transaction situations where we have advised clients.",
+      "case1": {
+        "tag": "EXIT PREPARATION",
+        "title": "Founder preparing business for sale",
+        "situation": "The owner of a mid-market services company was approached by potential buyers but had not prepared the business or himself for transaction readiness.",
+        "approach": "We coordinated valuation analysis, prepared the data room, advised on optimal deal structure, and built a personal post-exit financial plan in parallel.",
+        "outcome": "Transaction closed at a valuation 18% above initial offer, deal structured for tax efficiency, and post-exit wealth strategy ready on day one of liquidity."
+      },
+      "case2": {
+        "tag": "STRATEGIC ACQUISITION",
+        "title": "Family business pursuing geographic expansion",
+        "situation": "A successful regional company sought to expand into a new country through acquisition but lacked internal M&A capabilities.",
+        "approach": "We led target identification, ran due diligence across financial, legal, and operational dimensions, structured the financing, and advised on integration planning.",
+        "outcome": "Acquisition completed within target budget, integration delivered key synergies in year one, and the family's operational footprint expanded into a strategic new market."
+      },
+      "case3": {
+        "tag": "CAPITAL RAISE",
+        "title": "Growth-stage company seeking strategic capital",
+        "situation": "The founders of a growing technology company wanted to raise growth capital while preserving control and finding a partner aligned with long-term vision.",
+        "approach": "We prepared the financial narrative, identified family-office and patient capital investors aligned with the founders' philosophy, structured the round, and negotiated key terms.",
+        "outcome": "Capital raised at favorable valuation, control retained by founders, and new investors brought strategic value beyond capital alone."
+      }
     }
   }
 }

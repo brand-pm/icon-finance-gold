@@ -2015,6 +2015,31 @@
         "approach": "Skoordynowaliśmy pracę z lokalnymi doradcami w obu jurysdykcjach, zamodelowaliśmy długoterminowe scenariusze podatkowe, zrestrukturyzowaliśmy aktywa generujące dochód przed przeprowadzką oraz zsynchronizowaliśmy zmianę rezydencji z granicami roku podatkowego.",
         "outcome": "Oszczędności podatkowe w cyklu życia istotnie przewyższyły standardowe podejście, zmiana rezydencji została przeprowadzona bez problemów compliance, a docelowa struktura pozostaje efektywna."
       }
+    },
+    "ma": {
+      "heading": "Scenariusze klientów",
+      "subheading": "Sytuacje transakcyjne, w których doradzamy klientom.",
+      "case1": {
+        "tag": "PRZYGOTOWANIE DO SPRZEDAŻY",
+        "title": "Założyciel przygotowujący firmę do sprzedaży",
+        "situation": "Właściciel firmy usługowej z segmentu mid-market otrzymał zainteresowanie od potencjalnych kupujących, ale ani biznes, ani on sam nie byli przygotowani do transakcji.",
+        "approach": "Skoordynowaliśmy analizę wyceny, przygotowaliśmy data room, doradzaliśmy w optymalnej strukturze transakcji oraz równolegle zbudowaliśmy osobisty plan finansowy na okres po sprzedaży.",
+        "outcome": "Transakcja zamknięta przy wycenie o 18% wyższej niż początkowa oferta, struktura transakcji zoptymalizowana podatkowo, a osobista strategia zarządzania majątkiem gotowa od pierwszego dnia po uzyskaniu płynności."
+      },
+      "case2": {
+        "tag": "AKWIZYCJA STRATEGICZNA",
+        "title": "Firma rodzinna realizująca ekspansję geograficzną",
+        "situation": "Skuteczna firma regionalna planowała ekspansję na nowy rynek poprzez akwizycję, ale nie posiadała wewnętrznych kompetencji M&A.",
+        "approach": "Poprowadziliśmy poszukiwanie celów akwizycji, przeprowadziliśmy due diligence w wymiarach finansowym, prawnym i operacyjnym, ustrukturyzowaliśmy finansowanie oraz doradzaliśmy w planowaniu integracji.",
+        "outcome": "Akwizycja zrealizowana w ramach docelowego budżetu, kluczowe synergie zrealizowane w pierwszym roku po integracji, operacyjny zasięg rodziny rozszerzony o strategicznie ważny rynek."
+      },
+      "case3": {
+        "tag": "POZYSKANIE KAPITAŁU",
+        "title": "Spółka technologiczna w fazie wzrostu pozyskuje kapitał",
+        "situation": "Założyciele rosnącej spółki technologicznej planowali pozyskanie kapitału na rozwój przy zachowaniu kontroli i znalezieniu partnera podzielającego długoterminową wizję.",
+        "approach": "Przygotowaliśmy narrację finansową, zidentyfikowaliśmy family office oraz inwestorów z długim horyzontem, których wartości odpowiadały filozofii założycieli, ustrukturyzowaliśmy rundę i wynegocjowaliśmy kluczowe warunki.",
+        "outcome": "Kapitał pozyskany przy korzystnej wycenie, kontrola zachowana przez założycieli, a nowi inwestorzy wnoszą wartość strategiczną wykraczającą poza sam kapitał."
+      }
     }
   }
 }
