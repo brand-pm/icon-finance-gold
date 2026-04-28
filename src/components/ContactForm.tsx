@@ -390,8 +390,6 @@ const ContactForm = ({
               type="text"
               maxLength={80}
               autoComplete="given-name"
-              required
-              aria-required="true"
               aria-invalid={!!errors.firstName || undefined}
               aria-describedby={`${uid}-firstName-err`}
               placeholder=" "
@@ -411,8 +409,6 @@ const ContactForm = ({
               type="text"
               maxLength={80}
               autoComplete="family-name"
-              required
-              aria-required="true"
               aria-invalid={!!errors.lastName || undefined}
               aria-describedby={`${uid}-lastName-err`}
               placeholder=" "
@@ -434,8 +430,6 @@ const ContactForm = ({
             type="email"
             maxLength={255}
             autoComplete="email"
-            required
-            aria-required="true"
             aria-invalid={!!errors.email || undefined}
             aria-describedby={`${uid}-email-err`}
             placeholder=" "
@@ -492,8 +486,10 @@ const ContactForm = ({
             id={`${uid}-message`}
             rows={4}
             maxLength={2000}
-            required
-            aria-required="true"
+            spellCheck={false}
+            data-gramm="false"
+            data-gramm_editor="false"
+            data-enable-grammarly="false"
             aria-invalid={!!errors.message || undefined}
             aria-describedby={`${uid}-message-err`}
             placeholder=" "
@@ -514,8 +510,6 @@ const ContactForm = ({
             <input
               id={`${uid}-consent`}
               type="checkbox"
-              required
-              aria-required="true"
               aria-invalid={!!errors.consent || undefined}
               aria-describedby={`${uid}-consent-err`}
               checked={data.consent}
@@ -550,7 +544,8 @@ const ContactForm = ({
 
         <button
           type="submit"
-          disabled={status === "loading"}
+          disabled={status === "loading" || !data.consent}
+          aria-disabled={status === "loading" || !data.consent}
           className="w-full btn-gold py-4 text-[13px] font-medium inline-flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy motion-reduce:transition-none"
         >
           {status === "loading" ? (
