@@ -69,26 +69,35 @@ const Footer = () => {
 
           <div>
             <h4 className="eyebrow text-[11px] mb-6">{t("footer.contactEyebrow")}</h4>
-            <address className="not-italic space-y-3 text-sm">
-              <p className="text-white/60 leading-relaxed whitespace-pre-line">
-                {t("footer.address")}
-              </p>
-              <p>
+            <address className="not-italic space-y-5 text-sm">
+              <div>
+                <p className="text-gold text-[10px] uppercase mb-1.5" style={{ letterSpacing: "0.15em" }}>
+                  {t("footer.officeLabel")}
+                </p>
+                <p className="text-white/60 leading-relaxed">{t("footer.address")}</p>
+              </div>
+              <div>
+                <p className="text-gold text-[10px] uppercase mb-1.5" style={{ letterSpacing: "0.15em" }}>
+                  {t("footer.phoneLabel")}
+                </p>
                 <a
                   href="tel:+48538354262"
                   className="text-white/60 hover:text-gold transition-colors duration-300"
                 >
                   +48 538 354 262
                 </a>
-              </p>
-              <p>
+              </div>
+              <div>
+                <p className="text-gold text-[10px] uppercase mb-1.5" style={{ letterSpacing: "0.15em" }}>
+                  {t("footer.emailLabel")}
+                </p>
                 <a
                   href="mailto:info@iconfinance.io"
                   className="text-white/60 hover:text-gold transition-colors duration-300 break-all"
                 >
                   info@iconfinance.io
                 </a>
-              </p>
+              </div>
             </address>
           </div>
         </div>

@@ -29,9 +29,13 @@ const ORGANIZATION_SCHEMA = {
       foundingDate: "2009",
       address: {
         "@type": "PostalAddress",
+        streetAddress: "ul. Próżna 5",
+        postalCode: "00-107",
         addressLocality: "Warsaw",
         addressCountry: "PL",
       },
+      telephone: "+48538354262",
+      email: "info@iconfinance.io",
       areaServed: ["PL", "EU"],
     },
     {
@@ -46,9 +50,13 @@ const ORGANIZATION_SCHEMA = {
       parentOrganization: { "@id": `${CANONICAL_ORIGIN}/#organization` },
       address: {
         "@type": "PostalAddress",
+        streetAddress: "ul. Próżna 5",
+        postalCode: "00-107",
         addressLocality: "Warsaw",
         addressCountry: "PL",
       },
+      telephone: "+48538354262",
+      email: "info@iconfinance.io",
       areaServed: ["PL", "EU"],
       serviceType: [
         "Wealth Management",
