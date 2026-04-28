@@ -83,13 +83,18 @@ function FloatingLabel({
 }
 
 function ErrorText({ id, msg }: { id: string; msg?: string }) {
+  if (!msg) {
+    // Reserve no space and render nothing when there is no error.
+    // Keeps initial render free of empty error placeholders.
+    return <p id={id} className="hidden" aria-live="polite" />;
+  }
   return (
     <p
       id={id}
-      className="mt-1.5 min-h-[14px] text-[11px] text-gold leading-tight"
+      className="mt-1.5 text-[11px] text-gold leading-tight"
       aria-live="polite"
     >
-      {msg || ""}
+      {msg}
     </p>
   );
 }
