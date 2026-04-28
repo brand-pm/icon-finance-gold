@@ -2110,5 +2110,49 @@
       "title": "Nieruchomości, sztuka, filantropia",
       "description": "Konsolidacja międzynarodowych portfeli nieruchomości, strukturyzowanie znaczących kolekcji sztuki, zakładanie dedykowanych fundacji filantropijnych — specjalistyczne sytuacje wykraczające poza standardową pracę portfelową."
     }
+  },
+  "contactForm": {
+    "requiredNote": "Pola oznaczone * są wymagane",
+    "subject": {
+      "label": "Temat",
+      "placeholder": "Wybierz usługę",
+      "options": {
+        "wm": "Zarządzanie majątkiem",
+        "fo": "Family Office",
+        "st": "Strukturyzacja i podatki",
+        "ma": "Doradztwo M&A",
+        "ss": "Rozwiązania specjalne"
+      }
+    },
+    "errors": {
+      "firstNameRequired": "Wpisz imię",
+      "firstNameInvalid": "Używaj tylko liter",
+      "lastNameRequired": "Wpisz nazwisko",
+      "lastNameInvalid": "Używaj tylko liter",
+      "phoneInvalid": "Wpisz poprawny numer telefonu",
+      "emailRequired": "Wpisz służbowy email",
+      "emailInvalid": "Wpisz poprawny adres email",
+      "subjectRequired": "Wybierz temat",
+      "messageRequired": "Wpisz wiadomość",
+      "messageTooShort": "Wiadomość musi zawierać co najmniej 10 znaków",
+      "consentRequired": "Zgoda jest wymagana do wysłania formularza"
+    },
+    "states": {
+      "sending": "Wysyłanie...",
+      "successHeading": "Dziękujemy",
+      "successBody": "Twoja wiadomość została odebrana. Nasz zespół odpowie w ciągu 24 godzin.",
+      "sendAnother": "Wyślij kolejną wiadomość",
+      "errorToast": "Coś poszło nie tak. Spróbuj ponownie lub napisz do nas na info@iconfinance.io"
+    },
+    "consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z [Polityką prywatności](/privacy-policy).",
+    "privacyPolicy": "Polityką prywatności",
+    "labels": {
+      "firstName": "Imię",
+      "lastName": "Nazwisko",
+      "email": "Email służbowy",
+      "phone": "Telefon (opcjonalnie)",
+      "message": "Wiadomość",
+      "send": "Wyślij"
+    }
   }
 }
