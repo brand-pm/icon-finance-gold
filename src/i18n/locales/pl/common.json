@@ -2040,6 +2040,31 @@
         "approach": "Przygotowaliśmy narrację finansową, zidentyfikowaliśmy family office oraz inwestorów z długim horyzontem, których wartości odpowiadały filozofii założycieli, ustrukturyzowaliśmy rundę i wynegocjowaliśmy kluczowe warunki.",
         "outcome": "Kapitał pozyskany przy korzystnej wycenie, kontrola zachowana przez założycieli, a nowi inwestorzy wnoszą wartość strategiczną wykraczającą poza sam kapitał."
       }
+    },
+    "ss": {
+      "heading": "Scenariusze klientów",
+      "subheading": "Specjalistyczne sytuacje, którymi się zajmujemy.",
+      "case1": {
+        "tag": "PORTFEL NIERUCHOMOŚCI",
+        "title": "Rodzina konsolidująca międzynarodowe zasoby nieruchomości",
+        "situation": "Rodzina zgromadziła ponad tuzin nieruchomości w czterech krajach w wyniku doraźnych decyzji, bez jednolitego obrazu własności, z różnorodnymi strukturami i niespójnymi rentownościami.",
+        "approach": "Zmapowaliśmy cały portfel, zrestrukturyzowaliśmy własność dla zwiększenia efektywności, zbyliśmy aktywa o słabszych wynikach oraz realokowaliśmy środki do instytucjonalnych funduszy nieruchomości w celu dywersyfikacji.",
+        "outcome": "Rentowność portfela mierzalnie wzrosła, struktury własności zostały uproszczone, a płynność jest dostępna tam, gdzie wcześniej aktywa wymagały intensywnego zarządzania operacyjnego."
+      },
+      "case2": {
+        "tag": "SZTUKA I KOLEKCJE",
+        "title": "Kolekcjoner formalizujący znaczącą kolekcję dzieł sztuki",
+        "situation": "Wieloletni kolekcjoner zbudował znaczącą kolekcję, ale bez formalnej struktury w zakresie ubezpieczenia, wyceny, sukcesji oraz potencjalnych partnerstw instytucjonalnych.",
+        "approach": "Skoordynowaliśmy niezależną wycenę, ustanowiliśmy dedykowany podmiot holdingowy z odpowiednim ubezpieczeniem, opracowaliśmy z rodziną protokół sukcesji oraz nawiązaliśmy współpracę przy wystawach muzealnych.",
+        "outcome": "Kolekcja formalnie zabezpieczona i wyceniona, ścieżka sukcesji określona dla każdego kluczowego dzieła, a wybrane prace funkcjonują w kontekstach instytucjonalnych."
+      },
+      "case3": {
+        "tag": "STRUKTURA FILANTROPIJNA",
+        "title": "Rodzina ustanawiająca własną fundację",
+        "situation": "Rodzina chciała przeznaczyć część majątku na długoterminową działalność filantropijną, ale brakowało jej ram strukturalnych do zrobienia tego efektywnie i znacząco.",
+        "approach": "Ustanowiliśmy fundację charytatywną w odpowiedniej jurysdykcji, określiliśmy misję i system zarządzania, zbudowaliśmy fundusz wieczysty dla zrównoważonego corocznego finansowania oraz zaangażowaliśmy następne pokolenie w wybór obszarów działania.",
+        "outcome": "Fundacja działa z własnym systemem zarządzania, zrównoważone coroczne finansowanie zapewnione przez dochód z funduszu wieczystego, osiągnięta zgoda dwóch pokoleń darczyńców."
+      }
     }
   }
 }

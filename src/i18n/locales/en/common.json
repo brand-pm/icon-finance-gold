@@ -2040,6 +2040,31 @@
         "approach": "We prepared the financial narrative, identified family-office and patient capital investors aligned with the founders' philosophy, structured the round, and negotiated key terms.",
         "outcome": "Capital raised at favorable valuation, control retained by founders, and new investors brought strategic value beyond capital alone."
       }
+    },
+    "ss": {
+      "heading": "Client Scenarios",
+      "subheading": "Specialized situations we address for our clients.",
+      "case1": {
+        "tag": "REAL ESTATE PORTFOLIO",
+        "title": "Family consolidating international property holdings",
+        "situation": "A family had accumulated over a dozen properties across four countries through ad-hoc decisions, with no consolidated view, varying ownership structures, and inconsistent yields.",
+        "approach": "We mapped the entire portfolio, restructured ownership for efficiency, divested underperforming assets, and reallocated proceeds into institutional real estate funds for diversification.",
+        "outcome": "Portfolio yield improved measurably, ownership structures simplified, and liquidity now exists where previously the assets were operationally heavy."
+      },
+      "case2": {
+        "tag": "ART & COLLECTIBLES",
+        "title": "Collector formalizing significant art holdings",
+        "situation": "A multi-decade art collector had built a substantial collection but lacked formal structuring for insurance, valuation, succession, and potential institutional partnerships.",
+        "approach": "We coordinated independent valuation, established a dedicated holding entity with appropriate insurance, designed an inheritance protocol with the family, and explored museum loan partnerships.",
+        "outcome": "Collection formally protected and valued, succession path defined for each major piece, and selected works now circulate in institutional contexts."
+      },
+      "case3": {
+        "tag": "PHILANTHROPIC STRUCTURE",
+        "title": "Family establishing dedicated foundation",
+        "situation": "A family wished to commit a portion of wealth to long-term philanthropic activity but lacked the structural framework to do so efficiently and meaningfully.",
+        "approach": "We established a charitable foundation in a suitable jurisdiction, defined the mission and governance, structured an endowment for sustainable annual giving, and engaged the next generation in selection of focus areas.",
+        "outcome": "Foundation operational with dedicated governance, sustainable annual giving secured through endowment yield, and family alignment achieved across two generations of donors."
+      }
     }
   }
 }

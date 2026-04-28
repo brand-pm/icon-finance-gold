@@ -11,6 +11,8 @@ import InvestmentOpportunities from "../../components/services/InvestmentOpportu
 import PortfolioManagement from "../../components/services/PortfolioManagement";
 import ServiceFAQ from "../../components/services/ServiceFAQ";
 import ServiceCTA from "../../components/services/ServiceCTA";
+import ClientScenariosSection from "../../components/ClientScenariosSection";
+import { specialSolutionsScenarios } from "../../data/clientScenarios";
 import heroImg from "../../assets/special-solutions-symbol.png";
 import strategyRealEstate from "../../assets/special-realestate.jpg";
 import strategyArt from "../../assets/special-art.jpg";
@@ -58,6 +60,12 @@ const SpecialSolutions = () => {
         eyebrow={results.eyebrow}
         title={results.title}
         items={results.items.map((it) => ({ ...it, subtitle: "" }))}
+      />
+
+      <ClientScenariosSection
+        headingKey="scenarios.ss.heading"
+        subheadingKey="scenarios.ss.subheading"
+        scenarios={specialSolutionsScenarios}
       />
 
       <InvestmentStrategies
