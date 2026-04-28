@@ -1990,6 +1990,31 @@
         "approach": "Zaprojektowaliśmy model Shared Family Office z wyraźnym rozdzieleniem decyzji inwestycyjnych, wspólnymi usługami back-office oraz protokołem podejmowania wspólnych decyzji.",
         "outcome": "Łączne koszty operacyjne zmniejszone o 40%, każda gałąź zachowuje pełną autonomię inwestycyjną, wspólne usługi obejmują sprawozdawczość, księgowość i compliance."
       }
+    },
+    "st": {
+      "heading": "Scenariusze klientów",
+      "subheading": "Reprezentatywne sytuacje strukturyzacyjne, którymi się zajmujemy.",
+      "case1": {
+        "tag": "HOLDING WIELOJURYSDYKCYJNY",
+        "title": "Przedsiębiorca z operacjami w pięciu krajach",
+        "situation": "Właściciel międzynarodowej marki konsumenckiej prowadził operacje w pięciu jurysdykcjach, ale rozproszona struktura holdingowa narażała grupę na nieefektywne opodatkowanie i komplikacje sukcesyjne.",
+        "approach": "Zrestrukturyzowaliśmy własność poprzez spółkę holdingową w Luksemburgu z regionalnymi podmiotami zależnymi, wdrożyliśmy efektywną podatkowo repatriację zysków oraz zintegrowaliśmy zapisy dotyczące planowania majątkowego.",
+        "outcome": "Efektywna stawka podatkowa grupy obniżona o 12 punktów procentowych, przepływy dywidend działają przewidywalnie, mechanizm przekazania własności jest w pełni udokumentowany."
+      },
+      "case2": {
+        "tag": "USTANOWIENIE TRUSTU",
+        "title": "Rodzina tworząca ochronną strukturę trustową",
+        "situation": "Rodzina chciała chronić aktywa płynne przed potencjalnymi zobowiązaniami komercyjnymi związanymi z biznesami operacyjnymi, zachowując jednocześnie długoterminowy dostęp dla rodziny.",
+        "approach": "Ustanowiliśmy trust dyskrecjonalny w stabilnej jurysdykcji common law, przenieśliśmy wyznaczone aktywa oraz wdrożyliśmy instytucję protektora dla zachowania rodzinnego nadzoru.",
+        "outcome": "Wyznaczone aktywa odizolowane od ryzyka biznesu operacyjnego, rodzina zachowuje wpływ poprzez ustrukturyzowane protokoły, mechanizm transferu międzypokoleniowego jest gotowy."
+      },
+      "case3": {
+        "tag": "OPTYMALIZACJA REZYDENCJI",
+        "title": "Profesjonalista rozważający zmianę rezydencji podatkowej",
+        "situation": "Senior-profesjonalista rozważał przeniesienie między dwiema europejskimi jurysdykcjami, przy czym struktura przeprowadzki miała istotne implikacje podatkowe.",
+        "approach": "Skoordynowaliśmy pracę z lokalnymi doradcami w obu jurysdykcjach, zamodelowaliśmy długoterminowe scenariusze podatkowe, zrestrukturyzowaliśmy aktywa generujące dochód przed przeprowadzką oraz zsynchronizowaliśmy zmianę rezydencji z granicami roku podatkowego.",
+        "outcome": "Oszczędności podatkowe w cyklu życia istotnie przewyższyły standardowe podejście, zmiana rezydencji została przeprowadzona bez problemów compliance, a docelowa struktura pozostaje efektywna."
+      }
     }
   }
 }
