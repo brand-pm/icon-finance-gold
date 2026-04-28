@@ -214,7 +214,7 @@
     "services": "Услуги",
     "contact": "Контакты",
     "contactEyebrow": "КОНТАКТЫ",
-    "address": "ul. Złota 59\n00-120 Warsaw, Poland",
+    "address": "ul. Próżna 5, 00-107 Варшава, Польша",
     "legal": "Правовая информация",
     "privacy": "Политика конфиденциальности",
     "terms": "Условия использования",
@@ -222,7 +222,10 @@
     "rights": "Все права защищены.",
     "office": "Офис",
     "email": "Электронная почта",
-    "phone": "Телефон"
+    "phone": "Телефон",
+    "officeLabel": "ОФИС",
+    "phoneLabel": "ТЕЛЕФОН",
+    "emailLabel": "EMAIL"
   },
   "common": {
     "placeholderFirstName": "Введите имя",
@@ -513,7 +516,7 @@
       "blocks": [
         {
           "title": "Офис",
-          "body": "Варшава, Польша\nul. Próżna 5, 00-107 Варшава, Польша"
+          "body": "ul. Próżna 5, 00-107 Варшава, Польша"
         },
         {
           "title": "Телефон",

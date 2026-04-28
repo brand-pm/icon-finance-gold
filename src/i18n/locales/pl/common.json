@@ -214,7 +214,7 @@
     "services": "Usługi",
     "contact": "Kontakt",
     "contactEyebrow": "KONTAKT",
-    "address": "ul. Złota 59\n00-120 Warsaw, Poland",
+    "address": "ul. Próżna 5, 00-107 Warszawa, Polska",
     "legal": "Prawne",
     "privacy": "Polityka prywatności",
     "terms": "Regulamin",
@@ -222,7 +222,10 @@
     "rights": "Wszelkie prawa zastrzeżone.",
     "office": "Biuro",
     "email": "E-mail",
-    "phone": "Telefon"
+    "phone": "Telefon",
+    "officeLabel": "BIURO",
+    "phoneLabel": "TELEFON",
+    "emailLabel": "EMAIL"
   },
   "common": {
     "placeholderFirstName": "Wpisz swoje imię",
@@ -513,7 +516,7 @@
       "blocks": [
         {
           "title": "Biuro",
-          "body": "Warszawa, Polska\nul. Próżna 5, 00-107 Warszawa, Polska"
+          "body": "ul. Próżna 5, 00-107 Warszawa, Polska"
         },
         {
           "title": "Telefon",
