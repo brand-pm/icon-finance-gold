@@ -455,15 +455,15 @@
     },
     "stats": [
       {
-        "n": "15+",
+        "n": "17+",
         "label": "Lat w zarządzaniu majątkiem"
       },
       {
-        "n": "4",
+        "n": "5",
         "label": "Główne dyscypliny usług"
       },
       {
-        "n": "6+",
+        "n": "5+",
         "label": "Obsługiwane jurysdykcje"
       },
       {
@@ -1054,7 +1054,7 @@
       "faq": [
         {
           "question": "Jaki jest minimalny poziom aktywów dla family office?",
-          "answer": "Dedykowane Dedykowany Family Office wymaga zwykle aktywów inwestycyjnych od 30 mln USD, aby było efektywne kosztowo. Nasz model Współdzielony Family Office zaprojektowany jest dla rodzin od 5-10 mln USD, a Wirtualny Family Office nie ma sztywnego minimum."
+          "answer": "Dedykowane Single Family Office wymaga zwykle aktywów inwestycyjnych od 30 mln USD, aby było efektywne kosztowo. Nasz model Współdzielony Family Office zaprojektowany jest dla rodzin od 5-10 mln USD, a Wirtualny Family Office nie ma sztywnego minimum."
         },
         {
           "question": "Czym family office różni się od banku prywatnego?",
