@@ -184,9 +184,9 @@
   "contactTeaser": {
     "eyebrow": "Contact Form",
     "title": "Start Managing Your Wealth Today",
-    "subtitle": "We respond personally within 24 hours. No call centers, no intermediaries.",
+    "subtitle": "We respond personally within 1 hour during business hours (Mon-Fri, 10:00-19:00 CET). Outside business hours we respond the next working day. No call centers, no intermediaries.",
     "formTitle": "Send Us a Message",
-    "formSubtitle": "Leave an inquiry and our expert will contact you within 24 hours.",
+    "formSubtitle": "Leave an inquiry and our expert will contact you within 1 hour during business hours (Mon-Fri, 10:00-19:00 CET). Outside business hours we respond the next working day.",
     "firstName": "First name",
     "lastName": "Last name",
     "email": "Work email",
@@ -233,7 +233,7 @@
     "placeholderEmail": "example@email.com",
     "selectSubject": "Select a subject",
     "messageMin": "Please write at least 50 characters",
-    "formSuccess": "Message sent. We will respond within 24 hours.",
+    "formSuccess": "Message sent. We will respond within 1 hour during business hours (Mon-Fri, 10:00-19:00 CET). Outside business hours we respond the next working day.",
     "nameNoDigits": "Numbers are not allowed in this field",
     "required": "This field is required",
     "invalidEmail": "Please enter a valid email"
@@ -241,7 +241,7 @@
   "serviceCTA": {
     "eyebrow": "Get in Touch",
     "formTitle": "Send Us a Message",
-    "formSubtitle": "Leave an inquiry and our expert will contact you within 24 hours.",
+    "formSubtitle": "Leave an inquiry and our expert will contact you within 1 hour during business hours (Mon-Fri, 10:00-19:00 CET). Outside business hours we respond the next working day.",
     "firstName": "First name",
     "lastName": "Last name",
     "email": "Work email",
@@ -359,7 +359,7 @@
       ]
     },
     "cta": {
-      "title": "Start a Confidential Conversation",
+      "title": "Schedule a Confidential Introduction",
       "description": "Arrange a private consultation with our team. We will listen to your situation first - and only propose a path forward if we are confident we can add meaningful value."
     }
   },
@@ -472,7 +472,7 @@
       }
     ],
     "cta": {
-      "title": "Start a Confidential Conversation",
+      "title": "Schedule a Confidential Introduction",
       "description": "Arrange a private consultation with our team. We will listen to your situation first - and only propose a path forward if we are confident we can add meaningful value."
     }
   },
@@ -507,7 +507,7 @@
   "contactPage": {
     "hero": {
       "eyebrow": "Contact",
-      "title": "Start a Confidential Conversation",
+      "title": "Schedule a Confidential Introduction",
       "description": "We listen first. We only propose a path forward when we are confident we can add meaningful value to your situation."
     },
     "details": {
@@ -528,7 +528,7 @@
         },
         {
           "title": "Response Time",
-          "body": "We respond to all inquiries within 24 hours."
+          "body": "We respond to all inquiries within 1 hour during business hours (Mon-Fri, 10:00-19:00 CET). Outside business hours we respond the next working day."
         },
         {
           "title": "Confidentiality",
@@ -538,7 +538,7 @@
     },
     "form": {
       "title": "Send Us a Message",
-      "subtitle": "Leave an inquiry and our expert will contact you within 24 hours.",
+      "subtitle": "Leave an inquiry and our expert will contact you within 1 hour during business hours (Mon-Fri, 10:00-19:00 CET). Outside business hours we respond the next working day.",
       "firstName": "First name",
       "lastName": "Last name",
       "email": "Work email",
@@ -546,7 +546,7 @@
       "message": "Message",
       "messagePlaceholder": "Tell us about your situation - assets, goals, timeline, or anything else relevant.",
       "submit": "Send Request",
-      "footnote": "We respond within 24 hours. All information is strictly confidential.",
+      "footnote": "We respond within 1 hour during business hours (Mon-Fri, 10:00-19:00 CET). Outside business hours we respond the next working day. All information is strictly confidential.",
       "errors": {
         "firstName": "First name is required",
         "lastName": "Last name is required",
@@ -554,7 +554,7 @@
         "subject": "Please select a subject",
         "message": "Please add a bit more detail"
       },
-      "success": "Message sent. We will respond within 24 hours.",
+      "success": "Message sent. We will respond within 1 hour during business hours (Mon-Fri, 10:00-19:00 CET). Outside business hours we respond the next working day.",
       "phone": "Phone (optional)"
     },
     "bottomCTA": {
@@ -819,7 +819,7 @@
         }
       ],
       "cta": {
-        "title": "Start a Confidential Conversation",
+        "title": "Schedule a Confidential Introduction",
         "description": "Arrange a private consultation with our team. We will listen to your situation first - and only propose a path forward if we are confident we can add meaningful value."
       }
     },
@@ -1070,7 +1070,7 @@
         }
       ],
       "cta": {
-        "title": "Start a Confidential Conversation",
+        "title": "Schedule a Confidential Introduction",
         "description": "Arrange a private consultation with our team. We will listen to your situation first - and only propose a path forward if we are confident we can add meaningful value."
       }
     },
@@ -1321,7 +1321,7 @@
         }
       ],
       "cta": {
-        "title": "Start a Confidential Conversation",
+        "title": "Schedule a Confidential Introduction",
         "description": "Arrange a private consultation with our team. We will listen to your situation first - and only propose a path forward if we are confident we can add meaningful value."
       }
     },
@@ -1572,7 +1572,7 @@
         }
       ],
       "cta": {
-        "title": "Start a Confidential Conversation",
+        "title": "Schedule a Confidential Introduction",
         "description": "Arrange a private consultation with our team. We will listen to your situation first - and only propose a path forward if we are confident we can add meaningful value."
       }
     },
@@ -1823,7 +1823,7 @@
         }
       ],
       "cta": {
-        "title": "Start a Confidential Conversation",
+        "title": "Schedule a Confidential Introduction",
         "description": "Arrange a private consultation with our team. We will listen to your situation first - and only propose a path forward if we are confident we can add meaningful value."
       }
     }
@@ -2140,7 +2140,7 @@
     "states": {
       "sending": "Sending...",
       "successHeading": "Thank you",
-      "successBody": "Your message has been received. Our team will respond within 24 hours.",
+      "successBody": "Your message has been received. Our team will respond within 1 hour during business hours (Mon-Fri, 10:00-19:00 CET). Outside business hours we respond the next working day.",
       "sendAnother": "Send another message",
       "errorToast": "Something went wrong. Please try again or contact us at info@iconfinance.io"
     },
