@@ -7,6 +7,7 @@ import Philosophy from "../components/services/Philosophy";
 import PortfolioManagement from "../components/services/PortfolioManagement";
 import ServiceCTA from "../components/services/ServiceCTA";
 import TeamSection from "../components/about/TeamSection";
+import TeamStats from "../components/about/TeamStats";
 import aboutSymbol from "../assets/about-symbol.png";
 import teamPlaceholder from "../assets/team-placeholder.jpg";
 import olegPhoto from "../assets/team/oleg-zabolotnyi.jpg";
