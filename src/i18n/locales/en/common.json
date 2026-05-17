@@ -803,7 +803,7 @@
       "faq": [
         {
           "question": "What is the minimum investment threshold?",
-          "answer": "We typically work with clients whose investable assets start from $500,000. For family office and structuring mandates, the threshold may be higher depending on complexity."
+          "answer": "We work with clients at different stages of wealth. For Wealth Management, our typical entry point is $50,000–$500,000 in investable assets — making professional portfolio advisory accessible to entrepreneurs and growing families. For Family Office engagements, the minimum starts from $200,000–$2,000,000, reflecting the broader scope of services involved."
         },
         {
           "question": "How are your fees structured?",
@@ -811,7 +811,7 @@
         },
         {
           "question": "Can I access my funds at any time?",
-          "answer": "Yes. Your assets are held at independent custodians in your name and remain fully accessible. We recommend consulting with your advisor before significant withdrawals to assess portfolio impact."
+          "answer": "Liquid positions are fully accessible at all times. Allocations to illiquid strategies (private equity, hedge funds, structured products) are subject to underlying fund redemption terms, which are disclosed before commitment. We can also advise on portfolio reinvestment to support the development of your business."
         },
         {
           "question": "How do you protect client confidentiality?",
@@ -910,7 +910,7 @@
       "strategies": [
         {
           "name": "Single Family Office",
-          "description": "A fully dedicated structure built exclusively for your family. Complete control, maximum confidentiality, and bespoke infrastructure - designed for families with $30M+ in assets.",
+          "description": "A fully dedicated structure built exclusively for your family. Complete control, maximum confidentiality, and bespoke infrastructure - designed for families with $2,000,000+ in assets.",
           "items": [
             "Exclusive infrastructure for one family only",
             "Full control over investment and governance decisions",
@@ -1054,7 +1054,7 @@
       "faq": [
         {
           "question": "What is the minimum asset level for a family office?",
-          "answer": "A dedicated Single Family Office typically requires significant investable assets to be cost-efficient. Our Shared Family Office model is designed for families with substantial wealth, and our Virtual Family Office has no strict minimum."
+          "answer": "A dedicated Single Family Office is designed for families with $2,000,000+ in investable assets. Our Shared Family Office model is accessible from $200,000, sharing operational infrastructure across several families. Our Virtual Family Office has no strict minimum and is designed for clients with established financial complexity — multiple advisors, asset classes, or jurisdictions to coordinate."
         },
         {
           "question": "How is a family office different from a private bank?",
@@ -1309,7 +1309,7 @@
         },
         {
           "question": "Which jurisdictions do you work with?",
-          "answer": "We work across major financial and holding jurisdictions including Poland, UAE, Cyprus, Malta, Luxembourg, BVI, Cayman, and others - always selecting the most appropriate jurisdiction for your specific situation."
+          "answer": "Poland, UAE, Cyprus, Malta, Luxembourg, and others — always selecting the most appropriate jurisdiction for your specific situation."
         },
         {
           "question": "Do I need to change my residency?",
@@ -1556,7 +1556,7 @@
       "faq": [
         {
           "question": "How are you compensated on M&A transactions?",
-          "answer": "We charge a retainer fee for advisory work and a success fee upon transaction completion. Fee structures are agreed transparently upfront. We never receive undisclosed payments from counterparties or investors."
+          "answer": "M&A advisory is structured around a retainer fee covering ongoing advisory work, and a success fee payable upon transaction completion. The success fee aligns our incentives directly with yours: we are compensated for results, not activity. This structure is fully disclosed and agreed in writing at the outset of each mandate. We receive no undisclosed payments, referral fees, or incentives from any counterparty, investor, or third party involved in your transaction."
         },
         {
           "question": "How long does a typical sale process take?",
