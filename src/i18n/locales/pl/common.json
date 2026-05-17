@@ -1982,17 +1982,17 @@
       "heading": "Scenariusze klientów",
       "subheading": "Przykłady sytuacji rodzinnych, którymi zajmuje się nasze biuro.",
       "case1": {
-        "tag": "URUCHOMIENIE SINGLE FAMILY OFFICE",
-        "title": "Rodzina założycielska tworząca dedykowane biuro",
-        "situation": "Rodzina z aktywami przekraczającymi 200 mln USD w biznesach operacyjnych i inwestycjach planowała skonsolidować zarządzanie majątkiem w ramach jednego dedykowanego biura.",
-        "approach": "Zaprojektowaliśmy strukturę Single Family Office, określiliśmy procedury operacyjne, zbudowaliśmy początkowy trzyosobowy zespół oraz zaimplementowaliśmy infrastrukturę technologiczną dla skonsolidowanej sprawozdawczości.",
-        "outcome": "Biuro osiągnęło pełną operacyjność w ciągu dziewięciu miesięcy, wszystkie podmioty rodzinne są raportowane w jednolitym systemie, ramy zarządzania zostały sformalizowane i przyjęte przez wszystkich członków rodziny."
+        "tag": "SHARED FAMILY OFFICE",
+        "title": "Wdrożenie Shared Family Office dla rodziny wielopokoleniowej",
+        "situation": "Rodzina wielopokoleniowa z aktywami 30–50 mln USD w zdywersyfikowanym portfelu dążyła do konsolidacji rozproszonych relacji doradczych w ramach jednej skoordynowanej struktury.",
+        "approach": "Przeprowadziliśmy ocenę pełnego obrazu finansowego rodziny, zaprojektowaliśmy framework Shared Family Office ze skonsolidowaną sprawozdawczością, skoordynowanym nadzorem inwestycyjnym oraz zdefiniowanymi protokołami zarządczymi — wdrożone w horyzoncie 4–6 miesięcy.",
+        "outcome": "Rodzina uzyskała pełną widoczność portfela, obniżyła koszty doradcze dzięki konsolidacji oraz zbudowała framework zarządczy gotowy do skalowania."
       },
       "case2": {
         "tag": "PLANOWANIE SUKCESJI",
         "title": "Patriarcha przygotowuje przekazanie następnemu pokoleniu",
         "situation": "Założyciel prywatnego holdingu zamierzał wycofać się z aktywnego zarządzania, jednocześnie zapewniając odpowiedzialne dziedziczenie trojgu dorosłym dzieciom.",
-        "approach": "Przeprowadziliśmy serię spotkań rodzinnych dla uzgodnienia wartości, opracowaliśmy konstytucję rodzinną, wdrożyliśmy strukturę nieodwołalnego trustu oraz stworzyliśmy program edukacyjny dla dzieci obejmujący zasady inwestowania.",
+        "approach": "Poprowadziliśmy ustrukturyzowany proces family governance, obejmujący moderowane spotkania rodzinne służące uzgadnianiu wartości pomiędzy pokoleniami, opracowanie konstytucji rodzinnej ustanawiającej zasady podejmowania decyzji oraz koordynację wielopokoleniowego frameworku sukcesji, z udziałem wyspecjalizowanych doradców prawnych tam, gdzie było to konieczne. Powstał formalny plan przekazania własności z określonymi kamieniami milowymi zarządczymi oraz program edukacji inwestycyjnej dla następnego pokolenia.",
         "outcome": "Formalne przekazanie zakończone w ciągu 18 miesięcy, wszystkie troje dzieci aktywnie pełnią określone role, zarządzanie majątkiem rodziny nie zależy już od jednej osoby."
       },
       "case3": {
@@ -2008,24 +2008,24 @@
       "subheading": "Reprezentatywne sytuacje strukturyzacyjne, którymi się zajmujemy.",
       "case1": {
         "tag": "HOLDING WIELOJURYSDYKCYJNY",
-        "title": "Przedsiębiorca z operacjami w pięciu krajach",
-        "situation": "Właściciel międzynarodowej marki konsumenckiej prowadził operacje w pięciu jurysdykcjach, ale rozproszona struktura holdingowa narażała grupę na nieefektywne opodatkowanie i komplikacje sukcesyjne.",
-        "approach": "Zrestrukturyzowaliśmy własność poprzez spółkę holdingową w Luksemburgu z regionalnymi podmiotami zależnymi, wdrożyliśmy efektywną podatkowo repatriację zysków oraz zintegrowaliśmy zapisy dotyczące planowania majątkowego.",
-        "outcome": "Efektywna stawka podatkowa grupy obniżona o 12 punktów procentowych, przepływy dywidend działają przewidywalnie, mechanizm przekazania własności jest w pełni udokumentowany."
+        "title": "Przedsiębiorca z operacjami w wielu jurysdykcjach",
+        "situation": "Właściciel międzynarodowej marki konsumenckiej prowadził działalność w wielu jurysdykcjach poprzez rozproszoną strukturę holdingową, co generowało ryzyko zbędnych strat podatkowych, nieprzewidywalnych przepływów dywidend oraz nierozwiązanego ryzyka sukcesyjnego.",
+        "approach": "Zaprojektowaliśmy skonsolidowaną strukturę holdingową w efektywnej traktatowo jurysdykcji europejskiej, ustanowiliśmy regionalne podmioty zależne zgodne z substancją operacyjną oraz wdrożyliśmy zgodne z przepisami mechanizmy repatriacji zysków.",
+        "outcome": "Reorganizacja strukturalna w ramach obowiązujących umów o unikaniu podwójnego opodatkowania zapewniła istotne obniżenie efektywnej stawki podatkowej grupy. Przepływy dywidend stały się w pełni przewidywalne, a udokumentowany mechanizm przekazania własności został przygotowany dla następnego pokolenia."
       },
       "case2": {
         "tag": "USTANOWIENIE TRUSTU",
-        "title": "Rodzina tworząca ochronną strukturę trustową",
-        "situation": "Rodzina chciała chronić aktywa płynne przed potencjalnymi zobowiązaniami komercyjnymi związanymi z biznesami operacyjnymi, zachowując jednocześnie długoterminowy dostęp dla rodziny.",
-        "approach": "Ustanowiliśmy trust dyskrecjonalny w stabilnej jurysdykcji common law, przenieśliśmy wyznaczone aktywa oraz wdrożyliśmy instytucję protektora dla zachowania rodzinnego nadzoru.",
-        "outcome": "Wyznaczone aktywa odizolowane od ryzyka biznesu operacyjnego, rodzina zachowuje wpływ poprzez ustrukturyzowane protokoły, mechanizm transferu międzypokoleniowego jest gotowy."
+        "title": "Rodzina ustanawiająca strukturę trustu dyskrecjonalnego",
+        "situation": "Rodzina dążyła do oddzielenia wybranych aktywów od profilu ryzyka aktywnych biznesów operacyjnych, zachowując długoterminowy dostęp beneficjalny dla obecnego i przyszłych pokoleń.",
+        "approach": "Ustanowiliśmy trust dyskrecjonalny w stabilnej jurysdykcji common law, przenieśliśmy wyznaczone aktywa w ramach ustrukturyzowanego settlementu oraz wdrożyliśmy postanowienia o protektorze, zapewniające realny nadzór rodziny bez naruszania integralności prawnej trustu.",
+        "outcome": "Wyznaczone aktywa zostały skutecznie oddzielone od ryzyka biznesu operacyjnego. Rodzina zachowała wpływ poprzez zdefiniowane uprawnienia protektora."
       },
       "case3": {
-        "tag": "OPTYMALIZACJA REZYDENCJI",
-        "title": "Profesjonalista rozważający zmianę rezydencji podatkowej",
-        "situation": "Senior-profesjonalista rozważał przeniesienie między dwiema europejskimi jurysdykcjami, przy czym struktura przeprowadzki miała istotne implikacje podatkowe.",
-        "approach": "Skoordynowaliśmy pracę z lokalnymi doradcami w obu jurysdykcjach, zamodelowaliśmy długoterminowe scenariusze podatkowe, zrestrukturyzowaliśmy aktywa generujące dochód przed przeprowadzką oraz zsynchronizowaliśmy zmianę rezydencji z granicami roku podatkowego.",
-        "outcome": "Oszczędności podatkowe w cyklu życia istotnie przewyższyły standardowe podejście, zmiana rezydencji została przeprowadzona bez problemów compliance, a docelowa struktura pozostaje efektywna."
+        "tag": "PLANOWANIE ZMIANY REZYDENCJI",
+        "title": "Specjalista wyższego szczebla przenoszący się między jurysdykcjami europejskimi",
+        "situation": "Specjalista wyższego szczebla rozważał przeprowadzkę między dwiema jurysdykcjami europejskimi. Decyzja niosła istotne konsekwencje podatkowe zależne od kolejności, struktury i terminu przejścia.",
+        "approach": "Współpracowaliśmy z licencjonowanymi lokalnymi doradcami prawnymi w obu jurysdykcjach, zamodelowaliśmy długoterminowe scenariusze podatkowe oraz doradziliśmy w zakresie dostosowania struktur aktywów do nowego profilu jurysdykcyjnego klienta.",
+        "outcome": "Zmiana rezydencji została przeprowadzona bez problemów compliance. Strukturyzacja przed przeprowadzką przyniosła znacząco korzystniejszy rezultat długoterminowy w porównaniu z podejściem standardowym, bez doradztwa."
       }
     },
     "ma": {
@@ -2063,19 +2063,12 @@
         "approach": "Zmapowaliśmy cały portfel, zrestrukturyzowaliśmy własność dla zwiększenia efektywności, zbyliśmy aktywa o słabszych wynikach oraz realokowaliśmy środki do instytucjonalnych funduszy nieruchomości w celu dywersyfikacji.",
         "outcome": "Rentowność portfela mierzalnie wzrosła, struktury własności zostały uproszczone, a płynność jest dostępna tam, gdzie wcześniej aktywa wymagały intensywnego zarządzania operacyjnego."
       },
-      "case2": {
-        "tag": "SZTUKA I KOLEKCJE",
-        "title": "Kolekcjoner formalizujący znaczącą kolekcję dzieł sztuki",
-        "situation": "Wieloletni kolekcjoner zbudował znaczącą kolekcję, ale bez formalnej struktury w zakresie ubezpieczenia, wyceny, sukcesji oraz potencjalnych partnerstw instytucjonalnych.",
-        "approach": "Skoordynowaliśmy niezależną wycenę, ustanowiliśmy dedykowany podmiot holdingowy z odpowiednim ubezpieczeniem, opracowaliśmy z rodziną protokół sukcesji oraz nawiązaliśmy współpracę przy wystawach muzealnych.",
-        "outcome": "Kolekcja formalnie zabezpieczona i wyceniona, ścieżka sukcesji określona dla każdego kluczowego dzieła, a wybrane prace funkcjonują w kontekstach instytucjonalnych."
-      },
       "case3": {
-        "tag": "STRUKTURA FILANTROPIJNA",
-        "title": "Rodzina ustanawiająca własną fundację",
-        "situation": "Rodzina chciała przeznaczyć część majątku na długoterminową działalność filantropijną, ale brakowało jej ram strukturalnych do zrobienia tego efektywnie i znacząco.",
-        "approach": "Ustanowiliśmy fundację charytatywną w odpowiedniej jurysdykcji, określiliśmy misję i system zarządzania, zbudowaliśmy fundusz wieczysty dla zrównoważonego corocznego finansowania oraz zaangażowaliśmy następne pokolenie w wybór obszarów działania.",
-        "outcome": "Fundacja działa z własnym systemem zarządzania, zrównoważone coroczne finansowanie zapewnione przez dochód z funduszu wieczystego, osiągnięta zgoda dwóch pokoleń darczyńców."
+        "tag": "DORADZTWO MAJĄTKOWE DLA FOUNDERA",
+        "title": "Founder startupu zarządzający majątkiem przed i po exicie",
+        "situation": "Founder spółki technologicznej finansowanej przez venture capital trzymał większość majątku osobistego w jednej skoncentrowanej pozycji equity. Wraz ze zbliżającym się zdarzeniem płynnościowym poszukiwał struktury finansowej, która przetrwa exit i będzie służyć długoterminowym celom poza spółką.",
+        "approach": "Zmapowaliśmy pełny obraz finansowy foundera — vested i unvested equity, opcje secondary liquidity oraz zobowiązania osobiste. Zaprojektowaliśmy strukturę holdingową przed exitem, zbudowaliśmy zdywersyfikowaną politykę inwestycyjną odzwierciedlającą profil ryzyka i horyzont czasowy foundera oraz skoordynowaliśmy efektywną podatkowo dystrybucję kapitału post-exit między klasy aktywów.",
+        "outcome": "Struktura przed exitem gotowa sześć miesięcy przed zamknięciem transakcji. Kapitał post-exit stopniowo zdywersyfikowany między klasy aktywów, z mapą drogową przejścia uzgodnioną w ciągu pierwszych 90 dni. Founder przeszedł od koncentracji w jednej akcji do profesjonalnie zarządzanego portfela wieloaktywnego z jasnym ładem zarządczym i polityką reinwestycji."
       }
     }
   },
