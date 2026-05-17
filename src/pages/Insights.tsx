@@ -10,6 +10,7 @@ import { useScrollReveal } from "../hooks/useScrollReveal";
 import { useLocalizedPath } from "@/i18n/useLocalizedPath";
 import marbleHero from "../assets/marble-mono-1.jpg";
 import { sanityClient, urlFor, formatPostDate, type PostListItem } from "@/lib/sanity";
+import NewsletterCta from "../components/NewsletterCta";
 
 const POSTS_QUERY = `*[_type == "post" && language == $lang] | order(publishedAt desc){
   _id, title, "slug": slug.current, category, coverImage, excerpt, readTime, publishedAt, language
