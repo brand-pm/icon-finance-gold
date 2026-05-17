@@ -51,7 +51,7 @@ const Footer = () => {
 
           {footerCols.map((col, i) => (
             <div key={col.titleKey + i}>
-              <h4 className="eyebrow text-[11px] mb-6">{t(col.titleKey)}</h4>
+              <h4 className="eyebrow text-gold text-[11px] mb-6">{t(col.titleKey)}</h4>
               <ul className="space-y-3">
                 {col.links.map((link) => (
                   <li key={link.labelKey + link.to}>
@@ -68,7 +68,7 @@ const Footer = () => {
           ))}
 
           <div>
-            <h4 className="eyebrow text-[11px] mb-6">{t("footer.contactEyebrow")}</h4>
+            <h4 className="eyebrow text-gold text-[11px] mb-6">{t("footer.contactEyebrow")}</h4>
             <address className="not-italic space-y-5 text-sm">
               <div>
                 <p className="text-gold text-[10px] uppercase mb-1.5" style={{ letterSpacing: "0.15em" }}>
