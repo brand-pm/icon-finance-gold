@@ -26,6 +26,7 @@ const Index = () => {
       <Hero />
       <ServicesIntro />
       <Services />
+      <ComparisonBlock />
       <ScenariosOverviewSection />
       <PortfolioManagement
         title={t("homeProcess.title")}
