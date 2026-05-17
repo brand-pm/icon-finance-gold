@@ -38,7 +38,7 @@
   "hero": {
     "eyebrow": "Wealth Management",
     "title": "Preserving & Growing Wealth Across Generations",
-    "subtitle": "Comprehensive wealth management for families and entrepreneurs with international expertise and a tailored approach",
+    "subtitle": "Independent by design. We work exclusively in our clients' interests — transparent fees, no hidden agendas, no institutional conflicts.",
     "ctaPrimary": "Start a dialogue",
     "ctaSecondary": "Our expertise",
     "stats": {
@@ -209,7 +209,7 @@
     }
   },
   "footer": {
-    "tagline": "Independent wealth management and family office services for entrepreneurs and families with international wealth.",
+    "tagline": "Independent wealth management and advisory services for entrepreneurs and families with international wealth. Warsaw-based, operating across 5 jurisdictions through an active partner network.",
     "navigate": "Navigate",
     "services": "Services",
     "contact": "Contact",
@@ -264,7 +264,7 @@
       "items": [
         {
           "title": "Client Interests Above All",
-          "description": "We act as fiduciaries - always. Our independence from banks, funds, and product providers means every recommendation we make is driven by your goals alone."
+          "description": "We act as fiduciaries - always. Our independence from banks, funds, and product providers means every recommendation we make is driven by your goals alone. Independent in advisory mandates; where transaction fees apply — as in M&A — these are fully disclosed and agreed in advance."
         },
         {
           "title": "Long-Term Relationships",
@@ -360,6 +360,23 @@
     "cta": {
       "title": "Schedule a Confidential Introduction",
       "description": "Arrange a private consultation with our team. We will listen to your situation first - and only propose a path forward if we are confident we can add meaningful value."
+    },
+    "teamStats": {
+      "eyebrow": "Our scale",
+      "items": [
+        {
+          "n": "30+",
+          "label": "Total team"
+        },
+        {
+          "n": "50+",
+          "label": "Active partner network"
+        },
+        {
+          "n": "4",
+          "label": "Senior advisors"
+        }
+      ]
     }
   },
   "expertise": {
@@ -840,7 +857,7 @@
         "sectionTitle": "Built for Families\nThinking in Generations",
         "items": [
           {
-            "title": "Families With Significant Assets",
+            "title": "Families with $2M+ in investable assets",
             "description": "Your family wealth has grown to a scale where informal management no longer works. You need a structured approach that coordinates investments, legal entities, taxes, and succession in one place."
           },
           {
