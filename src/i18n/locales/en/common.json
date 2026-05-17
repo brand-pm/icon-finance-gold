@@ -1982,17 +1982,17 @@
       "heading": "Client Scenarios",
       "subheading": "Examples of family situations our office serves.",
       "case1": {
-        "tag": "SINGLE FAMILY OFFICE LAUNCH",
-        "title": "Founding family launching a dedicated office",
-        "situation": "A family with $200M+ in assets across operating businesses and investments wanted to consolidate wealth management under a single dedicated office.",
-        "approach": "We designed the Single Family Office structure, defined operational policies, recruited the initial team of three, and built the technology stack for consolidated reporting.",
-        "outcome": "Office operational within nine months, all family entities now reported in a unified dashboard, governance framework documented and adopted by all members."
+        "tag": "SHARED FAMILY OFFICE",
+        "title": "Shared Family Office setup for a multi-generational family",
+        "situation": "A multi-generational family with $30–50M in diversified assets sought to consolidate fragmented advisory relationships into a single coordinated structure.",
+        "approach": "We assessed the family's full financial picture, designed a Shared Family Office framework with consolidated reporting, coordinated investment oversight, and defined governance protocols — implemented within a 4–6 month timeline.",
+        "outcome": "Family achieved full portfolio visibility, reduced advisory costs through consolidation, and established a governance framework ready to scale."
       },
       "case2": {
         "tag": "SUCCESSION PLANNING",
         "title": "Patriarch preparing transition to next generation",
         "situation": "The founder of a private holding wished to step back from active management while ensuring his three adult children inherited responsibly.",
-        "approach": "We facilitated family meetings to align values, drafted a family constitution, implemented an irrevocable trust structure, and created an education program for the children covering investment principles.",
+        "approach": "We facilitated a structured family governance process, including facilitated family meetings to align values across generations, drafting of a family constitution establishing decision-making principles, and coordination of a multi-generational succession framework, engaging specialist legal counsel where required. A formal ownership transition plan was established with defined governance milestones and an investment education programme for the next generation.",
         "outcome": "Formal handover completed over 18 months, all three children active in defined roles, family wealth governance now transcends any single individual."
       },
       "case3": {
@@ -2008,24 +2008,24 @@
       "subheading": "Representative situations we structure for our clients.",
       "case1": {
         "tag": "MULTI-JURISDICTION HOLDING",
-        "title": "Entrepreneur with operations in five countries",
-        "situation": "An owner of an international consumer brand had operations in five jurisdictions but a fragmented holding structure that exposed the group to inefficient taxation and inheritance complexity.",
-        "approach": "We restructured ownership through a Luxembourg holding company with regional subsidiaries, implemented tax-efficient profit repatriation, and integrated estate planning provisions.",
-        "outcome": "Group effective tax rate reduced by 12 percentage points, dividend flows now operate predictably, and ownership transition mechanism is fully documented."
+        "title": "Entrepreneur with operations across multiple jurisdictions",
+        "situation": "An owner of an international consumer brand operated across multiple jurisdictions through a fragmented holding structure, creating exposure to unnecessary tax leakage, unpredictable dividend flows, and unresolved succession risk.",
+        "approach": "We designed a consolidated holding structure in a treaty-efficient European jurisdiction, established regional subsidiaries aligned with operational substance, and implemented compliant profit repatriation mechanisms.",
+        "outcome": "Structural realignment within applicable treaty frameworks delivered a material reduction in the group's effective tax rate. Dividend flows became fully predictable, and a documented ownership transition mechanism was put in place for the next generation."
       },
       "case2": {
         "tag": "TRUST IMPLEMENTATION",
-        "title": "Family establishing protective trust structure",
-        "situation": "A family wished to protect liquid assets from potential commercial liabilities tied to operating businesses, while preserving long-term family access.",
-        "approach": "We established a discretionary trust in a stable common-law jurisdiction, transferred designated assets, and implemented protector provisions to preserve family oversight.",
-        "outcome": "Designated assets ring-fenced from operational business risk, family retains influence through structured protocols, and intergenerational transfer mechanism in place."
+        "title": "Family establishing discretionary trust structure",
+        "situation": "A family sought to separate designated assets from the risk profile of active operating businesses, while preserving long-term beneficial access for current and future generations.",
+        "approach": "We established a discretionary trust in a stable common-law jurisdiction, transferred designated assets under a structured settlement, and implemented protector provisions to retain meaningful family oversight without compromising the trust's legal integrity.",
+        "outcome": "Designated assets were effectively separated from operational business risk. The family retained influence through defined protector rights."
       },
       "case3": {
-        "tag": "RESIDENCY OPTIMIZATION",
-        "title": "Professional considering tax residency change",
-        "situation": "A senior professional was contemplating relocation between two European jurisdictions, with significant tax implications depending on the structure of the move.",
-        "approach": "We coordinated with local counsel in both jurisdictions, modeled the long-term tax outcomes, restructured income-generating assets pre-move, and timed the residency change around fiscal year boundaries.",
-        "outcome": "Lifetime tax savings significant relative to a default approach, residency change executed without compliance issues, and ongoing structure remains efficient."
+        "tag": "RESIDENCY TRANSITION PLANNING",
+        "title": "Senior professional relocating between European jurisdictions",
+        "situation": "A senior professional was considering relocation between two European jurisdictions. The move carried significant tax implications depending on the sequence, structure, and timing of the transition.",
+        "approach": "We coordinated with licensed local counsel in both jurisdictions, modeled long-term tax outcomes under each scenario, and advised on the alignment of asset structures with the client's new jurisdictional profile.",
+        "outcome": "The residency transition was completed without compliance issues. Pre-move structuring delivered a significantly more favourable long-term outcome compared to an unadvised default approach."
       }
     },
     "ma": {
@@ -2063,19 +2063,12 @@
         "approach": "We mapped the entire portfolio, restructured ownership for efficiency, divested underperforming assets, and reallocated proceeds into institutional real estate funds for diversification.",
         "outcome": "Portfolio yield improved measurably, ownership structures simplified, and liquidity now exists where previously the assets were operationally heavy."
       },
-      "case2": {
-        "tag": "ART & COLLECTIBLES",
-        "title": "Collector formalizing significant art holdings",
-        "situation": "A multi-decade art collector had built a substantial collection but lacked formal structuring for insurance, valuation, succession, and potential institutional partnerships.",
-        "approach": "We coordinated independent valuation, established a dedicated holding entity with appropriate insurance, designed an inheritance protocol with the family, and explored museum loan partnerships.",
-        "outcome": "Collection formally protected and valued, succession path defined for each major piece, and selected works now circulate in institutional contexts."
-      },
       "case3": {
-        "tag": "PHILANTHROPIC STRUCTURE",
-        "title": "Family establishing dedicated foundation",
-        "situation": "A family wished to commit a portion of wealth to long-term philanthropic activity but lacked the structural framework to do so efficiently and meaningfully.",
-        "approach": "We established a charitable foundation in a suitable jurisdiction, defined the mission and governance, structured an endowment for sustainable annual giving, and engaged the next generation in selection of focus areas.",
-        "outcome": "Foundation operational with dedicated governance, sustainable annual giving secured through endowment yield, and family alignment achieved across two generations of donors."
+        "tag": "FOUNDER WEALTH ADVISORY",
+        "title": "Startup founder managing pre- and post-exit wealth",
+        "situation": "A founder of a venture-backed technology company held the majority of personal wealth in a single concentrated equity position. With a liquidity event approaching, they sought to build a financial structure that would survive the exit and serve long-term goals beyond the company.",
+        "approach": "We mapped the founder's full financial picture — vested and unvested equity, secondary liquidity options, and personal liabilities. We designed a pre-exit holding structure, built a diversified investment policy reflecting the founder's risk profile and time horizon, and coordinated tax-efficient distribution of post-exit capital across asset classes.",
+        "outcome": "Pre-exit structure in place six months before close. Post-exit capital progressively diversified across asset classes, with a transition roadmap agreed within the first 90 days. Founder moved from single-stock concentration to a professionally managed multi-asset portfolio with clear governance and reinvestment policy."
       }
     }
   },
