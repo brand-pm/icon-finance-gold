@@ -188,25 +188,53 @@
     justify-content: center;
     gap: 8px;
   }
+  /* Glass lines: gold gradient with soft glow, fading at the ends */
   .gold-separator::before,
   .gold-separator::after {
     content: '';
-    width: 40px;
+    width: 44px;
     height: 1.5px;
-    background: hsl(var(--gold));
-    opacity: 0.7;
+    background: linear-gradient(
+      90deg,
+      hsl(var(--gold) / 0) 0%,
+      hsl(var(--gold) / 0.55) 35%,
+      hsl(var(--gold) / 0.95) 100%
+    );
+    box-shadow: 0 0 6px hsl(var(--gold) / 0.45);
+    border-radius: 1px;
+  }
+  .gold-separator::after {
+    background: linear-gradient(
+      270deg,
+      hsl(var(--gold) / 0) 0%,
+      hsl(var(--gold) / 0.55) 35%,
+      hsl(var(--gold) / 0.95) 100%
+    );
+  }
+  /* Glass diamonds: faceted gold gradient + inner highlight + outer glow */
+  .gold-separator .dot,
+  .gold-separator .dot-lg {
+    background:
+      linear-gradient(
+        135deg,
+        #F4D5A8 0%,
+        hsl(var(--gold)) 45%,
+        #A06940 100%
+      );
+    transform: rotate(45deg);
+    box-shadow:
+      inset 1px 1px 0 hsl(0 0% 100% / 0.55),
+      inset -1px -1px 0 hsl(25 50% 18% / 0.45),
+      0 0 8px hsl(var(--gold) / 0.55);
+    border-radius: 1px;
   }
   .gold-separator .dot {
     width: 8px;
     height: 8px;
-    background: hsl(var(--gold));
-    transform: rotate(45deg);
   }
   .gold-separator .dot-lg {
     width: 14px;
     height: 14px;
-    background: hsl(var(--gold));
-    transform: rotate(45deg);
   }
 
   .btn-gold {
