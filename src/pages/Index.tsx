@@ -43,6 +43,7 @@ const Index = () => {
         ctaVariant="filled"
       />
       <WhyUs />
+      <PresaleFAQ />
       <Insights />
       <Contact />
       <Footer />
