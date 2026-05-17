@@ -54,6 +54,8 @@ const About = () => {
         }))}
       />
 
+      <TeamStats />
+
       <TeamSection
         eyebrow={t("about.team.eyebrow")}
         title={t("about.team.title")}
@@ -65,8 +67,6 @@ const About = () => {
           linkedin: TEAM_LINKEDIN_BY_INDEX[idx],
         }))}
       />
-
-      <TeamStats />
 
       <PortfolioManagement
         title={t("about.story.title")}
