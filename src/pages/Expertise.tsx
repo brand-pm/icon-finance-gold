@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="container-main relative z-10 flex items-center" style={{ minHeight: "28vh" }}>
         <div className="max-w-xl">
           <div className="opacity-0 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            <p className="eyebrow mb-6">{t("expertise.hero.eyebrow")}</p>
+            <p className="eyebrow text-gold mb-6">{t("expertise.hero.eyebrow")}</p>
             <h1 className="text-gold font-light leading-[1.15] mb-6" style={{ fontSize: "clamp(32px,5vw,48px)" }}>
               {title.split("\n").map((line, i) => (
                 <span key={i}>{line}{i < title.split("\n").length - 1 && <br />}</span>
