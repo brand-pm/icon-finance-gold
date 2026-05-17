@@ -16,7 +16,7 @@ const PresaleFAQ = () => {
   const items = t("presaleFAQ.items", { returnObjects: true }) as FAQItem[];
 
   return (
-    <section className="section-padding bg-offwhite">
+    <section className="section-padding bg-offwhite marble-texture">
       <div className="container-main" ref={ref}>
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="opacity-0 animate-fade-up text-center flex flex-col items-center" style={{ animationDelay: "0.1s" }}>

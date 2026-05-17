@@ -16,7 +16,7 @@ const ComparisonBlock = () => {
   const h = t("comparison.headers", { returnObjects: true }) as Row;
 
   return (
-    <section className="section-padding bg-offwhite marble-texture" ref={ref}>
+    <section className="section-padding bg-offwhite" ref={ref}>
       <div className="container-main">
         {/* Header */}
         <div

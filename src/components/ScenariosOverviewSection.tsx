@@ -10,7 +10,7 @@ const ScenariosOverviewSection = () => {
   const localize = useLocalizedPath();
 
   return (
-    <section className="section-padding" style={{ background: "#FFFFFF" }}>
+    <section className="section-padding bg-offwhite marble-texture">
       <div className="container-main" ref={ref}>
         {/* Header */}
         <div

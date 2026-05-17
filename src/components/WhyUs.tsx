@@ -9,7 +9,7 @@ const WhyUs = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="section-padding bg-offwhite marble-texture" ref={ref}>
+    <section className="section-padding bg-offwhite" ref={ref}>
       <div className="container-main">
         <div className="text-center mb-16 opacity-0 animate-fade-up">
           <p className="eyebrow mb-4">{t("whyUs.eyebrow")}</p>

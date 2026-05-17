@@ -1,47 +1,61 @@
+## Проблема
 
+Сейчас на главной идут две пары "одинаковых" фонов подряд:
 
-## Fix: Header overflow / CTA touching edge on desktop (UA/RU/PL)
+```
+1.  Hero                       — DARK (navy)
+2.  ServicesIntro              — plain offwhite
+3.  Services                   — MARBLE
+4.  ComparisonBlock            — MARBLE   ← мрамор за мрамором ❌
+5.  ScenariosOverviewSection   — plain white
+6.  PortfolioManagement        — DARK
+7.  WhyUs                      — MARBLE
+8.  PresaleFAQ                 — plain offwhite
+9.  Insights                   — plain offwhite ← плоский за плоским ❌
+10. Contact                    — MARBLE
+11. Footer                     — DARK
+```
 
-### Problem
-At desktop widths 1024–1300px the header nav becomes overcrowded in non-English locales because Cyrillic words ("РОЗПОЧАТИ ДІАЛОГ", "ЕКСПЕРТИЗА", "АНАЛІТИКА") are much longer than English. Result:
-- The "Start a Dialogue" CTA text touches the right edge of the viewport.
-- Items appear to break out of their block.
-- The whole bar looks unbalanced.
+## Решение — идеальное чередование
 
-Root causes in `src/components/Header.tsx`:
-1. Desktop nav activates at `lg:` (1024px) — too early for long Cyrillic labels.
-2. Fixed `gap-8` (32px) between every nav item.
-3. CTA is plain text without a contained button — visually merges with the right edge.
-4. No `whitespace-nowrap` on labels, no min-width safeguards.
+Первые 3 секции не трогаем (как просили). Дальше выстраиваем строгий ритм
+**plain → marble → plain → marble** между двумя тёмными "якорями"
+(Hero / PortfolioManagement / Footer):
 
-### What will change
+```
+1.  Hero                       — DARK            ✓ без изменений
+2.  ServicesIntro              — plain           ✓ без изменений
+3.  Services                   — MARBLE          ✓ без изменений
+4.  ComparisonBlock            — plain           ← убрать marble-texture
+5.  ScenariosOverviewSection   — MARBLE          ← добавить marble-texture + bg-offwhite
+6.  PortfolioManagement        — DARK            ✓ без изменений
+7.  WhyUs                      — plain           ← убрать marble-texture
+8.  PresaleFAQ                 — MARBLE          ← добавить marble-texture
+9.  Insights                   — plain           ✓ без изменений
+10. Contact                    — MARBLE          ✓ без изменений
+11. Footer                     — DARK            ✓ без изменений
+```
 
-**1. Header desktop breakpoint & spacing** (`src/components/Header.tsx`)
-- Switch desktop nav activation from `lg:` → `xl:` (1280px). Below that, mobile menu is shown — guarantees no cramming on mid-size laptops.
-- Reduce nav gap from `gap-8` → responsive `gap-6 2xl:gap-8`.
-- Add `whitespace-nowrap` to every nav label and the CTA.
-- Add a small left margin/divider before LanguageSwitcher so it doesn't visually merge with the previous label.
+Между каждой парой соседних секций — смена фактуры. Между двумя тёмными
+якорями ровно по 4 светлых секции с чередованием plain ↔ marble.
 
-**2. CTA styling**
-- Convert "Start a Dialogue →" link from plain text into a contained gold-outline pill: `border border-gold/60 px-4 py-2 rounded-full hover:bg-gold hover:text-navy`.
-- This visually anchors the right side and creates breathing room from the viewport edge.
+## Файлы и точечные правки
 
-**3. Container padding**
-- Increase header container side padding at desktop: `px-5 md:px-6 xl:px-8` to give the CTA more room from the edge.
+| Файл | Текущее | Новое |
+|---|---|---|
+| `src/components/ComparisonBlock.tsx` (l.19) | `bg-offwhite marble-texture` | `bg-offwhite` |
+| `src/components/ScenariosOverviewSection.tsx` (l.13) | `style={{ background: "#FFFFFF" }}` | `bg-offwhite marble-texture` (убрать inline style) |
+| `src/components/WhyUs.tsx` (l.12) | `bg-offwhite marble-texture` | `bg-offwhite` |
+| `src/components/PresaleFAQ.tsx` (l.19) | `bg-offwhite` | `bg-offwhite marble-texture` |
 
-**4. Mobile toggle breakpoint**
-- Update the mobile menu button + portal panel from `lg:hidden` → `xl:hidden` to match the new breakpoint, so the burger appears up to 1279px.
-- Update the mega-menu dropdown from `hidden lg:block` → `hidden xl:block`.
+Никаких изменений в layout, контенте, отступах, типографике, gold-separators
+или анимациях — только класс фона на 4 секциях.
 
-### Files touched
-- `src/components/Header.tsx` — breakpoint swaps, gap reduction, `whitespace-nowrap`, CTA pill styling, container padding tweak.
+## Что это даёт
 
-No content, no translations, no other components changed. All four languages (EN/RU/UK/PL) benefit automatically because the layout now accommodates the longest labels.
-
-### Verification
-After the change I'll visually confirm in the preview at `/uk` (the worst case) that:
-- All nav items fit on one line without touching the edge.
-- The CTA pill has clear right-side padding from the viewport edge.
-- Mobile burger appears on viewports below 1280px.
-- English version (`/en`) still looks balanced and not too sparse.
-
+- Ноль "слипшихся" одинаковых фонов
+- Симметричный ритм относительно тёмных якорей (Hero → Portfolio → Footer)
+- Marble-фактура расставляет акценты на ключевых блоках: Services,
+  Scenarios, PresaleFAQ, Contact — это самые "продающие" секции
+- Plain-фон отдыхает глаз на Intro, Comparison, WhyUs, Insights —
+  где много мелкого текста / таблиц / карточек
