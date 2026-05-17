@@ -2113,29 +2113,15 @@
   },
   "contactForm": {
     "requiredNote": "Pola oznaczone * są wymagane",
-    "subject": {
-      "label": "Temat",
-      "placeholder": "Wybierz usługę",
-      "options": {
-        "wm": "Zarządzanie majątkiem",
-        "fo": "Family Office",
-        "st": "Strukturyzacja i podatki",
-        "ma": "Doradztwo M&A",
-        "ss": "Rozwiązania specjalne"
-      }
-    },
     "errors": {
-      "firstNameRequired": "Wpisz imię",
-      "firstNameInvalid": "Używaj tylko liter",
-      "lastNameRequired": "Wpisz nazwisko",
-      "lastNameInvalid": "Używaj tylko liter",
       "phoneInvalid": "Wpisz poprawny numer telefonu",
       "emailRequired": "Wpisz służbowy email",
       "emailInvalid": "Wpisz poprawny adres email",
-      "subjectRequired": "Wybierz temat",
-      "messageRequired": "Wpisz wiadomość",
-      "messageTooShort": "Wiadomość musi zawierać co najmniej 10 znaków",
-      "consentRequired": "Zgoda jest wymagana do wysłania formularza"
+      "consentRequired": "Zgoda jest wymagana do wysłania formularza",
+      "nameRequired": "Proszę podać imię i nazwisko",
+      "nameInvalid": "Proszę podać imię i nazwisko",
+      "descriptorRequired": "Proszę wybrać opcję",
+      "primaryInterestRequired": "Proszę wybrać opcję"
     },
     "states": {
       "sending": "Wysyłanie...",
@@ -2147,12 +2133,35 @@
     "consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z [Polityką prywatności](/privacy-policy).",
     "privacyPolicy": "Polityką prywatności",
     "labels": {
-      "firstName": "Imię",
-      "lastName": "Nazwisko",
       "email": "Email służbowy",
       "phone": "Telefon (opcjonalnie)",
       "message": "Wiadomość",
-      "send": "Wyślij"
+      "send": "Wyślij",
+      "name": "Imię i nazwisko",
+      "namePlaceholder": "Imię i nazwisko",
+      "messagePlaceholder": "Krótko o Państwa sytuacji (opcjonalnie)"
+    },
+    "descriptor": {
+      "label": "Co najlepiej Państwa opisuje?",
+      "placeholder": "Wybierz opcję",
+      "options": {
+        "entrepreneur": "Przedsiębiorca / właściciel firmy",
+        "family": "Rodzina o znaczącym majątku",
+        "postExit": "Założyciel po wyjściu z biznesu",
+        "relocating": "Relokujący kapitał między jurysdykcjami",
+        "other": "Inne"
+      }
+    },
+    "primaryInterest": {
+      "label": "Główne zainteresowanie",
+      "placeholder": "Wybierz opcję",
+      "options": {
+        "wm": "Zarządzanie majątkiem",
+        "fo": "Family Office",
+        "ma": "Doradztwo M&A",
+        "st": "Strukturyzacja i podatki",
+        "notSure": "Jeszcze nie wiem"
+      }
     }
   },
   "servicesIntro": {
