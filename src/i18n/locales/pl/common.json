@@ -815,6 +815,10 @@
         {
           "question": "Jak chronią Państwo poufność klientów?",
           "answer": "Poufność jest zarówno obowiązkiem zawodowym, jak i prawnym. Informacje o kliencie nigdy nie są udostępniane stronom trzecim bez wyraźnej zgody. Umowy NDA są dostępne na życzenie."
+        },
+        {
+          "question": "Jak przechowywane są aktywa klientów?",
+          "answer": "Aktywa klientów zarządzane są w ramach struktury depozytowej zaprojektowanej w celu ochrony interesów własnościowych klienta. Obowiązujące warunki depozytowe, w tym tożsamość podmiotów depozytariusza lub holdingowych oraz odpowiednie warunki dostępu, określone są w umowie z klientem przekazywanej na etapie onboardingu. Niektóre klasy aktywów mogą podlegać warunkom płynności na poziomie funduszu."
         }
       ],
       "cta": {
