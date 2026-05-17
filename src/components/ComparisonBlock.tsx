@@ -69,23 +69,25 @@ const ComparisonBlock = () => {
               className="group bg-white rounded-xl border border-charcoal/10 opacity-0 animate-fade-up transition-all duration-300 hover:border-gold/40 hover:shadow-[0_12px_32px_-16px_rgba(224,167,118,0.25)]"
               style={{ animationDelay: `${0.25 + i * 0.08}s` }}
             >
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 items-center p-6 md:p-7">
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-6 items-center p-6 md:p-7">
                 {/* Parameter */}
-                <div className="md:col-span-3 flex items-center gap-3">
-                  <span className="hidden md:block text-gold/60 text-sm transition-colors duration-300 group-hover:text-gold">
-                    0{i + 1}
-                  </span>
-                  <p className="md:hidden text-[10px] uppercase tracking-[0.18em] font-semibold text-slate mb-1">
-                    {h.parameter}
-                  </p>
-                  <p className="text-charcoal text-[15px] font-medium leading-snug">
+                <div className="md:col-span-3">
+                  <div className="flex items-baseline gap-3 mb-2 md:mb-0">
+                    <span className="text-gold/70 text-xs font-semibold tracking-[0.18em] transition-colors duration-300 group-hover:text-gold">
+                      0{i + 1}
+                    </span>
+                    <span className="md:hidden text-[10px] uppercase tracking-[0.18em] font-semibold text-slate">
+                      {h.parameter}
+                    </span>
+                  </div>
+                  <p className="text-charcoal text-[16px] md:text-[15px] font-medium leading-snug">
                     {r.parameter}
                   </p>
                 </div>
 
                 {/* Icon Finance */}
-                <div className="md:col-span-5 md:pl-8 md:border-l-2 md:border-gold/30 md:group-hover:border-gold transition-colors duration-300">
-                  <p className="md:hidden text-[10px] uppercase tracking-[0.18em] font-semibold text-gold mb-1">
+                <div className="md:col-span-5 md:pl-8 md:border-l-2 md:border-gold/30 md:group-hover:border-gold transition-colors duration-300 pt-4 md:pt-0 border-t border-gold/15 md:border-t-0">
+                  <p className="md:hidden text-[10px] uppercase tracking-[0.18em] font-semibold text-gold mb-2">
                     {h.iconFinance}
                   </p>
                   <div className="flex items-start gap-3">
@@ -99,8 +101,8 @@ const ComparisonBlock = () => {
                 </div>
 
                 {/* Private Bank */}
-                <div className="md:col-span-4 md:pl-8">
-                  <p className="md:hidden text-[10px] uppercase tracking-[0.18em] font-semibold text-slate/70 mb-1">
+                <div className="md:col-span-4 md:pl-8 pt-4 md:pt-0 border-t border-charcoal/10 md:border-t-0">
+                  <p className="md:hidden text-[10px] uppercase tracking-[0.18em] font-semibold text-slate/70 mb-2">
                     {h.privateBank}
                   </p>
                   <div className="flex items-start gap-3">
