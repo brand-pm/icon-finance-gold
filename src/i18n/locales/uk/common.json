@@ -1831,27 +1831,27 @@
     "siteName": "Icon Finance",
     "pages": {
       "home": {
-        "title": "Icon Finance - Independent Wealth Management & Family Office",
+        "title": "Icon Finance — Незалежне управління капіталом і Family Office",
         "description": "Незалежне управління капіталом, family office, структурування й податки, M&A та особливі рішення для підприємців і родин."
       },
       "about": {
-        "title": "About | Icon Finance",
+        "title": "Про нас | Icon Finance",
         "description": "Знайомство з командою Icon Finance. Незалежна порада, інтегрований підхід і довгострокова перспектива."
       },
       "expertise": {
-        "title": "Our Expertise | Icon Finance",
+        "title": "Наша експертиза | Icon Finance",
         "description": "Транскордонна експертиза в різних галузях і юрисдикціях. Компетенції Icon Finance у капіталі, family office, податках і M&A."
       },
       "contact": {
-        "title": "Contact | Icon Finance",
+        "title": "Контакти | Icon Finance",
         "description": "Запишіться на приватну конфіденційну консультацію. Спершу слухаємо - потім пропонуємо шлях."
       },
       "insights": {
-        "title": "Insights | Icon Finance",
+        "title": "Аналітика | Icon Finance",
         "description": "Статті, аналітика та погляди на управління капіталом, структурування, family office і ринки капіталу."
       },
       "wealthManagement": {
-        "title": "Wealth Management | Icon Finance",
+        "title": "Управління капіталом | Icon Finance",
         "description": "Незалежне управління капіталом для підприємців і родин. Збереження та примноження капіталу через покоління."
       },
       "familyOffice": {
@@ -1859,32 +1859,32 @@
         "description": "Виділений, спільний, консультаційний і віртуальний family office для координації капіталу між поколіннями."
       },
       "structuringTax": {
-        "title": "Structuring & Tax | Icon Finance",
+        "title": "Структурування та податки | Icon Finance",
         "description": "Міжнародне структурування капіталу і податкове планування в різних юрисдикціях. Законно, ефективно, готово до спадкування."
       },
       "maConsulting": {
-        "title": "M&A Consulting | Icon Finance",
+        "title": "Консалтинг M&A | Icon Finance",
         "description": "Незалежний M&A консалтинг для власників - продаж, придбання, залучення капіталу та due diligence."
       },
       "specialSolutions": {
-        "title": "Special Solutions | Icon Finance",
+        "title": "Спеціальні рішення | Icon Finance",
         "description": "Індивідуальний консалтинг для мистецтва, нерухомості, філантропії та ESG - коли стандартного управління недостатньо."
       },
       "notFound": {
-        "title": "Сторінку не знайдено - Icon Finance",
+        "title": "Сторінку не знайдено | Icon Finance",
         "description": "Сторінка, яку ви шукаєте, не існує."
       },
       "privacyPolicy": {
         "description": "",
-        "title": "Privacy Policy | Icon Finance"
+        "title": "Політика конфіденційності | Icon Finance"
       },
       "cookiePolicy": {
         "description": "",
-        "title": "Cookie Policy | Icon Finance"
+        "title": "Політика cookie | Icon Finance"
       },
       "terms": {
         "description": "",
-        "title": "Terms & Conditions | Icon Finance"
+        "title": "Умови використання | Icon Finance"
       }
     }
   },

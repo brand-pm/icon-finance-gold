@@ -1831,27 +1831,27 @@
     "siteName": "Icon Finance",
     "pages": {
       "home": {
-        "title": "Icon Finance - Independent Wealth Management & Family Office",
+        "title": "Icon Finance — Niezależne zarządzanie majątkiem i Family Office",
         "description": "Niezależne zarządzanie majątkiem, family office, strukturyzacja i podatki, M&A oraz rozwiązania specjalne dla przedsiębiorców i rodzin."
       },
       "about": {
-        "title": "About | Icon Finance",
+        "title": "O nas | Icon Finance",
         "description": "Poznaj zespół Icon Finance. Niezależne doradztwo, zintegrowane podejście i długofalowa perspektywa."
       },
       "expertise": {
-        "title": "Our Expertise | Icon Finance",
+        "title": "Nasza ekspertyza | Icon Finance",
         "description": "Transgraniczna ekspertyza w wielu branżach i jurysdykcjach. Kompetencje Icon Finance w zakresie majątku, family office, podatków i M&A."
       },
       "contact": {
-        "title": "Contact | Icon Finance",
+        "title": "Kontakt | Icon Finance",
         "description": "Umów prywatną, poufną konsultację z naszym zespołem. Najpierw słuchamy, potem proponujemy rozwiązanie."
       },
       "insights": {
-        "title": "Insights | Icon Finance",
+        "title": "Analizy | Icon Finance",
         "description": "Artykuły, analizy i perspektywy dotyczące zarządzania majątkiem, strukturyzacji, family office i rynków kapitałowych."
       },
       "wealthManagement": {
-        "title": "Wealth Management | Icon Finance",
+        "title": "Zarządzanie majątkiem | Icon Finance",
         "description": "Niezależne zarządzanie majątkiem dla przedsiębiorców i rodzin. Ochrona i pomnażanie kapitału przez pokolenia."
       },
       "familyOffice": {
@@ -1859,32 +1859,32 @@
         "description": "Dedykowany, współdzielony, doradczy i wirtualny family office dla wielopokoleniowej koordynacji majątku."
       },
       "structuringTax": {
-        "title": "Structuring & Tax | Icon Finance",
+        "title": "Strukturyzacja i podatki | Icon Finance",
         "description": "Międzynarodowa strukturyzacja majątku i planowanie podatkowe w wielu jurysdykcjach. Zgodne z prawem, efektywne, gotowe na sukcesję."
       },
       "maConsulting": {
-        "title": "M&A Consulting | Icon Finance",
+        "title": "Doradztwo M&A | Icon Finance",
         "description": "Niezależne doradztwo M&A dla właścicieli i przedsiębiorców - sprzedaż, akwizycje, pozyskanie kapitału i due diligence."
       },
       "specialSolutions": {
-        "title": "Special Solutions | Icon Finance",
+        "title": "Rozwiązania specjalne | Icon Finance",
         "description": "Doradztwo szyte na miarę dla sztuki, nieruchomości, filantropii i ESG - gdy standardowe zarządzanie majątkiem nie wystarcza."
       },
       "notFound": {
-        "title": "Nie znaleziono strony - Icon Finance",
+        "title": "Strona nie znaleziona | Icon Finance",
         "description": "Strona, której szukasz, nie istnieje."
       },
       "privacyPolicy": {
         "description": "",
-        "title": "Privacy Policy | Icon Finance"
+        "title": "Polityka prywatności | Icon Finance"
       },
       "cookiePolicy": {
         "description": "",
-        "title": "Cookie Policy | Icon Finance"
+        "title": "Polityka cookie | Icon Finance"
       },
       "terms": {
         "description": "",
-        "title": "Terms & Conditions | Icon Finance"
+        "title": "Regulamin | Icon Finance"
       }
     }
   },

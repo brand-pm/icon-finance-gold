@@ -1831,27 +1831,27 @@
     "siteName": "Icon Finance",
     "pages": {
       "home": {
-        "title": "Icon Finance - Independent Wealth Management & Family Office",
+        "title": "Icon Finance — Независимое управление капиталом и Family Office",
         "description": "Независимое управление капиталом, family office, структурирование и налоги, M&A и особые решения для предпринимателей и семей."
       },
       "about": {
-        "title": "About | Icon Finance",
+        "title": "О нас | Icon Finance",
         "description": "Знакомство с командой Icon Finance. Независимый совет, интегрированный подход и долгосрочная перспектива."
       },
       "expertise": {
-        "title": "Our Expertise | Icon Finance",
+        "title": "Наша экспертиза | Icon Finance",
         "description": "Международная экспертиза в разных отраслях и юрисдикциях. Компетенции Icon Finance в капитале, family office, налогах и M&A."
       },
       "contact": {
-        "title": "Contact | Icon Finance",
+        "title": "Контакты | Icon Finance",
         "description": "Запишитесь на приватную конфиденциальную консультацию. Сначала слушаем - затем предлагаем путь."
       },
       "insights": {
-        "title": "Insights | Icon Finance",
+        "title": "Аналитика | Icon Finance",
         "description": "Статьи, аналитика и взгляды на управление капиталом, структурирование, family office и рынки капитала."
       },
       "wealthManagement": {
-        "title": "Wealth Management | Icon Finance",
+        "title": "Управление капиталом | Icon Finance",
         "description": "Независимое управление капиталом для предпринимателей и семей. Сохранение и приумножение капитала через поколения."
       },
       "familyOffice": {
@@ -1859,32 +1859,32 @@
         "description": "Единый, объединенный, консультационный и виртуальный family office для координации капитала между поколениями."
       },
       "structuringTax": {
-        "title": "Structuring & Tax | Icon Finance",
+        "title": "Структурирование и налоги | Icon Finance",
         "description": "Международное структурирование капитала и налоговое планирование в нескольких юрисдикциях. Законно, эффективно, готово к преемственности."
       },
       "maConsulting": {
-        "title": "M&A Consulting | Icon Finance",
+        "title": "Консалтинг M&A | Icon Finance",
         "description": "Независимый M&A консалтинг для собственников - продажа, приобретения, привлечение капитала и due diligence."
       },
       "specialSolutions": {
-        "title": "Special Solutions | Icon Finance",
+        "title": "Специальные решения | Icon Finance",
         "description": "Индивидуальный консалтинг для искусства, недвижимости, филантропии и ESG - когда стандартного управления недостаточно."
       },
       "notFound": {
-        "title": "Страница не найдена - Icon Finance",
+        "title": "Страница не найдена | Icon Finance",
         "description": "Страница, которую вы ищете, не существует."
       },
       "privacyPolicy": {
         "description": "",
-        "title": "Privacy Policy | Icon Finance"
+        "title": "Политика конфиденциальности | Icon Finance"
       },
       "cookiePolicy": {
         "description": "",
-        "title": "Cookie Policy | Icon Finance"
+        "title": "Политика cookie | Icon Finance"
       },
       "terms": {
         "description": "",
-        "title": "Terms & Conditions | Icon Finance"
+        "title": "Условия использования | Icon Finance"
       }
     }
   },
