@@ -161,20 +161,30 @@ export const IconInternational = (props: IconProps) => {
 /* 4. Post-Exit Principals — open arched gateway with rising gem */
 export const IconPostExit = (props: IconProps) => {
   const id = "ic-pex";
+  const archD =
+    "M10 56 V28 C10 16.9543 19.8579 8 32 8 C44.1421 8 54 16.9543 54 28 V56 Z";
   return (
     <Base {...props}>
       <GlassDefs id={id} />
       <g filter={`url(#${id}-glow)`}>
-        {/* arch body — symmetric about x=32 */}
-        <path d="M10 56 V28 C10 16.9543 19.8579 8 32 8 C44.1421 8 54 16.9543 54 28 V56 Z" fill={`url(#${id}-body)`} />
-        {/* inner negative arch */}
+        {/* arch body — unified glass stack */}
+        <path d={archD} fill={`url(#${id}-body)`} />
+        <path d={archD} fill={`url(#${id}-depth)`} />
+        <path d={archD} fill={`url(#${id}-rim)`} />
+        <path d={archD} fill={`url(#${id}-gloss)`} opacity="0.7" />
+        <path d={archD} fill={`url(#${id}-spec)`} />
+        {/* inner negative arch (cuts opening) */}
         <path d="M18 56 V30 C18 22.268 24.268 16 32 16 C39.732 16 46 22.268 46 30 V56 Z" fill="#0F162D" />
-        {/* gloss edge */}
-        <path d="M10 28 C10 16.9543 19.8579 8 32 8" stroke="#FFFFFF" strokeWidth="1.2" opacity="0.6" fill="none" />
-        {/* rising diamond inside arch — symmetric */}
-        <path d="M32 30 L39 38 L32 46 L25 38 Z" fill={`url(#${id}-edge)`} />
-        <path d="M32 30 L39 38 L32 38 Z" fill="#FFFFFF" opacity="0.45" />
-        <path d="M32 30 L25 38 L32 38 Z" fill="#FFFFFF" opacity="0.25" />
+        {/* inner edge dark line for depth */}
+        <path d="M18 30 C18 22.268 24.268 16 32 16 C39.732 16 46 22.268 46 30" stroke={GOLD_SHADOW} strokeWidth="0.6" opacity="0.7" fill="none" />
+        {/* outer gloss edge */}
+        <path d="M10 28 C10 16.9543 19.8579 8 32 8" stroke="#FFFFFF" strokeWidth="1.1" opacity="0.65" fill="none" />
+        {/* rising diamond — same material */}
+        <path d="M32 30 L39 38 L32 46 L25 38 Z" fill={`url(#${id}-body)`} />
+        <path d="M32 30 L39 38 L32 46 L25 38 Z" fill={`url(#${id}-depth)`} />
+        <path d="M32 30 L39 38 L32 38 Z" fill="#FFFFFF" opacity="0.5" />
+        <path d="M32 30 L25 38 L32 38 Z" fill="#FFFFFF" opacity="0.22" />
+        <path d="M32 30 L39 38 L32 46 L25 38 Z" stroke={GOLD_SHADOW} strokeWidth="0.5" opacity="0.5" fill="none" />
         {/* base ground line */}
         <path d="M8 56 H56" stroke={GOLD_DEEP} strokeWidth="1.2" />
       </g>
