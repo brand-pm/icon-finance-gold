@@ -8,41 +8,37 @@ import { useLocalizedPath } from "@/i18n/useLocalizedPath";
 
 /* ---------------- Types ---------------- */
 
-type SubjectId = "wm" | "fo" | "st" | "ma" | "ss";
+type DescriptorId = "entrepreneur" | "family" | "postExit" | "relocating" | "other";
+type InterestId = "wm" | "fo" | "ma" | "st" | "notSure";
 
-type FieldKey = "firstName" | "lastName" | "email" | "phone" | "subject" | "message" | "consent";
+type FieldKey = "name" | "email" | "phone" | "descriptor" | "primaryInterest" | "message" | "consent";
 
 type Errors = Partial<Record<FieldKey, string>>;
 
 type FormData = {
-  firstName: string;
-  lastName: string;
+  name: string;
   email: string;
   phone: string;
-  subject: SubjectId | "";
+  descriptor: DescriptorId | "";
+  primaryInterest: InterestId | "";
   message: string;
   consent: boolean;
 };
 
 export interface ContactFormProps {
-  /** Visual variant. Both render on dark navy panel. */
   variant?: "panel";
-  /** Optional onSubmit override. Defaults to a simulated async success. */
   onSubmit?: (payload: Omit<FormData, "consent">) => Promise<void>;
-  /** Form heading (gold) */
   heading?: string;
-  /** Subheading (slate/white-ish) */
   subheading?: string;
-  /** Optional className for the outer panel */
   className?: string;
 }
 
-/* ---------------- Validation ---------------- */
+const DESCRIPTOR_IDS: DescriptorId[] = ["entrepreneur", "family", "postExit", "relocating", "other"];
+const INTEREST_IDS: InterestId[] = ["wm", "fo", "ma", "st", "notSure"];
 
-const NAME_REGEX = /^[\p{L}\s'\-]+$/u;
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PHONE_REGEX = /^[+\d][\d\s\-()]{5,}$/;
-const SUBJECT_IDS: SubjectId[] = ["wm", "fo", "st", "ma", "ss"];
+const NAME_REGEX = /^[\p{L}][\p{L}\s'\-]+\s+[\p{L}][\p{L}\s'\-]+$/u;
 
 const countDigits = (v: string) => (v.match(/\d/g) || []).length;
 
@@ -83,17 +79,9 @@ function FloatingLabel({
 }
 
 function ErrorText({ id, msg }: { id: string; msg?: string }) {
-  if (!msg) {
-    // Reserve no space and render nothing when there is no error.
-    // Keeps initial render free of empty error placeholders.
-    return <p id={id} className="hidden" aria-live="polite" />;
-  }
+  if (!msg) return <p id={id} className="hidden" aria-live="polite" />;
   return (
-    <p
-      id={id}
-      className="mt-1.5 text-[11px] text-gold leading-tight"
-      aria-live="polite"
-    >
+    <p id={id} className="mt-1.5 text-[11px] text-gold leading-tight" aria-live="polite">
       {msg}
     </p>
   );
@@ -101,7 +89,7 @@ function ErrorText({ id, msg }: { id: string; msg?: string }) {
 
 /* ---------------- Custom Select (Radix) ---------------- */
 
-function SubjectSelect({
+function CustomSelect<T extends string>({
   id,
   value,
   onChange,
@@ -112,11 +100,11 @@ function SubjectSelect({
   label,
 }: {
   id: string;
-  value: SubjectId | "";
-  onChange: (v: SubjectId) => void;
+  value: T | "";
+  onChange: (v: T) => void;
   hasError: boolean;
   describedBy?: string;
-  options: { id: SubjectId; label: string }[];
+  options: { id: T; label: string }[];
   placeholder: string;
   label: string;
 }) {
@@ -124,7 +112,7 @@ function SubjectSelect({
   const selected = options.find((o) => o.id === value);
   return (
     <div className="relative">
-      <SelectPrimitive.Root value={value || undefined} onValueChange={(v) => onChange(v as SubjectId)}>
+      <SelectPrimitive.Root value={value || undefined} onValueChange={(v) => onChange(v as T)}>
         <SelectPrimitive.Trigger
           id={id}
           aria-invalid={hasError || undefined}
@@ -144,7 +132,6 @@ function SubjectSelect({
           </SelectPrimitive.Icon>
         </SelectPrimitive.Trigger>
 
-        {/* Floating label */}
         <label
           htmlFor={id}
           className={`pointer-events-none absolute left-4 transition-all duration-200 motion-reduce:transition-none ${
@@ -157,7 +144,6 @@ function SubjectSelect({
           <span className="text-gold ml-0.5">*</span>
         </label>
 
-        {/* Placeholder hint visible only when empty and not floated */}
         {!hasValue && (
           <span className="pointer-events-none absolute right-12 top-1/2 -translate-y-1/2 text-sm text-white/30 hidden">
             {placeholder}
@@ -193,12 +179,7 @@ function SubjectSelect({
 
 /* ---------------- Main component ---------------- */
 
-const ContactForm = ({
-  onSubmit,
-  heading,
-  subheading,
-  className = "",
-}: ContactFormProps) => {
+const ContactForm = ({ onSubmit, heading, subheading, className = "" }: ContactFormProps) => {
   const { t } = useTranslation();
   const localize = useLocalizedPath();
   const navigate = useNavigate();
@@ -206,11 +187,11 @@ const ContactForm = ({
   const liveRegionRef = useRef<HTMLDivElement>(null);
 
   const [data, setData] = useState<FormData>({
-    firstName: "",
-    lastName: "",
+    name: "",
     email: "",
     phone: "",
-    subject: "",
+    descriptor: "",
+    primaryInterest: "",
     message: "",
     consent: false,
   });
@@ -219,22 +200,23 @@ const ContactForm = ({
   const [submitAttempted, setSubmitAttempted] = useState(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success">("idle");
 
-  const subjectOptions = useMemo(
-    () => SUBJECT_IDS.map((id) => ({ id, label: t(`contactForm.subject.options.${id}`) })),
+  const descriptorOptions = useMemo(
+    () => DESCRIPTOR_IDS.map((id) => ({ id, label: t(`contactForm.descriptor.options.${id}`) })),
+    [t]
+  );
+  const interestOptions = useMemo(
+    () => INTEREST_IDS.map((id) => ({ id, label: t(`contactForm.primaryInterest.options.${id}`) })),
     [t]
   );
 
-  /* Validate one field. Returns error msg or "". */
   const validateField = (key: FieldKey, d: FormData = data): string => {
     switch (key) {
-      case "firstName":
-        if (!d.firstName.trim()) return t("contactForm.errors.firstNameRequired");
-        if (!NAME_REGEX.test(d.firstName.trim())) return t("contactForm.errors.firstNameInvalid");
+      case "name": {
+        const v = d.name.trim();
+        if (!v) return t("contactForm.errors.nameRequired");
+        if (!NAME_REGEX.test(v)) return t("contactForm.errors.nameInvalid");
         return "";
-      case "lastName":
-        if (!d.lastName.trim()) return t("contactForm.errors.lastNameRequired");
-        if (!NAME_REGEX.test(d.lastName.trim())) return t("contactForm.errors.lastNameInvalid");
-        return "";
+      }
       case "email":
         if (!d.email.trim()) return t("contactForm.errors.emailRequired");
         if (!EMAIL_REGEX.test(d.email.trim())) return t("contactForm.errors.emailInvalid");
@@ -244,12 +226,13 @@ const ContactForm = ({
         if (!PHONE_REGEX.test(d.phone.trim()) || countDigits(d.phone) < 7)
           return t("contactForm.errors.phoneInvalid");
         return "";
-      case "subject":
-        if (!d.subject) return t("contactForm.errors.subjectRequired");
+      case "descriptor":
+        if (!d.descriptor) return t("contactForm.errors.descriptorRequired");
+        return "";
+      case "primaryInterest":
+        if (!d.primaryInterest) return t("contactForm.errors.primaryInterestRequired");
         return "";
       case "message":
-        if (!d.message.trim()) return t("contactForm.errors.messageRequired");
-        if (d.message.trim().length < 10) return t("contactForm.errors.messageTooShort");
         return "";
       case "consent":
         if (!d.consent) return t("contactForm.errors.consentRequired");
@@ -266,7 +249,6 @@ const ContactForm = ({
     return out;
   };
 
-  /* Update + revalidate (only show errors if already attempted/blurred) */
   const update = <K extends FieldKey>(key: K, value: FormData[K]) => {
     const next = { ...data, [key]: value };
     setData(next);
@@ -290,8 +272,7 @@ const ContactForm = ({
     if (Object.keys(v).length) {
       const firstErr = Object.values(v)[0];
       if (firstErr && liveRegionRef.current) liveRegionRef.current.textContent = firstErr;
-      // focus first invalid
-      const order: FieldKey[] = ["firstName", "lastName", "email", "phone", "subject", "message", "consent"];
+      const order: FieldKey[] = ["name", "email", "phone", "descriptor", "primaryInterest", "message", "consent"];
       const firstKey = order.find((k) => v[k]);
       if (firstKey) {
         const el = document.getElementById(`${uid}-${firstKey}`);
@@ -303,17 +284,16 @@ const ContactForm = ({
     setStatus("loading");
     try {
       const payload = {
-        firstName: data.firstName,
-        lastName: data.lastName,
+        name: data.name,
         email: data.email,
         phone: data.phone,
-        subject: data.subject as SubjectId,
+        descriptor: data.descriptor as DescriptorId,
+        primaryInterest: data.primaryInterest as InterestId,
         message: data.message,
       };
       if (onSubmit) {
         await onSubmit(payload);
       } else {
-        // Simulated success for now (no backend wired)
         await new Promise((r) => setTimeout(r, 700));
       }
       setStatus("success");
@@ -330,28 +310,21 @@ const ContactForm = ({
   };
 
   const reset = () => {
-    setData({ firstName: "", lastName: "", email: "", phone: "", subject: "", message: "", consent: false });
+    setData({ name: "", email: "", phone: "", descriptor: "", primaryInterest: "", message: "", consent: false });
     setErrors({});
     setTouched({});
     setSubmitAttempted(false);
     setStatus("idle");
   };
 
-  /* Consent label parsing: "...[Privacy Policy](/privacy-policy)..." */
   const consentText = t("contactForm.consent");
   const consentMatch = consentText.match(/^(.*)\[([^\]]+)\]\(\/privacy-policy\)(.*)$/);
 
   const panelCls = `bg-navy p-10 rounded-2xl ${className}`;
 
-  /* ---------- Success state ---------- */
   if (status === "success") {
     return (
-      <div
-        data-radius-block
-        className={`${panelCls} animate-fade-up motion-reduce:animate-none`}
-        role="status"
-        aria-live="polite"
-      >
+      <div data-radius-block className={`${panelCls} animate-fade-up motion-reduce:animate-none`} role="status" aria-live="polite">
         <div className="flex flex-col items-center text-center py-6">
           <div className="w-16 h-16 rounded-full border border-gold/40 flex items-center justify-center mb-6">
             <Check className="w-8 h-8 text-gold" aria-hidden="true" strokeWidth={1.5} />
@@ -375,56 +348,35 @@ const ContactForm = ({
     );
   }
 
-  /* ---------- Form ---------- */
   return (
     <div data-radius-block className={panelCls}>
       {heading && <h3 className="text-gold text-[28px] font-light mb-2">{heading}</h3>}
       {subheading && <p className="text-white/70 text-sm mb-3">{subheading}</p>}
       <p className="text-white/50 text-[11px] mb-6">{t("contactForm.requiredNote")}</p>
 
-      {/* SR-only live region for first error after submit */}
       <div ref={liveRegionRef} role="status" aria-live="polite" className="sr-only" />
 
       <form className="space-y-4" onSubmit={handleSubmit} noValidate>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div className="relative">
-            <input
-              id={`${uid}-firstName`}
-              type="text"
-              maxLength={80}
-              autoComplete="given-name"
-              aria-invalid={!!errors.firstName || undefined}
-              aria-describedby={`${uid}-firstName-err`}
-              placeholder=" "
-              className={`${fieldBase} ${errors.firstName ? fieldErr : fieldOk}`}
-              value={data.firstName}
-              onChange={(e) => update("firstName", e.target.value)}
-              onBlur={() => onBlur("firstName")}
-            />
-            <FloatingLabel htmlFor={`${uid}-firstName`} required hasValue={!!data.firstName}>
-              {t("contactForm.labels.firstName")}
-            </FloatingLabel>
-            <ErrorText id={`${uid}-firstName-err`} msg={errors.firstName} />
-          </div>
-          <div className="relative">
-            <input
-              id={`${uid}-lastName`}
-              type="text"
-              maxLength={80}
-              autoComplete="family-name"
-              aria-invalid={!!errors.lastName || undefined}
-              aria-describedby={`${uid}-lastName-err`}
-              placeholder=" "
-              className={`${fieldBase} ${errors.lastName ? fieldErr : fieldOk}`}
-              value={data.lastName}
-              onChange={(e) => update("lastName", e.target.value)}
-              onBlur={() => onBlur("lastName")}
-            />
-            <FloatingLabel htmlFor={`${uid}-lastName`} required hasValue={!!data.lastName}>
-              {t("contactForm.labels.lastName")}
-            </FloatingLabel>
-            <ErrorText id={`${uid}-lastName-err`} msg={errors.lastName} />
-          </div>
+        <div className="relative">
+          <input
+            id={`${uid}-name`}
+            type="text"
+            maxLength={160}
+            autoComplete="name"
+            spellCheck={false}
+            data-gramm="false"
+            aria-invalid={!!errors.name || undefined}
+            aria-describedby={`${uid}-name-err`}
+            placeholder=" "
+            className={`${fieldBase} ${errors.name ? fieldErr : fieldOk}`}
+            value={data.name}
+            onChange={(e) => update("name", e.target.value)}
+            onBlur={() => onBlur("name")}
+          />
+          <FloatingLabel htmlFor={`${uid}-name`} required hasValue={!!data.name}>
+            {t("contactForm.labels.name")}
+          </FloatingLabel>
+          <ErrorText id={`${uid}-name-err`} msg={errors.name} />
         </div>
 
         <div className="relative">
@@ -433,6 +385,8 @@ const ContactForm = ({
             type="email"
             maxLength={255}
             autoComplete="email"
+            spellCheck={false}
+            data-gramm="false"
             aria-invalid={!!errors.email || undefined}
             aria-describedby={`${uid}-email-err`}
             placeholder=" "
@@ -453,6 +407,8 @@ const ContactForm = ({
             type="tel"
             maxLength={40}
             autoComplete="tel"
+            spellCheck={false}
+            data-gramm="false"
             aria-invalid={!!errors.phone || undefined}
             aria-describedby={`${uid}-phone-err`}
             placeholder=" "
@@ -468,20 +424,37 @@ const ContactForm = ({
         </div>
 
         <div>
-          <SubjectSelect
-            id={`${uid}-subject`}
-            value={data.subject}
+          <CustomSelect<DescriptorId>
+            id={`${uid}-descriptor`}
+            value={data.descriptor}
             onChange={(v) => {
-              update("subject", v);
-              setTouched((p) => ({ ...p, subject: true }));
+              update("descriptor", v);
+              setTouched((p) => ({ ...p, descriptor: true }));
             }}
-            hasError={!!errors.subject}
-            describedBy={`${uid}-subject-err`}
-            options={subjectOptions}
-            placeholder={t("contactForm.subject.placeholder")}
-            label={t("contactForm.subject.label")}
+            hasError={!!errors.descriptor}
+            describedBy={`${uid}-descriptor-err`}
+            options={descriptorOptions}
+            placeholder={t("contactForm.descriptor.placeholder")}
+            label={t("contactForm.descriptor.label")}
           />
-          <ErrorText id={`${uid}-subject-err`} msg={errors.subject} />
+          <ErrorText id={`${uid}-descriptor-err`} msg={errors.descriptor} />
+        </div>
+
+        <div>
+          <CustomSelect<InterestId>
+            id={`${uid}-primaryInterest`}
+            value={data.primaryInterest}
+            onChange={(v) => {
+              update("primaryInterest", v);
+              setTouched((p) => ({ ...p, primaryInterest: true }));
+            }}
+            hasError={!!errors.primaryInterest}
+            describedBy={`${uid}-primaryInterest-err`}
+            options={interestOptions}
+            placeholder={t("contactForm.primaryInterest.placeholder")}
+            label={t("contactForm.primaryInterest.label")}
+          />
+          <ErrorText id={`${uid}-primaryInterest-err`} msg={errors.primaryInterest} />
         </div>
 
         <div className="relative">
@@ -493,21 +466,19 @@ const ContactForm = ({
             data-gramm="false"
             data-gramm_editor="false"
             data-enable-grammarly="false"
-            aria-invalid={!!errors.message || undefined}
             aria-describedby={`${uid}-message-err`}
-            placeholder=" "
-            className={`${fieldBase} ${errors.message ? fieldErr : fieldOk} resize-none`}
+            placeholder={t("contactForm.labels.messagePlaceholder")}
+            className={`${fieldBase} ${fieldOk} resize-none placeholder:text-white/30`}
             value={data.message}
             onChange={(e) => update("message", e.target.value)}
             onBlur={() => onBlur("message")}
           />
-          <FloatingLabel htmlFor={`${uid}-message`} required hasValue={!!data.message}>
+          <FloatingLabel htmlFor={`${uid}-message`} hasValue={!!data.message} forceFloated>
             {t("contactForm.labels.message")}
           </FloatingLabel>
           <ErrorText id={`${uid}-message-err`} msg={errors.message} />
         </div>
 
-        {/* Consent */}
         <div className="pt-1">
           <label className="flex items-start gap-3 cursor-pointer select-none group">
             <input

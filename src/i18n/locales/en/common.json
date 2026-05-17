@@ -2113,29 +2113,15 @@
   },
   "contactForm": {
     "requiredNote": "Fields marked with * are required",
-    "subject": {
-      "label": "Subject",
-      "placeholder": "Select a service",
-      "options": {
-        "wm": "Wealth Management",
-        "fo": "Family Office",
-        "st": "Structuring & Tax",
-        "ma": "M&A Consulting",
-        "ss": "Special Solutions"
-      }
-    },
     "errors": {
-      "firstNameRequired": "Please enter your first name",
-      "firstNameInvalid": "Please use letters only",
-      "lastNameRequired": "Please enter your last name",
-      "lastNameInvalid": "Please use letters only",
       "phoneInvalid": "Please enter a valid phone number",
       "emailRequired": "Please enter your work email",
       "emailInvalid": "Please enter a valid email address",
-      "subjectRequired": "Please select a subject",
-      "messageRequired": "Please enter your message",
-      "messageTooShort": "Message must be at least 10 characters",
-      "consentRequired": "Consent is required to submit the form"
+      "consentRequired": "Consent is required to submit the form",
+      "nameRequired": "Please enter your name",
+      "nameInvalid": "Please enter first and last name",
+      "descriptorRequired": "Please select an option",
+      "primaryInterestRequired": "Please select an option"
     },
     "states": {
       "sending": "Sending...",
@@ -2147,12 +2133,35 @@
     "consent": "I agree to the processing of my personal data in accordance with the [Privacy Policy](/privacy-policy).",
     "privacyPolicy": "Privacy Policy",
     "labels": {
-      "firstName": "First name",
-      "lastName": "Last name",
       "email": "Work email",
       "phone": "Phone (optional)",
       "message": "Message",
-      "send": "Send"
+      "send": "Send",
+      "name": "Name",
+      "namePlaceholder": "First and Last name",
+      "messagePlaceholder": "Tell us briefly about your situation (optional)"
+    },
+    "descriptor": {
+      "label": "What best describes you?",
+      "placeholder": "Select option",
+      "options": {
+        "entrepreneur": "Entrepreneur / Business owner",
+        "family": "Family with significant wealth",
+        "postExit": "Post-exit founder",
+        "relocating": "Relocating capital across jurisdictions",
+        "other": "Other"
+      }
+    },
+    "primaryInterest": {
+      "label": "Primary interest",
+      "placeholder": "Select option",
+      "options": {
+        "wm": "Wealth Management",
+        "fo": "Family Office",
+        "ma": "M&A Consulting",
+        "st": "Structuring & Tax",
+        "notSure": "Not sure yet"
+      }
     }
   },
   "servicesIntro": {
