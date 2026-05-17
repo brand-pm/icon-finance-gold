@@ -54,18 +54,6 @@ const About = () => {
         }))}
       />
 
-      <PortfolioManagement
-        title={t("about.story.title")}
-        description={t("about.story.description")}
-        steps={storySteps.map((s, idx) => ({
-          number: String(idx + 1),
-          title: s.title,
-          timeline: s.timeline,
-          result: s.result,
-          activities: s.activities,
-        }))}
-      />
-
       <TeamSection
         eyebrow={t("about.team.eyebrow")}
         title={t("about.team.title")}
@@ -75,6 +63,20 @@ const About = () => {
           bio: m.bio,
           image: TEAM_PHOTOS_BY_INDEX[idx] ?? teamPlaceholder,
           linkedin: TEAM_LINKEDIN_BY_INDEX[idx],
+        }))}
+      />
+
+      <TeamStats />
+
+      <PortfolioManagement
+        title={t("about.story.title")}
+        description={t("about.story.description")}
+        steps={storySteps.map((s, idx) => ({
+          number: String(idx + 1),
+          title: s.title,
+          timeline: s.timeline,
+          result: s.result,
+          activities: s.activities,
         }))}
       />
 
