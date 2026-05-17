@@ -38,7 +38,7 @@
   "hero": {
     "eyebrow": "Zarządzanie majątkiem",
     "title": "Ochrona i pomnażanie majątku przez pokolenia",
-    "subtitle": "Niezależni z zasady. Działamy wyłącznie w interesie naszych klientów — przejrzyste wynagrodzenie, bez ukrytych motywów, bez konfliktów instytucjonalnych.",
+    "subtitle": "Niezależni z zasady. Działamy wyłącznie w interesie naszych klientów, przejrzyste wynagrodzenie, bez ukrytych motywów, bez konfliktów instytucjonalnych.",
     "ctaPrimary": "Rozpocznij dialog",
     "ctaSecondary": "Nasza ekspertyza",
     "stats": {
@@ -264,7 +264,7 @@
       "items": [
         {
           "title": "Interesy klienta ponad wszystko",
-          "description": "Zawsze działamy jako zaufani doradcy. Nasza niezależność od banków, funduszy i dostawców produktów finansowych oznacza, że każda rekomendacja podyktowana jest wyłącznie Państwa celami. Niezależni w mandatach doradczych; tam gdzie obowiązują opłaty transakcyjne — jak w M&A — są one w pełni ujawniane i uzgadniane z góry."
+          "description": "Zawsze działamy jako zaufani doradcy. Nasza niezależność od banków, funduszy i dostawców produktów finansowych oznacza, że każda rekomendacja podyktowana jest wyłącznie Państwa celami. Niezależni w mandatach doradczych; tam gdzie obowiązują opłaty transakcyjne, jak w M&A, są one w pełni ujawniane i uzgadniane z góry."
         },
         {
           "title": "Długoterminowe relacje",
@@ -430,7 +430,7 @@
         },
         {
           "title": "Startupy i Founderzy",
-          "body": "Founderzy i przedsiębiorcy w obliczu zdarzeń płynnościowych, koncentracji equity oraz alokacji kapitału po exicie. Pomagamy zbudować strukturę finansową, która przetrwa exit — zanim warunki transakcji zostaną sfinalizowane."
+          "body": "Founderzy i przedsiębiorcy w obliczu zdarzeń płynnościowych, koncentracji equity oraz alokacji kapitału po exicie. Pomagamy zbudować strukturę finansową, która przetrwa exit, zanim warunki transakcji zostaną sfinalizowane."
         },
         {
           "title": "Klienci korporacyjni i instytucjonalni",
@@ -465,7 +465,7 @@
         },
         {
           "name": "Międzynarodowe centra holdingowe",
-          "desc": "Międzynarodowe wehikuły holdingowe, gdzie uzasadnione — dostępne na życzenie."
+          "desc": "Międzynarodowe wehikuły holdingowe, gdzie uzasadnione, dostępne na życzenie."
         }
       ]
     },
@@ -1077,7 +1077,7 @@
       "faq": [
         {
           "question": "Jaki jest minimalny poziom aktywów dla family office?",
-          "answer": "Dedykowane Single Family Office — dla rodzin od $2 000 000. Shared Family Office od $200 000. Wirtualny Family Office bez sztywnego minimum."
+          "answer": "Dedykowane Single Family Office, dla rodzin od $2 000 000. Shared Family Office od $200 000. Wirtualny Family Office bez sztywnego minimum."
         },
         {
           "question": "Czym family office różni się od banku prywatnego?",
@@ -1332,7 +1332,7 @@
         },
         {
           "question": "Z jakimi jurysdykcjami Państwo pracują?",
-          "answer": "Polska, ZEA, Cypr, Malta, Luksemburg i inne — zawsze wybieramy najbardziej odpowiednią jurysdykcję dla Państwa konkretnej sytuacji."
+          "answer": "Polska, ZEA, Cypr, Malta, Luksemburg i inne, zawsze wybieramy najbardziej odpowiednią jurysdykcję dla Państwa konkretnej sytuacji."
         },
         {
           "question": "Czy muszę zmienić rezydencję?",
@@ -1619,7 +1619,7 @@
           },
           {
             "title": "Startupy i Founderzy",
-            "description": "Budują Państwo lub zbudowali spółkę finansowaną przez venture capital, a majątek osobisty jest skoncentrowany w jednej pozycji equity. Pomagamy ustrukturyzować holdingi przed exitem, zaplanować zdarzenie płynnościowe oraz zaprojektować to, co po nim — dywersyfikację, reinwestycję i długoterminową alokację zgodną z celami post-exit."
+            "description": "Budują Państwo lub zbudowali spółkę finansowaną przez venture capital, a majątek osobisty jest skoncentrowany w jednej pozycji equity. Pomagamy ustrukturyzować holdingi przed exitem, zaplanować zdarzenie płynnościowe oraz zaprojektować to, co po nim, dywersyfikację, reinwestycję i długoterminową alokację zgodną z celami post-exit."
           },
           {
             "title": "Inwestorzy zrównoważeni",
@@ -1634,7 +1634,7 @@
           {
             "number": "01",
             "title": "Ekspertyza wg klas aktywów",
-            "description": "Dla każdego obszaru — sztuka, nieruchomości, doradztwo dla founderów — angażujemy wyspecjalizowanych ekspertów, zamiast stosować jedną ramę."
+            "description": "Dla każdego obszaru, sztuka, nieruchomości, doradztwo dla founderów, angażujemy wyspecjalizowanych ekspertów, zamiast stosować jedną ramę."
           },
           {
             "number": "02",
@@ -1644,12 +1644,12 @@
           {
             "number": "03",
             "title": "Sieć specjalistów",
-            "description": "Współpracujemy z doradcami w obszarze sztuki, ekspertami nieruchomości, doradcami prawnymi i doradcami dla founderów — w zależności od potrzeb."
+            "description": "Współpracujemy z doradcami w obszarze sztuki, ekspertami nieruchomości, doradcami prawnymi i doradcami dla founderów, w zależności od potrzeb."
           },
           {
             "number": "04",
             "title": "Zgodność z wartościami",
-            "description": "Państwa wartości traktujemy jako pełnoprawne kryterium inwestycyjne — czy to ograniczenia ESG, cele wpływu społecznego, czy ograniczenia specyficzne dla founderów."
+            "description": "Państwa wartości traktujemy jako pełnoprawne kryterium inwestycyjne, czy to ograniczenia ESG, cele wpływu społecznego, czy ograniczenia specyficzne dla founderów."
           }
         ]
       },
@@ -1834,7 +1834,7 @@
         },
         {
           "question": "Czy doradzają Państwo founderom przed zdarzeniem płynnościowym?",
-          "answer": "Tak. Okres przed zdarzeniem płynnościowym — czy to IPO, sprzedażą strategiczną, czy transakcją secondary — to najważniejsze okno na planowanie majątku. Doradzamy founderom w zakresie struktur holdingowych pre-exit, pozycjonowania podatkowego oraz alokacji kapitału post-exit — zanim warunki transakcji zostaną sfinalizowane. Wczesne zaangażowanie zwykle przynosi istotnie lepsze rezultaty niż restrukturyzacja po zamknięciu transakcji."
+          "answer": "Tak. Okres przed zdarzeniem płynnościowym, czy to IPO, sprzedażą strategiczną, czy transakcją secondary, to najważniejsze okno na planowanie majątku. Doradzamy founderom w zakresie struktur holdingowych pre-exit, pozycjonowania podatkowego oraz alokacji kapitału post-exit, zanim warunki transakcji zostaną sfinalizowane. Wczesne zaangażowanie zwykle przynosi istotnie lepsze rezultaty niż restrukturyzacja po zamknięciu transakcji."
         },
         {
           "question": "Czy inwestowanie odpowiedzialne społecznie oznacza niższe zyski?",
@@ -1855,7 +1855,7 @@
     "siteName": "Icon Finance",
     "pages": {
       "home": {
-        "title": "Icon Finance — Niezależne zarządzanie majątkiem i Family Office",
+        "title": "Icon Finance, Niezależne zarządzanie majątkiem i Family Office",
         "description": "Niezależne zarządzanie majątkiem, family office, strukturyzacja i podatki, M&A oraz rozwiązania specjalne dla przedsiębiorców i rodzin."
       },
       "about": {
@@ -1892,7 +1892,7 @@
       },
       "specialSolutions": {
         "title": "Rozwiązania specjalne | Icon Finance",
-        "description": "Doradztwo szyte na miarę dla sztuki, nieruchomości i founderów — gdy standardowe zarządzanie majątkiem nie wystarcza."
+        "description": "Doradztwo szyte na miarę dla sztuki, nieruchomości i founderów, gdy standardowe zarządzanie majątkiem nie wystarcza."
       },
       "notFound": {
         "title": "Strona nie znaleziona | Icon Finance",
@@ -1995,14 +1995,14 @@
         "tag": "PO ZDARZENIU PŁYNNOŚCIOWYM",
         "title": "Rodzina z 15 mln USD płynności ze sprzedaży nieruchomości",
         "situation": "Rodzina otrzymała znaczną płynność ze sprzedaży nieruchomości komercyjnej, którą posiadała od wielu lat, i potrzebowała strategii jej rozmieszczenia.",
-        "approach": "Zaprojektowaliśmy i skoordynowaliśmy konstrukcję portfela 60/30/10 — akcje, obligacje, aktywa alternatywne. Rozłożyliśmy wejście w pozycje na 12 miesięcy, aby zminimalizować ryzyko złego momentu rynkowego, oraz dodaliśmy strumienie dochodu municypalnego.",
+        "approach": "Zaprojektowaliśmy i skoordynowaliśmy konstrukcję portfela 60/30/10, akcje, obligacje, aktywa alternatywne. Rozłożyliśmy wejście w pozycje na 12 miesięcy, aby zminimalizować ryzyko złego momentu rynkowego, oraz dodaliśmy strumienie dochodu municypalnego.",
         "outcome": "Kapitał w pełni ulokowany w strategiach klasy instytucjonalnej, zwrot z pierwszego roku zgodny z profilem ryzyka rodziny, ustanowiono stały system monitorowania."
       },
       "case3": {
         "tag": "EKSPOZYCJA WIELOWALUTOWA",
         "title": "Przedsiębiorca z aktywami w trzech strefach walutowych",
         "situation": "Portfel klienta obejmował pozycje w EUR, USD i CHF, ale nie miał spójnej strategii walutowej, co przez pięć lat doprowadziło do niezamierzonych strat kursowych.",
-        "approach": "Zmapowaliśmy naturalne zobowiązania walutowe rodziny — rezydencje, edukacja, wydatki rodzinne — względem aktywów portfela, zarekomendowaliśmy i skoordynowaliśmy wdrożenie strategicznego hedgingu na poziomie portfela oraz skoordynowaliśmy kwartalne równoważenie.",
+        "approach": "Zmapowaliśmy naturalne zobowiązania walutowe rodziny, rezydencje, edukacja, wydatki rodzinne, względem aktywów portfela, zarekomendowaliśmy i skoordynowaliśmy wdrożenie strategicznego hedgingu na poziomie portfela oraz skoordynowaliśmy kwartalne równoważenie.",
         "outcome": "Zmienność walutowa zmniejszona o ponad 40%, struktura walutowa portfela dopasowana do faktycznych potrzeb stylu życia, a funkcja skarbowa działa systematycznie, a nie reaktywnie."
       }
     },
@@ -2012,8 +2012,8 @@
       "case1": {
         "tag": "SHARED FAMILY OFFICE",
         "title": "Wdrożenie Shared Family Office dla rodziny wielopokoleniowej",
-        "situation": "Rodzina wielopokoleniowa z aktywami 30–50 mln USD w zdywersyfikowanym portfelu dążyła do konsolidacji rozproszonych relacji doradczych w ramach jednej skoordynowanej struktury.",
-        "approach": "Przeprowadziliśmy ocenę pełnego obrazu finansowego rodziny, zaprojektowaliśmy framework Shared Family Office ze skonsolidowaną sprawozdawczością, skoordynowanym nadzorem inwestycyjnym oraz zdefiniowanymi protokołami zarządczymi — wdrożone w horyzoncie 4–6 miesięcy.",
+        "situation": "Rodzina wielopokoleniowa z aktywami 30,50 mln USD w zdywersyfikowanym portfelu dążyła do konsolidacji rozproszonych relacji doradczych w ramach jednej skoordynowanej struktury.",
+        "approach": "Przeprowadziliśmy ocenę pełnego obrazu finansowego rodziny, zaprojektowaliśmy framework Shared Family Office ze skonsolidowaną sprawozdawczością, skoordynowanym nadzorem inwestycyjnym oraz zdefiniowanymi protokołami zarządczymi, wdrożone w horyzoncie 4,6 miesięcy.",
         "outcome": "Rodzina uzyskała pełną widoczność portfela, obniżyła koszty doradcze dzięki konsolidacji oraz zbudowała framework zarządczy gotowy do skalowania."
       },
       "case2": {
@@ -2095,7 +2095,7 @@
         "tag": "DORADZTWO MAJĄTKOWE DLA FOUNDERA",
         "title": "Founder startupu zarządzający majątkiem przed i po exicie",
         "situation": "Founder spółki technologicznej finansowanej przez venture capital trzymał większość majątku osobistego w jednej skoncentrowanej pozycji equity. Wraz ze zbliżającym się zdarzeniem płynnościowym poszukiwał struktury finansowej, która przetrwa exit i będzie służyć długoterminowym celom poza spółką.",
-        "approach": "Zmapowaliśmy pełny obraz finansowy foundera — vested i unvested equity, opcje secondary liquidity oraz zobowiązania osobiste. Zaprojektowaliśmy strukturę holdingową przed exitem, zbudowaliśmy zdywersyfikowaną politykę inwestycyjną odzwierciedlającą profil ryzyka i horyzont czasowy foundera oraz skoordynowaliśmy efektywną podatkowo dystrybucję kapitału post-exit między klasy aktywów.",
+        "approach": "Zmapowaliśmy pełny obraz finansowy foundera, vested i unvested equity, opcje secondary liquidity oraz zobowiązania osobiste. Zaprojektowaliśmy strukturę holdingową przed exitem, zbudowaliśmy zdywersyfikowaną politykę inwestycyjną odzwierciedlającą profil ryzyka i horyzont czasowy foundera oraz skoordynowaliśmy efektywną podatkowo dystrybucję kapitału post-exit między klasy aktywów.",
         "outcome": "Struktura przed exitem gotowa sześć miesięcy przed zamknięciem transakcji. Kapitał post-exit stopniowo zdywersyfikowany między klasy aktywów, z mapą drogową przejścia uzgodnioną w ciągu pierwszych 90 dni. Founder przeszedł od koncentracji w jednej akcji do profesjonalnie zarządzanego portfela wieloaktywnego z jasnym ładem zarządczym i polityką reinwestycji."
       }
     }
@@ -2108,27 +2108,27 @@
     "wm": {
       "tag": "ZARZĄDZANIE MAJĄTKIEM",
       "title": "Złożoność portfela, alokacja kapitału, ekspozycja walutowa",
-      "description": "Skoncentrowane pozycje akcyjne, alokacja po zdarzeniu płynnościowym, portfele wielowalutowe — sytuacje, w których kapitał wymaga zdyscyplinowanej struktury zamiast improwizacji."
+      "description": "Skoncentrowane pozycje akcyjne, alokacja po zdarzeniu płynnościowym, portfele wielowalutowe, sytuacje, w których kapitał wymaga zdyscyplinowanej struktury zamiast improwizacji."
     },
     "fo": {
       "tag": "FAMILY OFFICE",
       "title": "Tworzenie biura, sukcesja, zarządzanie między pokoleniami",
-      "description": "Uruchomienie własnego family office, przygotowanie następnego pokolenia do odpowiedzialnego dziedziczenia, łączenie infrastruktury między spokrewnionymi gałęziami — sytuacje, w których zarządzanie rodzinne staje się długoterminową przewagą."
+      "description": "Uruchomienie własnego family office, przygotowanie następnego pokolenia do odpowiedzialnego dziedziczenia, łączenie infrastruktury między spokrewnionymi gałęziami, sytuacje, w których zarządzanie rodzinne staje się długoterminową przewagą."
     },
     "st": {
       "tag": "STRUKTURYZACJA I PODATKI",
       "title": "Holdingi transgraniczne, trusty, planowanie rezydencji",
-      "description": "Wielojurysdykcyjne struktury holdingowe, ochronne struktury trustowe, optymalizacja rezydencji podatkowej między jurysdykcjami europejskimi — tam, gdzie struktura wyprzedza rezultat."
+      "description": "Wielojurysdykcyjne struktury holdingowe, ochronne struktury trustowe, optymalizacja rezydencji podatkowej między jurysdykcjami europejskimi, tam, gdzie struktura wyprzedza rezultat."
     },
     "ma": {
       "tag": "DORADZTWO M&A",
       "title": "Wyjścia, akwizycje, pozyskiwanie kapitału",
-      "description": "Przygotowanie firmy do sprzedaży, ekspansja poprzez akwizycję strategiczną, pozyskanie kapitału na rozwój przy zachowaniu kontroli — sytuacje transakcyjne, w których przygotowanie decyduje o rezultacie."
+      "description": "Przygotowanie firmy do sprzedaży, ekspansja poprzez akwizycję strategiczną, pozyskanie kapitału na rozwój przy zachowaniu kontroli, sytuacje transakcyjne, w których przygotowanie decyduje o rezultacie."
     },
     "ss": {
       "tag": "ROZWIĄZANIA SPECJALNE",
       "title": "Nieruchomości, sztuka, doradztwo dla founderów",
-      "description": "Konsolidacja międzynarodowych portfeli nieruchomości, strukturyzowanie znaczących kolekcji sztuki oraz doradztwo dla founderów w okresie przejść kapitałowych pre- i post-exit — specjalistyczne sytuacje wykraczające poza standardową pracę portfelową."
+      "description": "Konsolidacja międzynarodowych portfeli nieruchomości, strukturyzowanie znaczących kolekcji sztuki oraz doradztwo dla founderów w okresie przejść kapitałowych pre- i post-exit, specjalistyczne sytuacje wykraczające poza standardową pracę portfelową."
     }
   },
   "contactForm": {
@@ -2187,12 +2187,12 @@
   "servicesIntro": {
     "eyebrow": "Współpraca z Icon Finance",
     "title": "Kompleksowa ekspertyza, długoterminowe partnerstwo",
-    "body": "Współpraca z nami otwiera dostęp do zintegrowanej ekspertyzy: strukturyzacja i ochrona kapitału, zarządzanie portfelem, wsparcie transakcji M&A, międzynarodowe planowanie podatkowe. Budujemy długoterminowe partnerstwa — wraz ze wzrostem Państwa biznesu i kapitału rozszerza się także zakres rozwiązań. Wynagrodzenie uzgadniane jest z góry — przejrzyście, bez prowizji i ukrytych płatności jakiegokolwiek rodzaju."
+    "body": "Współpraca z nami otwiera dostęp do zintegrowanej ekspertyzy: strukturyzacja i ochrona kapitału, zarządzanie portfelem, wsparcie transakcji M&A, międzynarodowe planowanie podatkowe. Budujemy długoterminowe partnerstwa, wraz ze wzrostem Państwa biznesu i kapitału rozszerza się także zakres rozwiązań. Wynagrodzenie uzgadniane jest z góry, przejrzyście, bez prowizji i ukrytych płatności jakiegokolwiek rodzaju."
   },
   "thankYou": {
     "eyebrow": "Wiadomość otrzymana",
     "title": "Dziękujemy za kontakt",
-    "body": "Dziękujemy! Wiadomość została wysłana. Nasz zespół skontaktuje się w ciągu godziny — pon.–pt., 10:00–19:00 CET. Jeśli napisali Państwo poza godzinami pracy, odpiszemy jutro.",
+    "body": "Dziękujemy! Wiadomość została wysłana. Nasz zespół skontaktuje się w ciągu godziny, pon.,pt., 10:00,19:00 CET. Jeśli napisali Państwo poza godzinami pracy, odpiszemy jutro.",
     "ctaPrimary": "Powrót na stronę główną",
     "ctaSecondary": "Poznaj nasze usługi"
   },
@@ -2202,7 +2202,7 @@
     "items": [
       {
         "question": "Jakie są Państwa koszty?",
-        "answer": "Nasze wynagrodzenie ustalane jest z góry i powiązane z zakresem współpracy — nie ze sprzedażą produktów. Mandaty Wealth Management bazują zwykle na aktywach pod doradztwem. Family Office i M&A wyceniane są indywidualnie. Strukturę honorarium chętnie omówimy podczas pierwszej rozmowy."
+        "answer": "Nasze wynagrodzenie ustalane jest z góry i powiązane z zakresem współpracy, nie ze sprzedażą produktów. Mandaty Wealth Management bazują zwykle na aktywach pod doradztwem. Family Office i M&A wyceniane są indywidualnie. Strukturę honorarium chętnie omówimy podczas pierwszej rozmowy."
       },
       {
         "question": "Z jakimi bankami i custodianami Państwo współpracują?",
@@ -2213,8 +2213,8 @@
         "answer": "Zarządzamy aktywami i doradzamy 100+ klientom rodzinnym w 5 jurysdykcjach. Konkretne wyniki portfeli pozostają poufne, jednak reprezentatywne sytuacje klientów opisane są w naszych case study."
       },
       {
-        "question": "Mam 300 tys. USD — czy Icon Finance jest dla mnie?",
-        "answer": "Pracujemy z klientami na różnych etapach budowania majątku. Doradztwo Wealth Management zaczyna się od 50 000 USD. Jeśli nie są Państwo pewni dopasowania — porozmawiajmy i sprawdźmy to razem."
+        "question": "Mam 300 tys. USD, czy Icon Finance jest dla mnie?",
+        "answer": "Pracujemy z klientami na różnych etapach budowania majątku. Doradztwo Wealth Management zaczyna się od 50 000 USD. Jeśli nie są Państwo pewni dopasowania, porozmawiajmy i sprawdźmy to razem."
       }
     ]
   },
@@ -2229,7 +2229,7 @@
     "rows": [
       {
         "parameter": "Czyje interesy reprezentujemy",
-        "iconFinance": "Tylko Państwa — pracujemy dla Państwa",
+        "iconFinance": "Tylko Państwa, pracujemy dla Państwa",
         "privateBank": "Banku i akcjonariuszy"
       },
       {
@@ -2249,8 +2249,8 @@
       },
       {
         "parameter": "Konflikt interesów",
-        "iconFinance": "Brak — strukturalnie",
-        "privateBank": "Strukturalny — cele sprzedażowe"
+        "iconFinance": "Brak, strukturalnie",
+        "privateBank": "Strukturalny, cele sprzedażowe"
       }
     ],
     "disclaimer": "[DISCLAIMER PENDING LEGAL REVIEW]"

@@ -38,7 +38,7 @@
   "hero": {
     "eyebrow": "Wealth Management",
     "title": "Preserving & Growing Wealth Across Generations",
-    "subtitle": "Independent by design. We work exclusively in our clients' interests — transparent fees, no hidden agendas, no institutional conflicts.",
+    "subtitle": "Independent by design. We work exclusively in our clients' interests, transparent fees, no hidden agendas, no institutional conflicts.",
     "ctaPrimary": "Start a dialogue",
     "ctaSecondary": "Our expertise",
     "stats": {
@@ -264,7 +264,7 @@
       "items": [
         {
           "title": "Client Interests Above All",
-          "description": "We act as fiduciaries - always. Our independence from banks, funds, and product providers means every recommendation we make is driven by your goals alone. Independent in advisory mandates; where transaction fees apply — as in M&A — these are fully disclosed and agreed in advance."
+          "description": "We act as fiduciaries - always. Our independence from banks, funds, and product providers means every recommendation we make is driven by your goals alone. Independent in advisory mandates; where transaction fees apply, as in M&A, these are fully disclosed and agreed in advance."
         },
         {
           "title": "Long-Term Relationships",
@@ -430,7 +430,7 @@
         },
         {
           "title": "Startups and Founders",
-          "body": "Founders and entrepreneurs navigating liquidity events, equity concentration, and post-exit capital allocation. We help you build a financial structure that survives the exit — before terms are finalised."
+          "body": "Founders and entrepreneurs navigating liquidity events, equity concentration, and post-exit capital allocation. We help you build a financial structure that survives the exit, before terms are finalised."
         },
         {
           "title": "Corporate & Institutional",
@@ -465,7 +465,7 @@
         },
         {
           "name": "International holding centres",
-          "desc": "International holding vehicles where appropriate — available on request."
+          "desc": "International holding vehicles where appropriate, available on request."
         }
       ]
     },
@@ -822,7 +822,7 @@
       "faq": [
         {
           "question": "What is the minimum investment threshold?",
-          "answer": "We work with clients at different stages of wealth. For Wealth Management, our typical entry point is $50,000–$500,000 in investable assets — making professional portfolio advisory accessible to entrepreneurs and growing families. For Family Office engagements, the minimum starts from $200,000–$2,000,000, reflecting the broader scope of services involved."
+          "answer": "We work with clients at different stages of wealth. For Wealth Management, our typical entry point is $50,000,$500,000 in investable assets, making professional portfolio advisory accessible to entrepreneurs and growing families. For Family Office engagements, the minimum starts from $200,000,$2,000,000, reflecting the broader scope of services involved."
         },
         {
           "question": "How are your fees structured?",
@@ -1077,7 +1077,7 @@
       "faq": [
         {
           "question": "What is the minimum asset level for a family office?",
-          "answer": "A dedicated Single Family Office is designed for families with $2,000,000+ in investable assets. Our Shared Family Office model is accessible from $200,000, sharing operational infrastructure across several families. Our Virtual Family Office has no strict minimum and is designed for clients with established financial complexity — multiple advisors, asset classes, or jurisdictions to coordinate."
+          "answer": "A dedicated Single Family Office is designed for families with $2,000,000+ in investable assets. Our Shared Family Office model is accessible from $200,000, sharing operational infrastructure across several families. Our Virtual Family Office has no strict minimum and is designed for clients with established financial complexity, multiple advisors, asset classes, or jurisdictions to coordinate."
         },
         {
           "question": "How is a family office different from a private bank?",
@@ -1332,7 +1332,7 @@
         },
         {
           "question": "Which jurisdictions do you work with?",
-          "answer": "Poland, UAE, Cyprus, Malta, Luxembourg, and others — always selecting the most appropriate jurisdiction for your specific situation."
+          "answer": "Poland, UAE, Cyprus, Malta, Luxembourg, and others, always selecting the most appropriate jurisdiction for your specific situation."
         },
         {
           "question": "Do I need to change my residency?",
@@ -1619,7 +1619,7 @@
           },
           {
             "title": "Startups and Founders",
-            "description": "You are building or have built a venture-backed company and personal wealth is concentrated in a single equity position. We help you structure pre-exit holdings, plan for the liquidity event, and design what comes after — diversification, reinvestment, and long-term allocation aligned with your post-exit goals."
+            "description": "You are building or have built a venture-backed company and personal wealth is concentrated in a single equity position. We help you structure pre-exit holdings, plan for the liquidity event, and design what comes after, diversification, reinvestment, and long-term allocation aligned with your post-exit goals."
           },
           {
             "title": "ESG and Impact Investors",
@@ -1634,7 +1634,7 @@
           {
             "number": "01",
             "title": "Asset-Specific Expertise",
-            "description": "We bring specialist knowledge to each asset class — art, real estate, founder advisory — rather than applying a generic framework."
+            "description": "We bring specialist knowledge to each asset class, art, real estate, founder advisory, rather than applying a generic framework."
           },
           {
             "number": "02",
@@ -1649,7 +1649,7 @@
           {
             "number": "04",
             "title": "Values Alignment",
-            "description": "We take your values seriously as an investment parameter — whether that means ESG exclusions, impact targets, or founder-specific constraints."
+            "description": "We take your values seriously as an investment parameter, whether that means ESG exclusions, impact targets, or founder-specific constraints."
           }
         ]
       },
@@ -1834,7 +1834,7 @@
         },
         {
           "question": "Can you advise founders before a liquidity event?",
-          "answer": "Yes. The period before a liquidity event — whether an IPO, strategic sale, or secondary transaction — is the most critical window for wealth planning. We advise founders on pre-exit holding structures, tax positioning, and post-exit capital allocation before terms are finalised. Early engagement typically delivers materially better outcomes than post-close restructuring."
+          "answer": "Yes. The period before a liquidity event, whether an IPO, strategic sale, or secondary transaction, is the most critical window for wealth planning. We advise founders on pre-exit holding structures, tax positioning, and post-exit capital allocation before terms are finalised. Early engagement typically delivers materially better outcomes than post-close restructuring."
         },
         {
           "question": "Does ESG investing mean lower returns?",
@@ -1855,7 +1855,7 @@
     "siteName": "Icon Finance",
     "pages": {
       "home": {
-        "title": "Icon Finance — Independent Wealth Management & Family Office",
+        "title": "Icon Finance, Independent Wealth Management & Family Office",
         "description": "Independent wealth management, family office, structuring & tax, M&A and special solutions for entrepreneurs and multi-generational families."
       },
       "about": {
@@ -1892,7 +1892,7 @@
       },
       "specialSolutions": {
         "title": "Special Solutions | Icon Finance",
-        "description": "Bespoke advisory for art, real estate, and founders — when conventional wealth management is not enough."
+        "description": "Bespoke advisory for art, real estate, and founders, when conventional wealth management is not enough."
       },
       "notFound": {
         "title": "Page Not Found | Icon Finance",
@@ -2012,8 +2012,8 @@
       "case1": {
         "tag": "SHARED FAMILY OFFICE",
         "title": "Shared Family Office setup for a multi-generational family",
-        "situation": "A multi-generational family with $30–50M in diversified assets sought to consolidate fragmented advisory relationships into a single coordinated structure.",
-        "approach": "We assessed the family's full financial picture, designed a Shared Family Office framework with consolidated reporting, coordinated investment oversight, and defined governance protocols — implemented within a 4–6 month timeline.",
+        "situation": "A multi-generational family with $30,50M in diversified assets sought to consolidate fragmented advisory relationships into a single coordinated structure.",
+        "approach": "We assessed the family's full financial picture, designed a Shared Family Office framework with consolidated reporting, coordinated investment oversight, and defined governance protocols, implemented within a 4,6 month timeline.",
         "outcome": "Family achieved full portfolio visibility, reduced advisory costs through consolidation, and established a governance framework ready to scale."
       },
       "case2": {
@@ -2095,7 +2095,7 @@
         "tag": "FOUNDER WEALTH ADVISORY",
         "title": "Startup founder managing pre- and post-exit wealth",
         "situation": "A founder of a venture-backed technology company held the majority of personal wealth in a single concentrated equity position. With a liquidity event approaching, they sought to build a financial structure that would survive the exit and serve long-term goals beyond the company.",
-        "approach": "We mapped the founder's full financial picture — vested and unvested equity, secondary liquidity options, and personal liabilities. We designed a pre-exit holding structure, built a diversified investment policy reflecting the founder's risk profile and time horizon, and coordinated tax-efficient distribution of post-exit capital across asset classes.",
+        "approach": "We mapped the founder's full financial picture, vested and unvested equity, secondary liquidity options, and personal liabilities. We designed a pre-exit holding structure, built a diversified investment policy reflecting the founder's risk profile and time horizon, and coordinated tax-efficient distribution of post-exit capital across asset classes.",
         "outcome": "Pre-exit structure in place six months before close. Post-exit capital progressively diversified across asset classes, with a transition roadmap agreed within the first 90 days. Founder moved from single-stock concentration to a professionally managed multi-asset portfolio with clear governance and reinvestment policy."
       }
     }
@@ -2108,27 +2108,27 @@
     "wm": {
       "tag": "WEALTH MANAGEMENT",
       "title": "Portfolio complexity, deployed capital, currency exposure",
-      "description": "Concentrated equity positions, post-liquidity event allocation, multi-currency portfolios — situations where capital needs disciplined structure rather than improvisation."
+      "description": "Concentrated equity positions, post-liquidity event allocation, multi-currency portfolios, situations where capital needs disciplined structure rather than improvisation."
     },
     "fo": {
       "tag": "FAMILY OFFICE",
       "title": "Office design, succession, governance across generations",
-      "description": "Launching a single family office, preparing the next generation for stewardship, consolidating shared infrastructure between cousin branches — situations where family governance becomes a long-term advantage."
+      "description": "Launching a single family office, preparing the next generation for stewardship, consolidating shared infrastructure between cousin branches, situations where family governance becomes a long-term advantage."
     },
     "st": {
       "tag": "STRUCTURING & TAX",
       "title": "Cross-border holdings, trusts, residency planning",
-      "description": "Multi-jurisdiction holding structures, protective trust arrangements, tax residency optimization across European jurisdictions — where structure precedes outcome."
+      "description": "Multi-jurisdiction holding structures, protective trust arrangements, tax residency optimization across European jurisdictions, where structure precedes outcome."
     },
     "ma": {
       "tag": "M&A CONSULTING",
       "title": "Exits, acquisitions, capital raises",
-      "description": "Preparing a business for sale, expanding through strategic acquisition, raising growth capital while preserving control — transaction situations where preparation determines outcome."
+      "description": "Preparing a business for sale, expanding through strategic acquisition, raising growth capital while preserving control, transaction situations where preparation determines outcome."
     },
     "ss": {
       "tag": "SPECIAL SOLUTIONS",
       "title": "Real estate, art, founder advisory",
-      "description": "Consolidating international property portfolios, structuring significant art holdings, and advising founders through pre- and post-exit wealth transitions — specialized situations beyond standard portfolio work."
+      "description": "Consolidating international property portfolios, structuring significant art holdings, and advising founders through pre- and post-exit wealth transitions, specialized situations beyond standard portfolio work."
     }
   },
   "contactForm": {
@@ -2187,12 +2187,12 @@
   "servicesIntro": {
     "eyebrow": "Working with Icon Finance",
     "title": "Comprehensive expertise, long-term partnership",
-    "body": "Working with us opens access to integrated expertise: capital structuring and protection, portfolio management, M&A transaction support, and international tax planning. We build long-term partnerships — as your business and capital grow, our scope of solutions grows with them. Compensation is agreed upfront — transparent, with no commissions or hidden payments of any kind."
+    "body": "Working with us opens access to integrated expertise: capital structuring and protection, portfolio management, M&A transaction support, and international tax planning. We build long-term partnerships, as your business and capital grow, our scope of solutions grows with them. Compensation is agreed upfront, transparent, with no commissions or hidden payments of any kind."
   },
   "thankYou": {
     "eyebrow": "Message received",
     "title": "Thank you for reaching out",
-    "body": "Thank you! Your message has been sent. Our team will get back to you within the hour — Mon–Fri, 10:00–19:00 CET. If you reached out outside business hours, expect to hear from us tomorrow.",
+    "body": "Thank you! Your message has been sent. Our team will get back to you within the hour, Mon,Fri, 10:00,19:00 CET. If you reached out outside business hours, expect to hear from us tomorrow.",
     "ctaPrimary": "Back to home",
     "ctaSecondary": "Explore our services"
   },
@@ -2202,7 +2202,7 @@
     "items": [
       {
         "question": "What do you cost?",
-        "answer": "Our fees are agreed upfront and structured around the scope of engagement — not product sales. Wealth Management mandates are typically fee-based on assets under advisory. Family Office and M&A engagements are quoted individually. We are happy to outline the fee structure during our first conversation."
+        "answer": "Our fees are agreed upfront and structured around the scope of engagement, not product sales. Wealth Management mandates are typically fee-based on assets under advisory. Family Office and M&A engagements are quoted individually. We are happy to outline the fee structure during our first conversation."
       },
       {
         "question": "Which banks and custodians do you work with?",
@@ -2213,8 +2213,8 @@
         "answer": "We manage and advise on assets for 100+ family clients across 5 jurisdictions. Specific portfolio outcomes are confidential, but representative client situations are described in our case scenarios."
       },
       {
-        "question": "I have $300K — is Icon Finance right for me?",
-        "answer": "We work with clients at different stages of wealth. Wealth Management advisory starts from $50,000. If you are unsure whether we are the right fit — let us have a first conversation and find out together."
+        "question": "I have $300K, is Icon Finance right for me?",
+        "answer": "We work with clients at different stages of wealth. Wealth Management advisory starts from $50,000. If you are unsure whether we are the right fit, let us have a first conversation and find out together."
       }
     ]
   },
@@ -2229,7 +2229,7 @@
     "rows": [
       {
         "parameter": "Whose interests we serve",
-        "iconFinance": "Yours only — we work for you",
+        "iconFinance": "Yours only, we work for you",
         "privateBank": "Bank and shareholders"
       },
       {
@@ -2250,7 +2250,7 @@
       {
         "parameter": "Conflict of interest",
         "iconFinance": "None by structure",
-        "privateBank": "Structural — product sales targets"
+        "privateBank": "Structural, product sales targets"
       }
     ],
     "disclaimer": "[DISCLAIMER PENDING LEGAL REVIEW]"
