@@ -43,6 +43,37 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 28 64% 67%;
+
+    /* ===== Glass material tokens (gold) =====
+       Centralized parameters for the project-wide glass effect.
+       Used by .gold-separator, .portfolio-stage-arrow, inline SVG icons
+       (IndustryIcons, InfinityGlassIcon), and any future glass element. */
+    --glass-gold-light: #F4D5A8;
+    --glass-gold-mid: #E0A776;
+    --glass-gold-deep: #A06940;
+    --glass-gold-shadow: #5C3A1F;
+    --glass-highlight: hsl(0 0% 100% / 0.55);
+    --glass-edge-dark: hsl(25 50% 18% / 0.45);
+    --glass-spec: hsl(0 0% 100% / 0.85);
+    --glass-rim: hsl(28 64% 67% / 0.55);
+    --glass-glow: hsl(28 64% 67% / 0.55);
+    --glass-glow-strong: hsl(28 64% 67% / 0.6);
+    --glass-glow-soft: hsl(28 64% 67% / 0.45);
+    --glass-body-gradient: linear-gradient(
+      135deg,
+      var(--glass-gold-light) 0%,
+      hsl(var(--gold)) 45%,
+      var(--glass-gold-deep) 100%
+    );
+    --glass-body-gradient-v: linear-gradient(
+      180deg,
+      var(--glass-gold-light) 0%,
+      hsl(var(--gold)) 45%,
+      var(--glass-gold-deep) 100%
+    );
+    --glass-inset-shadow:
+      inset 1px 1px 0 var(--glass-highlight),
+      inset -1px -1px 0 var(--glass-edge-dark);
   }
 }
 
