@@ -1885,6 +1885,10 @@
       "terms": {
         "description": "",
         "title": "Terms & Conditions | Icon Finance"
+      },
+      "thankYou": {
+        "title": "Thank You | Icon Finance",
+        "description": "Your message has been received"
       }
     }
   },
@@ -2146,5 +2150,17 @@
       "message": "Message",
       "send": "Send"
     }
+  },
+  "servicesIntro": {
+    "eyebrow": "Working with Icon Finance",
+    "title": "Comprehensive expertise, long-term partnership",
+    "body": "Working with us opens access to integrated expertise: capital structuring and protection, portfolio management, M&A transaction support, and international tax planning. We build long-term partnerships — as your business and capital grow, our scope of solutions grows with them. Compensation is agreed upfront — transparent, with no commissions or hidden payments of any kind."
+  },
+  "thankYou": {
+    "eyebrow": "Message received",
+    "title": "Thank you for reaching out",
+    "body": "Thank you! Your message has been sent. Our team will get back to you within the hour — Mon–Fri, 10:00–19:00 CET. If you reached out outside business hours, expect to hear from us tomorrow.",
+    "ctaPrimary": "Back to home",
+    "ctaSecondary": "Explore our services"
   }
 }
