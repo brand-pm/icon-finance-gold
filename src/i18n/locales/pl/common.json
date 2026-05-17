@@ -803,7 +803,7 @@
       "faq": [
         {
           "question": "Jaki jest minimalny próg inwestycyjny?",
-          "answer": "Współpracujemy zazwyczaj z klientami, których aktywa inwestycyjne wynoszą od 500 000 USD. Dla mandatów family office i strukturyzacji próg może być wyższy w zależności od złożoności."
+          "answer": "Pracujemy z klientami na różnych etapach budowania majątku. Dla Wealth Management próg od $50 000 do $500 000. Dla Family Office od $200 000 do $2 000 000."
         },
         {
           "question": "Jak skonstruowane są Państwa wynagrodzenia?",
@@ -811,7 +811,7 @@
         },
         {
           "question": "Czy mogę uzyskać dostęp do środków w dowolnym momencie?",
-          "answer": "Tak. Państwa aktywa są przechowywane u niezależnych depozytariuszy na Państwa nazwisko i pozostają w pełni dostępne. Zalecamy konsultację z doradcą przed znaczącymi wypłatami w celu oceny wpływu na portfel."
+          "answer": "Pozycje płynne pozostają w pełni dostępne w każdym momencie. Alokacje w strategie niepłynne (private equity, hedge funds, structured products) podlegają warunkom wykupu (redemption terms) funduszy bazowych, które są ujawniane przed zaangażowaniem. Możemy również doradzić w zakresie reinwestycji portfela w celu wsparcia rozwoju Państwa biznesu."
         },
         {
           "question": "Jak chronią Państwo poufność klientów?",
@@ -910,7 +910,7 @@
       "strategies": [
         {
           "name": "Dedykowany Family Office",
-          "description": "W pełni dedykowana struktura zbudowana wyłącznie dla Państwa rodziny. Pełna kontrola, maksymalna poufność i indywidualna infrastruktura - zaprojektowana dla rodzin z aktywami od 30 mln USD.",
+          "description": "W pełni dedykowana struktura zbudowana wyłącznie dla Państwa rodziny. Pełna kontrola, maksymalna poufność i indywidualna infrastruktura - zaprojektowana dla rodzin z aktywami od $2 000 000+.",
           "items": [
             "Wyłączna infrastruktura tylko dla jednej rodziny",
             "Pełna kontrola nad decyzjami inwestycyjnymi i ładu",
@@ -1054,7 +1054,7 @@
       "faq": [
         {
           "question": "Jaki jest minimalny poziom aktywów dla family office?",
-          "answer": "Dedykowane Single Family Office wymaga zwykle aktywów inwestycyjnych od 30 mln USD, aby było efektywne kosztowo. Nasz model Współdzielony Family Office zaprojektowany jest dla rodzin od 5-10 mln USD, a Wirtualny Family Office nie ma sztywnego minimum."
+          "answer": "Dedykowane Single Family Office — dla rodzin od $2 000 000. Shared Family Office od $200 000. Wirtualny Family Office bez sztywnego minimum."
         },
         {
           "question": "Czym family office różni się od banku prywatnego?",
@@ -1309,7 +1309,7 @@
         },
         {
           "question": "Z jakimi jurysdykcjami Państwo pracują?",
-          "answer": "Pracujemy w głównych jurysdykcjach finansowych i holdingowych, w tym Polsce, ZEA, Cyprze, Malcie, Luksemburgu, BVI, Kajmanach i innych - zawsze wybierając najbardziej odpowiednią dla Państwa konkretnej sytuacji."
+          "answer": "Polska, ZEA, Cypr, Malta, Luksemburg i inne — zawsze wybieramy najbardziej odpowiednią jurysdykcję dla Państwa konkretnej sytuacji."
         },
         {
           "question": "Czy muszę zmienić rezydencję?",
@@ -1556,7 +1556,7 @@
       "faq": [
         {
           "question": "Jak są Państwo wynagradzani w transakcjach M&A?",
-          "answer": "Pobieramy opłatę abonament za prace doradcze i prowizję sukcesu po zakończeniu transakcji. Struktury opłat są ustalane transparentnie z góry. Nigdy nie otrzymujemy ukrytych płatności od kontrahentów ani inwestorów."
+          "answer": "Doradztwo M&A opiera się na opłacie retainer fee pokrywającej bieżące prace doradcze oraz success fee płatnym po zakończeniu transakcji. Success fee uzgadnia nasze interesy bezpośrednio z Państwa interesami: jesteśmy wynagradzani za rezultaty, a nie za aktywność. Struktura ta jest w pełni ujawniona i uzgodniona pisemnie na początku każdego mandatu. Nie otrzymujemy żadnych ukrytych płatności (no undisclosed payments), prowizji od poleceń ani zachęt od kontrahentów, inwestorów czy stron trzecich zaangażowanych w Państwa transakcję."
         },
         {
           "question": "Jak długo trwa typowy proces sprzedaży?",
