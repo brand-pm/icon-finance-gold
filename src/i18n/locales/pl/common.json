@@ -14,7 +14,7 @@
       "description": "Niezależne zarządzanie inwestycjami dla przedsiębiorców i rodzin"
     },
     "familyOffice": {
-      "title": "Biuro rodzinne",
+      "title": "Family Office",
       "description": "Kompleksowe tworzenie i prowadzenie biura rodzinnego"
     },
     "structuringTax": {
@@ -66,7 +66,7 @@
         "alt": "Symbol nieskończoności - ochrona majątku przez pokolenia"
       },
       "familyOffice": {
-        "name": "Biuro rodzinne",
+        "name": "Family Office",
         "title": "Pełny zakres usług biura rodzinnego i ładu korporacyjnego",
         "desc": "Kompleksowe zarządzanie aktywami rodziny, ład korporacyjny oraz planowanie sukcesji pomiędzy pokoleniami.",
         "items": [
@@ -184,9 +184,9 @@
   "contactTeaser": {
     "eyebrow": "Formularz kontaktowy",
     "title": "Zacznij zarządzać swoim majątkiem już dziś",
-    "subtitle": "Odpowiadamy osobiście w ciągu 24 godzin. Bez call center, bez pośredników.",
+    "subtitle": "Odpowiadamy osobiście w ciągu 1 godziny w godzinach pracy (pon-pt, 10:00-19:00 CET). Poza godzinami pracy odpowiadamy następnego dnia roboczego. Bez call center, bez pośredników.",
     "formTitle": "Wyślij nam wiadomość",
-    "formSubtitle": "Zostaw zapytanie, a nasz ekspert skontaktuje się w ciągu 24 godzin.",
+    "formSubtitle": "Zostaw zapytanie, a nasz ekspert skontaktuje się w ciągu 1 godziny w godzinach pracy (pon-pt, 10:00-19:00 CET). Poza godzinami pracy odpowiadamy następnego dnia roboczego.",
     "firstName": "Imię",
     "lastName": "Nazwisko",
     "email": "Email służbowy",
@@ -233,7 +233,7 @@
     "placeholderEmail": "example@email.com",
     "selectSubject": "Wybierz temat",
     "messageMin": "Wpisz co najmniej 50 znaków",
-    "formSuccess": "Wiadomość wysłana. Odpowiemy w ciągu 24 godzin.",
+    "formSuccess": "Wiadomość wysłana. Odpowiemy w ciągu 1 godziny w godzinach pracy (pon-pt, 10:00-19:00 CET). Poza godzinami pracy odpowiadamy następnego dnia roboczego.",
     "nameNoDigits": "Cyfry nie są dozwolone w tym polu",
     "required": "To pole jest wymagane",
     "invalidEmail": "Podaj poprawny email"
@@ -241,7 +241,7 @@
   "serviceCTA": {
     "eyebrow": "Skontaktuj się",
     "formTitle": "Wyślij nam wiadomość",
-    "formSubtitle": "Zostaw zapytanie, a nasz ekspert skontaktuje się w ciągu 24 godzin.",
+    "formSubtitle": "Zostaw zapytanie, a nasz ekspert skontaktuje się w ciągu 1 godziny w godzinach pracy (pon-pt, 10:00-19:00 CET). Poza godzinami pracy odpowiadamy następnego dnia roboczego.",
     "firstName": "Imię",
     "lastName": "Nazwisko",
     "email": "Email służbowy",
@@ -379,7 +379,7 @@
           "body": "Niezależne zarządzanie inwestycjami i doradztwo portfelowe dla przedsiębiorców i rodzin. Bez prowizji od sprzedaży produktów. Bez kwot instytucjonalnych. Wyłącznie rekomendacje zgodne z Państwa celami."
         },
         {
-          "title": "Biuro rodzinne",
+          "title": "Family Office",
           "body": "Projektujemy i prowadzimy struktury biura rodzinnego dla rodzin wielopokoleniowych - koordynując inwestycje, ład korporacyjny, sukcesję i raportowanie z jednego punktu."
         },
         {
@@ -485,7 +485,7 @@
     "categories": {
       "all": "Wszystkie",
       "wealth": "Zarządzanie majątkiem",
-      "family": "Biuro rodzinne",
+      "family": "Family Office",
       "structuring": "Strukturyzacja i podatki",
       "ma": "Fuzje i przejęcia",
       "special": "Rozwiązania specjalne"
@@ -528,7 +528,7 @@
         },
         {
           "title": "Czas odpowiedzi",
-          "body": "Odpowiadamy na wszystkie zapytania w ciągu 24 godzin."
+          "body": "Odpowiadamy na wszystkie zapytania w ciągu 1 godziny w godzinach pracy (pon-pt, 10:00-19:00 CET). Poza godzinami pracy odpowiadamy następnego dnia roboczego."
         },
         {
           "title": "Poufność",
@@ -538,7 +538,7 @@
     },
     "form": {
       "title": "Wyślij nam wiadomość",
-      "subtitle": "Zostaw zapytanie, a nasz ekspert skontaktuje się w ciągu 24 godzin.",
+      "subtitle": "Zostaw zapytanie, a nasz ekspert skontaktuje się w ciągu 1 godziny w godzinach pracy (pon-pt, 10:00-19:00 CET). Poza godzinami pracy odpowiadamy następnego dnia roboczego.",
       "firstName": "Imię",
       "lastName": "Nazwisko",
       "email": "Email służbowy",
@@ -546,7 +546,7 @@
       "message": "Wiadomość",
       "messagePlaceholder": "Opisz swoją sytuację - aktywa, cele, harmonogram lub cokolwiek istotnego.",
       "submit": "Wyślij zapytanie",
-      "footnote": "Odpowiadamy w ciągu 24 godzin. Wszystkie informacje są ściśle poufne.",
+      "footnote": "Odpowiadamy w ciągu 1 godziny w godzinach pracy (pon-pt, 10:00-19:00 CET). Poza godzinami pracy odpowiadamy następnego dnia roboczego. Wszystkie informacje są ściśle poufne.",
       "errors": {
         "firstName": "Imię jest wymagane",
         "lastName": "Nazwisko jest wymagane",
@@ -554,7 +554,7 @@
         "subject": "Wybierz temat",
         "message": "Dodaj nieco więcej szczegółów"
       },
-      "success": "Wiadomość wysłana. Odpowiemy w ciągu 24 godzin.",
+      "success": "Wiadomość wysłana. Odpowiemy w ciągu 1 godziny w godzinach pracy (pon-pt, 10:00-19:00 CET). Poza godzinami pracy odpowiadamy następnego dnia roboczego.",
       "phone": "Telefon (opcjonalnie)"
     },
     "bottomCTA": {
@@ -819,7 +819,7 @@
         }
       ],
       "cta": {
-        "title": "Rozpocznij Poufną Rozmowę",
+        "title": "Umów poufne wprowadzenie",
         "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Państwa sytuacji - i zaproponujemy ścieżkę naprzód tylko, jeśli będziemy pewni, że możemy wnieść istotną wartość."
       }
     },
@@ -1070,7 +1070,7 @@
         }
       ],
       "cta": {
-        "title": "Rozpocznij Poufną Rozmowę",
+        "title": "Umów poufne wprowadzenie",
         "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Państwa sytuacji - i zaproponujemy ścieżkę naprzód tylko, jeśli będziemy pewni, że możemy wnieść istotną wartość."
       }
     },
@@ -1321,7 +1321,7 @@
         }
       ],
       "cta": {
-        "title": "Rozpocznij Poufną Rozmowę",
+        "title": "Umów poufne wprowadzenie",
         "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Państwa sytuacji - i zaproponujemy ścieżkę naprzód tylko, jeśli będziemy pewni, że możemy wnieść istotną wartość."
       }
     },
@@ -1572,7 +1572,7 @@
         }
       ],
       "cta": {
-        "title": "Rozpocznij Poufną Rozmowę",
+        "title": "Umów poufne wprowadzenie",
         "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Państwa sytuacji - i zaproponujemy ścieżkę naprzód tylko, jeśli będziemy pewni, że możemy wnieść istotną wartość."
       }
     },
@@ -2140,7 +2140,7 @@
     "states": {
       "sending": "Wysyłanie...",
       "successHeading": "Dziękujemy",
-      "successBody": "Twoja wiadomość została odebrana. Nasz zespół odpowie w ciągu 24 godzin.",
+      "successBody": "Twoja wiadomość została odebrana. Nasz zespół odpowie w ciągu 1 godziny w godzinach pracy (pon-pt, 10:00-19:00 CET). Poza godzinami pracy odpowiadamy następnego dnia roboczego.",
       "sendAnother": "Wyślij kolejną wiadomość",
       "errorToast": "Coś poszło nie tak. Spróbuj ponownie lub napisz do nas na info@iconfinance.io"
     },
