@@ -60,6 +60,18 @@ const GlassDefs = ({ id }: DefsProps) => (
       <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.15" />
       <stop offset="100%" stopColor={GOLD_SHADOW} stopOpacity="0.4" />
     </radialGradient>
+    {/* specular hot-spot highlight (top-left) */}
+    <radialGradient id={`${id}-spec`} cx="32%" cy="22%" r="38%">
+      <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.85" />
+      <stop offset="60%" stopColor="#FFFFFF" stopOpacity="0.12" />
+      <stop offset="100%" stopColor="#FFFFFF" stopOpacity="0" />
+    </radialGradient>
+    {/* warm rim light bouncing from below */}
+    <linearGradient id={`${id}-rim`} x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stopColor={GOLD_LIGHT} stopOpacity="0.55" />
+      <stop offset="40%" stopColor={GOLD_MID} stopOpacity="0.15" />
+      <stop offset="100%" stopColor={GOLD_MID} stopOpacity="0" />
+    </linearGradient>
   </defs>
 );
 
