@@ -1,5 +1,5 @@
 import { useId, useMemo, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { toast } from "sonner";
 import { Check, ChevronDown, Loader2 } from "lucide-react";
@@ -201,6 +201,7 @@ const ContactForm = ({
 }: ContactFormProps) => {
   const { t } = useTranslation();
   const localize = useLocalizedPath();
+  const navigate = useNavigate();
   const uid = useId().replace(/[:]/g, "");
   const liveRegionRef = useRef<HTMLDivElement>(null);
 
@@ -316,6 +317,8 @@ const ContactForm = ({
         await new Promise((r) => setTimeout(r, 700));
       }
       setStatus("success");
+      navigate(localize("/thank-you"));
+      return;
     } catch (err) {
       setStatus("idle");
       toast.error(t("contactForm.states.errorToast"), {
