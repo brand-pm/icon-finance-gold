@@ -38,7 +38,7 @@
   "hero": {
     "eyebrow": "Zarządzanie majątkiem",
     "title": "Ochrona i pomnażanie majątku przez pokolenia",
-    "subtitle": "Kompleksowe zarządzanie majątkiem dla rodzin i przedsiębiorców z międzynarodową ekspertyzą i indywidualnym podejściem",
+    "subtitle": "Niezależni z zasady. Działamy wyłącznie w interesie naszych klientów — przejrzyste wynagrodzenie, bez ukrytych motywów, bez konfliktów instytucjonalnych.",
     "ctaPrimary": "Rozpocznij dialog",
     "ctaSecondary": "Nasza ekspertyza",
     "stats": {
@@ -209,7 +209,7 @@
     }
   },
   "footer": {
-    "tagline": "Niezależne zarządzanie majątkiem i usługi biura rodzinnego dla przedsiębiorców i rodzin z aktywami międzynarodowymi.",
+    "tagline": "Niezależne zarządzanie majątkiem i usługi doradcze dla przedsiębiorców i rodzin z aktywami międzynarodowymi. Z Warszawy, z aktywną siecią partnerską w 5 jurysdykcjach.",
     "navigate": "Nawigacja",
     "services": "Usługi",
     "contact": "Kontakt",
@@ -264,7 +264,7 @@
       "items": [
         {
           "title": "Interesy klienta ponad wszystko",
-          "description": "Zawsze działamy jako zaufani doradcy. Nasza niezależność od banków, funduszy i dostawców produktów finansowych oznacza, że każda rekomendacja podyktowana jest wyłącznie Państwa celami."
+          "description": "Zawsze działamy jako zaufani doradcy. Nasza niezależność od banków, funduszy i dostawców produktów finansowych oznacza, że każda rekomendacja podyktowana jest wyłącznie Państwa celami. Niezależni w mandatach doradczych; tam gdzie obowiązują opłaty transakcyjne — jak w M&A — są one w pełni ujawniane i uzgadniane z góry."
         },
         {
           "title": "Długoterminowe relacje",
@@ -358,8 +358,25 @@
       ]
     },
     "cta": {
-      "title": "Rozpocznij poufną rozmowę",
+      "title": "Umów poufne wprowadzenie",
       "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Twojej sytuacji - i zaproponujemy drogę naprzód tylko wtedy, gdy będziemy pewni, że możemy wnieść istotną wartość."
+    },
+    "teamStats": {
+      "eyebrow": "Nasza skala",
+      "items": [
+        {
+          "n": "30+",
+          "label": "Łączny zespół"
+        },
+        {
+          "n": "50+",
+          "label": "Aktywna sieć partnerska"
+        },
+        {
+          "n": "4",
+          "label": "Senior advisors"
+        }
+      ]
     }
   },
   "expertise": {
@@ -471,7 +488,7 @@
       }
     ],
     "cta": {
-      "title": "Rozpocznij poufną rozmowę",
+      "title": "Umów poufne wprowadzenie",
       "description": "Umów się na prywatną konsultację z naszym zespołem. Najpierw wysłuchamy Twojej sytuacji - i zaproponujemy drogę naprzód tylko wtedy, gdy będziemy pewni, że możemy wnieść istotną wartość."
     }
   },
@@ -509,7 +526,7 @@
   "contactPage": {
     "hero": {
       "eyebrow": "Kontakt",
-      "title": "Rozpocznij poufną rozmowę",
+      "title": "Umów poufne wprowadzenie",
       "description": "Najpierw słuchamy. Proponujemy drogę naprzód tylko wtedy, gdy jesteśmy pewni, że możemy wnieść istotną wartość do Twojej sytuacji."
     },
     "details": {
@@ -840,7 +857,7 @@
         "sectionTitle": "Dla rodzin myślących\nw kategoriach pokoleń",
         "items": [
           {
-            "title": "Rodziny z aktywami od 10 mln USD",
+            "title": "Rodziny z aktywami od 2 mln USD",
             "description": "Państwa majątek rodzinny urósł do skali, w której nieformalne zarządzanie już nie wystarcza. Potrzebują Państwo ustrukturyzowanego podejścia, które koordynuje inwestycje, podmioty prawne, podatki i sukcesję w jednym miejscu."
           },
           {
