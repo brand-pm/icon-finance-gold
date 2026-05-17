@@ -815,6 +815,10 @@
         {
           "question": "How do you protect client confidentiality?",
           "answer": "Confidentiality is both a professional obligation and a legal one. Client information is never shared with third parties without explicit consent. NDA arrangements are available on request."
+        },
+        {
+          "question": "How are client assets held?",
+          "answer": "Client assets are managed within a custody structure designed to protect client ownership interests. The applicable custody arrangement, including the identity of any custodial or holding entities and relevant access conditions, is set out in the client agreement provided at onboarding. Certain asset classes may be subject to fund-level liquidity terms."
         }
       ],
       "cta": {
@@ -1964,21 +1968,21 @@
         "tag": "CONCENTRATED POSITION",
         "title": "Founder with concentrated equity in a public company",
         "situation": "The client held 70% of personal wealth in a single listed equity, with significant unrealized capital gains and reluctance to trigger immediate tax events.",
-        "approach": "We implemented a structured diversification program over 24 months using collar strategies, scheduled tax-aware sales, and built complementary uncorrelated allocations.",
+        "approach": "We recommended and coordinated the implementation of a structured diversification program over 24 months using collar strategies, scheduled tax-aware sales, and coordinated the build-out of complementary uncorrelated allocations.",
         "outcome": "Single-stock concentration reduced from 70% to 25% over two years, downside hedged throughout, capital gains realized in tax-efficient tranches."
       },
       "case2": {
         "tag": "POST-LIQUIDITY EVENT",
         "title": "Family with $15M liquidity from real estate sale",
         "situation": "A family received unexpected liquidity following the sale of a long-held commercial property and required immediate guidance on deployment.",
-        "approach": "We constructed a 60/30/10 portfolio across equities, fixed income, and alternatives, staggered deployment over 12 months to mitigate market timing risk, and integrated municipal income streams.",
+        "approach": "We recommended and coordinated the construction of a 60/30/10 portfolio across equities, fixed income, and alternatives, staggered deployment over 12 months to mitigate market timing risk, and integrated municipal income streams.",
         "outcome": "Capital fully deployed across institutional-grade strategies, year-one return aligned with the family's stated risk profile, and ongoing monitoring framework established."
       },
       "case3": {
         "tag": "MULTI-CURRENCY EXPOSURE",
         "title": "Entrepreneur with assets in three currency zones",
         "situation": "A client's portfolio held EUR, USD, and CHF positions but lacked consistent currency strategy, leading to unintended FX losses over five years.",
-        "approach": "We mapped natural currency liabilities across residences, education, and family commitments, implemented strategic hedging at the portfolio level, and rebalanced exposures quarterly.",
+        "approach": "We mapped natural currency liabilities across residences, education, and family commitments, recommended and coordinated the implementation of strategic hedging at the portfolio level, and coordinated quarterly rebalancing of exposures.",
         "outcome": "FX-driven volatility reduced by over 40%, currency exposures now matched to actual lifestyle needs, and treasury function operating systematically rather than reactively."
       }
     },
@@ -1996,7 +2000,7 @@
         "tag": "SUCCESSION PLANNING",
         "title": "Patriarch preparing transition to next generation",
         "situation": "The founder of a private holding wished to step back from active management while ensuring his three adult children inherited responsibly.",
-        "approach": "We facilitated a structured family governance process, including facilitated family meetings to align values across generations, drafting of a family constitution establishing decision-making principles, and coordination of a multi-generational succession framework, engaging specialist legal counsel where required. A formal ownership transition plan was established with defined governance milestones and an investment education programme for the next generation.",
+        "approach": "We facilitated a structured family governance process, including facilitated family meetings to align values across generations, coordination of the drafting of a family constitution through our legal partners, establishing decision-making principles, and coordination of a multi-generational succession framework, engaging specialist legal counsel where required. A formal ownership transition plan was established with defined governance milestones and an investment education programme for the next generation.",
         "outcome": "Formal handover completed over 18 months, all three children active in defined roles, family wealth governance now transcends any single individual."
       },
       "case3": {

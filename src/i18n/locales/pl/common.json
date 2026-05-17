@@ -815,6 +815,10 @@
         {
           "question": "Jak chronią Państwo poufność klientów?",
           "answer": "Poufność jest zarówno obowiązkiem zawodowym, jak i prawnym. Informacje o kliencie nigdy nie są udostępniane stronom trzecim bez wyraźnej zgody. Umowy NDA są dostępne na życzenie."
+        },
+        {
+          "question": "Jak przechowywane są aktywa klientów?",
+          "answer": "Aktywa klientów zarządzane są w ramach struktury depozytowej zaprojektowanej w celu ochrony interesów własnościowych klienta. Obowiązujące warunki depozytowe, w tym tożsamość podmiotów depozytariusza lub holdingowych oraz odpowiednie warunki dostępu, określone są w umowie z klientem przekazywanej na etapie onboardingu. Niektóre klasy aktywów mogą podlegać warunkom płynności na poziomie funduszu."
         }
       ],
       "cta": {
@@ -1964,21 +1968,21 @@
         "tag": "POZYCJA SKONCENTROWANA",
         "title": "Założyciel ze znaczącym udziałem w spółce publicznej",
         "situation": "70% osobistego majątku klienta było ulokowane w akcjach jednej spółki publicznej, z istotnymi niezrealizowanymi zyskami kapitałowymi. Klient nie chciał natychmiast realizować zobowiązań podatkowych.",
-        "approach": "Wdrożyliśmy program stopniowej dywersyfikacji w okresie 24 miesięcy z wykorzystaniem strategii collar, zaplanowaliśmy sprzedaże z uwzględnieniem konsekwencji podatkowych oraz zbudowaliśmy uzupełniające, nieskorelowane pozycje.",
+        "approach": "Zarekomendowaliśmy i skoordynowaliśmy wdrożenie programu stopniowej dywersyfikacji w okresie 24 miesięcy z wykorzystaniem strategii collar, zaplanowaliśmy sprzedaże z uwzględnieniem konsekwencji podatkowych oraz skoordynowaliśmy budowę uzupełniających, nieskorelowanych pozycji.",
         "outcome": "W ciągu dwóch lat koncentrację w jednej spółce zmniejszono z 70% do 25%, ryzyko spadków zabezpieczono przez cały okres, a zyski kapitałowe zrealizowano w transzach optymalnych podatkowo."
       },
       "case2": {
         "tag": "PO ZDARZENIU PŁYNNOŚCIOWYM",
         "title": "Rodzina z 15 mln USD płynności ze sprzedaży nieruchomości",
         "situation": "Rodzina otrzymała znaczną płynność ze sprzedaży nieruchomości komercyjnej, którą posiadała od wielu lat, i potrzebowała strategii jej rozmieszczenia.",
-        "approach": "Skonstruowaliśmy portfel 60/30/10 — akcje, obligacje, aktywa alternatywne. Rozłożyliśmy wejście w pozycje na 12 miesięcy, aby zminimalizować ryzyko złego momentu rynkowego, oraz dodaliśmy strumienie dochodu municypalnego.",
+        "approach": "Zaprojektowaliśmy i skoordynowaliśmy konstrukcję portfela 60/30/10 — akcje, obligacje, aktywa alternatywne. Rozłożyliśmy wejście w pozycje na 12 miesięcy, aby zminimalizować ryzyko złego momentu rynkowego, oraz dodaliśmy strumienie dochodu municypalnego.",
         "outcome": "Kapitał w pełni ulokowany w strategiach klasy instytucjonalnej, zwrot z pierwszego roku zgodny z profilem ryzyka rodziny, ustanowiono stały system monitorowania."
       },
       "case3": {
         "tag": "EKSPOZYCJA WIELOWALUTOWA",
         "title": "Przedsiębiorca z aktywami w trzech strefach walutowych",
         "situation": "Portfel klienta obejmował pozycje w EUR, USD i CHF, ale nie miał spójnej strategii walutowej, co przez pięć lat doprowadziło do niezamierzonych strat kursowych.",
-        "approach": "Zmapowaliśmy naturalne zobowiązania walutowe rodziny — rezydencje, edukacja, wydatki rodzinne — względem aktywów portfela, wdrożyliśmy strategiczne hedging na poziomie portfela oraz wprowadziliśmy kwartalne równoważenie.",
+        "approach": "Zmapowaliśmy naturalne zobowiązania walutowe rodziny — rezydencje, edukacja, wydatki rodzinne — względem aktywów portfela, zarekomendowaliśmy i skoordynowaliśmy wdrożenie strategicznego hedgingu na poziomie portfela oraz skoordynowaliśmy kwartalne równoważenie.",
         "outcome": "Zmienność walutowa zmniejszona o ponad 40%, struktura walutowa portfela dopasowana do faktycznych potrzeb stylu życia, a funkcja skarbowa działa systematycznie, a nie reaktywnie."
       }
     },
@@ -1996,7 +2000,7 @@
         "tag": "PLANOWANIE SUKCESJI",
         "title": "Patriarcha przygotowuje przekazanie następnemu pokoleniu",
         "situation": "Założyciel prywatnego holdingu zamierzał wycofać się z aktywnego zarządzania, jednocześnie zapewniając odpowiedzialne dziedziczenie trojgu dorosłym dzieciom.",
-        "approach": "Poprowadziliśmy ustrukturyzowany proces family governance, obejmujący moderowane spotkania rodzinne służące uzgadnianiu wartości pomiędzy pokoleniami, opracowanie konstytucji rodzinnej ustanawiającej zasady podejmowania decyzji oraz koordynację wielopokoleniowego frameworku sukcesji, z udziałem wyspecjalizowanych doradców prawnych tam, gdzie było to konieczne. Powstał formalny plan przekazania własności z określonymi kamieniami milowymi zarządczymi oraz program edukacji inwestycyjnej dla następnego pokolenia.",
+        "approach": "Poprowadziliśmy ustrukturyzowany proces family governance, obejmujący moderowane spotkania rodzinne służące uzgadnianiu wartości pomiędzy pokoleniami, koordynację opracowania konstytucji rodzinnej we współpracy z naszymi partnerami prawnymi, ustanawiającej zasady podejmowania decyzji oraz koordynację wielopokoleniowego frameworku sukcesji, z udziałem wyspecjalizowanych doradców prawnych tam, gdzie było to konieczne. Powstał formalny plan przekazania własności z określonymi kamieniami milowymi zarządczymi oraz program edukacji inwestycyjnej dla następnego pokolenia.",
         "outcome": "Formalne przekazanie zakończone w ciągu 18 miesięcy, wszystkie troje dzieci aktywnie pełnią określone role, zarządzanie majątkiem rodziny nie zależy już od jednej osoby."
       },
       "case3": {
