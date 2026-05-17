@@ -1885,6 +1885,10 @@
       "terms": {
         "description": "",
         "title": "Regulamin | Icon Finance"
+      },
+      "thankYou": {
+        "title": "Dziękujemy | Icon Finance",
+        "description": "Wiadomość została otrzymana"
       }
     }
   },
@@ -2146,5 +2150,17 @@
       "message": "Wiadomość",
       "send": "Wyślij"
     }
+  },
+  "servicesIntro": {
+    "eyebrow": "Współpraca z Icon Finance",
+    "title": "Kompleksowa ekspertyza, długoterminowe partnerstwo",
+    "body": "Współpraca z nami otwiera dostęp do zintegrowanej ekspertyzy: strukturyzacja i ochrona kapitału, zarządzanie portfelem, wsparcie transakcji M&A, międzynarodowe planowanie podatkowe. Budujemy długoterminowe partnerstwa — wraz ze wzrostem Państwa biznesu i kapitału rozszerza się także zakres rozwiązań. Wynagrodzenie uzgadniane jest z góry — przejrzyście, bez prowizji i ukrytych płatności jakiegokolwiek rodzaju."
+  },
+  "thankYou": {
+    "eyebrow": "Wiadomość otrzymana",
+    "title": "Dziękujemy za kontakt",
+    "body": "Dziękujemy! Wiadomość została wysłana. Nasz zespół skontaktuje się w ciągu godziny — pon.–pt., 10:00–19:00 CET. Jeśli napisali Państwo poza godzinami pracy, odpiszemy jutro.",
+    "ctaPrimary": "Powrót na stronę główną",
+    "ctaSecondary": "Poznaj nasze usługi"
   }
 }

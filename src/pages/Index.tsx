@@ -3,6 +3,7 @@ import { useLocalizedPath } from "@/i18n/useLocalizedPath";
 import Seo from "../components/Seo";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import ServicesIntro from "../components/ServicesIntro";
 import Services from "../components/Services";
 import PortfolioManagement from "../components/services/PortfolioManagement";
 import WhyUs from "../components/WhyUs";
@@ -21,6 +22,7 @@ const Index = () => {
       <Seo pageKey="home" includeOrganizationSchema />
       <Header />
       <Hero />
+      <ServicesIntro />
       <Services />
       <ScenariosOverviewSection />
       <PortfolioManagement
