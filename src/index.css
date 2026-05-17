@@ -43,37 +43,6 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 28 64% 67%;
-
-    /* ===== Glass material tokens (gold) =====
-       Centralized parameters for the project-wide glass effect.
-       Used by .gold-separator, .portfolio-stage-arrow, inline SVG icons
-       (IndustryIcons, InfinityGlassIcon), and any future glass element. */
-    --glass-gold-light: #F4D5A8;
-    --glass-gold-mid: #E0A776;
-    --glass-gold-deep: #A06940;
-    --glass-gold-shadow: #5C3A1F;
-    --glass-highlight: hsl(0 0% 100% / 0.55);
-    --glass-edge-dark: hsl(25 50% 18% / 0.45);
-    --glass-spec: hsl(0 0% 100% / 0.85);
-    --glass-rim: hsl(28 64% 67% / 0.55);
-    --glass-glow: hsl(28 64% 67% / 0.55);
-    --glass-glow-strong: hsl(28 64% 67% / 0.6);
-    --glass-glow-soft: hsl(28 64% 67% / 0.45);
-    --glass-body-gradient: linear-gradient(
-      135deg,
-      var(--glass-gold-light) 0%,
-      hsl(var(--gold)) 45%,
-      var(--glass-gold-deep) 100%
-    );
-    --glass-body-gradient-v: linear-gradient(
-      180deg,
-      var(--glass-gold-light) 0%,
-      hsl(var(--gold)) 45%,
-      var(--glass-gold-deep) 100%
-    );
-    --glass-inset-shadow:
-      inset 1px 1px 0 var(--glass-highlight),
-      inset -1px -1px 0 var(--glass-edge-dark);
   }
 }
 
@@ -231,7 +200,7 @@
       hsl(var(--gold) / 0.55) 35%,
       hsl(var(--gold) / 0.95) 100%
     );
-    box-shadow: 0 0 6px var(--glass-glow-soft);
+    box-shadow: 0 0 6px hsl(var(--gold) / 0.45);
     border-radius: 1px;
   }
   .gold-separator::after {
@@ -245,11 +214,18 @@
   /* Glass diamonds: faceted gold gradient + inner highlight + outer glow */
   .gold-separator .dot,
   .gold-separator .dot-lg {
-    background: var(--glass-body-gradient);
+    background:
+      linear-gradient(
+        135deg,
+        #F4D5A8 0%,
+        hsl(var(--gold)) 45%,
+        #A06940 100%
+      );
     transform: rotate(45deg);
     box-shadow:
-      var(--glass-inset-shadow),
-      0 0 8px var(--glass-glow);
+      inset 1px 1px 0 hsl(0 0% 100% / 0.55),
+      inset -1px -1px 0 hsl(25 50% 18% / 0.45),
+      0 0 8px hsl(var(--gold) / 0.55);
     border-radius: 1px;
   }
   .gold-separator .dot {
@@ -539,19 +515,20 @@
       hsl(var(--gold) / 0.9) 100%
     );
     border-radius: 1px;
-    box-shadow: 0 0 6px var(--glass-glow-soft);
+    box-shadow: 0 0 6px hsl(var(--gold) / 0.45);
   }
 
   .portfolio-stage-arrow__head {
     width: 9px;
     height: 9px;
-    background: var(--glass-body-gradient);
+    background: linear-gradient(135deg, #F4D5A8 0%, hsl(var(--gold)) 45%, #A06940 100%);
     transform: rotate(45deg);
     margin-top: -4px;
     border-radius: 1px;
     box-shadow:
-      var(--glass-inset-shadow),
-      0 0 8px var(--glass-glow-strong);
+      inset 1px 1px 0 hsl(0 0% 100% / 0.55),
+      inset -1px -1px 0 hsl(25 50% 18% / 0.45),
+      0 0 8px hsl(var(--gold) / 0.6);
   }
 
   .portfolio-stage-title {

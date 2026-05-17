@@ -16,30 +16,23 @@ import * as React from "react";
 
 type IconProps = React.SVGProps<SVGSVGElement> & { size?: number };
 
-/**
- * Glass material palette — sourced from CSS variables (see index.css :root).
- * Hex fallbacks keep the icons readable when the SVG is rendered outside the
- * page styles (e.g. exported standalone). Tokens:
- *   --glass-gold-light / --glass-gold-mid / --glass-gold-deep / --glass-gold-shadow
- *   --glass-highlight / --glass-edge-dark / --glass-spec / --glass-rim
- *   --glass-glow / --glass-glow-strong / --glass-glow-soft
- */
-const GOLD_LIGHT = "var(--glass-gold-light, #F4D5A8)";
-const GOLD_MID = "var(--glass-gold-mid, #E0A776)";
-const GOLD_DEEP = "var(--glass-gold-deep, #A06940)";
-const GOLD_SHADOW = "var(--glass-gold-shadow, #5C3A1F)";
+/** Shared gradient palette */
+const GOLD_LIGHT = "#F4D5A8";
+const GOLD_MID = "#E0A776";
+const GOLD_DEEP = "#A06940";
+const GOLD_SHADOW = "#5C3A1F";
 
 interface DefsProps {
   id: string;
 }
 
-export const GlassDefs = ({ id }: DefsProps) => (
+const GlassDefs = ({ id }: DefsProps) => (
   <defs>
     {/* main golden glass body */}
     <linearGradient id={`${id}-body`} x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" style={{ stopColor: GOLD_LIGHT }} />
-      <stop offset="45%" style={{ stopColor: GOLD_MID }} />
-      <stop offset="100%" style={{ stopColor: GOLD_DEEP }} />
+      <stop offset="0%" stopColor={GOLD_LIGHT} />
+      <stop offset="45%" stopColor={GOLD_MID} />
+      <stop offset="100%" stopColor={GOLD_DEEP} />
     </linearGradient>
     {/* glossy top highlight overlay */}
     <linearGradient id={`${id}-gloss`} x1="0" y1="0" x2="0" y2="1">
@@ -49,13 +42,13 @@ export const GlassDefs = ({ id }: DefsProps) => (
     </linearGradient>
     {/* deep edge / shadow */}
     <linearGradient id={`${id}-edge`} x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" style={{ stopColor: GOLD_LIGHT, stopOpacity: 0.9 }} />
-      <stop offset="100%" style={{ stopColor: GOLD_SHADOW, stopOpacity: 0.85 }} />
+      <stop offset="0%" stopColor={GOLD_LIGHT} stopOpacity="0.9" />
+      <stop offset="100%" stopColor={GOLD_SHADOW} stopOpacity="0.85" />
     </linearGradient>
     {/* outer gold glow — readable on navy */}
     <filter id={`${id}-glow`} x="-40%" y="-40%" width="180%" height="180%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="2.2" result="b" />
-      <feFlood floodColor="var(--glass-gold-mid, #E0A776)" floodOpacity="0.55" result="c" />
+      <feFlood floodColor={GOLD_MID} floodOpacity="0.55" result="c" />
       <feComposite in="c" in2="b" operator="in" result="g" />
       <feMerge>
         <feMergeNode in="g" />
@@ -65,7 +58,7 @@ export const GlassDefs = ({ id }: DefsProps) => (
     {/* inner soft shadow for depth */}
     <radialGradient id={`${id}-depth`} cx="50%" cy="35%" r="65%">
       <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.15" />
-      <stop offset="100%" style={{ stopColor: GOLD_SHADOW, stopOpacity: 0.4 }} />
+      <stop offset="100%" stopColor={GOLD_SHADOW} stopOpacity="0.4" />
     </radialGradient>
     {/* specular hot-spot highlight (top-left) */}
     <radialGradient id={`${id}-spec`} cx="32%" cy="22%" r="38%">
@@ -75,14 +68,14 @@ export const GlassDefs = ({ id }: DefsProps) => (
     </radialGradient>
     {/* warm rim light bouncing from below */}
     <linearGradient id={`${id}-rim`} x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0%" style={{ stopColor: GOLD_LIGHT, stopOpacity: 0.55 }} />
-      <stop offset="40%" style={{ stopColor: GOLD_MID, stopOpacity: 0.15 }} />
-      <stop offset="100%" style={{ stopColor: GOLD_MID, stopOpacity: 0 }} />
+      <stop offset="0%" stopColor={GOLD_LIGHT} stopOpacity="0.55" />
+      <stop offset="40%" stopColor={GOLD_MID} stopOpacity="0.15" />
+      <stop offset="100%" stopColor={GOLD_MID} stopOpacity="0" />
     </linearGradient>
   </defs>
 );
 
-export const Base = ({
+const Base = ({
   size = 44,
   children,
   ...props
@@ -98,9 +91,6 @@ export const Base = ({
     {children}
   </svg>
 );
-
-export type { IconProps };
-
 
 /* 1. Entrepreneurs & Founders — faceted gem / cornerstone diamond */
 export const IconEntrepreneur = (props: IconProps) => {
