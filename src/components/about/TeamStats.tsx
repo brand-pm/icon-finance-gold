@@ -9,49 +9,19 @@ interface Stat {
 const TeamStats = () => {
   const { t } = useTranslation();
   const ref = useScrollReveal();
-  const eyebrow = t("about.teamStats.eyebrow");
-  const items = t("about.teamStats.items", { returnObjects: true }) as Stat[];
+  const stats = t("about.teamStats.items", { returnObjects: true }) as Stat[];
 
-  if (!Array.isArray(items) || items.length === 0) return null;
+  if (!Array.isArray(stats) || stats.length === 0) return null;
 
   return (
-    <section
-      className="section-padding marble-texture"
-      style={{ background: "linear-gradient(180deg, #EDE9E4 0%, #F5F3F0 100%)" }}
-    >
-      <div className="container-main" ref={ref}>
-        <div
-          className="text-center mb-12 opacity-0 animate-fade-up flex flex-col items-center"
-          style={{ animationDelay: "0.1s" }}
-        >
-          <p className="eyebrow mb-4">{eyebrow}</p>
-          <div className="gold-separator">
-            <div className="line" />
-            <div className="dot" />
-            <div className="dot-lg" />
-            <div className="dot" />
-            <div className="line" />
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-4 items-center opacity-0 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-          {items.map((it, i) => (
-            <div
-              key={i}
-              className="flex flex-col items-center text-center px-6 relative"
-              style={{
-                borderLeft: i > 0 ? "1px solid rgba(224,167,118,0.25)" : undefined,
-              }}
-            >
-              <div
-                className="text-gold font-light leading-none mb-3"
-                style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(48px,7vw,72px)" }}
-              >
-                {it.n}
-              </div>
-              <p className="text-charcoal text-sm tracking-wide uppercase" style={{ letterSpacing: "0.12em" }}>
-                {it.label}
-              </p>
+    <section ref={ref} className="bg-navy section-padding">
+      <div className="container-main">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-y-14 gap-x-8">
+          {stats.map((s, i) => (
+            <div key={i} className="text-center opacity-0 animate-fade-up" style={{ animationDelay: `${0.1 + i * 0.08}s` }}>
+              <div className="text-gold font-light leading-none mb-4" style={{ fontSize: "clamp(56px,7vw,84px)" }}>{s.n}</div>
+              <div className="w-10 h-px bg-gold/50 mx-auto mb-4" />
+              <p className="text-white/70 text-sm uppercase tracking-wider">{s.label}</p>
             </div>
           ))}
         </div>
