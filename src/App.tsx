@@ -24,6 +24,7 @@ const PrivacyPolicy = lazy(() => import("./pages/legal/PrivacyPolicy.tsx"));
 const CookiePolicy = lazy(() => import("./pages/legal/CookiePolicy.tsx"));
 const Terms = lazy(() => import("./pages/legal/Terms.tsx"));
 const NotFound = lazy(() => import("./pages/NotFound.tsx"));
+const ThankYou = lazy(() => import("./pages/ThankYou.tsx"));
 const StudioPage = lazy(() => import("./pages/Studio.tsx"));
 
 const queryClient = new QueryClient();
@@ -102,6 +103,7 @@ const LocalizedRoutes = () => (
         <Route path="privacy-policy" element={<PrivacyPolicy />} />
         <Route path="cookie-policy" element={<CookiePolicy />} />
         <Route path="terms" element={<Terms />} />
+        <Route path="thank-you" element={<ThankYou />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>
