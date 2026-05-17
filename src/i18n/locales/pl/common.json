@@ -72,7 +72,7 @@
         "items": [
           "Ład rodzinny",
           "Planowanie sukcesji",
-          "Doradztwo filantropijne"
+          "Zarządzanie międzypokoleniowe"
         ],
         "alt": "Drzewo rodzinne - zarządzanie majątkiem wielu pokoleń"
       },
@@ -168,8 +168,8 @@
     "minRead": "min czytania",
     "articles": {
       "a1": {
-        "category": "Perspektywa biura rodzinnego",
-        "title": "Raport Goldman Sachs o inwestycjach biur rodzinnych - dostosowanie do nowej rzeczywistości"
+        "category": "Perspektywa Family Office",
+        "title": "Kapitał po exicie: co zrobić w pierwszych 90 dniach"
       },
       "a2": {
         "category": "Briefingi prywatne",
@@ -412,8 +412,8 @@
           "body": "Założyciele i menedżerowie po zdarzeniu płynnościowym, którzy potrzebują zdyscyplinowanego rozmieszczenia i ochrony kapitału."
         },
         {
-          "title": "Filantropi",
-          "body": "Rodziny i osoby kierujące kapitał na trwały wpływ społeczny poprzez ustrukturyzowaną dobroczynność."
+          "title": "Startupy i Founderzy",
+          "body": "Founderzy i przedsiębiorcy w obliczu zdarzeń płynnościowych, koncentracji equity oraz alokacji kapitału po exicie. Pomagamy zbudować strukturę finansową, która przetrwa exit — zanim warunki transakcji zostaną sfinalizowane."
         },
         {
           "title": "Klienci korporacyjni i instytucjonalni",
@@ -982,8 +982,8 @@
               "description": "rady, statuty, ramy decyzyjne"
             },
             {
-              "title": "Zarządzanie filantropią",
-              "description": "fundacje, programy darczyńców, wpływ"
+              "title": "Koordynacja międzypokoleniowa",
+              "description": "przekazanie majątku, edukacja, ramy decyzyjne"
             },
             {
               "title": "Koordynacja nieruchomości",
@@ -1169,7 +1169,7 @@
         },
         {
           "name": "Planowanie Podatkowe",
-          "description": "Strategiczne planowanie podatkowe redukujące Państwa globalne obciążenia podatkowe legalnymi środkami - planowanie rezydencji, strukturyzacja dochodów i optymalizacja umów.",
+          "description": "Trusty i prywatne fundacje to skuteczne narzędzia ochrony aktywów, planowania sukcesji oraz długoterminowej strukturyzacji majątku rodzinnego. Doradzamy w zakresie struktury, jurysdykcji i administracji.",
           "items": [
             "Analiza podatkowa wielu jurysdykcji",
             "Planowanie rezydencji i domicylu",
@@ -1594,8 +1594,8 @@
             "description": "Posiadają Państwo znaczące nieruchomości w różnych jurysdykcjach i potrzebują skoordynowanego doradztwa w zakresie struktury nabycia, finansowania, zarządzania i sprzedaży - zintegrowanego z szerszą strategią majątkową."
           },
           {
-            "title": "Filantropi i założyciele fundacji",
-            "description": "Chcą Państwo, by majątek tworzył trwały wpływ poza rodziną. Pomagamy zaprojektować, utworzyć i prowadzić struktury filantropijne odzwierciedlające Państwa wartości i wzmacniające realny rezultat."
+            "title": "Startupy i Founderzy",
+            "description": "Budują Państwo lub zbudowali spółkę finansowaną przez venture capital, a majątek osobisty jest skoncentrowany w jednej pozycji equity. Pomagamy ustrukturyzować holdingi przed exitem, zaplanować zdarzenie płynnościowe oraz zaprojektować to, co po nim — dywersyfikację, reinwestycję i długoterminową alokację zgodną z celami post-exit."
           },
           {
             "title": "Inwestorzy zrównoważeni",
@@ -1605,12 +1605,12 @@
       },
       "philosophy": {
         "sectionTitle": "Niestandardowe wyzwania\nwymagają indywidualnych rozwiązań",
-        "subtitle": "Standardowe modele zarządzania majątkiem nie są dostosowane do klientów z kolekcjami sztuki, złożonymi portfelami nieruchomości, ambicjami filantropijnymi czy zadaniami inwestowania odpowiedzialnego społecznie. Wychodzimy od Państwa konkretnej sytuacji i budujemy rozwiązanie pod nią.",
+        "subtitle": "Standardowe modele zarządzania majątkiem nie zostały zaprojektowane dla klientów z kolekcjami sztuki, złożonymi portfelami nieruchomości czy founderów w obliczu zdarzeń płynnościowych. Wychodzimy od Państwa konkretnej sytuacji i budujemy rozwiązanie pod nią.",
         "items": [
           {
             "number": "01",
             "title": "Ekspertyza wg klas aktywów",
-            "description": "Dla każdego obszaru - sztuka, nieruchomości, filantropia, inwestycje odpowiedzialne - angażujemy wyspecjalizowanych ekspertów, zamiast stosować jedną ramę."
+            "description": "Dla każdego obszaru — sztuka, nieruchomości, doradztwo dla founderów — angażujemy wyspecjalizowanych ekspertów, zamiast stosować jedną ramę."
           },
           {
             "number": "02",
@@ -1620,12 +1620,12 @@
           {
             "number": "03",
             "title": "Sieć specjalistów",
-            "description": "Koordynujemy współpracę z doradcami artystycznymi, ekspertami nieruchomości, prawnikami i specjalistami od pomiaru wpływu społecznego - wedle potrzeb."
+            "description": "Współpracujemy z doradcami w obszarze sztuki, ekspertami nieruchomości, doradcami prawnymi i doradcami dla founderów — w zależności od potrzeb."
           },
           {
             "number": "04",
             "title": "Zgodność z wartościami",
-            "description": "Państwa wartości traktujemy jako pełnoprawne kryterium inwestycyjne - czy to ograniczenia etyczne, cele wpływu społecznego, czy udział filantropii w portfelu."
+            "description": "Państwa wartości traktujemy jako pełnoprawne kryterium inwestycyjne — czy to ograniczenia ESG, cele wpływu społecznego, czy ograniczenia specyficzne dla founderów."
           }
         ]
       },
@@ -1646,8 +1646,8 @@
             "label": "Rozwiązania projektowane pod Państwa sytuację, nie pod szablon"
           },
           {
-            "main": "Wpływ",
-            "label": "Filantropia i inwestycje odpowiedzialne z mierzalnym rezultatem"
+            "main": "Founder",
+            "label": "Wyniki przed i po exicie dostosowane do realiów foundera"
           },
           {
             "main": "Sieć",
@@ -1679,12 +1679,12 @@
           ]
         },
         {
-          "name": "Filantropia",
-          "description": "Pomagamy rodzinom i osobom prywatnym projektować i prowadzić struktury filantropijne - prywatne fundacje, programy darowizn celowanych i projekty wpływu społecznego - odzwierciedlające Państwa wartości i tworzące trwałe zmiany.",
+          "name": "Doradztwo dla Founderów i Equity",
+          "description": "Doradztwo szyte na miarę dla founderów i kadry zarządzającej w obliczu koncentracji equity, zdarzeń płynnościowych i kapitału post-exit. Koordynujemy strukturyzację pre-exit, planowanie equity i alokację post-exit w ramach jednego zintegrowanego mandatu.",
           "items": [
-            "Strategia i struktura filantropii",
-            "Utworzenie i prowadzenie fundacji",
-            "Pomiar i raportowanie wpływu społecznego"
+            "Pre-exit holdingowe struktury i planowanie podatkowe",
+            "Doradztwo equity & vesting (secondary, programy pracownicze, alignment z koinwestorami)",
+            "Alokacja kapitału post-exit i polityka reinwestycji"
           ]
         },
         {
@@ -1724,31 +1724,31 @@
           ]
         },
         {
-          "name": "Wpływ i spuścizna",
+          "name": "Doradztwo dla Startupów i Founderów",
           "items": [
             {
-              "title": "Strategia filantropii",
-              "description": "podejście do darowizn oparte na wartościach"
+              "title": "Strukturyzacja majątku pre-exit",
+              "description": "struktury holdingowe, planowanie podatkowe przed płynnością"
             },
             {
-              "title": "Utworzenie prywatnej fundacji",
-              "description": "struktura prawna i zarządzanie"
+              "title": "Zarządzanie kapitałem post-exit",
+              "description": "dywersyfikacja, reinwestycja, długoterminowa alokacja"
             },
             {
-              "title": "Programy darowizn celowanych",
-              "description": "elastyczne narzędzia filantropii"
+              "title": "Doradztwo equity & vesting",
+              "description": "opcje secondary, EMI, phantom shares, share options, alignment z koinwestorami"
             },
             {
-              "title": "Budowa portfela inwestycji odpowiedzialnych",
-              "description": "staranna selekcja i nastawienie na wpływ"
+              "title": "Doradztwo growth capital",
+              "description": "selekcja inwestorów, weryfikacja term sheet, ochrona foundera"
             },
             {
-              "title": "Pomiar wpływu społecznego",
-              "description": "śledzenie realnych rezultatów"
+              "title": "Planowanie finansów osobistych dla founderów",
+              "description": "wynagrodzenie, dywidendy, rezerwy osobiste"
             },
             {
-              "title": "Planowanie spuścizny",
-              "description": "powiązanie spuścizny dobroczynnej i rodzinnej"
+              "title": "Sukcesja i przekazanie własności",
+              "description": "buy-sell agreements, planowanie wyjścia foundera"
             }
           ]
         }
@@ -1809,8 +1809,8 @@
           "answer": "Tak. Traktujemy sztukę i kolekcje jako odrębną klasę aktywów w ramach ogólnego majątku - z właściwą wyceną, ubezpieczeniem i raportowaniem - włączoną w jednolity obraz majątkowy."
         },
         {
-          "question": "Jakie minimum jest potrzebne do utworzenia fundacji filantropijnej?",
-          "answer": "Zależy to od jurysdykcji i wybranej struktury. Prywatne fundacje można utworzyć przy stosunkowo skromnych kwotach, bardziej złożone struktury wymagają większego kapitału. Dobieramy narzędzie pod Państwa cele i budżet."
+          "question": "Czy doradzają Państwo founderom przed zdarzeniem płynnościowym?",
+          "answer": "Tak. Okres przed zdarzeniem płynnościowym — czy to IPO, sprzedażą strategiczną, czy transakcją secondary — to najważniejsze okno na planowanie majątku. Doradzamy founderom w zakresie struktur holdingowych pre-exit, pozycjonowania podatkowego oraz alokacji kapitału post-exit — zanim warunki transakcji zostaną sfinalizowane. Wczesne zaangażowanie zwykle przynosi istotnie lepsze rezultaty niż restrukturyzacja po zamknięciu transakcji."
         },
         {
           "question": "Czy inwestowanie odpowiedzialne społecznie oznacza niższe zyski?",
@@ -1868,7 +1868,7 @@
       },
       "specialSolutions": {
         "title": "Rozwiązania specjalne | Icon Finance",
-        "description": "Doradztwo szyte na miarę dla sztuki, nieruchomości, filantropii i ESG - gdy standardowe zarządzanie majątkiem nie wystarcza."
+        "description": "Doradztwo szyte na miarę dla sztuki, nieruchomości i founderów — gdy standardowe zarządzanie majątkiem nie wystarcza."
       },
       "notFound": {
         "title": "Strona nie znaleziona | Icon Finance",
@@ -2099,8 +2099,8 @@
     },
     "ss": {
       "tag": "ROZWIĄZANIA SPECJALNE",
-      "title": "Nieruchomości, sztuka, filantropia",
-      "description": "Konsolidacja międzynarodowych portfeli nieruchomości, strukturyzowanie znaczących kolekcji sztuki, zakładanie dedykowanych fundacji filantropijnych — specjalistyczne sytuacje wykraczające poza standardową pracę portfelową."
+      "title": "Nieruchomości, sztuka, doradztwo dla founderów",
+      "description": "Konsolidacja międzynarodowych portfeli nieruchomości, strukturyzowanie znaczących kolekcji sztuki oraz doradztwo dla founderów w okresie przejść kapitałowych pre- i post-exit — specjalistyczne sytuacje wykraczające poza standardową pracę portfelową."
     }
   },
   "contactForm": {

@@ -72,7 +72,7 @@
         "items": [
           "Family governance",
           "Succession planning",
-          "Philanthropy advisory"
+          "Generational governance"
         ],
         "alt": "Family tree - multi-generational wealth stewardship"
       },
@@ -168,8 +168,8 @@
     "minRead": "min read",
     "articles": {
       "a1": {
-        "category": "Family Office Perspective",
-        "title": "Goldman Sachs Family Office Investment Insights report, Adapting to the Terrain"
+        "category": "Family Office Perspectives",
+        "title": "Post-Exit Wealth: What to Do in the First 90 Days"
       },
       "a2": {
         "category": "Private Briefings",
@@ -412,8 +412,8 @@
           "body": "Founders and executives following a liquidity event who need disciplined capital deployment and protection."
         },
         {
-          "title": "Philanthropists",
-          "body": "Families and individuals seeking to deploy capital for lasting impact through structured giving."
+          "title": "Startups and Founders",
+          "body": "Founders and entrepreneurs navigating liquidity events, equity concentration, and post-exit capital allocation. We help you build a financial structure that survives the exit — before terms are finalised."
         },
         {
           "title": "Corporate & Institutional",
@@ -982,8 +982,8 @@
               "description": "councils, charters, decision frameworks"
             },
             {
-              "title": "Philanthropy management",
-              "description": "foundations, donor programs, impact"
+              "title": "Generational coordination",
+              "description": "wealth transition, education, decision frameworks"
             },
             {
               "title": "Real estate coordination",
@@ -1169,7 +1169,7 @@
         },
         {
           "name": "Tax Planning",
-          "description": "Strategic tax planning that reduces your global tax burden through legitimate means - residency planning, income structuring, and treaty optimization across jurisdictions.",
+          "description": "Trusts and private foundations are powerful tools for asset protection, succession planning, and long-term family wealth structuring. We advise on structure, jurisdiction, and administration.",
           "items": [
             "Multi-jurisdiction tax analysis",
             "Residency and domicile planning",
@@ -1594,8 +1594,8 @@
             "description": "You hold substantial real estate across jurisdictions and need coordinated advisory on acquisition structuring, financing, management, and disposal - integrated with your broader wealth strategy."
           },
           {
-            "title": "Philanthropists and Foundation Founders",
-            "description": "You want your wealth to create lasting impact beyond your own family. We help you design, establish, and operate philanthropic structures that reflect your values and maximize your impact."
+            "title": "Startups and Founders",
+            "description": "You are building or have built a venture-backed company and personal wealth is concentrated in a single equity position. We help you structure pre-exit holdings, plan for the liquidity event, and design what comes after — diversification, reinvestment, and long-term allocation aligned with your post-exit goals."
           },
           {
             "title": "ESG and Impact Investors",
@@ -1605,12 +1605,12 @@
       },
       "philosophy": {
         "sectionTitle": "Unconventional Problems\nRequire Bespoke Solutions",
-        "subtitle": "Standard wealth management frameworks were not built for clients with art collections, complex real estate portfolios, philanthropic ambitions, or impact investing mandates. We start from your specific situation and build from there.",
+        "subtitle": "Standard wealth management frameworks were not built for clients with art collections, complex real estate portfolios, or founders navigating liquidity events. We start from your specific situation and build from there.",
         "items": [
           {
             "number": "01",
             "title": "Asset-Specific Expertise",
-            "description": "We bring specialist knowledge to each asset class - art, real estate, philanthropy, ESG - rather than applying a generic framework."
+            "description": "We bring specialist knowledge to each asset class — art, real estate, founder advisory — rather than applying a generic framework."
           },
           {
             "number": "02",
@@ -1620,12 +1620,12 @@
           {
             "number": "03",
             "title": "Network of Specialists",
-            "description": "We coordinate with art advisors, real estate experts, legal counsel, and impact measurement specialists as needed."
+            "description": "We coordinate with art advisors, real estate experts, legal counsel, and founder advisors as needed."
           },
           {
             "number": "04",
             "title": "Values Alignment",
-            "description": "We take your values seriously as an investment parameter - whether that means ESG exclusions, impact targets, or philanthropic allocation."
+            "description": "We take your values seriously as an investment parameter — whether that means ESG exclusions, impact targets, or founder-specific constraints."
           }
         ]
       },
@@ -1646,8 +1646,8 @@
             "label": "Solutions designed for your situation, not a template"
           },
           {
-            "main": "Impact",
-            "label": "Philanthropy and ESG with real measurable outcomes"
+            "main": "Founder",
+            "label": "Pre- and post-exit outcomes built around founder reality"
           },
           {
             "main": "Network",
@@ -1679,12 +1679,12 @@
           ]
         },
         {
-          "name": "Philanthropy Advisory",
-          "description": "We help families and individuals design and operate philanthropic structures - foundations, donor programs, and impact initiatives - that reflect their values and create lasting change.",
+          "name": "Founder & Equity Advisory",
+          "description": "Tailored advisory for founders and executives navigating equity concentration, liquidity events, and post-exit capital. We coordinate pre-exit structuring, equity planning, and post-exit allocation as a single integrated mandate.",
           "items": [
-            "Philanthropic strategy and structure",
-            "Foundation establishment and governance",
-            "Impact measurement and reporting"
+            "Pre-exit holding structures and tax planning",
+            "Equity & vesting advisory (secondary, employee plans, co-investor alignment)",
+            "Post-exit capital allocation and reinvestment policy"
           ]
         },
         {
@@ -1724,31 +1724,31 @@
           ]
         },
         {
-          "name": "Impact & Legacy",
+          "name": "Startup & Founder Advisory",
           "items": [
             {
-              "title": "Philanthropic strategy",
-              "description": "values-based giving frameworks"
+              "title": "Pre-exit wealth structuring",
+              "description": "holding structures, tax planning ahead of liquidity"
             },
             {
-              "title": "Foundation establishment",
-              "description": "legal structure and governance"
+              "title": "Post-exit capital management",
+              "description": "diversification, reinvestment, long-term allocation"
             },
             {
-              "title": "Donor-advised programs",
-              "description": "flexible giving vehicles"
+              "title": "Equity & vesting advisory",
+              "description": "secondary options, EMI, phantom shares, share options, co-investor alignment"
             },
             {
-              "title": "ESG portfolio construction",
-              "description": "screened and impact-focused"
+              "title": "Growth capital advisory",
+              "description": "investor selection, term sheet review, founder protection"
             },
             {
-              "title": "Impact measurement",
-              "description": "real-world outcome tracking"
+              "title": "Personal financial planning for founders",
+              "description": "salary, dividends, personal reserves"
             },
             {
-              "title": "Legacy planning",
-              "description": "charitable and family legacy integration"
+              "title": "Succession & ownership transition",
+              "description": "buy-sell agreements, founder exit planning"
             }
           ]
         }
@@ -1809,8 +1809,8 @@
           "answer": "Yes. We treat art and collectibles as a distinct asset class within your overall wealth - with proper valuation, insurance, and reporting - integrated into your consolidated wealth picture."
         },
         {
-          "question": "What is the minimum for a philanthropic foundation?",
-          "answer": "This depends on the jurisdiction and structure. Private foundations can be established from relatively modest levels, while more complex structures require larger endowments. We assess the most appropriate vehicle for your goals and budget."
+          "question": "Can you advise founders before a liquidity event?",
+          "answer": "Yes. The period before a liquidity event — whether an IPO, strategic sale, or secondary transaction — is the most critical window for wealth planning. We advise founders on pre-exit holding structures, tax positioning, and post-exit capital allocation before terms are finalised. Early engagement typically delivers materially better outcomes than post-close restructuring."
         },
         {
           "question": "Does ESG investing mean lower returns?",
@@ -1868,7 +1868,7 @@
       },
       "specialSolutions": {
         "title": "Special Solutions | Icon Finance",
-        "description": "Bespoke advisory for art, real estate, philanthropy and ESG - when conventional wealth management is not enough."
+        "description": "Bespoke advisory for art, real estate, and founders — when conventional wealth management is not enough."
       },
       "notFound": {
         "title": "Page Not Found | Icon Finance",
@@ -2099,8 +2099,8 @@
     },
     "ss": {
       "tag": "SPECIAL SOLUTIONS",
-      "title": "Real estate, art, philanthropy",
-      "description": "Consolidating international property portfolios, structuring significant art holdings, establishing dedicated philanthropic foundations — specialized situations beyond standard portfolio work."
+      "title": "Real estate, art, founder advisory",
+      "description": "Consolidating international property portfolios, structuring significant art holdings, and advising founders through pre- and post-exit wealth transitions — specialized situations beyond standard portfolio work."
     }
   },
   "contactForm": {
