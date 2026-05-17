@@ -112,7 +112,7 @@
     letter-spacing: 0.15em;
     text-transform: uppercase;
     font-weight: 600;
-    color: hsl(var(--gold));
+    color: hsl(var(--charcoal));
   }
 
   .section-padding {
