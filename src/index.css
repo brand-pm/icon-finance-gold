@@ -231,7 +231,7 @@
       hsl(var(--gold) / 0.55) 35%,
       hsl(var(--gold) / 0.95) 100%
     );
-    box-shadow: 0 0 6px hsl(var(--gold) / 0.45);
+    box-shadow: 0 0 6px var(--glass-glow-soft);
     border-radius: 1px;
   }
   .gold-separator::after {
@@ -245,18 +245,11 @@
   /* Glass diamonds: faceted gold gradient + inner highlight + outer glow */
   .gold-separator .dot,
   .gold-separator .dot-lg {
-    background:
-      linear-gradient(
-        135deg,
-        #F4D5A8 0%,
-        hsl(var(--gold)) 45%,
-        #A06940 100%
-      );
+    background: var(--glass-body-gradient);
     transform: rotate(45deg);
     box-shadow:
-      inset 1px 1px 0 hsl(0 0% 100% / 0.55),
-      inset -1px -1px 0 hsl(25 50% 18% / 0.45),
-      0 0 8px hsl(var(--gold) / 0.55);
+      var(--glass-inset-shadow),
+      0 0 8px var(--glass-glow);
     border-radius: 1px;
   }
   .gold-separator .dot {
