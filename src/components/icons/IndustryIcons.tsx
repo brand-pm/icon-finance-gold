@@ -221,36 +221,54 @@ export const IconCorporate = (props: IconProps) => {
   // 4 columns, symmetric about x=32. Width 6, gap 3 → total 33 → start at 15.5
   const colW = 6;
   const colXs = [15.5, 24.5, 33.5, 42.5];
+  const pedimentD = "M6 22 L32 6 L58 22 Z";
   return (
     <Base {...props}>
       <GlassDefs id={id} />
       <g filter={`url(#${id}-glow)`}>
-        {/* pediment — symmetric triangle */}
-        <path d="M6 22 L32 6 L58 22 Z" fill={`url(#${id}-body)`} />
-        <path d="M6 22 L32 6 L32 22 Z" fill="#FFFFFF" opacity="0.28" />
-        <path d="M6 22 L58 22" stroke={GOLD_SHADOW} strokeWidth="0.6" opacity="0.5" />
+        {/* pediment — unified glass stack */}
+        <path d={pedimentD} fill={`url(#${id}-body)`} />
+        <path d={pedimentD} fill={`url(#${id}-depth)`} />
+        <path d={pedimentD} fill={`url(#${id}-rim)`} />
+        <path d={pedimentD} fill={`url(#${id}-gloss)`} opacity="0.7" />
+        <path d={pedimentD} fill={`url(#${id}-spec)`} />
+        <path d="M6 22 L58 22" stroke={GOLD_SHADOW} strokeWidth="0.6" opacity="0.55" />
         {/* architrave (entablature) */}
-        <rect x="6" y="22" width="52" height="5" fill={`url(#${id}-edge)`} />
-        <rect x="6" y="22" width="52" height="1" fill="#FFFFFF" opacity="0.5" />
+        <rect x="6" y="22" width="52" height="5" fill={`url(#${id}-body)`} />
+        <rect x="6" y="22" width="52" height="5" fill={`url(#${id}-depth)`} />
+        <rect x="6" y="22" width="52" height="1" fill="#FFFFFF" opacity="0.55" />
+        <rect x="6" y="26" width="52" height="1" fill={GOLD_SHADOW} opacity="0.5" />
         {/* capitals */}
         {colXs.map((x, i) => (
-          <rect key={`cap-${i}`} x={x - 0.75} y="27" width={colW + 1.5} height="2" fill={`url(#${id}-edge)`} />
+          <g key={`cap-${i}`}>
+            <rect x={x - 0.75} y="27" width={colW + 1.5} height="2" fill={`url(#${id}-body)`} />
+            <rect x={x - 0.75} y="27" width={colW + 1.5} height="0.6" fill="#FFFFFF" opacity="0.55" />
+          </g>
         ))}
-        {/* columns with flutes */}
+        {/* columns — unified material per column */}
         {colXs.map((x, i) => (
           <g key={`col-${i}`}>
             <rect x={x} y="29" width={colW} height="20" fill={`url(#${id}-body)`} />
-            <rect x={x + 0.8} y="29" width="0.8" height="20" fill="#FFFFFF" opacity="0.55" />
-            <rect x={x + colW - 1.2} y="29" width="0.7" height="20" fill={GOLD_SHADOW} opacity="0.55" />
+            <rect x={x} y="29" width={colW} height="20" fill={`url(#${id}-depth)`} />
+            <rect x={x} y="29" width={colW} height="20" fill={`url(#${id}-rim)`} />
+            <rect x={x + 0.7} y="29" width="0.9" height="20" fill="#FFFFFF" opacity="0.6" />
+            <rect x={x + colW - 1.3} y="29" width="0.7" height="20" fill={GOLD_SHADOW} opacity="0.55" />
           </g>
         ))}
+        {/* specular sweep across portico (single, unified) */}
+        <rect x="6" y="22" width="52" height="28" fill={`url(#${id}-spec)`} opacity="0.55" />
         {/* bases under each column */}
         {colXs.map((x, i) => (
-          <rect key={`base-${i}`} x={x - 0.75} y="49" width={colW + 1.5} height="2" fill={`url(#${id}-edge)`} />
+          <g key={`base-${i}`}>
+            <rect x={x - 0.75} y="49" width={colW + 1.5} height="2" fill={`url(#${id}-body)`} />
+            <rect x={x - 0.75} y="49" width={colW + 1.5} height="0.6" fill="#FFFFFF" opacity="0.5" />
+          </g>
         ))}
         {/* stylobate (platform) */}
         <rect x="4" y="51" width="56" height="5" fill={`url(#${id}-body)`} />
-        <rect x="4" y="51" width="56" height="1" fill="#FFFFFF" opacity="0.45" />
+        <rect x="4" y="51" width="56" height="5" fill={`url(#${id}-depth)`} />
+        <rect x="4" y="51" width="56" height="1" fill="#FFFFFF" opacity="0.5" />
+        <rect x="4" y="55" width="56" height="1" fill={GOLD_SHADOW} opacity="0.55" />
         {/* keystone diamond in pediment */}
         <path d="M32 12 L34.5 16 L32 20 L29.5 16 Z" fill="#FFFFFF" opacity="0.7" />
       </g>
