@@ -25,4 +25,4 @@ export const structuringTaxScenarios: Scenario[] = buildScenarios("st", ["case1"
 
 export const maConsultingScenarios: Scenario[] = buildScenarios("ma", ["case1", "case2", "case3"]);
 
-export const specialSolutionsScenarios: Scenario[] = buildScenarios("ss", ["case1", "case2", "case3"]);
+export const specialSolutionsScenarios: Scenario[] = buildScenarios("ss", ["case1", "case3"]);
