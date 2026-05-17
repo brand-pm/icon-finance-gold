@@ -86,8 +86,8 @@ const ComparisonBlock = () => {
                 </div>
 
                 {/* Icon Finance */}
-                <div className="md:col-span-5 md:pl-8 md:border-l-2 md:border-gold/30 md:group-hover:border-gold transition-colors duration-300">
-                  <p className="md:hidden text-[10px] uppercase tracking-[0.18em] font-semibold text-gold mb-1">
+                <div className="md:col-span-5 md:pl-8 md:border-l-2 md:border-gold/30 md:group-hover:border-gold transition-colors duration-300 pt-4 md:pt-0 border-t border-gold/15 md:border-t-0">
+                  <p className="md:hidden text-[10px] uppercase tracking-[0.18em] font-semibold text-gold mb-2">
                     {h.iconFinance}
                   </p>
                   <div className="flex items-start gap-3">
@@ -101,8 +101,8 @@ const ComparisonBlock = () => {
                 </div>
 
                 {/* Private Bank */}
-                <div className="md:col-span-4 md:pl-8">
-                  <p className="md:hidden text-[10px] uppercase tracking-[0.18em] font-semibold text-slate/70 mb-1">
+                <div className="md:col-span-4 md:pl-8 pt-4 md:pt-0 border-t border-charcoal/10 md:border-t-0">
+                  <p className="md:hidden text-[10px] uppercase tracking-[0.18em] font-semibold text-slate/70 mb-2">
                     {h.privateBank}
                   </p>
                   <div className="flex items-start gap-3">
