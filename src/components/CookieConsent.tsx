@@ -264,7 +264,7 @@ const CookieConsent = () => {
 
         {/* Header */}
         <div className="px-7 md:px-9 pt-8 pb-5 text-center">
-          <p className="eyebrow mb-3 text-[11px]">{t("cookieConsent.eyebrow")}</p>
+          <p className="eyebrow text-gold mb-3 text-[11px]">{t("cookieConsent.eyebrow")}</p>
           <h2
             id="cookie-consent-title"
             className="text-gold font-light leading-tight"

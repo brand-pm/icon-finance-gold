@@ -12,7 +12,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["'Helvetica Neue'", "Helvetica", "Arial", "sans-serif"],
+        sans: ["Inter", "'Helvetica Neue'", "Helvetica", "Arial", "sans-serif"],
+        serif: ['"Playfair Display"', "Georgia", "Times New Roman", "serif"],
+        display: ['"Playfair Display"', "Georgia", "serif"],
       },
       colors: {
         border: "hsl(var(--border))",

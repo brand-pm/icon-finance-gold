@@ -40,7 +40,7 @@ const ThankYou = () => {
             />
           </div>
           <div className="container-main relative z-10 max-w-2xl mx-auto text-center">
-            <p className="eyebrow mb-6">{t("thankYou.eyebrow")}</p>
+            <p className="eyebrow text-gold mb-6">{t("thankYou.eyebrow")}</p>
             <h1
               className="text-gold font-light leading-[1.15] mb-6"
               style={{ fontSize: "clamp(32px,5.5vw,52px)" }}

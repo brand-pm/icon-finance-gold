@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="container-main relative z-10 flex items-center" style={{ minHeight: "28vh" }}>
         <div className="max-w-xl">
           <div className="opacity-0 animate-fade-up motion-reduce:animate-none" style={{ animationDelay: "0.1s" }}>
-            <p className="eyebrow mb-4 md:mb-6">{t("contactPage.hero.eyebrow")}</p>
+            <p className="eyebrow text-gold mb-4 md:mb-6">{t("contactPage.hero.eyebrow")}</p>
             <h1 className="text-gold font-light leading-[1.15] mb-5 md:mb-6" style={{ fontSize: "clamp(28px,5vw,48px)" }}>{t("contactPage.hero.title")}</h1>
             <p className="text-white/70 text-[15px] md:text-base max-w-lg leading-relaxed">{t("contactPage.hero.description")}</p>
           </div>
