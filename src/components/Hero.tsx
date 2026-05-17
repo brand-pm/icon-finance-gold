@@ -5,7 +5,7 @@ import heroBg from "../assets/hero-cubes.webp";
 
 const statsConfig = [
   { display: "100+", labelKey: "clients" },
-  { display: "15+", labelKey: "experience" },
+  { display: "17+", labelKey: "experience" },
   { display: "5+", labelKey: "jurisdictions" },
 ] as const;
 
