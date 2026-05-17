@@ -1,6 +1,6 @@
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import { useTranslation } from "react-i18next";
-import whyUsIcon from "../assets/why-us-icon.svg";
+import { InfinityGlassIcon } from "./icons/InfinityGlassIcon";
 
 const cardKeys = ["c1", "c2", "c3", "c4"] as const;
 
@@ -33,13 +33,10 @@ const WhyUs = () => {
               <div className="text-gold font-light text-5xl opacity-90 mb-4 transition-transform duration-500 group-hover:scale-110">{`0${i + 1}`}</div>
               <h3 className="text-charcoal text-lg font-medium mb-3">{t(`whyUs.cards.${key}.title`)}</h3>
               <p className="text-slate text-sm leading-relaxed mb-6">{t(`whyUs.cards.${key}.desc`)}</p>
-              <img
-                src={whyUsIcon}
-                alt=""
-                aria-hidden="true"
+              <InfinityGlassIcon
                 width={32}
                 height={16}
-                className="block mt-auto transition-all duration-500 opacity-60 group-hover:opacity-100 group-hover:translate-x-1"
+                className="block mt-auto transition-all duration-500 opacity-80 group-hover:opacity-100 group-hover:translate-x-1"
               />
             </div>
           ))}
