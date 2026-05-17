@@ -23,7 +23,7 @@ const Footer = () => {
       titleKey: "footer.navigate",
       links: [
         { labelKey: "nav.about", to: "/about" },
-        { labelKey: "nav.insights", to: "/insights" },
+        // { labelKey: "nav.insights", to: "/insights" }, // hidden by audit P3 — route + key preserved
         { labelKey: "nav.contact", to: "/contact" },
       ],
     },
