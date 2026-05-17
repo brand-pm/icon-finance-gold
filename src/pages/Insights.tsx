@@ -10,6 +10,7 @@ import { useScrollReveal } from "../hooks/useScrollReveal";
 import { useLocalizedPath } from "@/i18n/useLocalizedPath";
 import marbleHero from "../assets/marble-mono-1.jpg";
 import { sanityClient, urlFor, formatPostDate, type PostListItem } from "@/lib/sanity";
+import NewsletterCta from "../components/NewsletterCta";
 
 const POSTS_QUERY = `*[_type == "post" && language == $lang] | order(publishedAt desc){
   _id, title, "slug": slug.current, category, coverImage, excerpt, readTime, publishedAt, language
@@ -118,14 +119,8 @@ const Insights = () => {
         </div>
       </section>
 
-      <section className="bg-navy py-20" ref={ctaRef}>
-        <div className="container-main text-center opacity-0 animate-fade-up">
-          <h2 className="text-white font-light mb-6" style={{ fontSize: "clamp(28px,4.5vw,42px)" }}>{t("insights.ctaSection.title")}</h2>
-          <div className="gold-separator mb-8"><div className="dot" /><div className="dot-lg" /><div className="dot" /></div>
-          <p className="text-white/70 text-lg leading-relaxed max-w-2xl mx-auto mb-10">{t("insights.ctaSection.description")}</p>
-          <Link to={localize("/contact")} className="inline-block btn-gold px-10 py-4 text-[13px] font-medium">{t("insights.ctaSection.button")}</Link>
-        </div>
-      </section>
+      <NewsletterCta ctaRef={ctaRef} />
+
 
       <Contact />
       <Footer />

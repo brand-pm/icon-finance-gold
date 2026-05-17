@@ -8,6 +8,8 @@ import Services from "../components/Services";
 import PortfolioManagement from "../components/services/PortfolioManagement";
 import WhyUs from "../components/WhyUs";
 import ScenariosOverviewSection from "../components/ScenariosOverviewSection";
+import ComparisonBlock from "../components/ComparisonBlock";
+import PresaleFAQ from "../components/PresaleFAQ";
 import Insights from "../components/Insights";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -24,6 +26,7 @@ const Index = () => {
       <Hero />
       <ServicesIntro />
       <Services />
+      <ComparisonBlock />
       <ScenariosOverviewSection />
       <PortfolioManagement
         title={t("homeProcess.title")}
@@ -40,6 +43,7 @@ const Index = () => {
         ctaVariant="filled"
       />
       <WhyUs />
+      <PresaleFAQ />
       <Insights />
       <Contact />
       <Footer />

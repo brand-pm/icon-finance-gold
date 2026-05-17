@@ -491,8 +491,11 @@
     },
     "ctaSection": {
       "title": "Chcesz otrzymywać nasze analizy bezpośrednio?",
-      "description": "Publikujemy perspektywy rynkowe i eksperckie komentarze dla klientów i subskrybentów. Skontaktuj się, aby zostać dodanym do naszej listy dystrybucyjnej.",
-      "button": "Skontaktuj się"
+      "description": "Analizy rynkowe i komentarze ekspertów na tematy wealth management, strukturyzacji i family office.",
+      "button": "Subskrybuj",
+      "placeholder": "Wpisz swój adres email",
+      "successMessage": "Dziękujemy, dodamy Państwa do listy",
+      "errorInvalid": "Proszę podać prawidłowy adres email"
     },
     "emptyState": {
       "message": "Brak opublikowanych artykułów. Wróć wkrótce.",
@@ -2175,5 +2178,64 @@
     "body": "Dziękujemy! Wiadomość została wysłana. Nasz zespół skontaktuje się w ciągu godziny — pon.–pt., 10:00–19:00 CET. Jeśli napisali Państwo poza godzinami pracy, odpiszemy jutro.",
     "ctaPrimary": "Powrót na stronę główną",
     "ctaSecondary": "Poznaj nasze usługi"
+  },
+  "presaleFAQ": {
+    "eyebrow": "Zanim zaczniemy",
+    "title": "Pytania, które klienci zadają najczęściej",
+    "items": [
+      {
+        "question": "Jakie są Państwa koszty?",
+        "answer": "Nasze wynagrodzenie ustalane jest z góry i powiązane z zakresem współpracy — nie ze sprzedażą produktów. Mandaty Wealth Management bazują zwykle na aktywach pod doradztwem. Family Office i M&A wyceniane są indywidualnie. Strukturę honorarium chętnie omówimy podczas pierwszej rozmowy."
+      },
+      {
+        "question": "Z jakimi bankami i custodianami Państwo współpracują?",
+        "answer": "Współpracujemy z regulowanymi europejskimi i międzynarodowymi instytucjami bankowymi i brokerskimi. Konkretne ustalenia dotyczące kastodii przedstawiane są w umowie klienta na etapie onboardingu."
+      },
+      {
+        "question": "Jakie mają Państwo wyniki / track record?",
+        "answer": "Zarządzamy aktywami i doradzamy 100+ klientom rodzinnym w 5 jurysdykcjach. Konkretne wyniki portfeli pozostają poufne, jednak reprezentatywne sytuacje klientów opisane są w naszych case study."
+      },
+      {
+        "question": "Mam 300 tys. USD — czy Icon Finance jest dla mnie?",
+        "answer": "Pracujemy z klientami na różnych etapach budowania majątku. Doradztwo Wealth Management zaczyna się od 50 000 USD. Jeśli nie są Państwo pewni dopasowania — porozmawiajmy i sprawdźmy to razem."
+      }
+    ]
+  },
+  "comparison": {
+    "eyebrow": "Dlaczego rodziny wybierają nas",
+    "title": "Dlaczego rodziny wybierają niezależne doradztwo zamiast bankowości prywatnej",
+    "headers": {
+      "parameter": "Parametr",
+      "iconFinance": "Icon Finance",
+      "privateBank": "Bank prywatny"
+    },
+    "rows": [
+      {
+        "parameter": "Czyje interesy reprezentujemy",
+        "iconFinance": "Tylko Państwa — pracujemy dla Państwa",
+        "privateBank": "Banku i akcjonariuszy"
+      },
+      {
+        "parameter": "Oferta produktowa",
+        "iconFinance": "Open architecture",
+        "privateBank": "Produkty własne, zachęty dystrybucyjne"
+      },
+      {
+        "parameter": "Przejrzystość opłat",
+        "iconFinance": "Disclosed upfront, bez prowizji zwrotnych",
+        "privateBank": "Embedded in product margins"
+      },
+      {
+        "parameter": "Podstawa regulacyjna",
+        "iconFinance": "VASP licensed, Warszawa",
+        "privateBank": "Różna"
+      },
+      {
+        "parameter": "Konflikt interesów",
+        "iconFinance": "Brak — strukturalnie",
+        "privateBank": "Strukturalny — cele sprzedażowe"
+      }
+    ],
+    "disclaimer": "[DISCLAIMER PENDING LEGAL REVIEW]"
   }
 }

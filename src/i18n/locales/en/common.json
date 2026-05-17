@@ -491,8 +491,11 @@
     },
     "ctaSection": {
       "title": "Want Our Analysis Delivered Directly?",
-      "description": "We publish market perspectives and expert commentary for clients and subscribers. Reach out to be added to our distribution list.",
-      "button": "Get in Touch"
+      "description": "Market perspectives and expert commentary on wealth management, structuring, and family office topics.",
+      "button": "Subscribe",
+      "placeholder": "Enter your email to receive our insights",
+      "successMessage": "Thank you, you'll be added to our list",
+      "errorInvalid": "Please enter a valid email address"
     },
     "emptyState": {
       "message": "No articles published yet. Check back soon.",
@@ -2175,5 +2178,64 @@
     "body": "Thank you! Your message has been sent. Our team will get back to you within the hour — Mon–Fri, 10:00–19:00 CET. If you reached out outside business hours, expect to hear from us tomorrow.",
     "ctaPrimary": "Back to home",
     "ctaSecondary": "Explore our services"
+  },
+  "presaleFAQ": {
+    "eyebrow": "Before we begin",
+    "title": "Questions clients often ask first",
+    "items": [
+      {
+        "question": "What do you cost?",
+        "answer": "Our fees are agreed upfront and structured around the scope of engagement — not product sales. Wealth Management mandates are typically fee-based on assets under advisory. Family Office and M&A engagements are quoted individually. We are happy to outline the fee structure during our first conversation."
+      },
+      {
+        "question": "Which banks and custodians do you work with?",
+        "answer": "We work with regulated European and international banking and brokerage institutions. Specific custodian arrangements are disclosed in the client agreement at onboarding."
+      },
+      {
+        "question": "What is your track record?",
+        "answer": "We manage and advise on assets for 100+ family clients across 5 jurisdictions. Specific portfolio outcomes are confidential, but representative client situations are described in our case scenarios."
+      },
+      {
+        "question": "I have $300K — is Icon Finance right for me?",
+        "answer": "We work with clients at different stages of wealth. Wealth Management advisory starts from $50,000. If you are unsure whether we are the right fit — let us have a first conversation and find out together."
+      }
+    ]
+  },
+  "comparison": {
+    "eyebrow": "Why families choose us",
+    "title": "Why families choose independent advisory over private banking",
+    "headers": {
+      "parameter": "Parameter",
+      "iconFinance": "Icon Finance",
+      "privateBank": "Private Bank"
+    },
+    "rows": [
+      {
+        "parameter": "Whose interests we serve",
+        "iconFinance": "Yours only — we work for you",
+        "privateBank": "Bank and shareholders"
+      },
+      {
+        "parameter": "Product shelf",
+        "iconFinance": "Open architecture",
+        "privateBank": "Own products, distribution incentives"
+      },
+      {
+        "parameter": "Fee transparency",
+        "iconFinance": "Disclosed upfront, no rebates",
+        "privateBank": "Embedded in product margins"
+      },
+      {
+        "parameter": "Regulatory basis",
+        "iconFinance": "VASP licensed, Warsaw",
+        "privateBank": "Varies"
+      },
+      {
+        "parameter": "Conflict of interest",
+        "iconFinance": "None by structure",
+        "privateBank": "Structural — product sales targets"
+      }
+    ],
+    "disclaimer": "[DISCLAIMER PENDING LEGAL REVIEW]"
   }
 }
