@@ -225,7 +225,13 @@
     "phone": "Telefon",
     "officeLabel": "BIURO",
     "phoneLabel": "TELEFON",
-    "emailLabel": "EMAIL"
+    "emailLabel": "EMAIL",
+    "vasp": {
+      "text": "Icon Finance posiada licencję dostawcy usług w zakresie aktywów wirtualnych (VASP) w Polsce.",
+      "registration": "Numer rejestracji: RDWW-853",
+      "authority": "Nadzór: Izba Administracji Skarbowej w Katowicach",
+      "date": "Licencja od 18.07.2023"
+    }
   },
   "common": {
     "placeholderFirstName": "Wpisz swoje imię",
@@ -837,8 +843,8 @@
           "answer": "Poufność jest zarówno obowiązkiem zawodowym, jak i prawnym. Informacje o kliencie nigdy nie są udostępniane stronom trzecim bez wyraźnej zgody. Umowy NDA są dostępne na życzenie."
         },
         {
-          "question": "Jak przechowywane są aktywa klientów?",
-          "answer": "Aktywa klientów zarządzane są w ramach struktury depozytowej zaprojektowanej w celu ochrony interesów własnościowych klienta. Obowiązujące warunki depozytowe, w tym tożsamość podmiotów depozytariusza lub holdingowych oraz odpowiednie warunki dostępu, określone są w umowie z klientem przekazywanej na etapie onboardingu. Niektóre klasy aktywów mogą podlegać warunkom płynności na poziomie funduszu."
+          "question": "Gdzie przechowywane są moje aktywa?",
+          "answer": "Aktywa klientów zarządzane są w ramach struktury powierniczej zaprojektowanej w celu ochrony praw własności klienta. Warunki przechowywania, w tym tożsamość podmiotów powierniczych i warunki dostępu, określone są w umowie klienta przy onboardingu. Pozycje płynne pozostają dostępne zgodnie ze standardowymi warunkami rozliczeniowymi. Niektóre klasy aktywów, w tym private equity i produkty strukturyzowane, mogą podlegać warunkom płynności na poziomie funduszu, ujawnionym przed podjęciem zobowiązania."
         }
       ],
       "cta": {
@@ -2253,6 +2259,6 @@
         "privateBank": "Strukturalny, cele sprzedażowe"
       }
     ],
-    "disclaimer": "[DISCLAIMER PENDING LEGAL REVIEW]"
+    "disclaimer": "Niniejsza tabela ma charakter wyłącznie informacyjny i odzwierciedla ogólne cechy strukturalne różnych modeli usług finansowych. Żadna konkretna instytucja finansowa nie jest wymieniona ani oceniana. Faktyczne warunki świadczenia usług są określane indywidualnie przez każdego dostawcę. Wynagrodzenie Icon Finance jest w pełni ujawniane przed nawiązaniem współpracy."
   }
 }

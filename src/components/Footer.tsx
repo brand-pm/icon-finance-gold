@@ -102,7 +102,15 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-white/[0.08] pt-6 mt-12 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
+        <div className="border-t border-gold/30 pt-6 mt-12 text-center space-y-1.5">
+          <p className="text-slate text-xs leading-relaxed">{t("footer.vasp.text")}</p>
+          <p className="text-slate text-xs leading-relaxed">
+            {t("footer.vasp.registration")} · {t("footer.vasp.authority")}
+          </p>
+          <p className="text-slate text-xs leading-relaxed">{t("footer.vasp.date")}</p>
+        </div>
+
+        <div className="border-t border-white/[0.08] pt-6 mt-8 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
           <p className="text-slate text-xs md:text-sm text-center md:text-left">
             © {new Date().getFullYear()} Icon Finance. {t("footer.rights")}
           </p>

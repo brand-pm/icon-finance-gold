@@ -225,7 +225,13 @@
     "phone": "Phone",
     "officeLabel": "OFFICE",
     "phoneLabel": "PHONE",
-    "emailLabel": "EMAIL"
+    "emailLabel": "EMAIL",
+    "vasp": {
+      "text": "Icon Finance is licensed as a Virtual Asset Service Provider (VASP) in Poland.",
+      "registration": "Registration number: RDWW-853",
+      "authority": "Supervised by Izba Administracji Skarbowej w Katowicach",
+      "date": "Licensed since 18.07.2023"
+    }
   },
   "common": {
     "placeholderFirstName": "Enter your first name",
@@ -837,8 +843,8 @@
           "answer": "Confidentiality is both a professional obligation and a legal one. Client information is never shared with third parties without explicit consent. NDA arrangements are available on request."
         },
         {
-          "question": "How are client assets held?",
-          "answer": "Client assets are managed within a custody structure designed to protect client ownership interests. The applicable custody arrangement, including the identity of any custodial or holding entities and relevant access conditions, is set out in the client agreement provided at onboarding. Certain asset classes may be subject to fund-level liquidity terms."
+          "question": "Where are my assets held?",
+          "answer": "Client assets are managed within a custody structure designed to protect client ownership interests. The applicable custody arrangement, including the identity of any custodial or holding entities and relevant access conditions, is set out in the client agreement provided at onboarding. Liquid positions remain accessible in accordance with standard settlement terms. Certain asset classes, including private equity and structured products, may be subject to fund-level liquidity terms disclosed prior to commitment."
         }
       ],
       "cta": {
@@ -2253,6 +2259,6 @@
         "privateBank": "Structural, product sales targets"
       }
     ],
-    "disclaimer": "[DISCLAIMER PENDING LEGAL REVIEW]"
+    "disclaimer": "This table is provided for informational purposes only and reflects general structural characteristics of different financial service models. No specific financial institution is named or assessed. Actual service terms are determined individually by each provider. Icon Finance's remuneration is disclosed in full prior to engagement."
   }
 }
