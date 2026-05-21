@@ -225,7 +225,13 @@
     "phone": "Telefon",
     "officeLabel": "BIURO",
     "phoneLabel": "TELEFON",
-    "emailLabel": "EMAIL"
+    "emailLabel": "EMAIL",
+    "vasp": {
+      "text": "Icon Finance posiada licencję dostawcy usług w zakresie aktywów wirtualnych (VASP) w Polsce.",
+      "registration": "Numer rejestracji: RDWW-853",
+      "authority": "Nadzór: Izba Administracji Skarbowej w Katowicach",
+      "date": "Licencja od 18.07.2023"
+    }
   },
   "common": {
     "placeholderFirstName": "Wpisz swoje imię",
