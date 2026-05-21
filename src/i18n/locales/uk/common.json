@@ -225,7 +225,13 @@
     "phone": "Телефон",
     "officeLabel": "ОФІС",
     "phoneLabel": "ТЕЛЕФОН",
-    "emailLabel": "EMAIL"
+    "emailLabel": "EMAIL",
+    "vasp": {
+      "text": "Icon Finance має ліцензію постачальника послуг віртуальних активів (VASP) у Польщі.",
+      "registration": "Реєстраційний номер: RDWW-853",
+      "authority": "Нагляд: Izba Administracji Skarbowej w Katowicach",
+      "date": "Ліцензія з 18.07.2023"
+    }
   },
   "common": {
     "placeholderFirstName": "Вкажіть ім'я",
