@@ -149,8 +149,8 @@ const Relocation = () => {
         id="relocation-form"
         className="relative bg-navy marble-texture section-padding overflow-hidden"
       >
-        <div className="container-main relative z-10 grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
+        <div className="container-main relative z-10 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="text-center flex flex-col items-center">
             <p className="mb-4 text-[11px] uppercase tracking-[0.15em] font-semibold text-gold">
               {t("relocation.finalCta.eyebrow")}
             </p>
@@ -161,7 +161,7 @@ const Relocation = () => {
               {t("relocation.finalCta.title")}
             </h2>
             <div className="gold-separator mb-8">
-              <div className="dot" /><div className="dot-lg" /><div className="dot" />
+              <div className="line" /><div className="dot" /><div className="dot-lg" /><div className="dot" /><div className="line" />
             </div>
             <p className="text-offwhite/80 text-lg leading-relaxed max-w-xl">
               {t("relocation.finalCta.subtitle")}
