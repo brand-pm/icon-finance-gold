@@ -7,7 +7,7 @@ import ServiceHero from "../components/services/ServiceHero";
 import Philosophy from "../components/services/Philosophy";
 import InvestmentOpportunities from "../components/services/InvestmentOpportunities";
 import ServiceCTA from "../components/services/ServiceCTA";
-import heroImg from "../assets/expertise-international.jpg";
+import heroImg from "../assets/relocation-symbol.png";
 
 const CANONICAL_ORIGIN = "https://iconfinance.io";
 
