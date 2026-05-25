@@ -4,7 +4,7 @@ import { Navigate, useParams } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ContactForm from "../components/ContactForm";
-import InfinitySymbol from "../components/InfinitySymbol";
+
 
 const CANONICAL_ORIGIN = "https://iconfinance.io";
 
