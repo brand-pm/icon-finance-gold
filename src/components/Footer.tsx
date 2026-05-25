@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { ExternalLink } from "lucide-react";
 import logo from "../assets/logo.svg";
 import footerBg from "../assets/footer-bg.svg";
 import { useLocalizedPath } from "@/i18n/useLocalizedPath";
@@ -108,6 +109,18 @@ const Footer = () => {
             {t("footer.vasp.registration")} · {t("footer.vasp.authority")}
           </p>
           <p className="text-slate text-xs leading-relaxed">{t("footer.vasp.date")}</p>
+          <p>
+            <a
+              href="https://drive.google.com/file/d/1ACWZyM4qKrpztXiJIf8h0DoG32OiQRBr/view"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={t("footer.vasp.certificateLink")}
+              className="inline-flex items-center gap-1 text-gold text-xs hover:underline transition-colors duration-300"
+            >
+              {t("footer.vasp.certificateLink")}
+              <ExternalLink className="w-3 h-3" />
+            </a>
+          </p>
         </div>
 
         <div className="border-t border-white/[0.08] pt-6 mt-8 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
