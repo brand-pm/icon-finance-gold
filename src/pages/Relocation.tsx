@@ -52,7 +52,7 @@ const Block = ({ keyName, dark }: { keyName: BlockKey; dark: boolean }) => {
             {t(`${base}.title`)}
           </h2>
           <div className="gold-separator mb-8">
-            <div className="dot" /><div className="dot-lg" /><div className="dot" />
+            <div className="line" /><div className="dot" /><div className="dot-lg" /><div className="dot" /><div className="line" />
           </div>
           <p className={`text-lg leading-relaxed max-w-xl ${dark ? "text-offwhite/80" : "text-charcoal"}`}>
             {t(`${base}.body`)}
