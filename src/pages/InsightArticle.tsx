@@ -154,7 +154,6 @@ const InsightArticle = () => {
                   src={coverUrl}
                   alt={post.title}
                   className="w-full h-auto"
-                  style={{ filter: "grayscale(100%)" }}
                 />
                 <div className="h-[2px] bg-gold w-full" />
               </div>
