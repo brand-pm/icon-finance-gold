@@ -128,9 +128,6 @@ const InsightArticle = () => {
       <Seo pageKey="insights" />
       <Header />
 
-      {showFallbackBanner && <FallbackBanner enSlug={post.slug} />}
-
-
       {/* HERO */}
       <section className="bg-navy pt-28 md:pt-32 pb-12 md:pb-16">
         <div className="container-main">
@@ -161,6 +158,8 @@ const InsightArticle = () => {
           </div>
         </div>
       </section>
+
+      {showFallbackBanner && <FallbackBanner enSlug={post.slug} />}
 
       {/* ARTICLE BODY */}
       <section className="section-padding bg-offwhite">
