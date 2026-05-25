@@ -4,7 +4,7 @@ import { Navigate, useParams } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ContactForm from "../components/ContactForm";
-import InfinitySymbol from "../components/InfinitySymbol";
+
 
 const CANONICAL_ORIGIN = "https://iconfinance.io";
 
@@ -52,7 +52,7 @@ const Block = ({ keyName, dark }: { keyName: BlockKey; dark: boolean }) => {
             {t(`${base}.title`)}
           </h2>
           <div className="gold-separator mb-8">
-            <div className="dot" /><div className="dot-lg" /><div className="dot" />
+            <div className="line" /><div className="dot" /><div className="dot-lg" /><div className="dot" /><div className="line" />
           </div>
           <p className={`text-lg leading-relaxed max-w-xl ${dark ? "text-offwhite/80" : "text-charcoal"}`}>
             {t(`${base}.body`)}
@@ -113,35 +113,27 @@ const Relocation = () => {
       <Header />
 
       {/* HERO */}
-      <section
-        className="relative bg-navy marble-texture overflow-hidden pt-32 pb-16"
-        style={{ minHeight: "80vh" }}
-      >
+      <section className="relative bg-navy marble-texture overflow-hidden pt-32 pb-20">
         <div className="container-main relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[600px]">
-            <div className="opacity-0 animate-fade-up motion-reduce:animate-none" style={{ animationDelay: "0.1s" }}>
-              <p className="mb-5 text-[11px] uppercase tracking-[0.15em] font-semibold text-gold">
-                {t("relocation.hero.eyebrow")}
-              </p>
-              <h1
-                className="font-serif font-medium text-offwhite leading-[1.1] mb-6"
-                style={{ fontSize: "clamp(2.5rem,5vw,4rem)" }}
-              >
-                {t("relocation.hero.title")}
-              </h1>
-              <div className="gold-separator mb-8 justify-start" style={{ justifyContent: "flex-start" }}>
-                <div className="dot" /><div className="dot-lg" /><div className="dot" />
-              </div>
-              <p className="text-offwhite/80 text-lg leading-relaxed max-w-[600px] mb-10">
-                {t("relocation.hero.subtitle")}
-              </p>
-              <button type="button" onClick={scrollToForm} className="btn-gold px-8 py-4 inline-block">
-                {t("relocation.hero.cta")}
-              </button>
+          <div className="max-w-3xl mx-auto text-center flex flex-col items-center opacity-0 animate-fade-up motion-reduce:animate-none" style={{ animationDelay: "0.1s" }}>
+            <p className="mb-5 text-[11px] uppercase tracking-[0.15em] font-semibold text-gold">
+              {t("relocation.hero.eyebrow")}
+            </p>
+            <h1
+              className="font-serif font-medium text-offwhite leading-[1.1] mb-6"
+              style={{ fontSize: "clamp(2.25rem,4.5vw,3.5rem)" }}
+            >
+              {t("relocation.hero.title")}
+            </h1>
+            <div className="gold-separator mb-8">
+              <div className="line" /><div className="dot" /><div className="dot-lg" /><div className="dot" /><div className="line" />
             </div>
-            <div className="hidden lg:block">
-              <InfinitySymbol />
-            </div>
+            <p className="text-offwhite/80 text-lg leading-relaxed max-w-2xl mb-10">
+              {t("relocation.hero.subtitle")}
+            </p>
+            <button type="button" onClick={scrollToForm} className="btn-gold px-8 py-4 inline-block">
+              {t("relocation.hero.cta")}
+            </button>
           </div>
         </div>
       </section>
@@ -157,8 +149,8 @@ const Relocation = () => {
         id="relocation-form"
         className="relative bg-navy marble-texture section-padding overflow-hidden"
       >
-        <div className="container-main relative z-10 grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
+        <div className="container-main relative z-10 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="text-center flex flex-col items-center">
             <p className="mb-4 text-[11px] uppercase tracking-[0.15em] font-semibold text-gold">
               {t("relocation.finalCta.eyebrow")}
             </p>
@@ -169,7 +161,7 @@ const Relocation = () => {
               {t("relocation.finalCta.title")}
             </h2>
             <div className="gold-separator mb-8">
-              <div className="dot" /><div className="dot-lg" /><div className="dot" />
+              <div className="line" /><div className="dot" /><div className="dot-lg" /><div className="dot" /><div className="line" />
             </div>
             <p className="text-offwhite/80 text-lg leading-relaxed max-w-xl">
               {t("relocation.finalCta.subtitle")}
