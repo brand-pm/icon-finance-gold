@@ -617,4 +617,20 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://iconfinance.io/ru/insights/interest-rate-cycles-and-what-they-mean-for-private-portfolios-in-2025" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://iconfinance.io/en/insights/interest-rate-cycles-and-what-they-mean-for-private-portfolios-in-2025" />
   </url>
+  <url>
+    <loc>https://iconfinance.io/ru/relocation</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iconfinance.io/ru/relocation" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://iconfinance.io/uk/relocation" />
+  </url>
+  <url>
+    <loc>https://iconfinance.io/uk/relocation</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iconfinance.io/ru/relocation" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://iconfinance.io/uk/relocation" />
+  </url>
 </urlset>
