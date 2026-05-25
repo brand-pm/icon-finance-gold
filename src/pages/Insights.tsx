@@ -92,9 +92,15 @@ const Insights = () => {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filtered.map((a, i) => (
                   <Link to={localize(`/insights/${a.slug}`)} key={a._id} className="bg-white opacity-0 animate-fade-up cursor-pointer group border border-charcoal/[0.06] border-b-[3px] border-b-transparent hover:border-b-gold transition-all duration-300" style={{ animationDelay: `${i * 0.05}s` }}>
-                    <div className="aspect-video overflow-hidden">
+                    <div className="aspect-video overflow-hidden relative">
                       {a.coverImage && (
-                        <img src={urlFor(a.coverImage).width(800).auto("format").url()} alt={a.title} loading="lazy" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" style={{ filter: "grayscale(100%)" }} />
+                        <>
+                          <div
+                            className="absolute inset-0 z-10 mix-blend-color group-hover:opacity-0 transition-opacity duration-500 pointer-events-none"
+                            style={{ background: "linear-gradient(135deg, #0F162D 0%, #E0A776 100%)" }}
+                          />
+                          <img src={urlFor(a.coverImage).width(800).auto("format").url()} alt={a.title} loading="lazy" className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105" />
+                        </>
                       )}
                     </div>
                     <div className="p-6">
