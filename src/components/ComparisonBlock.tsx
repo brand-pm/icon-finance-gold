@@ -18,16 +18,6 @@ const ComparisonBlock = () => {
   return (
     <section className="section-padding bg-offwhite" ref={ref}>
       <div className="container-main">
-        {/* Disclaimer — above title */}
-        <div
-          className="mb-4 opacity-0 animate-fade-up flex flex-col items-center"
-          style={{ animationDelay: "0.05s" }}
-        >
-          <p className="text-slate/70 text-sm text-center max-w-2xl mx-auto">
-            {t("comparison.disclaimer")}
-          </p>
-        </div>
-
         {/* Header */}
         <div
           className="text-center mb-12 md:mb-16 opacity-0 animate-fade-up flex flex-col items-center"
@@ -129,6 +119,15 @@ const ComparisonBlock = () => {
           ))}
         </div>
 
+        {/* Disclaimer */}
+        <div
+          className="mt-10 opacity-0 animate-fade-up"
+          style={{ animationDelay: `${0.3 + rows.length * 0.08}s` }}
+        >
+          <p className="text-slate/70 text-xs italic text-center max-w-2xl mx-auto">
+            {t("comparison.disclaimer")}
+          </p>
+        </div>
       </div>
     </section>
   );
