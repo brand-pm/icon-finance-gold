@@ -44,7 +44,7 @@ const ComparisonBlock = () => {
           className="mb-10 md:mb-12 opacity-0 animate-fade-up"
           style={{ animationDelay: "0.15s" }}
         >
-          <p className="text-slate/70 text-xs italic text-center max-w-2xl mx-auto">
+          <p className="text-slate text-base text-center max-w-[720px] mx-auto">
             {t("comparison.disclaimer")}
           </p>
         </div>
