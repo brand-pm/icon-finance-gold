@@ -43,8 +43,8 @@ const ComparisonBlock = () => {
           </p>
         </div>
 
-
         {/* Column headers — desktop only */}
+
         <div
           className="hidden md:grid grid-cols-12 gap-6 mb-4 opacity-0 animate-fade-up"
           style={{ animationDelay: "0.2s" }}
