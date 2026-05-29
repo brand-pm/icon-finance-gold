@@ -40,8 +40,8 @@ const Services = () => {
           <p className="text-slate text-base max-w-[520px] mx-auto mb-6">
             {t("servicesSection.subtitle")}
           </p>
-          <div className="gold-separator">
-            <div className="dot" /><div className="dot-lg" /><div className="dot" />
+          <div className="gold-separator mx-auto">
+            <div className="line" /><div className="dot" /><div className="dot-lg" /><div className="dot" /><div className="line" />
           </div>
         </div>
 
