@@ -20,7 +20,7 @@ const ComparisonBlock = () => {
       <div className="container-main">
         {/* Header */}
         <div
-          className="text-center mb-6 md:mb-8 opacity-0 animate-fade-up flex flex-col items-center"
+          className="text-center mb-12 md:mb-16 opacity-0 animate-fade-up flex flex-col items-center"
           style={{ animationDelay: "0.1s" }}
         >
           <p className="eyebrow mb-4">{t("comparison.eyebrow")}</p>
@@ -37,19 +37,14 @@ const ComparisonBlock = () => {
             <div className="dot" />
             <div className="line" />
           </div>
-        </div>
-
-        {/* Disclaimer — after separator, before table */}
-        <div
-          className="mb-10 md:mb-12 opacity-0 animate-fade-up"
-          style={{ animationDelay: "0.15s" }}
-        >
+          {/* Disclaimer — after separator, before table */}
           <p className="text-slate text-base text-center max-w-[720px] mx-auto">
             {t("comparison.disclaimer")}
           </p>
         </div>
 
         {/* Column headers — desktop only */}
+
         <div
           className="hidden md:grid grid-cols-12 gap-6 mb-4 opacity-0 animate-fade-up"
           style={{ animationDelay: "0.2s" }}
