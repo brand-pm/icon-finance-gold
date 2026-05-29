@@ -79,6 +79,8 @@ const Relocation = () => {
 
       <InvestmentOpportunities categories={opportunityCategories} />
 
+      <ComparisonBlock />
+
       <ServiceCTA
         title={t(`${base}.finalCta.title`)}
         description={t(`${base}.finalCta.subtitle`)}
