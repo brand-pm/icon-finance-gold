@@ -51,6 +51,11 @@
     @apply border-border;
   }
 
+  html {
+    /* Offset in-page anchor scrolling by the fixed header height (h-20 = 5rem) */
+    scroll-padding-top: 5rem;
+  }
+
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
