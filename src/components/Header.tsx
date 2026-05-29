@@ -79,8 +79,30 @@ const Header = () => {
     href.startsWith("/") && (pathWithoutLang === href || pathWithoutLang.startsWith(href + "/"));
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", onScroll);
+    // Hysteresis + rAF throttling to prevent flicker/jank near the threshold
+    let ticking = false;
+    const ENTER = 64; // scroll down past this to switch to solid header
+    const EXIT = 24; // scroll up below this to switch back to transparent
+
+    const update = () => {
+      ticking = false;
+      const y = window.scrollY;
+      setScrolled((prev) => {
+        if (!prev && y > ENTER) return true;
+        if (prev && y < EXIT) return false;
+        return prev;
+      });
+    };
+
+    const onScroll = () => {
+      if (!ticking) {
+        ticking = true;
+        window.requestAnimationFrame(update);
+      }
+    };
+
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
