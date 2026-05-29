@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import ServiceHero from "../components/services/ServiceHero";
 import Philosophy from "../components/services/Philosophy";
 import InvestmentOpportunities from "../components/services/InvestmentOpportunities";
+import ComparisonBlock from "../components/ComparisonBlock";
 import ServiceCTA from "../components/services/ServiceCTA";
 import heroImg from "../assets/relocation-symbol.png";
 
@@ -77,6 +78,8 @@ const Relocation = () => {
       />
 
       <InvestmentOpportunities categories={opportunityCategories} />
+
+      <ComparisonBlock />
 
       <ServiceCTA
         title={t(`${base}.finalCta.title`)}
