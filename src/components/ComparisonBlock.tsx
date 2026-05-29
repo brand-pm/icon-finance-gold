@@ -129,15 +129,6 @@ const ComparisonBlock = () => {
           ))}
         </div>
 
-        {/* Disclaimer */}
-        <div
-          className="mt-10 opacity-0 animate-fade-up"
-          style={{ animationDelay: `${0.3 + rows.length * 0.08}s` }}
-        >
-          <p className="text-slate/70 text-xs italic text-center max-w-2xl mx-auto">
-            {t("comparison.disclaimer")}
-          </p>
-        </div>
       </div>
     </section>
   );
