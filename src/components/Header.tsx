@@ -128,7 +128,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full h-20 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full h-20 z-50 transition-[background-color,backdrop-filter,box-shadow] duration-300 ease-out will-change-[background-color] ${
         scrolled || megaOpen || mobileOpen ? "bg-navy/95 backdrop-blur-md shadow-lg" : "bg-transparent"
       }`}
     >
