@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { ExternalLink } from "lucide-react";
 import logo from "../assets/logo.svg";
 import footerBg from "../assets/footer-bg.svg";
 import { useLocalizedPath } from "@/i18n/useLocalizedPath";
