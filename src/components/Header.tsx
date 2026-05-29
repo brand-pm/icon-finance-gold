@@ -79,8 +79,30 @@ const Header = () => {
     href.startsWith("/") && (pathWithoutLang === href || pathWithoutLang.startsWith(href + "/"));
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", onScroll);
+    // Hysteresis + rAF throttling to prevent flicker/jank near the threshold
+    let ticking = false;
+    const ENTER = 64; // scroll down past this to switch to solid header
+    const EXIT = 24; // scroll up below this to switch back to transparent
+
+    const update = () => {
+      ticking = false;
+      const y = window.scrollY;
+      setScrolled((prev) => {
+        if (!prev && y > ENTER) return true;
+        if (prev && y < EXIT) return false;
+        return prev;
+      });
+    };
+
+    const onScroll = () => {
+      if (!ticking) {
+        ticking = true;
+        window.requestAnimationFrame(update);
+      }
+    };
+
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -106,7 +128,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full h-20 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full h-20 z-50 transition-[background-color,backdrop-filter,box-shadow] duration-300 ease-out will-change-[background-color] ${
         scrolled || megaOpen || mobileOpen ? "bg-navy/95 backdrop-blur-md shadow-lg" : "bg-transparent"
       }`}
     >
