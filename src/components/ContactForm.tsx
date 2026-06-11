@@ -293,6 +293,7 @@ const ContactForm = ({ onSubmit, heading, subheading, className = "" }: ContactF
       return;
     }
 
+    setSubmitError("");
     setStatus("loading");
     try {
       const payload = {
@@ -306,20 +307,45 @@ const ContactForm = ({ onSubmit, heading, subheading, className = "" }: ContactF
       if (onSubmit) {
         await onSubmit(payload);
       } else {
-        await new Promise((r) => setTimeout(r, 700));
+        const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            ...payload,
+            consent: data.consent,
+            source: detectSource(),
+            website,
+          }),
+        });
+        let result: { success?: boolean } = {};
+        try {
+          result = await res.json();
+        } catch {
+          result = {};
+        }
+        if (res.status === 429) {
+          setStatus("idle");
+          setSubmitError(t("contactForm.submit.errorRateLimit"));
+          if (liveRegionRef.current) liveRegionRef.current.textContent = t("contactForm.submit.errorRateLimit");
+          return;
+        }
+        if (!res.ok || !result.success) {
+          setStatus("idle");
+          setSubmitError(t("contactForm.submit.errorGeneric"));
+          if (liveRegionRef.current) liveRegionRef.current.textContent = t("contactForm.submit.errorGeneric");
+          return;
+        }
       }
       setStatus("success");
       navigate(localize("/thank-you"));
       return;
     } catch (err) {
       setStatus("idle");
-      toast.error(t("contactForm.states.errorToast"), {
-        duration: 8000,
-        closeButton: true,
-        className: "!border-gold/40",
-      });
+      setSubmitError(t("contactForm.submit.errorGeneric"));
+      if (liveRegionRef.current) liveRegionRef.current.textContent = t("contactForm.submit.errorGeneric");
     }
   };
+
 
   const reset = () => {
     setData({ name: "", email: "", phone: "", descriptor: "", primaryInterest: "", message: "", consent: false });
