@@ -587,7 +587,7 @@ const ContactForm = ({ onSubmit, heading, subheading, className = "" }: ContactF
           {status === "loading" ? (
             <>
               <Loader2 className="w-4 h-4 animate-spin motion-reduce:hidden" aria-hidden="true" />
-              {t("contactForm.states.sending")}
+              {t("contactForm.submit.sending")}
             </>
           ) : (
             t("contactForm.labels.send")
