@@ -353,6 +353,8 @@ const ContactForm = ({ onSubmit, heading, subheading, className = "" }: ContactF
     setTouched({});
     setSubmitAttempted(false);
     setStatus("idle");
+    setSubmitError("");
+    setWebsite("");
   };
 
   const consentText = t("contactForm.consent");
