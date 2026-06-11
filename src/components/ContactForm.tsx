@@ -183,6 +183,7 @@ const ContactForm = ({ onSubmit, heading, subheading, className = "" }: ContactF
   const { t } = useTranslation();
   const localize = useLocalizedPath();
   const navigate = useNavigate();
+  const location = useLocation();
   const uid = useId().replace(/[:]/g, "");
   const liveRegionRef = useRef<HTMLDivElement>(null);
 
