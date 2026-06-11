@@ -1,7 +1,7 @@
 import { useId, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { toast } from "sonner";
+
 import { Check, ChevronDown, Loader2 } from "lucide-react";
 import * as SelectPrimitive from "@radix-ui/react-select";
 import { useLocalizedPath } from "@/i18n/useLocalizedPath";
