@@ -2157,6 +2157,11 @@
       "sendAnother": "Wyślij kolejną wiadomość",
       "errorToast": "Coś poszło nie tak. Spróbuj ponownie lub napisz do nas na info@iconfinance.io"
     },
+    "submit": {
+      "sending": "Wysyłanie...",
+      "errorGeneric": "Coś poszło nie tak. Spróbuj ponownie lub napisz bezpośrednio na info@iconfinance.io.",
+      "errorRateLimit": "Zbyt wiele żądań. Spróbuj ponownie za minutę."
+    },
     "consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z [Polityką prywatności](/privacy-policy).",
     "privacyPolicy": "Polityką prywatności",
     "labels": {

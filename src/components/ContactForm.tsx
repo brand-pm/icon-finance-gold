@@ -1,7 +1,7 @@
 import { useId, useMemo, useRef, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { toast } from "sonner";
+
 import { Check, ChevronDown, Loader2 } from "lucide-react";
 import * as SelectPrimitive from "@radix-ui/react-select";
 import { useLocalizedPath } from "@/i18n/useLocalizedPath";
@@ -183,6 +183,7 @@ const ContactForm = ({ onSubmit, heading, subheading, className = "" }: ContactF
   const { t } = useTranslation();
   const localize = useLocalizedPath();
   const navigate = useNavigate();
+  const location = useLocation();
   const uid = useId().replace(/[:]/g, "");
   const liveRegionRef = useRef<HTMLDivElement>(null);
 
@@ -199,6 +200,17 @@ const ContactForm = ({ onSubmit, heading, subheading, className = "" }: ContactF
   const [touched, setTouched] = useState<Partial<Record<FieldKey, boolean>>>({});
   const [submitAttempted, setSubmitAttempted] = useState(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success">("idle");
+  const [submitError, setSubmitError] = useState<string>("");
+  const [website, setWebsite] = useState("");
+
+  const detectSource = (): string => {
+    const segments = location.pathname.split("/").filter(Boolean);
+    const route = segments.slice(1).join("/");
+    if (route === "") return "Homepage Contact section";
+    if (route === "contact") return "Contact page";
+    if (route === "relocation") return `Relocation landing (${(segments[0] || "").toUpperCase()})`;
+    return `Other (${location.pathname})`;
+  };
 
   const descriptorOptions = useMemo(
     () => DESCRIPTOR_IDS.map((id) => ({ id, label: t(`contactForm.descriptor.options.${id}`) })),
@@ -281,6 +293,7 @@ const ContactForm = ({ onSubmit, heading, subheading, className = "" }: ContactF
       return;
     }
 
+    setSubmitError("");
     setStatus("loading");
     try {
       const payload = {
@@ -294,20 +307,45 @@ const ContactForm = ({ onSubmit, heading, subheading, className = "" }: ContactF
       if (onSubmit) {
         await onSubmit(payload);
       } else {
-        await new Promise((r) => setTimeout(r, 700));
+        const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            ...payload,
+            consent: data.consent,
+            source: detectSource(),
+            website,
+          }),
+        });
+        let result: { success?: boolean } = {};
+        try {
+          result = await res.json();
+        } catch {
+          result = {};
+        }
+        if (res.status === 429) {
+          setStatus("idle");
+          setSubmitError(t("contactForm.submit.errorRateLimit"));
+          if (liveRegionRef.current) liveRegionRef.current.textContent = t("contactForm.submit.errorRateLimit");
+          return;
+        }
+        if (!res.ok || !result.success) {
+          setStatus("idle");
+          setSubmitError(t("contactForm.submit.errorGeneric"));
+          if (liveRegionRef.current) liveRegionRef.current.textContent = t("contactForm.submit.errorGeneric");
+          return;
+        }
       }
       setStatus("success");
       navigate(localize("/thank-you"));
       return;
     } catch (err) {
       setStatus("idle");
-      toast.error(t("contactForm.states.errorToast"), {
-        duration: 8000,
-        closeButton: true,
-        className: "!border-gold/40",
-      });
+      setSubmitError(t("contactForm.submit.errorGeneric"));
+      if (liveRegionRef.current) liveRegionRef.current.textContent = t("contactForm.submit.errorGeneric");
     }
   };
+
 
   const reset = () => {
     setData({ name: "", email: "", phone: "", descriptor: "", primaryInterest: "", message: "", consent: false });
@@ -315,6 +353,8 @@ const ContactForm = ({ onSubmit, heading, subheading, className = "" }: ContactF
     setTouched({});
     setSubmitAttempted(false);
     setStatus("idle");
+    setSubmitError("");
+    setWebsite("");
   };
 
   const consentText = t("contactForm.consent");
@@ -516,6 +556,28 @@ const ContactForm = ({ onSubmit, heading, subheading, className = "" }: ContactF
           <ErrorText id={`${uid}-consent-err`} msg={errors.consent} />
         </div>
 
+        {/* Honeypot field — hidden from users, catches bots */}
+        <div aria-hidden="true" className="absolute left-[-9999px] top-[-9999px] h-0 w-0 overflow-hidden" tabIndex={-1}>
+          <label htmlFor={`${uid}-website`}>Website (leave empty)</label>
+          <input
+            id={`${uid}-website`}
+            type="text"
+            name="website"
+            tabIndex={-1}
+            autoComplete="off"
+            value={website}
+            onChange={(e) => setWebsite(e.target.value)}
+          />
+        </div>
+
+        {submitError && (
+          <p className="text-[12px] text-gold leading-relaxed" role="alert" aria-live="assertive">
+            {submitError}
+          </p>
+        )}
+
+
+
         <button
           type="submit"
           disabled={status === "loading" || !data.consent}
@@ -525,7 +587,7 @@ const ContactForm = ({ onSubmit, heading, subheading, className = "" }: ContactF
           {status === "loading" ? (
             <>
               <Loader2 className="w-4 h-4 animate-spin motion-reduce:hidden" aria-hidden="true" />
-              {t("contactForm.states.sending")}
+              {t("contactForm.submit.sending")}
             </>
           ) : (
             t("contactForm.labels.send")

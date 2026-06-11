@@ -2157,6 +2157,11 @@
       "sendAnother": "Send another message",
       "errorToast": "Something went wrong. Please try again or contact us at info@iconfinance.io"
     },
+    "submit": {
+      "sending": "Sending...",
+      "errorGeneric": "Something went wrong. Please try again or email info@iconfinance.io directly.",
+      "errorRateLimit": "Too many requests. Please try again in a minute."
+    },
     "consent": "I agree to the processing of my personal data in accordance with the [Privacy Policy](/privacy-policy).",
     "privacyPolicy": "Privacy Policy",
     "labels": {
