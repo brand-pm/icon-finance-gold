@@ -556,6 +556,28 @@ const ContactForm = ({ onSubmit, heading, subheading, className = "" }: ContactF
           <ErrorText id={`${uid}-consent-err`} msg={errors.consent} />
         </div>
 
+        {/* Honeypot field — hidden from users, catches bots */}
+        <div aria-hidden="true" className="absolute left-[-9999px] top-[-9999px] h-0 w-0 overflow-hidden" tabIndex={-1}>
+          <label htmlFor={`${uid}-website`}>Website (leave empty)</label>
+          <input
+            id={`${uid}-website`}
+            type="text"
+            name="website"
+            tabIndex={-1}
+            autoComplete="off"
+            value={website}
+            onChange={(e) => setWebsite(e.target.value)}
+          />
+        </div>
+
+        {submitError && (
+          <p className="text-[12px] text-gold leading-relaxed" role="alert" aria-live="assertive">
+            {submitError}
+          </p>
+        )}
+
+
+
         <button
           type="submit"
           disabled={status === "loading" || !data.consent}
