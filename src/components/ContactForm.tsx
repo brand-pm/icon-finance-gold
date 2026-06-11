@@ -200,6 +200,17 @@ const ContactForm = ({ onSubmit, heading, subheading, className = "" }: ContactF
   const [touched, setTouched] = useState<Partial<Record<FieldKey, boolean>>>({});
   const [submitAttempted, setSubmitAttempted] = useState(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success">("idle");
+  const [submitError, setSubmitError] = useState<string>("");
+  const [website, setWebsite] = useState("");
+
+  const detectSource = (): string => {
+    const segments = location.pathname.split("/").filter(Boolean);
+    const route = segments.slice(1).join("/");
+    if (route === "") return "Homepage Contact section";
+    if (route === "contact") return "Contact page";
+    if (route === "relocation") return `Relocation landing (${(segments[0] || "").toUpperCase()})`;
+    return `Other (${location.pathname})`;
+  };
 
   const descriptorOptions = useMemo(
     () => DESCRIPTOR_IDS.map((id) => ({ id, label: t(`contactForm.descriptor.options.${id}`) })),
